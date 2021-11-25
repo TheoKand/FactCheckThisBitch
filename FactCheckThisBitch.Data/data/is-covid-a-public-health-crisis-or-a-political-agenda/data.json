@@ -1,0 +1,35 @@
+{
+    "Title": "Are Covid Vaccines really vaccines? If not, what are they?",
+    "Thesis": "Definitions Matter. The term 'Vaccine' is hammered into your brain, but does it actually apply?",
+    "Conclusion": "",
+
+    "Pieces": [
+        {
+            "Title": "Wikipedia Definition of a Vaccine",
+            "Thesis": "According to Wikipedia, a vaccine provides immunity. COVID Vaccines clearly don't, since the 'vaccinated' can catch Covid, get sick and pass it.",
+            "Keywords": [ "Vaccine", "Definition", "Immunity" ],
+
+            "Definition": {
+                "Title": "Vaccine",
+                "Summary": "A vaccine is a biological preparation that provides active acquired immunity to a particular infectious disease.[1] A vaccine typically contains an agent that resembles a disease-causing microorganism and is often made from weakened or killed forms of the microbe, its toxins, or one of its surface proteins. The agent stimulates the body's immune system to recognize the agent as a threat, destroy it, and to further recognize and destroy any of the microorganisms associated with that agent that it may encounter in the future",
+                "Source": "Wikipedia",
+                "Url": "https://en.wikipedia.org/wiki/Vaccine",
+                "DatePublished": ""
+            }
+        },
+        {
+            "Title": "Covid Vaccines are technically the same technology used in Genetically Modified Foods",
+            "Thesis": "",
+            "Keywords": [ "Covid Vaccine", "mRNA", "Gene Therapy" ],
+
+            "NewsArticle": {
+                "Title": "COVID mRNA Vaccines are a Form of Gene Therapy",
+                "Summary": "",
+                "Source": "Sovereign Wealth Fund Institute.",
+                "Url": "https://www.swfinstitute.org/news/83947/covid-mrna-vaccines-are-a-form-of-gene-therapy",
+                "DatePublished": "25/01/2021"
+            }
+        }
+    ]
+
+}
