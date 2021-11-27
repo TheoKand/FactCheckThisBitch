@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 
 namespace FackCheckThisBitch.Common
@@ -12,5 +12,12 @@ namespace FackCheckThisBitch.Common
             result = result.ToLower();
             return result;
         }
+
+        public static T Clone<T>(this T source)
+        {
+            var serialized = JsonConvert.SerializeObject(source);
+            return JsonConvert.DeserializeObject<T>(serialized);
+        }
+
     }
 }

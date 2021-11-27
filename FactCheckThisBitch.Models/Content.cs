@@ -7,8 +7,8 @@ namespace FactCheckThisBitch.Models
     public abstract class BaseContent
     {
         public string Title;
-        public string Thesis;
-
+        public string Summary;
+        public PieceType Type;
         public DateTime? DatePublished;
         public string Source;
         public Uri Url;
@@ -19,6 +19,10 @@ namespace FactCheckThisBitch.Models
     {
         public Organisation Organization;
         public string Author;
+    }
+
+    public class MyArgument : BaseContent
+    {
     }
 
     public class BookExcerpt : BaseContent

@@ -59,7 +59,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTitle.Size = new System.Drawing.Size(1255, 37);
+            this.txtTitle.Size = new System.Drawing.Size(785, 37);
             this.txtTitle.TabIndex = 0;
             // 
             // txtThesis
@@ -71,7 +71,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtThesis.Multiline = true;
             this.txtThesis.Name = "txtThesis";
             this.txtThesis.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtThesis.Size = new System.Drawing.Size(1255, 88);
+            this.txtThesis.Size = new System.Drawing.Size(785, 88);
             this.txtThesis.TabIndex = 0;
             // 
             // label2
@@ -142,7 +142,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(981, 768);
+            this.btnSave.Location = new System.Drawing.Point(511, 568);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 47);
@@ -154,7 +154,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(1159, 768);
+            this.btnCancel.Location = new System.Drawing.Point(689, 568);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(164, 47);
@@ -169,7 +169,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(1335, 826);
+            this.ClientSize = new System.Drawing.Size(865, 626);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label4);

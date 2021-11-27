@@ -32,7 +32,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void SetTitle()
         {
             this.Text = EditMode ? $"Edit Puzzle: {_puzzle.Title.ToSanitizedString()}" : "Create New Puzzle";
-
         }
 
         private void InitForm()

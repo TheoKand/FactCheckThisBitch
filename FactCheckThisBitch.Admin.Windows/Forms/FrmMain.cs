@@ -34,5 +34,31 @@ namespace FactCheckThisBitch.Admin.Windows
             //FrmPuzzle puzzleForm = new FrmPuzzle( null);
             //puzzleForm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+
+            var piece = new Piece
+            {
+                Type = PieceType.Article,
+                Title = "Are Covid Vaccines Really Vaccines?",
+                Thesis = "hah ahahahaha",
+                Keywords = new[] {"Vaccine", "Bullshit"},
+                Content = new Article
+                {
+                    Title = "GMOs: Transgenic Crops and Recombinant DNA Technology",
+                    Summary =
+                        "If you could save lives by producing vaccines in transgenic bananas, would you? In the debate over large-scale commercialization and use of GMOs, where should we draw the line?",
+                    DatePublished = DateTime.Parse("25/01/2021"),
+                    Source = "Sovereign Wealth Fund Institute",
+                    Url = new Uri(
+                        "https://www.nature.com/scitable/topicpage/genetically-modified-organisms-gmos-transgenic-crops-and-732/"),
+                    References = new[] {"one", "two"}
+                }
+            };
+            FrmPiece pieceForm = new FrmPiece(piece);
+            pieceForm.Show();
+        }
     }
 }
