@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
-    public partial class PieceUI : UserControl
+    public partial class PuzzlePieceUI : UserControl
     {
-        public PieceUI()
+        public PuzzlePieceUI()
         {
             InitializeComponent();
         }
