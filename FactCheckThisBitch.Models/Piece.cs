@@ -7,6 +7,7 @@ namespace FactCheckThisBitch.Models
 {
     public class Piece
     {
+        public string Id;
         public string Title;
         public string Thesis;
         public string[] Keywords;
@@ -28,6 +29,7 @@ namespace FactCheckThisBitch.Models
 
         public Piece()
         {
+            Id = Guid.NewGuid().ToString();
             Title = "Enter your thesis title here. What do you want to show with this piece.";
             Thesis = "Elaborate on your entire thesis here";
             Type = PieceType.Article;
@@ -54,7 +56,7 @@ namespace FactCheckThisBitch.Models
         Podcast,
         Study,
         Statistic,
-        DictionaryDefinition,
+        Definition,
         WebVideo,
         Documentary,
         WebSearch,

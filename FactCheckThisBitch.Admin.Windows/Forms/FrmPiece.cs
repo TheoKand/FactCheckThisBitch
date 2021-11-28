@@ -54,6 +54,11 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void SaveForm()
         {
+            _piece.Title = txtTitle.Text;
+            _piece.Thesis = txtThesis.Text;
+            _piece.Keywords = txtKeywords.Text.Split(",");
+            _piece.Images = txtImages.Text.Split(",");
+            _piece.Type = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString());
         }
 
         private void LoadContentUI()
@@ -70,6 +75,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             groupBoxContent.Controls.Add(contentUi);
         }
 
+        #region events
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -83,5 +89,14 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             LoadContentUI();
 
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SaveForm();
+
+            DialogResult = DialogResult.OK;
+            Close();
+        }
+        #endregion
     }
 }

@@ -53,7 +53,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(164, 47);
-            this.btnCancel.TabIndex = 3;
+            this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -65,9 +65,10 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 47);
-            this.btnSave.TabIndex = 4;
-            this.btnSave.Text = "Save";
+            this.btnSave.TabIndex = 7;
+            this.btnSave.Text = "Ok";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtThesis
             // 
@@ -79,7 +80,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtThesis.Name = "txtThesis";
             this.txtThesis.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtThesis.Size = new System.Drawing.Size(795, 88);
-            this.txtThesis.TabIndex = 5;
+            this.txtThesis.TabIndex = 1;
             // 
             // label2
             // 
@@ -101,7 +102,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtTitle.Size = new System.Drawing.Size(795, 37);
-            this.txtTitle.TabIndex = 6;
+            this.txtTitle.TabIndex = 0;
             // 
             // label1
             // 
@@ -130,7 +131,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtKeywords.Location = new System.Drawing.Point(79, 144);
             this.txtKeywords.Name = "txtKeywords";
             this.txtKeywords.Size = new System.Drawing.Size(795, 23);
-            this.txtKeywords.TabIndex = 13;
+            this.txtKeywords.TabIndex = 2;
             // 
             // label5
             // 
@@ -149,7 +150,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.btnAddImage.Location = new System.Drawing.Point(768, 176);
             this.btnAddImage.Name = "btnAddImage";
             this.btnAddImage.Size = new System.Drawing.Size(106, 15);
-            this.btnAddImage.TabIndex = 15;
+            this.btnAddImage.TabIndex = 4;
             this.btnAddImage.TabStop = true;
             this.btnAddImage.Text = "Click to add Image";
             // 
@@ -160,7 +161,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtImages.Location = new System.Drawing.Point(79, 173);
             this.txtImages.Name = "txtImages";
             this.txtImages.Size = new System.Drawing.Size(683, 23);
-            this.txtImages.TabIndex = 16;
+            this.txtImages.TabIndex = 3;
             // 
             // cboType
             // 
@@ -170,7 +171,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.cboType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboType.Name = "cboType";
             this.cboType.Size = new System.Drawing.Size(222, 23);
-            this.cboType.TabIndex = 17;
+            this.cboType.TabIndex = 5;
             this.cboType.SelectedValueChanged += new System.EventHandler(this.cboType_SelectedValueChanged);
             // 
             // label3
@@ -189,7 +190,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.groupBoxContent.Location = new System.Drawing.Point(12, 261);
             this.groupBoxContent.Name = "groupBoxContent";
             this.groupBoxContent.Size = new System.Drawing.Size(862, 403);
-            this.groupBoxContent.TabIndex = 19;
+            this.groupBoxContent.TabIndex = 6;
             this.groupBoxContent.TabStop = false;
             // 
             // lblContent
@@ -204,8 +205,10 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             // FrmPiece
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(886, 744);
             this.Controls.Add(this.lblContent);
             this.Controls.Add(this.groupBoxContent);

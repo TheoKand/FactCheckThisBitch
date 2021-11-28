@@ -7,6 +7,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Forms;
+using FactCheckThisBitch.Admin.Windows.Forms;
 using FactCheckThisBitch.Models;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
@@ -33,8 +34,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void PuzzleUI_Load(object sender, EventArgs e)
         {
-            
-            
+
+
         }
 
         private void LoadPieces()
@@ -64,15 +65,26 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
                     PuzzlePieceUI pieceUi = new PuzzlePieceUI()
                     {
+                        Name = piece.Id,
                         Piece = piece,
                         Left = puzzlePieceX,
-                        Top = puzzlePieceY
+                        Top = puzzlePieceY,
                     };
+                    pieceUi.OnClick = () => OnPieceClicked(piece);
 
                     Controls.Add(pieceUi);
 
                 }
             }
+        }
+
+        private void OnPieceClicked(Piece piece)
+        {
+            FrmPiece pieceForm = new FrmPiece(piece);
+            var result = pieceForm.ShowDialog();
+            if (result != DialogResult.OK) return;
+
+            (Controls.Find(piece.Id, true).First() as PuzzlePieceUI).Piece = piece;
         }
     }
 }

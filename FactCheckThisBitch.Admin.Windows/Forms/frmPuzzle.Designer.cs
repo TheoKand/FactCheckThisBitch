@@ -35,7 +35,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.puzzleUi = new FactCheckThisBitch.Admin.Windows.UserControls.PuzzleUI();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,7 +75,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtThesis.Name = "txtThesis";
             this.txtThesis.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtThesis.Size = new System.Drawing.Size(683, 88);
-            this.txtThesis.TabIndex = 0;
+            this.txtThesis.TabIndex = 1;
             // 
             // label2
             // 
@@ -99,26 +98,14 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(409, 648);
+            this.btnSave.Location = new System.Drawing.Point(587, 648);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 47);
-            this.btnSave.TabIndex = 0;
+            this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnOk_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(587, 648);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(164, 47);
-            this.btnCancel.TabIndex = 0;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // puzzleUi
             // 
@@ -129,7 +116,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.puzzleUi.Name = "puzzleUi";
             this.puzzleUi.Puzzle = null;
             this.puzzleUi.Size = new System.Drawing.Size(747, 412);
-            this.puzzleUi.TabIndex = 8;
+            this.puzzleUi.TabIndex = 3;
             // 
             // menuStrip1
             // 
@@ -139,7 +126,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(763, 24);
-            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.TabStop = true;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // newToolStripMenuItem
@@ -165,18 +153,16 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtSize.Location = new System.Drawing.Point(68, 165);
             this.txtSize.Name = "txtSize";
             this.txtSize.Size = new System.Drawing.Size(123, 27);
-            this.txtSize.TabIndex = 10;
+            this.txtSize.TabIndex = 2;
             // 
             // FrmPuzzle
             // 
             this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(763, 706);
             this.Controls.Add(this.txtSize);
             this.Controls.Add(this.puzzleUi);
-            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtThesis);
@@ -205,7 +191,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnCancel;
         private UserControls.PuzzleUI puzzleUi;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;

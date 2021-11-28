@@ -73,6 +73,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 Title = $"New created at {DateTime.UtcNow}"
             };
             _puzzleFileName = Path.Combine(Configuration.Instance().DataFolder, $"{_puzzle.Title.ToSanitizedString()}.json");
+            SaveToFile();
             LoadForm();
         }
 
@@ -92,7 +93,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                     Formatting = Formatting.Indented,
                 });
             File.WriteAllTextAsync(_puzzleFileName, json);
-            MessageBox.Show("File saved ok");
         }
 
         private void Save()
@@ -108,11 +108,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             Save();
             SaveToFile();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            MessageBox.Show("File saved ok");
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)

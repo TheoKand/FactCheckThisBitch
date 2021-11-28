@@ -11,11 +11,34 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
     public partial class PuzzlePieceUI : UserControl
     {
-        public Piece Piece;
+        private Piece _piece;
+        public Piece Piece
+        {
+            get => _piece;
+            set
+            {
+                _piece = value;
+                Load();
+            }
+        }
+
+        public Action OnClick;
 
         public PuzzlePieceUI()
         {
             InitializeComponent();
+        }
+
+        private void Load()
+        {
+            lblType.Text = _piece.Type.ToString();
+            btnLabel.Text = _piece.Title;
+            lblKeywords.Text = string.Join(Environment.NewLine, _piece.Keywords);
+        }
+
+        private void btnLabel_Click(object sender, EventArgs e)
+        {
+            OnClick?.Invoke();
         }
     }
 }

@@ -48,7 +48,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtTitle.Location = new System.Drawing.Point(75, 15);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(843, 23);
-            this.txtTitle.TabIndex = 15;
+            this.txtTitle.TabIndex = 0;
             // 
             // label4
             // 
@@ -69,7 +69,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtSummary.Name = "txtSummary";
             this.txtSummary.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtSummary.Size = new System.Drawing.Size(843, 74);
-            this.txtSummary.TabIndex = 17;
+            this.txtSummary.TabIndex = 1;
             // 
             // label1
             // 
@@ -88,7 +88,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtSource.Location = new System.Drawing.Point(75, 124);
             this.txtSource.Name = "txtSource";
             this.txtSource.Size = new System.Drawing.Size(843, 23);
-            this.txtSource.TabIndex = 19;
+            this.txtSource.TabIndex = 2;
             // 
             // label2
             // 
@@ -107,7 +107,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtUrl.Location = new System.Drawing.Point(75, 153);
             this.txtUrl.Name = "txtUrl";
             this.txtUrl.Size = new System.Drawing.Size(843, 23);
-            this.txtUrl.TabIndex = 21;
+            this.txtUrl.TabIndex = 3;
             // 
             // label3
             // 
@@ -138,7 +138,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtReferences.Name = "txtReferences";
             this.txtReferences.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtReferences.Size = new System.Drawing.Size(843, 53);
-            this.txtReferences.TabIndex = 23;
+            this.txtReferences.TabIndex = 4;
             // 
             // BaseContentUI
             // 
