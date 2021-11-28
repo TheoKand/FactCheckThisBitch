@@ -12,15 +12,40 @@ namespace FactCheckThisBitch.Models
         public int Width = 4;
         public int Height = 3;
 
-        public PuzzlePiece[] PuzzlePieces;
-        public PuzzlePiece[] PiecesThatDontFit;
+        public List<PuzzlePiece> PuzzlePieces;
+
+        public void InitPieces()
+        {
+            if (PuzzlePieces == null)
+            {
+                PuzzlePieces = new List<PuzzlePiece>();
+                var index = 0;
+                for (int i = 0; i < Width * Height; i++)
+                {
+                    index++;
+                    PuzzlePiece puzzlePiece = new PuzzlePiece
+                    {
+                        Index = index,
+                        Piece = new Piece()
+                    };
+                    PuzzlePieces.Add(puzzlePiece);
+                }
+
+            }
+
+        }
+
+        public void Resize()
+        {
+            //TODO: keep old pieces when changing the dimensions and calling this. Don't lose data
+            InitPieces();
+        }
     }
 
     public class PuzzlePiece
     {
         public int Index;
         public Piece Piece;
-        public Piece[] ConnectingPieces;
     }
 
     public class PuzzleDisplay

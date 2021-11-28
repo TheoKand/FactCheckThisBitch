@@ -59,6 +59,11 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     if (piece == null)
                     {
                         piece = new Piece();
+                        _puzzle.PuzzlePieces.Add( new PuzzlePiece
+                        {
+                            Index = indexOfThisSquare,
+                            Piece = piece
+                        });
                     }
                     var puzzlePieceX = leftMargin + (x - 1) * (pieceWidth + leftMargin);
                     var puzzlePieceY = topMargin + (y - 1) * (pieceHeight + topMargin);
@@ -71,7 +76,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                         Top = puzzlePieceY,
                     };
                     pieceUi.OnClick = () => OnPieceClicked(piece);
-
+                    
                     Controls.Add(pieceUi);
 
                 }

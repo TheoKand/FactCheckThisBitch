@@ -1,7 +1,10 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.Serialization;
 using FackCheckThisBitch.Common;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace FactCheckThisBitch.Models
 {
@@ -16,6 +19,7 @@ namespace FactCheckThisBitch.Models
         public PieceDisplay Display;
 
         private PieceType _type;
+
         public PieceType Type
         {
             get => _type;
@@ -33,13 +37,11 @@ namespace FactCheckThisBitch.Models
             Title = "Enter your thesis title here. What do you want to show with this piece.";
             Thesis = "Elaborate on your entire thesis here";
             Type = PieceType.Article;
-            Keywords = new string[] { };
+            Keywords = new string[] {"First", "Second"};
             Images = new string[] { };
             Content = new Article();
             Display = new PieceDisplay();
         }
-
-
     }
 
     public class PieceDisplay
@@ -48,23 +50,24 @@ namespace FactCheckThisBitch.Models
         public Uri Thumbnail;
     }
 
+    [JsonConverter(typeof(StringEnumConverter))]
     public enum PieceType
     {
-        Article,
-        BookExcerpt,
-        Interview,
-        Podcast,
-        Study,
-        Statistic,
-        Definition,
-        WebVideo,
-        Documentary,
-        WebSearch,
+        [EnumMember(Value = "")] Unknown,
+        [EnumMember(Value = "Article")] Article,
+        [EnumMember(Value = "BookExcerpt")] BookExcerpt,
+        [EnumMember(Value = "Interview")] Interview,
+        [EnumMember(Value = "Podcast")] Podcast,
+        [EnumMember(Value = "Study")] Study,
+        [EnumMember(Value = "Statistic")] Statistic,
+        [EnumMember(Value = "Definition")] Definition,
+        [EnumMember(Value = "WebVideo")] WebVideo,
+        [EnumMember(Value = "Documentary")] Documentary,
+        [EnumMember(Value = "WebSearch")] WebSearch,
+
+        [EnumMember(Value = "NewsPaperArticle")]
         NewsPaperArticle,
-        Comparisson,
-        MyArgument,
+        [EnumMember(Value = "Comparisson")] Comparisson,
+        [EnumMember(Value = "MyArgument")] MyArgument,
     }
-
-
-
 }

@@ -56,8 +56,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             _piece.Title = txtTitle.Text;
             _piece.Thesis = txtThesis.Text;
-            _piece.Keywords = txtKeywords.Text.Split(",");
-            _piece.Images = txtImages.Text.Split(",");
+            _piece.Keywords = txtKeywords.Text.Split(",").Select(x=>x.Trim()).ToArray();
+            _piece.Images = txtImages.Text.Split(",").Select(x=>x.Trim()).ToArray();
             _piece.Type = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString());
         }
 

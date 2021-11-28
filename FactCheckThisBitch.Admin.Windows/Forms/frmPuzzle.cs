@@ -48,6 +48,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
             _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
+            _puzzle.Resize();
 
             puzzleUi.Puzzle = _puzzle;
         }
@@ -72,6 +73,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             {
                 Title = $"New created at {DateTime.UtcNow}"
             };
+            _puzzle.InitPieces();
             _puzzleFileName = Path.Combine(Configuration.Instance().DataFolder, $"{_puzzle.Title.ToSanitizedString()}.json");
             SaveToFile();
             LoadForm();
@@ -81,6 +83,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             var json = File.ReadAllText(_puzzleFileName, Encoding.UTF8);
             _puzzle = JsonConvert.DeserializeObject<Puzzle>(json);
+            _puzzle.InitPieces();
         }
 
         private void SaveToFile()
@@ -89,7 +92,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 new JsonSerializerSettings
                 {
                     NullValueHandling = NullValueHandling.Ignore,
-                    DefaultValueHandling = DefaultValueHandling.Include,
+                    DefaultValueHandling = DefaultValueHandling.Ignore,
                     Formatting = Formatting.Indented,
                 });
             File.WriteAllTextAsync(_puzzleFileName, json);
