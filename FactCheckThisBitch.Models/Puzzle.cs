@@ -9,16 +9,16 @@ namespace FactCheckThisBitch.Models
         public string Title;
         public string Thesis;
         public string Conclusion;
-        public int Width = 3;
+        public int Width = 4;
         public int Height = 3;
 
-        public PuzzlePiece[] Pieces;
+        public PuzzlePiece[] PuzzlePieces;
         public PuzzlePiece[] PiecesThatDontFit;
     }
 
     public class PuzzlePiece
     {
-        public int Number;
+        public int Index;
         public Piece Piece;
         public Piece[] ConnectingPieces;
     }

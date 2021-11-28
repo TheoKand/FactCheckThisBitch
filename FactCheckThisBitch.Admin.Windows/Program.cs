@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FactCheckThisBitch.Admin.Windows.Forms;
 
 namespace FactCheckThisBitch.Admin.Windows
 {
@@ -17,7 +18,7 @@ namespace FactCheckThisBitch.Admin.Windows
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain());
+            Application.Run(new FrmPuzzle());
         }
     }
 }
