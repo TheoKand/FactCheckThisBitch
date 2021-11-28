@@ -11,7 +11,7 @@ namespace FactCheckThisBitch.Models
         public PieceType Type;
         public DateTime? DatePublished;
         public string Source;
-        public Uri Url;
+        public string Url;
         public string[] References;
     }
 

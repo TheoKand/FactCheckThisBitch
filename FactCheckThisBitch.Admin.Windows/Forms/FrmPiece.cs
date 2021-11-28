@@ -46,7 +46,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             txtTitle.Text = _piece.Title;
             txtThesis.Text = _piece.Thesis;
             txtKeywords.Text = string.Join(", ", _piece.Keywords);
-            txtImages.Text = string.Join(", ", _piece.Images);
+            imageEditor1.Images = _piece.Images.ToList();
 
             LoadContentUI();
 
@@ -56,23 +56,27 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             _piece.Title = txtTitle.Text;
             _piece.Thesis = txtThesis.Text;
-            _piece.Keywords = txtKeywords.Text.Split(",").Select(x=>x.Trim()).ToArray();
-            _piece.Images = txtImages.Text.Split(",").Select(x=>x.Trim()).ToArray();
+            _piece.Keywords = txtKeywords.Text.CommaSeparatedListToArray();
+            _piece.Images = imageEditor1.Images.ToArray();
+            _piece.Images = imageEditor1.Images.ToArray();
             _piece.Type = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString());
+
+            _piece.Content = _contentUi.Content;
         }
 
         private void LoadContentUI()
         {
             lblContent.Text = _piece.Type.ToString();
 
-            var contentUi = new BaseContentUI();
-            contentUi.Content = _piece.Content;
-            contentUi.Left = 4;
-            contentUi.Top = 12;
-            contentUi.Width = groupBoxContent.Width - 8;
-            contentUi.Height = groupBoxContent.Height - 24;
+            _contentUi = new BaseContentUI();
+            _contentUi.Content = _piece.Content;
+            _contentUi.Left = 4;
+            _contentUi.Top = 12;
+            _contentUi.Width = groupBoxContent.Width - 8;
+            _contentUi.Height = groupBoxContent.Height - 24;
+
             groupBoxContent.Controls.Clear();
-            groupBoxContent.Controls.Add(contentUi);
+            groupBoxContent.Controls.Add(_contentUi);
         }
 
         #region events

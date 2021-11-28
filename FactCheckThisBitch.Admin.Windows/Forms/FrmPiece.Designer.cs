@@ -29,6 +29,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPiece));
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtThesis = new System.Windows.Forms.TextBox();
@@ -38,18 +39,17 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.txtKeywords = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnAddImage = new System.Windows.Forms.LinkLabel();
-            this.txtImages = new System.Windows.Forms.TextBox();
             this.cboType = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBoxContent = new System.Windows.Forms.GroupBox();
             this.lblContent = new System.Windows.Forms.Label();
+            this.imageEditor1 = new FactCheckThisBitch.Admin.Windows.UserControls.ImageEditor();
             this.SuspendLayout();
             // 
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(710, 686);
+            this.btnCancel.Location = new System.Drawing.Point(710, 740);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(164, 47);
@@ -61,7 +61,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(532, 686);
+            this.btnSave.Location = new System.Drawing.Point(540, 740);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 47);
@@ -137,37 +137,17 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(12, 176);
+            this.label5.Location = new System.Drawing.Point(12, 209);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 15);
             this.label5.TabIndex = 14;
             this.label5.Text = "Images";
             // 
-            // btnAddImage
-            // 
-            this.btnAddImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddImage.AutoSize = true;
-            this.btnAddImage.Location = new System.Drawing.Point(768, 176);
-            this.btnAddImage.Name = "btnAddImage";
-            this.btnAddImage.Size = new System.Drawing.Size(106, 15);
-            this.btnAddImage.TabIndex = 4;
-            this.btnAddImage.TabStop = true;
-            this.btnAddImage.Text = "Click to add Image";
-            // 
-            // txtImages
-            // 
-            this.txtImages.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtImages.Location = new System.Drawing.Point(79, 173);
-            this.txtImages.Name = "txtImages";
-            this.txtImages.Size = new System.Drawing.Size(683, 23);
-            this.txtImages.TabIndex = 3;
-            // 
             // cboType
             // 
             this.cboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboType.FormattingEnabled = true;
-            this.cboType.Location = new System.Drawing.Point(79, 202);
+            this.cboType.Location = new System.Drawing.Point(79, 172);
             this.cboType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboType.Name = "cboType";
             this.cboType.Size = new System.Drawing.Size(222, 23);
@@ -178,7 +158,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(12, 205);
+            this.label3.Location = new System.Drawing.Point(12, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 15);
             this.label3.TabIndex = 18;
@@ -187,9 +167,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // groupBoxContent
             // 
             this.groupBoxContent.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBoxContent.Location = new System.Drawing.Point(12, 261);
+            this.groupBoxContent.Location = new System.Drawing.Point(12, 332);
             this.groupBoxContent.Name = "groupBoxContent";
-            this.groupBoxContent.Size = new System.Drawing.Size(862, 403);
+            this.groupBoxContent.Size = new System.Drawing.Size(862, 394);
             this.groupBoxContent.TabIndex = 6;
             this.groupBoxContent.TabStop = false;
             // 
@@ -197,11 +177,21 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             this.lblContent.AutoSize = true;
             this.lblContent.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblContent.Location = new System.Drawing.Point(18, 243);
+            this.lblContent.Location = new System.Drawing.Point(12, 304);
             this.lblContent.Name = "lblContent";
             this.lblContent.Size = new System.Drawing.Size(131, 25);
             this.lblContent.TabIndex = 20;
             this.lblContent.Text = "Content Type";
+            // 
+            // imageEditor1
+            // 
+            this.imageEditor1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.imageEditor1.Images = ((System.Collections.Generic.List<string>)(resources.GetObject("imageEditor1.Images")));
+            this.imageEditor1.Location = new System.Drawing.Point(79, 200);
+            this.imageEditor1.Name = "imageEditor1";
+            this.imageEditor1.Size = new System.Drawing.Size(795, 93);
+            this.imageEditor1.TabIndex = 21;
             // 
             // FrmPiece
             // 
@@ -209,13 +199,12 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(886, 744);
+            this.ClientSize = new System.Drawing.Size(886, 798);
+            this.Controls.Add(this.imageEditor1);
             this.Controls.Add(this.lblContent);
             this.Controls.Add(this.groupBoxContent);
             this.Controls.Add(this.cboType);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtImages);
-            this.Controls.Add(this.btnAddImage);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtKeywords);
             this.Controls.Add(this.label4);
@@ -244,11 +233,10 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtKeywords;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.LinkLabel btnAddImage;
-        private System.Windows.Forms.TextBox txtImages;
         private System.Windows.Forms.ComboBox cboType;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBoxContent;
         private System.Windows.Forms.Label lblContent;
+        private UserControls.ImageEditor imageEditor1;
     }
 }

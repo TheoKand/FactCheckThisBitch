@@ -26,7 +26,7 @@ namespace FactCheckThisBitch.Models
             set
             {
                 _type = value;
-                //TODO: convert content type? Copy values with property copier?
+                //TODO: convert content type? Copy values with property copier to avoid losing data?
                 Content = _type.ToPieceContent();
             }
         }
@@ -46,8 +46,8 @@ namespace FactCheckThisBitch.Models
 
     public class PieceDisplay
     {
-        public Uri Image;
-        public Uri Thumbnail;
+        public string Image;
+        public string Thumbnail;
     }
 
     [JsonConverter(typeof(StringEnumConverter))]

@@ -68,7 +68,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void CreateNew()
         {
-            //TODO: Check if changes
+            //TODO: Check for unsaved changes
             _puzzle = new Puzzle()
             {
                 Title = $"New created at {DateTime.UtcNow}"
@@ -82,19 +82,14 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void LoadFromFile()
         {
             var json = File.ReadAllText(_puzzleFileName, Encoding.UTF8);
-            _puzzle = JsonConvert.DeserializeObject<Puzzle>(json);
+            //TODO: BUG : Doesn't deserialize Content (abstract class)
+            _puzzle = JsonConvert.DeserializeObject<Puzzle>(json, StaticSettings.JsonSerializerSettings);
             _puzzle.InitPieces();
         }
 
         private void SaveToFile()
         {
-            var json = JsonConvert.SerializeObject(_puzzle, Formatting.Indented,
-                new JsonSerializerSettings
-                {
-                    NullValueHandling = NullValueHandling.Ignore,
-                    DefaultValueHandling = DefaultValueHandling.Ignore,
-                    Formatting = Formatting.Indented,
-                });
+            var json = JsonConvert.SerializeObject(_puzzle, Formatting.Indented, StaticSettings.JsonSerializerSettings);
             File.WriteAllTextAsync(_puzzleFileName, json);
         }
 

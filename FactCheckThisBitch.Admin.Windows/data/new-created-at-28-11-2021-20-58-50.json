@@ -1,34 +1,20 @@
 {
-  "Title": "Are Covid Vaccines really vaccines? If not, what are they?",
-  "Thesis": "Definitions Matter. Are there any other similar technologies that work the same way as Covid Vaccines?",
-  "Conclusion": "",
-  "Width": 3,
+  "Title": "New created at 28/11/2021 20:58:50",
+  "Width": 4,
   "Height": 3,
   "PuzzlePieces": [
     {
       "Index": 1,
       "Piece": {
-        "Id": "47aaf170-7e50-4085-ae3b-44849fc00ab7",
+        "Id": "b997d41e-071b-4379-9c63-57086c7a7fd2",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
           "First",
           "Second"
         ],
-        "Images": [
-          "are-covid-vaccines-really-vaccines-guid1.png",
-          "are-covid-vaccines-really-vaccines-guid2.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\087b2620-f424-4f5e-ab55-b8979689f89a.png"
-        ],
-        "Content": {
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": [
-            ""
-          ]
-        },
+        "Images": [],
+        "Content": {},
         "Display": {},
         "Type": "Article"
       }
@@ -36,7 +22,7 @@
     {
       "Index": 2,
       "Piece": {
-        "Id": "4e714ec0-f4eb-4bcd-a65a-ea27be69984a",
+        "Id": "bd1cf77d-0f17-463e-92b4-0ab15abcc3e2",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -52,7 +38,7 @@
     {
       "Index": 3,
       "Piece": {
-        "Id": "898b2b44-ddc3-4d2f-991c-770098bf8b3f",
+        "Id": "77176f89-ea82-4223-b746-7f18e37d1dad",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -68,7 +54,7 @@
     {
       "Index": 4,
       "Piece": {
-        "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
+        "Id": "559bd7a2-3c69-4efd-aa20-e21cce13cc08",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -84,7 +70,7 @@
     {
       "Index": 5,
       "Piece": {
-        "Id": "80841d3b-edf8-4ec9-aa62-ce8c9006a716",
+        "Id": "318e9940-9ad1-4375-81fa-3945c79c123b",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -100,7 +86,7 @@
     {
       "Index": 6,
       "Piece": {
-        "Id": "493786ca-b183-439e-88c6-65eeb150330e",
+        "Id": "0a5da4df-6e6f-4b64-a861-d5b97baa0c6e",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -116,7 +102,7 @@
     {
       "Index": 7,
       "Piece": {
-        "Id": "19001789-7442-4b77-b982-772b3a2b681c",
+        "Id": "284baf22-3335-498d-80bc-71463f90ffff",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -132,7 +118,7 @@
     {
       "Index": 8,
       "Piece": {
-        "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
+        "Id": "bcfb9d30-1cd9-44aa-b245-484662dc0dce",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -148,7 +134,7 @@
     {
       "Index": 9,
       "Piece": {
-        "Id": "537e773b-7254-4cc7-8a79-3ac923ecbbb8",
+        "Id": "acacdad0-6a5e-4ed8-b69e-996bb80d62ba",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -164,7 +150,7 @@
     {
       "Index": 10,
       "Piece": {
-        "Id": "ae201350-f797-43d2-b0f9-1e05a71d82ff",
+        "Id": "68dc902e-614b-4057-a242-532a3f76f47d",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -180,7 +166,7 @@
     {
       "Index": 11,
       "Piece": {
-        "Id": "d01bee53-debb-4cc7-8da5-1ca40859d7d2",
+        "Id": "63461848-ed79-4dbe-ab15-e5a5f3fd4d69",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -196,7 +182,7 @@
     {
       "Index": 12,
       "Piece": {
-        "Id": "595451e4-533d-43e6-bcb8-9412b97a74c5",
+        "Id": "9dc0d0d0-e156-4ec0-8277-bce34f95d8be",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [

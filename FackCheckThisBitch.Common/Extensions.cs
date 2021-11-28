@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 
@@ -23,6 +24,11 @@ namespace FackCheckThisBitch.Common
         {
             var serialized = JsonConvert.SerializeObject(source);
             return JsonConvert.DeserializeObject<T>(serialized);
+        }
+
+        public static string[] CommaSeparatedListToArray(this string input)
+        {
+            return input.Split(",").Select(x=>x.Trim()).ToArray();
         }
 
 
