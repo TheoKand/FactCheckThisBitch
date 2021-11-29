@@ -39,7 +39,6 @@ namespace FactCheckThisBitch.Models
 
         public void Resize()
         {
-            //TODO: keep old pieces when changing the dimensions and calling this. Don't lose data
             InitPieces();
         }
     }

@@ -1,36 +1,51 @@
 {
-  "Title": "New created at 28/11/2021 20:58:50",
-  "Width": 4,
+  "Title": "New created at 29/11/2021 19:30:17",
+  "Thesis": "",
+  "Width": 3,
   "Height": 3,
   "PuzzlePieces": [
     {
       "Index": 1,
       "Piece": {
-        "Id": "b997d41e-071b-4379-9c63-57086c7a7fd2",
-        "Title": "Enter your thesis title here. What do you want to show with this piece.",
-        "Thesis": "Elaborate on your entire thesis here",
+        "Id": "44fcd326-965a-4f33-b6cd-16ab4ad6a63b",
+        "Title": "2",
+        "Thesis": "3",
         "Keywords": [
-          "First",
-          "Second"
+          "4"
         ],
         "Images": [],
-        "Content": {},
+        "Content": {
+          "Title": "5",
+          "Summary": "6",
+          "Source": "7",
+          "Url": "8",
+          "References": [
+            "9"
+          ]
+        },
         "Display": {},
-        "Type": "Article"
+        "Type": "BookExcerpt"
       }
     },
     {
       "Index": 2,
       "Piece": {
-        "Id": "bd1cf77d-0f17-463e-92b4-0ab15abcc3e2",
-        "Title": "Enter your thesis title here. What do you want to show with this piece.",
-        "Thesis": "Elaborate on your entire thesis here",
+        "Id": "bdc673ed-c886-44f7-93dd-024414700347",
+        "Title": "a",
+        "Thesis": "a",
         "Keywords": [
-          "First",
-          "Second"
+          "a"
         ],
         "Images": [],
-        "Content": {},
+        "Content": {
+          "Title": "a",
+          "Summary": "a",
+          "Source": "a",
+          "Url": "a",
+          "References": [
+            "a"
+          ]
+        },
         "Display": {},
         "Type": "Article"
       }
@@ -38,7 +53,7 @@
     {
       "Index": 3,
       "Piece": {
-        "Id": "77176f89-ea82-4223-b746-7f18e37d1dad",
+        "Id": "461a3e2f-caab-4e8a-917b-8977c3239177",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -54,7 +69,7 @@
     {
       "Index": 4,
       "Piece": {
-        "Id": "559bd7a2-3c69-4efd-aa20-e21cce13cc08",
+        "Id": "e604974c-5ede-4c7a-90ce-2ece6a36de64",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -70,7 +85,7 @@
     {
       "Index": 5,
       "Piece": {
-        "Id": "318e9940-9ad1-4375-81fa-3945c79c123b",
+        "Id": "c25aad06-907f-4493-851f-a379fa2742f3",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -86,7 +101,7 @@
     {
       "Index": 6,
       "Piece": {
-        "Id": "0a5da4df-6e6f-4b64-a861-d5b97baa0c6e",
+        "Id": "8eaf5df9-afc3-4b20-9684-c8d581d0f051",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -102,7 +117,7 @@
     {
       "Index": 7,
       "Piece": {
-        "Id": "284baf22-3335-498d-80bc-71463f90ffff",
+        "Id": "a1588679-ae70-4088-a248-f97b791093d8",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -118,7 +133,7 @@
     {
       "Index": 8,
       "Piece": {
-        "Id": "bcfb9d30-1cd9-44aa-b245-484662dc0dce",
+        "Id": "a2e0f35c-63f8-4940-aa50-0c11a4f0d674",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -134,7 +149,7 @@
     {
       "Index": 9,
       "Piece": {
-        "Id": "acacdad0-6a5e-4ed8-b69e-996bb80d62ba",
+        "Id": "5826e205-bf3d-4f90-9f92-b53551168ea9",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -150,7 +165,7 @@
     {
       "Index": 10,
       "Piece": {
-        "Id": "68dc902e-614b-4057-a242-532a3f76f47d",
+        "Id": "3f51dcd0-487e-435c-8f52-d3fd27c51496",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -166,7 +181,7 @@
     {
       "Index": 11,
       "Piece": {
-        "Id": "63461848-ed79-4dbe-ab15-e5a5f3fd4d69",
+        "Id": "74fca8c0-4999-4bba-8004-a4123cab5bfc",
         "Title": "Enter your thesis title here. What do you want to show with this piece.",
         "Thesis": "Elaborate on your entire thesis here",
         "Keywords": [
@@ -182,15 +197,22 @@
     {
       "Index": 12,
       "Piece": {
-        "Id": "9dc0d0d0-e156-4ec0-8277-bce34f95d8be",
-        "Title": "Enter your thesis title here. What do you want to show with this piece.",
-        "Thesis": "Elaborate on your entire thesis here",
+        "Id": "5a606769-3319-40a3-bdf8-52ec46e9b175",
+        "Title": "last",
+        "Thesis": "last",
         "Keywords": [
-          "First",
-          "Second"
+          "last"
         ],
         "Images": [],
-        "Content": {},
+        "Content": {
+          "Title": "last",
+          "Summary": "last",
+          "Source": "last",
+          "Url": "last",
+          "References": [
+            "last"
+          ]
+        },
         "Display": {},
         "Type": "Article"
       }

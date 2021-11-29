@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using FactCheckThisBitch.Admin.Windows.Forms;
-using FactCheckThisBitch.Models;
-using Newtonsoft.Json;
+using System;
+using System.Windows.Forms;
 
 namespace FactCheckThisBitch.Admin.Windows
 {

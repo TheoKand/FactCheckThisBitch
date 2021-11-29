@@ -82,7 +82,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void LoadFromFile()
         {
             var json = File.ReadAllText(_puzzleFileName, Encoding.UTF8);
-            //TODO: BUG : Doesn't deserialize Content (abstract class)
             _puzzle = JsonConvert.DeserializeObject<Puzzle>(json, StaticSettings.JsonSerializerSettings);
             _puzzle.InitPieces();
         }
@@ -130,7 +129,14 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             CreateNew();
         }
 
+        private void FrmPuzzle_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Save();
+            SaveToFile();
+        }
+
         #endregion
+
 
     }
 }
