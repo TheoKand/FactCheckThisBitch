@@ -12,6 +12,8 @@ namespace FactCheckThisBitch.Models
         public int Width = 4;
         public int Height = 3;
 
+
+        public PuzzlePiece OnePiece;
         public List<PuzzlePiece> PuzzlePieces;
 
         public void InitPieces()

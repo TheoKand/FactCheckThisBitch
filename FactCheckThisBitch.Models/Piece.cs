@@ -1,10 +1,7 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.Reflection.Metadata.Ecma335;
-using System.Runtime.Serialization;
-using FackCheckThisBitch.Common;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System;
+using System.Runtime.Serialization;
 
 namespace FactCheckThisBitch.Models
 {
@@ -26,8 +23,8 @@ namespace FactCheckThisBitch.Models
             set
             {
                 _type = value;
-                //TODO: convert content type? Copy values with property copier to avoid losing data?
-                Content = _type.ToPieceContent();
+
+                this.ConvertContentToNewTypeAndKeepMetadata();
             }
         }
 
@@ -37,7 +34,7 @@ namespace FactCheckThisBitch.Models
             Title = "Enter your thesis title here. What do you want to show with this piece.";
             Thesis = "Elaborate on your entire thesis here";
             Type = PieceType.Article;
-            Keywords = new string[] {"First", "Second"};
+            Keywords = new string[] { "First", "Second" };
             Images = new string[] { };
             Content = new Article();
             Display = new PieceDisplay();
