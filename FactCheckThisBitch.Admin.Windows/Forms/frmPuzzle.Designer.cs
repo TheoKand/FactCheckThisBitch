@@ -175,6 +175,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(779, 694);
             this.Name = "FrmPuzzle";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmPuzzle_FormClosed);
             this.Load += new System.EventHandler(this.frmPuzzleMetadata_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
