@@ -47,6 +47,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 picture.Image = Image.FromFile(imagePath);
                 picture.Top = 0;
                 picture.Left = padding + index * (picture.Width + padding);
+                picture.Cursor = Cursors.Hand;
                 picture.Click += (sender, args) =>
                 {
                     new Process

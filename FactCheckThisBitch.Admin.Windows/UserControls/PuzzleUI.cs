@@ -40,6 +40,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void LoadPieces()
         {
+            this.SuspendLayout();
+
             Controls.Clear();
 
             if (_puzzle == null) return;
@@ -76,11 +78,27 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                         Top = puzzlePieceY,
                     };
                     pieceUi.OnClick = () => OnPieceClicked(piece);
+                    pieceUi.OnDragDrop = OnPieceDragDrop;
                     
                     Controls.Add(pieceUi);
 
                 }
             }
+
+            this.ResumeLayout();
+        }
+
+        private void OnPieceDragDrop(string firstPieceId, string secondPieceId)
+        {
+            var firstPuzzlePiece= _puzzle.PuzzlePieces.First(p => p.Piece.Id == firstPieceId);
+            var secondPuzzlePiece= _puzzle.PuzzlePieces.First(p => p.Piece.Id == secondPieceId);
+
+            var secondPuzzlePieceIndex = secondPuzzlePiece.Index;
+            secondPuzzlePiece.Index = firstPuzzlePiece.Index;
+            firstPuzzlePiece.Index = secondPuzzlePieceIndex;
+
+            LoadPieces();
+
         }
 
         private void OnPieceClicked(Piece piece)

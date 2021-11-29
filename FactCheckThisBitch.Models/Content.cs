@@ -9,10 +9,10 @@ namespace FactCheckThisBitch.Models
         public string Title;
         public string Summary;
         public PieceType Type;
-        public DateTime? DatePublished;
         public string Source;
         public string Url;
         public string[] References;
+        public DateTime? DatePublished;
     }
 
     public class Article : BaseContent

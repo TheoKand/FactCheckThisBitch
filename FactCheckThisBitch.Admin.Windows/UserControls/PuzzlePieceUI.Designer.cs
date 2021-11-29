@@ -36,34 +36,41 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // lblType
             // 
+            this.lblType.AllowDrop = true;
             this.lblType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblType.BackColor = System.Drawing.Color.Silver;
+            this.lblType.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.lblType.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblType.Location = new System.Drawing.Point(3, 0);
+            this.lblType.Location = new System.Drawing.Point(-6, 0);
             this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(170, 21);
+            this.lblType.Size = new System.Drawing.Size(188, 21);
             this.lblType.TabIndex = 5;
             this.lblType.Text = "Definition";
             this.lblType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblType.DragDrop += new System.Windows.Forms.DragEventHandler(this.lblType_DragDrop);
+            this.lblType.DragEnter += new System.Windows.Forms.DragEventHandler(this.lblType_DragEnter);
+            this.lblType.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblType_MouseDown);
             // 
             // lblKeywords
             // 
             this.lblKeywords.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblKeywords.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblKeywords.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblKeywords.ForeColor = System.Drawing.Color.Blue;
             this.lblKeywords.Location = new System.Drawing.Point(0, 70);
             this.lblKeywords.Name = "lblKeywords";
-            this.lblKeywords.Size = new System.Drawing.Size(176, 41);
+            this.lblKeywords.Size = new System.Drawing.Size(176, 52);
             this.lblKeywords.TabIndex = 7;
             this.lblKeywords.Text = "Vaccine\r\nImmunity";
-            this.lblKeywords.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblKeywords.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnLabel
             // 
-            this.btnLabel.Location = new System.Drawing.Point(3, 24);
+            this.btnLabel.Location = new System.Drawing.Point(11, 24);
             this.btnLabel.Name = "btnLabel";
-            this.btnLabel.Size = new System.Drawing.Size(170, 43);
+            this.btnLabel.Size = new System.Drawing.Size(152, 43);
             this.btnLabel.TabIndex = 8;
             this.btnLabel.Text = "Wikipedia Definition of a Vaccine";
             this.btnLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -72,6 +79,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // PuzzlePieceUI
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));

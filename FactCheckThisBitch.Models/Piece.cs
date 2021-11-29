@@ -31,8 +31,8 @@ namespace FactCheckThisBitch.Models
         public Piece()
         {
             Id = Guid.NewGuid().ToString();
-            Title = "Enter your thesis title here. What do you want to show with this piece.";
-            Thesis = "Elaborate on your entire thesis here";
+            Title = "...Title...";
+            Thesis = "...Thesis...";
             Type = PieceType.Article;
             Keywords = new string[] { "First", "Second" };
             Images = new string[] { };

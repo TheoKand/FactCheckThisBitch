@@ -55,14 +55,15 @@
           "Url": "https://www.rpi.edu/dept/chem-eng/Biotech-Environ/Projects00/rdna/rdna.html",
           "References": [
             ""
-          ]
+          ],
+          "DatePublished": "2000-01-09T00:00:00"
         },
         "Display": {},
         "Type": "Article"
       }
     },
     {
-      "Index": 3,
+      "Index": 7,
       "Piece": {
         "Id": "898b2b44-ddc3-4d2f-991c-770098bf8b3f",
         "Title": "GMO crops and foods are made with Recombinant DNA Technology",
@@ -90,7 +91,7 @@
       }
     },
     {
-      "Index": 4,
+      "Index": 9,
       "Piece": {
         "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
         "Title": "Is it fair to say that Covid mRNA Vaccines hack your human cells into producing non human proteins?",
@@ -110,6 +111,99 @@
           "Url": "https://www.swfinstitute.org/news/83947/Covid-mrna-vaccines-are-a-form-of-gene-therapy",
           "References": [
             "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6491712/"
+          ],
+          "DatePublished": "2021-01-25T00:00:00"
+        },
+        "Display": {},
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 4,
+      "Piece": {
+        "Id": "80841d3b-edf8-4ec9-aa62-ce8c9006a716",
+        "Title": "",
+        "Thesis": "",
+        "Keywords": [
+          ""
+        ],
+        "Images": [],
+        "Content": {
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": [
+            ""
+          ]
+        },
+        "Display": {},
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 6,
+      "Piece": {
+        "Id": "493786ca-b183-439e-88c6-65eeb150330e",
+        "Title": "",
+        "Thesis": "",
+        "Keywords": [
+          ""
+        ],
+        "Images": [],
+        "Content": {
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": [
+            ""
+          ]
+        },
+        "Display": {},
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 3,
+      "Piece": {
+        "Id": "19001789-7442-4b77-b982-772b3a2b681c",
+        "Title": "",
+        "Thesis": "",
+        "Keywords": [
+          ""
+        ],
+        "Images": [],
+        "Content": {
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": [
+            ""
+          ]
+        },
+        "Display": {},
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 8,
+      "Piece": {
+        "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
+        "Title": "",
+        "Thesis": "",
+        "Keywords": [
+          ""
+        ],
+        "Images": [],
+        "Content": {
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": [
+            ""
           ]
         },
         "Display": {},
@@ -119,79 +213,22 @@
     {
       "Index": 5,
       "Piece": {
-        "Id": "80841d3b-edf8-4ec9-aa62-ce8c9006a716",
-        "Title": "Enter your thesis title here. What do you want to show with this piece.",
-        "Thesis": "Elaborate on your entire thesis here",
-        "Keywords": [
-          "First",
-          "Second"
-        ],
-        "Images": [],
-        "Content": {},
-        "Display": {},
-        "Type": "Article"
-      }
-    },
-    {
-      "Index": 6,
-      "Piece": {
-        "Id": "493786ca-b183-439e-88c6-65eeb150330e",
-        "Title": "Enter your thesis title here. What do you want to show with this piece.",
-        "Thesis": "Elaborate on your entire thesis here",
-        "Keywords": [
-          "First",
-          "Second"
-        ],
-        "Images": [],
-        "Content": {},
-        "Display": {},
-        "Type": "Article"
-      }
-    },
-    {
-      "Index": 7,
-      "Piece": {
-        "Id": "19001789-7442-4b77-b982-772b3a2b681c",
-        "Title": "Enter your thesis title here. What do you want to show with this piece.",
-        "Thesis": "Elaborate on your entire thesis here",
-        "Keywords": [
-          "First",
-          "Second"
-        ],
-        "Images": [],
-        "Content": {},
-        "Display": {},
-        "Type": "Article"
-      }
-    },
-    {
-      "Index": 8,
-      "Piece": {
-        "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
-        "Title": "Enter your thesis title here. What do you want to show with this piece.",
-        "Thesis": "Elaborate on your entire thesis here",
-        "Keywords": [
-          "First",
-          "Second"
-        ],
-        "Images": [],
-        "Content": {},
-        "Display": {},
-        "Type": "Article"
-      }
-    },
-    {
-      "Index": 9,
-      "Piece": {
         "Id": "537e773b-7254-4cc7-8a79-3ac923ecbbb8",
-        "Title": "Enter your thesis title here. What do you want to show with this piece.",
-        "Thesis": "Elaborate on your entire thesis here",
+        "Title": "",
+        "Thesis": "",
         "Keywords": [
-          "First",
-          "Second"
+          ""
         ],
         "Images": [],
-        "Content": {},
+        "Content": {
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": [
+            ""
+          ]
+        },
         "Display": {},
         "Type": "Article"
       }

@@ -23,6 +23,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         }
 
         public Action OnClick;
+        public Action<string, string> OnDragDrop;
 
         public PuzzlePieceUI()
         {
@@ -39,6 +40,22 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private void btnLabel_Click(object sender, EventArgs e)
         {
             OnClick?.Invoke();
+        }
+
+        private void lblType_MouseDown(object sender, MouseEventArgs e)
+        {
+            lblType.DoDragDrop(_piece, DragDropEffects.All);
+        }
+
+        private void lblType_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.All;
+        }
+
+        private void lblType_DragDrop(object sender, DragEventArgs e)
+        {
+            var data = e.Data.GetData(typeof(Piece)) as Piece;
+            OnDragDrop?.Invoke(data.Id, _piece.Id);
         }
     }
 }
