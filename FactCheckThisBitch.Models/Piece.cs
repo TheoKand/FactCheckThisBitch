@@ -12,9 +12,8 @@ namespace FactCheckThisBitch.Models
         public string Thesis;
         public string[] Keywords;
         public string[] Images;
-        public BaseContent Content; //depends on type
+        public IContent Content; //depends on type
         public PieceDisplay Display;
-
         private PieceType _type;
 
         public PieceType Type
@@ -62,9 +61,7 @@ namespace FactCheckThisBitch.Models
         [EnumMember(Value = "Documentary")] Documentary,
         [EnumMember(Value = "WebSearch")] WebSearch,
 
-        [EnumMember(Value = "NewsPaperArticle")]
-        NewsPaperArticle,
-        [EnumMember(Value = "Comparisson")] Comparisson,
+        [EnumMember(Value = "NewsPaperArticle")] NewsPaperArticle,
         [EnumMember(Value = "MyArgument")] MyArgument,
     }
 }

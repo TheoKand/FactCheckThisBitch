@@ -1,7 +1,7 @@
 ﻿
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
-    partial class TextBoxWithValidation
+    partial class ContentUI
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,34 +29,18 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(646, 23);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // TextBoxWithValidation
+            // ContentUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox1);
-            this.Name = "TextBoxWithValidation";
-            this.Size = new System.Drawing.Size(661, 27);
+            this.Name = "ContentUI";
+            this.Size = new System.Drawing.Size(936, 484);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
     }
 }

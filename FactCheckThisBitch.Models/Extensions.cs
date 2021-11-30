@@ -16,14 +16,14 @@ namespace FactCheckThisBitch.Models
             return type;
         }
 
-        public static BaseContent ToPieceContent(this PieceType pieceType)
+        public static IContent ToPieceContentNewInstance(this PieceType pieceType)
         {
             var enumValue = pieceType.ToString();
             Type type = Assembly.GetExecutingAssembly().GetType($"FactCheckThisBitch.Models.{enumValue}");
-            return Activator.CreateInstance(type) as BaseContent;
+            return Activator.CreateInstance(type) as IContent;
         }
 
-        public static PieceType ToPieceType(this BaseContent pieceContent)
+        public static PieceType ToPieceType(this IContent pieceContent)
         {
             var enumValue = pieceContent.GetType().Name;
             return (PieceType)Enum.Parse(typeof(PieceType), enumValue);
@@ -59,7 +59,7 @@ namespace FactCheckThisBitch.Models
                     piece.Content.Url,
                     piece.Content.References
                 };
-                piece.Content = piece.Type.ToPieceContent();
+                piece.Content = piece.Type.ToPieceContentNewInstance();
 
                 piece.Content.Title = oldContent.Title;
                 piece.Content.Summary = oldContent.Summary;
@@ -71,8 +71,10 @@ namespace FactCheckThisBitch.Models
             }
             else
             {
-                piece.Content = piece.Type.ToPieceContent();
+                piece.Content = piece.Type.ToPieceContentNewInstance();
             }
         }
+
+
     }
 }

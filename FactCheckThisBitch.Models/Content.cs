@@ -4,100 +4,187 @@ using System.Text;
 
 namespace FactCheckThisBitch.Models
 {
-    public abstract class BaseContent
+    public interface IContent
     {
-        public string Title;
-        public string Summary;
-        public PieceType Type;
-        public string Source;
-        public string Url;
-        public string[] References;
-        public DateTime? DatePublished;
-    }
-
-    public class Article : BaseContent
-    {
-        public Organisation Organization;
-        public string Author;
-    }
-
-    public class MyArgument : BaseContent
-    {
-    }
-
-    public class BookExcerpt : BaseContent
-    {
-        public string Isbn;
-        public string Author;
-        public int FromPage;
-        public int ToPage;
-
-    }
-    public class Interview : BaseContent
-    {
-        public DateTime DateTaken;
-        public int FromPage;
-        public int ToPage;
-        public Segment[] Segments;
-    }
-
-    public class Podcast : BaseContent
-    {
-        public Segment[] Segments;
-    }
-
-    public class Study : BaseContent
-    {
-        public string Author;
-    }
-
-    public class Statistic : BaseContent
-    {
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
 
     }
 
-    public class Definition : BaseContent
+    public class Article : IContent
     {
+        public string Organization { get; set; }
+        public string Author { get; set; }
+
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
+    }
+
+    public class MyArgument : IContent
+    {
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
+    }
+
+    public class BookExcerpt : IContent
+    {
+        public string Isbn{ get; set; }
+
+        public string Author { get; set; }
+        public int FromPage { get; set; }
+        public int ToPage { get; set; }
+
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
+
+    }
+    public class Interview : IContent
+    {
+        public DateTime DateTaken { get; set; }
+        public int FromPage { get; set; }
+        public int ToPage { get; set; }
+        public Segment[] Segments { get; set; }
+
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
+    }
+
+    public class Podcast : IContent
+    {
+        public Segment[] Segments { get; set; }
+
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
+    }
+
+    public class Study : IContent
+    {
+        public string Author { get; set; }
+
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
+    }
+
+    public class Statistic : IContent
+    {
+
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
 
     }
 
-    public class WebVideo : BaseContent
+    public class Definition : IContent
     {
-        public string Uploader;
-        public string Channel;
-        public long Views;
-        public long Likes;
-        public long Dislikes;
-        public long Comments;
-        public Organisation Platform;
-        public Segment[] Segments;
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
     }
 
-    public class Documentary : BaseContent
+    public class WebVideo : IContent
     {
-        public int Year;
-        public string Producer;
-        public Segment[] Segments;
+        public string Uploader { get; set; }
+        public string Channel { get; set; }
+        public long Views { get; set; }
+        public long Likes{ get; set; }
+        public long Dislikes { get; set; }
+        public long Comments { get; set; }
+        public string Platform { get; set; }
+        public Segment[] Segments { get; set; }
+
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
     }
 
-    public class WebSearch : BaseContent
+    public class Documentary : IContent
     {
-        public string SearchEngine;
-        public string Term;
-        public string[] Results;
+        public int Year { get; set; }
+        public string Producer { get; set; }
+        public Segment[] Segments { get; set; }
+
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
     }
 
-    public class NewsPaperArticle : BaseContent
+    public class WebSearch : IContent
     {
-        public int IssueNumber;
-        public int Page;
+        public string SearchEngine{ get; set; }
+        public string Term{ get; set; }
+        public string[] Results{ get; set; }
+
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
     }
 
-    public class Comparisson : BaseContent
+    public class NewsPaperArticle : IContent
     {
-        public BaseContent Fact1;
-        public BaseContent Face2;
+        public int IssueNumber { get; set; }
+        public int Page { get; set; }
+
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public PieceType Type { get; set; }
+        public string Source { get; set; }
+        public string Url { get; set; }
+        public string[] References { get; set; }
+        public DateTime? DatePublished { get; set; }
     }
-
-
 }

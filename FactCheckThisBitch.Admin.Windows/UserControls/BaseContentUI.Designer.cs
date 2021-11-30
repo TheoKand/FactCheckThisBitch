@@ -56,7 +56,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(8, 18);
+            this.label4.Location = new System.Drawing.Point(0, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 15);
             this.label4.TabIndex = 14;
@@ -70,14 +70,14 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtSummary.Multiline = true;
             this.txtSummary.Name = "txtSummary";
             this.txtSummary.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtSummary.Size = new System.Drawing.Size(818, 74);
+            this.txtSummary.Size = new System.Drawing.Size(818, 57);
             this.txtSummary.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(8, 47);
+            this.label1.Location = new System.Drawing.Point(0, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 15);
             this.label1.TabIndex = 16;
@@ -87,7 +87,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.txtSource.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSource.Location = new System.Drawing.Point(100, 124);
+            this.txtSource.Location = new System.Drawing.Point(100, 107);
             this.txtSource.Name = "txtSource";
             this.txtSource.Size = new System.Drawing.Size(818, 23);
             this.txtSource.TabIndex = 2;
@@ -96,7 +96,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(8, 127);
+            this.label2.Location = new System.Drawing.Point(0, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 15);
             this.label2.TabIndex = 18;
@@ -106,7 +106,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.txtUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUrl.Location = new System.Drawing.Point(100, 153);
+            this.txtUrl.Location = new System.Drawing.Point(100, 136);
             this.txtUrl.Name = "txtUrl";
             this.txtUrl.Size = new System.Drawing.Size(818, 23);
             this.txtUrl.TabIndex = 3;
@@ -115,7 +115,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(8, 185);
+            this.label5.Location = new System.Drawing.Point(0, 168);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 15);
             this.label5.TabIndex = 22;
@@ -125,17 +125,17 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.txtReferences.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtReferences.Location = new System.Drawing.Point(100, 185);
+            this.txtReferences.Location = new System.Drawing.Point(100, 168);
             this.txtReferences.Multiline = true;
             this.txtReferences.Name = "txtReferences";
             this.txtReferences.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtReferences.Size = new System.Drawing.Size(818, 53);
+            this.txtReferences.Size = new System.Drawing.Size(818, 41);
             this.txtReferences.TabIndex = 4;
             // 
             // btnUrl
             // 
             this.btnUrl.AutoSize = true;
-            this.btnUrl.Location = new System.Drawing.Point(9, 156);
+            this.btnUrl.Location = new System.Drawing.Point(0, 139);
             this.btnUrl.Name = "btnUrl";
             this.btnUrl.Size = new System.Drawing.Size(22, 15);
             this.btnUrl.TabIndex = 23;
@@ -145,7 +145,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // txtDatePublished
             // 
-            this.txtDatePublished.Location = new System.Drawing.Point(100, 244);
+            this.txtDatePublished.Location = new System.Drawing.Point(100, 215);
             this.txtDatePublished.Name = "txtDatePublished";
             this.txtDatePublished.Size = new System.Drawing.Size(123, 27);
             this.txtDatePublished.TabIndex = 24;
@@ -153,7 +153,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 250);
+            this.label3.Location = new System.Drawing.Point(0, 221);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 15);
             this.label3.TabIndex = 25;
@@ -176,7 +176,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label4);
             this.Name = "BaseContentUI";
-            this.Size = new System.Drawing.Size(934, 503);
+            this.Size = new System.Drawing.Size(934, 245);
             this.ResumeLayout(false);
             this.PerformLayout();
 

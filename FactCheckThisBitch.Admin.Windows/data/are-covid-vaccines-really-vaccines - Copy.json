@@ -91,7 +91,7 @@
       }
     },
     {
-      "Index": 3,
+      "Index": 9,
       "Piece": {
         "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
         "Title": "Is it fair to say that Covid mRNA Vaccines hack your human cells into producing non human proteins?",
@@ -165,33 +165,26 @@
       }
     },
     {
-      "Index": 9,
+      "Index": 3,
       "Piece": {
         "Id": "19001789-7442-4b77-b982-772b3a2b681c",
-        "Title": "1",
-        "Thesis": "2",
+        "Title": "",
+        "Thesis": "",
         "Keywords": [
-          "3"
+          ""
         ],
-        "Images": [
-          "5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png"
-        ],
+        "Images": [],
         "Content": {
-          "Isbn": "6",
-          "Author": "7",
-          "FromPage": 8,
-          "ToPage": 9,
-          "Title": "1",
-          "Summary": "2",
-          "Source": "3",
-          "Url": "4",
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
           "References": [
-            "5"
-          ],
-          "DatePublished": "2001-01-01T00:00:00"
+            ""
+          ]
         },
         "Display": {},
-        "Type": "BookExcerpt"
+        "Type": "Article"
       }
     },
     {

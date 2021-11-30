@@ -17,7 +17,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private string _validatedText;
         public string Text
         {
-            get => _validatedText;
+            get => textBox1.Text;
             set
             {
                 textBox1.Text = value;

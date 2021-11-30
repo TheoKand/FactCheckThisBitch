@@ -44,12 +44,14 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.groupBoxContent = new System.Windows.Forms.GroupBox();
             this.lblContent = new System.Windows.Forms.Label();
             this.imageEditor1 = new FactCheckThisBitch.Admin.Windows.UserControls.ImageEditor();
+            this.panelContent = new System.Windows.Forms.Panel();
+            this.groupBoxContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(710, 740);
+            this.btnCancel.Location = new System.Drawing.Point(723, 747);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(164, 47);
@@ -61,7 +63,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(540, 740);
+            this.btnSave.Location = new System.Drawing.Point(553, 747);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 47);
@@ -79,7 +81,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtThesis.Multiline = true;
             this.txtThesis.Name = "txtThesis";
             this.txtThesis.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtThesis.Size = new System.Drawing.Size(795, 88);
+            this.txtThesis.Size = new System.Drawing.Size(808, 88);
             this.txtThesis.TabIndex = 1;
             // 
             // label2
@@ -101,7 +103,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTitle.Size = new System.Drawing.Size(795, 37);
+            this.txtTitle.Size = new System.Drawing.Size(808, 37);
             this.txtTitle.TabIndex = 0;
             // 
             // label1
@@ -130,7 +132,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKeywords.Location = new System.Drawing.Point(79, 144);
             this.txtKeywords.Name = "txtKeywords";
-            this.txtKeywords.Size = new System.Drawing.Size(795, 23);
+            this.txtKeywords.Size = new System.Drawing.Size(808, 23);
             this.txtKeywords.TabIndex = 2;
             // 
             // label5
@@ -166,10 +168,14 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             // groupBoxContent
             // 
+            this.groupBoxContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxContent.Controls.Add(this.panelContent);
             this.groupBoxContent.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBoxContent.Location = new System.Drawing.Point(12, 332);
             this.groupBoxContent.Name = "groupBoxContent";
-            this.groupBoxContent.Size = new System.Drawing.Size(862, 394);
+            this.groupBoxContent.Size = new System.Drawing.Size(875, 401);
             this.groupBoxContent.TabIndex = 6;
             this.groupBoxContent.TabStop = false;
             // 
@@ -190,8 +196,19 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.imageEditor1.Images = ((System.Collections.Generic.List<string>)(resources.GetObject("imageEditor1.Images")));
             this.imageEditor1.Location = new System.Drawing.Point(79, 200);
             this.imageEditor1.Name = "imageEditor1";
-            this.imageEditor1.Size = new System.Drawing.Size(795, 93);
+            this.imageEditor1.Size = new System.Drawing.Size(808, 93);
             this.imageEditor1.TabIndex = 21;
+            // 
+            // panelContent
+            // 
+            this.panelContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelContent.AutoScroll = true;
+            this.panelContent.Location = new System.Drawing.Point(3, 14);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(872, 387);
+            this.panelContent.TabIndex = 0;
             // 
             // FrmPiece
             // 
@@ -199,7 +216,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(886, 798);
+            this.ClientSize = new System.Drawing.Size(899, 805);
             this.Controls.Add(this.imageEditor1);
             this.Controls.Add(this.lblContent);
             this.Controls.Add(this.groupBoxContent);
@@ -217,6 +234,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.Name = "FrmPiece";
             this.Text = "Puzzle Piece";
             this.Load += new System.EventHandler(this.FrmPieceEdit_Load);
+            this.groupBoxContent.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,5 +256,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private System.Windows.Forms.GroupBox groupBoxContent;
         private System.Windows.Forms.Label lblContent;
         private UserControls.ImageEditor imageEditor1;
+        private System.Windows.Forms.Panel panelContent;
     }
 }
