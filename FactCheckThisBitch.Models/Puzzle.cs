@@ -47,6 +47,7 @@ namespace FactCheckThisBitch.Models
     {
         public int Index;
         public Piece Piece;
+        public bool Valid;
     }
 
     public class PuzzleDisplay

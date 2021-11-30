@@ -21,8 +21,10 @@ namespace FactCheckThisBitch.Models
             get => _type;
             set
             {
-                _type = value;
 
+                if (_type == value) return;
+
+                _type = value;
                 this.ConvertContentToNewTypeAndKeepMetadata();
             }
         }
@@ -32,11 +34,11 @@ namespace FactCheckThisBitch.Models
             Id = Guid.NewGuid().ToString();
             Title = "...Title...";
             Thesis = "...Thesis...";
-            Type = PieceType.Article;
             Keywords = new string[] { "First", "Second" };
             Images = new string[] { };
+            
+            Type = PieceType.Article;
             Content = new Article();
-            Display = new PieceDisplay();
         }
     }
 

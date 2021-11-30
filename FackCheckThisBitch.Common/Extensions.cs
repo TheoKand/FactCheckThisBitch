@@ -25,12 +25,6 @@ namespace FackCheckThisBitch.Common
             return result;
         }
 
-        public static T Clone<T>(this T source)
-        {
-            var serialized = JsonConvert.SerializeObject(source);
-            return JsonConvert.DeserializeObject<T>(serialized);
-        }
-
         public static string[] CommaSeparatedListToArray(this string input)
         {
             return input.Split(",").Select(x=>x.Trim()).ToArray();
@@ -43,7 +37,7 @@ namespace FackCheckThisBitch.Common
 
         public static DateTime? ToDate(this string date)
         {
-            if (date == null) return null;
+            if (string.IsNullOrWhiteSpace(date)) return null;
             var ukCulture = new CultureInfo("en-GB",false);
             var dateValue = DateTime.Parse(date, ukCulture);
             return dateValue;

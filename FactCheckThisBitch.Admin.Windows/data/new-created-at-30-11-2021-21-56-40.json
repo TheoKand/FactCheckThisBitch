@@ -1,60 +1,83 @@
 {
-  "Title": "New created at 29/11/2021 20:01:24",
+  "Title": "New created at 30/11/2021 21:56:40",
+  "Thesis": "",
   "Width": 4,
   "Height": 3,
   "PuzzlePieces": [
     {
       "Index": 1,
       "Piece": {
-        "Id": "e43e1d81-2326-4019-add0-49aac2612ac0",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
+        "Id": "d1af6705-7fdf-44c5-9606-001216acf1a8",
+        "Title": "1",
+        "Thesis": "2",
         "Keywords": [
-          "First",
-          "Second"
+          "3"
         ],
         "Images": [],
-        "Content": {},
-        "Display": {},
-        "Type": "Article"
+        "Content": {
+          "Title": "4",
+          "Summary": "5",
+          "Source": "6",
+          "Url": "7",
+          "References": [
+            "8"
+          ]
+        },
+        "Type": "BookExcerpt"
       }
     },
     {
       "Index": 2,
       "Piece": {
-        "Id": "0f62bb3b-8265-4af8-b7e4-ce58562695de",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
+        "Id": "029eea5a-b16a-4bc1-bc21-107d972c9f46",
+        "Title": "1",
+        "Thesis": "2",
         "Keywords": [
-          "First",
-          "Second"
+          "3"
         ],
         "Images": [],
-        "Content": {},
-        "Display": {},
+        "Content": {
+          "Organization": "9",
+          "Author": "10",
+          "Title": "4",
+          "Summary": "5",
+          "Source": "6",
+          "Url": "7",
+          "References": [
+            "8"
+          ]
+        },
         "Type": "Article"
       }
     },
     {
       "Index": 3,
       "Piece": {
-        "Id": "41ae9c22-52ed-4917-b64e-e4a12479527e",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
+        "Id": "2a6713ff-b2f4-4ed2-aa75-63b65090ebea",
+        "Title": "1",
+        "Thesis": "2",
         "Keywords": [
-          "First",
-          "Second"
+          "3"
         ],
         "Images": [],
-        "Content": {},
-        "Display": {},
-        "Type": "Article"
+        "Content": {
+          "SearchEngine": "9",
+          "Term": "10",
+          "Title": "4",
+          "Summary": "5",
+          "Source": "6",
+          "Url": "7",
+          "References": [
+            "8"
+          ]
+        },
+        "Type": "WebSearch"
       }
     },
     {
       "Index": 4,
       "Piece": {
-        "Id": "3ecb3528-32f8-4733-a670-027bb8e0cc62",
+        "Id": "60c26f84-673d-47d8-a523-24489b1e9a3a",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -63,14 +86,13 @@
         ],
         "Images": [],
         "Content": {},
-        "Display": {},
         "Type": "Article"
       }
     },
     {
       "Index": 5,
       "Piece": {
-        "Id": "703abb77-9cf0-428f-a778-584e92c942f2",
+        "Id": "b5999d7e-25e3-428c-8b86-eeec7b279b9f",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -79,14 +101,13 @@
         ],
         "Images": [],
         "Content": {},
-        "Display": {},
         "Type": "Article"
       }
     },
     {
       "Index": 6,
       "Piece": {
-        "Id": "591164a8-d4c0-40de-a49a-0579b9fb280a",
+        "Id": "4a3f6e21-e972-4394-96c7-6307a8437719",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -95,14 +116,13 @@
         ],
         "Images": [],
         "Content": {},
-        "Display": {},
         "Type": "Article"
       }
     },
     {
       "Index": 7,
       "Piece": {
-        "Id": "68afc9e8-8e58-4726-bbae-810e9042d5f6",
+        "Id": "7ebe379e-ecde-4d3a-95c4-803b53e5b3fa",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -111,14 +131,13 @@
         ],
         "Images": [],
         "Content": {},
-        "Display": {},
         "Type": "Article"
       }
     },
     {
       "Index": 8,
       "Piece": {
-        "Id": "404315c7-abd8-4969-989a-049bfde40b80",
+        "Id": "8f5619e8-c2be-4105-94c3-b6959dcbd7e4",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -127,14 +146,13 @@
         ],
         "Images": [],
         "Content": {},
-        "Display": {},
         "Type": "Article"
       }
     },
     {
       "Index": 9,
       "Piece": {
-        "Id": "44138051-0bcc-4fa9-b585-b5d02174c146",
+        "Id": "fa64c1d0-605d-4746-915f-77018cc87b22",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -143,14 +161,13 @@
         ],
         "Images": [],
         "Content": {},
-        "Display": {},
         "Type": "Article"
       }
     },
     {
       "Index": 10,
       "Piece": {
-        "Id": "a904c447-0740-49ad-bcee-37269c3a50b8",
+        "Id": "5e33d2b8-5cd5-4001-a9cf-fcf85c07063c",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -159,14 +176,13 @@
         ],
         "Images": [],
         "Content": {},
-        "Display": {},
         "Type": "Article"
       }
     },
     {
       "Index": 11,
       "Piece": {
-        "Id": "6eae4a9e-495b-4853-b7eb-cea57a3b29ee",
+        "Id": "87a54f77-eb19-4ffd-ad3b-2c2e66fb2617",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -175,14 +191,13 @@
         ],
         "Images": [],
         "Content": {},
-        "Display": {},
         "Type": "Article"
       }
     },
     {
       "Index": 12,
       "Piece": {
-        "Id": "b2a7e774-cad7-4354-bb06-a6f1cb731839",
+        "Id": "ab8e7175-4b18-480b-9722-dac19abb1dbd",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -191,7 +206,6 @@
         ],
         "Images": [],
         "Content": {},
-        "Display": {},
         "Type": "Article"
       }
     }

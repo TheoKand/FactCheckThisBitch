@@ -59,16 +59,16 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.lblKeywords.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblKeywords.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblKeywords.ForeColor = System.Drawing.Color.Blue;
-            this.lblKeywords.Location = new System.Drawing.Point(0, 70);
+            this.lblKeywords.Location = new System.Drawing.Point(0, 67);
             this.lblKeywords.Name = "lblKeywords";
-            this.lblKeywords.Size = new System.Drawing.Size(176, 52);
+            this.lblKeywords.Size = new System.Drawing.Size(176, 68);
             this.lblKeywords.TabIndex = 7;
             this.lblKeywords.Text = "Vaccine\r\nImmunity";
             this.lblKeywords.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnLabel
             // 
-            this.btnLabel.Location = new System.Drawing.Point(11, 24);
+            this.btnLabel.Location = new System.Drawing.Point(11, 21);
             this.btnLabel.Name = "btnLabel";
             this.btnLabel.Size = new System.Drawing.Size(152, 43);
             this.btnLabel.TabIndex = 8;
@@ -83,12 +83,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Controls.Add(this.btnLabel);
             this.Controls.Add(this.lblKeywords);
+            this.Controls.Add(this.btnLabel);
             this.Controls.Add(this.lblType);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "PuzzlePieceUI";
-            this.Size = new System.Drawing.Size(176, 122);
+            this.Size = new System.Drawing.Size(176, 135);
             this.ResumeLayout(false);
 
         }

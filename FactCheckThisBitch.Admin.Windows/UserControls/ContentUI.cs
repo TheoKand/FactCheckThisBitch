@@ -44,8 +44,15 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             {
                 var txt = Controls.Find($"txt{prop.Name}", true).First() as TextBoxWithValidation;
 
-                var newValue = Convert.ChangeType(txt.Text, prop.PropertyType);
-                prop.SetValue(_content,newValue);
+                try
+                {
+                    var newValue = Convert.ChangeType(txt.Text, prop.PropertyType);
+                    prop.SetValue(_content, newValue);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
             }
         }
 

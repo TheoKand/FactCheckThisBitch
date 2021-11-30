@@ -30,7 +30,8 @@
         },
         "Display": {},
         "Type": "Definition"
-      }
+      },
+      "Valid": true
     },
     {
       "Index": 2,
@@ -39,16 +40,19 @@
         "Title": "Are there any striking similarities in Recombinant DNA technology and Covid Vaccines",
         "Thesis": "Recombinant DNA is inserted in host cells and these cells then produce new proteins that would not be produced without the inserted DNA",
         "Keywords": [
-          "GMO",
-          "Cell",
+          "Vaccine",
+          "cell",
           "mRNA",
-          "Genes"
+          "Genes",
+          "GMO"
         ],
         "Images": [
           "are-covid-vaccines-really-vaccines-guid1.png",
           "are-covid-vaccines-really-vaccines-guid2.png"
         ],
         "Content": {
+          "Organization": "",
+          "Author": "",
           "Title": "The Basics of Recombinant DNA",
           "Summary": "",
           "Source": "Rensselaer Polytechnic Institute (RPI)",
@@ -60,10 +64,11 @@
         },
         "Display": {},
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
-      "Index": 7,
+      "Index": 5,
       "Piece": {
         "Id": "898b2b44-ddc3-4d2f-991c-770098bf8b3f",
         "Title": "GMO crops and foods are made with Recombinant DNA Technology",
@@ -88,10 +93,11 @@
         },
         "Display": {},
         "Type": "Definition"
-      }
+      },
+      "Valid": true
     },
     {
-      "Index": 3,
+      "Index": 4,
       "Piece": {
         "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
         "Title": "Is it fair to say that Covid mRNA Vaccines hack your human cells into producing non human proteins?",
@@ -119,7 +125,7 @@
       }
     },
     {
-      "Index": 4,
+      "Index": 6,
       "Piece": {
         "Id": "80841d3b-edf8-4ec9-aa62-ce8c9006a716",
         "Title": "",
@@ -142,7 +148,7 @@
       }
     },
     {
-      "Index": 6,
+      "Index": 3,
       "Piece": {
         "Id": "493786ca-b183-439e-88c6-65eeb150330e",
         "Title": "",
@@ -168,30 +174,27 @@
       "Index": 9,
       "Piece": {
         "Id": "19001789-7442-4b77-b982-772b3a2b681c",
-        "Title": "1",
-        "Thesis": "2",
+        "Title": "",
+        "Thesis": "",
         "Keywords": [
-          "3"
+          ""
         ],
         "Images": [
           "5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png"
         ],
         "Content": {
-          "Isbn": "6",
-          "Author": "7",
-          "FromPage": 8,
-          "ToPage": 9,
-          "Title": "1",
-          "Summary": "2",
-          "Source": "3",
-          "Url": "4",
+          "Organization": "",
+          "Author": "",
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
           "References": [
-            "5"
-          ],
-          "DatePublished": "2001-01-01T00:00:00"
+            ""
+          ]
         },
         "Display": {},
-        "Type": "BookExcerpt"
+        "Type": "Article"
       }
     },
     {
@@ -218,7 +221,7 @@
       }
     },
     {
-      "Index": 5,
+      "Index": 7,
       "Piece": {
         "Id": "537e773b-7254-4cc7-8a79-3ac923ecbbb8",
         "Title": "",

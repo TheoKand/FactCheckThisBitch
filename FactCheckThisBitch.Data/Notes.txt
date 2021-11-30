@@ -1,6 +1,8 @@
 ﻿TODO
+-bug: empty keywords
+-custom content fields saves ok in file but doesn't load later
 -validate if fits with neighbours
--show fields for extra content fields
+
 
 
 IDEAS
