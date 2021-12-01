@@ -31,7 +31,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         {
             this.lblType = new System.Windows.Forms.Label();
             this.lblKeywords = new System.Windows.Forms.Label();
-            this.btnLabel = new System.Windows.Forms.Button();
+            this.btnLabel = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // lblType
@@ -42,9 +42,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.lblType.BackColor = System.Drawing.Color.Silver;
             this.lblType.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.lblType.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblType.Location = new System.Drawing.Point(-6, 0);
+            this.lblType.Location = new System.Drawing.Point(3, 0);
             this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(206, 21);
+            this.lblType.Size = new System.Drawing.Size(188, 21);
             this.lblType.TabIndex = 5;
             this.lblType.Text = "Definition";
             this.lblType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -68,24 +68,23 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // btnLabel
             // 
-            this.btnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLabel.Location = new System.Drawing.Point(3, 21);
             this.btnLabel.Name = "btnLabel";
-            this.btnLabel.Size = new System.Drawing.Size(188, 48);
+            this.btnLabel.Size = new System.Drawing.Size(188, 47);
             this.btnLabel.TabIndex = 8;
-            this.btnLabel.Text = "......................Title.......................";
-            this.btnLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnLabel.UseVisualStyleBackColor = true;
-            this.btnLabel.Click += new System.EventHandler(this.btnLabel_Click);
+            this.btnLabel.TabStop = true;
+            this.btnLabel.Text = "linkLabel1";
+            this.btnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLabel.Click += new System.EventHandler(this.btnLabel_Click_1);
             // 
-            // PuzzlePieceUI
+            // PuzzlePieceUi
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Controls.Add(this.lblKeywords);
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnLabel);
+            this.Controls.Add(this.lblKeywords);
             this.Controls.Add(this.lblType);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "PuzzlePieceUi";
@@ -97,6 +96,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         #endregion
         private System.Windows.Forms.Label lblType;
         private System.Windows.Forms.Label lblKeywords;
-        private System.Windows.Forms.Button btnLabel;
+        private System.Windows.Forms.LinkLabel btnLabel;
     }
 }

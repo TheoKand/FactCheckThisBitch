@@ -62,7 +62,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTitle.Size = new System.Drawing.Size(683, 37);
+            this.txtTitle.Size = new System.Drawing.Size(810, 37);
             this.txtTitle.TabIndex = 0;
             // 
             // txtThesis
@@ -74,7 +74,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtThesis.Multiline = true;
             this.txtThesis.Name = "txtThesis";
             this.txtThesis.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtThesis.Size = new System.Drawing.Size(683, 88);
+            this.txtThesis.Size = new System.Drawing.Size(810, 88);
             this.txtThesis.TabIndex = 1;
             // 
             // label2
@@ -98,7 +98,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(587, 648);
+            this.btnSave.Location = new System.Drawing.Point(714, 698);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 47);
@@ -115,7 +115,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.puzzleUi.Location = new System.Drawing.Point(10, 209);
             this.puzzleUi.Name = "puzzleUi";
             this.puzzleUi.Puzzle = null;
-            this.puzzleUi.Size = new System.Drawing.Size(747, 412);
+            this.puzzleUi.Size = new System.Drawing.Size(874, 462);
             this.puzzleUi.TabIndex = 3;
             // 
             // menuStrip1
@@ -125,7 +125,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.openToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(763, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(890, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.TabStop = true;
             this.menuStrip1.Text = "menuStrip1";
@@ -160,7 +160,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 706);
+            this.ClientSize = new System.Drawing.Size(890, 756);
             this.Controls.Add(this.txtSize);
             this.Controls.Add(this.puzzleUi);
             this.Controls.Add(this.btnSave);

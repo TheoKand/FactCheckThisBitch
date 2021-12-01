@@ -13,11 +13,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         public IContent Content
         {
-            get
-            {
-                SaveForm();
-                return _content;
-            }
+            get => _content;
             set
             {
                 _content = value;
@@ -32,7 +28,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             InitializeComponent();
         }
 
-        private void SaveForm()
+        public void SaveForm()
         {
             var properties = _content.PropertiesNotFromInterface();
 

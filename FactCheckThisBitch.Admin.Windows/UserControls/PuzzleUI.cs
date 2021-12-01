@@ -77,7 +77,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                         Top = puzzlePieceY,
                     };
                     puzzlePieceUi.BackColor = puzzlePiece != null && puzzlePiece.Valid
-                        ? SystemColors.Control
+                        ? Color.LightGreen
                         : Color.FromArgb(255, 192, 192);
                     puzzlePieceUi.OnClick = () => OnPieceClicked(piece);
                     puzzlePieceUi.OnDragDrop = OnPieceDragDrop;

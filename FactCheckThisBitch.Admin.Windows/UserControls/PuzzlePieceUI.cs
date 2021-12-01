@@ -33,11 +33,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             lblKeywords.Text = string.Join(Environment.NewLine, _piece.Keywords);
         }
 
-        private void btnLabel_Click(object sender, EventArgs e)
-        {
-            OnClick?.Invoke();
-        }
-
         private void lblType_MouseDown(object sender, MouseEventArgs e)
         {
             lblType.DoDragDrop(_piece, DragDropEffects.All);
@@ -52,6 +47,11 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         {
             var data = e.Data.GetData(typeof(Piece)) as Piece;
             OnDragDrop?.Invoke(data?.Id, _piece.Id);
+        }
+
+        private void btnLabel_Click_1(object sender, EventArgs e)
+        {
+            OnClick?.Invoke();
         }
     }
 }

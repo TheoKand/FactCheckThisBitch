@@ -12,11 +12,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         public IContent Content
         {
-            get
-            {
-                SaveForm();
-                return _content;
-            }
+            get => _content;
             set
             {
                 _content = value;
@@ -30,7 +26,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             InitFormFields();
         }
 
-        private void SaveForm()
+        public void SaveForm()
         {
             _content.Title = txtTitle.Text;
             _content.Summary = txtSummary.Text;

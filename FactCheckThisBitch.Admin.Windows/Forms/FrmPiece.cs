@@ -58,6 +58,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _piece.Images = imageEditor1.Images.ToArray();
             _piece.Type = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
 
+            _baseContentUi.SaveForm();
+            _contentUi.SaveForm();
+
             _piece.Content = _baseContentUi.Content;
         }
 
