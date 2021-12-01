@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using FackCheckThisBitch.Common;
+﻿using FackCheckThisBitch.Common;
 using FactCheckThisBitch.Admin.Windows.UserControls;
 using FactCheckThisBitch.Models;
+using System;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace FactCheckThisBitch.Admin.Windows.Forms
 {
     public partial class FrmPiece : Form
     {
         private Piece _piece;
-        private BaseContentUI _baseContentUi;
-        private ContentUI _contentUI;
-        private bool _loading = false;
+        private BaseContentUi _baseContentUi;
+        private ContentUi _contentUi;
+        private bool _loading;
 
         public FrmPiece(Piece piece)
         {
@@ -50,9 +45,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             imageEditor1.Images = _piece.Images.ToList();
 
             panelContent.Controls.Clear();
-            LoadBaseContentUI();
-            LoadContentUI();
-
+            LoadBaseContentUi();
+            LoadContentUi();
         }
 
         private void SaveForm()
@@ -62,44 +56,38 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _piece.Keywords = txtKeywords.Text.CommaSeparatedListToArray();
             _piece.Images = imageEditor1.Images.ToArray();
             _piece.Images = imageEditor1.Images.ToArray();
-            _piece.Type = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString());
-
-            var baseContent = _baseContentUi.Content;
-            var content = _contentUI.Content;
+            _piece.Type = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
 
             _piece.Content = _baseContentUi.Content;
-
         }
 
-        private void LoadBaseContentUI()
+        private void LoadBaseContentUi()
         {
             lblContent.Text = _piece.Type.ToString();
 
-            _baseContentUi = new BaseContentUI();
+            _baseContentUi = new BaseContentUi();
             _baseContentUi.Content = _piece.Content;
             _baseContentUi.Left = 4;
             _baseContentUi.Top = 12;
             _baseContentUi.Width = panelContent.Width - 8;
 
             panelContent.Controls.Add(_baseContentUi);
-
         }
 
-        private void LoadContentUI()
+        private void LoadContentUi()
         {
-            _contentUI = new ContentUI();
-            _contentUI.Content = _piece.Content;
-            _contentUI.Left = 4;
-            _contentUI.Top = _baseContentUi.Bottom;
-            _contentUI.Width = _baseContentUi.Width - 8;
-            _contentUI.Height = _piece.Content.PropertiesNotFromInterface().Count() * 30;
+            _contentUi = new ContentUi();
+            _contentUi.Content = _piece.Content;
+            _contentUi.Left = 4;
+            _contentUi.Top = _baseContentUi.Bottom;
+            _contentUi.Width = _baseContentUi.Width - 8;
+            _contentUi.Height = _piece.Content.PropertiesNotFromInterface().Count() * 30;
 
-            panelContent.Controls.Add(_contentUI);
+            panelContent.Controls.Add(_contentUi);
         }
-
-
 
         #region events
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -108,13 +96,13 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void cboType_SelectedValueChanged(object sender, EventArgs e)
         {
             if (_loading) return;
-            var newType = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString());
+            var newType = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
             _piece.Type = newType;
+            _piece.ConvertContentToNewTypeAndKeepMetadata();
 
             panelContent.Controls.Clear();
-            LoadBaseContentUI();
-            LoadContentUI();
-
+            LoadBaseContentUi();
+            LoadContentUi();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -124,6 +112,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             DialogResult = DialogResult.OK;
             Close();
         }
+
         #endregion
     }
 }

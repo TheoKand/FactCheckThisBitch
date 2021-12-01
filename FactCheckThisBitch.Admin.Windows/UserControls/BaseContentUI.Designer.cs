@@ -1,7 +1,7 @@
 ﻿
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
-    partial class BaseContentUI
+    partial class BaseContentUi
     {
         /// <summary> 
         /// Required designer variable.
@@ -175,7 +175,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label4);
-            this.Name = "BaseContentUI";
+            this.Name = "BaseContentUi";
             this.Size = new System.Drawing.Size(934, 245);
             this.ResumeLayout(false);
             this.PerformLayout();

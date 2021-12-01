@@ -1,7 +1,7 @@
 ﻿
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
-    partial class ContentUI
+    partial class ContentUi
     {
         /// <summary> 
         /// Required designer variable.
@@ -35,7 +35,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "ContentUI";
+            this.Name = "ContentUi";
             this.Size = new System.Drawing.Size(936, 484);
             this.ResumeLayout(false);
 

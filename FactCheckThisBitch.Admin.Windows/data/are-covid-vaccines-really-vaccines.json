@@ -10,7 +10,7 @@
       "Piece": {
         "Id": "47aaf170-7e50-4085-ae3b-44849fc00ab7",
         "Title": "Wikipedia Definition of a Vaccine",
-        "Thesis": "According to Wikipedia, a vaccine provides <b>immunity</b>. Do Covid Vaccines provide immunity if the vaccinated can catch Covid, get sick, pass it on and even die?",
+        "Thesis": "According to Wikipedia, a vaccine provides <b>immunity</b>",
         "Keywords": [
           "Vaccine",
           "Definition",
@@ -20,37 +20,37 @@
           "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\22b69a8e-a8f3-43f5-8403-d76128123d1e.png"
         ],
         "Content": {
+          "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
           "Title": "Vaccine",
           "Summary": "A vaccine is a biological preparation that provides active acquired immunity to a particular infectious disease.[1] A vaccine typically contains an agent that resembles a disease-causing microorganism and is often made from weakened or killed forms of the microbe, its toxins, or one of its surface proteins. The agent stimulates the body's immune system to recognize the agent as a threat, destroy it, and to further recognize and destroy any of the microorganisms associated with that agent that it may encounter in the future. Vaccines can be prophylactic (to prevent or ameliorate the effects of a future infection by a natural or \"wild\" pathogen), or therapeutic (to fight a disease that has already occurred, such as cancer).[2][3][4][5] Some vaccines offer full sterilizing immunity, in which infection is prevented completely.[6]",
           "Source": "Wikipedia",
           "Url": "https://en.wikipedia.org/wiki/Vaccine",
           "References": [
             "https://www.legis.iowa.gov/docs/iac/rule/657.39.11.pdf"
-          ]
+          ],
+          "DatePublished": "2003-01-01T00:00:00"
         },
         "Display": {},
         "Type": "Definition"
-      },
-      "Valid": true
+      }
     },
     {
-      "Index": 2,
+      "Index": 9,
       "Piece": {
         "Id": "4e714ec0-f4eb-4bcd-a65a-ea27be69984a",
-        "Title": "Are there any striking similarities in Recombinant DNA technology and Covid Vaccines",
+        "Title": "Recombinant DNA is a technology that allows cells to be transformed and produce foreign proteins, from foreign genes",
         "Thesis": "Recombinant DNA is inserted in host cells and these cells then produce new proteins that would not be produced without the inserted DNA",
         "Keywords": [
-          "Vaccine",
-          "cell",
-          "mRNA",
-          "Genes",
-          "GMO"
+          "GMO",
+          "Recombinant DNA",
+          "foreign protein"
         ],
         "Images": [
           "are-covid-vaccines-really-vaccines-guid1.png",
           "are-covid-vaccines-really-vaccines-guid2.png"
         ],
         "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
           "Organization": "",
           "Author": "",
           "Title": "The Basics of Recombinant DNA",
@@ -64,11 +64,10 @@
         },
         "Display": {},
         "Type": "Article"
-      },
-      "Valid": true
+      }
     },
     {
-      "Index": 5,
+      "Index": 8,
       "Piece": {
         "Id": "898b2b44-ddc3-4d2f-991c-770098bf8b3f",
         "Title": "GMO crops and foods are made with Recombinant DNA Technology",
@@ -77,12 +76,13 @@
           "Genetic Engineering",
           "GMO",
           "Recombinant DNA",
-          "rDNA"
+          "Cell"
         ],
         "Images": [
           "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png"
         ],
         "Content": {
+          "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
           "Title": "Genetically modified organism",
           "Summary": "Genetically modified organisms (GMOs) are produced using scientific methods that include recombinant DNA technology and reproductive cloning. In reproductive cloning, a nucleus is extracted from a cell of the individual to be cloned and is inserted into the enucleated cytoplasm of a host egg (an enucleated egg is an egg cell that has had its own nucleus removed).",
           "Source": "Encyclopædia Britannica",
@@ -93,24 +93,29 @@
         },
         "Display": {},
         "Type": "Definition"
-      },
-      "Valid": true
+      }
     },
     {
-      "Index": 4,
+      "Index": 5,
       "Piece": {
         "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
-        "Title": "Is it fair to say that Covid mRNA Vaccines hack your human cells into producing non human proteins?",
-        "Thesis": "Elaborate on your entire thesis here",
+        "Title": "Covid mRNA Vaccines hack your human cells into producing non human proteins",
+        "Thesis": "",
         "Keywords": [
-          "Covid Vaccine",
+          "Vaccine",
           "mRNA",
-          "Gene Therapy"
+          "Gene Therapy",
+          "Gene",
+          "Cell"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\9da54554-3061-4024-aa89-b17e950c4c29.png"
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\9da54554-3061-4024-aa89-b17e950c4c29.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\f328e488-9cec-4bf1-ad72-041a6393a66b.png"
         ],
         "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
           "Title": "Covid mRNA Vaccines are a Form of Gene Therapy",
           "Summary": "",
           "Source": "Sovereign Wealth Fund Institute",
@@ -125,7 +130,7 @@
       }
     },
     {
-      "Index": 6,
+      "Index": 4,
       "Piece": {
         "Id": "80841d3b-edf8-4ec9-aa62-ce8c9006a716",
         "Title": "",
@@ -135,6 +140,67 @@
         ],
         "Images": [],
         "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": [
+            ""
+          ]
+        },
+        "Display": {},
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 2,
+      "Piece": {
+        "Id": "493786ca-b183-439e-88c6-65eeb150330e",
+        "Title": "Vaccinated patients are dying of Covid due to waning immunity",
+        "Thesis": "",
+        "Keywords": [
+          "Vaccine",
+          "Death",
+          "Immunity"
+        ],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\2d728858-80c8-4c86-83bc-1b3649a2625d.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\a070be68-ca5b-4bbe-950b-88f7bb251545.png"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "Independent.co.uk",
+          "Author": "",
+          "Title": "Vaccinated patients are dying of Covid due to waning immunity, says Dr Susan Hopkins",
+          "Summary": "Double-jabbed vulnerable and elderly people are dying from Covid-19 due to the efficacy of the vaccine waning, a senior adviser has said.",
+          "Source": "",
+          "Url": "https://www.independent.co.uk/news/uk/home-news/vaccine-waning-immunity-covid-deaths-b1953158.html",
+          "References": [
+            ""
+          ],
+          "DatePublished": "2021-11-07T00:00:00"
+        },
+        "Display": {},
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 6,
+      "Piece": {
+        "Id": "19001789-7442-4b77-b982-772b3a2b681c",
+        "Title": "",
+        "Thesis": "",
+        "Keywords": [
+          ""
+        ],
+        "Images": [
+          "5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
           "Title": "",
           "Summary": "",
           "Source": "",
@@ -150,56 +216,6 @@
     {
       "Index": 3,
       "Piece": {
-        "Id": "493786ca-b183-439e-88c6-65eeb150330e",
-        "Title": "",
-        "Thesis": "",
-        "Keywords": [
-          ""
-        ],
-        "Images": [],
-        "Content": {
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": [
-            ""
-          ]
-        },
-        "Display": {},
-        "Type": "Article"
-      }
-    },
-    {
-      "Index": 9,
-      "Piece": {
-        "Id": "19001789-7442-4b77-b982-772b3a2b681c",
-        "Title": "",
-        "Thesis": "",
-        "Keywords": [
-          ""
-        ],
-        "Images": [
-          "5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png"
-        ],
-        "Content": {
-          "Organization": "",
-          "Author": "",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": [
-            ""
-          ]
-        },
-        "Display": {},
-        "Type": "Article"
-      }
-    },
-    {
-      "Index": 8,
-      "Piece": {
         "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
         "Title": "",
         "Thesis": "",
@@ -208,16 +224,22 @@
         ],
         "Images": [],
         "Content": {
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
+          "$type": "FactCheckThisBitch.Models.BookExcerpt, FactCheckThisBitch.Models",
+          "Isbn": "6",
+          "Author": "7",
+          "FromPage": 8,
+          "ToPage": 9,
+          "Title": "1",
+          "Summary": "2",
+          "Source": "3",
+          "Url": "4",
           "References": [
-            ""
-          ]
+            "5"
+          ],
+          "DatePublished": "2000-01-01T00:00:00"
         },
         "Display": {},
-        "Type": "Article"
+        "Type": "BookExcerpt"
       }
     },
     {
@@ -231,6 +253,7 @@
         ],
         "Images": [],
         "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
           "Title": "",
           "Summary": "",
           "Source": "",
@@ -254,7 +277,9 @@
           "Second"
         ],
         "Images": [],
-        "Content": {},
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
         "Display": {},
         "Type": "Article"
       }
@@ -270,7 +295,9 @@
           "Second"
         ],
         "Images": [],
-        "Content": {},
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
         "Display": {},
         "Type": "Article"
       }
@@ -286,7 +313,9 @@
           "Second"
         ],
         "Images": [],
-        "Content": {},
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
         "Display": {},
         "Type": "Article"
       }

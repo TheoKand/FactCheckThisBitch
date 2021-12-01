@@ -1,7 +1,7 @@
 ﻿
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
-    partial class PuzzleUI
+    partial class PuzzleUi
     {
         /// <summary> 
         /// Required designer variable.
@@ -35,7 +35,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "PuzzleUI";
+            this.Name = "PuzzleUi";
             this.Size = new System.Drawing.Size(747, 403);
             this.Load += new System.EventHandler(this.PuzzleUI_Load);
             this.ResumeLayout(false);

@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using FackCheckThisBitch.Common;
+using FactCheckThisBitch.Models;
+using System;
 using System.Drawing;
 using System.Linq;
-using System.Reflection;
-using System.Text;
 using System.Windows.Forms;
-using FackCheckThisBitch.Common;
-using FactCheckThisBitch.Models;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
-    public partial class ContentUI : UserControl
+    public partial class ContentUi : UserControl
     {
         private IContent _content;
+
         public IContent Content
         {
             get
@@ -31,7 +27,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             }
         }
 
-        public ContentUI()
+        public ContentUi()
         {
             InitializeComponent();
         }
@@ -46,7 +42,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
                 try
                 {
-                    var newValue = Convert.ChangeType(txt.Text, prop.PropertyType);
+                    var newValue = Convert.ChangeType(txt?.Text, prop.PropertyType);
                     prop.SetValue(_content, newValue);
                 }
                 catch (Exception ex)
@@ -94,13 +90,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
                 index++;
             }
-
         }
-
 
         private void InitForm()
         {
-
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
-    partial class PuzzlePieceUI
+    partial class PuzzlePieceUi
     {
         /// <summary> 
         /// Required designer variable.
@@ -44,7 +44,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.lblType.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblType.Location = new System.Drawing.Point(-6, 0);
             this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(188, 21);
+            this.lblType.Size = new System.Drawing.Size(206, 21);
             this.lblType.TabIndex = 5;
             this.lblType.Text = "Definition";
             this.lblType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -57,22 +57,23 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.lblKeywords.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblKeywords.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblKeywords.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblKeywords.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblKeywords.ForeColor = System.Drawing.Color.Blue;
-            this.lblKeywords.Location = new System.Drawing.Point(0, 67);
+            this.lblKeywords.Location = new System.Drawing.Point(0, 68);
             this.lblKeywords.Name = "lblKeywords";
-            this.lblKeywords.Size = new System.Drawing.Size(176, 68);
+            this.lblKeywords.Size = new System.Drawing.Size(194, 82);
             this.lblKeywords.TabIndex = 7;
-            this.lblKeywords.Text = "Vaccine\r\nImmunity";
+            this.lblKeywords.Text = "Keyword";
             this.lblKeywords.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnLabel
             // 
-            this.btnLabel.Location = new System.Drawing.Point(11, 21);
+            this.btnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLabel.Location = new System.Drawing.Point(3, 21);
             this.btnLabel.Name = "btnLabel";
-            this.btnLabel.Size = new System.Drawing.Size(152, 43);
+            this.btnLabel.Size = new System.Drawing.Size(188, 48);
             this.btnLabel.TabIndex = 8;
-            this.btnLabel.Text = "Wikipedia Definition of a Vaccine";
+            this.btnLabel.Text = "......................Title.......................";
             this.btnLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLabel.UseVisualStyleBackColor = true;
             this.btnLabel.Click += new System.EventHandler(this.btnLabel_Click);
@@ -87,8 +88,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.Controls.Add(this.btnLabel);
             this.Controls.Add(this.lblType);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Name = "PuzzlePieceUI";
-            this.Size = new System.Drawing.Size(176, 135);
+            this.Name = "PuzzlePieceUi";
+            this.Size = new System.Drawing.Size(194, 149);
             this.ResumeLayout(false);
 
         }

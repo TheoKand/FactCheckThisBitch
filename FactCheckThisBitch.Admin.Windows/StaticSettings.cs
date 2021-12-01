@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace FactCheckThisBitch.Admin.Windows
 {
@@ -12,7 +9,7 @@ namespace FactCheckThisBitch.Admin.Windows
             NullValueHandling = NullValueHandling.Ignore,
             DefaultValueHandling = DefaultValueHandling.Ignore,
             Formatting = Formatting.Indented,
-            TypeNameHandling = TypeNameHandling.None
+            TypeNameHandling = TypeNameHandling.Auto
         };
     }
 }

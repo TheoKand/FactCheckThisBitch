@@ -14,29 +14,16 @@ namespace FactCheckThisBitch.Models
         public string[] Images;
         public IContent Content; //depends on type
         public PieceDisplay Display;
-        private PieceType _type;
-
-        public PieceType Type
-        {
-            get => _type;
-            set
-            {
-
-                if (_type == value) return;
-
-                _type = value;
-                this.ConvertContentToNewTypeAndKeepMetadata();
-            }
-        }
+        public PieceType Type;
 
         public Piece()
         {
             Id = Guid.NewGuid().ToString();
             Title = "...Title...";
             Thesis = "...Thesis...";
-            Keywords = new string[] { "First", "Second" };
+            Keywords = new[] {"First", "Second"};
             Images = new string[] { };
-            
+
             Type = PieceType.Article;
             Content = new Article();
         }
@@ -63,7 +50,8 @@ namespace FactCheckThisBitch.Models
         [EnumMember(Value = "Documentary")] Documentary,
         [EnumMember(Value = "WebSearch")] WebSearch,
 
-        [EnumMember(Value = "NewsPaperArticle")] NewsPaperArticle,
+        [EnumMember(Value = "NewsPaperArticle")]
+        NewsPaperArticle,
         [EnumMember(Value = "MyArgument")] MyArgument,
     }
 }

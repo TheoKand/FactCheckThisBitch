@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using FackCheckThisBitch.Common;
+﻿using FackCheckThisBitch.Common;
 using FactCheckThisBitch.Models;
+using System;
+using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
-    public partial class BaseContentUI : UserControl
+    public partial class BaseContentUi : UserControl
     {
         private IContent _content;
+
         public IContent Content
         {
             get
@@ -28,11 +24,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             }
         }
 
-        public BaseContentUI()
+        public BaseContentUi()
         {
             InitializeComponent();
             InitFormFields();
-
         }
 
         private void SaveForm()
@@ -56,11 +51,13 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             txtSummary.Text = _content.Summary;
             txtSource.Text = _content.Source;
             txtUrl.Text = _content.Url;
-            txtReferences.Text = _content.References != null ? string.Join(Environment.NewLine, _content.References) : "";
+            txtReferences.Text =
+                _content.References != null ? string.Join(Environment.NewLine, _content.References) : "";
             txtDatePublished.Text = _content.DatePublished.ToSimpleStringDate();
         }
 
         #region
+
         private void btnUrl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtUrl.Text)) return;
@@ -72,6 +69,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 }
             }.Start();
         }
+
         #endregion
     }
 }

@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+﻿using FactCheckThisBitch.Models;
+using System;
 using System.Windows.Forms;
-using FactCheckThisBitch.Models;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
-    public partial class PuzzlePieceUI : UserControl
+    public partial class PuzzlePieceUi : UserControl
     {
         private Piece _piece;
+
         public Piece Piece
         {
             get => _piece;
@@ -22,15 +18,15 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             }
         }
 
-        public Action OnClick;
-        public Action<string, string> OnDragDrop;
+        public new Action OnClick;
+        public new Action<string, string> OnDragDrop;
 
-        public PuzzlePieceUI()
+        public PuzzlePieceUi()
         {
             InitializeComponent();
         }
 
-        private void Load()
+        private new void Load()
         {
             lblType.Text = _piece.Type.ToString();
             btnLabel.Text = _piece.Title;
@@ -55,7 +51,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private void lblType_DragDrop(object sender, DragEventArgs e)
         {
             var data = e.Data.GetData(typeof(Piece)) as Piece;
-            OnDragDrop?.Invoke(data.Id, _piece.Id);
+            OnDragDrop?.Invoke(data?.Id, _piece.Id);
         }
     }
 }

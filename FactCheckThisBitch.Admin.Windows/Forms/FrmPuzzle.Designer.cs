@@ -35,7 +35,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
-            this.puzzleUi = new FactCheckThisBitch.Admin.Windows.UserControls.PuzzleUI();
+            this.puzzleUi = new FactCheckThisBitch.Admin.Windows.UserControls.PuzzleUi();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -192,7 +192,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSave;
-        private UserControls.PuzzleUI puzzleUi;
+        private UserControls.PuzzleUi puzzleUi;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
