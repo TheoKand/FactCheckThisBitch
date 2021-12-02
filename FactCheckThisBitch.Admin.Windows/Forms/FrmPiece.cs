@@ -53,7 +53,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             _piece.Title = txtTitle.Text;
             _piece.Thesis = txtThesis.Text;
-            _piece.Keywords = txtKeywords.Text.CommaSeparatedListToArray();
+            _piece.Keywords = txtKeywords.Text.ToLower().CommaSeparatedListToArray();
             _piece.Images = imageEditor1.Images.ToArray();
             _piece.Images = imageEditor1.Images.ToArray();
             _piece.Type = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);

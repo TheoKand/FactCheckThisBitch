@@ -1,6 +1,4 @@
 ﻿TODO
--bug: empty keywords
--custom content fields saves ok in file but doesn't load later
 
 
 IDEAS

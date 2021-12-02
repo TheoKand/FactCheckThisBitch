@@ -42,6 +42,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             txtSize.ValidationPattern = "^[3-9]x[3-9]$";
             txtSize.TextChanged = x => SizeChanged();
+            puzzleUi.SaveToDisk = () => SaveToFile();
         }
 
         private void SizeChanged()

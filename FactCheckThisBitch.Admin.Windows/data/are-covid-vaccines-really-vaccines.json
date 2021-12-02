@@ -9,12 +9,12 @@
       "Index": 1,
       "Piece": {
         "Id": "47aaf170-7e50-4085-ae3b-44849fc00ab7",
-        "Title": "Wikipedia Definition of a Vaccine",
+        "Title": "Wikipedia definition of Vaccine",
         "Thesis": "According to Wikipedia, a vaccine provides <b>immunity</b>",
         "Keywords": [
-          "Vaccine",
-          "Definition",
-          "Immunity"
+          "vaccine",
+          "definition",
+          "immunity"
         ],
         "Images": [
           "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\22b69a8e-a8f3-43f5-8403-d76128123d1e.png"
@@ -32,18 +32,20 @@
         },
         "Display": {},
         "Type": "Definition"
-      }
+      },
+      "Valid": true
     },
     {
-      "Index": 9,
+      "Index": 5,
       "Piece": {
         "Id": "4e714ec0-f4eb-4bcd-a65a-ea27be69984a",
-        "Title": "Recombinant DNA is a technology that allows cells to be transformed and produce foreign proteins, from foreign genes",
+        "Title": "Recombinant DNA is a technology that allows cells to produce foreign proteins, from foreign genes",
         "Thesis": "Recombinant DNA is inserted in host cells and these cells then produce new proteins that would not be produced without the inserted DNA",
         "Keywords": [
-          "GMO",
-          "Recombinant DNA",
-          "foreign protein"
+          "gmo",
+          "recombinant dna",
+          "foreign protein",
+          "cell"
         ],
         "Images": [
           "are-covid-vaccines-really-vaccines-guid1.png",
@@ -57,26 +59,25 @@
           "Summary": "",
           "Source": "Rensselaer Polytechnic Institute (RPI)",
           "Url": "https://www.rpi.edu/dept/chem-eng/Biotech-Environ/Projects00/rdna/rdna.html",
-          "References": [
-            ""
-          ],
+          "References": [],
           "DatePublished": "2000-01-09T00:00:00"
         },
         "Display": {},
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
-      "Index": 8,
+      "Index": 6,
       "Piece": {
         "Id": "898b2b44-ddc3-4d2f-991c-770098bf8b3f",
         "Title": "GMO crops and foods are made with Recombinant DNA Technology",
         "Thesis": "",
         "Keywords": [
-          "Genetic Engineering",
-          "GMO",
-          "Recombinant DNA",
-          "Cell"
+          "genetic engineering",
+          "gmo",
+          "recombinant dna",
+          "cell"
         ],
         "Images": [
           "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png"
@@ -87,26 +88,24 @@
           "Summary": "Genetically modified organisms (GMOs) are produced using scientific methods that include recombinant DNA technology and reproductive cloning. In reproductive cloning, a nucleus is extracted from a cell of the individual to be cloned and is inserted into the enucleated cytoplasm of a host egg (an enucleated egg is an egg cell that has had its own nucleus removed).",
           "Source": "Encyclopædia Britannica",
           "Url": "https://www.britannica.com/science/genetically-modified-organism",
-          "References": [
-            ""
-          ]
+          "References": []
         },
         "Display": {},
         "Type": "Definition"
       }
     },
     {
-      "Index": 5,
+      "Index": 4,
       "Piece": {
         "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
         "Title": "Covid mRNA Vaccines hack your human cells into producing non human proteins",
         "Thesis": "",
         "Keywords": [
-          "Vaccine",
-          "mRNA",
-          "Gene Therapy",
-          "Gene",
-          "Cell"
+          "vaccine",
+          "mrna",
+          "gene therapy",
+          "gene",
+          "cell"
         ],
         "Images": [
           "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\9da54554-3061-4024-aa89-b17e950c4c29.png",
@@ -127,42 +126,54 @@
         },
         "Display": {},
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
-      "Index": 4,
+      "Index": 9,
       "Piece": {
         "Id": "80841d3b-edf8-4ec9-aa62-ce8c9006a716",
-        "Title": "",
-        "Thesis": "",
+        "Title": "The FDA demands to have 55 years before they disclose the details of approving Pfizer vaccines",
+        "Thesis": "Seems like the Food And Drug Administration has Pfizers back when it comes to disclosing the data on which the Covid-vaccine approval was based.",
         "Keywords": [
-          ""
+          "fda",
+          "vaccine",
+          "documents",
+          "freedom of information act",
+          "pfizer"
         ],
-        "Images": [],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\ffc733b0-0027-4e26-ac27-d00aea985e87.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\6201dbcb-9a0b-4b47-8216-3118db13ea87.png"
+        ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
+          "Organization": "Reuters",
+          "Author": "Jenna Greene",
+          "Title": "Wait what? FDA wants 55 years to process FOIA request over vaccine data",
+          "Summary": "(Reuters) - Freedom of Information Act requests are rarely speedy, but when a group of scientists asked the federal government to share the data it relied upon in licensing Pfizer’s COVID-19 vaccine, the response went beyond typical bureaucratic foot-dragging.",
+          "Source": "https://www.reuters.com/",
+          "Url": "https://www.reuters.com/legal/government/wait-what-fda-wants-55-years-process-foia-request-over-vaccine-data-2021-11-18/",
           "References": [
-            ""
-          ]
+            "https://www.google.com/search?q=Freedom+of+Information+Act+vaccine+55&rlz=1C1CHBF_en-GBGB977GB977&ei=riGoYaipJonygQbWnpPQBQ&ved=0ahUKEwiouMvf-8P0AhUJecAKHVbPBFoQ4dUDCA8&uact=5&oq=Freedom+of+Information+Act+vaccine+55&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADOgYIABAWEB5KBAhBGABQkQFYqAdgygpoAXACeACAAUSIAcABkgEBM5gBAKABAcgBCMABAQ&sclient=gws-wiz"
+          ],
+          "DatePublished": "2021-11-18T00:00:00"
         },
         "Display": {},
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
-      "Index": 2,
+      "Index": 3,
       "Piece": {
         "Id": "493786ca-b183-439e-88c6-65eeb150330e",
-        "Title": "Vaccinated patients are dying of Covid due to waning immunity",
-        "Thesis": "",
+        "Title": "Covid-Vaccinated patients are dying of Covid due to waning immunity",
+        "Thesis": "A vaccine is supposed to give immunity. Immunity means protection. And yet Covid-vaccinated patients are dying. If it's not a vaccine, what else could it be?",
         "Keywords": [
-          "Vaccine",
-          "Death",
-          "Immunity"
+          "vaccine",
+          "death",
+          "immunity"
         ],
         "Images": [
           "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\2d728858-80c8-4c86-83bc-1b3649a2625d.png",
@@ -176,95 +187,103 @@
           "Summary": "Double-jabbed vulnerable and elderly people are dying from Covid-19 due to the efficacy of the vaccine waning, a senior adviser has said.",
           "Source": "",
           "Url": "https://www.independent.co.uk/news/uk/home-news/vaccine-waning-immunity-covid-deaths-b1953158.html",
-          "References": [
-            ""
-          ],
+          "References": [],
           "DatePublished": "2021-11-07T00:00:00"
         },
         "Display": {},
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
-      "Index": 6,
+      "Index": 8,
       "Piece": {
         "Id": "19001789-7442-4b77-b982-772b3a2b681c",
-        "Title": "",
-        "Thesis": "",
+        "Title": "Do Pharmaceutical giants like Pfizer have a good track record?",
+        "Thesis": "Pfizer is regularly paying huge fines up to billions of dollars for false claims and illegally lobbying governments and doctors to push their products.\r\n\r\nParent Company Name:  Pfizer\r\nPenalty total since 2000:  $4,660,896,333\r\nNumber of records:  71",
         "Keywords": [
-          ""
+          "pfizer",
+          "fines",
+          "penalties",
+          "liability"
         ],
         "Images": [
-          "5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png"
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\3495867c-cff5-4331-b76c-df083370b041.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\c36e0482-9fa8-4e65-8d58-cc05450ef5db.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\0e106dbc-d196-42d2-8959-9af8b835540e.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
+          "Organization": "Good Jobs First",
           "Author": "",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": [
-            ""
-          ]
+          "Title": "Violation Tracker Company Summary: Pfizer",
+          "Summary": "Penalty total since 2000:  $4,660,896,333\r\nNumber of records:  71",
+          "Source": "Good Jobs First",
+          "Url": "https://violationtracker.goodjobsfirst.org/prog.php?parent=pfizer&sort=desc",
+          "References": []
         },
         "Display": {},
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
-      "Index": 3,
+      "Index": 2,
       "Piece": {
         "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
-        "Title": "",
-        "Thesis": "",
+        "Title": "Merriam-webster definition of Immunity",
+        "Thesis": "\"the power to keep yourself from being affected by a disease\" \"the ability of an organism to resist a particular infection or toxin by the action of specific antibodies\"",
         "Keywords": [
-          ""
+          "immunity",
+          "definition"
         ],
-        "Images": [],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\951722d5-b498-4370-b03b-240392d549ef.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\0cd39eae-77ac-44f3-ad86-27fcf04b0e63.png"
+        ],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.BookExcerpt, FactCheckThisBitch.Models",
-          "Isbn": "6",
-          "Author": "7",
-          "FromPage": 8,
-          "ToPage": 9,
-          "Title": "1",
-          "Summary": "2",
-          "Source": "3",
-          "Url": "4",
-          "References": [
-            "5"
-          ],
-          "DatePublished": "2000-01-01T00:00:00"
+          "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
+          "Title": "immunity",
+          "Summary": "the ability of an organism to resist a particular infection or toxin by the action of specific antibodies or sensitized white blood cells.",
+          "Source": "Merriam-webster",
+          "Url": "https://www.merriam-webster.com/dictionary/immunity",
+          "References": []
         },
         "Display": {},
-        "Type": "BookExcerpt"
-      }
+        "Type": "Definition"
+      },
+      "Valid": true
     },
     {
       "Index": 7,
       "Piece": {
         "Id": "537e773b-7254-4cc7-8a79-3ac923ecbbb8",
-        "Title": "",
-        "Thesis": "",
+        "Title": "What is the significance of a therapy labeled a vaccine rather than labeled simply a medical treatment?",
+        "Thesis": "If a medical treatment is labeled a Vaccine, the Pharmaceutical company is not liable for damages. If damages are awarded to an injured vaccine taker, it's the government that is responsible. So the taxpayer is bailing out the Pharmaceutical companies.",
         "Keywords": [
-          ""
+          "vaccine",
+          "injury",
+          "liability"
         ],
-        "Images": [],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\0bf649c2-3bac-4ad8-9827-3d6d3ea22421.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\1f8b33ed-23c6-4bf9-8bf8-6989d8ea99c0.png"
+        ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": [
-            ""
-          ]
+          "Organization": "",
+          "Author": "James Hamblin",
+          "Title": "Why the Government Pays Billions to People Who Claim Injury by Vaccines",
+          "Summary": "A little-known deal protects drug companies in the U.S. from being sued—and feeds conspiracy theories in the process.",
+          "Source": "theatlantic.com",
+          "Url": "https://www.theatlantic.com/health/archive/2019/05/vaccine-safety-program/589354/",
+          "References": [],
+          "DatePublished": "2019-05-14T00:00:00"
         },
         "Display": {},
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
       "Index": 10,

@@ -12,6 +12,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
     {
         private Puzzle _puzzle;
 
+        public Action SaveToDisk;
+
         public Puzzle Puzzle
         {
             get => _puzzle;
@@ -210,6 +212,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             ((PuzzlePieceUi)Controls.Find(piece.Id, true).First()).Piece = piece;
             ValidatePuzzle();
             LoadPieces();
+
+            SaveToDisk?.Invoke();
         }
     }
 }
