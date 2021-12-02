@@ -8,33 +8,20 @@
     {
       "Index": 1,
       "Piece": {
-        "Id": "1b3bbaea-d3d2-4f15-b057-2a3b066b077d",
-        "Title": "1",
-        "Thesis": "2",
+        "Id": "68d788d4-f800-47b9-8e04-ac27095fd693",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
         "Keywords": [
-          "3"
+          "First",
+          "Second"
         ],
         "Images": [],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models",
-          "Uploader": "10",
-          "Channel": "11",
-          "Views": 12,
-          "Likes": 13,
-          "Dislikes": 14,
-          "Comments": 15,
-          "Platform": "16",
-          "Title": "4",
-          "Summary": "5",
-          "Source": "6",
-          "Url": "7",
-          "References": [
-            "8"
-          ],
-          "DatePublished": "2020-01-01T00:00:00"
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
-        "Type": "WebVideo"
-      }
+        "Type": "Article"
+      },
+      "Valid": true
     },
     {
       "Index": 2,
@@ -48,14 +35,14 @@
         ],
         "Images": [],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.BookExcerpt, FactCheckThisBitch.Models",
+          "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models",
           "Title": "Third",
           "Summary": "",
           "Source": "",
           "Url": "",
           "References": []
         },
-        "Type": "BookExcerpt"
+        "Type": "WebVideo"
       },
       "Valid": true
     },
@@ -116,7 +103,8 @@
           "References": []
         },
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
       "Index": 6,
@@ -162,7 +150,7 @@
     {
       "Index": 8,
       "Piece": {
-        "Id": "68d788d4-f800-47b9-8e04-ac27095fd693",
+        "Id": "d4f9dfd0-7bcf-4f78-ba64-1a74dae0366d",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -240,20 +228,33 @@
     {
       "Index": 12,
       "Piece": {
-        "Id": "d4f9dfd0-7bcf-4f78-ba64-1a74dae0366d",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
+        "Id": "1b3bbaea-d3d2-4f15-b057-2a3b066b077d",
+        "Title": "1",
+        "Thesis": "2",
         "Keywords": [
-          "First",
-          "Second"
+          "3"
         ],
         "Images": [],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+          "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models",
+          "Uploader": "10",
+          "Channel": "11",
+          "Views": 12,
+          "Likes": 13,
+          "Dislikes": 14,
+          "Comments": 15,
+          "Platform": "16",
+          "Title": "4",
+          "Summary": "5",
+          "Source": "6",
+          "Url": "7",
+          "References": [
+            "8"
+          ],
+          "DatePublished": "2020-01-01T00:00:00"
         },
-        "Type": "Article"
-      },
-      "Valid": true
+        "Type": "WebVideo"
+      }
     }
   ]
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace FactCheckThisBitch.Models
@@ -37,11 +38,19 @@ namespace FactCheckThisBitch.Models
         {
             InitPieces();
         }
+
+        public void ReorderPieces()
+        {
+            var orderedPieces = PuzzlePieces.OrderBy(pp => pp.Index);
+            PuzzlePieces = orderedPieces.ToList();
+        }
     }
 
     public class PuzzlePiece
     {
         public int Index;
+        public int X;
+        public int Y;
         public Piece Piece;
         public bool Valid;
     }

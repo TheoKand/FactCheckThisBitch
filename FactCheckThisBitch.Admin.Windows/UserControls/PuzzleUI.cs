@@ -11,7 +11,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
     public partial class PuzzleUi : UserControl
     {
         private Puzzle _puzzle;
-
         public Action SaveToDisk;
 
         public Puzzle Puzzle
@@ -23,8 +22,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
                 _puzzle = value;
 
-                ValidatePuzzle();
                 LoadPieces();
+                DecoratePuzzle();
             }
         }
 
@@ -54,18 +53,23 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 for (int y = 1; y <= Puzzle.Height; y++)
                 {
                     var indexOfThisSquare = Puzzle.PieceIndexFromPosition(x, y);
-
                     var puzzlePiece = Puzzle.PuzzlePieces?.First(p => p.Index == indexOfThisSquare);
                     var piece = puzzlePiece?.Piece;
                     if (piece == null)
                     {
                         piece = new Piece();
-                        _puzzle.PuzzlePieces.Add(new PuzzlePiece
+                        puzzlePiece = new PuzzlePiece
                         {
                             Index = indexOfThisSquare,
                             Piece = piece
-                        });
+                        };
+                        _puzzle.PuzzlePieces.Add(puzzlePiece);
                     }
+
+                    puzzlePiece.X = x;
+                    puzzlePiece.Y = y;
+
+                    #region create puzzle piece ui and add to form
 
                     var puzzlePieceX = 5 + (x - 1) * (pieceWidth + padding);
                     var puzzlePieceY = 5 + (y - 1) * (pieceHeight + padding);
@@ -84,6 +88,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     puzzlePieceUi.OnDragDrop = OnPieceDragDrop;
 
                     Controls.Add(puzzlePieceUi);
+
+                    #endregion
                 }
             }
 
@@ -92,7 +98,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private bool PieceHasAllValidNeighbours(Piece piece, List<PuzzlePiece> neighbours)
         {
-
             if (piece.Keywords.Length == 0 ||
                 piece.Keywords.All(string.IsNullOrWhiteSpace))
             {
@@ -116,7 +121,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private bool PieceHasEnoughValidNeighbours(Piece piece, List<PuzzlePiece> neighbours)
         {
-
             if (piece.Keywords.Length == 0 ||
                 piece.Keywords.All(string.IsNullOrWhiteSpace))
             {
@@ -130,7 +134,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             }
             else if (neighbours.Count == 3)
             {
-                maxInvalidNeighbours = 1;
+                maxInvalidNeighbours = 2;
             }
 
             int invalidNeighbours = 0;
@@ -146,11 +150,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             }
 
             return invalidNeighbours <= maxInvalidNeighbours;
-
         }
 
-
-        private void ValidatePuzzle()
+        private void DecoratePuzzle()
         {
             for (int x = 1; x <= Puzzle.Width; x++)
             {
@@ -158,11 +160,48 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 {
                     var indexOfThisSquare = Puzzle.PieceIndexFromPosition(x, y);
                     var puzzlePiece = Puzzle.PuzzlePieces.First(p => p.Index == indexOfThisSquare);
+                    puzzlePiece.X = x;
+                    puzzlePiece.Y = y;
+
                     var neighbours = Puzzle.Neighbours(x, y);
 
-                    puzzlePiece.Valid = UserSettings.Instance().PuzzleMatchingStrict ?
-                        PieceHasAllValidNeighbours(puzzlePiece.Piece, neighbours) :
-                        PieceHasEnoughValidNeighbours(puzzlePiece.Piece, neighbours);
+                    puzzlePiece.Valid = UserSettings.Instance().PuzzleMatchingStrict
+                        ? PieceHasAllValidNeighbours(puzzlePiece.Piece, neighbours)
+                        : PieceHasEnoughValidNeighbours(puzzlePiece.Piece, neighbours);
+
+                    var puzzlePieceUi = (PuzzlePieceUi) Controls.Find(puzzlePiece.Piece.Id, true).First();
+
+                    var leftNeighbour = neighbours.FirstOrDefault(n => n.X == x - 1 && n.Y == y);
+                    if (leftNeighbour != null)
+                    {
+                        bool connectedToLeftNeighbour = HaveAtLeastOneCommonKeyword(leftNeighbour?.Piece.Keywords,
+                            puzzlePiece.Piece.Keywords);
+                        puzzlePieceUi.ConnectedLeft = connectedToLeftNeighbour;
+                    }
+
+                    var rightNeighbour = neighbours.FirstOrDefault(n => n.X == x + 1 && n.Y == y);
+                    if (rightNeighbour != null)
+                    {
+                        bool connectedToRightNeighbour = HaveAtLeastOneCommonKeyword(rightNeighbour?.Piece.Keywords,
+                            puzzlePiece.Piece.Keywords);
+                        puzzlePieceUi.ConnectedRight = connectedToRightNeighbour;
+                    }
+
+                    var topNeighbour = neighbours.FirstOrDefault(n => n.X == x && n.Y == y - 1);
+                    if (topNeighbour != null)
+                    {
+                        bool connectedTopNeighbour = HaveAtLeastOneCommonKeyword(topNeighbour?.Piece.Keywords,
+                            puzzlePiece.Piece.Keywords);
+                        puzzlePieceUi.ConnectedTop = connectedTopNeighbour;
+                    }
+
+                    var bottomNeighbour = neighbours.FirstOrDefault(n => n.X == x && n.Y == y + 1);
+                    if (bottomNeighbour != null)
+                    {
+                        bool connectedBottomNeighbour = HaveAtLeastOneCommonKeyword(bottomNeighbour?.Piece.Keywords,
+                            puzzlePiece.Piece.Keywords);
+                        puzzlePieceUi.ConnectedBottom = connectedBottomNeighbour;
+                    }
                 }
             }
         }
@@ -198,8 +237,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             secondPuzzlePiece.Index = firstPuzzlePiece.Index;
             firstPuzzlePiece.Index = secondPuzzlePieceIndex;
 
-            ValidatePuzzle();
+            Puzzle.ReorderPieces();
             LoadPieces();
+            DecoratePuzzle();
         }
 
         private void OnPieceClicked(Piece piece)
@@ -208,9 +248,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             var result = pieceForm.ShowDialog();
             if (result != DialogResult.OK) return;
 
-            ((PuzzlePieceUi)Controls.Find(piece.Id, true).First()).Piece = piece;
-            ValidatePuzzle();
+            ((PuzzlePieceUi) Controls.Find(piece.Id, true).First()).Piece = piece;
+
             LoadPieces();
+            DecoratePuzzle();
 
             SaveToDisk?.Invoke();
         }

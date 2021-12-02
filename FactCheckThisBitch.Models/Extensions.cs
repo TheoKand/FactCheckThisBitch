@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Reflection;
 
@@ -20,21 +21,7 @@ namespace FactCheckThisBitch.Models
             return (PieceType)Enum.Parse(typeof(PieceType), enumValue);
         }
 
-        public static int PieceIndexFromPosition(this Puzzle puzzle, int x, int y)
-        {
-            int index;
-
-            if (y == 1)
-            {
-                index = x;
-            }
-            else
-            {
-                index = puzzle.Width * (y - 1) + x;
-            }
-
-            return index;
-        }
+        public static int PieceIndexFromPosition(this Puzzle puzzle, int x, int y) => puzzle.Width * (y - 1) + x;
 
         public static void ConvertContentToNewTypeAndKeepMetadata(this Piece piece)
         {

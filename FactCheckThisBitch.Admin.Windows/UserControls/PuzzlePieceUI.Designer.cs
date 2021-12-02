@@ -29,9 +29,18 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PuzzlePieceUi));
             this.lblType = new System.Windows.Forms.Label();
             this.lblKeywords = new System.Windows.Forms.Label();
             this.btnLabel = new System.Windows.Forms.LinkLabel();
+            this.dotTop = new System.Windows.Forms.PictureBox();
+            this.dotRight = new System.Windows.Forms.PictureBox();
+            this.dotBottom = new System.Windows.Forms.PictureBox();
+            this.dotLeft = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dotTop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dotRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dotBottom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dotLeft)).BeginInit();
             this.SuspendLayout();
             // 
             // lblType
@@ -44,7 +53,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.lblType.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblType.Location = new System.Drawing.Point(3, 0);
             this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(215, 24);
+            this.lblType.Size = new System.Drawing.Size(92, 24);
             this.lblType.TabIndex = 5;
             this.lblType.Text = "Definition";
             this.lblType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -64,7 +73,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.lblKeywords.Size = new System.Drawing.Size(222, 112);
             this.lblKeywords.TabIndex = 7;
             this.lblKeywords.Text = "one\r\ntwo\r\nthree\r\nfour\r\nfive\r\nsix";
-            this.lblKeywords.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblKeywords.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnLabel
             // 
@@ -77,11 +86,59 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.btnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLabel.Click += new System.EventHandler(this.btnLabel_Click_1);
             // 
+            // dotTop
+            // 
+            this.dotTop.Image = ((System.Drawing.Image)(resources.GetObject("dotTop.Image")));
+            this.dotTop.Location = new System.Drawing.Point(101, -2);
+            this.dotTop.Name = "dotTop";
+            this.dotTop.Size = new System.Drawing.Size(20, 23);
+            this.dotTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dotTop.TabIndex = 9;
+            this.dotTop.TabStop = false;
+            this.dotTop.Visible = false;
+            // 
+            // dotRight
+            // 
+            this.dotRight.Image = ((System.Drawing.Image)(resources.GetObject("dotRight.Image")));
+            this.dotRight.Location = new System.Drawing.Point(202, 87);
+            this.dotRight.Name = "dotRight";
+            this.dotRight.Size = new System.Drawing.Size(20, 23);
+            this.dotRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dotRight.TabIndex = 10;
+            this.dotRight.TabStop = false;
+            this.dotRight.Visible = false;
+            // 
+            // dotBottom
+            // 
+            this.dotBottom.Image = ((System.Drawing.Image)(resources.GetObject("dotBottom.Image")));
+            this.dotBottom.Location = new System.Drawing.Point(101, 176);
+            this.dotBottom.Name = "dotBottom";
+            this.dotBottom.Size = new System.Drawing.Size(20, 23);
+            this.dotBottom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dotBottom.TabIndex = 11;
+            this.dotBottom.TabStop = false;
+            this.dotBottom.Visible = false;
+            // 
+            // dotLeft
+            // 
+            this.dotLeft.Image = ((System.Drawing.Image)(resources.GetObject("dotLeft.Image")));
+            this.dotLeft.Location = new System.Drawing.Point(0, 87);
+            this.dotLeft.Name = "dotLeft";
+            this.dotLeft.Size = new System.Drawing.Size(20, 23);
+            this.dotLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dotLeft.TabIndex = 12;
+            this.dotLeft.TabStop = false;
+            this.dotLeft.Visible = false;
+            // 
             // PuzzlePieceUi
             // 
             this.AllowDrop = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.dotLeft);
+            this.Controls.Add(this.dotBottom);
+            this.Controls.Add(this.dotRight);
+            this.Controls.Add(this.dotTop);
             this.Controls.Add(this.lblKeywords);
             this.Controls.Add(this.lblType);
             this.Controls.Add(this.btnLabel);
@@ -89,6 +146,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PuzzlePieceUi";
             this.Size = new System.Drawing.Size(222, 199);
+            ((System.ComponentModel.ISupportInitialize)(this.dotTop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dotRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dotBottom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dotLeft)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -97,5 +158,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private System.Windows.Forms.Label lblType;
         private System.Windows.Forms.Label lblKeywords;
         private System.Windows.Forms.LinkLabel btnLabel;
+        private System.Windows.Forms.PictureBox dotTop;
+        private System.Windows.Forms.PictureBox dotRight;
+        private System.Windows.Forms.PictureBox dotBottom;
+        private System.Windows.Forms.PictureBox dotLeft;
     }
 }

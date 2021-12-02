@@ -21,6 +21,27 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         public new Action OnClick;
         public new Action<string, string> OnDragDrop;
 
+        public bool ConnectedTop
+        {
+            get => dotTop.Visible;
+            set => dotTop.Visible = value;
+        }
+        public bool ConnectedLeft
+        {
+            get => dotLeft.Visible;
+            set => dotLeft.Visible = value;
+        }
+        public bool ConnectedRight
+        {
+            get => dotRight.Visible;
+            set => dotRight.Visible = value;
+        }
+        public bool ConnectedBottom
+        {
+            get => dotBottom.Visible;
+            set => dotBottom.Visible = value;
+        }
+
         public PuzzlePieceUi()
         {
             InitializeComponent();
