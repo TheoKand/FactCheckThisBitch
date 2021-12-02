@@ -20,7 +20,6 @@ namespace FactCheckThisBitch.Admin.Windows
         }
 
         private string _lastPuzzle;
-
         public string LastPuzzle
         {
             get => _lastPuzzle;
@@ -30,6 +29,19 @@ namespace FactCheckThisBitch.Admin.Windows
                 Save();
             }
         }
+
+        private bool _puzzleMatchingStrict;
+        public bool PuzzleMatchingStrict
+        {
+            get => _puzzleMatchingStrict;
+            set
+            {
+                _puzzleMatchingStrict = value;
+                Save();
+            }
+        }
+
+        
 
         private void Save()
         {

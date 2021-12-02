@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
-using System.Security.Cryptography.X509Certificates;
-using Newtonsoft.Json;
 using System.Text.RegularExpressions;
-using System.Collections.Generic;
 
 namespace FackCheckThisBitch.Common
 {
@@ -27,7 +24,7 @@ namespace FackCheckThisBitch.Common
 
         public static string[] CommaSeparatedListToArray(this string input)
         {
-            return input.Split(",").Select(x=>x.Trim()).ToArray();
+            return input.Split(",").Where(x=>!string.IsNullOrWhiteSpace(x)).Select(x=>x.Trim()).ToArray();
         }
 
         public static string ToSimpleStringDate(this DateTime? input)

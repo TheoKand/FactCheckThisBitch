@@ -1,21 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
-using System.Text;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace FactCheckThisBitch.Models
 {
     public static class Extensions
     {
-        public static Type ToPieceContentType(this PieceType pieceType)
-        {
-            var enumValue = pieceType.ToString();
-            Type type = Assembly.GetExecutingAssembly().GetType($"FactCheckThisBitch.Models.{enumValue}");
-            return type;
-        }
-
         public static IContent ToPieceContentNewInstance(this PieceType pieceType)
         {
             var enumValue = pieceType.ToString();
@@ -73,6 +64,24 @@ namespace FactCheckThisBitch.Models
             {
                 piece.Content = piece.Type.ToPieceContentNewInstance();
             }
+        }
+
+        public static List<PuzzlePiece> Neighbours(this Puzzle puzzle, int x, int y)
+        {
+            var neighbours = new List<PuzzlePiece>();
+            if (y > 1)
+                neighbours.Add(puzzle.PuzzlePieces.First(p =>
+                    p.Index == puzzle.PieceIndexFromPosition(x, y - 1)));
+            if (x > 1)
+                neighbours.Add(puzzle.PuzzlePieces.First(p =>
+                    p.Index == puzzle.PieceIndexFromPosition(x - 1, y)));
+            if (x < puzzle.Width)
+                neighbours.Add(puzzle.PuzzlePieces.First(p =>
+                    p.Index == puzzle.PieceIndexFromPosition(x + 1, y)));
+            if (y < puzzle.Height)
+                neighbours.Add(puzzle.PuzzlePieces.First(p =>
+                    p.Index == puzzle.PieceIndexFromPosition(x, y + 1)));
+            return neighbours;
         }
 
 

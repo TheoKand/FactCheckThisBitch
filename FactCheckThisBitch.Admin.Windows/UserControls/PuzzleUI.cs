@@ -89,6 +89,66 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.ResumeLayout();
         }
 
+        private bool PieceHasAllValidNeighbours(Piece piece, List<PuzzlePiece> neighbours)
+        {
+
+            if (piece.Keywords.Length == 0 ||
+                piece.Keywords.All(string.IsNullOrWhiteSpace))
+            {
+                return false;
+            }
+
+            bool atLeastOneConnectedPieceWithoutCommonKeywords = false;
+            foreach (var connectedPiece in neighbours)
+            {
+                bool haveCommonKeyWords =
+                    HaveAtLeastOneCommonKeyword(piece.Keywords, connectedPiece.Piece.Keywords);
+
+                if (!haveCommonKeyWords)
+                {
+                    atLeastOneConnectedPieceWithoutCommonKeywords = true;
+                }
+            }
+
+            return !atLeastOneConnectedPieceWithoutCommonKeywords;
+        }
+
+        private bool PieceHasEnoughValidNeighbours(Piece piece, List<PuzzlePiece> neighbours)
+        {
+
+            if (piece.Keywords.Length == 0 ||
+                piece.Keywords.All(string.IsNullOrWhiteSpace))
+            {
+                return false;
+            }
+
+            var maxInvalidNeighbours = 1;
+            if (neighbours.Count == 4)
+            {
+                maxInvalidNeighbours = 2;
+            }
+            else if (neighbours.Count == 3)
+            {
+                maxInvalidNeighbours = 1;
+            }
+
+            int invalidNeighbours = 0;
+            foreach (var connectedPiece in neighbours)
+            {
+                bool haveCommonKeyWords =
+                    HaveAtLeastOneCommonKeyword(piece.Keywords, connectedPiece.Piece.Keywords);
+
+                if (!haveCommonKeyWords)
+                {
+                    invalidNeighbours++;
+                }
+            }
+
+            return invalidNeighbours <= maxInvalidNeighbours;
+
+        }
+
+
         private void ValidatePuzzle()
         {
             for (int x = 1; x <= Puzzle.Width; x++)
@@ -97,42 +157,11 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 {
                     var indexOfThisSquare = Puzzle.PieceIndexFromPosition(x, y);
                     var puzzlePiece = Puzzle.PuzzlePieces.First(p => p.Index == indexOfThisSquare);
+                    var neighbours = Puzzle.Neighbours(x, y);
 
-                    if (puzzlePiece.Piece.Keywords.Length == 0 ||
-                        puzzlePiece.Piece.Keywords.All(k => string.IsNullOrWhiteSpace(k)))
-                    {
-                        puzzlePiece.Valid = false;
-                        continue;
-                    }
-
-                    var connectsWith = new List<PuzzlePiece>();
-                    if (y > 1)
-                        connectsWith.Add(Puzzle.PuzzlePieces.First(p =>
-                            p.Index == Puzzle.PieceIndexFromPosition(x, y - 1)));
-                    if (x > 1)
-                        connectsWith.Add(Puzzle.PuzzlePieces.First(p =>
-                            p.Index == Puzzle.PieceIndexFromPosition(x - 1, y)));
-                    if (x < Puzzle.Width)
-                        connectsWith.Add(Puzzle.PuzzlePieces.First(p =>
-                            p.Index == Puzzle.PieceIndexFromPosition(x + 1, y)));
-                    if (y < Puzzle.Height)
-                        connectsWith.Add(Puzzle.PuzzlePieces.First(p =>
-                            p.Index == Puzzle.PieceIndexFromPosition(x, y + 1)));
-
-                    //check if it has at least one common keyword with all the pieces it connects with
-                    bool atLeastOneConnectedPieceWithoutCommonKeywords = false;
-                    foreach (var connectedPiece in connectsWith)
-                    {
-                        bool haveCommonKeyWords =
-                            HaveAtLeastOneCommonKeyword(puzzlePiece.Piece.Keywords, connectedPiece.Piece.Keywords);
-
-                        if (!haveCommonKeyWords)
-                        {
-                            atLeastOneConnectedPieceWithoutCommonKeywords = true;
-                        }
-                    }
-
-                    puzzlePiece.Valid = !atLeastOneConnectedPieceWithoutCommonKeywords;
+                    puzzlePiece.Valid = UserSettings.Instance().PuzzleMatchingStrict ?
+                        PieceHasAllValidNeighbours(puzzlePiece.Piece, neighbours) :
+                        PieceHasEnoughValidNeighbours(puzzlePiece.Piece, neighbours);
                 }
             }
         }
@@ -178,7 +207,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             var result = pieceForm.ShowDialog();
             if (result != DialogResult.OK) return;
 
-            ((PuzzlePieceUi) Controls.Find(piece.Id, true).First()).Piece = piece;
+            ((PuzzlePieceUi)Controls.Find(piece.Id, true).First()).Piece = piece;
             ValidatePuzzle();
             LoadPieces();
         }

@@ -1,0 +1,254 @@
+{
+  "Title": "New created at 01/12/2021 23:15:55",
+  "Thesis": "",
+  "Width": 4,
+  "Height": 3,
+  "PuzzlePieces": [
+    {
+      "Index": 1,
+      "Piece": {
+        "Id": "1b3bbaea-d3d2-4f15-b057-2a3b066b077d",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [
+          "First"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": []
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 2,
+      "Piece": {
+        "Id": "da05ca87-1799-4732-abe1-e26135134c1b",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [
+          "Third",
+          "First"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "Third",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": []
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 3,
+      "Piece": {
+        "Id": "f85ad141-979c-4b31-9934-f3e95f649eb4",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [
+          "First",
+          "Second"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 4,
+      "Piece": {
+        "Id": "fb83047e-9a9a-49dd-9083-cdd439c3e123",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [
+          "First",
+          "Second"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 5,
+      "Piece": {
+        "Id": "9288d429-8ae0-4a3d-b532-f52b462ec72b",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [
+          "First"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": []
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 6,
+      "Piece": {
+        "Id": "c6f4b175-b31b-49e6-8a92-8f89a285c8f0",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [
+          "Third"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": []
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 7,
+      "Piece": {
+        "Id": "95171f6e-9744-4bb8-b8d6-3e1d7775ad81",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [
+          "First",
+          "Second"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 8,
+      "Piece": {
+        "Id": "68d788d4-f800-47b9-8e04-ac27095fd693",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [
+          "First",
+          "Second"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 9,
+      "Piece": {
+        "Id": "1483f138-9432-4ce2-ba72-85c81bcb3e6d",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [
+          "First",
+          "Second"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 10,
+      "Piece": {
+        "Id": "4934a8a6-5610-44cb-af8d-9681228772ed",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [
+          "First"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": []
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 11,
+      "Piece": {
+        "Id": "705b0413-8a6a-4cc7-8608-c6758f8f56c4",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [
+          "First",
+          "Second"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 12,
+      "Piece": {
+        "Id": "d4f9dfd0-7bcf-4f78-ba64-1a74dae0366d",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [
+          "First",
+          "Second"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    }
+  ]
+}
