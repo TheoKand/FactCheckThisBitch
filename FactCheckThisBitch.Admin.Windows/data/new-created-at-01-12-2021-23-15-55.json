@@ -48,14 +48,14 @@
         ],
         "Images": [],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.NewsPaperArticle, FactCheckThisBitch.Models",
+          "$type": "FactCheckThisBitch.Models.BookExcerpt, FactCheckThisBitch.Models",
           "Title": "Third",
           "Summary": "",
           "Source": "",
           "Url": "",
           "References": []
         },
-        "Type": "NewsPaperArticle"
+        "Type": "BookExcerpt"
       },
       "Valid": true
     },

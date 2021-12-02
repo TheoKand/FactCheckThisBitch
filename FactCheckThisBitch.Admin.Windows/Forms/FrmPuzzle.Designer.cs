@@ -116,6 +116,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.puzzleUi.Location = new System.Drawing.Point(4, 274);
+            this.puzzleUi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.puzzleUi.Name = "puzzleUi";
             this.puzzleUi.Puzzle = null;
             this.puzzleUi.Size = new System.Drawing.Size(903, 500);

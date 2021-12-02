@@ -84,7 +84,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _contentUi.Left = 4;
             _contentUi.Top = _baseContentUi.Bottom;
             _contentUi.Width = _baseContentUi.Width - 8;
-            _contentUi.Height = _piece.Content.PropertiesNotFromInterface().Count() * 30;
+            _contentUi.Height = _piece.Content.PropertiesNotFromInterface().Count() * 30 +10;
 
             panelContent.Controls.Add(_contentUi);
         }

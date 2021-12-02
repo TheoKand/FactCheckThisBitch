@@ -45,8 +45,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
             if (_puzzle == null) return;
 
-            const int leftMargin = 50;
-            const int topMargin = 50;
+            const int padding = 50;
             const int pieceWidth = 194;
             const int pieceHeight = 170;
 
@@ -68,8 +67,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                         });
                     }
 
-                    var puzzlePieceX = leftMargin + (x - 1) * (pieceWidth + leftMargin);
-                    var puzzlePieceY = topMargin + (y - 1) * (pieceHeight + topMargin);
+                    var puzzlePieceX = 5 + (x - 1) * (pieceWidth + padding);
+                    var puzzlePieceY = 5 + (y - 1) * (pieceHeight + padding);
 
                     PuzzlePieceUi puzzlePieceUi = new PuzzlePieceUi()
                     {
