@@ -31,12 +31,11 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         {
             this.SuspendLayout();
             // 
-            // ContentUI
+            // ContentUi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Name = "ContentUi";
-            this.Size = new System.Drawing.Size(936, 484);
+            this.Size = new System.Drawing.Size(527, 334);
             this.ResumeLayout(false);
 
         }

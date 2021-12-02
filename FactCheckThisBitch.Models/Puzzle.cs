@@ -11,8 +11,6 @@ namespace FactCheckThisBitch.Models
         public string Conclusion;
         public int Width = 4;
         public int Height = 3;
-
-
         public PuzzlePiece OnePiece;
         public List<PuzzlePiece> PuzzlePieces;
 
@@ -32,9 +30,7 @@ namespace FactCheckThisBitch.Models
                     };
                     PuzzlePieces.Add(puzzlePiece);
                 }
-
             }
-
         }
 
         public void Resize()

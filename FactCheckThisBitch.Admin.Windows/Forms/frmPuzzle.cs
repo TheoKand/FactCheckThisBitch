@@ -62,6 +62,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
             txtTitle.Text = _puzzle.Title;
             txtThesis.Text = _puzzle.Thesis;
+            txtConclusion.Text = _puzzle.Conclusion;
             txtSize.Text = $"{_puzzle.Width}x{_puzzle.Height}";
 
             puzzleUi.Puzzle = _puzzle;
@@ -97,6 +98,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             _puzzle.Title = txtTitle.Text;
             _puzzle.Thesis = txtThesis.Text;
+            _puzzle.Conclusion = txtConclusion.Text;
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
             _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
         }

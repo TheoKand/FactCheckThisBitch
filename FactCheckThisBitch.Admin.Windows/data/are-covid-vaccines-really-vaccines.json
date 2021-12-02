@@ -10,7 +10,7 @@
       "Piece": {
         "Id": "47aaf170-7e50-4085-ae3b-44849fc00ab7",
         "Title": "Wikipedia definition of Vaccine",
-        "Thesis": "According to Wikipedia, a vaccine provides <b>immunity</b>",
+        "Thesis": "According to Wikipedia, a vaccine has two characteristics:  Provides <b>immunity</b> and contains a <b>weakened or killed form of a virus</b>",
         "Keywords": [
           "vaccine",
           "definition",
@@ -39,7 +39,7 @@
       "Index": 5,
       "Piece": {
         "Id": "4e714ec0-f4eb-4bcd-a65a-ea27be69984a",
-        "Title": "Recombinant DNA is a technology that allows cells to produce foreign proteins, from foreign genes",
+        "Title": "Recombinant DNA is a technology that allows cells to produce foreign proteins.",
         "Thesis": "Recombinant DNA is inserted in host cells and these cells then produce new proteins that would not be produced without the inserted DNA",
         "Keywords": [
           "gmo",
@@ -134,7 +134,7 @@
       "Piece": {
         "Id": "80841d3b-edf8-4ec9-aa62-ce8c9006a716",
         "Title": "The FDA demands to have 55 years before they disclose the details of approving Pfizer vaccines",
-        "Thesis": "Seems like the Food And Drug Administration has Pfizers back when it comes to disclosing the data on which the Covid-vaccine approval was based.",
+        "Thesis": "Seems like the US Food And Drug Administration has Pfizer's back when it comes to disclosing the data on which the Covid-vaccine approval was based.",
         "Keywords": [
           "fda",
           "vaccine",
@@ -169,7 +169,7 @@
       "Piece": {
         "Id": "493786ca-b183-439e-88c6-65eeb150330e",
         "Title": "Covid-Vaccinated patients are dying of Covid due to waning immunity",
-        "Thesis": "A vaccine is supposed to give immunity. Immunity means protection. And yet Covid-vaccinated patients are dying. If it's not a vaccine, what else could it be?",
+        "Thesis": "A vaccine is supposed to give immunity. Immunity means protection. And yet Covid-vaccinated patients are dying.",
         "Keywords": [
           "vaccine",
           "death",
@@ -209,7 +209,6 @@
         ],
         "Images": [
           "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\3495867c-cff5-4331-b76c-df083370b041.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\c36e0482-9fa8-4e65-8d58-cc05450ef5db.png",
           "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\0e106dbc-d196-42d2-8959-9af8b835540e.png"
         ],
         "Content": {
@@ -232,7 +231,7 @@
       "Piece": {
         "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
         "Title": "Merriam-webster definition of Immunity",
-        "Thesis": "\"the power to keep yourself from being affected by a disease\" \"the ability of an organism to resist a particular infection or toxin by the action of specific antibodies\"",
+        "Thesis": "\"the power to keep yourself from being affected by a disease\" \"the ability of an organism to <B>resist</b> a particular infection or toxin by the action of specific antibodies\"",
         "Keywords": [
           "immunity",
           "definition"
@@ -258,8 +257,8 @@
       "Index": 7,
       "Piece": {
         "Id": "537e773b-7254-4cc7-8a79-3ac923ecbbb8",
-        "Title": "What is the significance of a therapy labeled a vaccine rather than labeled simply a medical treatment?",
-        "Thesis": "If a medical treatment is labeled a Vaccine, the Pharmaceutical company is not liable for damages. If damages are awarded to an injured vaccine taker, it's the government that is responsible. So the taxpayer is bailing out the Pharmaceutical companies.",
+        "Title": "What is the significance of a therapy labeled a vaccine rather than labeled anything else (gene therapy)?",
+        "Thesis": "If a medical treatment is labeled a Vaccine, the Pharmaceutical company is not liable for damages. If damages are awarded to an injured vaccine taker, it's the government that is paying. So basically the taxpayer is bailing out the Pharmaceutical companies.",
         "Keywords": [
           "vaccine",
           "injury",

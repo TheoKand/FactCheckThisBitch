@@ -1,6 +1,7 @@
 {
   "Title": "New created at 01/12/2021 23:15:55",
   "Thesis": "",
+  "Conclusion": "",
   "Width": 4,
   "Height": 3,
   "PuzzlePieces": [
@@ -8,25 +9,32 @@
       "Index": 1,
       "Piece": {
         "Id": "1b3bbaea-d3d2-4f15-b057-2a3b066b077d",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
+        "Title": "1",
+        "Thesis": "2",
         "Keywords": [
-          "First"
+          "3"
         ],
         "Images": [],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": []
+          "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models",
+          "Uploader": "10",
+          "Channel": "11",
+          "Views": 12,
+          "Likes": 13,
+          "Dislikes": 14,
+          "Comments": 15,
+          "Platform": "16",
+          "Title": "4",
+          "Summary": "5",
+          "Source": "6",
+          "Url": "7",
+          "References": [
+            "8"
+          ],
+          "DatePublished": "2020-01-01T00:00:00"
         },
-        "Type": "Article"
-      },
-      "Valid": true
+        "Type": "WebVideo"
+      }
     },
     {
       "Index": 2,
@@ -40,16 +48,14 @@
         ],
         "Images": [],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
+          "$type": "FactCheckThisBitch.Models.NewsPaperArticle, FactCheckThisBitch.Models",
           "Title": "Third",
           "Summary": "",
           "Source": "",
           "Url": "",
           "References": []
         },
-        "Type": "Article"
+        "Type": "NewsPaperArticle"
       },
       "Valid": true
     },
@@ -65,9 +71,9 @@
         ],
         "Images": [],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+          "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models"
         },
-        "Type": "Article"
+        "Type": "WebVideo"
       },
       "Valid": true
     },
@@ -110,8 +116,7 @@
           "References": []
         },
         "Type": "Article"
-      },
-      "Valid": true
+      }
     },
     {
       "Index": 6,

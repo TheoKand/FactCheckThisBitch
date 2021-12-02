@@ -45,10 +45,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
             if (_puzzle == null) return;
 
-            const int leftMargin = 10;
-            const int topMargin = 5;
+            const int leftMargin = 50;
+            const int topMargin = 50;
             const int pieceWidth = 194;
-            const int pieceHeight = 149;
+            const int pieceHeight = 170;
 
             for (int x = 1; x <= Puzzle.Width; x++)
             {

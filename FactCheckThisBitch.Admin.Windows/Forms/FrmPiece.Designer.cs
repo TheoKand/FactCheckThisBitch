@@ -185,9 +185,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelContent.AutoScroll = true;
-            this.panelContent.Location = new System.Drawing.Point(3, 14);
+            this.panelContent.Location = new System.Drawing.Point(6, 10);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(872, 387);
+            this.panelContent.Size = new System.Drawing.Size(863, 385);
             this.panelContent.TabIndex = 0;
             // 
             // lblContent
@@ -231,6 +231,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label1);
             this.Name = "FrmPiece";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Puzzle Piece";
             this.Load += new System.EventHandler(this.FrmPieceEdit_Load);
             this.groupBoxContent.ResumeLayout(false);

@@ -31,12 +31,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         {
             this.SuspendLayout();
             // 
-            // PuzzleUI
+            // PuzzleUi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PuzzleUi";
-            this.Size = new System.Drawing.Size(747, 403);
+            this.Size = new System.Drawing.Size(854, 537);
             this.Load += new System.EventHandler(this.PuzzleUI_Load);
             this.ResumeLayout(false);
 

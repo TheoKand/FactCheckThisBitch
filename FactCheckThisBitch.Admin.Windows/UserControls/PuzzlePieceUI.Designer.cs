@@ -44,7 +44,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.lblType.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblType.Location = new System.Drawing.Point(3, 0);
             this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(188, 18);
+            this.lblType.Size = new System.Drawing.Size(215, 24);
             this.lblType.TabIndex = 5;
             this.lblType.Text = "Definition";
             this.lblType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -59,18 +59,18 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.lblKeywords.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblKeywords.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblKeywords.ForeColor = System.Drawing.Color.Black;
-            this.lblKeywords.Location = new System.Drawing.Point(0, 65);
+            this.lblKeywords.Location = new System.Drawing.Point(0, 87);
             this.lblKeywords.Name = "lblKeywords";
-            this.lblKeywords.Size = new System.Drawing.Size(194, 84);
+            this.lblKeywords.Size = new System.Drawing.Size(222, 112);
             this.lblKeywords.TabIndex = 7;
             this.lblKeywords.Text = "one\r\ntwo\r\nthree\r\nfour\r\nfive\r\nsix";
             this.lblKeywords.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnLabel
             // 
-            this.btnLabel.Location = new System.Drawing.Point(3, 18);
+            this.btnLabel.Location = new System.Drawing.Point(3, 24);
             this.btnLabel.Name = "btnLabel";
-            this.btnLabel.Size = new System.Drawing.Size(188, 47);
+            this.btnLabel.Size = new System.Drawing.Size(215, 63);
             this.btnLabel.TabIndex = 8;
             this.btnLabel.TabStop = true;
             this.btnLabel.Text = "one\r\ntwo\r\nthree\r\n";
@@ -80,15 +80,15 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // PuzzlePieceUi
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lblKeywords);
             this.Controls.Add(this.lblType);
             this.Controls.Add(this.btnLabel);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PuzzlePieceUi";
-            this.Size = new System.Drawing.Size(194, 149);
+            this.Size = new System.Drawing.Size(222, 199);
             this.ResumeLayout(false);
 
         }
