@@ -77,14 +77,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
                     PuzzlePieceUi puzzlePieceUi = new PuzzlePieceUi()
                     {
-                        Piece = piece,
+                        PuzzlePiece = puzzlePiece,
                         Name = piece.Id,
                         Left = puzzlePieceX,
                         Top = puzzlePieceY,
                     };
-                    puzzlePieceUi.BackColor = puzzlePiece != null && puzzlePiece.Valid
-                        ? Color.LightGreen
-                        : Color.FromArgb(255, 192, 192);
+
                     puzzlePieceUi.OnClick = () => OnPieceClicked(piece);
                     puzzlePieceUi.OnDragDrop = OnPieceDragDrop;
 
@@ -162,6 +160,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     var indexOfThisSquare = Puzzle.PieceIndexFromPosition(x, y);
                     var puzzlePiece = Puzzle.PuzzlePieces.First(p => p.Index == indexOfThisSquare);
 
+                    #region find neghbours and establish if the piece connects or not
                     var neighbours = Puzzle.Neighbours(x, y);
 
                     puzzlePiece.Valid = UserSettings.Instance().PuzzleMatchingStrict
@@ -170,6 +169,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
                     var puzzlePieceUi = (PuzzlePieceUi) Controls.Find(puzzlePiece.Piece.Id, true).First();
 
+                    puzzlePieceUi.BackColor = puzzlePiece != null && puzzlePiece.Valid
+                        ? Color.LightGreen
+                        : Color.FromArgb(255, 192, 192);
+                    #endregion
+
+                    #region set dots around the piece
                     var leftNeighbour = neighbours.FirstOrDefault(n => n.X == x - 1 && n.Y == y);
                     if (leftNeighbour != null)
                     {
@@ -201,29 +206,28 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                             puzzlePiece.Piece.Keywords);
                         puzzlePieceUi.ConnectedBottom = connectedBottomNeighbour;
                     }
+                    #endregion
                 }
             }
         }
 
-        private void OnPieceDragDrop(string firstPieceId, string secondPieceId)
+        private void OnPieceDragDrop(int draggedPieceIndex, int destinationPieceIndex)
         {
-            if (firstPieceId == secondPieceId) return;
-
-            var firstPuzzlePiece = _puzzle.PuzzlePieces.First(p => p.Piece.Id == firstPieceId);
-            var secondPuzzlePiece = _puzzle.PuzzlePieces.First(p => p.Piece.Id == secondPieceId);
-
-            (secondPuzzlePiece.Index, firstPuzzlePiece.Index) = (firstPuzzlePiece.Index, secondPuzzlePiece.Index);
-            (secondPuzzlePiece.X, firstPuzzlePiece.X) = (firstPuzzlePiece.X, secondPuzzlePiece.X);
-            (secondPuzzlePiece.Y, firstPuzzlePiece.Y) = (firstPuzzlePiece.Y, secondPuzzlePiece.Y);
+            if (draggedPieceIndex == destinationPieceIndex) return;
+            var dragged = _puzzle.PuzzlePieces.First(p => p.Index == draggedPieceIndex);
+            var destination = _puzzle.PuzzlePieces.First(p => p.Index == destinationPieceIndex);
+            
+            (destination.Index, dragged.Index) = (dragged.Index, destination.Index);
+            (destination.X, dragged.X) = (dragged.X, destination.X);
+            (destination.Y, dragged.Y) = (dragged.Y, destination.Y);
 
             Puzzle.ReorderPieces();
 
-            //var firstPieceUi = ((PuzzlePieceUi) Controls.Find(firstPieceId, true).First());
-            //var secondPieceUi = ((PuzzlePieceUi) Controls.Find(secondPieceId, true).First());
+            var draggedUi = ((PuzzlePieceUi)Controls.Find(dragged.Piece.Id, true).First());
+            var destinationUi = ((PuzzlePieceUi)Controls.Find(destination.Piece.Id, true).First());
 
-            //(secondPieceUi.Location, firstPieceUi.Location) = (firstPieceUi.Location, secondPieceUi.Location);
+            (destinationUi.Location, draggedUi.Location) = (draggedUi.Location, destinationUi.Location);
 
-            
             LoadPieces();
             DecoratePuzzle();
         }
@@ -233,8 +237,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             FrmPiece pieceForm = new FrmPiece(piece);
             var result = pieceForm.ShowDialog();
             if (result != DialogResult.OK) return;
-
-            ((PuzzlePieceUi) Controls.Find(piece.Id, true).First()).Piece = piece;
 
             LoadPieces();
             DecoratePuzzle();

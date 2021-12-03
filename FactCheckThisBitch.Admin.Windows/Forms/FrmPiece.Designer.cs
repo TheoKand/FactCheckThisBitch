@@ -232,7 +232,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.Controls.Add(this.label1);
             this.Name = "FrmPiece";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Puzzle Piece";
+            this.Text = "Puzzle PuzzlePiece";
             this.Load += new System.EventHandler(this.FrmPieceEdit_Load);
             this.groupBoxContent.ResumeLayout(false);
             this.ResumeLayout(false);

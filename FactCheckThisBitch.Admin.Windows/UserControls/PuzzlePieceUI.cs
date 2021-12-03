@@ -6,20 +6,20 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
     public partial class PuzzlePieceUi : UserControl
     {
-        private Piece _piece;
+        private PuzzlePiece _puzzlePiece;
 
-        public Piece Piece
+        public PuzzlePiece PuzzlePiece
         {
-            get => _piece;
+            get => _puzzlePiece;
             set
             {
-                _piece = value;
+                _puzzlePiece = value;
                 Load();
             }
         }
 
         public new Action OnClick;
-        public new Action<string, string> OnDragDrop;
+        public new Action<int, int> OnDragDrop;
 
         public bool ConnectedTop
         {
@@ -49,16 +49,16 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private new void Load()
         {
-            lblType.Text = _piece.Type.ToString();
-            btnLabel.Text = _piece.Title;
-            lblKeywords.Text = string.Join(Environment.NewLine, _piece.Keywords);
+            lblType.Text = _puzzlePiece.Piece.Type.ToString();
+            btnLabel.Text = _puzzlePiece.Piece.Title;
+            lblKeywords.Text = string.Join(Environment.NewLine, _puzzlePiece.Piece.Keywords);
         }
 
         private void lblType_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left && e.Clicks == 1)
             {
-                lblType.DoDragDrop(_piece, DragDropEffects.All);
+                lblType.DoDragDrop(_puzzlePiece.Index, DragDropEffects.All);
             }
         }
 
@@ -69,8 +69,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void lblType_DragDrop(object sender, DragEventArgs e)
         {
-            var data = e.Data.GetData(typeof(Piece)) as Piece;
-            OnDragDrop?.Invoke(data?.Id, _piece.Id);
+            var draggedPieceIndexs = (int)e.Data.GetData(typeof(int));
+            OnDragDrop?.Invoke(draggedPieceIndexs, _puzzlePiece.Index);
         }
 
         private void btnLabel_Click_1(object sender, EventArgs e)

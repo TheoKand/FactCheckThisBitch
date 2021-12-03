@@ -10,10 +10,13 @@
       "X": 1,
       "Y": 1,
       "Piece": {
-        "Id": "3f88fcb7-f539-4d1d-8d1a-dccd47463ff5",
-        "Title": "...Title...",
+        "Id": "c95b99fb-7895-4fc0-a842-c8e5671de33d",
+        "Title": "1",
         "Thesis": "...Thesis...",
-        "Keywords": [],
+        "Keywords": [
+          "first",
+          "second"
+        ],
         "Images": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -26,7 +29,8 @@
           "References": []
         },
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
       "Index": 2,
@@ -246,13 +250,10 @@
       "X": 4,
       "Y": 3,
       "Piece": {
-        "Id": "c95b99fb-7895-4fc0-a842-c8e5671de33d",
-        "Title": "1",
+        "Id": "3f88fcb7-f539-4d1d-8d1a-dccd47463ff5",
+        "Title": "...Title...",
         "Thesis": "...Thesis...",
-        "Keywords": [
-          "first",
-          "second"
-        ],
+        "Keywords": [],
         "Images": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
