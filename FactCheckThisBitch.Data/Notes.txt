@@ -1,7 +1,5 @@
 ﻿TODO
 -button to get metadata from article
--bug: reodering puzzle pieces updates the dots but not the colors.
--bug: renaming a puzzle title doesn't change the filename
 -bug: segment throws error
 
 

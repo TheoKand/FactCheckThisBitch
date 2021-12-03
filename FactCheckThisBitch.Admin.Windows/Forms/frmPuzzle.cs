@@ -97,10 +97,22 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void Save()
         {
             _puzzle.Title = txtTitle.Text;
+            CheckRenameFile();
+
             _puzzle.Thesis = txtThesis.Text;
             _puzzle.Conclusion = txtConclusion.Text;
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
             _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
+        }
+
+        private void CheckRenameFile()
+        {
+            if (_puzzle.Title != _puzzleFileName)
+            {
+                _puzzleFileName = Path.Combine(Configuration.Instance().DataFolder, $"{_puzzle.Title.ToSanitizedString()}.json");
+                UserSettings.Instance().LastPuzzle = _puzzleFileName;
+                this.Text = _puzzle.Title.ToSanitizedString();
+            }
         }
 
         #region Events

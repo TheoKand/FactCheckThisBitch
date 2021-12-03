@@ -1,5 +1,5 @@
 {
-  "Title": "New created at 03/12/2021 15:22:32",
+  "Title": "is this all bullshit",
   "Thesis": "",
   "Conclusion": "",
   "Width": 4,
@@ -10,23 +10,16 @@
       "X": 1,
       "Y": 1,
       "Piece": {
-        "Id": "c95b99fb-7895-4fc0-a842-c8e5671de33d",
-        "Title": "1",
+        "Id": "85f817ff-c6c3-4f41-83f3-f9e68b7d96ba",
+        "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
-          "first",
-          "second"
+          "First",
+          "Second"
         ],
         "Images": [],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": []
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
         "Type": "Article"
       },
@@ -37,23 +30,16 @@
       "X": 2,
       "Y": 1,
       "Piece": {
-        "Id": "d4d0bf76-0503-496e-9d9e-ef235d181f79",
-        "Title": "2",
+        "Id": "03e11cf2-48cd-453d-b978-528574bd4bc2",
+        "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
-          "first",
-          "second"
+          "First",
+          "Second"
         ],
         "Images": [],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": []
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
         "Type": "Article"
       },
@@ -64,7 +50,7 @@
       "X": 3,
       "Y": 1,
       "Piece": {
-        "Id": "0282fd7c-9798-4e3a-a7ba-2195df6b8d38",
+        "Id": "dcd198b7-6fb7-4919-9736-a867d61dab4c",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -84,7 +70,7 @@
       "X": 4,
       "Y": 1,
       "Piece": {
-        "Id": "0529f67a-554b-469c-b8a5-73444b06abf4",
+        "Id": "36a949fe-feab-44e6-9ee4-c2885ba0e050",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -104,7 +90,7 @@
       "X": 1,
       "Y": 2,
       "Piece": {
-        "Id": "12bc6e01-01e1-4372-946a-e0698f1ef995",
+        "Id": "e15c1793-00f7-4222-8e44-1dab4c22b29b",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -124,7 +110,7 @@
       "X": 2,
       "Y": 2,
       "Piece": {
-        "Id": "b172ca4c-149c-4336-9e51-29371f9da87e",
+        "Id": "567fdb1f-fac6-48cc-999a-fbbe4a3f7839",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -144,7 +130,7 @@
       "X": 3,
       "Y": 2,
       "Piece": {
-        "Id": "8f98c58e-9d0b-4bde-b322-ccaf5bd904ad",
+        "Id": "c83a039a-4049-45d1-a32f-eaaf95732635",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -164,30 +150,27 @@
       "X": 4,
       "Y": 2,
       "Piece": {
-        "Id": "945c7ca9-2eb9-442c-a1e4-35fec9847746",
+        "Id": "0f6e7261-ba54-4ef7-b9f9-b3070b4aa22c",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
-        "Keywords": [],
+        "Keywords": [
+          "First",
+          "Second"
+        ],
         "Images": [],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": []
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
       "Index": 9,
       "X": 1,
       "Y": 3,
       "Piece": {
-        "Id": "99d3ff9f-a9d6-473a-9146-76beb171c9d7",
+        "Id": "27f4761a-eecd-438b-901a-d6ddcd28b2b2",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -207,7 +190,7 @@
       "X": 2,
       "Y": 3,
       "Piece": {
-        "Id": "c509799e-3584-49cc-a00f-f0d517b3bfc1",
+        "Id": "8e37443f-52ba-4e69-b1e1-a201e60363ed",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
         "Keywords": [
@@ -227,46 +210,40 @@
       "X": 3,
       "Y": 3,
       "Piece": {
-        "Id": "de843544-c766-4066-bb13-37a64a807cd6",
+        "Id": "db36cf5e-9c90-45cb-980d-864c64caf6d2",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
-        "Keywords": [],
+        "Keywords": [
+          "First",
+          "Second"
+        ],
         "Images": [],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": []
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
       "Index": 12,
       "X": 4,
       "Y": 3,
       "Piece": {
-        "Id": "3f88fcb7-f539-4d1d-8d1a-dccd47463ff5",
+        "Id": "75cef18d-5424-4e69-b08b-8862b5b93b1d",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
-        "Keywords": [],
+        "Keywords": [
+          "First",
+          "Second"
+        ],
         "Images": [],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": []
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
         "Type": "Article"
-      }
+      },
+      "Valid": true
     }
   ]
 }
