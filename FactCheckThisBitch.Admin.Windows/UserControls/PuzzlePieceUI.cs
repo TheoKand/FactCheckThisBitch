@@ -56,7 +56,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void lblType_MouseDown(object sender, MouseEventArgs e)
         {
-            lblType.DoDragDrop(_piece, DragDropEffects.All);
+            if (e.Button == MouseButtons.Left && e.Clicks == 1)
+            {
+                lblType.DoDragDrop(_piece, DragDropEffects.All);
+            }
         }
 
         private void lblType_DragEnter(object sender, DragEventArgs e)

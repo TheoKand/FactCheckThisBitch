@@ -1,82 +1,134 @@
 {
-  "Title": "New created at 01/12/2021 23:15:55",
-  "Thesis": "",
+  "Title": "Should we trust the World Health Organization? Surely they have the world's health in mind.",
+  "Thesis": "Are there any smokings guns about this non goverment organization having been compromized and not working for us anymore?",
   "Conclusion": "",
   "Width": 4,
   "Height": 3,
   "PuzzlePieces": [
     {
       "Index": 1,
+      "X": 1,
+      "Y": 1,
       "Piece": {
         "Id": "68d788d4-f800-47b9-8e04-ac27095fd693",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
+        "Title": "How is the World Health Organization funded? In their own website they answer this for us.",
+        "Thesis": "- The membership fee of countries accounts for less than a quarter of the financing.\r\n- \"Voluntary contributions\" make up the bulk of it, and it comes from intergovernmental organizations and \"philanthropic foundations\". Who would that be?",
         "Keywords": [
-          "First",
-          "Second"
+          "who",
+          "funding",
+          "philanthropic foundation"
         ],
-        "Images": [],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\ee48cdd7-cebc-4c12-b3c6-b19d0fdb2ce0.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\2a870470-1a41-46be-bdc7-6de3dda648d3.png"
+        ],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "How WHO is funded",
+          "Summary": "",
+          "Source": "World Health Organizations",
+          "Url": "https://www.who.int/about/funding",
+          "References": []
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 2,
+      "X": 2,
+      "Y": 1,
+      "Piece": {
+        "Id": "d4f9dfd0-7bcf-4f78-ba64-1a74dae0366d",
+        "Title": "Does the great philanthropist have any other ties with the vaccine industry or is he just funding the WHO?",
+        "Thesis": "So Bill is funding the WHO and also invests in Moderna. Then the WHO declares a pandemic and that drives Moderna's stock through the roof, making billions for the great philanthropist. Best investment he ever made apparently.",
+        "Keywords": [
+          "moderna",
+          "vaccine",
+          "stock",
+          "investment",
+          "bill & melinda gates foundation"
+        ],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\f7ff41b0-af8d-44c3-be31-f5b91692b6be.png"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "Moderna Wins Initial $20M Grant from Gates Foundation",
+          "Summary": "",
+          "Source": "Genetic Engineering & Biotechnology News",
+          "Url": "https://www.genengnews.com/topics/omics/moderna-wins-initial-20m-grant-from-gates-foundation/",
+          "References": [],
+          "DatePublished": "2016-01-12T00:00:00"
         },
         "Type": "Article"
       },
       "Valid": true
     },
     {
-      "Index": 2,
-      "Piece": {
-        "Id": "da05ca87-1799-4732-abe1-e26135134c1b",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
-        "Keywords": [
-          "Third",
-          "First"
-        ],
-        "Images": [],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models",
-          "Title": "Third",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": []
-        },
-        "Type": "WebVideo"
-      },
-      "Valid": true
-    },
-    {
       "Index": 3,
+      "X": 3,
+      "Y": 1,
       "Piece": {
         "Id": "f85ad141-979c-4b31-9934-f3e95f649eb4",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
+        "Title": "2010 - 2020 the decade of the Vaccine??",
+        "Thesis": "Bill couldn't keep viruses out of his Windows operating system. Nevertheless tackling human viruses and pledging billions to vaccinate the entire world. Is it philanthropy or investment?",
         "Keywords": [
-          "First",
-          "Second"
+          "bill & melinda gates foundation",
+          "decade of the vaccine",
+          "funding"
         ],
-        "Images": [],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\ad4c14d8-b421-4306-82ca-750d0b461dfe.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\1f36362a-3797-4362-98fa-c4f1db4b8d80.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\2d8e7ad3-a2c3-405e-bb0e-3a5e634984dd.png"
+        ],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models"
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "Bill and Melinda Gates Pledge $10 Billion in Call for Decade of Vaccines",
+          "Summary": "",
+          "Source": "Bill & Melinda Gates Foundation",
+          "Url": "",
+          "References": [
+            "https://www.gatesfoundation.org/ideas/media-center/press-releases/2010/01/bill-and-melinda-gates-pledge-$10-billion-in-call-for-decade-of-vaccines"
+          ],
+          "DatePublished": "2010-01-29T00:00:00"
         },
-        "Type": "WebVideo"
+        "Type": "Article"
       },
       "Valid": true
     },
     {
       "Index": 4,
+      "X": 4,
+      "Y": 1,
       "Piece": {
         "Id": "fb83047e-9a9a-49dd-9083-cdd439c3e123",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
+        "Title": "Bill Gates: The Best Investment I’ve Ever Made",
+        "Thesis": "",
         "Keywords": [
-          "First",
-          "Second"
+          "bill & melinda gates foundation",
+          "investment",
+          "vaccines"
         ],
-        "Images": [],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\b0300575-517f-4450-a048-b79ca1b57209.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\756f65a8-751f-4e9e-b566-213bc7e8a1af.png"
+        ],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "Bill Gates: The Best Investment I’ve Ever Made",
+          "Summary": "",
+          "Source": "",
+          "Url": "https://www.wsj.com/articles/bill-gates-the-best-investment-ive-ever-made-11547683309",
+          "References": []
         },
         "Type": "Article"
       },
@@ -84,13 +136,13 @@
     },
     {
       "Index": 5,
+      "X": 1,
+      "Y": 2,
       "Piece": {
         "Id": "9288d429-8ae0-4a3d-b532-f52b462ec72b",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
-        "Keywords": [
-          "First"
-        ],
+        "Keywords": [],
         "Images": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -103,18 +155,17 @@
           "References": []
         },
         "Type": "Article"
-      },
-      "Valid": true
+      }
     },
     {
       "Index": 6,
+      "X": 2,
+      "Y": 2,
       "Piece": {
-        "Id": "c6f4b175-b31b-49e6-8a92-8f89a285c8f0",
+        "Id": "4934a8a6-5610-44cb-af8d-9681228772ed",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
-        "Keywords": [
-          "Third"
-        ],
+        "Keywords": [],
         "Images": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -131,67 +182,13 @@
     },
     {
       "Index": 7,
+      "X": 3,
+      "Y": 2,
       "Piece": {
-        "Id": "95171f6e-9744-4bb8-b8d6-3e1d7775ad81",
+        "Id": "c6f4b175-b31b-49e6-8a92-8f89a285c8f0",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
-        "Keywords": [
-          "First",
-          "Second"
-        ],
-        "Images": [],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "Type": "Article"
-      },
-      "Valid": true
-    },
-    {
-      "Index": 8,
-      "Piece": {
-        "Id": "d4f9dfd0-7bcf-4f78-ba64-1a74dae0366d",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
-        "Keywords": [
-          "First",
-          "Second"
-        ],
-        "Images": [],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "Type": "Article"
-      },
-      "Valid": true
-    },
-    {
-      "Index": 9,
-      "Piece": {
-        "Id": "1483f138-9432-4ce2-ba72-85c81bcb3e6d",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
-        "Keywords": [
-          "First",
-          "Second"
-        ],
-        "Images": [],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "Type": "Article"
-      },
-      "Valid": true
-    },
-    {
-      "Index": 10,
-      "Piece": {
-        "Id": "4934a8a6-5610-44cb-af8d-9681228772ed",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
-        "Keywords": [
-          "First"
-        ],
+        "Keywords": [],
         "Images": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -204,29 +201,114 @@
           "References": []
         },
         "Type": "Article"
-      },
-      "Valid": true
+      }
     },
     {
-      "Index": 11,
+      "Index": 8,
+      "X": 4,
+      "Y": 2,
       "Piece": {
-        "Id": "705b0413-8a6a-4cc7-8608-c6758f8f56c4",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
+        "Id": "da05ca87-1799-4732-abe1-e26135134c1b",
+        "Title": "Is Bill & Melinda Gates Foundation one of the \"philantropists\" funding the WHO? In the foundation's website you can download their grants spreadsheet file.",
+        "Thesis": "There are 470 grants for the WHO, to the sum of over four billion dollars.",
         "Keywords": [
-          "First",
-          "Second"
+          "bill & melinda gates foundation",
+          "philanthropic foundation",
+          "funding"
         ],
-        "Images": [],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\0e0f7743-f5e4-4415-9977-f6702f72a932.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\76940ecc-5ebc-47e6-9ceb-22598705aa49.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\a2d06f7c-51ae-4486-9d88-89bea1dcb20a.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\bacc0c10-e854-40b4-9324-ddb116485631.png"
+        ],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "Committed grants",
+          "Summary": "This database includes grant commitments made by the Bill & Melinda Gates Foundation and previous foundations of the Gates family (William H. Gates Foundation, Gates Library Foundation, and Gates Learning Foundation) from 1994 onward",
+          "Source": "Bill & Melinda Gates Foundation",
+          "Url": "https://www.gatesfoundation.org/about/committed-grants?q=WHO#jump-nav-anchor0",
+          "References": []
         },
         "Type": "Article"
       },
       "Valid": true
     },
     {
+      "Index": 9,
+      "X": 1,
+      "Y": 3,
+      "Piece": {
+        "Id": "1483f138-9432-4ce2-ba72-85c81bcb3e6d",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": []
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 10,
+      "X": 2,
+      "Y": 3,
+      "Piece": {
+        "Id": "95171f6e-9744-4bb8-b8d6-3e1d7775ad81",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": []
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 11,
+      "X": 3,
+      "Y": 3,
+      "Piece": {
+        "Id": "705b0413-8a6a-4cc7-8608-c6758f8f56c4",
+        "Title": "...Title...",
+        "Thesis": "...Thesis...",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "",
+          "Summary": "",
+          "Source": "",
+          "Url": "",
+          "References": []
+        },
+        "Type": "Article"
+      }
+    },
+    {
       "Index": 12,
+      "X": 4,
+      "Y": 3,
       "Piece": {
         "Id": "1b3bbaea-d3d2-4f15-b057-2a3b066b077d",
         "Title": "1",

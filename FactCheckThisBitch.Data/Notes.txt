@@ -1,6 +1,9 @@
 ﻿TODO
--re order images
+-button to get metadata from article
 -bug: reodering puzzle pieces updates the dots but not the colors.
+-bug: renaming a puzzle title doesn't change the filename
+-bug: segment throws error
+
 
 IDEAS
 
@@ -9,7 +12,7 @@ Is Covid a public health crisis or a politican agenda?
 What makes Covid tick and has it become a business model for countries, organizations and businesses?
 
 1. The WHO Declared a Covid pandemic on 1/1/1
-	- Lobbied and funded by big pharma (not directly. Funded by Bill gates, bill gates has investments in big pharma
+	v Lobbied and funded by big pharma (not directly. Funded by Bill gates, bill gates has investments in big pharma
 		https://www.genengnews.com/topics/omics/moderna-wins-initial-20m-grant-from-gates-foundation/
 	- Have tried fake pandemics in the past
 		https://en.wikipedia.org/wiki/2009_swine_flu_pandemic
@@ -19,7 +22,7 @@ What makes Covid tick and has it become a business model for countries, organiza
 		https://www.france24.com/en/20100103-france-sell-off-millions-surplus-flu-shots
 		http://news.bbc.co.uk/1/hi/health/8606032.stm
 		https://www.dailymail.co.uk/news/article-1263975/Swine-flu--300m-squandered-jabs-didnt-need.html
-	- bill gates foundation funding WHO?
+	v bill gates foundation funding WHO?
 		https://www.who.int/home/search?indexCatalogue=genericsearchindex1&searchQuery=Bill%20%26%20Melinda%20Gates%20Foundation&wordsMode=AllWords
 		https://www.who.int/news/item/06-01-2011-who-receives-funds-for-children-s-medicines-research-with-unicef US$ 9.7 million grant from Gates Foundation to help crucial research on children's medicines
 		https://www.who.int/news/item/29-06-2020-covidtimeline The European Commission, France, Spain, the Republic of Korea and the Bill & Melinda Gates Foundation  pledged US$360 million to COVAX, the Vaccines Pillar of the Access to COVID-19 (ACT) Accelerator
@@ -27,12 +30,13 @@ What makes Covid tick and has it become a business model for countries, organiza
 
 		https://www.gatesfoundation.org/about/committed-grants?q=WHO#jump-nav-anchor0
 		https://www.gatesfoundation.org/-/media/files/bmgf-grants.csv Total grants to WHO is 73,705,183,539.00
-	- Bill gates said "decade of vaccine"
+	v Bill gates said "decade of vaccine"
 		https://www.gatesfoundation.org/ideas/media-center/press-releases/2010/01/bill-and-melinda-gates-pledge-$10-billion-in-call-for-decade-of-vaccines
-	- bill gates said "best investment ever made"
+	v bill gates said "best investment ever made"
 		https://www.wsj.com/articles/bill-gates-the-best-investment-ive-ever-made-11547683309
 	- bill gaets talking about how vaccines will be rolled out to all population
 		https://www.youtube.com/watch?v=u1AQ5EXcJYc&ab_channel=BillGates
+	- bill gates is he wanted for crimes in Africa/ India? Have people revolted against his vaccines?
 	- Bill gates is just the most prominent funder of this agenda. Other organizations also fund the vaccines. He is just a scary clown thrown under
 		the bus cause he's already lost all credibility. What could the system have against him? ties with epstein, in flight log
 			https://www.nytimes.com/2019/10/12/business/jeffrey-epstein-bill-gates.html

@@ -70,6 +70,32 @@ namespace FackCheckThisBitch.Common
             return null;
         }
 
+        public static bool HaveAtLeastOneCommonKeyword(this string[] keywords1, string[] keywords2)
+        {
+            var nonEmptyKeywords1 = keywords1.Where(k => !string.IsNullOrWhiteSpace(k)).ToList();
+            var nonEmptyKeywords2 = keywords2.Where(k => !string.IsNullOrWhiteSpace(k)).ToList();
+
+            if (nonEmptyKeywords1.Count == 0 || nonEmptyKeywords2.Count == 0) return false;
+
+            foreach (string keyword in nonEmptyKeywords1)
+            {
+                string allOfKeywords2 = string.Join(",", nonEmptyKeywords2);
+                if (allOfKeywords2.Contains(keyword,
+                    StringComparison.InvariantCultureIgnoreCase))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public static IList<T> Swap<T>(this IList<T> list, int indexA, int indexB)
+        {
+            (list[indexA], list[indexB]) = (list[indexB], list[indexA]);
+            return list;
+        }
+
 
     }
 }

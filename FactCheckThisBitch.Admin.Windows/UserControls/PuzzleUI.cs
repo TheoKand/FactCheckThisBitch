@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using FackCheckThisBitch.Common;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
@@ -108,7 +109,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             foreach (var connectedPiece in neighbours)
             {
                 bool haveCommonKeyWords =
-                    HaveAtLeastOneCommonKeyword(piece.Keywords, connectedPiece.Piece.Keywords);
+                    piece.Keywords.HaveAtLeastOneCommonKeyword(connectedPiece.Piece.Keywords);
 
                 if (!haveCommonKeyWords)
                 {
@@ -141,7 +142,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             foreach (var connectedPiece in neighbours)
             {
                 bool haveCommonKeyWords =
-                    HaveAtLeastOneCommonKeyword(piece.Keywords, connectedPiece.Piece.Keywords);
+                    piece.Keywords.HaveAtLeastOneCommonKeyword(connectedPiece.Piece.Keywords);
 
                 if (!haveCommonKeyWords)
                 {
@@ -160,8 +161,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 {
                     var indexOfThisSquare = Puzzle.PieceIndexFromPosition(x, y);
                     var puzzlePiece = Puzzle.PuzzlePieces.First(p => p.Index == indexOfThisSquare);
-                    puzzlePiece.X = x;
-                    puzzlePiece.Y = y;
 
                     var neighbours = Puzzle.Neighbours(x, y);
 
@@ -174,7 +173,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     var leftNeighbour = neighbours.FirstOrDefault(n => n.X == x - 1 && n.Y == y);
                     if (leftNeighbour != null)
                     {
-                        bool connectedToLeftNeighbour = HaveAtLeastOneCommonKeyword(leftNeighbour?.Piece.Keywords,
+                        bool connectedToLeftNeighbour = leftNeighbour.Piece.Keywords.HaveAtLeastOneCommonKeyword(
                             puzzlePiece.Piece.Keywords);
                         puzzlePieceUi.ConnectedLeft = connectedToLeftNeighbour;
                     }
@@ -182,7 +181,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     var rightNeighbour = neighbours.FirstOrDefault(n => n.X == x + 1 && n.Y == y);
                     if (rightNeighbour != null)
                     {
-                        bool connectedToRightNeighbour = HaveAtLeastOneCommonKeyword(rightNeighbour?.Piece.Keywords,
+                        bool connectedToRightNeighbour = rightNeighbour.Piece.Keywords.HaveAtLeastOneCommonKeyword(
                             puzzlePiece.Piece.Keywords);
                         puzzlePieceUi.ConnectedRight = connectedToRightNeighbour;
                     }
@@ -190,7 +189,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     var topNeighbour = neighbours.FirstOrDefault(n => n.X == x && n.Y == y - 1);
                     if (topNeighbour != null)
                     {
-                        bool connectedTopNeighbour = HaveAtLeastOneCommonKeyword(topNeighbour?.Piece.Keywords,
+                        bool connectedTopNeighbour = topNeighbour.Piece.Keywords.HaveAtLeastOneCommonKeyword(
                             puzzlePiece.Piece.Keywords);
                         puzzlePieceUi.ConnectedTop = connectedTopNeighbour;
                     }
@@ -198,32 +197,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     var bottomNeighbour = neighbours.FirstOrDefault(n => n.X == x && n.Y == y + 1);
                     if (bottomNeighbour != null)
                     {
-                        bool connectedBottomNeighbour = HaveAtLeastOneCommonKeyword(bottomNeighbour?.Piece.Keywords,
+                        bool connectedBottomNeighbour = bottomNeighbour.Piece.Keywords.HaveAtLeastOneCommonKeyword(
                             puzzlePiece.Piece.Keywords);
                         puzzlePieceUi.ConnectedBottom = connectedBottomNeighbour;
                     }
                 }
             }
-        }
-
-        private bool HaveAtLeastOneCommonKeyword(string[] keywords1, string[] keywords2)
-        {
-            var nonEmptyKeywords1 = keywords1.Where(k => !string.IsNullOrWhiteSpace(k)).ToList();
-            var nonEmptyKeywords2 = keywords2.Where(k => !string.IsNullOrWhiteSpace(k)).ToList();
-
-            if (nonEmptyKeywords1.Count == 0 || nonEmptyKeywords2.Count == 0) return false;
-
-            foreach (string keyword in nonEmptyKeywords1)
-            {
-                string allOfKeywords2 = string.Join(",", nonEmptyKeywords2);
-                if (allOfKeywords2.Contains(keyword,
-                    StringComparison.InvariantCultureIgnoreCase))
-                {
-                    return true;
-                }
-            }
-
-            return false;
         }
 
         private void OnPieceDragDrop(string firstPieceId, string secondPieceId)
@@ -233,11 +212,18 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             var firstPuzzlePiece = _puzzle.PuzzlePieces.First(p => p.Piece.Id == firstPieceId);
             var secondPuzzlePiece = _puzzle.PuzzlePieces.First(p => p.Piece.Id == secondPieceId);
 
-            var secondPuzzlePieceIndex = secondPuzzlePiece.Index;
-            secondPuzzlePiece.Index = firstPuzzlePiece.Index;
-            firstPuzzlePiece.Index = secondPuzzlePieceIndex;
+            (secondPuzzlePiece.Index, firstPuzzlePiece.Index) = (firstPuzzlePiece.Index, secondPuzzlePiece.Index);
+            (secondPuzzlePiece.X, firstPuzzlePiece.X) = (firstPuzzlePiece.X, secondPuzzlePiece.X);
+            (secondPuzzlePiece.Y, firstPuzzlePiece.Y) = (firstPuzzlePiece.Y, secondPuzzlePiece.Y);
 
             Puzzle.ReorderPieces();
+
+            //var firstPieceUi = ((PuzzlePieceUi) Controls.Find(firstPieceId, true).First());
+            //var secondPieceUi = ((PuzzlePieceUi) Controls.Find(secondPieceId, true).First());
+
+            //(secondPieceUi.Location, firstPieceUi.Location) = (firstPieceUi.Location, secondPieceUi.Location);
+
+            
             LoadPieces();
             DecoratePuzzle();
         }

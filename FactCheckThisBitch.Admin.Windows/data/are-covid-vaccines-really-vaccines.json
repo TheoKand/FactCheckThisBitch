@@ -1,7 +1,7 @@
 {
-  "Title": "Are Covid Vaccines really vaccines? If not, what are they?",
-  "Thesis": "Definitions Matter. Are there any other similar technologies that work the same way as Covid Vaccines?",
-  "Conclusion": "- Covid \"vaccines\" are actually gene therapy\r\n- Covid \"vaccines\" use the same technology as GMO foods\r\n- Big Pharma would be liable for injuries had they not been labeled \"vaccines\"\r\n- But now the taxpayer is taking the bill. Goverment bodies such as the US Food and drug administration seem to be in bed with big pharma, as they want to hide the facts for the next 55 years.",
+  "Title": "Definitions Matter. Are Covid Vaccines really vaccines?",
+  "Thesis": "If not, what are they? Are there any other technologies that work similarly?",
+  "Conclusion": "- Covid \"vaccines\" might actually gene therapy.\r\n- Covid \"vaccines\" use the same technology as GM foods. Begs the question, are vaccine takers Genetically Modified Organisms?\r\n- Big Pharma would be liable for injuries had their product not been labeled \"vaccines\", but now it's the taxpayer picking up the bill.\r\n- Big Pharma is regularly paying huge fines for other nefarious practices.\r\n- Goverment bodies such as the US Food and drug administration seem to have Big Pharma's back.",
   "Width": 3,
   "Height": 3,
   "PuzzlePieces": [
@@ -208,7 +208,7 @@
       "Piece": {
         "Id": "537e773b-7254-4cc7-8a79-3ac923ecbbb8",
         "Title": "What is the significance of a therapy labeled a \"vaccine\"?",
-        "Thesis": "If a medical treatment is labeled a Vaccine, the Pharmaceutical company is not liable for damages. If damages are awarded to an injured vaccine taker, it's the government that is paying. So basically the taxpayer is bailing out the Pharmaceutical companies.",
+        "Thesis": "If a medical treatment is labeled a Vaccine, the pharmaceutical company is not liable for damages. If damages are awarded to an injured vaccine taker, it's the government that is paying. So basically the taxpayer is paying.",
         "Keywords": [
           "vaccine",
           "injury",
@@ -249,8 +249,8 @@
           "liability"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\f1b0aa2b-3523-48dc-a71d-5d4eb5811b18.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\ac7cf838-7211-4581-863c-3c4cb4769cba.png"
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\ac7cf838-7211-4581-863c-3c4cb4769cba.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\2e16289d-a0a0-4cfc-8eb7-c8ba6953724a.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",

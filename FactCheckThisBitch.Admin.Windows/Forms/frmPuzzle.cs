@@ -132,11 +132,17 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             CreateNew();
         }
 
+        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoadForm();
+        }
+
         private void FrmPuzzle_FormClosed(object sender, FormClosedEventArgs e)
         {
             Save();
             SaveToFile();
         }
+
 
         #endregion
 

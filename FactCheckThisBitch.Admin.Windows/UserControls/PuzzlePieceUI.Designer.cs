@@ -50,13 +50,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblType.BackColor = System.Drawing.Color.Silver;
             this.lblType.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.lblType.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblType.Location = new System.Drawing.Point(3, 0);
+            this.lblType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblType.Location = new System.Drawing.Point(0, 0);
             this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(92, 24);
+            this.lblType.Size = new System.Drawing.Size(222, 21);
             this.lblType.TabIndex = 5;
             this.lblType.Text = "Definition";
-            this.lblType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblType.DragDrop += new System.Windows.Forms.DragEventHandler(this.lblType_DragDrop);
             this.lblType.DragEnter += new System.Windows.Forms.DragEventHandler(this.lblType_DragEnter);
             this.lblType.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblType_MouseDown);
@@ -88,6 +87,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // dotTop
             // 
+            this.dotTop.BackColor = System.Drawing.Color.Transparent;
             this.dotTop.Image = ((System.Drawing.Image)(resources.GetObject("dotTop.Image")));
             this.dotTop.Location = new System.Drawing.Point(101, -2);
             this.dotTop.Name = "dotTop";
@@ -99,6 +99,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // dotRight
             // 
+            this.dotRight.BackColor = System.Drawing.Color.Transparent;
             this.dotRight.Image = ((System.Drawing.Image)(resources.GetObject("dotRight.Image")));
             this.dotRight.Location = new System.Drawing.Point(202, 87);
             this.dotRight.Name = "dotRight";
@@ -110,6 +111,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // dotBottom
             // 
+            this.dotBottom.BackColor = System.Drawing.Color.Transparent;
             this.dotBottom.Image = ((System.Drawing.Image)(resources.GetObject("dotBottom.Image")));
             this.dotBottom.Location = new System.Drawing.Point(101, 176);
             this.dotBottom.Name = "dotBottom";
@@ -121,6 +123,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // dotLeft
             // 
+            this.dotLeft.BackColor = System.Drawing.Color.Transparent;
             this.dotLeft.Image = ((System.Drawing.Image)(resources.GetObject("dotLeft.Image")));
             this.dotLeft.Location = new System.Drawing.Point(0, 87);
             this.dotLeft.Name = "dotLeft";

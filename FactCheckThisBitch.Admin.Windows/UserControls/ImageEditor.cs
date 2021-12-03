@@ -8,6 +8,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
+using FackCheckThisBitch.Common;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
@@ -37,10 +38,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
             panel1.Controls.Clear();
 
-            foreach (string imageFile in Images)
+            for(int imageIndex=0; imageIndex<Images.Count;imageIndex++)
             {
+                var imageFile = Images[imageIndex];
                 var imagePath = Path.Combine(Configuration.Instance().DataFolder, "media", imageFile);
                 PictureBox picture = new PictureBox();
+                picture.Tag = imageIndex;
                 picture.Width = 100;
                 picture.Height = 66;
                 picture.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -48,7 +51,25 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 picture.Top = 0;
                 picture.Left = padding + index * (picture.Width + padding);
                 picture.Cursor = Cursors.Hand;
-                picture.Click += (sender, args) =>
+                picture.AllowDrop = true;
+                picture.MouseDown += (sender, args) =>
+                {
+                    if (args.Button == MouseButtons.Left && args.Clicks == 1)
+                    {
+                        picture.DoDragDrop((sender as Control).Tag, DragDropEffects.All);
+                    }
+                };
+                picture.DragEnter += (sender, args) =>
+                {
+                    args.Effect = DragDropEffects.All;
+                };
+                picture.DragDrop += (sender, args) =>
+                {
+                    var dragImageIndex = (int)args.Data.GetData(typeof(int));
+                    Images.Swap<string>((int)picture.Tag, dragImageIndex);
+                    LoadImages();
+                };
+                picture.DoubleClick += (sender, args) =>
                 {
                     new Process
                     {
