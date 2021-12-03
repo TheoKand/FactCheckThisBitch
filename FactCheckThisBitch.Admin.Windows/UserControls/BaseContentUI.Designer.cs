@@ -119,7 +119,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(0, 224);
+            this.label5.Location = new System.Drawing.Point(0, 216);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 20);
             this.label5.TabIndex = 22;
@@ -129,7 +129,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.txtReferences.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtReferences.Location = new System.Drawing.Point(114, 224);
+            this.txtReferences.Location = new System.Drawing.Point(114, 216);
             this.txtReferences.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtReferences.Multiline = true;
             this.txtReferences.Name = "txtReferences";
@@ -150,16 +150,17 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // txtDatePublished
             // 
-            this.txtDatePublished.Location = new System.Drawing.Point(114, 287);
+            this.txtDatePublished.Location = new System.Drawing.Point(114, 278);
             this.txtDatePublished.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtDatePublished.MinimumSize = new System.Drawing.Size(222, 27);
             this.txtDatePublished.Name = "txtDatePublished";
-            this.txtDatePublished.Size = new System.Drawing.Size(141, 36);
+            this.txtDatePublished.Size = new System.Drawing.Size(222, 28);
             this.txtDatePublished.TabIndex = 24;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(0, 295);
+            this.label3.Location = new System.Drawing.Point(0, 283);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 20);
             this.label3.TabIndex = 25;
@@ -182,7 +183,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.Controls.Add(this.label4);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "BaseContentUi";
-            this.Size = new System.Drawing.Size(1067, 327);
+            this.Size = new System.Drawing.Size(1067, 318);
             this.ResumeLayout(false);
             this.PerformLayout();
 

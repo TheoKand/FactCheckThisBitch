@@ -29,19 +29,22 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImageEditor));
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.btnPaste = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.Location = new System.Drawing.Point(3, 3);
+            this.btnAdd.Location = new System.Drawing.Point(3, 4);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(35, 41);
+            this.btnAdd.Size = new System.Drawing.Size(40, 55);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "...";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -53,9 +56,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Location = new System.Drawing.Point(44, 0);
+            this.panel1.Location = new System.Drawing.Point(50, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(433, 93);
+            this.panel1.Size = new System.Drawing.Size(495, 124);
             this.panel1.TabIndex = 3;
             // 
             // openFileDialog1
@@ -66,9 +70,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.btnPaste.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPaste.Image = ((System.Drawing.Image)(resources.GetObject("btnPaste.Image")));
-            this.btnPaste.Location = new System.Drawing.Point(3, 49);
+            this.btnPaste.Location = new System.Drawing.Point(3, 65);
+            this.btnPaste.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPaste.Name = "btnPaste";
-            this.btnPaste.Size = new System.Drawing.Size(35, 41);
+            this.btnPaste.Size = new System.Drawing.Size(40, 55);
             this.btnPaste.TabIndex = 4;
             this.btnPaste.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPaste.UseVisualStyleBackColor = true;
@@ -76,13 +81,14 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // ImageEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnPaste);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAdd);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ImageEditor";
-            this.Size = new System.Drawing.Size(477, 93);
+            this.Size = new System.Drawing.Size(545, 124);
             this.ResumeLayout(false);
 
         }
@@ -92,5 +98,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button btnPaste;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

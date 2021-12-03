@@ -56,7 +56,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void btnUrl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtUrl.Text)) return;
+            if (txtUrl.Text.IsEmpty()) return;
             new Process
             {
                 StartInfo = new ProcessStartInfo(txtUrl.Text)

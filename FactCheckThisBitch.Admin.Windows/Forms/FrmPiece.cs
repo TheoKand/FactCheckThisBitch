@@ -2,6 +2,7 @@
 using FactCheckThisBitch.Admin.Windows.UserControls;
 using FactCheckThisBitch.Models;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -56,7 +57,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _piece.Keywords = txtKeywords.Text.ToLower().CommaSeparatedListToArray();
             _piece.Images = imageEditor1.Images.ToArray();
             _piece.Images = imageEditor1.Images.ToArray();
-            _piece.Type = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
+            _piece.Type = (PieceType)Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
 
             _baseContentUi.SaveForm();
             _contentUi.SaveForm();
@@ -82,9 +83,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _contentUi = new ContentUi();
             _contentUi.Content = _piece.Content;
             _contentUi.Left = 4;
-            _contentUi.Top = _baseContentUi.Bottom;
+            _contentUi.Top = _baseContentUi.Bottom + 20;
             _contentUi.Width = _baseContentUi.Width - 8;
-            _contentUi.Height = _piece.Content.PropertiesNotFromInterface().Count() * 30 +10;
+            _contentUi.Height = _piece.Content.PropertiesNotFromInterface().Count() * 30 + 50;
 
             panelContent.Controls.Add(_contentUi);
         }
@@ -99,7 +100,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void cboType_SelectedValueChanged(object sender, EventArgs e)
         {
             if (_loading) return;
-            var newType = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
+            var newType = (PieceType)Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
             _piece.Type = newType;
             _piece.ConvertContentToNewTypeAndKeepMetadata();
 
@@ -116,6 +117,66 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             Close();
         }
 
+        private async void btnGetArticleMetadata_Click(object sender, EventArgs e)
+        {
+            SaveForm();
+
+            if (_piece.Content.Url.IsEmpty()) return;
+
+            var onlineArticleParser = new ArticleMetadataParser(_piece.Content.Url);
+            IDictionary<string, string> metaData = default;
+            try
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                metaData = await onlineArticleParser.Download();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                Cursor.Current = Cursors.Default;
+            }
+
+            _piece.Content.Title = metaData.TryGet("title");
+            _piece.Content.Summary = metaData.TryGet("description");
+            _piece.Content.Source = metaData.TryGet("site_name");
+            _piece.Content.References = metaData.TryGet("original-source")?.Split(",");
+
+            if (DateTime.TryParse(metaData.TryGet("published_time"), out DateTime datePublished))
+            {
+                _piece.Content.DatePublished = datePublished;
+            } else if (DateTime.TryParse(metaData.TryGet("published"), out datePublished))
+            {
+                _piece.Content.DatePublished = datePublished;
+            } else if (DateTime.TryParse(metaData.TryGet("datePublished"), out datePublished))
+            {
+                _piece.Content.DatePublished = datePublished;
+            }
+
+            string metadataKeywords = metaData.TryGet("keywords");
+            if (_piece.Keywords.Length == 0 && metadataKeywords != null)
+            {
+                var newKeywords = metadataKeywords.ToLower().Split(",").Take(5);
+                var pieceKeywords = _piece.Keywords.ToList();
+                pieceKeywords.AddRange(newKeywords.Where(k=>!pieceKeywords.Any(pk=>pk==k)).ToList());
+                _piece.Keywords = pieceKeywords.ToArray();
+            }
+
+            if (_piece.Content is Article)
+            {
+                (_piece.Content as Article).Author = metaData.TryGet("author");
+            }
+
+            InitForm();
+
+        }
+
+
+
         #endregion
+
+
     }
 }

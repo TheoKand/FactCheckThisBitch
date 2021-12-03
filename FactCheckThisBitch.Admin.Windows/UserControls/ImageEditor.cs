@@ -29,6 +29,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         public ImageEditor()
         {
             InitializeComponent();
+
+            toolTip1.SetToolTip(this,"Right click to open image; left button to drag & drop reposition");
         }
 
         private void LoadImages()
@@ -69,7 +71,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     Images.Swap<string>((int)picture.Tag, dragImageIndex);
                     LoadImages();
                 };
-                picture.DoubleClick += (sender, args) =>
+                picture.Click += (sender, args) =>
                 {
                     new Process
                     {

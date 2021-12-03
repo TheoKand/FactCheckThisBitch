@@ -54,8 +54,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
             var index = 0;
             var textBoxPositionLeft = 100;
-            var lineHeight = 25;
-            var verticalPadding = 5;
+            var lineHeight = 27;
+            var verticalPadding = 7;
 
             var properties = _content.PropertiesNotFromInterface();
 
@@ -76,7 +76,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 {
                     Name = $"txt{prop.Name}",
                     ValidationPattern = prop.PropertyType.RegExValidationPatternForType(),
-                    Width = this.Width - 250,
                     Height = lineHeight,
                     Left = textBoxPositionLeft,
                     Top = index * (lineHeight + verticalPadding),

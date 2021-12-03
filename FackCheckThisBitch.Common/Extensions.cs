@@ -9,9 +9,31 @@ namespace FackCheckThisBitch.Common
 {
     public static class Extensions
     {
+        public static bool IsEmpty(this string input)
+        {
+            return string.IsNullOrWhiteSpace(input);
+        }
+
+        public static string TryGet(this IDictionary<string, string> input, string key)
+        {
+            if (input.ContainsKey(key))
+            {
+                return input[key];
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static string HtmlDecode(this string input)
+        {
+            return System.Net.WebUtility.HtmlDecode(input);
+        }
+
         public static string ToSanitizedString(this string input)
         {
-            string result="";
+            string result = "";
             if (input != null)
             {
                 result = Regex.Replace(input, @"[^a-zA-Z0-9 -]", " ").Trim();
@@ -19,23 +41,24 @@ namespace FackCheckThisBitch.Common
                 result = result.Replace("--", "-");
                 result = result.ToLower();
             }
+
             return result;
         }
 
         public static string[] CommaSeparatedListToArray(this string input)
         {
-            return input.Split(",").Where(x=>!string.IsNullOrWhiteSpace(x)).Select(x=>x.Trim()).ToArray();
+            return input.Split(",").Where(x => !x.IsEmpty()).Select(x => x.Trim()).ToArray();
         }
 
         public static string ToSimpleStringDate(this DateTime? input)
         {
-            return input.HasValue?input.Value.ToString("dd/MM/yyyy"):"";
+            return input.HasValue ? input.Value.ToString("dd/MM/yyyy") : "";
         }
 
         public static DateTime? ToDate(this string date)
         {
-            if (string.IsNullOrWhiteSpace(date)) return null;
-            var ukCulture = new CultureInfo("en-GB",false);
+            if (date.IsEmpty()) return null;
+            var ukCulture = new CultureInfo("en-GB", false);
             var dateValue = DateTime.Parse(date, ukCulture);
             return dateValue;
         }
@@ -45,7 +68,8 @@ namespace FackCheckThisBitch.Common
             var type = instance.GetType();
             var props = type.GetProperties();
             var implementedProps = type.GetInterfaces().SelectMany(i => i.GetProperties());
-            var onlyInFoo = props.Select(prop => prop.Name).Except(implementedProps.Select(prop => prop.Name)).ToArray();
+            var onlyInFoo = props.Select(prop => prop.Name).Except(implementedProps.Select(prop => prop.Name))
+                .ToArray();
             var fooPropsFiltered = props.Where(x => onlyInFoo.Contains(x.Name));
 
             return fooPropsFiltered;
@@ -53,7 +77,6 @@ namespace FackCheckThisBitch.Common
 
         public static string RegExValidationPatternForType(this Type propType)
         {
-
             if (propType.Equals(typeof(DateTime)))
             {
                 return
@@ -63,8 +86,8 @@ namespace FackCheckThisBitch.Common
             {
                 return "^-?[0-9]*[0-9,\\.]*$";
             }
-            {
 
+            {
             }
 
             return null;
@@ -72,8 +95,8 @@ namespace FackCheckThisBitch.Common
 
         public static bool HaveAtLeastOneCommonKeyword(this string[] keywords1, string[] keywords2)
         {
-            var nonEmptyKeywords1 = keywords1.Where(k => !string.IsNullOrWhiteSpace(k)).ToList();
-            var nonEmptyKeywords2 = keywords2.Where(k => !string.IsNullOrWhiteSpace(k)).ToList();
+            var nonEmptyKeywords1 = keywords1.Where(k => !k.IsEmpty()).ToList();
+            var nonEmptyKeywords2 = keywords2.Where(k => !k.IsEmpty()).ToList();
 
             if (nonEmptyKeywords1.Count == 0 || nonEmptyKeywords2.Count == 0) return false;
 
@@ -95,7 +118,5 @@ namespace FackCheckThisBitch.Common
             (list[zeroBasedIndexA], list[zeroBasedIndexB]) = (list[zeroBasedIndexB], list[zeroBasedIndexA]);
             return list;
         }
-
-
     }
 }

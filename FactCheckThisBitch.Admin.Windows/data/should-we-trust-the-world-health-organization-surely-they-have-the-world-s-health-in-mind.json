@@ -78,14 +78,13 @@
         "Title": "2010 - 2020 the decade of the Vaccine??",
         "Thesis": "Bill couldn't keep viruses out of his Windows operating system. Nevertheless tackling human viruses and pledging billions to vaccinate the entire world. Is it philanthropy or investment?",
         "Keywords": [
-          "bill & melinda gates foundation",
-          "decade of the vaccine",
-          "funding"
+          "bill melinda gates foundation",
+          "vaccine"
         ],
         "Images": [
           "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\ad4c14d8-b421-4306-82ca-750d0b461dfe.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\1f36362a-3797-4362-98fa-c4f1db4b8d80.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\2d8e7ad3-a2c3-405e-bb0e-3a5e634984dd.png"
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\2d8e7ad3-a2c3-405e-bb0e-3a5e634984dd.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\1f36362a-3797-4362-98fa-c4f1db4b8d80.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -94,10 +93,8 @@
           "Title": "Bill and Melinda Gates Pledge $10 Billion in Call for Decade of Vaccines",
           "Summary": "",
           "Source": "Bill & Melinda Gates Foundation",
-          "Url": "",
-          "References": [
-            "https://www.gatesfoundation.org/ideas/media-center/press-releases/2010/01/bill-and-melinda-gates-pledge-$10-billion-in-call-for-decade-of-vaccines"
-          ],
+          "Url": "https://www.gatesfoundation.org/ideas/media-center/press-releases/2010/01/bill-and-melinda-gates-pledge-$10-billion-in-call-for-decade-of-vaccines",
+          "References": [],
           "DatePublished": "2010-01-29T00:00:00"
         },
         "Type": "Article"
@@ -143,17 +140,18 @@
         "Id": "9288d429-8ae0-4a3d-b532-f52b462ec72b",
         "Title": "...Title...",
         "Thesis": "...Thesis...",
-        "Keywords": [],
+        "Keywords": [
+          "ιρλανδία",
+          " κορωνοιός"
+        ],
         "Images": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
           "Organization": "",
-          "Author": "",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": []
+          "Title": "Ιρλανδία: «Λουκέτο» στα νυχτερινά κέντρα- Νέοι περιορισμοί στα μπαρ και στις επισκέψεις στα σπίτια",
+          "Summary": "Η Όμικρον κινδυνεύει να προκαλέσει «πολύ σοβαρή κρίση», δήλωσε ο πρωθυπουργός\n",
+          "Url": "https://www.pronews.gr/kosmos/1038688_irlandia-loyketo-sta-nyhterina-kentra-neoi-periorismoi-sta-mpar-kai-stis-episkepseis",
+          "DatePublished": "2021-12-03T21:59:13+00:00"
         },
         "Type": "Article"
       }
@@ -223,9 +221,7 @@
           "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\f7ff41b0-af8d-44c3-be31-f5b91692b6be.png"
         ],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
+          "$type": "FactCheckThisBitch.Models.MyArgument, FactCheckThisBitch.Models",
           "Title": "Moderna Wins Initial $20M Grant from Gates Foundation",
           "Summary": "",
           "Source": "Genetic Engineering & Biotechnology News",
@@ -233,7 +229,7 @@
           "References": [],
           "DatePublished": "2016-01-12T00:00:00"
         },
-        "Type": "Article"
+        "Type": "MyArgument"
       },
       "Valid": true
     },
@@ -301,7 +297,9 @@
           "Summary": "",
           "Source": "",
           "Url": "",
-          "References": []
+          "References": [
+            ""
+          ]
         },
         "Type": "Article"
       }
