@@ -216,19 +216,20 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             if (draggedPieceIndex == destinationPieceIndex) return;
             var dragged = _puzzle.PuzzlePieces.First(p => p.Index == draggedPieceIndex);
             var destination = _puzzle.PuzzlePieces.First(p => p.Index == destinationPieceIndex);
-            
+
+            //swap puzzle pieces within the array
+            _puzzle.PuzzlePieces = (List<PuzzlePiece>)_puzzle.PuzzlePieces.Swap<PuzzlePiece>(draggedPieceIndex-1, destinationPieceIndex-1);
+
+            //also change the position-related properties
             (destination.Index, dragged.Index) = (dragged.Index, destination.Index);
             (destination.X, dragged.X) = (dragged.X, destination.X);
             (destination.Y, dragged.Y) = (dragged.Y, destination.Y);
 
-            Puzzle.ReorderPieces();
-
+            //swap in the UI
             var draggedUi = ((PuzzlePieceUi)Controls.Find(dragged.Piece.Id, true).First());
             var destinationUi = ((PuzzlePieceUi)Controls.Find(destination.Piece.Id, true).First());
-
             (destinationUi.Location, draggedUi.Location) = (draggedUi.Location, destinationUi.Location);
 
-            LoadPieces();
             DecoratePuzzle();
         }
 

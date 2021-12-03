@@ -38,12 +38,6 @@ namespace FactCheckThisBitch.Models
         {
             InitPieces();
         }
-
-        public void ReorderPieces()
-        {
-            var orderedPieces = PuzzlePieces.OrderBy(pp => pp.Index);
-            PuzzlePieces = orderedPieces.ToList();
-        }
     }
 
     public class PuzzlePiece

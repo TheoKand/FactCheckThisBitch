@@ -90,9 +90,9 @@ namespace FackCheckThisBitch.Common
             return false;
         }
 
-        public static IList<T> Swap<T>(this IList<T> list, int indexA, int indexB)
+        public static IList<T> Swap<T>(this IList<T> list, int zeroBasedIndexA, int zeroBasedIndexB)
         {
-            (list[indexA], list[indexB]) = (list[indexB], list[indexA]);
+            (list[zeroBasedIndexA], list[zeroBasedIndexB]) = (list[zeroBasedIndexB], list[zeroBasedIndexA]);
             return list;
         }
 
