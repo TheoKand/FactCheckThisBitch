@@ -65,6 +65,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtTitle.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtTitle.Size = new System.Drawing.Size(742, 48);
             this.txtTitle.TabIndex = 0;
+            this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
             // 
             // txtThesis
             // 
@@ -76,6 +77,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtThesis.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtThesis.Size = new System.Drawing.Size(1008, 116);
             this.txtThesis.TabIndex = 1;
+            this.txtThesis.TextChanged += new System.EventHandler(this.txtThesis_TextChanged);
             // 
             // label2
             // 
@@ -169,6 +171,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtConclusion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtConclusion.Size = new System.Drawing.Size(1008, 116);
             this.txtConclusion.TabIndex = 6;
+            this.txtConclusion.TextChanged += new System.EventHandler(this.txtConclusion_TextChanged);
             // 
             // label4
             // 

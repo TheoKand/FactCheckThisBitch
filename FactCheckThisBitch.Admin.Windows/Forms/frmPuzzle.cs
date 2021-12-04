@@ -55,12 +55,11 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private new void SizeChanged()
         {
-            OnPuzzleChanged(null, null);
-
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
             _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
-
             puzzleUi.Puzzle = _puzzle;
+
+            IsDirty = true;
         }
 
         private void LoadForm()
@@ -125,11 +124,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         #region Events
 
-        private void OnPuzzleChanged(object? sender, EventArgs e)
-        {
-            IsDirty = true;
-        }
-
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.InitialDirectory = Configuration.Instance().DataFolder;
@@ -168,6 +162,21 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                     SaveToFile();
                 }
             }
+        }
+
+        private void txtTitle_TextChanged(object sender, EventArgs e)
+        {
+            IsDirty = true;
+        }
+
+        private void txtThesis_TextChanged(object sender, EventArgs e)
+        {
+            IsDirty = true;
+        }
+
+        private void txtConclusion_TextChanged(object sender, EventArgs e)
+        {
+            IsDirty = true;
         }
 
         #endregion

@@ -1,5 +1,6 @@
 using FactCheckThisBitch.Admin.Windows.Forms;
 using System;
+using System.Text;
 using System.Windows.Forms;
 
 namespace FactCheckThisBitch.Admin.Windows

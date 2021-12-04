@@ -1,6 +1,4 @@
 ﻿TODO
-
--cleanup saving all around. Should be clear if it's saved or not, and user should be able to leave without saving
 -don't allow save data if validation fails
 -bug: segment throws error
 

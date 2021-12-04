@@ -152,18 +152,15 @@
           "gene"
         ],
         "Images": [
-          "are-covid-vaccines-really-vaccines-guid1.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\aebe6faf-05a8-49c4-b873-cd972813a751.png",
           "are-covid-vaccines-really-vaccines-guid2.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "Matthew Kuure-Kinsey and Beth McCooey",
-          "Title": "The Basics of Recombinant DNA",
-          "Summary": "",
-          "Source": "Rensselaer Polytechnic Institute (RPI)",
-          "Url": "https://www.rpi.edu/dept/chem-eng/Biotech-Environ/Projects00/rdna/rdna.html",
-          "References": [],
+          "Title": "Production of Recombinant Protein",
+          "Summary": "Due to their important functions, proteins are widely used for industrial, nutritional, and medical applications. An important way to generate large amounts of a specific protein is the recombinant DNA technology, which involves the use of genetic recombination to bring together ",
+          "Source": "CUSABIO",
+          "Url": "https://www.cusabio.com/c-20679.html",
           "DatePublished": "2000-01-09T00:00:00"
         },
         "Display": {},
@@ -178,7 +175,6 @@
       "Piece": {
         "Id": "898b2b44-ddc3-4d2f-991c-770098bf8b3f",
         "Title": "GMO crops and foods are made with Recombinant DNA Technology",
-        "Thesis": "",
         "Keywords": [
           "genetic engineering",
           "gmo",
@@ -186,15 +182,15 @@
           "cell"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png"
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png",
+          "5d1466bd-ee80-4a56-8c53-61edf13b25a3.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
           "Title": "Genetically modified organism",
           "Summary": "Genetically modified organisms (GMOs) are produced using scientific methods that include recombinant DNA technology and reproductive cloning. In reproductive cloning, a nucleus is extracted from a cell of the individual to be cloned and is inserted into the enucleated cytoplasm of a host egg (an enucleated egg is an egg cell that has had its own nucleus removed).",
           "Source": "Encyclopædia Britannica",
-          "Url": "https://www.britannica.com/science/genetically-modified-organism",
-          "References": []
+          "Url": "https://www.britannica.com/science/genetically-modified-organism"
         },
         "Display": {},
         "Type": "Definition"

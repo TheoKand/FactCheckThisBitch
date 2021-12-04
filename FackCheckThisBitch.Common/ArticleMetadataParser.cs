@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -33,33 +34,42 @@ namespace FackCheckThisBitch.Common
 
         public async Task<IDictionary<string, string>> Download()
         {
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
             var result = new Dictionary<string, string>();
 
+            _client.DefaultRequestHeaders.Clear();
             using (HttpResponseMessage response = await _client.GetAsync(new Uri(_url)))
             {
                 response.EnsureSuccessStatusCode();
 
                 using (HttpContent content = response.Content)
                 {
-                    string html = await content.ReadAsStringAsync();
+                    string html = null; //await content.ReadAsStringAsync();
+
+                    using (var sr = new StreamReader(await content.ReadAsStreamAsync(), Encoding.GetEncoding("utf-8")))
+                    {
+                        html = await sr.ReadToEndAsync();
+                    }
+
 
                     foreach (string propertyName in MetadataProperties.Keys)
                     {
                         foreach (string possibleMeta in MetadataProperties[propertyName])
                         {
                             var propertyValue = TryGetMetadataProperty(html, propertyName);
-                            if (propertyValue != null)
+                            if (!propertyValue.IsEmpty())
                             {
                                 if (!result.ContainsKey(propertyName))
                                 {
                                     result.Add(propertyName, propertyValue);
                                 }
-                                
                             }
                         }
                     }
                 }
             }
+
 
             return result;
         }

@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\FackCheckThisBitch.Common\FackCheckThisBitch.Common.csproj" />
     <ProjectReference Include="..\FactCheckThisBitch.Models\FactCheckThisBitch.Models.csproj" />
   </ItemGroup>

@@ -143,27 +143,27 @@
       "Piece": {
         "Id": "fb83047e-9a9a-49dd-9083-cdd439c3e123",
         "Title": "Bill Gates: The Best Investment I’ve Ever Made",
-        "Thesis": "",
+        "Thesis": "Since the push to vaccinate is yielding profits, have there been any indications for unnecessary vaccinations in the past?",
         "Keywords": [
           "bill gates",
           "bill & melinda gates foundation",
           "investment",
-          "vaccines"
+          "vaccines",
+          "india"
         ],
         "Images": [
           "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\756f65a8-751f-4e9e-b566-213bc7e8a1af.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\918456c2-deaa-4869-8d09-e4be39864dc9.png"
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\918456c2-deaa-4869-8d09-e4be39864dc9.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\ecb55988-309a-4bae-a4e2-77f8d0a369f9.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\9e436b90-cbac-4850-bbe5-e0a5488860d4.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
           "Title": "Bill Gates: The Best Investment I’ve Ever Made",
-          "Summary": "",
           "Source": "Wall Street Journal",
           "Url": "https://www.wsj.com/articles/bill-gates-the-best-investment-ive-ever-made-11547683309",
           "References": [
-            "https://www.wsj.com/articles/SB1021577629748680000"
+            "https://www.wsj.com/articles/SB1021577629748680000\r\nhttps://economictimes.indiatimes.com/industry/healthcare/biotech/healthcare/controversial-vaccine-studies-why-is-bill-melinda-gates-foundation-under-fire-from-critics-in-india/articleshow/41280050.cms"
           ]
         },
         "Type": "Article"
@@ -316,8 +316,8 @@
     },
     {
       "Index": 10,
-      "X": 2,
-      "Y": 3,
+      "X": 1,
+      "Y": 4,
       "Piece": {
         "Id": "95171f6e-9744-4bb8-b8d6-3e1d7775ad81",
         "Title": "...Title...",
@@ -339,8 +339,8 @@
     },
     {
       "Index": 11,
-      "X": 3,
-      "Y": 3,
+      "X": 2,
+      "Y": 4,
       "Piece": {
         "Id": "705b0413-8a6a-4cc7-8608-c6758f8f56c4",
         "Title": "...Title...",
@@ -364,8 +364,8 @@
     },
     {
       "Index": 12,
-      "X": 4,
-      "Y": 3,
+      "X": 3,
+      "Y": 4,
       "Piece": {
         "Id": "1b3bbaea-d3d2-4f15-b057-2a3b066b077d",
         "Title": "1",
