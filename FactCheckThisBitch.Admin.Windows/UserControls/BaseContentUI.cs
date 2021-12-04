@@ -28,10 +28,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         public void SaveForm()
         {
-            _content.Title = txtTitle.Text;
-            _content.Summary = txtSummary.Text;
-            _content.Source = txtSource.Text;
-            _content.Url = txtUrl.Text;
+            _content.Title = txtTitle.Text.ValueOrNull();
+            _content.Summary = txtSummary.Text.ValueOrNull();
+            _content.Source = txtSource.Text.ValueOrNull();
+            _content.Url = txtUrl.Text.ValueOrNull();
             _content.References = txtReferences.Text.CommaSeparatedListToArray();
             _content.DatePublished = txtDatePublished.Text.ToDate();
         }

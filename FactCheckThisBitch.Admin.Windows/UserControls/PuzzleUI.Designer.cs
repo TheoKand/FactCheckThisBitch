@@ -34,6 +34,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // PuzzleUi
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PuzzleUi";
             this.Size = new System.Drawing.Size(854, 537);

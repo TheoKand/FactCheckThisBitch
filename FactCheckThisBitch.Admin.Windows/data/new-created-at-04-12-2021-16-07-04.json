@@ -1,0 +1,201 @@
+{
+  "Title": "New created at 04/12/2021 16:07:04",
+  "Thesis": "d",
+  "Conclusion": "f",
+  "Width": 3,
+  "Height": 3,
+  "PuzzlePieces": [
+    {
+      "Index": 1,
+      "X": 1,
+      "Y": 1,
+      "Piece": {
+        "Id": "c818a809-48d6-4000-b5b8-6a704eefa70e",
+        "Title": "...Title...",
+        "Thesis": "",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 2,
+      "X": 2,
+      "Y": 1,
+      "Piece": {
+        "Id": "7396f267-a955-415a-b666-3d5e21c6abc2",
+        "Title": "...Title...",
+        "Thesis": "",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 3,
+      "X": 3,
+      "Y": 1,
+      "Piece": {
+        "Id": "986028e3-29b7-4e92-b972-88f49785e563",
+        "Title": "...Title...",
+        "Thesis": "",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 4,
+      "X": 1,
+      "Y": 2,
+      "Piece": {
+        "Id": "d2f63b73-7c98-408a-84d9-a4ff55d84bfb",
+        "Title": "...Title...",
+        "Thesis": "",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 5,
+      "X": 2,
+      "Y": 2,
+      "Piece": {
+        "Id": "6bde0825-c6d3-419d-aac8-6152ce41b7a2",
+        "Title": "...Title...",
+        "Thesis": "",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 6,
+      "X": 3,
+      "Y": 2,
+      "Piece": {
+        "Id": "92f6c515-77b0-462b-89fd-b9e97fc4b34d",
+        "Title": "...Title...",
+        "Thesis": "",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 7,
+      "X": 1,
+      "Y": 3,
+      "Piece": {
+        "Id": "62b55feb-1bfe-4848-984f-f7637f2fdb6b",
+        "Title": "...Title...",
+        "Thesis": "",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 8,
+      "X": 2,
+      "Y": 3,
+      "Piece": {
+        "Id": "5b78144b-9051-4eae-a01f-e46130c4e519",
+        "Title": "...Title...",
+        "Thesis": "",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 9,
+      "X": 3,
+      "Y": 3,
+      "Piece": {
+        "Id": "6354d26d-87cf-49d3-b520-108b957f5eca",
+        "Title": "...Title...",
+        "Thesis": "",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 10,
+      "X": 2,
+      "Y": 3,
+      "Piece": {
+        "Id": "9dc29a92-f0ca-4e91-aea8-c711b12ee086",
+        "Title": "...Title...",
+        "Thesis": "",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 11,
+      "X": 3,
+      "Y": 3,
+      "Piece": {
+        "Id": "fdf90e9d-da72-454b-b39e-14911af1b85d",
+        "Title": "...Title...",
+        "Thesis": "",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      }
+    },
+    {
+      "Index": 12,
+      "X": 4,
+      "Y": 3,
+      "Piece": {
+        "Id": "4afc75e5-5f25-4e7b-aa9e-3efbe27b7fba",
+        "Title": "...Title...",
+        "Thesis": "",
+        "Keywords": [],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "Type": "Article"
+      }
+    }
+  ]
+}

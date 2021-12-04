@@ -29,7 +29,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         public ImageEditor()
         {
             InitializeComponent();
-
             toolTip1.SetToolTip(this,"Right click to open image; left button to drag & drop reposition");
         }
 

@@ -6,13 +6,15 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using FackCheckThisBitch.Common;
+using Newtonsoft.Json;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
     public partial class PuzzleUi : UserControl
     {
         private Puzzle _puzzle;
-        public Action SaveToDisk;
+        public Action SaveToFile;
+        public Action OnChanged;
 
         public Puzzle Puzzle
         {
@@ -54,7 +56,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 for (int y = 1; y <= Puzzle.Height; y++)
                 {
                     var indexOfThisSquare = Puzzle.PieceIndexFromPosition(x, y);
-                    var puzzlePiece = Puzzle.PuzzlePieces?.First(p => p.Index == indexOfThisSquare);
+                    var puzzlePiece = Puzzle.PuzzlePieces?.FirstOrDefault(p => p.Index == indexOfThisSquare);
                     var piece = puzzlePiece?.Piece;
                     if (piece == null)
                     {
@@ -120,11 +122,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private bool PieceHasEnoughValidNeighbours(Piece piece, List<PuzzlePiece> neighbours)
         {
-            if (piece.Keywords.Length == 0 ||
-                piece.Keywords.All(string.IsNullOrWhiteSpace))
-            {
-                return false;
-            }
+            if (piece.Keywords.IsEmpty()) return false;
 
             var maxInvalidNeighbours = 1;
             if (neighbours.Count == 4)
@@ -161,6 +159,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     var puzzlePiece = Puzzle.PuzzlePieces.First(p => p.Index == indexOfThisSquare);
 
                     #region find neghbours and establish if the piece connects or not
+
                     var neighbours = Puzzle.Neighbours(x, y);
 
                     puzzlePiece.Valid = UserSettings.Instance().PuzzleMatchingStrict
@@ -172,9 +171,11 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     puzzlePieceUi.BackColor = puzzlePiece != null && puzzlePiece.Valid
                         ? Color.LightGreen
                         : Color.FromArgb(255, 192, 192);
+
                     #endregion
 
                     #region set dots around the piece
+
                     var leftNeighbour = neighbours.FirstOrDefault(n => n.X == x - 1 && n.Y == y);
                     if (leftNeighbour != null)
                     {
@@ -206,6 +207,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                             puzzlePiece.Piece.Keywords);
                         puzzlePieceUi.ConnectedBottom = connectedBottomNeighbour;
                     }
+
                     #endregion
                 }
             }
@@ -218,7 +220,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             var destination = _puzzle.PuzzlePieces.First(p => p.Index == destinationPieceIndex);
 
             //swap puzzle pieces within the array
-            _puzzle.PuzzlePieces = (List<PuzzlePiece>)_puzzle.PuzzlePieces.Swap<PuzzlePiece>(draggedPieceIndex-1, destinationPieceIndex-1);
+            _puzzle.PuzzlePieces =
+                (List<PuzzlePiece>) _puzzle.PuzzlePieces.Swap<PuzzlePiece>(draggedPieceIndex - 1,
+                    destinationPieceIndex - 1);
 
             //also change the position-related properties
             (destination.Index, dragged.Index) = (dragged.Index, destination.Index);
@@ -226,23 +230,29 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             (destination.Y, dragged.Y) = (dragged.Y, destination.Y);
 
             //swap in the UI
-            var draggedUi = ((PuzzlePieceUi)Controls.Find(dragged.Piece.Id, true).First());
-            var destinationUi = ((PuzzlePieceUi)Controls.Find(destination.Piece.Id, true).First());
+            var draggedUi = ((PuzzlePieceUi) Controls.Find(dragged.Piece.Id, true).First());
+            var destinationUi = ((PuzzlePieceUi) Controls.Find(destination.Piece.Id, true).First());
             (destinationUi.Location, draggedUi.Location) = (draggedUi.Location, destinationUi.Location);
 
+            OnChanged?.Invoke();
             DecoratePuzzle();
         }
 
         private void OnPieceClicked(Piece piece)
         {
+            var pieceBefore = JsonConvert.SerializeObject(piece, StaticSettings.JsonSerializerSettings);
             FrmPiece pieceForm = new FrmPiece(piece);
             var result = pieceForm.ShowDialog();
             if (result != DialogResult.OK) return;
 
-            LoadPieces();
-            DecoratePuzzle();
+            var pieceAfter = JsonConvert.SerializeObject(piece, StaticSettings.JsonSerializerSettings);
 
-            SaveToDisk?.Invoke();
+            if (pieceBefore != pieceAfter)
+            {
+                OnChanged?.Invoke();
+                LoadPieces();
+                DecoratePuzzle();
+            }
         }
     }
 }

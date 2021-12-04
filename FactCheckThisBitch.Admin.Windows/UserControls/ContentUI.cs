@@ -37,7 +37,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
                 try
                 {
-                    var newValue = Convert.ChangeType(txt?.Text, prop.PropertyType);
+                    var newValue = Convert.ChangeType(txt?.Text.ValueOrNull(), prop.PropertyType);
                     prop.SetValue(_content, newValue);
                 }
                 catch (Exception ex)

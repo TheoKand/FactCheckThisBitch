@@ -1,5 +1,6 @@
 ﻿using FactCheckThisBitch.Models;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
@@ -54,7 +55,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         {
             lblType.Text = _puzzlePiece.Piece.Type.ToString();
             btnLabel.Text = _puzzlePiece.Piece.Title;
-            lblKeywords.Text = string.Join(Environment.NewLine, _puzzlePiece.Piece.Keywords);
+            lblKeywords.Text = _puzzlePiece.Piece.Keywords != null ? string.Join(Environment.NewLine, _puzzlePiece.Piece.Keywords) : "";
         }
 
         private void lblType_MouseDown(object sender, MouseEventArgs e)
@@ -72,7 +73,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void lblType_DragDrop(object sender, DragEventArgs e)
         {
-            var draggedPieceIndexs = (int) e.Data.GetData(typeof(int));
+            var draggedPieceIndexs = (int)e.Data.GetData(typeof(int));
             OnDragDrop?.Invoke(draggedPieceIndexs, _puzzlePiece.Index);
         }
 

@@ -13,7 +13,6 @@ namespace FactCheckThisBitch.Models
         public string Url { get; set; }
         public string[] References { get; set; }
         public DateTime? DatePublished { get; set; }
-
     }
 
     public class Article : IContent

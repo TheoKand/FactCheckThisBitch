@@ -11,8 +11,17 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
     public partial class FrmPuzzle : Form
     {
         private Puzzle _puzzle;
+        private bool _isDirty = false;
 
-        public bool IsDirty = true;
+        public bool IsDirty
+        {
+            get => _isDirty;
+            set
+            {
+                _isDirty = value;
+                this.Text = $"{_puzzle.Title.ToSanitizedString()} {(_isDirty ? " - Modified" : "")}";
+            }
+        }
 
         public FrmPuzzle()
         {
@@ -40,14 +49,16 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             txtSize.ValidationPattern = "^[3-9]x[3-9]$";
             txtSize.TextChanged = x => SizeChanged();
-            puzzleUi.SaveToDisk = SaveToFile;
+            puzzleUi.SaveToFile = SaveToFile;
+            puzzleUi.OnChanged = () => IsDirty = true;
         }
 
         private new void SizeChanged()
         {
+            OnPuzzleChanged(null, null);
+
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
             _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
-            _puzzle.Resize();
 
             puzzleUi.Puzzle = _puzzle;
         }
@@ -64,6 +75,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             txtSize.Text = $"{_puzzle.Width}x{_puzzle.Height}";
 
             puzzleUi.Puzzle = _puzzle;
+
+            IsDirty = false;
         }
 
         private void CreateNew()
@@ -92,9 +105,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void Save()
         {
-            _puzzle.Title = txtTitle.Text;
-            _puzzle.Thesis = txtThesis.Text;
-            _puzzle.Conclusion = txtConclusion.Text;
+            _puzzle.Title = txtTitle.Text.ValueOrNull();
+            _puzzle.Thesis = txtThesis.Text.ValueOrNull();
+            _puzzle.Conclusion = txtConclusion.Text.ValueOrNull();
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
             _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
 
@@ -112,11 +125,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         #region Events
 
-        private void btnOk_Click(object sender, EventArgs e)
+        private void OnPuzzleChanged(object? sender, EventArgs e)
         {
-            Save();
-            SaveToFile();
-            MessageBox.Show("File saved ok");
+            IsDirty = true;
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -140,12 +151,11 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             LoadForm();
         }
 
-        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            LoadForm();
+            Save();
+            SaveToFile();
         }
-
-        #endregion
 
         private void FrmPuzzle_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -159,5 +169,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 }
             }
         }
+
+        #endregion
     }
 }

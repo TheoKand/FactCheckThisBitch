@@ -42,8 +42,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             cboType.SelectedItem = _piece.Type;
             txtTitle.Text = _piece.Title;
             txtThesis.Text = _piece.Thesis;
-            txtKeywords.Text = string.Join(", ", _piece.Keywords);
-            imageEditor1.Images = _piece.Images.ToList();
+            txtKeywords.Text = _piece.Keywords.ArrayToCommaSeparatedList();
+            imageEditor1.Images = _piece.Images != null ? _piece.Images.ToList() : new List<string>();
 
             panelContent.Controls.Clear();
             LoadBaseContentUi();
@@ -52,12 +52,11 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void SaveForm()
         {
-            _piece.Title = txtTitle.Text;
-            _piece.Thesis = txtThesis.Text;
-            _piece.Keywords = txtKeywords.Text.ToLower().CommaSeparatedListToArray();
-            _piece.Images = imageEditor1.Images.ToArray();
-            _piece.Images = imageEditor1.Images.ToArray();
-            _piece.Type = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
+            _piece.Title = txtTitle.Text.ValueOrNull();
+            _piece.Thesis = txtThesis.Text.ValueOrNull();
+            _piece.Keywords = txtKeywords.Text?.ToLower().CommaSeparatedListToArray();
+            _piece.Images = imageEditor1.Images != null && imageEditor1.Images.Any() ? imageEditor1.Images.ToArray() : null;
+            _piece.Type = (PieceType)Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
 
             _baseContentUi.SaveForm();
             _contentUi.SaveForm();
@@ -100,7 +99,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void cboType_SelectedValueChanged(object sender, EventArgs e)
         {
             if (_loading) return;
-            var newType = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
+            var newType = (PieceType)Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
             _piece.Type = newType;
             _piece.ConvertContentToNewTypeAndKeepMetadata();
 

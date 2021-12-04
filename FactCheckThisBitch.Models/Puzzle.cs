@@ -38,11 +38,6 @@ namespace FactCheckThisBitch.Models
                 }
             }
         }
-
-        public void Resize()
-        {
-            InitPieces();
-        }
     }
 
     public class PuzzlePiece
