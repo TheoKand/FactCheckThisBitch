@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
@@ -87,10 +88,28 @@ namespace FackCheckThisBitch.Common
                 return "^-?[0-9]*[0-9,\\.]*$";
             }
 
-            {
-            }
-
             return null;
+        }
+
+        public static bool IsAlmostSameWith(this string phrase1, string phrase2)
+        {
+            phrase1 = phrase1.Trim();
+            phrase2 = phrase2.Trim();
+
+            string smallerPhrase = phrase1.Length < phrase2.Length ? phrase1 : phrase2;
+            string largerPhrase =  phrase1.Length > phrase2.Length ? phrase1 : phrase2;
+
+            return (largerPhrase.Contains(smallerPhrase, StringComparison.InvariantCultureIgnoreCase))
+                || largerPhrase.ContainsTwoOrMoreWordsFrom(smallerPhrase);
+        }
+
+        public static bool ContainsTwoOrMoreWordsFrom(this string largePhrase, string smallPhrase)
+        {
+            var largePhraseWords = largePhrase.Split(" ");
+            var smallPhraseWords = smallPhrase.Split(" ");
+            var count = smallPhraseWords.Count(sw =>
+                largePhraseWords.Any(lw=> String.Equals(lw,sw, StringComparison.InvariantCultureIgnoreCase)));
+            return count >= 2;
         }
 
         public static bool HaveAtLeastOneCommonKeyword(this string[] keywords1, string[] keywords2)
@@ -103,8 +122,7 @@ namespace FackCheckThisBitch.Common
             foreach (string keyword in nonEmptyKeywords1)
             {
                 string allOfKeywords2 = string.Join(",", nonEmptyKeywords2);
-                if (allOfKeywords2.Contains(keyword,
-                    StringComparison.InvariantCultureIgnoreCase))
+                if (allOfKeywords2.IsAlmostSameWith(keyword))
                 {
                     return true;
                 }

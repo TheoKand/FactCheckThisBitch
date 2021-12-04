@@ -1,8 +1,8 @@
 {
   "Title": "Should we trust the World Health Organization? Surely they have the world's health in mind",
   "Thesis": "Are there any smokings guns about this NGO having been compromized by corporate interests?",
-  "Conclusion": "",
-  "Width": 4,
+  "Conclusion": "- Philanthropist-Investor extraordinaire Bill Gates and other smarter and less visible globalists are funding the WHO and at the same time investing in Big Pharma and vaccines.\r\n- The WHO is then declaring dubious pandemics with wildly different outcomes. From the barely noticable swine flu of 2010 to the unprecedented Covid19 that has shifted the entire world to a technocratic dystopia.\r\n- As a result the \"philanthropists\" are making a killing with their \"investments\". The pandemic has resulted in the biggest wealth shift in history.",
+  "Width": 3,
   "Height": 3,
   "PuzzlePieces": [
     {
@@ -28,7 +28,7 @@
           "Author": "",
           "Title": "How WHO is funded",
           "Summary": "",
-          "Source": "World Health Organizations",
+          "Source": "World Health Organization",
           "Url": "https://www.who.int/about/funding",
           "References": []
         },
@@ -42,7 +42,7 @@
       "Y": 1,
       "Piece": {
         "Id": "da05ca87-1799-4732-abe1-e26135134c1b",
-        "Title": "Is Bill & Melinda Gates Foundation one of the \"philantropists\" funding the WHO? In the foundation's website you can download their grants spreadsheet file.",
+        "Title": "Is Bill & Melinda Gates Foundation one of the philantropists funding the WHO? In the foundation's website you can download their grants spreadsheet file.",
         "Thesis": "There are 470 grants for the WHO, to the sum of over four billion dollars.",
         "Keywords": [
           "bill & melinda gates foundation",
@@ -76,9 +76,9 @@
       "Piece": {
         "Id": "f85ad141-979c-4b31-9934-f3e95f649eb4",
         "Title": "2010 - 2020 the decade of the Vaccine??",
-        "Thesis": "Bill couldn't keep computer viruses out of his Windows operating system. Nevertheless tackling human viruses and pledging billions to vaccinate the entire world. Is it philanthropy or investment?",
+        "Thesis": "Bill couldn't keep computer viruses out of his Windows operating system. He is nevertheless tackling human viruses and pledging billions to vaccinate the entire world. Is it philanthropy or investment?",
         "Keywords": [
-          "bill melinda gates foundation",
+          "bill & melinda gates foundation",
           "vaccine"
         ],
         "Images": [
@@ -103,20 +103,56 @@
     },
     {
       "Index": 4,
-      "X": 4,
-      "Y": 1,
+      "X": 1,
+      "Y": 2,
+      "Piece": {
+        "Id": "9288d429-8ae0-4a3d-b532-f52b462ec72b",
+        "Title": "\"It's going to have to go to 7 billion people\"",
+        "Thesis": "Because the scary clown knows what's good for you and his pocket",
+        "Keywords": [
+          "bill gates",
+          "bill melinda gates foundation",
+          "vaccines"
+        ],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\fa615742-1807-40ec-92ea-72a43dafc15a.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\7114bf0b-5883-403b-98d8-a0b2cf2f281f.png"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models",
+          "Uploader": "",
+          "Channel": "",
+          "Platform": "",
+          "Title": "The race for a COVID-19 vaccine, explained",
+          "Summary": "",
+          "Source": "BBC,CNBC",
+          "Url": "https://www.vibby.com/embedding/vib?vib=7JvtgxT7h",
+          "References": [
+            "https://www.youtube.com/watch?v=u1AQ5EXcJYc\r\nhttps://www.bbc.co.uk/news/business-57575077\r\nhttps://www.cnbc.com/2020/06/04/cramer-the-pandemic-led-to-a-great-wealth-transfer.html"
+          ],
+          "DatePublished": "2021-12-03T00:00:00"
+        },
+        "Type": "WebVideo"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 5,
+      "X": 2,
+      "Y": 2,
       "Piece": {
         "Id": "fb83047e-9a9a-49dd-9083-cdd439c3e123",
         "Title": "Bill Gates: The Best Investment I’ve Ever Made",
         "Thesis": "",
         "Keywords": [
+          "bill gates",
           "bill & melinda gates foundation",
           "investment",
           "vaccines"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\b0300575-517f-4450-a048-b79ca1b57209.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\756f65a8-751f-4e9e-b566-213bc7e8a1af.png"
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\756f65a8-751f-4e9e-b566-213bc7e8a1af.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\918456c2-deaa-4869-8d09-e4be39864dc9.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -135,9 +171,117 @@
       "Valid": true
     },
     {
-      "Index": 5,
-      "X": 1,
+      "Index": 6,
+      "X": 3,
       "Y": 2,
+      "Piece": {
+        "Id": "d4f9dfd0-7bcf-4f78-ba64-1a74dae0366d",
+        "Title": "Does the great philanthropist have any other ties with the vaccine industry or is he just funding the WHO?",
+        "Thesis": "So Bill is funding the WHO and also invests in Moderna. Then the WHO declares a pandemic and that drives Moderna's stock through the roof. Did it prove to be a good investment for the Gates foundation?",
+        "Keywords": [
+          "moderna",
+          "vaccines",
+          "stock",
+          "investment",
+          "bill & melinda gates foundation"
+        ],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\f7ff41b0-af8d-44c3-be31-f5b91692b6be.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\9b8ddbad-aea4-4954-9551-73a2eecfd1ab.png"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
+          "Title": "Moderna Wins Initial $20M Grant from Gates Foundation",
+          "Summary": "",
+          "Source": "Genetic Engineering & Biotechnology News",
+          "Url": "https://www.genengnews.com/topics/omics/moderna-wins-initial-20m-grant-from-gates-foundation/",
+          "References": [],
+          "DatePublished": "2016-01-12T00:00:00"
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 7,
+      "X": 1,
+      "Y": 3,
+      "Piece": {
+        "Id": "1483f138-9432-4ce2-ba72-85c81bcb3e6d",
+        "Title": "Does he have any skeletons in the closet?",
+        "Thesis": "Bill Gates is so over the top, like a scary clown, wanting to vaccinate 7 billion people (!). Almost like he is the frontman of a globalist agenda, preparing the ground by shocking people with his outlandish predictions. Could he be just a puppet and controlled by people who have dirt on him?",
+        "Keywords": [
+          "bill gates",
+          "skeletons in the closet",
+          "jeffrey epstein"
+        ],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\1e01f782-7b18-4976-9988-242a23fa2322.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\5f093951-03b0-4433-8816-dd967c51a714.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\6d638f92-e1bf-4c44-b8b6-37e88fc09bc3.png"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "Chris Spargo",
+          "Title": "Bill Gates REFUSES to say why he flew with Jeffrey Epstein post-prison",
+          "Summary": "Bill Gates is hoping to ride out the storm, one week after it was revealed he had hitched a ride on Jeffrey Epstein's plane.",
+          "Source": "Mail Online,New York Times",
+          "Url": "https://www.dailymail.co.uk/news/article-7377133/Bill-Gates-REFUSES-reveal-flew-Lolita-Express-Jeffrey-Epstein-prison-release.html",
+          "References": [
+            "https://www.dailymail.co.uk/news/article-7377133/Bill-Gates-REFUSES-reveal-flew-Lolita-Express-Jeffrey-Epstein-prison-release.html\r\nhttps://www.nytimes.com/2019/10/12/business/jeffrey-epstein-bill-gates.html"
+          ],
+          "DatePublished": "2019-08-20T00:00:00"
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 8,
+      "X": 2,
+      "Y": 3,
+      "Piece": {
+        "Id": "4934a8a6-5610-44cb-af8d-9681228772ed",
+        "Title": "Has anyone benefited financially from all the plandemics that the WHO declared?",
+        "Thesis": "Clearly Big Pharma and anyone who has invested in vaccines, is making a killing with every pandemic the WHO is trying to save us from.",
+        "Keywords": [
+          "who",
+          "vaccine",
+          "government waste",
+          "taxpayer money"
+        ],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\a0032fac-b07b-4d82-9dff-ea26f8dbb1bc.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\c1570aaa-1586-4902-8a2d-4d091d70c089.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\97410142-17df-49dd-9b81-912100a90cb2.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\159c0d2d-d966-4b20-9ef2-e4364a609c4f.png",
+          "7114bf0b-5883-403b-98d8-a0b2cf2f281f.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\8ddb9f78-612d-4619-b81f-d0d1d25271e0.png"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "Jenny Hope",
+          "Title": "How £300million was squandered on swine flu jabs that we didn't need",
+          "Summary": "Up to £300million of taxpayers' money has been wasted on swine flu jabs that were never needed. Ministers ordered 90million doses of a vaccine last year at a cost of £54m.",
+          "Source": "Mail Online,France24.com,BBC",
+          "Url": "https://www.dailymail.co.uk/news/article-1263975/Swine-flu--300m-squandered-jabs-didnt-need.html",
+          "References": [
+            "https://www.dailymail.co.uk/news/article-1263975/Swine-flu--300m-squandered-jabs-didnt-need.html\r\nhttps://www.france24.com/en/20100103-france-sell-off-millions-surplus-flu-shots\r\nhttp://news.bbc.co.uk/1/hi/health/8606032.stm"
+          ],
+          "DatePublished": "2010-04-06T00:00:00"
+        },
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 9,
+      "X": 3,
+      "Y": 3,
       "Piece": {
         "Id": "c6f4b175-b31b-49e6-8a92-8f89a285c8f0",
         "Title": "Has the WHO declared any other \"pandemics\" in the past?",
@@ -169,131 +313,6 @@
         "Type": "Article"
       },
       "Valid": true
-    },
-    {
-      "Index": 6,
-      "X": 2,
-      "Y": 2,
-      "Piece": {
-        "Id": "4934a8a6-5610-44cb-af8d-9681228772ed",
-        "Title": "Has anyone benefited financially from historic questionable \"pandemics\" that the WHO declared?",
-        "Thesis": "Clearly Big Pharma and anyone who has invested in vaccines, is making a killing with every pandemic the WHO is trying to save us from.",
-        "Keywords": [
-          "who",
-          "vaccine",
-          "government waste",
-          "taxpayer money"
-        ],
-        "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\3707633c-6e41-42d1-b574-ac437025f58d.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\159c0d2d-d966-4b20-9ef2-e4364a609c4f.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\c1570aaa-1586-4902-8a2d-4d091d70c089.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\97410142-17df-49dd-9b81-912100a90cb2.png"
-        ],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "Jenny Hope",
-          "Title": "How £300million was squandered on swine flu jabs that we didn't need",
-          "Summary": "Up to £300million of taxpayers' money has been wasted on swine flu jabs that were never needed. Ministers ordered 90million doses of a vaccine last year at a cost of £54m.",
-          "Source": "Mail Online,France24.com,BBC",
-          "Url": "https://www.dailymail.co.uk/news/article-1263975/Swine-flu--300m-squandered-jabs-didnt-need.html",
-          "References": [
-            "https://www.dailymail.co.uk/news/article-1263975/Swine-flu--300m-squandered-jabs-didnt-need.html\r\nhttps://www.france24.com/en/20100103-france-sell-off-millions-surplus-flu-shots\r\nhttp://news.bbc.co.uk/1/hi/health/8606032.stm"
-          ],
-          "DatePublished": "2010-04-06T00:00:00"
-        },
-        "Type": "Article"
-      },
-      "Valid": true
-    },
-    {
-      "Index": 7,
-      "X": 3,
-      "Y": 2,
-      "Piece": {
-        "Id": "d4f9dfd0-7bcf-4f78-ba64-1a74dae0366d",
-        "Title": "Does the great philanthropist have any other ties with the vaccine industry or is he just funding the WHO?",
-        "Thesis": "So Bill is funding the WHO and also invests in Moderna. Then the WHO declares a pandemic and that drives Moderna's stock through the roof, making billions for the great philanthropist. Best investment he ever made apparently.",
-        "Keywords": [
-          "moderna",
-          "vaccine",
-          "stock",
-          "investment",
-          "bill & melinda gates foundation"
-        ],
-        "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\f7ff41b0-af8d-44c3-be31-f5b91692b6be.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\9b8ddbad-aea4-4954-9551-73a2eecfd1ab.png"
-        ],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
-          "Title": "Moderna Wins Initial $20M Grant from Gates Foundation",
-          "Summary": "",
-          "Source": "Genetic Engineering & Biotechnology News",
-          "Url": "https://www.genengnews.com/topics/omics/moderna-wins-initial-20m-grant-from-gates-foundation/",
-          "References": [],
-          "DatePublished": "2016-01-12T00:00:00"
-        },
-        "Type": "Article"
-      },
-      "Valid": true
-    },
-    {
-      "Index": 8,
-      "X": 4,
-      "Y": 2,
-      "Piece": {
-        "Id": "9288d429-8ae0-4a3d-b532-f52b462ec72b",
-        "Title": "\"It's going to have to go to 7 billion people\"",
-        "Thesis": "Because the scary clown knows what's good for you",
-        "Keywords": [
-          "bill melinda gates foundation",
-          "vaccines"
-        ],
-        "Images": [],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models",
-          "Uploader": "",
-          "Channel": "",
-          "Platform": "",
-          "Title": "The race for a COVID-19 vaccine, explained",
-          "Summary": "",
-          "Source": "",
-          "Url": "https://www.vibby.com/embedding/vib?vib=7JvtgxT7h",
-          "References": [
-            "https://www.youtube.com/watch?v=u1AQ5EXcJYc"
-          ],
-          "DatePublished": "2021-12-03T00:00:00"
-        },
-        "Type": "WebVideo"
-      },
-      "Valid": true
-    },
-    {
-      "Index": 9,
-      "X": 1,
-      "Y": 3,
-      "Piece": {
-        "Id": "1483f138-9432-4ce2-ba72-85c81bcb3e6d",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
-        "Keywords": [],
-        "Images": [],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": []
-        },
-        "Type": "Article"
-      }
     },
     {
       "Index": 10,

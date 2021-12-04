@@ -5,6 +5,7 @@ using System.IO;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Xml;
+using FackCheckThisBitch.Common;
 using Newtonsoft.Json;
 
 namespace FactCheckThisBitch.Admin.Windows
@@ -19,16 +20,21 @@ namespace FactCheckThisBitch.Admin.Windows
 
         }
 
-        private string _lastPuzzle;
-        public string LastPuzzle
+        private string _currentPuzzle;
+        public string CurrentPuzzle
         {
-            get => _lastPuzzle;
+            get => _currentPuzzle;
             set
             {
-                _lastPuzzle = value;
+                _currentPuzzle = value;
                 Save();
             }
         }
+
+        [JsonIgnore]
+        public string CurrentPuzzlePath => _currentPuzzle.IsEmpty()
+            ? null
+            : Path.Combine(Configuration.Instance().DataFolder, _currentPuzzle);
 
         private bool _puzzleMatchingStrict;
         public bool PuzzleMatchingStrict
@@ -40,8 +46,6 @@ namespace FactCheckThisBitch.Admin.Windows
                 Save();
             }
         }
-
-        
 
         private void Save()
         {

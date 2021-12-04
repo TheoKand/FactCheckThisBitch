@@ -26,16 +26,19 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             get => dotTop.Visible;
             set => dotTop.Visible = value;
         }
+
         public bool ConnectedLeft
         {
             get => dotLeft.Visible;
             set => dotLeft.Visible = value;
         }
+
         public bool ConnectedRight
         {
             get => dotRight.Visible;
             set => dotRight.Visible = value;
         }
+
         public bool ConnectedBottom
         {
             get => dotBottom.Visible;
@@ -69,7 +72,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void lblType_DragDrop(object sender, DragEventArgs e)
         {
-            var draggedPieceIndexs = (int)e.Data.GetData(typeof(int));
+            var draggedPieceIndexs = (int) e.Data.GetData(typeof(int));
             OnDragDrop?.Invoke(draggedPieceIndexs, _puzzlePiece.Index);
         }
 

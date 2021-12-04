@@ -16,14 +16,14 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             set
             {
                 _content = value;
-                InitForm();
+                LoadForm();
             }
         }
 
         public BaseContentUi()
         {
             InitializeComponent();
-            InitFormFields();
+            InitForm();
         }
 
         public void SaveForm()
@@ -36,12 +36,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             _content.DatePublished = txtDatePublished.Text.ToDate();
         }
 
-        private void InitFormFields()
+        private void InitForm()
         {
             txtDatePublished.ValidationPattern = typeof(DateTime).RegExValidationPatternForType();
         }
 
-        private void InitForm()
+        private void LoadForm()
         {
             txtTitle.Text = _content.Title;
             txtSummary.Text = _content.Summary;

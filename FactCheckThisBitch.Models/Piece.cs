@@ -20,8 +20,8 @@ namespace FactCheckThisBitch.Models
         {
             Id = Guid.NewGuid().ToString();
             Title = "...Title...";
-            Thesis = "...Thesis...";
-            Keywords = new[] {"First", "Second"};
+            Thesis = "";
+            Keywords = new string[] {};
             Images = new string[] { };
 
             Type = PieceType.Article;

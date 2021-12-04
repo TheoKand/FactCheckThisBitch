@@ -1,18 +1,18 @@
-﻿using FactCheckThisBitch.Models;
-using System;
-using System.Diagnostics.Eventing.Reader;
-using System.Windows.Forms;
-using FackCheckThisBitch.Common;
+﻿using FackCheckThisBitch.Common;
+using FactCheckThisBitch.Models;
 using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Text;
+using System.Windows.Forms;
 
 namespace FactCheckThisBitch.Admin.Windows.Forms
 {
     public partial class FrmPuzzle : Form
     {
         private Puzzle _puzzle;
-        private string _puzzleFileName;
+
+        public bool IsDirty = true;
 
         public FrmPuzzle()
         {
@@ -23,10 +23,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             InitForm();
 
-            var lastPuzzle = UserSettings.Instance().LastPuzzle;
-            if (!string.IsNullOrEmpty(lastPuzzle) && File.Exists(_puzzleFileName))
+            if (!string.IsNullOrEmpty(UserSettings.Instance().CurrentPuzzle) &&
+                File.Exists(UserSettings.Instance().CurrentPuzzlePath))
             {
-                _puzzleFileName = lastPuzzle;
                 LoadFromFile();
                 LoadForm();
             }
@@ -35,17 +34,16 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 CreateNew();
                 LoadForm();
             }
-
         }
 
         private void InitForm()
         {
             txtSize.ValidationPattern = "^[3-9]x[3-9]$";
             txtSize.TextChanged = x => SizeChanged();
-            puzzleUi.SaveToDisk = () => SaveToFile();
+            puzzleUi.SaveToDisk = SaveToFile;
         }
 
-        private void SizeChanged()
+        private new void SizeChanged()
         {
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
             _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
@@ -56,7 +54,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void LoadForm()
         {
-            UserSettings.Instance().LastPuzzle = _puzzleFileName;
+            UserSettings.Instance().CurrentPuzzle = _puzzle.FileName;
 
             this.Text = _puzzle.Title.ToSanitizedString();
 
@@ -76,46 +74,44 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 Title = $"New created at {DateTime.UtcNow}"
             };
             _puzzle.InitPieces();
-            _puzzleFileName = Path.Combine(Configuration.Instance().DataFolder, $"{_puzzle.Title.ToSanitizedString()}.json");
-            SaveToFile();
-            LoadForm();
         }
 
         private void LoadFromFile()
         {
-            var json = File.ReadAllText(_puzzleFileName, Encoding.UTF8);
+            var json = File.ReadAllText(UserSettings.Instance().CurrentPuzzlePath, Encoding.UTF8);
             _puzzle = JsonConvert.DeserializeObject<Puzzle>(json, StaticSettings.JsonSerializerSettings);
-            _puzzle.InitPieces();
+            _puzzle?.InitPieces();
         }
 
         private void SaveToFile()
         {
             var json = JsonConvert.SerializeObject(_puzzle, Formatting.Indented, StaticSettings.JsonSerializerSettings);
-            File.WriteAllTextAsync(_puzzleFileName, json);
+            File.WriteAllTextAsync(UserSettings.Instance().CurrentPuzzlePath, json);
+            IsDirty = false;
         }
 
         private void Save()
         {
             _puzzle.Title = txtTitle.Text;
-            CheckRenameFile();
-
             _puzzle.Thesis = txtThesis.Text;
             _puzzle.Conclusion = txtConclusion.Text;
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
             _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
+
+            CheckRenameFile();
         }
 
         private void CheckRenameFile()
         {
-            if (_puzzle.Title != _puzzleFileName)
+            if (_puzzle.FileName != UserSettings.Instance().CurrentPuzzle)
             {
-                _puzzleFileName = Path.Combine(Configuration.Instance().DataFolder, $"{_puzzle.Title.ToSanitizedString()}.json");
-                UserSettings.Instance().LastPuzzle = _puzzleFileName;
+                UserSettings.Instance().CurrentPuzzle = _puzzle.FileName;
                 this.Text = _puzzle.Title.ToSanitizedString();
             }
         }
 
         #region Events
+
         private void btnOk_Click(object sender, EventArgs e)
         {
             Save();
@@ -131,17 +127,17 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             openFileDialog1.CheckFileExists = true;
             openFileDialog1.CheckPathExists = true;
             openFileDialog1.ShowReadOnly = false;
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                _puzzleFileName = openFileDialog1.FileName;
-                LoadFromFile();
-                LoadForm();
-            }
+            if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
+
+            UserSettings.Instance().CurrentPuzzle = openFileDialog1.FileName;
+            LoadFromFile();
+            LoadForm();
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CreateNew();
+            LoadForm();
         }
 
         private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
@@ -149,15 +145,19 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             LoadForm();
         }
 
-        private void FrmPuzzle_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Save();
-            SaveToFile();
-        }
-
-
         #endregion
 
-
+        private void FrmPuzzle_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (IsDirty)
+            {
+                var result = MessageBox.Show("Do you want to save your changes?", "Save Changes",
+                    MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    SaveToFile();
+                }
+            }
+        }
     }
 }

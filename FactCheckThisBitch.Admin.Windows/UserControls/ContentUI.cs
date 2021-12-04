@@ -18,8 +18,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             {
                 _content = value;
 
-                InitFormFields();
-                InitForm();
+                LoadForm();
             }
         }
 
@@ -48,7 +47,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             }
         }
 
-        private void InitFormFields()
+        private void LoadForm()
         {
             Controls.Clear();
 
@@ -85,10 +84,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
                 index++;
             }
-        }
-
-        private void InitForm()
-        {
         }
     }
 }

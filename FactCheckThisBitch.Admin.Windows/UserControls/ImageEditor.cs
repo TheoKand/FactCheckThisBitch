@@ -22,7 +22,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             set
             {
                 _images = value;
-                LoadImages();
+                LoadForm();
             }
         }
 
@@ -33,7 +33,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             toolTip1.SetToolTip(this,"Right click to open image; left button to drag & drop reposition");
         }
 
-        private void LoadImages()
+        private void LoadForm()
         {
             var index = 0;
             var padding = 5;
@@ -69,7 +69,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 {
                     var dragImageIndex = (int)args.Data.GetData(typeof(int));
                     Images.Swap<string>((int)picture.Tag, dragImageIndex);
-                    LoadImages();
+                    LoadForm();
                 };
                 picture.Click += (sender, args) =>
                 {
@@ -89,7 +89,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 linkLabel.Click += (sender, args) =>
                 {
                     _images.Remove(imageFile);
-                    LoadImages();
+                    LoadForm();
                 };
                 linkLabel.Top = picture.Bottom;
                 linkLabel.Left = picture.Left;
@@ -116,7 +116,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 }
 
                 _images.Add(imageNameWithoutPath);
-                LoadImages();
+                LoadForm();
             }
         }
 
@@ -128,7 +128,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 var destinationImage = Path.Combine(Configuration.Instance().DataFolder, "media", imageName);
                 Clipboard.GetImage().Save(destinationImage, ImageFormat.Png);
                 _images.Add(destinationImage);
-                LoadImages();
+                LoadForm();
             }
         }
     }

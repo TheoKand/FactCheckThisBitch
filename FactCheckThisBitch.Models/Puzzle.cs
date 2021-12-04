@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using FackCheckThisBitch.Common;
+using Newtonsoft.Json;
 
 namespace FactCheckThisBitch.Models
 {
@@ -14,6 +16,9 @@ namespace FactCheckThisBitch.Models
         public int Height = 3;
         public PuzzlePiece OnePiece;
         public List<PuzzlePiece> PuzzlePieces;
+
+        [JsonIgnore]
+        public string FileName => Title != null ? $"{Title?.ToSanitizedString()}.json" : null;
 
         public void InitPieces()
         {

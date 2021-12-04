@@ -24,18 +24,18 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void FrmPieceEdit_Load(object sender, EventArgs e)
         {
             _loading = true;
-            InitFormFields();
             InitForm();
+            LoadForm();
             _loading = false;
         }
 
-        private void InitFormFields()
+        private void InitForm()
         {
             var pieceTypes = Enum.GetValues(typeof(PieceType)).Cast<PieceType>();
             cboType.DataSource = pieceTypes;
         }
 
-        private void InitForm()
+        private void LoadForm()
         {
             this.Text = _piece.Title.ToSanitizedString();
 
@@ -57,7 +57,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _piece.Keywords = txtKeywords.Text.ToLower().CommaSeparatedListToArray();
             _piece.Images = imageEditor1.Images.ToArray();
             _piece.Images = imageEditor1.Images.ToArray();
-            _piece.Type = (PieceType)Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
+            _piece.Type = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
 
             _baseContentUi.SaveForm();
             _contentUi.SaveForm();
@@ -100,7 +100,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void cboType_SelectedValueChanged(object sender, EventArgs e)
         {
             if (_loading) return;
-            var newType = (PieceType)Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
+            var newType = (PieceType) Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
             _piece.Type = newType;
             _piece.ConvertContentToNewTypeAndKeepMetadata();
 
@@ -148,10 +148,12 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             if (DateTime.TryParse(metaData.TryGet("published_time"), out DateTime datePublished))
             {
                 _piece.Content.DatePublished = datePublished;
-            } else if (DateTime.TryParse(metaData.TryGet("published"), out datePublished))
+            }
+            else if (DateTime.TryParse(metaData.TryGet("published"), out datePublished))
             {
                 _piece.Content.DatePublished = datePublished;
-            } else if (DateTime.TryParse(metaData.TryGet("datePublished"), out datePublished))
+            }
+            else if (DateTime.TryParse(metaData.TryGet("datePublished"), out datePublished))
             {
                 _piece.Content.DatePublished = datePublished;
             }
@@ -161,7 +163,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             {
                 var newKeywords = metadataKeywords.ToLower().Split(",").Take(5);
                 var pieceKeywords = _piece.Keywords.ToList();
-                pieceKeywords.AddRange(newKeywords.Where(k=>!pieceKeywords.Any(pk=>pk==k)).ToList());
+                pieceKeywords.AddRange(newKeywords.Where(k => !pieceKeywords.Any(pk => pk == k)).ToList());
                 _piece.Keywords = pieceKeywords.ToArray();
             }
 
@@ -170,14 +172,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 (_piece.Content as Article).Author = metaData.TryGet("author");
             }
 
-            InitForm();
-
+            LoadForm();
         }
 
-
-
         #endregion
-
-
     }
 }
