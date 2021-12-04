@@ -133,6 +133,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+                return;
             }
             finally
             {

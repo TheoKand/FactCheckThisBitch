@@ -24,7 +24,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             InitForm();
 
             var lastPuzzle = UserSettings.Instance().LastPuzzle;
-            if (!string.IsNullOrEmpty(lastPuzzle))
+            if (!string.IsNullOrEmpty(lastPuzzle) && File.Exists(_puzzleFileName))
             {
                 _puzzleFileName = lastPuzzle;
                 LoadFromFile();

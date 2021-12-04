@@ -1,6 +1,6 @@
 {
   "Title": "Should we trust the World Health Organization? Surely they have the world's health in mind",
-  "Thesis": "Are there any smokings guns about this non goverment organization having been compromized and not working for us anymore?",
+  "Thesis": "Are there any smokings guns about this NGO having been compromized by corporate interests?",
   "Conclusion": "",
   "Width": 4,
   "Height": 3,
@@ -76,7 +76,7 @@
       "Piece": {
         "Id": "f85ad141-979c-4b31-9934-f3e95f649eb4",
         "Title": "2010 - 2020 the decade of the Vaccine??",
-        "Thesis": "Bill couldn't keep viruses out of his Windows operating system. Nevertheless tackling human viruses and pledging billions to vaccinate the entire world. Is it philanthropy or investment?",
+        "Thesis": "Bill couldn't keep computer viruses out of his Windows operating system. Nevertheless tackling human viruses and pledging billions to vaccinate the entire world. Is it philanthropy or investment?",
         "Keywords": [
           "bill melinda gates foundation",
           "vaccine"
@@ -124,9 +124,11 @@
           "Author": "",
           "Title": "Bill Gates: The Best Investment I’ve Ever Made",
           "Summary": "",
-          "Source": "",
+          "Source": "Wall Street Journal",
           "Url": "https://www.wsj.com/articles/bill-gates-the-best-investment-ive-ever-made-11547683309",
-          "References": []
+          "References": [
+            "https://www.wsj.com/articles/SB1021577629748680000"
+          ]
         },
         "Type": "Article"
       },
@@ -137,24 +139,36 @@
       "X": 1,
       "Y": 2,
       "Piece": {
-        "Id": "9288d429-8ae0-4a3d-b532-f52b462ec72b",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
+        "Id": "c6f4b175-b31b-49e6-8a92-8f89a285c8f0",
+        "Title": "Has the WHO declared any other \"pandemics\" in the past?",
+        "Thesis": "So according to WHO, there was a swine flu H1N1 pandemic that came and went in 2009-2010 and the world barely noticed. But the Covid 19 pandemic was such a threat for humanity that the whole world had to descent to totallitarianism within two years. How are these both a \"pandemic\" if the response was so vastly different. Could the previous pandemics have been a dry run for the take over of the world by globalists?",
         "Keywords": [
-          "ιρλανδία",
-          " κορωνοιός"
+          "who",
+          "pandemic",
+          "swine flu",
+          "h1n1"
         ],
-        "Images": [],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\b17d368f-897e-4478-81e4-82ac6a9c4e77.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\c55101ca-1947-4450-aade-2f5a804c44ef.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\9eb9da51-38bb-4a61-93f7-1b9ddddbba8e.png"
+        ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
           "Organization": "",
-          "Title": "Ιρλανδία: «Λουκέτο» στα νυχτερινά κέντρα- Νέοι περιορισμοί στα μπαρ και στις επισκέψεις στα σπίτια",
-          "Summary": "Η Όμικρον κινδυνεύει να προκαλέσει «πολύ σοβαρή κρίση», δήλωσε ο πρωθυπουργός\n",
-          "Url": "https://www.pronews.gr/kosmos/1038688_irlandia-loyketo-sta-nyhterina-kentra-neoi-periorismoi-sta-mpar-kai-stis-episkepseis",
-          "DatePublished": "2021-12-03T21:59:13+00:00"
+          "Author": "",
+          "Title": "‘Fake’ swine flu pandemic? WHO slams charges",
+          "Summary": "",
+          "Source": "Wikipedia,NBC News",
+          "Url": "https://www.forbes.com/2010/03/10/swine-flu-world-health-organization-pandemic-opinions-contributors-henry-i-miller.html?sh=322a5f881617",
+          "References": [
+            "https://en.wikipedia.org/wiki/2009_swine_flu_pandemic\r\nhttps://www.nbcnews.com/id/wbna35057450\r\nhttps://www.pharmatimes.com/news/pharma_slammed_over_the_pandemic_that_never_was_983122"
+          ],
+          "DatePublished": "2010-01-25T00:00:00"
         },
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
       "Index": 6,
@@ -162,49 +176,40 @@
       "Y": 2,
       "Piece": {
         "Id": "4934a8a6-5610-44cb-af8d-9681228772ed",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
-        "Keywords": [],
-        "Images": [],
+        "Title": "Has anyone benefited financially from historic questionable \"pandemics\" that the WHO declared?",
+        "Thesis": "Clearly Big Pharma and anyone who has invested in vaccines, is making a killing with every pandemic the WHO is trying to save us from.",
+        "Keywords": [
+          "who",
+          "vaccine",
+          "government waste",
+          "taxpayer money"
+        ],
+        "Images": [
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\3707633c-6e41-42d1-b574-ac437025f58d.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\159c0d2d-d966-4b20-9ef2-e4364a609c4f.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\c1570aaa-1586-4902-8a2d-4d091d70c089.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\97410142-17df-49dd-9b81-912100a90cb2.png"
+        ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
           "Organization": "",
-          "Author": "",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": []
+          "Author": "Jenny Hope",
+          "Title": "How £300million was squandered on swine flu jabs that we didn't need",
+          "Summary": "Up to £300million of taxpayers' money has been wasted on swine flu jabs that were never needed. Ministers ordered 90million doses of a vaccine last year at a cost of £54m.",
+          "Source": "Mail Online,France24.com,BBC",
+          "Url": "https://www.dailymail.co.uk/news/article-1263975/Swine-flu--300m-squandered-jabs-didnt-need.html",
+          "References": [
+            "https://www.dailymail.co.uk/news/article-1263975/Swine-flu--300m-squandered-jabs-didnt-need.html\r\nhttps://www.france24.com/en/20100103-france-sell-off-millions-surplus-flu-shots\r\nhttp://news.bbc.co.uk/1/hi/health/8606032.stm"
+          ],
+          "DatePublished": "2010-04-06T00:00:00"
         },
         "Type": "Article"
-      }
+      },
+      "Valid": true
     },
     {
       "Index": 7,
       "X": 3,
-      "Y": 2,
-      "Piece": {
-        "Id": "c6f4b175-b31b-49e6-8a92-8f89a285c8f0",
-        "Title": "...Title...",
-        "Thesis": "...Thesis...",
-        "Keywords": [],
-        "Images": [],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
-          "Title": "",
-          "Summary": "",
-          "Source": "",
-          "Url": "",
-          "References": []
-        },
-        "Type": "Article"
-      }
-    },
-    {
-      "Index": 8,
-      "X": 4,
       "Y": 2,
       "Piece": {
         "Id": "d4f9dfd0-7bcf-4f78-ba64-1a74dae0366d",
@@ -218,10 +223,13 @@
           "bill & melinda gates foundation"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\f7ff41b0-af8d-44c3-be31-f5b91692b6be.png"
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\f7ff41b0-af8d-44c3-be31-f5b91692b6be.png",
+          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\9b8ddbad-aea4-4954-9551-73a2eecfd1ab.png"
         ],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.MyArgument, FactCheckThisBitch.Models",
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Organization": "",
+          "Author": "",
           "Title": "Moderna Wins Initial $20M Grant from Gates Foundation",
           "Summary": "",
           "Source": "Genetic Engineering & Biotechnology News",
@@ -229,7 +237,38 @@
           "References": [],
           "DatePublished": "2016-01-12T00:00:00"
         },
-        "Type": "MyArgument"
+        "Type": "Article"
+      },
+      "Valid": true
+    },
+    {
+      "Index": 8,
+      "X": 4,
+      "Y": 2,
+      "Piece": {
+        "Id": "9288d429-8ae0-4a3d-b532-f52b462ec72b",
+        "Title": "\"It's going to have to go to 7 billion people\"",
+        "Thesis": "Because the scary clown knows what's good for you",
+        "Keywords": [
+          "bill melinda gates foundation",
+          "vaccines"
+        ],
+        "Images": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models",
+          "Uploader": "",
+          "Channel": "",
+          "Platform": "",
+          "Title": "The race for a COVID-19 vaccine, explained",
+          "Summary": "",
+          "Source": "",
+          "Url": "https://www.vibby.com/embedding/vib?vib=7JvtgxT7h",
+          "References": [
+            "https://www.youtube.com/watch?v=u1AQ5EXcJYc"
+          ],
+          "DatePublished": "2021-12-03T00:00:00"
+        },
+        "Type": "WebVideo"
       },
       "Valid": true
     },

@@ -158,7 +158,7 @@
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
           "Organization": "",
-          "Author": "",
+          "Author": "Matthew Kuure-Kinsey and Beth McCooey",
           "Title": "The Basics of Recombinant DNA",
           "Summary": "",
           "Source": "Rensselaer Polytechnic Institute (RPI)",
@@ -224,7 +224,7 @@
           "Author": "James Hamblin",
           "Title": "Why the Government Pays Billions to People Who Claim Injury by Vaccines",
           "Summary": "A little-known deal protects drug companies in the U.S. from being sued—and feeds conspiracy theories in the process.",
-          "Source": "theatlantic.com",
+          "Source": "The Atlantic",
           "Url": "https://www.theatlantic.com/health/archive/2019/05/vaccine-safety-program/589354/",
           "References": [],
           "DatePublished": "2019-05-14T00:00:00"
