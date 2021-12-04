@@ -99,7 +99,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private bool PieceHasAllValidNeighbours(Piece piece, List<PuzzlePiece> neighbours)
         {
-            if (piece.Keywords.Length == 0 ||
+            if (!piece.Keywords.Any() ||
                 piece.Keywords.All(string.IsNullOrWhiteSpace))
             {
                 return false;
@@ -122,7 +122,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private bool PieceHasEnoughValidNeighbours(Piece piece, List<PuzzlePiece> neighbours)
         {
-            if (piece.Keywords.IsEmpty()) return false;
+            if (!piece.Keywords.Any()) return false;
 
             var maxInvalidNeighbours = 1;
             if (neighbours.Count == 4)

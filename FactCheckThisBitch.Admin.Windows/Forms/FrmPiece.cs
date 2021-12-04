@@ -42,7 +42,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             cboType.SelectedItem = _piece.Type;
             txtTitle.Text = _piece.Title;
             txtThesis.Text = _piece.Thesis;
-            txtKeywords.Text = _piece.Keywords.ArrayToCommaSeparatedList();
+            txtKeywords.Text = string.Join(",", _piece.Keywords);
             imageEditor1.Images = _piece.Images != null ? _piece.Images.ToList() : new List<string>();
 
             panelContent.Controls.Clear();
@@ -54,8 +54,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             _piece.Title = txtTitle.Text.ValueOrNull();
             _piece.Thesis = txtThesis.Text.ValueOrNull();
-            _piece.Keywords = txtKeywords.Text?.ToLower().CommaSeparatedListToArray();
-            _piece.Images = imageEditor1.Images.ValueOrNull()?.ToArray();
+            _piece.Keywords = txtKeywords.Text.Split(",").ToList();
+            _piece.Images = imageEditor1.Images;
             _piece.Type = (PieceType)Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
 
             _baseContentUi.SaveForm();
@@ -158,12 +158,10 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             }
 
             string metadataKeywords = metaData.TryGet("keywords");
-            if (_piece.Keywords.Length == 0 && metadataKeywords != null)
+            if ( metadataKeywords != null)
             {
                 var newKeywords = metadataKeywords.ToLower().Split(",").Take(5);
-                var pieceKeywords = _piece.Keywords.ToList();
-                pieceKeywords.AddRange(newKeywords.Where(k => !pieceKeywords.Any(pk => pk == k)).ToList());
-                _piece.Keywords = pieceKeywords.ToArray();
+                _piece.Keywords.AddRange(newKeywords.Where(k => !_piece.Keywords.Any(pk => pk == k)).ToList());
             }
 
             if (_piece.Content is Article)

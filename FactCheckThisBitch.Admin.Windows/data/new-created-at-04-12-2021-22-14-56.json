@@ -10,6 +10,7 @@
       "Piece": {
         "Id": "184831b5-c757-43f2-be1b-478a54e0c831",
         "Title": "...Title...",
+        "Keywords": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
@@ -23,6 +24,7 @@
       "Piece": {
         "Id": "93415cb0-1fea-481d-b514-2245250c270d",
         "Title": "...Title...",
+        "Keywords": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
@@ -36,6 +38,7 @@
       "Piece": {
         "Id": "115cd6fd-5f6d-4fb5-8265-63ad3834180e",
         "Title": "...Title...",
+        "Keywords": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
@@ -78,6 +81,7 @@
       "Piece": {
         "Id": "1c1ab7bf-d8e2-4a6b-a590-5ce2119dbf50",
         "Title": "...Title...",
+        "Keywords": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
@@ -91,6 +95,7 @@
       "Piece": {
         "Id": "b18f6915-ab68-4879-8196-d7383b422ce8",
         "Title": "...Title...",
+        "Keywords": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
@@ -104,6 +109,7 @@
       "Piece": {
         "Id": "84107db7-859a-4be2-84c0-05f3beacc9c0",
         "Title": "...Title...",
+        "Keywords": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
@@ -117,8 +123,24 @@
       "Piece": {
         "Id": "c90f8efb-7fd1-46c6-b86d-9bdd5ff48c9e",
         "Title": "...Title...",
+        "Keywords": [
+          "first",
+          "second",
+          "dailymail",
+          "news",
+          "omicron variant"
+        ],
         "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
+          "Author": "Kate Dennett",
+          "Title": "Omicron: Pre-departure tests will be needed for international arrivals",
+          "Summary": "The measures, which Sajid Javid insisted are 'temporary', will come into force from 4am on December 7 amid concerns about the  Omicron variant spreading.",
+          "Source": "Mail Online",
+          "Url": "https://www.dailymail.co.uk/news/article-10275279/Pre-departure-tests-needed-international-arrivals-UK.html",
+          "References": [
+            "https://www.dailymail.co.uk/news/article-10275279/Pre-departure-tests-needed-international-arrivals-UK.html"
+          ],
+          "DatePublished": "2021-12-04T00:00:00"
         },
         "Type": "Article"
       }
@@ -130,6 +152,7 @@
       "Piece": {
         "Id": "d711cf08-0e98-4997-936f-4cf888f171c1",
         "Title": "...Title...",
+        "Keywords": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
@@ -143,6 +166,7 @@
       "Piece": {
         "Id": "04a5a379-9fcf-478b-ad73-8d2032ab8e15",
         "Title": "...Title...",
+        "Keywords": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
@@ -156,6 +180,7 @@
       "Piece": {
         "Id": "029b2297-d990-4d72-9bd8-e43c7ed8eba0",
         "Title": "...Title...",
+        "Keywords": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
@@ -169,6 +194,7 @@
       "Piece": {
         "Id": "07cb0105-20c5-4d20-8eac-3912f71a494d",
         "Title": "...Title...",
+        "Keywords": [],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },

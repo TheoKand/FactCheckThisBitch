@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace FactCheckThisBitch.Models
@@ -10,8 +11,8 @@ namespace FactCheckThisBitch.Models
         public string Id;
         public string Title;
         public string Thesis;
-        public string[] Keywords;
-        public string[] Images;
+        public List<string> Keywords;
+        public List<string> Images;
         public IContent Content; //depends on type
         public PieceType Type;
 
@@ -19,6 +20,8 @@ namespace FactCheckThisBitch.Models
         {
             Id = Guid.NewGuid().ToString();
             Title = "...Title...";
+            Keywords = new List<string>();
+            Images = new List<string>();
             Type = PieceType.Article;
             Content = new Article();
         }

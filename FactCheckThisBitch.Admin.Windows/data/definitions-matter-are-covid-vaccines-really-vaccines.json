@@ -49,16 +49,15 @@
           "definition"
         ],
         "Images": [
-          "951722d5-b498-4370-b03b-240392d549ef.png",
-          "0cd39eae-77ac-44f3-ad86-27fcf04b0e63.png"
+          "0cd39eae-77ac-44f3-ad86-27fcf04b0e63.png",
+          "951722d5-b498-4370-b03b-240392d549ef.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
           "Title": "immunity",
           "Summary": "the ability of an organism to resist a particular infection or toxin by the action of specific antibodies or sensitized white blood cells.",
           "Source": "Merriam-webster",
-          "Url": "https://www.merriam-webster.com/dictionary/immunity",
-          "References": []
+          "Url": "https://www.merriam-webster.com/dictionary/immunity"
         },
         "Type": "Definition"
       },

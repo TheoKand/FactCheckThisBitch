@@ -20,11 +20,6 @@ namespace FackCheckThisBitch.Common
             return input.IsEmpty() ? null : input;
         }
 
-        public static IEnumerable<string> ValueOrNull(this IEnumerable<string> input)
-        {
-            return input != null & input.Any() ? input : null;
-        }
-
         public static string TryGet(this IDictionary<string, string> input, string key)
         {
             if (input.ContainsKey(key))
@@ -56,21 +51,10 @@ namespace FackCheckThisBitch.Common
             return result;
         }
 
-        public static bool IsEmpty(this string[] input)
-        {
-            return (input == null || input.Length == 0);
-        }
-
         public static string[] CommaSeparatedListToArray(this string input)
         {
             if (input.IsEmpty()) return null;
             return input.Split(",").Where(x => !x.IsEmpty()).Select(x => x.Trim()).ToArray();
-        }
-
-        public static string ArrayToCommaSeparatedList(this string[] input)
-        {
-            if (input.IsEmpty()) return null;
-            return string.Join(", ", input);
         }
 
         public static string ToSimpleStringDate(this DateTime? input)
@@ -134,9 +118,9 @@ namespace FackCheckThisBitch.Common
             return count >= 2;
         }
 
-        public static bool HaveAtLeastOneCommonKeyword(this string[] keywords1, string[] keywords2)
+        public static bool HaveAtLeastOneCommonKeyword(this IEnumerable<string> keywords1, IEnumerable<string> keywords2)
         {
-            if (keywords1.IsEmpty() || keywords2.IsEmpty()) return false;
+            if (!keywords1.Any() || !keywords2.Any()) return false;
             var nonEmptyKeywords1 = keywords1.Where(k => !k.IsEmpty()).ToList();
             var nonEmptyKeywords2 = keywords2.Where(k => !k.IsEmpty()).ToList();
 
