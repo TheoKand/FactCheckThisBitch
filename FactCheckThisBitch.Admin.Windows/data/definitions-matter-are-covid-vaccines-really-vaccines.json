@@ -84,12 +84,9 @@
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
           "Organization": "Independent.co.uk",
-          "Author": "",
           "Title": "Vaccinated patients are dying of Covid due to waning immunity, says Dr Susan Hopkins",
           "Summary": "Double-jabbed vulnerable and elderly people are dying from Covid-19 due to the efficacy of the vaccine waning, a senior adviser has said.",
-          "Source": "",
           "Url": "https://www.independent.co.uk/news/uk/home-news/vaccine-waning-immunity-covid-deaths-b1953158.html",
-          "References": [],
           "DatePublished": "2021-11-07T00:00:00"
         },
         "Type": "Article"
@@ -290,57 +287,6 @@
         "Type": "Article"
       },
       "Valid": true
-    },
-    {
-      "Index": 10,
-      "Piece": {
-        "Id": "ae201350-f797-43d2-b0f9-1e05a71d82ff",
-        "Title": "Enter your thesis title here. What do you want to show with this piece.",
-        "Thesis": "Elaborate on your entire thesis here",
-        "Keywords": [
-          "First",
-          "Second"
-        ],
-        "Images": [],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "Type": "Article"
-      }
-    },
-    {
-      "Index": 11,
-      "Piece": {
-        "Id": "d01bee53-debb-4cc7-8da5-1ca40859d7d2",
-        "Title": "Enter your thesis title here. What do you want to show with this piece.",
-        "Thesis": "Elaborate on your entire thesis here",
-        "Keywords": [
-          "First",
-          "Second"
-        ],
-        "Images": [],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "Type": "Article"
-      }
-    },
-    {
-      "Index": 12,
-      "Piece": {
-        "Id": "595451e4-533d-43e6-bcb8-9412b97a74c5",
-        "Title": "Enter your thesis title here. What do you want to show with this piece.",
-        "Thesis": "Elaborate on your entire thesis here",
-        "Keywords": [
-          "First",
-          "Second"
-        ],
-        "Images": [],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "Type": "Article"
-      }
     }
   ]
 }

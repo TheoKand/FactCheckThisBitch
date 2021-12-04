@@ -14,29 +14,10 @@ namespace FactCheckThisBitch.Models
         public string Conclusion;
         public int Width = 4;
         public int Height = 3;
-        public List<PuzzlePiece> PuzzlePieces;
+        public List<PuzzlePiece> PuzzlePieces= new List<PuzzlePiece>();
 
         [JsonIgnore]
         public string FileName => Title != null ? $"{Title?.ToSanitizedString()}.json" : null;
-
-        public void InitPieces()
-        {
-            if (PuzzlePieces == null)
-            {
-                PuzzlePieces = new List<PuzzlePiece>();
-                var index = 0;
-                for (int i = 0; i < Width * Height; i++)
-                {
-                    index++;
-                    PuzzlePiece puzzlePiece = new PuzzlePiece
-                    {
-                        Index = index,
-                        Piece = new Piece()
-                    };
-                    PuzzlePieces.Add(puzzlePiece);
-                }
-            }
-        }
     }
 
     public class PuzzlePiece

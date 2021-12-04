@@ -80,19 +80,27 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void CreateNew()
         {
-            //TODO: Check for unsaved changes
+
+            if (IsDirty)
+            {
+                var result = MessageBox.Show("Do you want to save your changes?", "Save Changes",
+                    MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    SaveToFile();
+                }
+            }
+
             _puzzle = new Puzzle()
             {
                 Title = $"New created at {DateTime.UtcNow}"
             };
-            _puzzle.InitPieces();
         }
 
         private void LoadFromFile()
         {
             var json = File.ReadAllText(UserSettings.Instance().CurrentPuzzlePath, Encoding.UTF8);
             _puzzle = JsonConvert.DeserializeObject<Puzzle>(json, StaticSettings.JsonSerializerSettings);
-            _puzzle?.InitPieces();
         }
 
         private void SaveToFile()
