@@ -13,7 +13,6 @@ namespace FactCheckThisBitch.Models
         public string[] Keywords;
         public string[] Images;
         public IContent Content; //depends on type
-        public PieceDisplay Display;
         public PieceType Type;
 
         public Piece()
@@ -23,12 +22,6 @@ namespace FactCheckThisBitch.Models
             Type = PieceType.Article;
             Content = new Article();
         }
-    }
-
-    public class PieceDisplay
-    {
-        public string Image;
-        public string Thumbnail;
     }
 
     [JsonConverter(typeof(StringEnumConverter))]

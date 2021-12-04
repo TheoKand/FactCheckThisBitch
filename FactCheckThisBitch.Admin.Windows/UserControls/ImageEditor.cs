@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using FackCheckThisBitch.Common;
@@ -126,7 +127,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 var imageName = $"{Guid.NewGuid()}.png";
                 var destinationImage = Path.Combine(Configuration.Instance().DataFolder, "media", imageName);
                 Clipboard.GetImage().Save(destinationImage, ImageFormat.Png);
-                _images.Add(destinationImage);
+                _images.Add(imageName);
                 LoadForm();
             }
         }

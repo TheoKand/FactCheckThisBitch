@@ -20,6 +20,11 @@ namespace FackCheckThisBitch.Common
             return input.IsEmpty() ? null : input;
         }
 
+        public static IEnumerable<string> ValueOrNull(this IEnumerable<string> input)
+        {
+            return input != null & input.Any() ? input : null;
+        }
+
         public static string TryGet(this IDictionary<string, string> input, string key)
         {
             if (input.ContainsKey(key))

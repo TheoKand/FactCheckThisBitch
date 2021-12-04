@@ -19,7 +19,7 @@
           "immunity"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\22b69a8e-a8f3-43f5-8403-d76128123d1e.png"
+          "22b69a8e-a8f3-43f5-8403-d76128123d1e.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
@@ -32,7 +32,6 @@
           ],
           "DatePublished": "2003-01-01T00:00:00"
         },
-        "Display": {},
         "Type": "Definition"
       },
       "Valid": true
@@ -50,8 +49,8 @@
           "definition"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\951722d5-b498-4370-b03b-240392d549ef.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\0cd39eae-77ac-44f3-ad86-27fcf04b0e63.png"
+          "951722d5-b498-4370-b03b-240392d549ef.png",
+          "0cd39eae-77ac-44f3-ad86-27fcf04b0e63.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
@@ -61,7 +60,6 @@
           "Url": "https://www.merriam-webster.com/dictionary/immunity",
           "References": []
         },
-        "Display": {},
         "Type": "Definition"
       },
       "Valid": true
@@ -80,8 +78,8 @@
           "immunity"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\2d728858-80c8-4c86-83bc-1b3649a2625d.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\a070be68-ca5b-4bbe-950b-88f7bb251545.png"
+          "2d728858-80c8-4c86-83bc-1b3649a2625d.png",
+          "a070be68-ca5b-4bbe-950b-88f7bb251545.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -94,7 +92,6 @@
           "References": [],
           "DatePublished": "2021-11-07T00:00:00"
         },
-        "Display": {},
         "Type": "Article"
       },
       "Valid": true
@@ -115,8 +112,8 @@
           "cell"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\9da54554-3061-4024-aa89-b17e950c4c29.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\f328e488-9cec-4bf1-ad72-041a6393a66b.png"
+          "9da54554-3061-4024-aa89-b17e950c4c29.png",
+          "f328e488-9cec-4bf1-ad72-041a6393a66b.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -131,7 +128,6 @@
           ],
           "DatePublished": "2021-01-25T00:00:00"
         },
-        "Display": {},
         "Type": "Article"
       },
       "Valid": true
@@ -152,7 +148,7 @@
           "gene"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\aebe6faf-05a8-49c4-b873-cd972813a751.png",
+          "aebe6faf-05a8-49c4-b873-cd972813a751.png",
           "are-covid-vaccines-really-vaccines-guid2.png"
         ],
         "Content": {
@@ -163,7 +159,6 @@
           "Url": "https://www.cusabio.com/c-20679.html",
           "DatePublished": "2000-01-09T00:00:00"
         },
-        "Display": {},
         "Type": "Article"
       },
       "Valid": true
@@ -182,7 +177,7 @@
           "cell"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png",
+          "5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png",
           "5d1466bd-ee80-4a56-8c53-61edf13b25a3.png"
         ],
         "Content": {
@@ -192,7 +187,6 @@
           "Source": "Encyclopædia Britannica",
           "Url": "https://www.britannica.com/science/genetically-modified-organism"
         },
-        "Display": {},
         "Type": "Definition"
       },
       "Valid": true
@@ -211,8 +205,8 @@
           "liability"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\0bf649c2-3bac-4ad8-9827-3d6d3ea22421.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\1f8b33ed-23c6-4bf9-8bf8-6989d8ea99c0.png"
+          "0bf649c2-3bac-4ad8-9827-3d6d3ea22421.png",
+          "1f8b33ed-23c6-4bf9-8bf8-6989d8ea99c0.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -225,7 +219,6 @@
           "References": [],
           "DatePublished": "2019-05-14T00:00:00"
         },
-        "Display": {},
         "Type": "Article"
       },
       "Valid": true
@@ -245,8 +238,8 @@
           "liability"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\ac7cf838-7211-4581-863c-3c4cb4769cba.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\2e16289d-a0a0-4cfc-8eb7-c8ba6953724a.png"
+          "ac7cf838-7211-4581-863c-3c4cb4769cba.png",
+          "2e16289d-a0a0-4cfc-8eb7-c8ba6953724a.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -258,7 +251,6 @@
           "Url": "https://violationtracker.goodjobsfirst.org/prog.php?parent=pfizer&sort=desc",
           "References": []
         },
-        "Display": {},
         "Type": "Article"
       },
       "Valid": true
@@ -279,8 +271,8 @@
           "pfizer"
         ],
         "Images": [
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\ffc733b0-0027-4e26-ac27-d00aea985e87.png",
-          "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\media\\6201dbcb-9a0b-4b47-8216-3118db13ea87.png"
+          "ffc733b0-0027-4e26-ac27-d00aea985e87.png",
+          "6201dbcb-9a0b-4b47-8216-3118db13ea87.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -295,7 +287,6 @@
           ],
           "DatePublished": "2021-11-18T00:00:00"
         },
-        "Display": {},
         "Type": "Article"
       },
       "Valid": true
@@ -314,7 +305,6 @@
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
-        "Display": {},
         "Type": "Article"
       }
     },
@@ -332,7 +322,6 @@
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
-        "Display": {},
         "Type": "Article"
       }
     },
@@ -350,7 +339,6 @@
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
-        "Display": {},
         "Type": "Article"
       }
     }

@@ -55,7 +55,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _piece.Title = txtTitle.Text.ValueOrNull();
             _piece.Thesis = txtThesis.Text.ValueOrNull();
             _piece.Keywords = txtKeywords.Text?.ToLower().CommaSeparatedListToArray();
-            _piece.Images = imageEditor1.Images != null && imageEditor1.Images.Any() ? imageEditor1.Images.ToArray() : null;
+            _piece.Images = imageEditor1.Images.ValueOrNull()?.ToArray();
             _piece.Type = (PieceType)Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
 
             _baseContentUi.SaveForm();
