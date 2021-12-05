@@ -14,10 +14,15 @@ namespace FactCheckThisBitch.Models
         public string Description { get; set; }
         public string Source { get; set; }
         public string Url { get; set; }
-        public IEnumerable<string> Images { get; set; }
+        public List<string> Images { get; set; }
         public DateTime? DatePublished { get; set; }
-
         public string Author { get; set; }
+        public string OriginalSource { get; set; }
+
+        public Reference()
+        {
+            Images = new List<string>();
+        }
     }
 
     [JsonConverter(typeof(StringEnumConverter))]

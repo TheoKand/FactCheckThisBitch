@@ -39,7 +39,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 23);
+            this.textBox1.Size = new System.Drawing.Size(158, 23);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -48,9 +48,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.textBox1);
-            this.MinimumSize = new System.Drawing.Size(194, 20);
             this.Name = "TextBoxWithValidation";
-            this.Size = new System.Drawing.Size(194, 25);
+            this.Size = new System.Drawing.Size(161, 25);
             this.ResumeLayout(false);
             this.PerformLayout();
 

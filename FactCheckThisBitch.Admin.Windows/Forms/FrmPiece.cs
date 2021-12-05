@@ -11,9 +11,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
     public partial class FrmPiece : Form
     {
         private Piece _piece;
-        private BaseContentUi _baseContentUi;
-        private ContentUi _contentUi;
-        private bool _loading;
 
         public FrmPiece(Piece piece)
         {
@@ -23,10 +20,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void FrmPieceEdit_Load(object sender, EventArgs e)
         {
-            _loading = true;
             InitForm();
             LoadForm();
-            _loading = false;
         }
 
         private void InitForm()
@@ -40,11 +35,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             txtTitle.Text = _piece.Title;
             txtThesis.Text = _piece.Thesis;
             txtKeywords.Text = string.Join(",", _piece.Keywords);
-            imageEditor1.Images = _piece.Images != null ? _piece.Images.ToList() : new List<string>();
 
-            panelContent.Controls.Clear();
-            LoadBaseContentUi();
-            LoadContentUi();
+            LoadReferences();
         }
 
         private void SaveForm()
@@ -52,36 +44,49 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _piece.Title = txtTitle.Text.ValueOrNull();
             _piece.Thesis = txtThesis.Text.ValueOrNull();
             _piece.Keywords = txtKeywords.Text.Split(",").ToList();
-            _piece.Images = imageEditor1.Images;
 
-            _baseContentUi.SaveForm();
-            _contentUi.SaveForm();
-
-            _piece.Content = _baseContentUi.Content;
+            foreach (TabPage tab in tabReferences.TabPages)
+            {
+                var referenceUi = tab.Controls[0] as ReferenceUi;
+                referenceUi?.SaveForm();
+            }
         }
 
-        private void LoadBaseContentUi()
+        private void LoadReferences()
         {
+            tabReferences.TabPages.Clear();
 
-            _baseContentUi = new BaseContentUi();
-            _baseContentUi.Content = _piece.Content;
-            _baseContentUi.Left = 4;
-            _baseContentUi.Top = 12;
-            _baseContentUi.Width = panelContent.Width - 8;
+            for (var index = 0; index < _piece.References.Count; index++)
+            {
+                var reference = _piece.References[index];
+                var tabPage = new TabPage()
+                {
+                    Left = 0,
+                    Top = 0,
+                    Text = reference.Type.ToString(),
+                    Width = tabReferences.Width,
+                    Height = tabReferences.Height
+                };
 
-            panelContent.Controls.Add(_baseContentUi);
-        }
+                var referenceUi = new ReferenceUi()
+                {
+                    Tag = index,
+                    Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom,
+                    Content = reference,
+                    Width = tabReferences.Width,
+                    Height = tabReferences.Height - 100,
+                    AutoScaleMode = AutoScaleMode.None,
+                    OnDelete = (int tabIndex) =>
+                    {
+                        tabReferences.TabPages.RemoveAt(tabIndex);
+                        _piece.References.RemoveAt(tabIndex);
+                        tabReferences.SelectedIndex = tabReferences.TabCount - 1;
+                    }
+                };
+                tabPage.Controls.Add(referenceUi);
 
-        private void LoadContentUi()
-        {
-            _contentUi = new ContentUi();
-            _contentUi.Content = _piece.Content;
-            _contentUi.Left = 4;
-            _contentUi.Top = _baseContentUi.Bottom + 20;
-            _contentUi.Width = _baseContentUi.Width - 8;
-            _contentUi.Height = _piece.Content.PropertiesNotFromInterface().Count() * 30 + 50;
-
-            panelContent.Controls.Add(_contentUi);
+                tabReferences.TabPages.Add(tabPage);
+            }
         }
 
         #region events
@@ -101,58 +106,64 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private async void btnGetArticleMetadata_Click(object sender, EventArgs e)
         {
+            var reference = new Reference {Type = ReferenceType.Article};
+
             SaveForm();
 
-            if (_piece.Content.Url.IsEmpty()) return;
+            var url = Prompt.ShowDialog("Enter Url", "Add new reference");
+            if (!url.IsEmpty())
+            {
+                var onlineArticleParser = new ArticleMetadataParser(url);
+                IDictionary<string, string> metaData = default;
+                try
+                {
+                    Cursor.Current = Cursors.WaitCursor;
+                    metaData = await onlineArticleParser.Download();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                    return;
+                }
+                finally
+                {
+                    Cursor.Current = Cursors.Default;
+                }
 
-            var onlineArticleParser = new ArticleMetadataParser(_piece.Content.Url);
-            IDictionary<string, string> metaData = default;
-            try
-            {
-                Cursor.Current = Cursors.WaitCursor;
-                metaData = await onlineArticleParser.Download();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-                return;
-            }
-            finally
-            {
-                Cursor.Current = Cursors.Default;
+                reference.Type = ReferenceType.Article;
+                reference.Url = url;
+                reference.Title = metaData.TryGet("title");
+                reference.Description = metaData.TryGet("description");
+                reference.Source = metaData.TryGet("site_name");
+                reference.OriginalSource = metaData.TryGet("original-source");
+                reference.Author = metaData.TryGet("author");
+
+                if (DateTime.TryParse(metaData.TryGet("published_time"), out DateTime datePublished))
+                {
+                    reference.DatePublished = datePublished;
+                }
+                else if (DateTime.TryParse(metaData.TryGet("published"), out datePublished))
+                {
+                    reference.DatePublished = datePublished;
+                }
+                else if (DateTime.TryParse(metaData.TryGet("datePublished"), out datePublished))
+                {
+                    reference.DatePublished = datePublished;
+                }
+
+                string metadataKeywords = metaData.TryGet("keywords");
+                if (metadataKeywords != null)
+                {
+                    var newKeywords = metadataKeywords.ToLower().Split(",").Take(5);
+                    _piece.Keywords.AddRange(newKeywords.Where(k => !_piece.Keywords.Any(pk => pk == k)).ToList());
+                }
             }
 
-            _piece.Content.Title = metaData.TryGet("title");
-            _piece.Content.Summary = metaData.TryGet("description");
-            _piece.Content.Source = metaData.TryGet("site_name");
-            _piece.Content.References = metaData.TryGet("original-source")?.Split(",");
-
-            if (DateTime.TryParse(metaData.TryGet("published_time"), out DateTime datePublished))
-            {
-                _piece.Content.DatePublished = datePublished;
-            }
-            else if (DateTime.TryParse(metaData.TryGet("published"), out datePublished))
-            {
-                _piece.Content.DatePublished = datePublished;
-            }
-            else if (DateTime.TryParse(metaData.TryGet("datePublished"), out datePublished))
-            {
-                _piece.Content.DatePublished = datePublished;
-            }
-
-            string metadataKeywords = metaData.TryGet("keywords");
-            if ( metadataKeywords != null)
-            {
-                var newKeywords = metadataKeywords.ToLower().Split(",").Take(5);
-                _piece.Keywords.AddRange(newKeywords.Where(k => !_piece.Keywords.Any(pk => pk == k)).ToList());
-            }
-
-            if (_piece.Content is Article)
-            {
-                (_piece.Content as Article).Author = metaData.TryGet("author");
-            }
+            _piece.References.Add(reference);
 
             LoadForm();
+
+            tabReferences.SelectedIndex = tabReferences.TabCount - 1;
         }
 
         #endregion

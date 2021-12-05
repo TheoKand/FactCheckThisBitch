@@ -12,14 +12,11 @@
       "Piece": {
         "Id": "47aaf170-7e50-4085-ae3b-44849fc00ab7",
         "Title": "Wikipedia definition of Vaccine",
-        "Thesis": "According to Wikipedia, a vaccine has two characteristics:  Provides <b>immunity</b> and contains a <b>weakened or killed form of a virus</b>",
+        "Thesis": "According to Wikipedia, a vaccine has two characteristics:  Provides <b>immunity</b> and contains a <b>weakened or killed form of a virus</b>. According to Cambridge Dictionary, it <b>prevents disease</b> and <b>often contains a weakened or dead form of the disease-causing organism</b>",
         "Keywords": [
-          "vaccine",
-          "definition",
-          "immunity"
-        ],
-        "Images": [
-          "22b69a8e-a8f3-43f5-8403-d76128123d1e.png"
+          "immunity",
+          "vaccine definition",
+          " dictionary"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
@@ -32,7 +29,26 @@
           ],
           "DatePublished": "2003-01-01T00:00:00"
         },
-        "Type": "Definition"
+        "References": [
+          {
+            "Type": 1,
+            "Title": "Vaccine - Wikipedia",
+            "Url": "https://en.wikipedia.org/wiki/Vaccine",
+            "Images": [
+              "22b69a8e-a8f3-43f5-8403-d76128123d1e.png"
+            ],
+            "DatePublished": "2001-10-26T00:00:00"
+          },
+          {
+            "Type": 1,
+            "Title": "Vaccine - Cambridge Dictionary",
+            "Source": "Cambridge Dictionary",
+            "Url": "https://dictionary.cambridge.org/dictionary/english/vaccine",
+            "Images": [
+              "0c84b676-e913-4fc7-abe8-bdfd9123f4de.png"
+            ]
+          }
+        ]
       },
       "Valid": true
     },
@@ -42,15 +58,11 @@
       "Y": 1,
       "Piece": {
         "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
-        "Title": "Merriam-webster definition of Immunity",
-        "Thesis": "\"the power to keep yourself from being affected by a disease\" \"the ability of an organism to <B>resist</b> a particular infection or toxin by the action of specific antibodies\"",
+        "Title": "Definition of Immunity",
+        "Thesis": "According to Merriam-Webster dictionary it's \"the power to keep yourself from being affected by a disease\" and according to Oxford Languages it's \"the ability of an organism to <B>resist</b> a particular infection or toxin by the action of specific antibodies\".",
         "Keywords": [
           "immunity",
           "definition"
-        ],
-        "Images": [
-          "0cd39eae-77ac-44f3-ad86-27fcf04b0e63.png",
-          "951722d5-b498-4370-b03b-240392d549ef.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
@@ -59,7 +71,27 @@
           "Source": "Merriam-webster",
           "Url": "https://www.merriam-webster.com/dictionary/immunity"
         },
-        "Type": "Definition"
+        "References": [
+          {
+            "Type": 1,
+            "Title": "Definition of IMMUNITY",
+            "Description": "the quality or state of being immune; especially : a condition of being able to resist a particular disease especially through preventing development of a pathogenic microorganism or by counteracting the effects of its products… See the full definition",
+            "Source": "merriam-webster.com",
+            "Url": "https://www.merriam-webster.com/dictionary/immunity",
+            "Images": [
+              "0cd39eae-77ac-44f3-ad86-27fcf04b0e63.png"
+            ]
+          },
+          {
+            "Type": 1,
+            "Title": "Definition of IMMUNITY",
+            "Source": "Oxford Languages",
+            "Url": "https://www.google.com/search?q=immunity+definition",
+            "Images": [
+              "951722d5-b498-4370-b03b-240392d549ef.png"
+            ]
+          }
+        ]
       },
       "Valid": true
     },
@@ -69,16 +101,15 @@
       "Y": 1,
       "Piece": {
         "Id": "493786ca-b183-439e-88c6-65eeb150330e",
-        "Title": "Covid-Vaccinated patients are dying of Covid due to waning immunity",
-        "Thesis": "A vaccine is supposed to give immunity. Immunity means protection. And yet Covid-vaccinated patients are dying.",
+        "Title": "Definitions Matter. Is this a vaccine?",
+        "Thesis": "A vaccine is supposed to give immunity. Immunity means protection. And yet Covid-vaccinated patients are dying. ",
         "Keywords": [
           "vaccine",
           "death",
-          "immunity"
-        ],
-        "Images": [
-          "2d728858-80c8-4c86-83bc-1b3649a2625d.png",
-          "a070be68-ca5b-4bbe-950b-88f7bb251545.png"
+          "immunity",
+          "vaccines",
+          "coronavirus vaccines",
+          "covid"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -88,7 +119,20 @@
           "Url": "https://www.independent.co.uk/news/uk/home-news/vaccine-waning-immunity-covid-deaths-b1953158.html",
           "DatePublished": "2021-11-07T00:00:00"
         },
-        "Type": "Article"
+        "References": [
+          {
+            "Type": 1,
+            "Title": "Double-jabbed are dying of Covid amid waning immunity, says top medic",
+            "Description": "From Monday, booster jabs can be booked one month earlier than previously allowed",
+            "Source": "The Independent",
+            "Url": "https://www.independent.co.uk/news/uk/home-news/vaccine-waning-immunity-covid-deaths-b1953158.html",
+            "Images": [
+              "2d728858-80c8-4c86-83bc-1b3649a2625d.png",
+              "a070be68-ca5b-4bbe-950b-88f7bb251545.png"
+            ],
+            "DatePublished": "2021-11-07T00:00:00"
+          }
+        ]
       },
       "Valid": true
     },
@@ -99,17 +143,12 @@
       "Piece": {
         "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
         "Title": "Covid mRNA Vaccines hack your human cells into producing non human proteins",
-        "Thesis": "",
         "Keywords": [
           "vaccine",
           "mrna",
           "gene therapy",
           "gene",
           "cell"
-        ],
-        "Images": [
-          "9da54554-3061-4024-aa89-b17e950c4c29.png",
-          "f328e488-9cec-4bf1-ad72-041a6393a66b.png"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -124,7 +163,20 @@
           ],
           "DatePublished": "2021-01-25T00:00:00"
         },
-        "Type": "Article"
+        "References": [
+          {
+            "Type": 1,
+            "Title": "COVID mRNA Vaccines are a Form of Gene Therapy",
+            "Description": "References: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6491712/",
+            "Source": "Sovereign Wealth Fund Institute",
+            "Url": "https://www.swfinstitute.org/news/83947/Covid-mrna-vaccines-are-a-form-of-gene-therapy",
+            "Images": [
+              "9da54554-3061-4024-aa89-b17e950c4c29.png",
+              "f328e488-9cec-4bf1-ad72-041a6393a66b.png"
+            ],
+            "DatePublished": "2021-01-25T00:00:00"
+          }
+        ]
       },
       "Valid": true
     },
@@ -143,10 +195,6 @@
           "cell",
           "gene"
         ],
-        "Images": [
-          "aebe6faf-05a8-49c4-b873-cd972813a751.png",
-          "are-covid-vaccines-really-vaccines-guid2.png"
-        ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
           "Title": "Production of Recombinant Protein",
@@ -155,7 +203,19 @@
           "Url": "https://www.cusabio.com/c-20679.html",
           "DatePublished": "2000-01-09T00:00:00"
         },
-        "Type": "Article"
+        "References": [
+          {
+            "Type": 1,
+            "Title": "Production of Recombinant Protein",
+            "Description": "Due to their important functions, proteins are widely used for industrial, nutritional, and medical applications. An important way to generate large amounts of a specific protein is the recombinant DNA technology, which involves the use of genetic recombination to bring together ",
+            "Source": "CUSABIO",
+            "Url": "https://www.cusabio.com/c-20679.html",
+            "Images": [
+              "aebe6faf-05a8-49c4-b873-cd972813a751.png",
+              "are-covid-vaccines-really-vaccines-guid2.png"
+            ]
+          }
+        ]
       },
       "Valid": true
     },
@@ -170,11 +230,8 @@
           "genetic engineering",
           "gmo",
           "recombinant dna",
-          "cell"
-        ],
-        "Images": [
-          "5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png",
-          "5d1466bd-ee80-4a56-8c53-61edf13b25a3.png"
+          "cell",
+          "genetically modified organism"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
@@ -183,7 +240,19 @@
           "Source": "Encyclopædia Britannica",
           "Url": "https://www.britannica.com/science/genetically-modified-organism"
         },
-        "Type": "Definition"
+        "References": [
+          {
+            "Type": 1,
+            "Title": "genetically modified organism | Definition, Examples, & Facts",
+            "Description": "Genetically modified organism, organism whose genome has been engineered in the laboratory in order to favor the expression of desired physiological traits or the generation of desired biological products. Learn more about the development and uses of genetically modified organisms in this article.",
+            "Source": "Encyclopedia Britannica",
+            "Url": "https://www.britannica.com/science/genetically-modified-organism",
+            "Images": [
+              "5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png",
+              "5d1466bd-ee80-4a56-8c53-61edf13b25a3.png"
+            ]
+          }
+        ]
       },
       "Valid": true
     },
@@ -198,11 +267,12 @@
         "Keywords": [
           "vaccine",
           "injury",
-          "liability"
-        ],
-        "Images": [
-          "0bf649c2-3bac-4ad8-9827-3d6d3ea22421.png",
-          "1f8b33ed-23c6-4bf9-8bf8-6989d8ea99c0.png"
+          "liability",
+          "head of the vaccine injury compensation program",
+          " vaccine injury compensation program",
+          " vaccines",
+          " average claim",
+          " pharmaceutical companies"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -215,7 +285,21 @@
           "References": [],
           "DatePublished": "2019-05-14T00:00:00"
         },
-        "Type": "Article"
+        "References": [
+          {
+            "Type": 1,
+            "Title": "Why the Government Pays Billions to People Who Claim Injury by Vaccines",
+            "Description": "A little-known deal protects drug companies in the U.S. from being sued—and feeds conspiracy theories in the process.",
+            "Source": "The Atlantic",
+            "Url": "https://www.theatlantic.com/health/archive/2019/05/vaccine-safety-program/589354/",
+            "Images": [
+              "1f8b33ed-23c6-4bf9-8bf8-6989d8ea99c0.png",
+              "0bf649c2-3bac-4ad8-9827-3d6d3ea22421.png"
+            ],
+            "DatePublished": "2019-05-14T00:00:00",
+            "Author": "James Hamblin"
+          }
+        ]
       },
       "Valid": true
     },
@@ -231,11 +315,12 @@
           "pfizer",
           "fines",
           "penalties",
-          "liability"
-        ],
-        "Images": [
-          "ac7cf838-7211-4581-863c-3c4cb4769cba.png",
-          "2e16289d-a0a0-4cfc-8eb7-c8ba6953724a.png"
+          "liability",
+          "good jobs first",
+          "good jobs",
+          "policy",
+          "accountability",
+          "subsidies"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -247,7 +332,19 @@
           "Url": "https://violationtracker.goodjobsfirst.org/prog.php?parent=pfizer&sort=desc",
           "References": []
         },
-        "Type": "Article"
+        "References": [
+          {
+            "Type": 1,
+            "Title": "Violation Tracker Company Summary: Pfizer",
+            "Description": "Penalty total since 2000:  $4,660,896,333\r\nNumber of records:  71",
+            "Source": "Good Jobs First",
+            "Url": "https://violationtracker.goodjobsfirst.org/prog.php?parent=pfizer&sort=desc",
+            "Images": [
+              "0e106dbc-d196-42d2-8959-9af8b835540e.png",
+              "2e16289d-a0a0-4cfc-8eb7-c8ba6953724a.png"
+            ]
+          }
+        ]
       },
       "Valid": true
     },
@@ -264,11 +361,12 @@
           "vaccine",
           "documents",
           "freedom of information act",
-          "pfizer"
-        ],
-        "Images": [
-          "ffc733b0-0027-4e26-ac27-d00aea985e87.png",
-          "6201dbcb-9a0b-4b47-8216-3118db13ea87.png"
+          "pfizer",
+          "nrlin:ocov",
+          "amers",
+          "us",
+          "namer",
+          "legal"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -283,7 +381,21 @@
           ],
           "DatePublished": "2021-11-18T00:00:00"
         },
-        "Type": "Article"
+        "References": [
+          {
+            "Type": 1,
+            "Title": "Wait what? FDA wants 55 years to process FOIA request over vaccine data",
+            "Description": "Freedom of Information Act requests are rarely speedy, but when a group of scientists asked the federal government to share the data it relied upon in licensing Pfizer’s COVID-19 vaccine, the response went beyond typical bureaucratic foot-dragging.",
+            "Source": "Reuters",
+            "Url": "https://www.reuters.com/legal/government/wait-what-fda-wants-55-years-process-foia-request-over-vaccine-data-2021-11-18/",
+            "Images": [
+              "ffc733b0-0027-4e26-ac27-d00aea985e87.png",
+              "6201dbcb-9a0b-4b47-8216-3118db13ea87.png"
+            ],
+            "DatePublished": "2021-11-18T00:00:00",
+            "Author": "Jenna Greene"
+          }
+        ]
       },
       "Valid": true
     }

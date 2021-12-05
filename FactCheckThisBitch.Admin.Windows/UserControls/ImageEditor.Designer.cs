@@ -43,6 +43,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.Location = new System.Drawing.Point(3, 4);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAdd.MinimumSize = new System.Drawing.Size(40, 55);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(40, 55);
             this.btnAdd.TabIndex = 2;
@@ -72,6 +73,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.btnPaste.Image = ((System.Drawing.Image)(resources.GetObject("btnPaste.Image")));
             this.btnPaste.Location = new System.Drawing.Point(3, 65);
             this.btnPaste.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPaste.MinimumSize = new System.Drawing.Size(40, 55);
             this.btnPaste.Name = "btnPaste";
             this.btnPaste.Size = new System.Drawing.Size(40, 55);
             this.btnPaste.TabIndex = 4;
@@ -81,8 +83,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // ImageEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.btnPaste);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAdd);

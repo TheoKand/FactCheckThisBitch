@@ -1,0 +1,84 @@
+﻿using FackCheckThisBitch.Common;
+using FactCheckThisBitch.Models;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Windows.Forms;
+
+namespace FactCheckThisBitch.Admin.Windows.UserControls
+{
+    public partial class ReferenceUi : UserControl
+    {
+        public Action<int> OnDelete;
+
+        private Reference _content;
+
+        public Reference Content
+        {
+            get => _content;
+            set
+            {
+                _content = value;
+                LoadForm();
+            }
+        }
+
+        public ReferenceUi()
+        {
+            InitializeComponent();
+            InitForm();
+        }
+
+        public void SaveForm()
+        {
+            _content.Title = txtTitle.Text.ValueOrNull();
+            _content.Description = txtSummary.Text.ValueOrNull();
+            _content.Source = txtSource.Text.ValueOrNull();
+            _content.Url = txtUrl.Text.ValueOrNull();
+            _content.Type = (ReferenceType)Enum.Parse(typeof(ReferenceType), cboType.SelectedValue.ToString() ?? string.Empty);
+            _content.Images = imageEditor1.Images;
+            _content.DatePublished = txtDatePublished.Text.ToDate();
+        }
+
+        private void InitForm()
+        {
+            txtDatePublished.ValidationPattern = typeof(DateTime).RegExValidationPatternForType();
+            var pieceTypes = Enum.GetValues(typeof(ReferenceType)).Cast<ReferenceType>();
+            cboType.DataSource = pieceTypes;
+        }
+
+        private void LoadForm()
+        {
+            cboType.SelectedItem = _content.Type;
+            txtTitle.Text = _content.Title;
+            txtSummary.Text = _content.Description;
+            txtSource.Text = _content.Source;
+            txtUrl.Text = _content.Url;
+            imageEditor1.Images = _content.Images != null ? _content.Images.ToList() : new List<string>();
+            txtDatePublished.Text = _content.DatePublished.ToSimpleStringDate();
+        }
+
+        #region
+
+        private void btnUrl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (txtUrl.Text.IsEmpty()) return;
+            new Process
+            {
+                StartInfo = new ProcessStartInfo(txtUrl.Text)
+                {
+                    UseShellExecute = true
+                }
+            }.Start();
+        }
+        private void btnDelete_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OnDelete?.Invoke((int)this.Tag);
+        }
+
+        #endregion
+
+
+    }
+}

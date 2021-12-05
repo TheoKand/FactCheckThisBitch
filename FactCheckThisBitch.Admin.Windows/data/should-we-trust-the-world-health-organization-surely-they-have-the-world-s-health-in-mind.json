@@ -120,11 +120,7 @@
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models",
-          "Uploader": "",
-          "Channel": "",
-          "Platform": "",
           "Title": "The race for a COVID-19 vaccine, explained",
-          "Summary": "",
           "Source": "BBC,CNBC",
           "Url": "https://www.vibby.com/embedding/vib?vib=7JvtgxT7h",
           "References": [
@@ -191,13 +187,9 @@
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
-          "Organization": "",
-          "Author": "",
           "Title": "Moderna Wins Initial $20M Grant from Gates Foundation",
-          "Summary": "",
           "Source": "Genetic Engineering & Biotechnology News",
           "Url": "https://www.genengnews.com/topics/omics/moderna-wins-initial-20m-grant-from-gates-foundation/",
-          "References": [],
           "DatePublished": "2016-01-12T00:00:00"
         },
         "Type": "Article"

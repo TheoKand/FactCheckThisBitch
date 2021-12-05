@@ -29,7 +29,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPiece));
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtThesis = new System.Windows.Forms.TextBox();
@@ -38,19 +37,14 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtKeywords = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.groupBoxContent = new System.Windows.Forms.GroupBox();
-            this.panelContent = new System.Windows.Forms.Panel();
-            this.lblContent = new System.Windows.Forms.Label();
-            this.imageEditor1 = new FactCheckThisBitch.Admin.Windows.UserControls.ImageEditor();
-            this.btnGetArticleMetadata = new System.Windows.Forms.Button();
-            this.groupBoxContent.SuspendLayout();
+            this.btnAddReferenceFromUrl = new System.Windows.Forms.Button();
+            this.tabReferences = new System.Windows.Forms.TabControl();
             this.SuspendLayout();
             // 
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(826, 996);
+            this.btnCancel.Location = new System.Drawing.Point(889, 817);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(187, 63);
             this.btnCancel.TabIndex = 8;
@@ -61,7 +55,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(632, 996);
+            this.btnSave.Location = new System.Drawing.Point(695, 817);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(187, 63);
             this.btnSave.TabIndex = 7;
@@ -77,7 +71,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtThesis.Multiline = true;
             this.txtThesis.Name = "txtThesis";
             this.txtThesis.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtThesis.Size = new System.Drawing.Size(923, 92);
+            this.txtThesis.Size = new System.Drawing.Size(986, 92);
             this.txtThesis.TabIndex = 1;
             // 
             // label2
@@ -98,7 +92,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTitle.Size = new System.Drawing.Size(923, 48);
+            this.txtTitle.Size = new System.Drawing.Size(986, 48);
             this.txtTitle.TabIndex = 0;
             // 
             // label1
@@ -128,88 +122,42 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtKeywords.Location = new System.Drawing.Point(90, 168);
             this.txtKeywords.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtKeywords.Name = "txtKeywords";
-            this.txtKeywords.Size = new System.Drawing.Size(923, 27);
+            this.txtKeywords.Size = new System.Drawing.Size(986, 27);
             this.txtKeywords.TabIndex = 2;
             // 
-            // label5
+            // btnAddReferenceFromUrl
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(14, 221);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 20);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Images";
+            this.btnAddReferenceFromUrl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddReferenceFromUrl.Location = new System.Drawing.Point(862, 205);
+            this.btnAddReferenceFromUrl.Name = "btnAddReferenceFromUrl";
+            this.btnAddReferenceFromUrl.Size = new System.Drawing.Size(214, 40);
+            this.btnAddReferenceFromUrl.TabIndex = 22;
+            this.btnAddReferenceFromUrl.Text = "Add Reference";
+            this.btnAddReferenceFromUrl.UseVisualStyleBackColor = true;
+            this.btnAddReferenceFromUrl.Click += new System.EventHandler(this.btnGetArticleMetadata_Click);
             // 
-            // groupBoxContent
+            // tabReferences
             // 
-            this.groupBoxContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabReferences.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxContent.Controls.Add(this.panelContent);
-            this.groupBoxContent.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBoxContent.Location = new System.Drawing.Point(14, 375);
-            this.groupBoxContent.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBoxContent.Name = "groupBoxContent";
-            this.groupBoxContent.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBoxContent.Size = new System.Drawing.Size(1000, 615);
-            this.groupBoxContent.TabIndex = 6;
-            this.groupBoxContent.TabStop = false;
-            // 
-            // panelContent
-            // 
-            this.panelContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelContent.AutoScroll = true;
-            this.panelContent.Location = new System.Drawing.Point(7, 13);
-            this.panelContent.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(986, 593);
-            this.panelContent.TabIndex = 0;
-            // 
-            // lblContent
-            // 
-            this.lblContent.AutoSize = true;
-            this.lblContent.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblContent.Location = new System.Drawing.Point(13, 337);
-            this.lblContent.Name = "lblContent";
-            this.lblContent.Size = new System.Drawing.Size(166, 32);
-            this.lblContent.TabIndex = 20;
-            this.lblContent.Text = "Content Type";
-            // 
-            // imageEditor1
-            // 
-            this.imageEditor1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.imageEditor1.Images = ((System.Collections.Generic.List<string>)(resources.GetObject("imageEditor1.Images")));
-            this.imageEditor1.Location = new System.Drawing.Point(90, 209);
-            this.imageEditor1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.imageEditor1.Name = "imageEditor1";
-            this.imageEditor1.Size = new System.Drawing.Size(923, 124);
-            this.imageEditor1.TabIndex = 21;
-            // 
-            // btnGetArticleMetadata
-            // 
-            this.btnGetArticleMetadata.Location = new System.Drawing.Point(793, 341);
-            this.btnGetArticleMetadata.Name = "btnGetArticleMetadata";
-            this.btnGetArticleMetadata.Size = new System.Drawing.Size(214, 40);
-            this.btnGetArticleMetadata.TabIndex = 22;
-            this.btnGetArticleMetadata.Text = "Get Metadata from Url";
-            this.btnGetArticleMetadata.UseVisualStyleBackColor = true;
-            this.btnGetArticleMetadata.Click += new System.EventHandler(this.btnGetArticleMetadata_Click);
+            this.tabReferences.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tabReferences.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tabReferences.Location = new System.Drawing.Point(14, 265);
+            this.tabReferences.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabReferences.Name = "tabReferences";
+            this.tabReferences.SelectedIndex = 0;
+            this.tabReferences.Size = new System.Drawing.Size(1063, 532);
+            this.tabReferences.TabIndex = 23;
             // 
             // FrmPiece
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(1027, 1073);
-            this.Controls.Add(this.btnGetArticleMetadata);
-            this.Controls.Add(this.imageEditor1);
-            this.Controls.Add(this.lblContent);
-            this.Controls.Add(this.groupBoxContent);
-            this.Controls.Add(this.label5);
+            this.ClientSize = new System.Drawing.Size(1090, 894);
+            this.Controls.Add(this.btnAddReferenceFromUrl);
+            this.Controls.Add(this.tabReferences);
             this.Controls.Add(this.txtKeywords);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCancel);
@@ -223,7 +171,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Puzzle PuzzlePiece";
             this.Load += new System.EventHandler(this.FrmPieceEdit_Load);
-            this.groupBoxContent.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,11 +186,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtKeywords;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBoxContent;
-        private System.Windows.Forms.Label lblContent;
-        private UserControls.ImageEditor imageEditor1;
-        private System.Windows.Forms.Panel panelContent;
-        private System.Windows.Forms.Button btnGetArticleMetadata;
+        private System.Windows.Forms.Button btnAddReferenceFromUrl;
+        private System.Windows.Forms.TabControl tabReferences;
     }
 }

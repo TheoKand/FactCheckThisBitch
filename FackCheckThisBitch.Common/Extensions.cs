@@ -97,6 +97,13 @@ namespace FackCheckThisBitch.Common
             return null;
         }
 
+        public static bool IsValidUrl(this string input)
+        {
+            var pattern =
+                "^((http|ftp|https|www)://).([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?$";
+            return Regex.IsMatch(input, pattern);
+        }
+
         public static bool IsAlmostSameWith(this string phrase1, string phrase2)
         {
             phrase1 = phrase1.Trim();
