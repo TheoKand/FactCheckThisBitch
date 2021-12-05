@@ -57,20 +57,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="btnAdd.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </metadata>
-  <metadata name="btnPaste.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnPaste.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAAgtJREFUWEfd1z9IVWEYx/ELDk2O4hSBixhETQ4RuCVqUS3VJLg0BSK2mWRNhVAQ
+        vwAADr8BOAVTJAAAAgtJREFUWEfd1z9IVWEYx/ELDk2O4hSBixhETQ4RuCVqUS3VJLg0BSK2mWRNhVAQ
         gVMU1NJQ1hCREZGBQ0PiHkiEOEkRaH+1vr/LeeL1+NzOfY6eoH7wGc7red7zeO57z3lvLZjT+IRlHNLA
         38ggXmIeq/iZWcnGnqIXleQE7IJ/8g37sO20YQDHMjPQBT7jRQPWxC1Y3WG0IpRRfIVNmFpEo3jny0ec
         RFM5Am8SU6YB0UfThcJMw5vAfIea8Hjnp66gMFrNVrCG4cx5/EA6oUe3ewSquZiNGa2NwqQNfNBAkoOY

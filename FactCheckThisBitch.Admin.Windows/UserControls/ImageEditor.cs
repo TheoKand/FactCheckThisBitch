@@ -105,17 +105,22 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             openFileDialog1.DefaultExt = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif;*.tiff";
             openFileDialog1.CheckFileExists = true;
             openFileDialog1.CheckPathExists = true;
+            openFileDialog1.Multiselect = true;
             openFileDialog1.ShowReadOnly = false;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                var imageNameWithoutPath = new FileInfo(openFileDialog1.FileName).Name;
-                var destinationImage = Path.Combine(Configuration.Instance().DataFolder, "media", imageNameWithoutPath);
-                if (openFileDialog1.FileName.ToLower() != destinationImage.ToLower())
+                foreach (string fileNames in openFileDialog1.FileNames)
                 {
-                    File.Copy(openFileDialog1.FileName, destinationImage);
+                    var imageNameWithoutPath = new FileInfo(fileNames).Name;
+                    var destinationImage = Path.Combine(Configuration.Instance().DataFolder, "media", imageNameWithoutPath);
+                    if (fileNames.ToLower() != destinationImage.ToLower())
+                    {
+                        File.Copy(fileNames, destinationImage);
+                    }
+
+                    _images.Add(imageNameWithoutPath);
                 }
 
-                _images.Add(imageNameWithoutPath);
                 LoadForm();
             }
         }

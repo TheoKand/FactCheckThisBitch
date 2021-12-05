@@ -43,9 +43,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.Location = new System.Drawing.Point(3, 4);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnAdd.MinimumSize = new System.Drawing.Size(40, 55);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(40, 55);
+            this.btnAdd.Size = new System.Drawing.Size(40, 38);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "...";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -60,7 +59,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.panel1.Location = new System.Drawing.Point(50, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(495, 124);
+            this.panel1.Size = new System.Drawing.Size(495, 94);
             this.panel1.TabIndex = 3;
             // 
             // openFileDialog1
@@ -71,11 +70,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.btnPaste.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPaste.Image = ((System.Drawing.Image)(resources.GetObject("btnPaste.Image")));
-            this.btnPaste.Location = new System.Drawing.Point(3, 65);
+            this.btnPaste.Location = new System.Drawing.Point(3, 50);
             this.btnPaste.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnPaste.MinimumSize = new System.Drawing.Size(40, 55);
             this.btnPaste.Name = "btnPaste";
-            this.btnPaste.Size = new System.Drawing.Size(40, 55);
+            this.btnPaste.Size = new System.Drawing.Size(40, 39);
             this.btnPaste.TabIndex = 4;
             this.btnPaste.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPaste.UseVisualStyleBackColor = true;
@@ -89,7 +87,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.Controls.Add(this.btnAdd);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ImageEditor";
-            this.Size = new System.Drawing.Size(545, 124);
+            this.Size = new System.Drawing.Size(545, 94);
             this.ResumeLayout(false);
 
         }

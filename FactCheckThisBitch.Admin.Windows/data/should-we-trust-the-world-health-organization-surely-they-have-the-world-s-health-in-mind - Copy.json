@@ -129,6 +129,40 @@
       "X": 1,
       "Y": 2,
       "Piece": {
+        "Id": "9288d429-8ae0-4a3d-b532-f52b462ec72b",
+        "Title": "\"It's going to have to go to 7 billion people\"",
+        "Thesis": "Because the scary clown knows what's good for you and his pocket",
+        "Keywords": [
+          "bill gates",
+          "bill melinda gates foundation",
+          "vaccines"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models",
+          "Title": "The race for a COVID-19 vaccine, explained",
+          "Source": "BBC,CNBC",
+          "Url": "https://www.vibby.com/embedding/vib?vib=7JvtgxT7h",
+          "References": [
+            "https://www.youtube.com/watch?v=u1AQ5EXcJYc\r\nhttps://www.bbc.co.uk/news/business-57575077\r\nhttps://www.cnbc.com/2020/06/04/cramer-the-pandemic-led-to-a-great-wealth-transfer.html"
+          ],
+          "DatePublished": "2021-12-03T00:00:00"
+        },
+        "References": [
+          {
+            "Type": 3,
+            "Description": "Full video: https://www.youtube.com/watch?v=u1AQ5EXcJYc",
+            "Url": "https://www.vibby.com/embedding/vib?vib=7JvtgxT7h",
+            "Images": []
+          }
+        ]
+      },
+      "Valid": true
+    },
+    {
+      "Index": 5,
+      "X": 2,
+      "Y": 2,
+      "Piece": {
         "Id": "fb83047e-9a9a-49dd-9083-cdd439c3e123",
         "Title": "Bill Gates: The Best Investment I’ve Ever Made",
         "Thesis": "Since the push to vaccinate is yielding profits, have there been any indications for unnecessary vaccinations in the past?",
@@ -167,7 +201,7 @@
           },
           {
             "Type": 1,
-            "Title": "Gates Foundation Buys \nStakes in Drug Makers",
+            "Title": "Gates Foundation Buys\nStakes in Drug Makers",
             "Description": "The Gates Foundation purchased shares\nin nine big pharmaceutical companies valued at nearly $205 million.",
             "Source": "WSJ",
             "Url": "https://www.wsj.com/articles/SB1021577629748680000",
@@ -175,7 +209,7 @@
               "8894bc15-ebdc-401a-97f5-9a947c6cc57b.png"
             ],
             "DatePublished": "2002-05-17T00:00:00",
-            "Author": "David Bank and\nRebecca Buckman"
+            "Author": "David Bank and\nRebecca BuckmanStaff Reporters of The Wall Street\nJournal"
           },
           {
             "Type": 1,
@@ -186,42 +220,7 @@
               "ecb55988-309a-4bae-a4e2-77f8d0a369f9.png",
               "9e436b90-cbac-4850-bbe5-e0a5488860d4.png"
             ],
-            "DatePublished": "2014-08-31T00:00:00",
-            "Author": "Narayana Kumar"
-          }
-        ]
-      },
-      "Valid": true
-    },
-    {
-      "Index": 5,
-      "X": 2,
-      "Y": 2,
-      "Piece": {
-        "Id": "9288d429-8ae0-4a3d-b532-f52b462ec72b",
-        "Title": "\"It's going to have to go to 7 billion people\"",
-        "Thesis": "Because the scary clown knows what's good for you and his pocket",
-        "Keywords": [
-          "bill gates",
-          "bill melinda gates foundation",
-          "vaccines"
-        ],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.WebVideo, FactCheckThisBitch.Models",
-          "Title": "The race for a COVID-19 vaccine, explained",
-          "Source": "BBC,CNBC",
-          "Url": "https://www.vibby.com/embedding/vib?vib=7JvtgxT7h",
-          "References": [
-            "https://www.youtube.com/watch?v=u1AQ5EXcJYc\r\nhttps://www.bbc.co.uk/news/business-57575077\r\nhttps://www.cnbc.com/2020/06/04/cramer-the-pandemic-led-to-a-great-wealth-transfer.html"
-          ],
-          "DatePublished": "2021-12-03T00:00:00"
-        },
-        "References": [
-          {
-            "Type": 3,
-            "Description": "Full video: https://www.youtube.com/watch?v=u1AQ5EXcJYc",
-            "Url": "https://www.vibby.com/embedding/vib?vib=7JvtgxT7h",
-            "Images": []
+            "DatePublished": "2014-08-31T00:00:00"
           }
         ]
       },
@@ -259,8 +258,7 @@
             "Images": [
               "f7ff41b0-af8d-44c3-be31-f5b91692b6be.png"
             ],
-            "DatePublished": "2016-01-12T00:00:00",
-            "Author": ""
+            "DatePublished": "2016-01-12T00:00:00"
           },
           {
             "Type": 1,
@@ -272,7 +270,7 @@
               "9b8ddbad-aea4-4954-9551-73a2eecfd1ab.png"
             ],
             "DatePublished": "2002-05-17T00:00:00",
-            "Author": "David Bank and\n Rebecca Buckman"
+            "Author": "David Bank and\nRebecca BuckmanStaff Reporters of The Wall Street\nJournal"
           }
         ]
       },
@@ -462,8 +460,7 @@
             "Images": [
               "c55101ca-1947-4450-aade-2f5a804c44ef.png"
             ],
-            "DatePublished": "2010-03-11T00:00:00",
-            "Author": "Henry Miller"
+            "DatePublished": "2010-03-11T00:00:00"
           },
           {
             "Type": 1,
@@ -472,8 +469,7 @@
             "Images": [
               "b17d368f-897e-4478-81e4-82ac6a9c4e77.png"
             ],
-            "DatePublished": "2009-04-25T00:00:00",
-            "Author": ""
+            "DatePublished": "2009-04-25T00:00:00"
           },
           {
             "Type": 1,
@@ -484,8 +480,7 @@
             "Images": [
               "957367a2-56b8-431b-97bf-34b5f3c6da00.png"
             ],
-            "DatePublished": "2010-01-25T00:00:00",
-            "Author": "Frank Jordans"
+            "DatePublished": "2010-01-25T00:00:00"
           },
           {
             "Type": 1,
@@ -496,8 +491,7 @@
             "Images": [
               "9eb9da51-38bb-4a61-93f7-1b9ddddbba8e.png"
             ],
-            "DatePublished": "2010-06-07T00:00:00",
-            "Author": "Lynne Taylor"
+            "DatePublished": "2010-06-07T00:00:00"
           }
         ]
       },

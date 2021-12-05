@@ -38,6 +38,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             _content.Url = txtUrl.Text.ValueOrNull();
             _content.Type = (ReferenceType)Enum.Parse(typeof(ReferenceType), cboType.SelectedValue.ToString() ?? string.Empty);
             _content.Images = imageEditor1.Images;
+            _content.Author = txtAuthor.Text;
             _content.DatePublished = txtDatePublished.Text.ToDate();
         }
 
@@ -57,6 +58,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             txtUrl.Text = _content.Url;
             imageEditor1.Images = _content.Images != null ? _content.Images.ToList() : new List<string>();
             txtDatePublished.Text = _content.DatePublished.ToSimpleStringDate();
+            txtAuthor.Text = _content.Author;
         }
 
         #region

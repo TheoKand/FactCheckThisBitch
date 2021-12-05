@@ -74,7 +74,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                     Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom,
                     Content = reference,
                     Width = tabReferences.Width,
-                    Height = tabReferences.Height - 100,
+                    Height = tabPage.Height,
                     AutoScaleMode = AutoScaleMode.None,
                     OnDelete = (int tabIndex) =>
                     {
