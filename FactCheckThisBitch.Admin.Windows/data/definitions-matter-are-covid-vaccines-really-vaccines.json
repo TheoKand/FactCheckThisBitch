@@ -1,7 +1,7 @@
 {
   "Title": "Definitions Matter. Are Covid Vaccines really vaccines?",
   "Thesis": "If not, what are they? Are there any other technologies that work similarly?",
-  "Conclusion": "- Covid \"vaccines\" might actually be gene therapy.\r\n- Covid \"vaccines\" use the same technology as GM foods. Begs the question, are vaccine takers Genetically Modified Organisms?\r\n- Big Pharma would be liable for injuries had their product not been labeled \"vaccines\", but now it's the taxpayer picking up the bill.\r\n- Big Pharma is regularly paying huge fines for other nefarious practices.\r\n- Goverment bodies such as the US Food and drug administration seem to have Big Pharma's back.",
+  "Conclusion": "- Covid \"vaccines\" might actually be gene therapy.\r\n- Covid \"vaccines\" use the same technology as GM foods. Begs the question, are vaccine takers Genetically Modified Organisms?\r\n- Big Pharma would be liable for injuries had their product not been labeled \"vaccines\", but now it's the taxpayer picking up the bill.\r\n- Big Pharma is regularly paying huge fines for other nefarious practices.\r\n- Goverment bodies such as the European Comission and the  US Food and drug administration seem to have Big Pharma's back. ",
   "Width": 3,
   "Height": 3,
   "PuzzlePieces": [
@@ -164,7 +164,8 @@
       "Y": 2,
       "Piece": {
         "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
-        "Title": "Covid mRNA Vaccines hack your human cells into producing non human proteins",
+        "Title": "Covid mRNA Vaccines do not give you immunity and do not contain a weakened virus. What they do is hack your human cells into producing a non human spike protein.",
+        "Thesis": "The virus spike protein has proven to be a pathogen in studies. It attacks you and makes you sick. Apparently the synthetic version of it, that your cells are hacked into producing, is similar enough to trigger an immune response and save you from Covid. But at the same time it's not causing any pathology. Oh the wonders of Bill-gates funded science.",
         "Keywords": [
           "vaccine",
           "mrna",
@@ -210,6 +211,19 @@
             ],
             "DatePublished": "2021-07-03T00:00:00",
             "Author": "The Economist"
+          },
+          {
+            "Type": 1,
+            "Title": "The novel coronavirus’ spike protein plays additional key role in illness",
+            "Description": "LA JOLLA—Scientists have known for a while that SARS-CoV-2’s distinctive “spike” proteins help the virus infect its host by latching on to healthy cells. Now, a major new study shows that the virus spike proteins (which behave very differently than those safely encoded by vaccines) also play a key role in the disease itself.",
+            "Source": "Salk Institute for Biological Studies",
+            "Url": "https://www.salk.edu/news-release/the-novel-coronavirus-spike-protein-plays-additional-key-role-in-illness/",
+            "Images": [
+              "abbdcef2-0aae-40be-bce5-67c9522fe996.png",
+              "f60f904e-465c-4c79-a7d8-75f703c520a8.png"
+            ],
+            "DatePublished": "2021-04-30T00:00:00",
+            "Author": ""
           }
         ]
       },
@@ -361,7 +375,7 @@
       "Piece": {
         "Id": "19001789-7442-4b77-b982-772b3a2b681c",
         "Title": "Do Pharmaceutical giants like Pfizer at least have a good track record? Maybe we should just trust them.",
-        "Thesis": "Pfizer is regularly paying huge fines up to billions of dollars for false claims and illegally lobbying governments and doctors to push their products.\r\n\r\nParent Company Name:  Pfizer\r\nPenalty total since 2000:  $4,660,896,333\r\nNumber of records:  71",
+        "Thesis": "Pfizer is regularly paying huge fines up to billions of dollars for false claims and illegally lobbying governments and doctors to push their products. Only the Japanese Tepco who almost siglehandedly ended the world with the \r\nFukushima disaster, has paid a larger fine.",
         "Keywords": [
           "pfizer",
           "fines",
