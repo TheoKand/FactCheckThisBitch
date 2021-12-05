@@ -14,6 +14,7 @@ namespace FactCheckThisBitch.Models
         public List<string> Keywords;
         public List<string> Images;
         public IContent Content; //depends on type
+        public IEnumerable<Reference> References;
         public PieceType Type;
 
         public Piece()
@@ -24,6 +25,7 @@ namespace FactCheckThisBitch.Models
             Images = new List<string>();
             Type = PieceType.Article;
             Content = new Article();
+            References = new List<Reference>();
         }
     }
 
