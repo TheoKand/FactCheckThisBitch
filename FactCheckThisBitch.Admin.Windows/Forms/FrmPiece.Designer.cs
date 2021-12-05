@@ -39,8 +39,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.txtKeywords = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cboType = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBoxContent = new System.Windows.Forms.GroupBox();
             this.panelContent = new System.Windows.Forms.Panel();
             this.lblContent = new System.Windows.Forms.Label();
@@ -130,7 +128,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtKeywords.Location = new System.Drawing.Point(90, 168);
             this.txtKeywords.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtKeywords.Name = "txtKeywords";
-            this.txtKeywords.Size = new System.Drawing.Size(586, 27);
+            this.txtKeywords.Size = new System.Drawing.Size(923, 27);
             this.txtKeywords.TabIndex = 2;
             // 
             // label5
@@ -142,26 +140,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.label5.Size = new System.Drawing.Size(57, 20);
             this.label5.TabIndex = 14;
             this.label5.Text = "Images";
-            // 
-            // cboType
-            // 
-            this.cboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboType.FormattingEnabled = true;
-            this.cboType.Location = new System.Drawing.Point(760, 168);
-            this.cboType.Name = "cboType";
-            this.cboType.Size = new System.Drawing.Size(253, 28);
-            this.cboType.TabIndex = 5;
-            this.cboType.SelectedValueChanged += new System.EventHandler(this.cboType_SelectedValueChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(683, 176);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 20);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Type";
             // 
             // groupBoxContent
             // 
@@ -231,8 +209,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.Controls.Add(this.imageEditor1);
             this.Controls.Add(this.lblContent);
             this.Controls.Add(this.groupBoxContent);
-            this.Controls.Add(this.cboType);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtKeywords);
             this.Controls.Add(this.label4);
@@ -264,8 +240,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtKeywords;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cboType;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBoxContent;
         private System.Windows.Forms.Label lblContent;
         private UserControls.ImageEditor imageEditor1;

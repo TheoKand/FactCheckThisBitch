@@ -8,50 +8,8 @@ namespace FactCheckThisBitch.Models
 {
     public static class Extensions
     {
-        public static IContent ToPieceContentNewInstance(this PieceType pieceType)
-        {
-            var enumValue = pieceType.ToString();
-            Type type = Assembly.GetExecutingAssembly().GetType($"FactCheckThisBitch.Models.{enumValue}");
-            return Activator.CreateInstance(type) as IContent;
-        }
-
-        public static PieceType ToPieceType(this IContent pieceContent)
-        {
-            var enumValue = pieceContent.GetType().Name;
-            return (PieceType)Enum.Parse(typeof(PieceType), enumValue);
-        }
 
         public static int PieceIndexFromPosition(this Puzzle puzzle, int x, int y) => puzzle.Width * (y - 1) + x;
-
-        public static void ConvertContentToNewTypeAndKeepMetadata(this Piece piece)
-        {
-            if (piece.Content != null)
-            {
-                var oldContent = new
-                {
-                    piece.Content.Title,
-                    piece.Content.Summary,
-                    piece.Content.Type,
-                    piece.Content.DatePublished,
-                    piece.Content.Source,
-                    piece.Content.Url,
-                    piece.Content.References
-                };
-                piece.Content = piece.Type.ToPieceContentNewInstance();
-
-                piece.Content.Title = oldContent.Title;
-                piece.Content.Summary = oldContent.Summary;
-                piece.Content.Type = oldContent.Type;
-                piece.Content.DatePublished = oldContent.DatePublished;
-                piece.Content.Source = oldContent.Source;
-                piece.Content.Url = oldContent.Url;
-                piece.Content.References = oldContent.References;
-            }
-            else
-            {
-                piece.Content = piece.Type.ToPieceContentNewInstance();
-            }
-        }
 
         public static List<PuzzlePiece> Neighbours(this Puzzle puzzle, int x, int y)
         {

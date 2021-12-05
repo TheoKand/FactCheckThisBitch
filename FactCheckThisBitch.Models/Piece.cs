@@ -15,7 +15,6 @@ namespace FactCheckThisBitch.Models
         public List<string> Images;
         public IContent Content; //depends on type
         public IEnumerable<Reference> References;
-        public PieceType Type;
 
         public Piece()
         {
@@ -23,29 +22,8 @@ namespace FactCheckThisBitch.Models
             Title = "...Title...";
             Keywords = new List<string>();
             Images = new List<string>();
-            Type = PieceType.Article;
             Content = new Article();
             References = new List<Reference>();
         }
-    }
-
-    [JsonConverter(typeof(StringEnumConverter))]
-    public enum PieceType
-    {
-        [EnumMember(Value = "")] Unknown,
-        [EnumMember(Value = "Article")] Article,
-        [EnumMember(Value = "BookExcerpt")] BookExcerpt,
-        [EnumMember(Value = "Interview")] Interview,
-        [EnumMember(Value = "Podcast")] Podcast,
-        [EnumMember(Value = "Study")] Study,
-        [EnumMember(Value = "Statistic")] Statistic,
-        [EnumMember(Value = "Definition")] Definition,
-        [EnumMember(Value = "WebVideo")] WebVideo,
-        [EnumMember(Value = "Documentary")] Documentary,
-        [EnumMember(Value = "WebSearch")] WebSearch,
-
-        [EnumMember(Value = "NewsPaperArticle")]
-        NewsPaperArticle,
-        [EnumMember(Value = "MyArgument")] MyArgument,
     }
 }

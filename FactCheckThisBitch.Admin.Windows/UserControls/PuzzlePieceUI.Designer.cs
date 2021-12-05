@@ -55,7 +55,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.lblType.Name = "lblType";
             this.lblType.Size = new System.Drawing.Size(222, 21);
             this.lblType.TabIndex = 5;
-            this.lblType.Text = "Definition";
+            this.lblType.Text = "";
             this.lblType.DragDrop += new System.Windows.Forms.DragEventHandler(this.lblType_DragDrop);
             this.lblType.DragEnter += new System.Windows.Forms.DragEventHandler(this.lblType_DragEnter);
             this.lblType.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblType_MouseDown);

@@ -53,7 +53,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private new void Load()
         {
-            lblType.Text = _puzzlePiece.Piece.Type.ToString();
             btnLabel.Text = _puzzlePiece.Piece.Title;
             lblKeywords.Text = _puzzlePiece.Piece.Keywords != null ? string.Join(Environment.NewLine, _puzzlePiece.Piece.Keywords) : "";
         }

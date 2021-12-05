@@ -31,15 +31,12 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void InitForm()
         {
-            var pieceTypes = Enum.GetValues(typeof(PieceType)).Cast<PieceType>();
-            cboType.DataSource = pieceTypes;
         }
 
         private void LoadForm()
         {
             this.Text = _piece.Title.ToSanitizedString();
 
-            cboType.SelectedItem = _piece.Type;
             txtTitle.Text = _piece.Title;
             txtThesis.Text = _piece.Thesis;
             txtKeywords.Text = string.Join(",", _piece.Keywords);
@@ -56,7 +53,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _piece.Thesis = txtThesis.Text.ValueOrNull();
             _piece.Keywords = txtKeywords.Text.Split(",").ToList();
             _piece.Images = imageEditor1.Images;
-            _piece.Type = (PieceType)Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
 
             _baseContentUi.SaveForm();
             _contentUi.SaveForm();
@@ -66,7 +62,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void LoadBaseContentUi()
         {
-            lblContent.Text = _piece.Type.ToString();
 
             _baseContentUi = new BaseContentUi();
             _baseContentUi.Content = _piece.Content;
@@ -94,18 +89,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void cboType_SelectedValueChanged(object sender, EventArgs e)
-        {
-            if (_loading) return;
-            var newType = (PieceType)Enum.Parse(typeof(PieceType), cboType.SelectedValue.ToString() ?? string.Empty);
-            _piece.Type = newType;
-            _piece.ConvertContentToNewTypeAndKeepMetadata();
-
-            panelContent.Controls.Clear();
-            LoadBaseContentUi();
-            LoadContentUi();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
