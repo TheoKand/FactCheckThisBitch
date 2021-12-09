@@ -10,7 +10,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
     public partial class ReferenceUi : UserControl
     {
-        public Action<int> OnDelete;
+        public Action<string> OnDelete;
 
         private Reference _content;
 
@@ -76,7 +76,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         }
         private void btnDelete_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OnDelete?.Invoke((int)this.Tag);
+            OnDelete?.Invoke(_content.Id);
         }
 
         #endregion

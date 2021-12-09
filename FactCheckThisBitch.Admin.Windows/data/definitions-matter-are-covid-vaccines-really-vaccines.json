@@ -11,8 +11,8 @@
       "Y": 1,
       "Piece": {
         "Id": "47aaf170-7e50-4085-ae3b-44849fc00ab7",
-        "Title": "Wikipedia definition of Vaccine",
-        "Thesis": "According to Wikipedia, a vaccine has two characteristics:  Provides <b>immunity</b> and contains a <b>weakened or killed form of a virus</b>. According to Cambridge Dictionary, it <b>prevents disease</b> and <b>often contains a weakened or dead form of the disease-causing organism</b>",
+        "Title": "Definition of vaccine and immunity",
+        "Thesis": "According to Cambridge Dictionary, it <b>prevents disease</b> and <b>often contains a weakened or dead form of the disease-causing organism</b>\r\nAccording to Wikipedia, it provides  <B>immunity</b> and <b>contains a weakened or killed form of a virus</b>.\r\nBut what is immunity? According to Merriam-Webster dictionary it's \"the power to keep yourself from being affected by a disease\" and according to Oxford Languages it's \"the ability of an organism to <B>resist</b> a particular infection or toxin by the action of specific antibodies\".\r\n",
         "Keywords": [
           "immunity",
           "vaccine definition",
@@ -32,6 +32,7 @@
         "References": [
           {
             "Type": 1,
+            "Id": "56d608f9-38ce-458c-8f4b-a60467d7b081",
             "Title": "Vaccine - Wikipedia",
             "Url": "https://en.wikipedia.org/wiki/Vaccine",
             "Images": [
@@ -42,11 +43,25 @@
           },
           {
             "Type": 1,
+            "Id": "b84bd7bf-170d-4577-9e1c-fd1ca53e12b8",
             "Title": "Vaccine - Cambridge Dictionary",
             "Source": "Cambridge Dictionary",
             "Url": "https://dictionary.cambridge.org/dictionary/english/vaccine",
             "Images": [
               "0c84b676-e913-4fc7-abe8-bdfd9123f4de.png"
+            ],
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "9deac62f-2dc0-4cfa-a68b-c3457596a5c3",
+            "Title": "Definition of IMMUNITY",
+            "Description": "the quality or state of being immune; especially : a condition of being able to resist a particular disease especially through preventing development of a pathogenic microorganism or by counteracting the effects of its products… See the full definition",
+            "Source": "Merriam Webster",
+            "Url": "https://www.merriam-webster.com/dictionary/immunity",
+            "Images": [
+              "0cd39eae-77ac-44f3-ad86-27fcf04b0e63.png",
+              "951722d5-b498-4370-b03b-240392d549ef.png"
             ],
             "Author": ""
           }
@@ -59,54 +74,9 @@
       "X": 2,
       "Y": 1,
       "Piece": {
-        "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
-        "Title": "Definition of Immunity",
-        "Thesis": "According to Merriam-Webster dictionary it's \"the power to keep yourself from being affected by a disease\" and according to Oxford Languages it's \"the ability of an organism to <B>resist</b> a particular infection or toxin by the action of specific antibodies\".",
-        "Keywords": [
-          "immunity",
-          "definition"
-        ],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
-          "Title": "immunity",
-          "Summary": "the ability of an organism to resist a particular infection or toxin by the action of specific antibodies or sensitized white blood cells.",
-          "Source": "Merriam-webster",
-          "Url": "https://www.merriam-webster.com/dictionary/immunity"
-        },
-        "References": [
-          {
-            "Type": 1,
-            "Title": "Definition of IMMUNITY",
-            "Description": "the quality or state of being immune; especially : a condition of being able to resist a particular disease especially through preventing development of a pathogenic microorganism or by counteracting the effects of its products… See the full definition",
-            "Source": "merriam-webster.com",
-            "Url": "https://www.merriam-webster.com/dictionary/immunity",
-            "Images": [
-              "0cd39eae-77ac-44f3-ad86-27fcf04b0e63.png"
-            ],
-            "Author": ""
-          },
-          {
-            "Type": 1,
-            "Title": "Definition of IMMUNITY",
-            "Source": "Oxford Languages",
-            "Url": "https://www.google.com/search?q=immunity+definition",
-            "Images": [
-              "951722d5-b498-4370-b03b-240392d549ef.png"
-            ],
-            "Author": ""
-          }
-        ]
-      },
-      "Valid": true
-    },
-    {
-      "Index": 3,
-      "X": 3,
-      "Y": 1,
-      "Piece": {
         "Id": "493786ca-b183-439e-88c6-65eeb150330e",
         "Title": "Definitions Matter. Is this a vaccine?",
-        "Thesis": "A vaccine is supposed to give immunity. Immunity means protection. And yet Covid-vaccinated patients are dying. ",
+        "Thesis": "A vaccine is supposed to give immunity. Immunity means protection. And yet Covid-vaccinated patients are dying left and right.",
         "Keywords": [
           "vaccine",
           "death",
@@ -131,6 +101,7 @@
         "References": [
           {
             "Type": 1,
+            "Id": "f312bb9a-d8eb-4cc1-866c-5bef8b9a2ea2",
             "Title": "Double-jabbed are dying of Covid amid waning immunity, says top medic",
             "Description": "From Monday, booster jabs can be booked one month earlier than previously allowed",
             "Source": "The Independent",
@@ -144,6 +115,7 @@
           },
           {
             "Type": 1,
+            "Id": "1da4eab5-b314-43b7-94d1-dd5af9a82e7b",
             "Title": "Why most people who now die with Covid in England have had a vaccination | David Spiegelhalter and Anthony Masters",
             "Description": "Don’t think of this as a bad sign, it’s exactly what’s expected from an effective but imperfect jab",
             "Source": "the Guardian",
@@ -159,13 +131,48 @@
       "Valid": true
     },
     {
+      "Index": 3,
+      "X": 3,
+      "Y": 1,
+      "Piece": {
+        "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
+        "Title": "What do the vaccine makers call it?",
+        "Thesis": "Moderna markets it as \"the software of life\" and \"Our Operating System\" on their website. According to them, their vaccine is a software platform, an operating system and the first application is the mRNA sequence that will hack your human cells into producing the coronavirus spike protein.",
+        "Keywords": [
+          "immunity",
+          "definition"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
+          "Title": "immunity",
+          "Summary": "the ability of an organism to resist a particular infection or toxin by the action of specific antibodies or sensitized white blood cells.",
+          "Source": "Merriam-webster",
+          "Url": "https://www.merriam-webster.com/dictionary/immunity"
+        },
+        "References": [
+          {
+            "Type": 1,
+            "Id": "dbcc1267-826f-4676-b473-e9b0a316fb87",
+            "Description": "Our platform approach to mRNA medicines leads the development and discovery of new potential treatments and preventions for cancers & diseases like CMV, MMA & other uncommon illnesses. Learn more.",
+            "Url": "https://www.modernatx.com/mrna-technology/mrna-platform-enabling-drug-discovery-development",
+            "Images": [
+              "34e88eb4-2045-4ad4-9686-ac30d7faa36c.png",
+              "8d74df17-ac6f-43e8-bb26-24940151add8.png"
+            ],
+            "Author": ""
+          }
+        ]
+      },
+      "Valid": true
+    },
+    {
       "Index": 4,
       "X": 1,
       "Y": 2,
       "Piece": {
         "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
-        "Title": "Covid mRNA Vaccines do not give you immunity and do not contain a weakened virus. What they do is hack your human cells into producing a non human spike protein.",
-        "Thesis": "The virus spike protein has proven to be a pathogen in studies. It attacks you and makes you sick. Apparently the synthetic version of it, that your cells are hacked into producing, is similar enough to trigger an immune response and save you from Covid. But at the same time it's not causing any pathology. Oh the wonders of Bill-gates funded science.",
+        "Title": "Covid mRNA Vaccines do not give you immunity and do not contain a weakened virus. ",
+        "Thesis": "Their mode of operation is to literally hack your human cells into producing a non human spike protein. What is a more suitable name for that technology?",
         "Keywords": [
           "vaccine",
           "mrna",
@@ -189,6 +196,7 @@
         "References": [
           {
             "Type": 1,
+            "Id": "87127d4f-7141-443a-8664-712ec087aea6",
             "Title": "COVID mRNA Vaccines are a Form of Gene Therapy",
             "Description": "References: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6491712/",
             "Source": "Sovereign Wealth Fund Institute",
@@ -202,6 +210,7 @@
           },
           {
             "Type": 1,
+            "Id": "ed0ec2e5-f513-497d-8f5e-06544344c569",
             "Title": "What if biohackers injected themselves with mRNA?",
             "Description": "Members of the Witnesses of Bioinformatic Freedom, a biohacking-rights group, demand the right to alter their own biology. An imagined scenario from 2029",
             "Source": "The Economist",
@@ -214,15 +223,8 @@
           },
           {
             "Type": 1,
-            "Title": "The novel coronavirus’ spike protein plays additional key role in illness",
-            "Description": "LA JOLLA—Scientists have known for a while that SARS-CoV-2’s distinctive “spike” proteins help the virus infect its host by latching on to healthy cells. Now, a major new study shows that the virus spike proteins (which behave very differently than those safely encoded by vaccines) also play a key role in the disease itself.",
-            "Source": "Salk Institute for Biological Studies",
-            "Url": "https://www.salk.edu/news-release/the-novel-coronavirus-spike-protein-plays-additional-key-role-in-illness/",
-            "Images": [
-              "abbdcef2-0aae-40be-bce5-67c9522fe996.png",
-              "f60f904e-465c-4c79-a7d8-75f703c520a8.png"
-            ],
-            "DatePublished": "2021-04-30T00:00:00",
+            "Id": "abdd4dc4-7085-41af-b21f-0f920d663292",
+            "Images": [],
             "Author": ""
           }
         ]
@@ -255,6 +257,7 @@
         "References": [
           {
             "Type": 1,
+            "Id": "0ae9bd7a-1237-427b-9e93-b5bca99cb66c",
             "Title": "Production of Recombinant Protein",
             "Description": "Due to their important functions, proteins are widely used for industrial, nutritional, and medical applications. An important way to generate large amounts of a specific protein is the recombinant DNA technology, which involves the use of genetic recombination to bring together ",
             "Source": "CUSABIO",
@@ -294,6 +297,7 @@
         "References": [
           {
             "Type": 1,
+            "Id": "c161d97f-0f15-40e5-9417-37923102a70c",
             "Title": "genetically modified organism | Definition, Examples, & Facts",
             "Description": "Genetically modified organism, organism whose genome has been engineered in the laboratory in order to favor the expression of desired physiological traits or the generation of desired biological products. Learn more about the development and uses of genetically modified organisms in this article.",
             "Source": "Encyclopedia Britannica",
@@ -340,6 +344,7 @@
         "References": [
           {
             "Type": 1,
+            "Id": "02c042d8-3386-48bb-850c-2b21aa29d1d4",
             "Title": "Why the Government Pays Billions to People Who Claim Injury by Vaccines",
             "Description": "A little-known deal protects drug companies in the U.S. from being sued—and feeds conspiracy theories in the process.",
             "Source": "The Atlantic",
@@ -353,6 +358,7 @@
           },
           {
             "Type": 1,
+            "Id": "4ac88a97-8b99-451b-8e23-cd19ce05fdd6",
             "Title": "You can’t sue Pfizer or Moderna if you have severe Covid vaccine side effects. The government likely won't compensate you for damages either",
             "Description": "Companies like Pfizer and Moderna have total immunity from legal liability under the PREP Act if something unintentionally goes wrong with their Covid vaccines.",
             "Source": "CNBC",
@@ -400,6 +406,7 @@
         "References": [
           {
             "Type": 1,
+            "Id": "ef3348e3-7a68-46b2-804c-1b7288f12748",
             "Title": "Violation Tracker Company Summary: Pfizer",
             "Description": "Penalty total since 2000:  $4,660,896,333\r\nNumber of records:  71",
             "Source": "Good Jobs First",
@@ -412,6 +419,7 @@
           },
           {
             "Type": 1,
+            "Id": "b5d4f35e-519e-4405-b3fc-ec9a2b654cd3",
             "Title": "Here are the companies responsible for some of the largest criminal fines in history - and what they did to earn them",
             "Description": "Pfizer, Covid vaccine producer and US pharmaceutical giant, is one of several companies hit with multiple billion dollar criminal fines in recent history – but which company paid the largest ever criminal fine?",
             "Source": "The Scotsman",
@@ -462,6 +470,7 @@
         "References": [
           {
             "Type": 1,
+            "Id": "6e7c0df8-49ab-4122-aab0-b80595e4e2da",
             "Title": "Wait what? FDA wants 55 years to process FOIA request over vaccine data",
             "Description": "Freedom of Information Act requests are rarely speedy, but when a group of scientists asked the federal government to share the data it relied upon in licensing Pfizer’s COVID-19 vaccine, the response went beyond typical bureaucratic foot-dragging.",
             "Source": "Reuters",
@@ -475,6 +484,7 @@
           },
           {
             "Type": 1,
+            "Id": "27941f13-8798-4510-ae48-32716677a864",
             "Title": "MEPs vs Commission in court over vaccine contracts",
             "Description": "EU lawmakers from the Greens/EFA group have filed a case application to the European Court of Justice stating \"implicit refusal\" from the Commission to provide access to information in the context of vaccine contracts between the European Commission and vaccine manufacturers.",
             "Source": "www.euractiv.com",

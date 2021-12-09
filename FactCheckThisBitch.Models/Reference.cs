@@ -9,6 +9,7 @@ namespace FactCheckThisBitch.Models
 {
     public class Reference
     {
+        public string Id { get; set; }
         public ReferenceType Type;
         public string Title { get; set; }
         public string Description { get; set; }
@@ -21,6 +22,7 @@ namespace FactCheckThisBitch.Models
 
         public Reference()
         {
+            Id = Guid.NewGuid().ToString();
             Images = new List<string>();
         }
     }

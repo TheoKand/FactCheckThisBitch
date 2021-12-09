@@ -61,6 +61,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 var reference = _piece.References[index];
                 var tabPage = new TabPage()
                 {
+                    Tag=reference.Id,
                     Left = 0,
                     Top = 0,
                     Text = reference.Type.ToString(),
@@ -70,17 +71,24 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
                 var referenceUi = new ReferenceUi()
                 {
-                    Tag = index,
                     Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom,
                     Content = reference,
                     Width = tabReferences.Width,
                     Height = tabPage.Height,
                     AutoScaleMode = AutoScaleMode.None,
-                    OnDelete = (int tabIndex) =>
+                    OnDelete = (string referenceId) =>
                     {
-                        tabReferences.TabPages.RemoveAt(tabIndex);
-                        _piece.References.RemoveAt(tabIndex);
-                        tabReferences.SelectedIndex = tabReferences.TabCount - 1;
+                        try
+                        {
+                            tabReferences.RemoveTabPage(referenceId);
+                            _piece.References.Remove(_piece.References.First(r => r.Id == referenceId));
+                            if (tabReferences.TabCount>=1) 
+                                tabReferences.SelectedIndex = tabReferences.TabCount - 1;
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.ToString());
+                        }
                     }
                 };
                 tabPage.Controls.Add(referenceUi);
