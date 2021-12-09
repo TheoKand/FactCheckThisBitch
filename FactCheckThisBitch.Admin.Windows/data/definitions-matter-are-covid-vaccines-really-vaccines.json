@@ -1,7 +1,7 @@
 {
   "Title": "Definitions Matter. Are Covid Vaccines really vaccines?",
   "Thesis": "If not, what are they? Are there any other technologies that work similarly?",
-  "Conclusion": "- Covid \"vaccines\" might actually be gene therapy.\r\n- Covid \"vaccines\" use the same technology as GM foods. Begs the question, are vaccine takers Genetically Modified Organisms?\r\n- Big Pharma would be liable for injuries had their product not been labeled \"vaccines\", but now it's the taxpayer picking up the bill.\r\n- Big Pharma is regularly paying huge fines for other nefarious practices.\r\n- Goverment bodies such as the European Comission and the  US Food and drug administration seem to have Big Pharma's back. ",
+  "Conclusion": "- Covid \"vaccines\" are actually gene therapy.\r\n- Covid \"vaccines\" use the same technology as GM foods. Begs the question, are vaccine takers Genetically Modified Organisms?\r\n- Big Pharma would be liable for injuries had their gene therapy product not been labeled \"vaccines\", but now it's the taxpayer picking up the bill.\r\n- Big Pharma is regularly paying huge fines for other nefarious practices.\r\n- Goverment bodies such as the European Comission and the  US Food and drug administration seem to have Big Pharma's back. ",
   "Width": 3,
   "Height": 3,
   "PuzzlePieces": [
@@ -88,7 +88,8 @@
             "Author": ""
           }
         ]
-      }
+      },
+      "Valid": true
     },
     {
       "Index": 3,
@@ -101,15 +102,7 @@
         "Keywords": [
           "vaccine",
           "death",
-          "immunity",
-          "vaccines",
-          "coronavirus vaccines",
-          "covid",
-          "coronavirus",
-          "science",
-          "infectious diseases",
-          "uk news",
-          "vaccines and immunisation"
+          " immunity"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -120,6 +113,19 @@
           "DatePublished": "2021-11-07T00:00:00"
         },
         "References": [
+          {
+            "Type": 1,
+            "Id": "1da4eab5-b314-43b7-94d1-dd5af9a82e7b",
+            "Title": "Why most people who now die with Covid in England have had a vaccination | David Spiegelhalter and Anthony Masters",
+            "Description": "Don’t think of this as a bad sign, it’s exactly what’s expected from an effective but imperfect jab",
+            "Source": "the Guardian",
+            "Url": "https://www.theguardian.com/theobserver/commentisfree/2021/jun/27/why-most-people-who-now-die-with-covid-have-been-vaccinated",
+            "Images": [
+              "9a8e3fab-5636-44b3-a50d-d493b1b3011e.png"
+            ],
+            "DatePublished": "2021-06-27T00:00:00",
+            "Author": "https://www.theguardian.com/profile/david-spiegelhalter,https://www.theguardian.com/profile/anthony-masters"
+          },
           {
             "Type": 1,
             "Id": "f312bb9a-d8eb-4cc1-866c-5bef8b9a2ea2",
@@ -133,19 +139,6 @@
             ],
             "DatePublished": "2021-11-07T00:00:00",
             "Author": ""
-          },
-          {
-            "Type": 1,
-            "Id": "1da4eab5-b314-43b7-94d1-dd5af9a82e7b",
-            "Title": "Why most people who now die with Covid in England have had a vaccination | David Spiegelhalter and Anthony Masters",
-            "Description": "Don’t think of this as a bad sign, it’s exactly what’s expected from an effective but imperfect jab",
-            "Source": "the Guardian",
-            "Url": "https://www.theguardian.com/theobserver/commentisfree/2021/jun/27/why-most-people-who-now-die-with-covid-have-been-vaccinated",
-            "Images": [
-              "9a8e3fab-5636-44b3-a50d-d493b1b3011e.png"
-            ],
-            "DatePublished": "2021-06-27T00:00:00",
-            "Author": "https://www.theguardian.com/profile/david-spiegelhalter,https://www.theguardian.com/profile/anthony-masters"
           }
         ]
       },
@@ -157,19 +150,13 @@
       "Y": 2,
       "Piece": {
         "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
-        "Title": "Covid mRNA Vaccines do not give you immunity and do not contain a weakened virus. What do they do?",
-        "Thesis": "Their mode of operation is to literally hack your human cells into producing a non human spike protein. What is a more suitable name for that technology?",
+        "Title": "Covid mRNA Vaccines do not give you immunity and do not contain a weakened virus. So what do they do?",
+        "Thesis": "Their mode of operation is to literally hack your human cells into producing a non human spike protein. What is a more suitable name for that technology? What do the vaccine makers call their product?",
         "Keywords": [
           "vaccine",
           "mrna",
           "gene therapy",
-          "gene",
-          "cell",
-          "resume",
-          " careers",
-          " moderna partners with aws to explore the 'software of life'",
-          " biospace",
-          " advice"
+          "cell"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -207,23 +194,10 @@
             "Source": "Moderna",
             "Url": "https://www.modernatx.com/mrna-technology/mrna-platform-enabling-drug-discovery-development",
             "Images": [
-              "34e88eb4-2045-4ad4-9686-ac30d7faa36c.png",
-              "8d74df17-ac6f-43e8-bb26-24940151add8.png"
+              "8d74df17-ac6f-43e8-bb26-24940151add8.png",
+              "34e88eb4-2045-4ad4-9686-ac30d7faa36c.png"
             ],
             "Author": ""
-          },
-          {
-            "Type": 1,
-            "Id": "ed0ec2e5-f513-497d-8f5e-06544344c569",
-            "Title": "What if biohackers injected themselves with mRNA?",
-            "Description": "Members of the Witnesses of Bioinformatic Freedom, a biohacking-rights group, demand the right to alter their own biology. An imagined scenario from 2029",
-            "Source": "The Economist",
-            "Url": "https://www.economist.com/what-if/2021/07/03/what-if-biohackers-injected-themselves-with-mrna",
-            "Images": [
-              "d241795e-a2c7-4b94-867f-840794307c90.png"
-            ],
-            "DatePublished": "2021-07-03T00:00:00",
-            "Author": "The Economist"
           },
           {
             "Type": 1,
@@ -238,6 +212,33 @@
             ],
             "DatePublished": "2020-01-16T00:00:00",
             "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "b3fd8db3-aae2-4405-8298-8187cecdc231",
+            "Title": "Covid’s Forgotten Hero: The Untold Story Of The Scientist Whose Breakthrough Made The Vaccines Possible",
+            "Description": "Covid’s Forgotten Hero: The Untold Story Of The Scientist Whose Breakthrough Made The Vaccines Possible",
+            "Source": "Forbes",
+            "Url": "https://www.forbes.com/sites/nathanvardi/2021/08/17/covids-forgotten-hero-the-untold-story-of-the-scientist-whose-breakthrough-made-the-vaccines-possible/?sh=7530a3cf354f",
+            "Images": [
+              "e61f602f-2578-4fb2-9dde-0fcec72f39fe.png",
+              "727ff429-a9e3-41f9-9cd3-4eef86cb5a1d.png"
+            ],
+            "DatePublished": "2021-08-17T00:00:00",
+            "Author": "Nathan Vardi"
+          },
+          {
+            "Type": 1,
+            "Id": "ed0ec2e5-f513-497d-8f5e-06544344c569",
+            "Title": "What if biohackers injected themselves with mRNA?",
+            "Description": "Members of the Witnesses of Bioinformatic Freedom, a biohacking-rights group, demand the right to alter their own biology. An imagined scenario from 2029",
+            "Source": "The Economist",
+            "Url": "https://www.economist.com/what-if/2021/07/03/what-if-biohackers-injected-themselves-with-mrna",
+            "Images": [
+              "d241795e-a2c7-4b94-867f-840794307c90.png"
+            ],
+            "DatePublished": "2021-07-03T00:00:00",
+            "Author": "The Economist"
           }
         ]
       },
@@ -249,14 +250,11 @@
       "Y": 2,
       "Piece": {
         "Id": "4e714ec0-f4eb-4bcd-a65a-ea27be69984a",
-        "Title": "Recombinant DNA is a technology that allows cells to produce foreign proteins.",
+        "Title": "Recombinant DNA is a also a technology that allows cells to produce foreign proteins.",
         "Thesis": "Recombinant DNA is inserted in host cells and these cells then produce new proteins that would not be produced without the inserted DNA.",
         "Keywords": [
-          "gmo",
-          "recombinant dna",
-          "foreign protein",
           "cell",
-          "gene"
+          " recombinant dna"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -453,7 +451,8 @@
       "Y": 3,
       "Piece": {
         "Id": "80841d3b-edf8-4ec9-aa62-ce8c9006a716",
-        "Title": "Ok maybe Big Pharma have been naughty in the past, but has there been transparency in the proccess of approving their Covid vaccines?",
+        "Title": "Ok so Big Pharma have been naughty in the past.",
+        "Thesis": "At least has there been transparency in the proccess of approving their Covid vaccines?",
         "Keywords": [
           "fda",
           "vaccine",
