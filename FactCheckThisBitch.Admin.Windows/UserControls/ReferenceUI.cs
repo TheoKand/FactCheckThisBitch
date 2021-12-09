@@ -11,7 +11,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
     public partial class ReferenceUi : UserControl
     {
         public Action<string> OnDelete;
-        public Action<string,int> OnMove;
+        public Action<string, int> OnMove;
+        public Action<string> OnMoveToOtherPiece;
 
         private Reference _content;
 
@@ -37,7 +38,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             _content.Description = txtSummary.Text.ValueOrNull();
             _content.Source = txtSource.Text.ValueOrNull();
             _content.Url = txtUrl.Text.ValueOrNull();
-            _content.Type = (ReferenceType)Enum.Parse(typeof(ReferenceType), cboType.SelectedValue.ToString() ?? string.Empty);
+            _content.Type = (ReferenceType) Enum.Parse(typeof(ReferenceType), cboType.SelectedValue.ToString() ?? string.Empty);
             _content.Images = imageEditor1.Images;
             _content.Author = txtAuthor.Text;
             _content.DatePublished = txtDatePublished.Text.ToDate();
@@ -67,14 +68,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private void btnUrl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (txtUrl.Text.IsEmpty()) return;
-            new Process
-            {
-                StartInfo = new ProcessStartInfo(txtUrl.Text)
-                {
-                    UseShellExecute = true
-                }
-            }.Start();
+            new Process {StartInfo = new ProcessStartInfo(txtUrl.Text) {UseShellExecute = true}}.Start();
         }
+
         private void btnDelete_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             OnDelete?.Invoke(_content.Id);
@@ -82,18 +78,19 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void btnMoveBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OnMove?.Invoke(_content.Id,-1);
+            OnMove?.Invoke(_content.Id, -1);
         }
 
         private void btnMoveForward_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OnMove?.Invoke(_content.Id,1);
+            OnMove?.Invoke(_content.Id, 1);
         }
 
-
+        private void btnMove_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OnMoveToOtherPiece(_content.Id);
+        }
 
         #endregion
-
-
     }
 }

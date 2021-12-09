@@ -31,7 +31,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void frmPuzzleMetadata_Load(object sender, EventArgs e)
         {
             InitForm();
-
             if (!string.IsNullOrEmpty(UserSettings.Instance().CurrentPuzzle) &&
                 File.Exists(UserSettings.Instance().CurrentPuzzlePath))
             {
@@ -58,43 +57,33 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
             _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
             puzzleUi.Puzzle = _puzzle;
-
             IsDirty = true;
         }
 
         private void LoadForm()
         {
             UserSettings.Instance().CurrentPuzzle = _puzzle.FileName;
-
             this.Text = _puzzle.Title.ToSanitizedString();
-
             txtTitle.Text = _puzzle.Title;
             txtThesis.Text = _puzzle.Thesis;
             txtConclusion.Text = _puzzle.Conclusion;
             txtSize.Text = $"{_puzzle.Width}x{_puzzle.Height}";
-
             puzzleUi.Puzzle = _puzzle;
-
             IsDirty = false;
         }
 
         private void CreateNew()
         {
-
             if (IsDirty)
             {
-                var result = MessageBox.Show("Do you want to save your changes?", "Save Changes",
-                    MessageBoxButtons.YesNo);
+                var result = MessageBox.Show("Do you want to save your changes?", "Save Changes", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
                     SaveToFile();
                 }
             }
 
-            _puzzle = new Puzzle()
-            {
-                Title = $"New created at {DateTime.UtcNow}"
-            };
+            _puzzle = new Puzzle() {Title = $"New created at {DateTime.UtcNow}"};
         }
 
         private void LoadFromFile()
@@ -117,7 +106,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _puzzle.Conclusion = txtConclusion.Text.ValueOrNull();
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
             _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
-
             CheckRenameFile();
         }
 
@@ -141,7 +129,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             openFileDialog1.CheckPathExists = true;
             openFileDialog1.ShowReadOnly = false;
             if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
-
             UserSettings.Instance().CurrentPuzzle = openFileDialog1.FileName;
             LoadFromFile();
             LoadForm();
@@ -163,8 +150,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             if (IsDirty)
             {
-                var result = MessageBox.Show("Do you want to save your changes?", "Save Changes",
-                    MessageBoxButtons.YesNo);
+                var result = MessageBox.Show("Do you want to save your changes?", "Save Changes", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
                     SaveToFile();

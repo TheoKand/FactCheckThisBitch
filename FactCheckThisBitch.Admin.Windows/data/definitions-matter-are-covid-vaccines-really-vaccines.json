@@ -470,20 +470,6 @@
         "References": [
           {
             "Type": 1,
-            "Id": "6e7c0df8-49ab-4122-aab0-b80595e4e2da",
-            "Title": "Wait what? FDA wants 55 years to process FOIA request over vaccine data",
-            "Description": "Freedom of Information Act requests are rarely speedy, but when a group of scientists asked the federal government to share the data it relied upon in licensing Pfizer’s COVID-19 vaccine, the response went beyond typical bureaucratic foot-dragging.",
-            "Source": "Reuters",
-            "Url": "https://www.reuters.com/legal/government/wait-what-fda-wants-55-years-process-foia-request-over-vaccine-data-2021-11-18/",
-            "Images": [
-              "ffc733b0-0027-4e26-ac27-d00aea985e87.png",
-              "6201dbcb-9a0b-4b47-8216-3118db13ea87.png"
-            ],
-            "DatePublished": "2021-11-18T00:00:00",
-            "Author": "Jenna Greene"
-          },
-          {
-            "Type": 1,
             "Id": "27941f13-8798-4510-ae48-32716677a864",
             "Title": "MEPs vs Commission in court over vaccine contracts",
             "Description": "EU lawmakers from the Greens/EFA group have filed a case application to the European Court of Justice stating \"implicit refusal\" from the Commission to provide access to information in the context of vaccine contracts between the European Commission and vaccine manufacturers.",
@@ -495,6 +481,20 @@
             ],
             "DatePublished": "2021-10-29T00:00:00",
             "Author": "Giedre Peseckyte"
+          },
+          {
+            "Type": 1,
+            "Id": "6e7c0df8-49ab-4122-aab0-b80595e4e2da",
+            "Title": "Wait what? FDA wants 55 years to process FOIA request over vaccine data",
+            "Description": "Freedom of Information Act requests are rarely speedy, but when a group of scientists asked the federal government to share the data it relied upon in licensing Pfizer’s COVID-19 vaccine, the response went beyond typical bureaucratic foot-dragging.",
+            "Source": "Reuters",
+            "Url": "https://www.reuters.com/legal/government/wait-what-fda-wants-55-years-process-foia-request-over-vaccine-data-2021-11-18/",
+            "Images": [
+              "ffc733b0-0027-4e26-ac27-d00aea985e87.png",
+              "6201dbcb-9a0b-4b47-8216-3118db13ea87.png"
+            ],
+            "DatePublished": "2021-11-18T00:00:00",
+            "Author": "Jenna Greene"
           }
         ]
       },

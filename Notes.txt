@@ -1,11 +1,5 @@
 ﻿TODO
--path of images should not be inside json
--refactor: piece contains list of "Reference" objects
-	-reference object has basic metadata (now in content) and optional additional metadata
-	-images will have to go under each reference
-	-piece doesn't have a type. It can be multiple reference objects.
 -don't allow save data if validation fails
--bug: segment throws error
 
 
 IDEAS

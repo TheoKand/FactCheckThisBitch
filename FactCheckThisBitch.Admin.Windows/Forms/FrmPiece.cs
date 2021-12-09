@@ -5,12 +5,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using Microsoft.VisualBasic;
 
 namespace FactCheckThisBitch.Admin.Windows.Forms
 {
     public partial class FrmPiece : Form
     {
+        public Func<string,bool> OnMoveReferenceToOtherPiece;
+
         private Piece _piece;
 
         public FrmPiece(Piece piece)
@@ -93,6 +94,14 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                             _piece.References.Swap(pieceIndex, pieceIndex + move);
                             LoadReferences();
                         }
+                    }, 
+                    OnMoveToOtherPiece = (string referenceId) =>
+                    {
+                        if (OnMoveReferenceToOtherPiece!=null && OnMoveReferenceToOtherPiece.Invoke(referenceId))
+                        {
+                            DialogResult = DialogResult.OK;
+                            Close();
+                        };
                     }
                 };
                 tabPage.Controls.Add(referenceUi);

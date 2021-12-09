@@ -57,6 +57,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             lblKeywords.Text = _puzzlePiece.Piece.Keywords != null ? string.Join(Environment.NewLine, _puzzlePiece.Piece.Keywords) : "";
         }
 
+        #region events
         private void lblType_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left && e.Clicks == 1)
@@ -80,5 +81,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         {
             OnClick?.Invoke();
         }
+        #endregion
     }
 }

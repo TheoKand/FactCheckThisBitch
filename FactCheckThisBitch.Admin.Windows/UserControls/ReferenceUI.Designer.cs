@@ -49,6 +49,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.imageEditor1 = new FactCheckThisBitch.Admin.Windows.UserControls.ImageEditor();
             this.btnMoveBack = new System.Windows.Forms.LinkLabel();
             this.btnMoveForward = new System.Windows.Forms.LinkLabel();
+            this.btnMove = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -256,10 +257,24 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.btnMoveForward.Text = "-->";
             this.btnMoveForward.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnMoveForward_LinkClicked);
             // 
+            // btnMove
+            // 
+            this.btnMove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMove.AutoSize = true;
+            this.btnMove.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMove.Location = new System.Drawing.Point(397, 13);
+            this.btnMove.Name = "btnMove";
+            this.btnMove.Size = new System.Drawing.Size(116, 15);
+            this.btnMove.TabIndex = 36;
+            this.btnMove.TabStop = true;
+            this.btnMove.Text = "Move To Other Piece";
+            this.btnMove.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnMove_LinkClicked);
+            // 
             // ReferenceUi
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
+            this.Controls.Add(this.btnMove);
             this.Controls.Add(this.btnMoveForward);
             this.Controls.Add(this.btnMoveBack);
             this.Controls.Add(this.imageEditor1);
@@ -308,5 +323,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private ImageEditor imageEditor1;
         private System.Windows.Forms.LinkLabel btnMoveBack;
         private System.Windows.Forms.LinkLabel btnMoveForward;
+        private System.Windows.Forms.LinkLabel btnMove;
     }
 }
