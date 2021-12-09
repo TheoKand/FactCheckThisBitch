@@ -75,8 +75,7 @@ namespace FackCheckThisBitch.Common
             var type = instance.GetType();
             var props = type.GetProperties();
             var implementedProps = type.GetInterfaces().SelectMany(i => i.GetProperties());
-            var onlyInFoo = props.Select(prop => prop.Name).Except(implementedProps.Select(prop => prop.Name))
-                .ToArray();
+            var onlyInFoo = props.Select(prop => prop.Name).Except(implementedProps.Select(prop => prop.Name)).ToArray();
             var fooPropsFiltered = props.Where(x => onlyInFoo.Contains(x.Name));
 
             return fooPropsFiltered;
@@ -104,25 +103,28 @@ namespace FackCheckThisBitch.Common
             return Regex.IsMatch(input, pattern);
         }
 
-        public static bool IsAlmostSameWith(this string phrase1, string phrase2)
+        private static bool IsAlmostSameWith(this string phrase1, string phrase2)
         {
             phrase1 = phrase1.Trim();
             phrase2 = phrase2.Trim();
 
             string smallerPhrase = phrase1.Length < phrase2.Length ? phrase1 : phrase2;
-            string largerPhrase =  phrase1.Length > phrase2.Length ? phrase1 : phrase2;
+            string largerPhrase = phrase1.Length > phrase2.Length ? phrase1 : phrase2;
 
-            return (largerPhrase.Contains(smallerPhrase, StringComparison.InvariantCultureIgnoreCase))
-                || largerPhrase.ContainsTwoOrMoreWordsFrom(smallerPhrase);
+            return (largerPhrase.Contains(smallerPhrase, StringComparison.InvariantCultureIgnoreCase)) ||
+                   largerPhrase.ContainsOneOrMoreWordsFrom(smallerPhrase);
         }
 
-        public static bool ContainsTwoOrMoreWordsFrom(this string largePhrase, string smallPhrase)
+        private static bool ContainsOneOrMoreWordsFrom(this string largePhrase, string smallPhrase)
         {
-            var largePhraseWords = largePhrase.Split(" ");
-            var smallPhraseWords = smallPhrase.Split(" ");
+            var largePhraseWords = largePhrase.Split(" ").Where(w => w.Length > 2).ToArray();
+            var smallPhraseWords = smallPhrase.Split(" ").Where(w => w.Length > 2).ToArray();
+
+            int minimumCommonWords = largePhraseWords.Count() == 2 ? 1 : 2;
+
             var count = smallPhraseWords.Count(sw =>
-                largePhraseWords.Any(lw=> String.Equals(lw,sw, StringComparison.InvariantCultureIgnoreCase)));
-            return count >= 2;
+                largePhraseWords.Any(lw => string.Equals(lw, sw, StringComparison.InvariantCultureIgnoreCase)));
+            return count >= minimumCommonWords;
         }
 
         public static bool HaveAtLeastOneCommonKeyword(this IEnumerable<string> keywords1, IEnumerable<string> keywords2)
@@ -133,12 +135,14 @@ namespace FackCheckThisBitch.Common
 
             if (nonEmptyKeywords1.Count == 0 || nonEmptyKeywords2.Count == 0) return false;
 
-            foreach (string keyword in nonEmptyKeywords1)
+            foreach (string keyword1 in nonEmptyKeywords1)
             {
-                string allOfKeywords2 = string.Join(",", nonEmptyKeywords2);
-                if (allOfKeywords2.IsAlmostSameWith(keyword))
+                foreach (string keyword2 in nonEmptyKeywords2)
                 {
-                    return true;
+                    if (keyword2.IsAlmostSameWith(keyword1))
+                    {
+                        return true;
+                    }
                 }
             }
 

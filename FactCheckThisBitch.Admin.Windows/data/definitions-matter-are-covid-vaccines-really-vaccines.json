@@ -11,12 +11,11 @@
       "Y": 1,
       "Piece": {
         "Id": "47aaf170-7e50-4085-ae3b-44849fc00ab7",
-        "Title": "Definition of vaccine and immunity",
-        "Thesis": "According to Cambridge Dictionary, it <b>prevents disease</b> and <b>often contains a weakened or dead form of the disease-causing organism</b>\r\nAccording to Wikipedia, it provides  <B>immunity</b> and <b>contains a weakened or killed form of a virus</b>.\r\nBut what is immunity? According to Merriam-Webster dictionary it's \"the power to keep yourself from being affected by a disease\" and according to Oxford Languages it's \"the ability of an organism to <B>resist</b> a particular infection or toxin by the action of specific antibodies\".\r\n",
+        "Title": "Definition of vaccine",
+        "Thesis": "According to Cambridge Dictionary, it <b>prevents disease</b> and <b>often contains a weakened or dead form of the disease-causing organism</b>\r\nAccording to Wikipedia, it provides  <B>immunity</b> and <b>contains a weakened or killed form of a virus</b>.",
         "Keywords": [
-          "immunity",
           "vaccine definition",
-          " dictionary"
+          " immunity"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
@@ -51,7 +50,30 @@
               "0c84b676-e913-4fc7-abe8-bdfd9123f4de.png"
             ],
             "Author": ""
-          },
+          }
+        ]
+      },
+      "Valid": true
+    },
+    {
+      "Index": 2,
+      "X": 2,
+      "Y": 1,
+      "Piece": {
+        "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
+        "Title": "Definition of immunity",
+        "Thesis": "But what is immunity? According to Merriam-Webster dictionary it's \"the power to keep yourself from being affected by a disease\" and according to Oxford Languages it's \"the ability of an organism to <B>resist</b> a particular infection or toxin by the action of specific antibodies\".\r\n",
+        "Keywords": [
+          "immunity definition"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
+          "Title": "immunity",
+          "Summary": "the ability of an organism to resist a particular infection or toxin by the action of specific antibodies or sensitized white blood cells.",
+          "Source": "Merriam-webster",
+          "Url": "https://www.merriam-webster.com/dictionary/immunity"
+        },
+        "References": [
           {
             "Type": 1,
             "Id": "9deac62f-2dc0-4cfa-a68b-c3457596a5c3",
@@ -66,12 +88,11 @@
             "Author": ""
           }
         ]
-      },
-      "Valid": true
+      }
     },
     {
-      "Index": 2,
-      "X": 2,
+      "Index": 3,
+      "X": 3,
       "Y": 1,
       "Piece": {
         "Id": "493786ca-b183-439e-88c6-65eeb150330e",
@@ -131,54 +152,24 @@
       "Valid": true
     },
     {
-      "Index": 3,
-      "X": 3,
-      "Y": 1,
-      "Piece": {
-        "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
-        "Title": "What do the vaccine makers call it?",
-        "Thesis": "Moderna markets it as \"the software of life\" and \"Our Operating System\" on their website. According to them, their vaccine is a software platform, an operating system and the first application is the mRNA sequence that will hack your human cells into producing the coronavirus spike protein.",
-        "Keywords": [
-          "immunity",
-          "definition"
-        ],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
-          "Title": "immunity",
-          "Summary": "the ability of an organism to resist a particular infection or toxin by the action of specific antibodies or sensitized white blood cells.",
-          "Source": "Merriam-webster",
-          "Url": "https://www.merriam-webster.com/dictionary/immunity"
-        },
-        "References": [
-          {
-            "Type": 1,
-            "Id": "dbcc1267-826f-4676-b473-e9b0a316fb87",
-            "Description": "Our platform approach to mRNA medicines leads the development and discovery of new potential treatments and preventions for cancers & diseases like CMV, MMA & other uncommon illnesses. Learn more.",
-            "Url": "https://www.modernatx.com/mrna-technology/mrna-platform-enabling-drug-discovery-development",
-            "Images": [
-              "34e88eb4-2045-4ad4-9686-ac30d7faa36c.png",
-              "8d74df17-ac6f-43e8-bb26-24940151add8.png"
-            ],
-            "Author": ""
-          }
-        ]
-      },
-      "Valid": true
-    },
-    {
       "Index": 4,
       "X": 1,
       "Y": 2,
       "Piece": {
         "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
-        "Title": "Covid mRNA Vaccines do not give you immunity and do not contain a weakened virus. ",
+        "Title": "Covid mRNA Vaccines do not give you immunity and do not contain a weakened virus. What do they do?",
         "Thesis": "Their mode of operation is to literally hack your human cells into producing a non human spike protein. What is a more suitable name for that technology?",
         "Keywords": [
           "vaccine",
           "mrna",
           "gene therapy",
           "gene",
-          "cell"
+          "cell",
+          "resume",
+          " careers",
+          " moderna partners with aws to explore the 'software of life'",
+          " biospace",
+          " advice"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -210,6 +201,19 @@
           },
           {
             "Type": 1,
+            "Id": "dbcc1267-826f-4676-b473-e9b0a316fb87",
+            "Title": "The software of life",
+            "Description": "Our platform approach to mRNA medicines leads the development and discovery of new potential treatments and preventions for cancers & diseases like CMV, MMA & other uncommon illnesses. Learn more.",
+            "Source": "Moderna",
+            "Url": "https://www.modernatx.com/mrna-technology/mrna-platform-enabling-drug-discovery-development",
+            "Images": [
+              "34e88eb4-2045-4ad4-9686-ac30d7faa36c.png",
+              "8d74df17-ac6f-43e8-bb26-24940151add8.png"
+            ],
+            "Author": ""
+          },
+          {
+            "Type": 1,
             "Id": "ed0ec2e5-f513-497d-8f5e-06544344c569",
             "Title": "What if biohackers injected themselves with mRNA?",
             "Description": "Members of the Witnesses of Bioinformatic Freedom, a biohacking-rights group, demand the right to alter their own biology. An imagined scenario from 2029",
@@ -223,8 +227,16 @@
           },
           {
             "Type": 1,
-            "Id": "abdd4dc4-7085-41af-b21f-0f920d663292",
-            "Images": [],
+            "Id": "10ed562a-3290-4480-8941-a9409df7e7a9",
+            "Title": "Moderna Partners with AWS to Explore the 'Software of Life' | BioSpace",
+            "Description": "The company, which has secured enormous investments over the past few years, is inching closer to being a commercial company in developing personalized therapies for a wide range of diseases, including cancer.",
+            "Source": "BioSpace",
+            "Url": "https://www.biospace.com/article/moderna-harnesses-the-power-of-amazon-web-services-to-develop-personalized-medicines/",
+            "Images": [
+              "bb34c24b-3a4d-47e3-983a-6c0a824f9ea6.png",
+              "b2c1d317-98e5-4e5a-a7c6-b79f73f85f8c.png"
+            ],
+            "DatePublished": "2020-01-16T00:00:00",
             "Author": ""
           }
         ]
