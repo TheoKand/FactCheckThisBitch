@@ -11,6 +11,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
     public partial class ReferenceUi : UserControl
     {
         public Action<string> OnDelete;
+        public Action<string,int> OnMove;
 
         private Reference _content;
 
@@ -78,6 +79,18 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         {
             OnDelete?.Invoke(_content.Id);
         }
+
+        private void btnMoveBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OnMove?.Invoke(_content.Id,-1);
+        }
+
+        private void btnMoveForward_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OnMove?.Invoke(_content.Id,1);
+        }
+
+
 
         #endregion
 

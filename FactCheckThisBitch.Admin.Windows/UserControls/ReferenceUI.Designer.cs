@@ -47,6 +47,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.cboType = new System.Windows.Forms.ComboBox();
             this.btnDelete = new System.Windows.Forms.LinkLabel();
             this.imageEditor1 = new FactCheckThisBitch.Admin.Windows.UserControls.ImageEditor();
+            this.btnMoveBack = new System.Windows.Forms.LinkLabel();
+            this.btnMoveForward = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -116,10 +118,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUrl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUrl.Location = new System.Drawing.Point(114, 16);
+            this.txtUrl.Location = new System.Drawing.Point(114, 32);
             this.txtUrl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUrl.Name = "txtUrl";
-            this.txtUrl.Size = new System.Drawing.Size(514, 23);
+            this.txtUrl.Size = new System.Drawing.Size(573, 23);
             this.txtUrl.TabIndex = 3;
             // 
             // label5
@@ -135,7 +137,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // btnUrl
             // 
             this.btnUrl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnUrl.Location = new System.Drawing.Point(0, 20);
+            this.btnUrl.Location = new System.Drawing.Point(0, 36);
             this.btnUrl.Name = "btnUrl";
             this.btnUrl.Size = new System.Drawing.Size(28, 20);
             this.btnUrl.TabIndex = 23;
@@ -208,7 +210,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.AutoSize = true;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDelete.Location = new System.Drawing.Point(634, 19);
+            this.btnDelete.Location = new System.Drawing.Point(647, 13);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(40, 15);
             this.btnDelete.TabIndex = 32;
@@ -228,10 +230,38 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.imageEditor1.Size = new System.Drawing.Size(573, 94);
             this.imageEditor1.TabIndex = 33;
             // 
+            // btnMoveBack
+            // 
+            this.btnMoveBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMoveBack.AutoSize = true;
+            this.btnMoveBack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMoveBack.Location = new System.Drawing.Point(548, 13);
+            this.btnMoveBack.Name = "btnMoveBack";
+            this.btnMoveBack.Size = new System.Drawing.Size(25, 15);
+            this.btnMoveBack.TabIndex = 34;
+            this.btnMoveBack.TabStop = true;
+            this.btnMoveBack.Text = "<--";
+            this.btnMoveBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnMoveBack_LinkClicked);
+            // 
+            // btnMoveForward
+            // 
+            this.btnMoveForward.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMoveForward.AutoSize = true;
+            this.btnMoveForward.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMoveForward.Location = new System.Drawing.Point(579, 13);
+            this.btnMoveForward.Name = "btnMoveForward";
+            this.btnMoveForward.Size = new System.Drawing.Size(25, 15);
+            this.btnMoveForward.TabIndex = 35;
+            this.btnMoveForward.TabStop = true;
+            this.btnMoveForward.Text = "-->";
+            this.btnMoveForward.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnMoveForward_LinkClicked);
+            // 
             // ReferenceUi
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
+            this.Controls.Add(this.btnMoveForward);
+            this.Controls.Add(this.btnMoveBack);
             this.Controls.Add(this.imageEditor1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.cboType);
@@ -276,5 +306,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private System.Windows.Forms.ComboBox cboType;
         private System.Windows.Forms.LinkLabel btnDelete;
         private ImageEditor imageEditor1;
+        private System.Windows.Forms.LinkLabel btnMoveBack;
+        private System.Windows.Forms.LinkLabel btnMoveForward;
     }
 }

@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace FactCheckThisBitch.Admin.Windows.Forms
 {
@@ -61,7 +62,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 var reference = _piece.References[index];
                 var tabPage = new TabPage()
                 {
-                    Tag=reference.Id,
+                    Tag = reference.Id,
                     Left = 0,
                     Top = 0,
                     Text = reference.Type.ToString(),
@@ -78,16 +79,19 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                     AutoScaleMode = AutoScaleMode.None,
                     OnDelete = (string referenceId) =>
                     {
-                        try
+                        tabReferences.RemoveTabPage(referenceId);
+                        _piece.References.Remove(_piece.References.First(r => r.Id == referenceId));
+                        if (tabReferences.TabCount >= 1)
+                            tabReferences.SelectedIndex = tabReferences.TabCount - 1;
+                    },
+                    OnMove = (string referenceId, int move) =>
+                    {
+                        var piece = _piece.References.First(r => r.Id == referenceId);
+                        var pieceIndex = _piece.References.IndexOf(piece);
+                        if (pieceIndex + move >= 0 && pieceIndex + move < _piece.References.Count)
                         {
-                            tabReferences.RemoveTabPage(referenceId);
-                            _piece.References.Remove(_piece.References.First(r => r.Id == referenceId));
-                            if (tabReferences.TabCount>=1) 
-                                tabReferences.SelectedIndex = tabReferences.TabCount - 1;
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.ToString());
+                            _piece.References.Swap(pieceIndex, pieceIndex + move);
+                            LoadReferences();
                         }
                     }
                 };
@@ -114,7 +118,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private async void btnGetArticleMetadata_Click(object sender, EventArgs e)
         {
-            var reference = new Reference {Type = ReferenceType.Article};
+            var reference = new Reference { Type = ReferenceType.Article };
 
             SaveForm();
 
