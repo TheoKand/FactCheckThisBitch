@@ -108,7 +108,7 @@ namespace FackCheckThisBitch.Common
             phrase1 = phrase1.Trim();
             phrase2 = phrase2.Trim();
 
-            string smallerPhrase = phrase1.Length < phrase2.Length ? phrase1 : phrase2;
+            string smallerPhrase = phrase1.Length <= phrase2.Length ? phrase1 : phrase2;
             string largerPhrase = phrase1.Length > phrase2.Length ? phrase1 : phrase2;
 
             return (largerPhrase.Contains(smallerPhrase, StringComparison.InvariantCultureIgnoreCase)) ||
