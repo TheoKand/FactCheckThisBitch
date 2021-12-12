@@ -1,5 +1,6 @@
 ﻿using FackCheckThisBitch.Common;
 using FactCheckThisBitch.Models;
+using FactCheckThisBitch.Render;
 using Newtonsoft.Json;
 using System;
 using System.IO;
@@ -120,32 +121,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         #region Events
 
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.InitialDirectory = Configuration.Instance().DataFolder;
-            openFileDialog1.Title = "Open puzzle data file";
-            openFileDialog1.DefaultExt = "json";
-            openFileDialog1.CheckFileExists = true;
-            openFileDialog1.CheckPathExists = true;
-            openFileDialog1.ShowReadOnly = false;
-            if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
-            UserSettings.Instance().CurrentPuzzle = openFileDialog1.FileName;
-            LoadFromFile();
-            LoadForm();
-        }
-
-        private void newToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CreateNew();
-            LoadForm();
-        }
-
-        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Save();
-            SaveToFile();
-        }
-
         private void FrmPuzzle_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (IsDirty)
@@ -173,6 +148,61 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             IsDirty = true;
         }
 
+        private void newToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CreateNew();
+            LoadForm();
+        }
+
+        private void openToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.InitialDirectory = Configuration.Instance().DataFolder;
+            openFileDialog1.Title = "Open puzzle data file";
+            openFileDialog1.DefaultExt = "json";
+            openFileDialog1.CheckFileExists = true;
+            openFileDialog1.CheckPathExists = true;
+            openFileDialog1.ShowReadOnly = false;
+            if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
+            UserSettings.Instance().CurrentPuzzle = openFileDialog1.FileName;
+            LoadFromFile();
+            LoadForm();
+        }
+
+        private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Save();
+            SaveToFile();
+        }
+
+        private void renderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Cursor = Cursors.WaitCursor;
+                Cursor.Current = Cursors.WaitCursor;
+
+                string puzzleOutputFolder =
+                    Path.Combine(Configuration.Instance().OutputFolder, _puzzle.Title.ToSanitizedString());
+
+                using (var renderer = new PuzzleRenderer(_puzzle, Configuration.Instance().AssetsFolder, puzzleOutputFolder))
+                {
+                    renderer.Render();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                this.Cursor = Cursors.Default;
+                Cursor.Current = Cursors.Default;
+            }
+        }
+
         #endregion
+
+
     }
 }

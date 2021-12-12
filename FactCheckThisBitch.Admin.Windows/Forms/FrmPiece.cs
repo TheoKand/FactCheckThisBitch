@@ -138,6 +138,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 IDictionary<string, string> metaData = default;
                 try
                 {
+                    this.Cursor = Cursors.WaitCursor;
                     Cursor.Current = Cursors.WaitCursor;
                     metaData = await onlineArticleParser.Download();
                 }
@@ -149,6 +150,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 finally
                 {
                     Cursor.Current = Cursors.Default;
+                    this.Cursor = Cursors.Default;
                 }
 
                 reference.Type = ReferenceType.Article;

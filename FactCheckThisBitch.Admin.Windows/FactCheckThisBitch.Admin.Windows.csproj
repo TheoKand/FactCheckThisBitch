@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FackCheckThisBitch.Common\FackCheckThisBitch.Common.csproj" />
     <ProjectReference Include="..\FactCheckThisBitch.Models\FactCheckThisBitch.Models.csproj" />
+    <ProjectReference Include="..\FactCheckThisBitch.Render\FactCheckThisBitch.Render.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +33,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="output\" />
   </ItemGroup>
 
 </Project>

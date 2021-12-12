@@ -14,8 +14,8 @@
         "Title": "Definition of vaccine",
         "Thesis": "According to Cambridge Dictionary, it <b>prevents disease</b> and <b>often contains a weakened or dead form of the disease-causing organism</b>\r\nAccording to Wikipedia, it provides  <B>immunity</b> and <b>contains a weakened or killed form of a virus</b>.",
         "Keywords": [
-          "vaccine definition",
-          " immunity"
+          "vaccine",
+          "immunity"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
@@ -64,7 +64,7 @@
         "Title": "Definition of immunity",
         "Thesis": "According to Merriam-Webster dictionary it's \"the power to keep yourself from being affected by a disease\" and according to Oxford Languages it's \"the ability of an organism to <B>resist</b> a particular infection or toxin by the action of specific antibodies\".\r\n",
         "Keywords": [
-          "immunity definition"
+          "immunity"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Definition, FactCheckThisBitch.Models",
@@ -100,8 +100,8 @@
         "Title": "Definitions Matter. Is this a vaccine?",
         "Thesis": "A vaccine is supposed to give immunity. Immunity means protection. And yet Covid-vaccinated patients are dying left and right.",
         "Keywords": [
-          "death",
-          " immunity"
+          "immunity",
+          "death"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
