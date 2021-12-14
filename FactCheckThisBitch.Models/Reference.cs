@@ -25,7 +25,7 @@ namespace FactCheckThisBitch.Models
         {
             Id = Guid.NewGuid().ToString();
             Images = new List<string>();
-            Duration = 15;
+            Duration = 8;
         }
     }
 

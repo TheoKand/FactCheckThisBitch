@@ -19,6 +19,19 @@ namespace FactCheckThisBitch.Render
             shape.TextBody.Text = text;
         }
 
+        public static void ReplacePicture(this IGroupShape groupShape,string pictureName, string pictureFileName)
+        {
+            var picture = groupShape.Shapes.First(s => s.ShapeName == pictureName) as IPicture;
+            using (Stream pictureStream = File.Open(pictureFileName, FileMode.Open))
+            {
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    pictureStream.CopyTo(memoryStream);
+                    picture.ImageData = memoryStream.ToArray();
+                }
+            }
+        }
+
         public static void ReplacePicture(this ISlide slide, string pictureName, string pictureFileName)
         {
             var picture = slide.Pictures.First(p => p.ShapeName == pictureName);

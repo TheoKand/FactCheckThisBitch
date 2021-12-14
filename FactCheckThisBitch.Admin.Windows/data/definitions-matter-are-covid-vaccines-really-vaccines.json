@@ -4,7 +4,7 @@
   "Conclusion": "- Covid \"vaccines\" are actually gene therapy.\r\n- Covid \"vaccines\" use the same technology as GM foods. Begs the question, are vaccine takers Genetically Modified Organisms?\r\n- Big Pharma would be liable for injuries had their gene therapy product not been labeled \"vaccines\".\r\n- Big Pharma is regularly paying huge fines for all kinds of nefarious practices.\r\n- Goverment bodies such as the European Comission and the  US Food and drug administration have Big Pharma's back. ",
   "Width": 3,
   "Height": 3,
-  "Duration": 12,
+  "Duration": 8,
   "PuzzlePieces": [
     {
       "Index": 1,
@@ -13,8 +13,8 @@
       "Piece": {
         "Id": "47aaf170-7e50-4085-ae3b-44849fc00ab7",
         "Title": "Definition of vaccine",
-        "Thesis": "According to Cambridge Dictionary, it <b>prevents disease</b> and <b>often contains a weakened or dead form of the disease-causing organism</b>\r\nAccording to Wikipedia, it provides  <B>immunity</b> and <b>contains a weakened or killed form of a virus</b>.",
-        "Duration": 20,
+        "Thesis": "According to Cambridge Dictionary, it prevents disease and often contains a weakened or dead form of the disease-causing organism\r\n\r\nAccording to Wikipedia, it provides  immunity and contains a weakened or killed form of a virus.",
+        "Duration": 15,
         "Keywords": [
           "vaccine",
           "immunity"
@@ -36,7 +36,7 @@
             "Id": "56d608f9-38ce-458c-8f4b-a60467d7b081",
             "Title": "Vaccine - Wikipedia",
             "Url": "https://en.wikipedia.org/wiki/Vaccine",
-            "Duration": 20,
+            "Duration": 4,
             "Images": [
               "22b69a8e-a8f3-43f5-8403-d76128123d1e.png"
             ],
@@ -49,7 +49,7 @@
             "Title": "Vaccine - Cambridge Dictionary",
             "Source": "Cambridge Dictionary",
             "Url": "https://dictionary.cambridge.org/dictionary/english/vaccine",
-            "Duration": 15,
+            "Duration": 4,
             "Images": [
               "0c84b676-e913-4fc7-abe8-bdfd9123f4de.png"
             ],
@@ -66,7 +66,7 @@
       "Piece": {
         "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
         "Title": "Definition of immunity",
-        "Thesis": "According to Merriam-Webster dictionary it's \"the power to keep yourself from being affected by a disease\" and according to Oxford Languages it's \"the ability of an organism to <B>resist</b> a particular infection or toxin by the action of specific antibodies\".\r\n",
+        "Thesis": "According to Merriam-Webster dictionary it's \"the power to keep yourself from being affected by a disease\" and according to Oxford Languages it's \"the ability of an organism to resist a particular infection or toxin by the action of specific antibodies\".\r\n",
         "Duration": 15,
         "Keywords": [
           "immunity"
@@ -86,7 +86,7 @@
             "Description": "the quality or state of being immune; especially : a condition of being able to resist a particular disease especially through preventing development of a pathogenic microorganism or by counteracting the effects of its products… See the full definition",
             "Source": "Merriam Webster",
             "Url": "https://www.merriam-webster.com/dictionary/immunity",
-            "Duration": 15,
+            "Duration": 5,
             "Images": [
               "0cd39eae-77ac-44f3-ad86-27fcf04b0e63.png",
               "951722d5-b498-4370-b03b-240392d549ef.png"
@@ -105,7 +105,7 @@
         "Id": "493786ca-b183-439e-88c6-65eeb150330e",
         "Title": "Definitions Matter. Is this a vaccine?",
         "Thesis": "A vaccine is supposed to give immunity. Immunity means protection. And yet Covid-vaccinated patients are dying left and right.",
-        "Duration": 15,
+        "Duration": 10,
         "Keywords": [
           "immunity",
           "death"
@@ -126,7 +126,7 @@
             "Description": "Don’t think of this as a bad sign, it’s exactly what’s expected from an effective but imperfect jab ",
             "Source": "the Guardian",
             "Url": "https://www.theguardian.com/theobserver/commentisfree/2021/jun/27/why-most-people-who-now-die-with-covid-have-been-vaccinated",
-            "Duration": 15,
+            "Duration": 10,
             "Images": [
               "9a8e3fab-5636-44b3-a50d-d493b1b3011e.png"
             ],
@@ -140,7 +140,7 @@
             "Description": "From Monday, booster jabs can be booked one month earlier than previously allowed",
             "Source": "The Independent",
             "Url": "https://www.independent.co.uk/news/uk/home-news/vaccine-waning-immunity-covid-deaths-b1953158.html",
-            "Duration": 15,
+            "Duration": 10,
             "Images": [
               "2d728858-80c8-4c86-83bc-1b3649a2625d.png",
               "a070be68-ca5b-4bbe-950b-88f7bb251545.png"
@@ -160,7 +160,7 @@
         "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
         "Title": "Covid mRNA Vaccines do not give you immunity and do not contain a weakened virus. So what do they do?",
         "Thesis": "Their mode of operation is to literally hack your human cells into producing a non human spike protein. What is a more suitable name for that technology? What do the vaccine makers call their product?",
-        "Duration": 15,
+        "Duration": 20,
         "Keywords": [
           "vaccine",
           "cell"
@@ -186,7 +186,7 @@
             "Description": "References: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6491712/",
             "Source": "Sovereign Wealth Fund Institute",
             "Url": "https://www.swfinstitute.org/news/83947/Covid-mrna-vaccines-are-a-form-of-gene-therapy",
-            "Duration": 15,
+            "Duration": 6,
             "Images": [
               "9da54554-3061-4024-aa89-b17e950c4c29.png",
               "f328e488-9cec-4bf1-ad72-041a6393a66b.png"
@@ -201,7 +201,7 @@
             "Description": "Our platform approach to mRNA medicines leads the development and discovery of new potential treatments and preventions for cancers & diseases like CMV, MMA & other uncommon illnesses. Learn more.",
             "Source": "Moderna",
             "Url": "https://www.modernatx.com/mrna-technology/mrna-platform-enabling-drug-discovery-development",
-            "Duration": 15,
+            "Duration": 8,
             "Images": [
               "8d74df17-ac6f-43e8-bb26-24940151add8.png",
               "34e88eb4-2045-4ad4-9686-ac30d7faa36c.png"
@@ -215,7 +215,7 @@
             "Description": "The company, which has secured enormous investments over the past few years, is inching closer to being a commercial company in developing personalized therapies for a wide range of diseases, including cancer.",
             "Source": "BioSpace",
             "Url": "https://www.biospace.com/article/moderna-harnesses-the-power-of-amazon-web-services-to-develop-personalized-medicines/",
-            "Duration": 15,
+            "Duration": 6,
             "Images": [
               "bb34c24b-3a4d-47e3-983a-6c0a824f9ea6.png",
               "b2c1d317-98e5-4e5a-a7c6-b79f73f85f8c.png"
@@ -230,7 +230,7 @@
             "Description": "Covid’s Forgotten Hero: The Untold Story Of The Scientist Whose Breakthrough Made The Vaccines Possible",
             "Source": "Forbes",
             "Url": "https://www.forbes.com/sites/nathanvardi/2021/08/17/covids-forgotten-hero-the-untold-story-of-the-scientist-whose-breakthrough-made-the-vaccines-possible/?sh=7530a3cf354f",
-            "Duration": 15,
+            "Duration": 6,
             "Images": [
               "e61f602f-2578-4fb2-9dde-0fcec72f39fe.png",
               "727ff429-a9e3-41f9-9cd3-4eef86cb5a1d.png"
@@ -245,7 +245,7 @@
             "Description": "Members of the Witnesses of Bioinformatic Freedom, a biohacking-rights group, demand the right to alter their own biology. An imagined scenario from 2029",
             "Source": "The Economist",
             "Url": "https://www.economist.com/what-if/2021/07/03/what-if-biohackers-injected-themselves-with-mrna",
-            "Duration": 15,
+            "Duration": 6,
             "Images": [
               "d241795e-a2c7-4b94-867f-840794307c90.png"
             ],
@@ -264,7 +264,7 @@
         "Id": "4e714ec0-f4eb-4bcd-a65a-ea27be69984a",
         "Title": "Recombinant DNA is a also a technology that allows cells to produce foreign proteins.",
         "Thesis": "Recombinant DNA is inserted in host cells and these cells then produce new proteins that would not be produced without the inserted DNA.",
-        "Duration": 15,
+        "Duration": 10,
         "Keywords": [
           "cell",
           " recombinant dna"
@@ -285,7 +285,7 @@
             "Description": "Due to their important functions, proteins are widely used for industrial, nutritional, and medical applications. An important way to generate large amounts of a specific protein is the recombinant DNA technology, which involves the use of genetic recombination to bring together ",
             "Source": "CUSABIO",
             "Url": "https://www.cusabio.com/c-20679.html",
-            "Duration": 15,
+            "Duration": 6,
             "Images": [
               "aebe6faf-05a8-49c4-b873-cd972813a751.png",
               "are-covid-vaccines-really-vaccines-guid2.png"
@@ -304,7 +304,7 @@
         "Id": "898b2b44-ddc3-4d2f-991c-770098bf8b3f",
         "Title": "GMO crops and foods are made with Recombinant DNA Technology",
         "Thesis": "So in Covid vaccine takers and in Genetically Modified Organisms alike, the cells are hacked into producing foreign proteins that they would never produce otherwise. ",
-        "Duration": 15,
+        "Duration": 12,
         "Keywords": [
           "recombinant dna",
           "genetic engineering"
@@ -324,7 +324,7 @@
             "Description": "Genetically modified organism, organism whose genome has been engineered in the laboratory in order to favor the expression of desired physiological traits or the generation of desired biological products. Learn more about the development and uses of genetically modified organisms in this article.",
             "Source": "Encyclopedia Britannica",
             "Url": "https://www.britannica.com/science/genetically-modified-organism",
-            "Duration": 15,
+            "Duration": 8,
             "Images": [
               "5bdbe7ad-18de-4fba-9cdf-10bcbea3e0ca.png",
               "5d1466bd-ee80-4a56-8c53-61edf13b25a3.png"
@@ -367,7 +367,7 @@
             "Description": "A little-known deal protects drug companies in the U.S. from being sued—and feeds conspiracy theories in the process.",
             "Source": "The Atlantic",
             "Url": "https://www.theatlantic.com/health/archive/2019/05/vaccine-safety-program/589354/",
-            "Duration": 15,
+            "Duration": 10,
             "Images": [
               "1f8b33ed-23c6-4bf9-8bf8-6989d8ea99c0.png",
               "0bf649c2-3bac-4ad8-9827-3d6d3ea22421.png"
@@ -382,7 +382,7 @@
             "Description": "Companies like Pfizer and Moderna have total immunity from legal liability under the PREP Act if something unintentionally goes wrong with their Covid vaccines.",
             "Source": "CNBC",
             "Url": "https://www.cnbc.com/2020/12/16/covid-vaccine-side-effects-compensation-lawsuit.html",
-            "Duration": 15,
+            "Duration": 8,
             "Images": [
               "7f051ee2-9f5a-42e4-8245-89b425069d3f.png",
               "8e997e71-5278-4eea-b31d-2c2c038ec6b7.png"
@@ -402,7 +402,7 @@
         "Id": "19001789-7442-4b77-b982-772b3a2b681c",
         "Title": "Do Pharmaceutical giants like Pfizer at least have a good track record? Maybe we should just trust them.",
         "Thesis": "Pfizer is regularly paying huge fines up to billions of dollars for false claims and illegally lobbying governments and doctors to push their products. Only the Japanese Tepco who almost siglehandedly ended the world with the \r\nFukushima disaster, has paid a larger fine.",
-        "Duration": 15,
+        "Duration": 20,
         "Keywords": [
           "big pharma",
           "fines"
@@ -425,7 +425,7 @@
             "Description": "Penalty total since 2000:  $4,660,896,333\r\nNumber of records:  71",
             "Source": "Good Jobs First",
             "Url": "https://violationtracker.goodjobsfirst.org/prog.php?parent=pfizer&sort=desc",
-            "Duration": 15,
+            "Duration": 12,
             "Images": [
               "0e106dbc-d196-42d2-8959-9af8b835540e.png",
               "2e16289d-a0a0-4cfc-8eb7-c8ba6953724a.png"
@@ -459,7 +459,7 @@
         "Id": "80841d3b-edf8-4ec9-aa62-ce8c9006a716",
         "Title": "Ok so Big Pharma have been naughty in the past.",
         "Thesis": "At least has there been transparency in the proccess of approving their Covid vaccines?",
-        "Duration": 15,
+        "Duration": 8,
         "Keywords": [
           "big pharma",
           "secrecy"
@@ -485,7 +485,7 @@
             "Description": "EU lawmakers from the Greens/EFA group have filed a case application to the European Court of Justice stating \"implicit refusal\" from the Commission to provide access to information in the context of vaccine contracts between the European Commission and vaccine manufacturers.",
             "Source": "www.euractiv.com",
             "Url": "https://www.euractiv.com/section/coronavirus/news/meps-vs-commission-in-court-over-vaccine-contracts/",
-            "Duration": 15,
+            "Duration": 10,
             "Images": [
               "b8c5da91-4d77-48f5-ab8e-5887de523a07.png",
               "e0ae8706-c85d-4124-ab84-743a8d7a5b0e.png"
@@ -500,7 +500,7 @@
             "Description": "Freedom of Information Act requests are rarely speedy, but when a group of scientists asked the federal government to share the data it relied upon in licensing Pfizer’s COVID-19 vaccine, the response went beyond typical bureaucratic foot-dragging.",
             "Source": "Reuters",
             "Url": "https://www.reuters.com/legal/government/wait-what-fda-wants-55-years-process-foia-request-over-vaccine-data-2021-11-18/",
-            "Duration": 15,
+            "Duration": 10,
             "Images": [
               "ffc733b0-0027-4e26-ac27-d00aea985e87.png",
               "6201dbcb-9a0b-4b47-8216-3118db13ea87.png"

@@ -18,12 +18,14 @@ namespace FactCheckThisBitch.Render
         private readonly Puzzle _puzzle;
         private readonly string _assetsFolder;
         private readonly string _outputFolder;
+        private readonly string _mediaFolder;
 
-        public PuzzleRenderer(Puzzle puzzle, string assetsFolder, string outputFolder)
+        public PuzzleRenderer(Puzzle puzzle, string assetsFolder, string outputFolder,string mediaFolder)
         {
             _puzzle = puzzle;
             _assetsFolder = assetsFolder;
             _outputFolder = outputFolder;
+            _mediaFolder = mediaFolder;
         }
 
         public void Render()
@@ -115,15 +117,20 @@ namespace FactCheckThisBitch.Render
             var puzzleSlide = doc.Slides[0];
             puzzleSlide.GroupShape("puzzle_metadata").UpdateText("puzzle_title", _puzzle.Title);
             puzzleSlide.GroupShape("puzzle_metadata").UpdateText("puzzle_thesis", _puzzle.Thesis);
+            puzzleSlide.SlideTransition.TimeDelay = _puzzle.Duration;
+        
             #endregion
 
-            #region create one slide for each piece
-
             var pieceSlideTemplate = doc.Slides[1];
+            var pieceReferencesTemplate = doc.Slides[2];
+
+
+            #region create one slide for each piece
             foreach (var puzzlePiece in _puzzle.PuzzlePieces)
             {
                 var newPieceSlide = pieceSlideTemplate.Clone();
                 newPieceSlide.SlideTransition.TransitionEffect = TransitionEffect.None;
+                newPieceSlide.SlideTransition.TimeDelay = puzzlePiece.Piece.Duration;
 
                 newPieceSlide.GroupShape("piece_metadata").UpdateText("piece_title", puzzlePiece.Piece.Title);
                 newPieceSlide.GroupShape("piece_metadata").UpdateText("piece_thesis", puzzlePiece.Piece.Thesis);
@@ -134,12 +141,82 @@ namespace FactCheckThisBitch.Render
                 //replace piece picture
                 newPieceSlide.ReplacePicture("puzzle_piece",Path.Combine(_outputFolder,$"Piece{puzzlePiece.Index}_Keywords.png"));
 
+                //position piece picture
+                //get location of puzzle picture
+                var location = _puzzle.GetPieceCoordinates(puzzlePiece.Index);
+                var puzzlePicture = newPieceSlide.Shapes.First(p => p.ShapeName == "empty_puzzle");
+                var puzzlePieceShape = newPieceSlide.Shapes.First(s => s.ShapeName == "puzzle_piece");
+
+                var xRatio =0.68496500437;
+                var yRatio = 0.68218519437;
+
+                var pieceImageWidth = 0d;
+                var pieceImageHeight = 0d;
+                var pieceImagePath = Path.Combine(_outputFolder, $"Piece{puzzlePiece.Index}_Keywords.png");
+                using (var pieceImage = Image.Load(pieceImagePath))
+                {
+                    pieceImageWidth = (double)pieceImage.Width * xRatio ;
+                    pieceImageHeight = (double)pieceImage.Height* yRatio;
+                }
+
+                puzzlePieceShape.Left = puzzlePicture.Left + location.X* xRatio;
+                puzzlePieceShape.Top = puzzlePicture.Top + location.Y * yRatio;
+                puzzlePieceShape.Width = pieceImageWidth;
+                puzzlePieceShape.Height = pieceImageHeight;
+
                 doc.Slides.Add(newPieceSlide);
+
+                #region Create a slide for each reference of this piece
+
+
+                var referenceIndex = 0;
+                foreach (var reference in puzzlePiece.Piece.References)
+                {
+
+
+                    foreach (string image in reference.Images)
+                    {
+
+                        var referenceSlide = pieceReferencesTemplate.Clone();
+                        var slideSequence = referenceSlide.Timeline.MainSequence;
+
+                        var referenceGroupShape = referenceSlide.GroupShape("group_article");
+                        referenceGroupShape.UpdateText("textbox_url", reference.Url.Limit(100));
+                        referenceGroupShape.ReplacePicture("picture_screenshot",
+                            Path.Combine(_mediaFolder, image)); //todo: handle multiple images
+
+                        //todo: if it's not the first reference of the piece, remove the tv picture and set
+                        //the slide transition to fade
+                        if (referenceIndex > 0)
+                        {
+                            slideSequence.RemoveByShape(referenceGroupShape as IShape);
+
+                            referenceSlide.SlideTransition.TransitionEffect = TransitionEffect.None; //TODO: fix
+                            referenceSlide.Pictures.RemoveAt(0);
+                        }
+                        else
+                        {
+
+                        }
+
+                        referenceSlide.SlideTransition.TimeDelay = reference.Duration;
+                        doc.Slides.Add(referenceSlide);
+
+                        referenceIndex++;
+
+                    }
+
+
+                }
+
+
+                #endregion
             }
 
             #endregion
 
-            doc.Slides.RemoveAt(1);
+            doc.Slides.Remove(pieceSlideTemplate);
+            doc.Slides.Remove(pieceReferencesTemplate);
 
             doc.Save(Path.Combine(_outputFolder, $"{_puzzle.Title.ToSanitizedString()}.pptx"));
         }

@@ -47,7 +47,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void InitForm()
         {
-            txtDuration.ValidationPattern = "^[1-9][0-9]$";
+            txtDuration.ValidationPattern = "^[1-9]?[0-9]$";
             txtDatePublished.ValidationPattern = typeof(DateTime).RegExValidationPatternForType();
             var pieceTypes = Enum.GetValues(typeof(ReferenceType)).Cast<ReferenceType>();
             cboType.DataSource = pieceTypes;
@@ -95,10 +95,5 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         }
 
         #endregion
-
-        private void txtDatePublished_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

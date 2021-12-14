@@ -29,7 +29,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void InitForm()
         {
-            txtDuration.ValidationPattern = "^[1-9][0-9]$";
+            txtDuration.ValidationPattern = "^[1-9]?[0-9]$";
         }
 
         private void LoadForm()

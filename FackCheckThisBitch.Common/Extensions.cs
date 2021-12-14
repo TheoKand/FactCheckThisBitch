@@ -20,6 +20,19 @@ namespace FackCheckThisBitch.Common
             return input.IsEmpty() ? null : input;
         }
 
+        public static string Limit(this string input, int max)
+        {
+            if (input.Length > max)
+            {
+                return input.Substring(0, max);
+            }
+            else
+            {
+                return input;
+            }
+            
+        }
+
         public static string TryGet(this IDictionary<string, string> input, string key)
         {
             if (input.ContainsKey(key))

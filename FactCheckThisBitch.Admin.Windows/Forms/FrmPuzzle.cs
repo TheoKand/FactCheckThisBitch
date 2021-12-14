@@ -47,7 +47,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void InitForm()
         {
-            txtDuration.ValidationPattern = "^[1-9][0-9]$";
+            txtDuration.ValidationPattern = "^[1-9]?[0-9]$";
+            txtDuration.TextChanged = x => IsDirty = true;
             txtSize.ValidationPattern = "^[3-9]x[3-9]$";
             txtSize.TextChanged = x => SizeChanged();
             puzzleUi.SaveToFile = SaveToFile;
@@ -187,7 +188,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 string puzzleOutputFolder =
                     Path.Combine(Configuration.Instance().OutputFolder, _puzzle.Title.ToSanitizedString());
 
-                using (var renderer = new PuzzleRenderer(_puzzle, Configuration.Instance().AssetsFolder, puzzleOutputFolder))
+                using (var renderer = new PuzzleRenderer(_puzzle, Configuration.Instance().AssetsFolder, puzzleOutputFolder,Path.Combine(Configuration.Instance().DataFolder, "media")))
                 {
                     renderer.Render();
                 }

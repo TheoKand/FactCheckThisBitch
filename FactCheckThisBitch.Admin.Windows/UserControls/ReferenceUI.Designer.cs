@@ -62,7 +62,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtTitle.Location = new System.Drawing.Point(114, 63);
             this.txtTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(935, 27);
+            this.txtTitle.Size = new System.Drawing.Size(580, 23);
             this.txtTitle.TabIndex = 0;
             // 
             // label4
@@ -84,7 +84,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtSummary.Multiline = true;
             this.txtSummary.Name = "txtSummary";
             this.txtSummary.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtSummary.Size = new System.Drawing.Size(935, 63);
+            this.txtSummary.Size = new System.Drawing.Size(580, 63);
             this.txtSummary.TabIndex = 1;
             // 
             // label1
@@ -104,7 +104,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtSource.Location = new System.Drawing.Point(114, 169);
             this.txtSource.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSource.Name = "txtSource";
-            this.txtSource.Size = new System.Drawing.Size(935, 27);
+            this.txtSource.Size = new System.Drawing.Size(580, 23);
             this.txtSource.TabIndex = 2;
             // 
             // label2
@@ -124,7 +124,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtUrl.Location = new System.Drawing.Point(114, 32);
             this.txtUrl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUrl.Name = "txtUrl";
-            this.txtUrl.Size = new System.Drawing.Size(935, 27);
+            this.txtUrl.Size = new System.Drawing.Size(580, 23);
             this.txtUrl.TabIndex = 3;
             // 
             // label5
@@ -165,7 +165,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtAuthor.Location = new System.Drawing.Point(114, 235);
             this.txtAuthor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAuthor.Name = "txtAuthor";
-            this.txtAuthor.Size = new System.Drawing.Size(935, 27);
+            this.txtAuthor.Size = new System.Drawing.Size(580, 23);
             this.txtAuthor.TabIndex = 27;
             // 
             // label6
@@ -180,7 +180,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(725, 206);
+            this.label7.Location = new System.Drawing.Point(425, 204);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 20);
             this.label7.TabIndex = 29;
@@ -191,10 +191,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.cboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cboType.FormattingEnabled = true;
-            this.cboType.Location = new System.Drawing.Point(793, 201);
+            this.cboType.Location = new System.Drawing.Point(471, 201);
             this.cboType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboType.Name = "cboType";
-            this.cboType.Size = new System.Drawing.Size(222, 28);
+            this.cboType.Size = new System.Drawing.Size(222, 23);
             this.cboType.TabIndex = 30;
             // 
             // btnDelete
@@ -202,9 +202,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.AutoSize = true;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDelete.Location = new System.Drawing.Point(1009, 8);
+            this.btnDelete.Location = new System.Drawing.Point(654, 8);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(53, 20);
+            this.btnDelete.Size = new System.Drawing.Size(40, 15);
             this.btnDelete.TabIndex = 32;
             this.btnDelete.TabStop = true;
             this.btnDelete.Text = "Delete";
@@ -219,7 +219,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.imageEditor1.Location = new System.Drawing.Point(114, 269);
             this.imageEditor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.imageEditor1.Name = "imageEditor1";
-            this.imageEditor1.Size = new System.Drawing.Size(935, 94);
+            this.imageEditor1.Size = new System.Drawing.Size(580, 94);
             this.imageEditor1.TabIndex = 33;
             // 
             // btnMoveBack
@@ -227,9 +227,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.btnMoveBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMoveBack.AutoSize = true;
             this.btnMoveBack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMoveBack.Location = new System.Drawing.Point(910, 8);
+            this.btnMoveBack.Location = new System.Drawing.Point(555, 8);
             this.btnMoveBack.Name = "btnMoveBack";
-            this.btnMoveBack.Size = new System.Drawing.Size(31, 20);
+            this.btnMoveBack.Size = new System.Drawing.Size(25, 15);
             this.btnMoveBack.TabIndex = 34;
             this.btnMoveBack.TabStop = true;
             this.btnMoveBack.Text = "<--";
@@ -240,9 +240,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.btnMoveForward.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMoveForward.AutoSize = true;
             this.btnMoveForward.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMoveForward.Location = new System.Drawing.Point(941, 8);
+            this.btnMoveForward.Location = new System.Drawing.Point(586, 8);
             this.btnMoveForward.Name = "btnMoveForward";
-            this.btnMoveForward.Size = new System.Drawing.Size(31, 20);
+            this.btnMoveForward.Size = new System.Drawing.Size(25, 15);
             this.btnMoveForward.TabIndex = 35;
             this.btnMoveForward.TabStop = true;
             this.btnMoveForward.Text = "-->";
@@ -253,9 +253,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.btnMove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMove.AutoSize = true;
             this.btnMove.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMove.Location = new System.Drawing.Point(759, 8);
+            this.btnMove.Location = new System.Drawing.Point(404, 8);
             this.btnMove.Name = "btnMove";
-            this.btnMove.Size = new System.Drawing.Size(146, 20);
+            this.btnMove.Size = new System.Drawing.Size(116, 15);
             this.btnMove.TabIndex = 36;
             this.btnMove.TabStop = true;
             this.btnMove.Text = "Move To Other Piece";
@@ -266,12 +266,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtDatePublished.Location = new System.Drawing.Point(114, 201);
             this.txtDatePublished.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDatePublished.Name = "txtDatePublished";
-            this.txtDatePublished.Size = new System.Drawing.Size(230, 28);
+            this.txtDatePublished.Size = new System.Drawing.Size(112, 28);
             this.txtDatePublished.TabIndex = 37;
             // 
             // txtDuration
             // 
-            this.txtDuration.Location = new System.Drawing.Point(515, 201);
+            this.txtDuration.Location = new System.Drawing.Point(289, 201);
             this.txtDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.Size = new System.Drawing.Size(125, 28);
@@ -279,7 +279,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(434, 206);
+            this.label8.Location = new System.Drawing.Point(232, 206);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(109, 20);
             this.label8.TabIndex = 39;
@@ -313,7 +313,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.Controls.Add(this.label8);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ReferenceUi";
-            this.Size = new System.Drawing.Size(1068, 546);
+            this.Size = new System.Drawing.Size(713, 546);
             this.ResumeLayout(false);
             this.PerformLayout();
 
