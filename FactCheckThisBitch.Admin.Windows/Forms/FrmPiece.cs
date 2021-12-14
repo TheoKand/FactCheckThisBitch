@@ -3,6 +3,7 @@ using FactCheckThisBitch.Admin.Windows.UserControls;
 using FactCheckThisBitch.Models;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -28,6 +29,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void InitForm()
         {
+            txtDuration.ValidationPattern = "^[1-9][0-9]$";
         }
 
         private void LoadForm()
@@ -36,6 +38,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
             txtTitle.Text = _piece.Title;
             txtThesis.Text = _piece.Thesis;
+            txtDuration.Text = _piece.Duration.ToString();
             txtKeywords.Text = string.Join(",", _piece.Keywords);
 
             LoadReferences();
@@ -46,6 +49,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _piece.Title = txtTitle.Text.ValueOrNull();
             _piece.Thesis = txtThesis.Text.ValueOrNull();
             _piece.Keywords = txtKeywords.Text.Split(",").ToList();
+            _piece.Duration = int.Parse(txtDuration.Text);
 
             foreach (TabPage tab in tabReferences.TabPages)
             {
@@ -73,6 +77,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
                 var referenceUi = new ReferenceUi()
                 {
+                    Font = new Font(this.Font, FontStyle.Regular),
                     Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom,
                     Content = reference,
                     Width = tabReferences.Width,

@@ -47,5 +47,14 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 TextChanged?.Invoke(_validatedText);
             }
         }
+
+        private void TextBoxWithValidation_VisibleChanged(object sender, EventArgs e)
+        {
+            if (!Visible) return;
+            textBox1.Left = 0;
+            textBox1.Top = 0;
+            textBox1.Width = this.Width-1;
+            textBox1.Height = this.Height-1;
+        }
     }
 }

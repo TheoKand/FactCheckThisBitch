@@ -41,11 +41,13 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             _content.Type = (ReferenceType) Enum.Parse(typeof(ReferenceType), cboType.SelectedValue.ToString() ?? string.Empty);
             _content.Images = imageEditor1.Images;
             _content.Author = txtAuthor.Text;
+            _content.Duration = int.Parse(txtDuration.Text);
             _content.DatePublished = txtDatePublished.Text.ToDate();
         }
 
         private void InitForm()
         {
+            txtDuration.ValidationPattern = "^[1-9][0-9]$";
             txtDatePublished.ValidationPattern = typeof(DateTime).RegExValidationPatternForType();
             var pieceTypes = Enum.GetValues(typeof(ReferenceType)).Cast<ReferenceType>();
             cboType.DataSource = pieceTypes;
@@ -58,6 +60,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             txtSummary.Text = _content.Description;
             txtSource.Text = _content.Source;
             txtUrl.Text = _content.Url;
+            txtDuration.Text = _content.Duration.ToString();
             imageEditor1.Images = _content.Images != null ? _content.Images.ToList() : new List<string>();
             txtDatePublished.Text = _content.DatePublished.ToSimpleStringDate();
             txtAuthor.Text = _content.Author;
@@ -92,5 +95,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         }
 
         #endregion
+
+        private void txtDatePublished_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

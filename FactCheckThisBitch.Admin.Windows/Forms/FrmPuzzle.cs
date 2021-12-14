@@ -47,6 +47,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void InitForm()
         {
+            txtDuration.ValidationPattern = "^[1-9][0-9]$";
             txtSize.ValidationPattern = "^[3-9]x[3-9]$";
             txtSize.TextChanged = x => SizeChanged();
             puzzleUi.SaveToFile = SaveToFile;
@@ -69,6 +70,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             txtThesis.Text = _puzzle.Thesis;
             txtConclusion.Text = _puzzle.Conclusion;
             txtSize.Text = $"{_puzzle.Width}x{_puzzle.Height}";
+            txtDuration.Text = _puzzle.Duration.ToString();
             puzzleUi.Puzzle = _puzzle;
             IsDirty = false;
         }
@@ -107,6 +109,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _puzzle.Conclusion = txtConclusion.Text.ValueOrNull();
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
             _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
+            _puzzle.Duration = int.Parse( txtDuration.Text);
             CheckRenameFile();
         }
 
@@ -198,6 +201,15 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             {
                 this.Cursor = Cursors.Default;
                 Cursor.Current = Cursors.Default;
+            }
+        }
+
+        private void FrmPuzzle_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F2)
+            {
+                Save();
+                SaveToFile();
             }
         }
 

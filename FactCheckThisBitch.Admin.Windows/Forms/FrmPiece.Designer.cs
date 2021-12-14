@@ -39,6 +39,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtKeywords = new System.Windows.Forms.TextBox();
             this.btnAddReferenceFromUrl = new System.Windows.Forms.Button();
             this.tabReferences = new System.Windows.Forms.TabControl();
+            this.txtDuration = new FactCheckThisBitch.Admin.Windows.UserControls.TextBoxWithValidation();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCancel
@@ -122,15 +124,15 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtKeywords.Location = new System.Drawing.Point(90, 168);
             this.txtKeywords.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtKeywords.Name = "txtKeywords";
-            this.txtKeywords.Size = new System.Drawing.Size(986, 27);
+            this.txtKeywords.Size = new System.Drawing.Size(713, 27);
             this.txtKeywords.TabIndex = 2;
             // 
             // btnAddReferenceFromUrl
             // 
             this.btnAddReferenceFromUrl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddReferenceFromUrl.Location = new System.Drawing.Point(862, 205);
+            this.btnAddReferenceFromUrl.Location = new System.Drawing.Point(893, 205);
             this.btnAddReferenceFromUrl.Name = "btnAddReferenceFromUrl";
-            this.btnAddReferenceFromUrl.Size = new System.Drawing.Size(214, 40);
+            this.btnAddReferenceFromUrl.Size = new System.Drawing.Size(183, 40);
             this.btnAddReferenceFromUrl.TabIndex = 22;
             this.btnAddReferenceFromUrl.Text = "Add Reference";
             this.btnAddReferenceFromUrl.UseVisualStyleBackColor = true;
@@ -150,12 +152,33 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.tabReferences.Size = new System.Drawing.Size(1063, 532);
             this.tabReferences.TabIndex = 23;
             // 
+            // txtDuration
+            // 
+            this.txtDuration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDuration.Location = new System.Drawing.Point(893, 168);
+            this.txtDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDuration.Name = "txtDuration";
+            this.txtDuration.Size = new System.Drawing.Size(184, 32);
+            this.txtDuration.TabIndex = 25;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(815, 172);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 20);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Duration";
+            // 
             // FrmPiece
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(1090, 894);
+            this.Controls.Add(this.txtDuration);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnAddReferenceFromUrl);
             this.Controls.Add(this.tabReferences);
             this.Controls.Add(this.txtKeywords);
@@ -188,5 +211,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private System.Windows.Forms.TextBox txtKeywords;
         private System.Windows.Forms.Button btnAddReferenceFromUrl;
         private System.Windows.Forms.TabControl tabReferences;
+        private UserControls.TextBoxWithValidation txtDuration;
+        private System.Windows.Forms.Label label5;
     }
 }
