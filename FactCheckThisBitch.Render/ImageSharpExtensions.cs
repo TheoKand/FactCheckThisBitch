@@ -36,10 +36,6 @@ namespace FactCheckThisBitch.Render
             float padding)
         {
             Size imgSize = processingContext.GetCurrentSize();
-
-            //float targetWidth = imgSize.Width - (padding * 2);
-            //float targetHeight = imgSize.Height - (padding * 2);
-
             float targetWidth = boxToDrawTextIn.Right - boxToDrawTextIn.Left - (padding * 2);
             float targetHeight = boxToDrawTextIn.Bottom - boxToDrawTextIn.Top - (padding * 2);
 

@@ -10,7 +10,7 @@ namespace FactCheckThisBitch.Render
     {
         public static string GetKeywordsText(this Piece piece)
         {
-            var result = string.Join(", ",piece.Keywords);// string.Join(Environment.NewLine, piece.Keywords.Select(k => $"• {k}"));
+            var result = string.Join(Environment.NewLine, piece.Keywords.Select(k => $"• {k.Trim()}"));
             return result;
         }
 

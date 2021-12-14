@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Syncfusion.Presentation;
+using Syncfusion.Presentation.SlideTransition;
 
 namespace PowerPointPOC
 {
@@ -41,23 +43,50 @@ namespace PowerPointPOC
         private void button2_Click(object sender, EventArgs e)
         {
             var path =
-                "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\definitions-matter-are-covid-vaccines-really-vaccines.pptx";
+                "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\template.pptx";
             IPresentation doc = Presentation.Open(path);
 
+            var first = doc.Slides[1];
 
-            var first = doc.Slides.First();
+            var clone = first.Clone();
 
-            var trans = first.SlideTransition;
-            var second = doc.Slides[2];
+            clone.SlideTransition.TransitionEffect = TransitionEffect.None;
 
-            var shapeTitle = doc.Slides[0].Shapes.First(s => s.ShapeName == "puzzle_title") as IShape;
+            doc.Slides.Add(clone);
+            doc.Slides.Add(clone);
+            doc.Slides.Add(clone);
+            doc.Slides.Add(clone);
+            
+            ////var trans = first.SlideTransition;
+            ////var second = doc.Slides[2];
 
-            shapeTitle.TextBody.Text = "changed";
+            //var metadataGroupShape = doc.Slides[1].Shapes.First(s => s.ShapeName == "group_metadata") as IGroupShape;
+            //var thesis = metadataGroupShape.Shapes.First(s => s.ShapeName == "piece_thesis") as IShape;
+
+            //thesis.TextBody.Text = thesis.TextBody.Text + "changed";
 
             doc.Save(path);
 
 
             doc.Close();
+
+
+//            IPresentation pptxDoc = Presentation.Open("Sample.pptx");
+
+////Retrieve the first slide from the presentation
+//            ISlide slide = pptxDoc.Slides[0];
+
+////Modify the transition effect applied to the slide
+//            slide.SlideTransition.TransitionEffect = TransitionEffect.Cover;
+
+////Set the transition subtype
+//            slide.SlideTransition.TransitionEffectOption = TransitionEffectOption.Right;
+
+////Save the presentation
+//            pptxDoc.Save("Transition.pptx");
+
+////Close the presentation
+//            pptxDoc.Close();
         }
     }
 }
