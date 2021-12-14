@@ -40,11 +40,13 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.newToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.renderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.txtConclusion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtSize = new FactCheckThisBitch.Admin.Windows.UserControls.TextBoxWithValidation();
-            this.renderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtDuration = new FactCheckThisBitch.Admin.Windows.UserControls.TextBoxWithValidation();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +67,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTitle.Size = new System.Drawing.Size(742, 48);
+            this.txtTitle.Size = new System.Drawing.Size(742, 79);
             this.txtTitle.TabIndex = 0;
             this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
             // 
@@ -73,7 +75,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             this.txtThesis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtThesis.Location = new System.Drawing.Point(88, 96);
+            this.txtThesis.Location = new System.Drawing.Point(88, 126);
             this.txtThesis.Multiline = true;
             this.txtThesis.Name = "txtThesis";
             this.txtThesis.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -84,7 +86,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 100);
+            this.label2.Location = new System.Drawing.Point(5, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 20);
             this.label2.TabIndex = 2;
@@ -106,11 +108,11 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.puzzleUi.AutoScroll = true;
-            this.puzzleUi.Location = new System.Drawing.Point(5, 343);
+            this.puzzleUi.Location = new System.Drawing.Point(5, 372);
             this.puzzleUi.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.puzzleUi.Name = "puzzleUi";
             this.puzzleUi.Puzzle = null;
-            this.puzzleUi.Size = new System.Drawing.Size(1106, 705);
+            this.puzzleUi.Size = new System.Drawing.Size(1106, 676);
             this.puzzleUi.TabIndex = 3;
             // 
             // menuStrip1
@@ -140,23 +142,30 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // newToolStripMenuItem1
             // 
             this.newToolStripMenuItem1.Name = "newToolStripMenuItem1";
-            this.newToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.newToolStripMenuItem1.Size = new System.Drawing.Size(128, 26);
             this.newToolStripMenuItem1.Text = "New";
             this.newToolStripMenuItem1.Click += new System.EventHandler(this.newToolStripMenuItem1_Click);
             // 
             // openToolStripMenuItem1
             // 
             this.openToolStripMenuItem1.Name = "openToolStripMenuItem1";
-            this.openToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.openToolStripMenuItem1.Size = new System.Drawing.Size(128, 26);
             this.openToolStripMenuItem1.Text = "Open";
             this.openToolStripMenuItem1.Click += new System.EventHandler(this.openToolStripMenuItem1_Click);
             // 
             // saveToolStripMenuItem1
             // 
             this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
-            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(128, 26);
             this.saveToolStripMenuItem1.Text = "Save";
             this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
+            // 
+            // renderToolStripMenuItem
+            // 
+            this.renderToolStripMenuItem.Name = "renderToolStripMenuItem";
+            this.renderToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.renderToolStripMenuItem.Text = "Render";
+            this.renderToolStripMenuItem.Click += new System.EventHandler(this.renderToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
@@ -166,7 +175,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             this.txtConclusion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtConclusion.Location = new System.Drawing.Point(88, 219);
+            this.txtConclusion.Location = new System.Drawing.Point(89, 248);
             this.txtConclusion.Multiline = true;
             this.txtConclusion.Name = "txtConclusion";
             this.txtConclusion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -177,7 +186,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 223);
+            this.label4.Location = new System.Drawing.Point(6, 252);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 20);
             this.label4.TabIndex = 7;
@@ -193,18 +202,32 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.txtSize.Size = new System.Drawing.Size(222, 33);
             this.txtSize.TabIndex = 8;
             // 
-            // renderToolStripMenuItem
+            // label5
             // 
-            this.renderToolStripMenuItem.Name = "renderToolStripMenuItem";
-            this.renderToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
-            this.renderToolStripMenuItem.Text = "Render";
-            this.renderToolStripMenuItem.Click += new System.EventHandler(this.renderToolStripMenuItem_Click);
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(838, 90);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 20);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Duration";
+            // 
+            // txtDuration
+            // 
+            this.txtDuration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDuration.Location = new System.Drawing.Point(911, 83);
+            this.txtDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDuration.Name = "txtDuration";
+            this.txtDuration.Size = new System.Drawing.Size(184, 32);
+            this.txtDuration.TabIndex = 10;
             // 
             // FrmPuzzle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1111, 1048);
+            this.Controls.Add(this.txtDuration);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtSize);
             this.Controls.Add(this.txtConclusion);
             this.Controls.Add(this.label4);
@@ -215,6 +238,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.puzzleUi);
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(888, 907);
@@ -222,6 +246,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPuzzle_FormClosing);
             this.Load += new System.EventHandler(this.frmPuzzleMetadata_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmPuzzle_KeyDown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -247,5 +272,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem renderToolStripMenuItem;
+        private System.Windows.Forms.Label label5;
+        private UserControls.TextBoxWithValidation txtDuration;
     }
 }
