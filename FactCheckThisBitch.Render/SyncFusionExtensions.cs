@@ -45,5 +45,35 @@ namespace FactCheckThisBitch.Render
                 }
             }
         }
+
+        public static double PointsToPixels(this double points)
+        {
+            return points * 1.3333333333333333;
+        }
+
+        public static double PixelsToPoints(this double pixels)
+        {
+            return pixels / 1.3333333333333333;
+        }
+
+        public static double PointsToCm(this double points)
+        {
+            return points * 28.346;
+        }
+
+        public static double CmToPoints(this double cm)
+        {
+            return cm / 28.346;
+        }
+
+        public static double CmToPixels(this double cm)
+        {
+            return cm * 37.7952755906;
+        }
+
+        public static double PixelsToCm(this double pixels)
+        {
+            return pixels * 0.0264583333;
+        }
     }
 }

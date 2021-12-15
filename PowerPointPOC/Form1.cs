@@ -43,50 +43,19 @@ namespace PowerPointPOC
         private void button2_Click(object sender, EventArgs e)
         {
             var path =
-                "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\FactCheckThisBitch.Admin.Windows\\data\\template.pptx";
+                "C:\\Users\\theok\\source\\repos\\FactCheckThisBitch\\Media\\Render\\Template - Copy.pptx";
             IPresentation doc = Presentation.Open(path);
 
-            var first = doc.Slides[1];
 
-            var clone = first.Clone();
+            var puzzle = doc.Slides[0].Pictures.Where(p => p.ShapeName == "empty_puzzle");
+            var piece =  doc.Slides[0].Pictures.Where(p => p.ShapeName == "puzzle_piece");
 
-            clone.SlideTransition.TransitionEffect = TransitionEffect.None;
-
-            doc.Slides.Add(clone);
-            doc.Slides.Add(clone);
-            doc.Slides.Add(clone);
-            doc.Slides.Add(clone);
             
-            ////var trans = first.SlideTransition;
-            ////var second = doc.Slides[2];
 
-            //var metadataGroupShape = doc.Slides[1].Shapes.First(s => s.ShapeName == "group_metadata") as IGroupShape;
-            //var thesis = metadataGroupShape.Shapes.First(s => s.ShapeName == "piece_thesis") as IShape;
+            //position piece
 
-            //thesis.TextBody.Text = thesis.TextBody.Text + "changed";
+            //System.Diagnostics.Debug.WriteLine(width + "," + height);
 
-            doc.Save(path);
-
-
-            doc.Close();
-
-
-//            IPresentation pptxDoc = Presentation.Open("Sample.pptx");
-
-////Retrieve the first slide from the presentation
-//            ISlide slide = pptxDoc.Slides[0];
-
-////Modify the transition effect applied to the slide
-//            slide.SlideTransition.TransitionEffect = TransitionEffect.Cover;
-
-////Set the transition subtype
-//            slide.SlideTransition.TransitionEffectOption = TransitionEffectOption.Right;
-
-////Save the presentation
-//            pptxDoc.Save("Transition.pptx");
-
-////Close the presentation
-//            pptxDoc.Close();
         }
     }
 }

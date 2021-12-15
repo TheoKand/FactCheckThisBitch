@@ -4,7 +4,7 @@
   "Conclusion": "- Covid \"vaccines\" are actually gene therapy.\r\n- Covid \"vaccines\" use the same technology as GM foods. Begs the question, are vaccine takers Genetically Modified Organisms?\r\n- Big Pharma would be liable for injuries had their gene therapy product not been labeled \"vaccines\".\r\n- Big Pharma is regularly paying huge fines for all kinds of nefarious practices.\r\n- Goverment bodies such as the European Comission and the  US Food and drug administration have Big Pharma's back. ",
   "Width": 3,
   "Height": 3,
-  "Duration": 8,
+  "Duration": 7,
   "PuzzlePieces": [
     {
       "Index": 1,
@@ -14,7 +14,7 @@
         "Id": "47aaf170-7e50-4085-ae3b-44849fc00ab7",
         "Title": "Definition of vaccine",
         "Thesis": "According to Cambridge Dictionary, it prevents disease and often contains a weakened or dead form of the disease-causing organism\r\n\r\nAccording to Wikipedia, it provides  immunity and contains a weakened or killed form of a virus.",
-        "Duration": 15,
+        "Duration": 10,
         "Keywords": [
           "vaccine",
           "immunity"
@@ -36,7 +36,7 @@
             "Id": "56d608f9-38ce-458c-8f4b-a60467d7b081",
             "Title": "Vaccine - Wikipedia",
             "Url": "https://en.wikipedia.org/wiki/Vaccine",
-            "Duration": 4,
+            "Duration": 7,
             "Images": [
               "22b69a8e-a8f3-43f5-8403-d76128123d1e.png"
             ],
@@ -49,7 +49,7 @@
             "Title": "Vaccine - Cambridge Dictionary",
             "Source": "Cambridge Dictionary",
             "Url": "https://dictionary.cambridge.org/dictionary/english/vaccine",
-            "Duration": 4,
+            "Duration": 7,
             "Images": [
               "0c84b676-e913-4fc7-abe8-bdfd9123f4de.png"
             ],
@@ -67,7 +67,7 @@
         "Id": "423ceb3e-d268-4e03-b30f-cd1a808a2547",
         "Title": "Definition of immunity",
         "Thesis": "According to Merriam-Webster dictionary it's \"the power to keep yourself from being affected by a disease\" and according to Oxford Languages it's \"the ability of an organism to resist a particular infection or toxin by the action of specific antibodies\".\r\n",
-        "Duration": 15,
+        "Duration": 12,
         "Keywords": [
           "immunity"
         ],
@@ -86,7 +86,7 @@
             "Description": "the quality or state of being immune; especially : a condition of being able to resist a particular disease especially through preventing development of a pathogenic microorganism or by counteracting the effects of its products… See the full definition",
             "Source": "Merriam Webster",
             "Url": "https://www.merriam-webster.com/dictionary/immunity",
-            "Duration": 5,
+            "Duration": 7,
             "Images": [
               "0cd39eae-77ac-44f3-ad86-27fcf04b0e63.png",
               "951722d5-b498-4370-b03b-240392d549ef.png"
@@ -160,7 +160,7 @@
         "Id": "08d24c60-84c6-48d6-88d0-8c18e57a8ea7",
         "Title": "Covid mRNA Vaccines do not give you immunity and do not contain a weakened virus. So what do they do?",
         "Thesis": "Their mode of operation is to literally hack your human cells into producing a non human spike protein. What is a more suitable name for that technology? What do the vaccine makers call their product?",
-        "Duration": 20,
+        "Duration": 16,
         "Keywords": [
           "vaccine",
           "cell"
@@ -186,7 +186,7 @@
             "Description": "References: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6491712/",
             "Source": "Sovereign Wealth Fund Institute",
             "Url": "https://www.swfinstitute.org/news/83947/Covid-mrna-vaccines-are-a-form-of-gene-therapy",
-            "Duration": 6,
+            "Duration": 7,
             "Images": [
               "9da54554-3061-4024-aa89-b17e950c4c29.png",
               "f328e488-9cec-4bf1-ad72-041a6393a66b.png"
@@ -402,7 +402,7 @@
         "Id": "19001789-7442-4b77-b982-772b3a2b681c",
         "Title": "Do Pharmaceutical giants like Pfizer at least have a good track record? Maybe we should just trust them.",
         "Thesis": "Pfizer is regularly paying huge fines up to billions of dollars for false claims and illegally lobbying governments and doctors to push their products. Only the Japanese Tepco who almost siglehandedly ended the world with the \r\nFukushima disaster, has paid a larger fine.",
-        "Duration": 20,
+        "Duration": 18,
         "Keywords": [
           "big pharma",
           "fines"
