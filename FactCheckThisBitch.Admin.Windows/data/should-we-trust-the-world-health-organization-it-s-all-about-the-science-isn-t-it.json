@@ -17,8 +17,7 @@
         "Duration": 15,
         "Keywords": [
           "who",
-          "funding",
-          "philanthropic foundation"
+          "funding"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -58,9 +57,8 @@
         "Thesis": "There are 470 grants for the WHO, to the sum of over four billion dollars.",
         "Duration": 15,
         "Keywords": [
-          "bill & melinda gates foundation",
-          "philanthropic foundation",
-          "funding"
+          "bill gates",
+          "who"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -103,7 +101,7 @@
         "Thesis": "Bill Gates couldn't keep computer viruses out of his Windows operating system. He is nevertheless tackling human viruses and pledging billions to vaccinate the entire world. Is it philanthropy or investment?",
         "Duration": 15,
         "Keywords": [
-          "bill & melinda gates foundation",
+          "bill gates",
           "vaccine"
         ],
         "Content": {
@@ -147,14 +145,8 @@
         "Thesis": "Since the push to vaccinate is yielding profits, have there been any indications for unnecessary vaccinations in the past?",
         "Duration": 15,
         "Keywords": [
-          "bill & melinda gates foundation",
-          "investment",
-          "vaccines",
-          "india",
-          "gavi",
-          "global fund",
-          "global polio eradication initiative",
-          "gpei"
+          "bill gates",
+          "investment"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -222,11 +214,8 @@
         "Thesis": "So Bill is funding the WHO and also invests in Moderna. Then the WHO declares a pandemic and that drives Moderna's stock through the roof",
         "Duration": 15,
         "Keywords": [
-          "moderna",
-          "vaccines",
-          "stock",
-          "investment",
-          "bill & melinda gates foundation"
+          "bill gates",
+          " big pharma"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -280,7 +269,6 @@
         "Duration": 15,
         "Keywords": [
           "bill gates",
-          "bill melinda gates foundation",
           "vaccines"
         ],
         "Content": {
@@ -319,11 +307,8 @@
         "Thesis": "Bill Gates is so over the top, like a scary clown, wanting to vaccinate 7 billion people. Almost like he is the frontman of a globalist agenda, preparing the ground by shocking people with his outlandish predictions. Could he be just a puppet with a lot to hide?",
         "Duration": 15,
         "Keywords": [
-          "bill & melinda gates foundation",
-          "skeletons in the closet",
-          "jeffrey epstein",
-          "dailymail",
-          "news"
+          "bill gates",
+          "jeffrey epstein"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -383,9 +368,7 @@
         "Duration": 15,
         "Keywords": [
           "who",
-          "pandemic",
-          "swine flu",
-          "h1n1"
+          "pandemic"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",
@@ -468,11 +451,7 @@
         "Duration": 15,
         "Keywords": [
           "who",
-          "vaccine",
-          "government waste",
-          "taxpayer money",
-          "france",
-          "h1n1"
+          "vacine"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models",

@@ -19,6 +19,12 @@ namespace FactCheckThisBitch.Render
             shape.TextBody.Text = text;
         }
 
+        public static void UpdateText(this ISlide slide, string textboxName, string text)
+        {
+            var shape = slide.Shapes.First(s => s.ShapeName == textboxName) as IShape;
+            shape.TextBody.Text = text;
+        }
+
         public static void ReplacePicture(this IGroupShape groupShape,string pictureName, string pictureFileName)
         {
             var picture = groupShape.Shapes.First(s => s.ShapeName == pictureName) as IPicture;

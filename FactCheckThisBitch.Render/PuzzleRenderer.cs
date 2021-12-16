@@ -131,8 +131,10 @@ namespace FactCheckThisBitch.Render
 
                 var pieceSlideTemplate = doc.Slides[1];
                 var pieceReferencesTemplate = doc.Slides[2];
-                var conslusionSlideTemplate = doc.Slides[3];
-                var conclusionSlide = conslusionSlideTemplate.Clone();
+                var thinkingSlideTemplate = doc.Slides[3];
+                var conclusionSlideTemplate = doc.Slides[4];
+                var thinkingSlide = thinkingSlideTemplate.Clone();
+                var conclusionSlide = conclusionSlideTemplate.Clone();
 
                 #region create one slide for each piece
 
@@ -211,11 +213,13 @@ namespace FactCheckThisBitch.Render
 
                 doc.Slides.Remove(pieceSlideTemplate);
                 doc.Slides.Remove(pieceReferencesTemplate);
-                doc.Slides.Remove(conslusionSlideTemplate);
+                doc.Slides.Remove(thinkingSlideTemplate);
+                doc.Slides.Remove(conclusionSlideTemplate);
 
                 #region conclusion slide
-
-                conclusionSlide.GroupShape("puzzle_conclusion").UpdateText("conclusion_text", _puzzle.Conclusion);
+                conclusionSlide.UpdateText("conclusion_text",_puzzle.Conclusion);
+                conclusionSlide.ReplacePicture("conclusion_puzzle",Path.Combine(_outputFolder,"Puzzle9.png"));
+                doc.Slides.Add(thinkingSlide);
                 doc.Slides.Add(conclusionSlide);
 
                 #endregion

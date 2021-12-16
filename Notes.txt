@@ -1,8 +1,20 @@
 ﻿TODO
--don't allow save data if validation fails
--remove watermark
--fix music in first puzzle(longer piece?)
+-Generate description on Render (copy to clipboard)
 
+Later
+-add field in piece where thesis is displayed after the references
+-don't allow save data if validation fails
+
+Puzzle checklist
+	Pre render
+		clean up keywords
+	Content
+		- view slides, adjust duration on puzzle, pieces, references
+	Output
+		- Adjust text boxes, text formating (bold for next keywords)
+		- Add music
+		- Remove watermrks
+		- Generate & Preview video
 
 IDEAS
 
