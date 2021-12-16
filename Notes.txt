@@ -1,5 +1,7 @@
 ﻿TODO
 -don't allow save data if validation fails
+-remove watermark
+-fix music in first puzzle(longer piece?)
 
 
 IDEAS
