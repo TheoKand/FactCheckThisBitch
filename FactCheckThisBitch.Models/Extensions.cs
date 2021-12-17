@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
+using FackCheckThisBitch.Common;
 
 namespace FactCheckThisBitch.Models
 {
@@ -33,20 +34,20 @@ namespace FactCheckThisBitch.Models
         public static string ToDescription(this Puzzle puzzle, bool includeReferenceTitles = false)
         {
             StringBuilder result = new StringBuilder();
-            result.AppendLine($"--- {puzzle.Title} ---");
-            result.AppendLine($"{puzzle.Thesis}");
+            result.AppendLine($"--- {puzzle.Title.ToLeetSpeak()} ---");
+            result.AppendLine($"{puzzle.Thesis.ToLeetSpeak()}");
             result.AppendLine();
 
             foreach (var puzzlePiece in puzzle.PuzzlePieces)
             {
                 var piece = puzzlePiece.Piece;
 
-                result.AppendLine($"{puzzlePiece.Index}. {piece.Title}");
+                result.AppendLine($"{puzzlePiece.Index}. {piece.Title.ToLeetSpeak()}");
                 foreach (var reference in piece.References)
                 {
                     if (includeReferenceTitles)
                     {
-                        result.AppendLine($"\t{reference.Title}");
+                        result.AppendLine($"\t{reference.Title.ToLeetSpeak()}");
                     }
                     result.AppendLine($"\t{reference.Url}");
                     result.AppendLine();
@@ -54,7 +55,7 @@ namespace FactCheckThisBitch.Models
             }
 
             result.AppendLine($"WHAT DOES IT ALL MEAN???");
-            result.AppendLine($"{puzzle.Conclusion}");
+            result.AppendLine($"{puzzle.Conclusion.ToLeetSpeak()}");
             result.AppendLine();
             result.AppendLine($"#FactCheckThisBitch");
 

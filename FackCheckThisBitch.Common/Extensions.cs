@@ -169,15 +169,65 @@ namespace FackCheckThisBitch.Common
             return list;
         }
 
-        public static string ToTabs(this int howMany)
+        public static string Obfuscate(this string input)
         {
-            var result = new StringBuilder();
-            for (int i = 0; i < howMany; i++)
+            IDictionary<string, string> keywords = new Dictionary<string, string>()
             {
-                result.Append("\t");
-            }
-            return result.ToString();
+                {"covid", "c_v_d"},
+                {"vaccine", "va_c_1n_e"},
+                {"Pfizer", "Faizzer"},
+                 
+            };
 
+            foreach (string key in keywords.Keys)
+            {
+                input = input.Replace(key, keywords[key], StringComparison.InvariantCultureIgnoreCase);
+            }
+
+            return input;
+        }
+
+        public static string ToLeetSpeak(this string input)
+        {
+            char[] array = input.ToCharArray();
+            for (int i = 0; i < array.Length; i++)
+            {
+                if ((array[i] == 's'|| array[i]=='S') && !(i == 0 || array[i-1] == ' ' || array[i-1] == '\"' || array[i-1] == '\''))
+                {
+                    if (array[i] == 's')
+                        array[i] = 'z';
+                    else
+                        array[i] = 'Z';
+                }
+                    
+                switch (array[i])
+                {
+                    case 'e':
+                        array[i] = '3';
+                        break;
+                    case 'E':
+                        array[i] = '3';
+                        break;
+                    case 'o':
+                        array[i] = '0';
+                        break;
+                    case 'O':
+                        array[i] = '0';
+                        break;
+                    case 'I':
+                        array[i] = '1';
+                        break;
+                    case 't':
+                        array[i] = '7';
+                        break;
+                    case 'T':
+                        array[i] = '7';
+                        break;
+                    default:
+                        break;
+                }
+            }
+            return string.Join("", array);;
         }
     }
 }
