@@ -4,6 +4,7 @@ using System.Data.SqlTypes;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace FackCheckThisBitch.Common
@@ -166,6 +167,17 @@ namespace FackCheckThisBitch.Common
         {
             (list[zeroBasedIndexA], list[zeroBasedIndexB]) = (list[zeroBasedIndexB], list[zeroBasedIndexA]);
             return list;
+        }
+
+        public static string ToTabs(this int howMany)
+        {
+            var result = new StringBuilder();
+            for (int i = 0; i < howMany; i++)
+            {
+                result.Append("\t");
+            }
+            return result.ToString();
+
         }
     }
 }

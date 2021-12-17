@@ -1,15 +1,14 @@
-﻿using SixLabors.ImageSharp;
+﻿using FackCheckThisBitch.Common;
+using FactCheckThisBitch.Models;
+using SixLabors.Fonts;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
+using Syncfusion.Presentation;
+using Syncfusion.Presentation.SlideTransition;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using FackCheckThisBitch.Common;
-using SixLabors.Fonts;
-using SixLabors.ImageSharp.Processing;
-using FactCheckThisBitch.Models;
-using SixLabors.ImageSharp.Drawing.Processing;
-using Syncfusion.Presentation;
-using Syncfusion.Presentation.SlideTransition;
 
 namespace FactCheckThisBitch.Render
 {
@@ -35,6 +34,7 @@ namespace FactCheckThisBitch.Render
             RenderPuzzleForEachSlide();
             CreatePresentationFromTemplate();
             FixSlidesDuration();
+            RemoveWatermarks();
             OpenOutputFolder();
         }
 
@@ -94,9 +94,9 @@ namespace FactCheckThisBitch.Render
                     using (var pieceImageWithKeywords = pieceImage.Clone(ctx =>
                     {
                         var keywordsBoxes = pieceCoordinates.KeywordsBoxes as dynamic[];
-                        if (keywordsBoxes.Length > 1 && puzzlePiece.Piece.Keywords.Count>1)
+                        if (keywordsBoxes.Length > 1 && puzzlePiece.Piece.Keywords.Count > 1)
                         {
-                            ImageSharpExtensions.ApplyScalingWaterMark(ctx, font, puzzlePiece.Piece.GetKeywordsText(0,1),
+                            ImageSharpExtensions.ApplyScalingWaterMark(ctx, font, puzzlePiece.Piece.GetKeywordsText(0, 1),
                                 keywordsBoxes[0], Color.White, 5, false);
 
                             ImageSharpExtensions.ApplyScalingWaterMark(ctx, font, puzzlePiece.Piece.GetKeywordsText(1),
@@ -107,7 +107,6 @@ namespace FactCheckThisBitch.Render
                             ImageSharpExtensions.ApplyScalingWaterMark(ctx, font, puzzlePiece.Piece.GetKeywordsText(),
                                 keywordsBoxes[0], Color.White, 5, false);
                         }
-
                     }))
                     {
                         pieceImageWithKeywords.Save(pieceImgeWithKeywordsPath);
@@ -217,8 +216,9 @@ namespace FactCheckThisBitch.Render
                 doc.Slides.Remove(conclusionSlideTemplate);
 
                 #region conclusion slide
-                conclusionSlide.UpdateText("conclusion_text",_puzzle.Conclusion);
-                conclusionSlide.ReplacePicture("conclusion_puzzle",Path.Combine(_outputFolder,"Puzzle9.png"));
+
+                conclusionSlide.UpdateText("conclusion_text", _puzzle.Conclusion);
+                conclusionSlide.ReplacePicture("conclusion_puzzle", Path.Combine(_outputFolder, "Puzzle9.png"));
                 doc.Slides.Add(thinkingSlide);
                 doc.Slides.Add(conclusionSlide);
 
@@ -230,6 +230,7 @@ namespace FactCheckThisBitch.Render
 
         public void FixSlidesDuration()
         {
+
             var puzzlePresentationPath = Path.Combine(_outputFolder, $"{_puzzle.Title.ToSanitizedString()}.pptx");
             using (IPresentation doc = Presentation.Open(puzzlePresentationPath))
             {
@@ -256,6 +257,23 @@ namespace FactCheckThisBitch.Render
 
                             isFirstImageInPiece = false;
                         }
+                    }
+                }
+
+                doc.Save(puzzlePresentationPath);
+            }
+        }
+
+        public void RemoveWatermarks()
+        {
+            var puzzlePresentationPath = Path.Combine(_outputFolder, $"{_puzzle.Title.ToSanitizedString()}.pptx");
+            using (IPresentation doc = Presentation.Open(puzzlePresentationPath))
+            {
+                foreach (var slide in doc.Slides)
+                {
+                    foreach (IShape shape in slide.Shapes.Where(s => s.ShapeName == "SyncfusionLicense"))
+                    {
+                        shape.TextBody.Text = "";
                     }
                 }
 

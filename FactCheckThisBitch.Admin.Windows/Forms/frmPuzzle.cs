@@ -4,6 +4,7 @@ using FactCheckThisBitch.Render;
 using Newtonsoft.Json;
 using System;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -205,6 +206,14 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             }
         }
 
+        private void getDescriptionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var desc = _puzzle.ToDescription();
+
+            Clipboard.SetText(desc);
+            MessageBox.Show("Copied to clipboard");
+        }
+
         private void FrmPuzzle_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F2)
@@ -213,6 +222,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 SaveToFile();
             }
         }
+
 
         #endregion
 

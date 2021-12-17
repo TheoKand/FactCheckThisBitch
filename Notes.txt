@@ -2,7 +2,7 @@
 -Generate description on Render (copy to clipboard)
 
 Later
--add field in piece where thesis is displayed after the references
+-add boolean field in piece to control if thesis is rendered after the references
 -don't allow save data if validation fails
 
 Puzzle checklist
