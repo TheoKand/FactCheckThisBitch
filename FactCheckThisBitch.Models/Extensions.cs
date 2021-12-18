@@ -31,7 +31,7 @@ namespace FactCheckThisBitch.Models
             return neighbours;
         }
 
-        public static string ToDescription(this Puzzle puzzle, bool includeReferenceTitles = false)
+        public static string ToDescription(this Puzzle puzzle, bool includeDescriptions = false,bool includeReferenceTitles = false)
         {
             StringBuilder result = new StringBuilder();
             result.AppendLine($"--- {puzzle.Title.ToLeetSpeak()} ---");
@@ -43,6 +43,11 @@ namespace FactCheckThisBitch.Models
                 var piece = puzzlePiece.Piece;
 
                 result.AppendLine($"{puzzlePiece.Index}. {piece.Title.ToLeetSpeak()}");
+                if (includeDescriptions)
+                {
+                    result.AppendLine($"{piece.Thesis.ToLeetSpeak()}");
+                    result.AppendLine();
+                }
                 foreach (var reference in piece.References)
                 {
                     if (includeReferenceTitles)

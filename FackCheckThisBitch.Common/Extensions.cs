@@ -31,7 +31,7 @@ namespace FackCheckThisBitch.Common
             {
                 return input;
             }
-            
+
         }
 
         public static string TryGet(this IDictionary<string, string> input, string key)
@@ -176,7 +176,7 @@ namespace FackCheckThisBitch.Common
                 {"covid", "c_v_d"},
                 {"vaccine", "va_c_1n_e"},
                 {"Pfizer", "Faizzer"},
-                 
+
             };
 
             foreach (string key in keywords.Keys)
@@ -189,45 +189,68 @@ namespace FackCheckThisBitch.Common
 
         public static string ToLeetSpeak(this string input)
         {
+            
             char[] array = input.ToCharArray();
             for (int i = 0; i < array.Length; i++)
             {
-                if ((array[i] == 's'|| array[i]=='S') && !(i == 0 || array[i-1] == ' ' || array[i-1] == '\"' || array[i-1] == '\''))
-                {
-                    if (array[i] == 's')
-                        array[i] = 'z';
-                    else
-                        array[i] = 'Z';
-                }
-                    
+                //if ((array[i] == 's' || array[i] == 'S') && !(i == 0 || array[i - 1] == ' ' || array[i - 1] == '\"' || array[i - 1] == '\''))
+                //{
+                //    if (array[i] == 's')
+                //        array[i] = 'z';
+                //    else
+                //        array[i] = 'Z';
+                //}
+
                 switch (array[i])
                 {
-                    case 'e':
-                        array[i] = '3';
+                    case 'a':
+                        array[i] = '@';
                         break;
-                    case 'E':
-                        array[i] = '3';
+                    //case 'E':
+                    //    array[i] = '3';
+                    //    break;
+
+                    //case 'e':
+                    //    array[i] = '3';
+                    //    break;
+                    //case 'E':
+                    //    array[i] = '3';
+                    //    break;
+                    case 'C':
+                    case 'c':
+                        array[i] = '(';
                         break;
+
                     case 'o':
-                        array[i] = '0';
-                        break;
                     case 'O':
                         array[i] = '0';
                         break;
+                    case 's':
+                    case 'S':
+                        array[i] = '5';
+                        break;
                     case 'I':
+                    case 'i':
                         array[i] = '1';
                         break;
+                    case 'l':
+                        array[i] = '|';
+                        break;
                     case 't':
-                        array[i] = '7';
+                        array[i] = '+';
                         break;
-                    case 'T':
-                        array[i] = '7';
-                        break;
+                    //case 'T':
+                    //    array[i] = '7';
+                    //    break;
+
                     default:
                         break;
                 }
             }
-            return string.Join("", array);;
+
+            var result = string.Join("", array);
+            result = result.Replace(" ", "  ");
+            return result;
         }
     }
 }

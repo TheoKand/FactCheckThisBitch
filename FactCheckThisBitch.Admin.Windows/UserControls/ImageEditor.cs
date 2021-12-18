@@ -73,6 +73,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 };
                 picture.Click += (sender, args) =>
                 {
+                    Clipboard.SetText(imagePath);
                     new Process
                     {
                         StartInfo = new ProcessStartInfo(imagePath)

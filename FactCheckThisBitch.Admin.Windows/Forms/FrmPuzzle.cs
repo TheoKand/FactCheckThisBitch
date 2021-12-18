@@ -208,7 +208,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void getDescriptionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var desc = _puzzle.ToDescription();
+            var desc = _puzzle.ToDescription(false,false);
 
             Clipboard.SetText(desc);
             MessageBox.Show("Copied to clipboard");
