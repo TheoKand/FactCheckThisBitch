@@ -11,56 +11,70 @@ namespace FactCheckThisBitch.Models
 {
     public static class Extensions
     {
-        public static int PieceIndexFromPosition(this Puzzle puzzle, int x, int y) => puzzle.Width * (y - 1) + x;
+        public static int PieceIndexFromPosition(this Puzzle puzzle,
+            int x,
+            int y) =>
+            puzzle.Width * (y - 1) + x;
 
-        public static List<PuzzlePiece> Neighbours(this Puzzle puzzle, int x, int y)
+        public static List<PuzzlePiece> Neighbours(this Puzzle puzzle,
+            int x,
+            int y)
         {
             var neighbours = new List<PuzzlePiece>();
             if (y > 1)
-                neighbours.Add(puzzle.PuzzlePieces.First(p =>
-                    p.Index == puzzle.PieceIndexFromPosition(x, y - 1)));
+                neighbours.Add(puzzle.PuzzlePieces.First(p => p.Index ==
+                                                              puzzle.PieceIndexFromPosition(x,
+                                                                  y - 1)));
             if (x > 1)
-                neighbours.Add(puzzle.PuzzlePieces.First(p =>
-                    p.Index == puzzle.PieceIndexFromPosition(x - 1, y)));
+                neighbours.Add(puzzle.PuzzlePieces.First(p => p.Index ==
+                                                              puzzle.PieceIndexFromPosition(x - 1,
+                                                                  y)));
             if (x < puzzle.Width)
-                neighbours.Add(puzzle.PuzzlePieces.First(p =>
-                    p.Index == puzzle.PieceIndexFromPosition(x + 1, y)));
+                neighbours.Add(puzzle.PuzzlePieces.First(p => p.Index ==
+                                                              puzzle.PieceIndexFromPosition(x + 1,
+                                                                  y)));
             if (y < puzzle.Height)
-                neighbours.Add(puzzle.PuzzlePieces.First(p =>
-                    p.Index == puzzle.PieceIndexFromPosition(x, y + 1)));
+                neighbours.Add(puzzle.PuzzlePieces.First(p => p.Index ==
+                                                              puzzle.PieceIndexFromPosition(x,
+                                                                  y + 1)));
             return neighbours;
         }
 
-        public static string ToDescription(this Puzzle puzzle, bool includeDescriptions = false,bool includeReferenceTitles = false)
+        public static string ToDescription(this Puzzle puzzle,
+            bool includeDescriptions = false,
+            bool includeReferenceTitles = false,
+            Level level = Level.None)
         {
             StringBuilder result = new StringBuilder();
-            result.AppendLine($"--- {puzzle.Title.ToLeetSpeak()} ---");
-            result.AppendLine($"{puzzle.Thesis.ToLeetSpeak()}");
+            result.AppendLine($"--- {puzzle.Title.ToLeetSpeak(level)} ---");
+            result.AppendLine($"{puzzle.Thesis.ToLeetSpeak(level)}");
             result.AppendLine();
 
             foreach (var puzzlePiece in puzzle.PuzzlePieces)
             {
                 var piece = puzzlePiece.Piece;
 
-                result.AppendLine($"{puzzlePiece.Index}. {piece.Title.ToLeetSpeak()}");
+                result.AppendLine($"{puzzlePiece.Index}. {piece.Title.ToLeetSpeak(level)}");
                 if (includeDescriptions)
                 {
-                    result.AppendLine($"{piece.Thesis.ToLeetSpeak()}");
+                    result.AppendLine($"{piece.Thesis.ToLeetSpeak(level)}");
                     result.AppendLine();
                 }
+
                 foreach (var reference in piece.References)
                 {
                     if (includeReferenceTitles)
                     {
-                        result.AppendLine($"\t{reference.Title.ToLeetSpeak()}");
+                        result.AppendLine($"\t{reference.Title.ToLeetSpeak(level)}");
                     }
+
                     result.AppendLine($"\t{reference.Url}");
                     result.AppendLine();
                 }
             }
 
             result.AppendLine($"WHAT DOES IT ALL MEAN???");
-            result.AppendLine($"{puzzle.Conclusion.ToLeetSpeak()}");
+            result.AppendLine($"{puzzle.Conclusion.ToLeetSpeak(level)}");
             result.AppendLine();
             result.AppendLine($"#FactCheckThisBitch");
 

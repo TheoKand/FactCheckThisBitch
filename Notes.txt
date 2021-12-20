@@ -1,5 +1,8 @@
 ﻿TODO
--Generate description on Render (copy to clipboard)
+-Complete obfuscation: shorten links in description
+-process each image (manual or automatic), select all circle regions and effect > pixelate
+ so it's readable by human but not machine
+- multiple languages. UI shows one lang at a time
 
 Later
 -add boolean field in piece to control if thesis is rendered after the references
