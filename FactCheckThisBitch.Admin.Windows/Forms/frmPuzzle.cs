@@ -21,7 +21,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             set
             {
                 _isDirty = value;
-                this.Text = $"{_puzzle.Title.ToSanitizedString()} {(_isDirty ? " - Modified" : "")}";
+                this.Text = $"{_puzzle.FullTitle} {(_isDirty ? " - Modified" : "")}";
             }
         }
 
@@ -54,6 +54,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             txtSize.TextChanged = x => SizeChanged();
             puzzleUi.SaveToFile = SaveToFile;
             puzzleUi.OnChanged = () => IsDirty = true;
+            cboLanguage.DataSource = Configuration.Instance().Languages;
         }
 
         private new void SizeChanged()
@@ -67,9 +68,10 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void LoadForm()
         {
             UserSettings.Instance().CurrentPuzzle = _puzzle.FileName;
-            this.Text = _puzzle.Title.ToSanitizedString();
+            this.Text = _puzzle.FullTitle;
             txtTitle.Text = _puzzle.Title;
             txtThesis.Text = _puzzle.Thesis;
+            cboLanguage.SelectedItem = _puzzle.Language;
             txtConclusion.Text = _puzzle.Conclusion;
             txtSize.Text = $"{_puzzle.Width}x{_puzzle.Height}";
             txtDuration.Text = _puzzle.Duration.ToString();
@@ -107,6 +109,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void Save()
         {
             _puzzle.Title = txtTitle.Text.ValueOrNull();
+            _puzzle.Language = cboLanguage.SelectedItem.ToString();
             _puzzle.Thesis = txtThesis.Text.ValueOrNull();
             _puzzle.Conclusion = txtConclusion.Text.ValueOrNull();
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
@@ -120,11 +123,15 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             if (_puzzle.FileName != UserSettings.Instance().CurrentPuzzle)
             {
                 UserSettings.Instance().CurrentPuzzle = _puzzle.FileName;
-                this.Text = _puzzle.Title.ToSanitizedString();
+                this.Text = _puzzle.FullTitle;
             }
         }
 
         #region Events
+        private void cboLanguage_MouseClick(object sender, MouseEventArgs e)
+        {
+            IsDirty = true;
+        }
 
         private void FrmPuzzle_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -187,7 +194,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 Cursor.Current = Cursors.WaitCursor;
 
                 string puzzleOutputFolder =
-                    Path.Combine(Configuration.Instance().OutputFolder, _puzzle.Title.ToSanitizedString());
+                    Path.Combine(Configuration.Instance().OutputFolder, _puzzle.FullTitle);
 
                 using (var renderer = new PuzzleRenderer(_puzzle, Configuration.Instance().AssetsFolder, puzzleOutputFolder,Path.Combine(Configuration.Instance().DataFolder, "media")))
                 {
@@ -226,6 +233,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 SaveToFile();
             }
         }
+
+
 
 
         #endregion

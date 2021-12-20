@@ -132,6 +132,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             IsDirty = true;
         }
+
         private void FrmPuzzle_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (IsDirty)

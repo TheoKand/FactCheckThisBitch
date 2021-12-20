@@ -11,6 +11,7 @@ Later
 Puzzle checklist
 	Pre render
 		clean up keywords
+		spell check json file
 	Content
 		- view slides, adjust duration on puzzle, pieces, references
 	Output
