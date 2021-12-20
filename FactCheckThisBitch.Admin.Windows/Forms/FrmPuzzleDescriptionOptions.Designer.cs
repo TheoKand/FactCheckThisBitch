@@ -40,7 +40,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnOK
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOK.Location = new System.Drawing.Point(430, 276);
+            this.btnOK.Location = new System.Drawing.Point(96, 276);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(135, 47);
@@ -52,7 +52,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(571, 276);
+            this.btnCancel.Location = new System.Drawing.Point(237, 276);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(135, 47);
@@ -105,7 +105,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(727, 347);
+            this.ClientSize = new System.Drawing.Size(393, 347);
             this.Controls.Add(this.lstLeet);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chkIncludeReferenceTitles);

@@ -18,6 +18,8 @@ namespace FactCheckThisBitch.Admin.Windows
 
         public string OutputFolder => ConfigurationManager.AppSettings.Get("OutputFolder");
 
+        public string[] Languages => ConfigurationManager.AppSettings.Get("Languages").Split(",");
+
         public static Configuration Instance()
         {
             _instance = _instance ?? new Configuration();

@@ -224,14 +224,14 @@ namespace FactCheckThisBitch.Render
 
                 #endregion
 
-                doc.Save(Path.Combine(_outputFolder, $"{_puzzle.Title.ToSanitizedString()}.pptx"));
+                doc.Save(Path.Combine(_outputFolder, $"{_puzzle.FullTitle}.pptx"));
             }
         }
 
         public void FixSlidesDuration()
         {
 
-            var puzzlePresentationPath = Path.Combine(_outputFolder, $"{_puzzle.Title.ToSanitizedString()}.pptx");
+            var puzzlePresentationPath = Path.Combine(_outputFolder, $"{_puzzle.FullTitle}.pptx");
             using (IPresentation doc = Presentation.Open(puzzlePresentationPath))
             {
                 doc.Slides[0].SlideTransition.TimeDelay = _puzzle.Duration;
@@ -266,7 +266,7 @@ namespace FactCheckThisBitch.Render
 
         public void RemoveWatermarks()
         {
-            var puzzlePresentationPath = Path.Combine(_outputFolder, $"{_puzzle.Title.ToSanitizedString()}.pptx");
+            var puzzlePresentationPath = Path.Combine(_outputFolder, $"{_puzzle.FullTitle}.pptx");
             using (IPresentation doc = Presentation.Open(puzzlePresentationPath))
             {
                 foreach (var slide in doc.Slides)

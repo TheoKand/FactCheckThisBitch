@@ -56,7 +56,7 @@ namespace FackCheckThisBitch.Common
             string result = "";
             if (input != null)
             {
-                result = Regex.Replace(input, @"[^a-zA-Z0-9 -]", " ").Trim();
+                result = Regex.Replace(input, @"[^άέύίόώα-ωΑ-Ωa-zA-Z0-9 -]", " ").Trim();
                 result = result.Replace(" ", "-");
                 result = result.Replace("--", "-");
                 result = result.ToLower();

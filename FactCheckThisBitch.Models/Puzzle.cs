@@ -10,6 +10,7 @@ namespace FactCheckThisBitch.Models
     public class Puzzle
     {
         public string Title;
+        public string Language = "EN";
         public string Thesis;
         public string Conclusion;
         public int Width = 4;
@@ -18,7 +19,10 @@ namespace FactCheckThisBitch.Models
         public List<PuzzlePiece> PuzzlePieces= new List<PuzzlePiece>();
 
         [JsonIgnore]
-        public string FileName => Title != null ? $"{Title?.ToSanitizedString()}.json" : null;
+        public string FullTitle => Title != null ? $"{Title?.ToSanitizedString()}-{Language}" : null;
+
+        [JsonIgnore]
+        public string FileName => Title != null ? $"{FullTitle}.json" : null;
     }
 
     public class PuzzlePiece
