@@ -73,7 +73,7 @@ namespace FactCheckThisBitch.Models
                 }
             }
 
-            result.AppendLine($"WHAT DOES IT ALL MEAN???");
+            result.AppendLine($"{(puzzle.Language=="EN"?"WHAT DOES IT ALL MEAN???":"ΤΙ ΣΗΜΑΙΝΟΥΝ ΟΛΑ ΑΥΤΑ;;;")}");
             result.AppendLine($"{puzzle.Conclusion.ToLeetSpeak(level)}");
             result.AppendLine();
             result.AppendLine($"#FactCheckThisBitch");

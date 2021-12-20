@@ -90,7 +90,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 }
             }
 
-            _puzzle = new Puzzle() {Title = $"New created at {DateTime.UtcNow}"};
+            _puzzle = new Puzzle() { Title = $"New created at {DateTime.UtcNow}" };
         }
 
         private void LoadFromFile()
@@ -114,7 +114,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             _puzzle.Conclusion = txtConclusion.Text.ValueOrNull();
             _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
             _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
-            _puzzle.Duration = int.Parse( txtDuration.Text);
+            _puzzle.Duration = int.Parse(txtDuration.Text);
             CheckRenameFile();
         }
 
@@ -188,6 +188,11 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void renderToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+            FrmRenderOptions optionsForm = new FrmRenderOptions();
+            var result = optionsForm.ShowDialog();
+            if (result != DialogResult.OK) return;
+
             try
             {
                 this.Cursor = Cursors.WaitCursor;
@@ -196,7 +201,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 string puzzleOutputFolder =
                     Path.Combine(Configuration.Instance().OutputFolder, _puzzle.FullTitle);
 
-                using (var renderer = new PuzzleRenderer(_puzzle, Configuration.Instance().AssetsFolder, puzzleOutputFolder,Path.Combine(Configuration.Instance().DataFolder, "media")))
+                using (var renderer = new PuzzleRenderer(_puzzle, optionsForm.Options.Template, Configuration.Instance().AssetsFolder, puzzleOutputFolder, Path.Combine(Configuration.Instance().DataFolder, "media")))
                 {
                     renderer.Render();
                 }
@@ -219,7 +224,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             var result = optionsForm.ShowDialog();
             if (result != DialogResult.OK) return;
 
-            var desc = _puzzle.ToDescription(optionsForm.Options.IncludeDescriptions,optionsForm.Options.IncludeReferenceTitles, optionsForm.Options.LeetLevel);
+            var desc = _puzzle.ToDescription(optionsForm.Options.IncludeDescriptions, optionsForm.Options.IncludeReferenceTitles, optionsForm.Options.LeetLevel);
 
             Clipboard.SetText(desc);
             MessageBox.Show("Copied to clipboard");

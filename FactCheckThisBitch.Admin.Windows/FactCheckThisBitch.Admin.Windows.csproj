@@ -18,6 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Forms\FrmRenderOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\FrmPuzzleDescriptionOptions.cs">
       <SubType>Form</SubType>
     </Compile>

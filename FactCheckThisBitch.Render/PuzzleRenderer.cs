@@ -15,13 +15,15 @@ namespace FactCheckThisBitch.Render
     public class PuzzleRenderer : IDisposable
     {
         private readonly Puzzle _puzzle;
+        private readonly string _template;
         private readonly string _assetsFolder;
         private readonly string _outputFolder;
         private readonly string _mediaFolder;
 
-        public PuzzleRenderer(Puzzle puzzle, string assetsFolder, string outputFolder, string mediaFolder)
+        public PuzzleRenderer(Puzzle puzzle, string template,string assetsFolder, string outputFolder, string mediaFolder)
         {
             _puzzle = puzzle;
+            _template = template;
             _assetsFolder = assetsFolder;
             _outputFolder = outputFolder;
             _mediaFolder = mediaFolder;
@@ -117,7 +119,7 @@ namespace FactCheckThisBitch.Render
 
         private void CreatePresentationFromTemplate()
         {
-            var templatePath = Path.Combine(_assetsFolder, "Template.pptx");
+            var templatePath = Path.Combine(_assetsFolder, _template);
             using (IPresentation doc = Presentation.Open(templatePath))
             {
                 #region introduction slide
