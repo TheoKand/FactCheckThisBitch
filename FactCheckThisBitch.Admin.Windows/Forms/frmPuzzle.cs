@@ -4,7 +4,6 @@ using FactCheckThisBitch.Render;
 using Newtonsoft.Json;
 using System;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -17,7 +16,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         public bool IsDirty
         {
-            get => _isDirty;
+            get =>
+                _isDirty;
             set
             {
                 _isDirty = value;
@@ -30,11 +30,14 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             InitializeComponent();
         }
 
-        private void frmPuzzleMetadata_Load(object sender, EventArgs e)
+        private void frmPuzzleMetadata_Load(object sender,
+            EventArgs e)
         {
             InitForm();
-            if (!string.IsNullOrEmpty(UserSettings.Instance().CurrentPuzzle) &&
-                File.Exists(UserSettings.Instance().CurrentPuzzlePath))
+            if (!string.IsNullOrEmpty(UserSettings.Instance()
+                    .CurrentPuzzle) &&
+                File.Exists(UserSettings.Instance()
+                    .CurrentPuzzlePath))
             {
                 LoadFromFile();
                 LoadForm();
@@ -54,7 +57,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             txtSize.TextChanged = x => SizeChanged();
             puzzleUi.SaveToFile = SaveToFile;
             puzzleUi.OnChanged = () => IsDirty = true;
-            cboLanguage.DataSource = Configuration.Instance().Languages;
+            cboLanguage.DataSource = Configuration.Instance()
+                .Languages;
         }
 
         private new void SizeChanged()
@@ -67,7 +71,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void LoadForm()
         {
-            UserSettings.Instance().CurrentPuzzle = _puzzle.FileName;
+            UserSettings.Instance()
+                .CurrentPuzzle = _puzzle.FileName;
             this.Text = _puzzle.FullTitle;
             txtTitle.Text = _puzzle.Title;
             txtThesis.Text = _puzzle.Thesis;
@@ -83,26 +88,38 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             if (IsDirty)
             {
-                var result = MessageBox.Show("Do you want to save your changes?", "Save Changes", MessageBoxButtons.YesNo);
+                var result = MessageBox.Show("Do you want to save your changes?",
+                    "Save Changes",
+                    MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
                     SaveToFile();
                 }
             }
 
-            _puzzle = new Puzzle() { Title = $"New created at {DateTime.UtcNow}" };
+            _puzzle = new Puzzle()
+            {
+                Title = $"New created at {DateTime.UtcNow}"
+            };
         }
 
         private void LoadFromFile()
         {
-            var json = File.ReadAllText(UserSettings.Instance().CurrentPuzzlePath, Encoding.UTF8);
-            _puzzle = JsonConvert.DeserializeObject<Puzzle>(json, StaticSettings.JsonSerializerSettings);
+            var json = File.ReadAllText(UserSettings.Instance()
+                    .CurrentPuzzlePath,
+                Encoding.UTF8);
+            _puzzle = JsonConvert.DeserializeObject<Puzzle>(json,
+                StaticSettings.JsonSerializerSettings);
         }
 
         private void SaveToFile()
         {
-            var json = JsonConvert.SerializeObject(_puzzle, Formatting.Indented, StaticSettings.JsonSerializerSettings);
-            File.WriteAllTextAsync(UserSettings.Instance().CurrentPuzzlePath, json);
+            var json = JsonConvert.SerializeObject(_puzzle,
+                Formatting.Indented,
+                StaticSettings.JsonSerializerSettings);
+            File.WriteAllTextAsync(UserSettings.Instance()
+                    .CurrentPuzzlePath,
+                json);
             IsDirty = false;
         }
 
@@ -120,24 +137,32 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void CheckRenameFile()
         {
-            if (_puzzle.FileName != UserSettings.Instance().CurrentPuzzle)
+            if (_puzzle.FileName !=
+                UserSettings.Instance()
+                    .CurrentPuzzle)
             {
-                UserSettings.Instance().CurrentPuzzle = _puzzle.FileName;
+                UserSettings.Instance()
+                    .CurrentPuzzle = _puzzle.FileName;
                 this.Text = _puzzle.FullTitle;
             }
         }
 
         #region Events
-        private void cboLanguage_MouseClick(object sender, MouseEventArgs e)
+
+        private void cboLanguage_MouseClick(object sender,
+            MouseEventArgs e)
         {
             IsDirty = true;
         }
 
-        private void FrmPuzzle_FormClosing(object sender, FormClosingEventArgs e)
+        private void FrmPuzzle_FormClosing(object sender,
+            FormClosingEventArgs e)
         {
             if (IsDirty)
             {
-                var result = MessageBox.Show("Do you want to save your changes?", "Save Changes", MessageBoxButtons.YesNo);
+                var result = MessageBox.Show("Do you want to save your changes?",
+                    "Save Changes",
+                    MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
                     SaveToFile();
@@ -145,53 +170,64 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             }
         }
 
-        private void txtTitle_TextChanged(object sender, EventArgs e)
+        private void txtTitle_TextChanged(object sender,
+            EventArgs e)
         {
             IsDirty = true;
         }
 
-        private void txtThesis_TextChanged(object sender, EventArgs e)
+        private void txtThesis_TextChanged(object sender,
+            EventArgs e)
         {
             IsDirty = true;
         }
 
-        private void txtConclusion_TextChanged(object sender, EventArgs e)
+        private void txtConclusion_TextChanged(object sender,
+            EventArgs e)
         {
             IsDirty = true;
         }
 
-        private void newToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void newToolStripMenuItem1_Click(object sender,
+            EventArgs e)
         {
             CreateNew();
             LoadForm();
         }
 
-        private void openToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void openToolStripMenuItem1_Click(object sender,
+            EventArgs e)
         {
-            openFileDialog1.InitialDirectory = Configuration.Instance().DataFolder;
+            openFileDialog1.InitialDirectory = Configuration.Instance()
+                .DataFolder;
             openFileDialog1.Title = "Open puzzle data file";
             openFileDialog1.DefaultExt = "json";
             openFileDialog1.CheckFileExists = true;
             openFileDialog1.CheckPathExists = true;
             openFileDialog1.ShowReadOnly = false;
-            if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
-            UserSettings.Instance().CurrentPuzzle = openFileDialog1.FileName;
+            if (openFileDialog1.ShowDialog() != DialogResult.OK)
+                return;
+            UserSettings.Instance()
+                .CurrentPuzzle = openFileDialog1.FileName;
             LoadFromFile();
             LoadForm();
         }
 
-        private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void saveToolStripMenuItem1_Click(object sender,
+            EventArgs e)
         {
             Save();
             SaveToFile();
         }
 
-        private void renderToolStripMenuItem_Click(object sender, EventArgs e)
+        private void renderToolStripMenuItem_Click(object sender,
+            EventArgs e)
         {
 
             FrmRenderOptions optionsForm = new FrmRenderOptions();
             var result = optionsForm.ShowDialog();
-            if (result != DialogResult.OK) return;
+            if (result != DialogResult.OK)
+                return;
 
             try
             {
@@ -199,9 +235,19 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 Cursor.Current = Cursors.WaitCursor;
 
                 string puzzleOutputFolder =
-                    Path.Combine(Configuration.Instance().OutputFolder, _puzzle.FullTitle);
+                    Path.Combine(Configuration.Instance()
+                            .OutputFolder,
+                        _puzzle.FullTitle);
 
-                using (var renderer = new PuzzleRenderer(_puzzle, optionsForm.Options.Template, Configuration.Instance().AssetsFolder, puzzleOutputFolder, Path.Combine(Configuration.Instance().DataFolder, "media")))
+                using (var renderer = new PuzzleRenderer(_puzzle,
+                    optionsForm.Options.Template,
+                    Configuration.Instance()
+                        .AssetsFolder,
+                    puzzleOutputFolder,
+                    Path.Combine(Configuration.Instance()
+                            .DataFolder,
+                        "media"),
+                    optionsForm.Options.HandleWrongSpeak))
                 {
                     renderer.Render();
                 }
@@ -218,19 +264,24 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             }
         }
 
-        private void getDescriptionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void getDescriptionToolStripMenuItem_Click(object sender,
+            EventArgs e)
         {
             FrmPuzzleDescriptionOptions optionsForm = new FrmPuzzleDescriptionOptions();
             var result = optionsForm.ShowDialog();
-            if (result != DialogResult.OK) return;
+            if (result != DialogResult.OK)
+                return;
 
-            var desc = _puzzle.ToDescription(optionsForm.Options.IncludeDescriptions, optionsForm.Options.IncludeReferenceTitles, optionsForm.Options.LeetLevel);
+            var desc = _puzzle.ToDescription(optionsForm.Options.IncludeDescriptions,
+                optionsForm.Options.IncludeReferenceTitles,
+                optionsForm.Options.LeetLevel);
 
             Clipboard.SetText(desc);
             MessageBox.Show("Copied to clipboard");
         }
 
-        private void FrmPuzzle_KeyDown(object sender, KeyEventArgs e)
+        private void FrmPuzzle_KeyDown(object sender,
+            KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F2)
             {

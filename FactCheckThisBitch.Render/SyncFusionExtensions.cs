@@ -25,7 +25,7 @@ namespace FactCheckThisBitch.Render
             shape.TextBody.Text = text;
         }
 
-        public static void ReplacePicture(this IGroupShape groupShape,string pictureName, string pictureFileName)
+        public static void ReplacePicture(this IGroupShape groupShape, string pictureName, string pictureFileName)
         {
             var picture = groupShape.Shapes.First(s => s.ShapeName == pictureName) as IPicture;
             using (Stream pictureStream = File.Open(pictureFileName, FileMode.Open))

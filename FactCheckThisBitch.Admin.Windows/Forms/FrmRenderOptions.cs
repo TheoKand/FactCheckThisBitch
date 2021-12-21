@@ -8,7 +8,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 {
     public partial class FrmRenderOptions : Form
     {
-
         public RenderOptions Options = new RenderOptions();
 
         public FrmRenderOptions()
@@ -17,10 +16,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             InitForm();
         }
 
-
         private void InitForm()
         {
-
             var assetsDirectory = new DirectoryInfo(Configuration.Instance().AssetsFolder);
             var templates = assetsDirectory.GetFiles("template*pptx").Select(f => f.Name).ToList();
             lstTemplate.DataSource = templates;
@@ -34,6 +31,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void btnOK_Click(object sender, EventArgs e)
         {
             Options.Template = lstTemplate.SelectedValue.ToString();
+            Options.HandleWrongSpeak = chkWrongSpeak.Checked;
+
             DialogResult = DialogResult.OK;
             Close();
         }
@@ -42,5 +41,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
     public class RenderOptions
     {
         public string Template;
+        public bool HandleWrongSpeak;
     }
 }

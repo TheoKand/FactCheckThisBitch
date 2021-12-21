@@ -9,16 +9,30 @@ namespace FackCheckThisBitch.Common
 {
     public static class LeetSpeak
     {
-        public static string ToLeetSpeak(this string input,
-            Level level = Level.Minimum)
+        public static readonly string[] WrongSpeak = new []
         {
-            if (level == Level.None)
-                return input;
+            "world health organization",
+            "WHO",
+            "W.H.O.",
+            "covid",
+            "vaccine",
+            "vaccinate",
+            "vaccinated",
+            "pfizer",
+            "Bill Gates",
+            "Bill & Melida Gates Foundation",
+            "Moderna",
+            "pandemic",
+            "pandemics",
+            "big pharma",
+        };
+
+        public static string ToLeetSpeak(this string input, Level level = Level.Minimum)
+        {
+            if (level == Level.None) return input;
 
             char[] array = input.ToCharArray();
-            for (int i = 0;
-                i < array.Length;
-                i++)
+            for (int i = 0; i < array.Length; i++)
             {
                 if (level >= Level.Maximum)
                 {
@@ -83,11 +97,23 @@ namespace FackCheckThisBitch.Common
                 }
             }
 
-            var result = string.Join("",
-                array);
-            result = result.Replace(" ",
-                "  ");
+            var result = string.Join("", array);
+            result = result.Replace(" ", "  ");
             return result;
+        }
+
+        public static string WrongSpeakToLeetSpeak(this string input, Level level = Level.Minimum)
+        {
+            if (level == Level.None) return input;
+
+            foreach (var wrongWord in WrongSpeak)
+            {
+                var leetWrongWord = wrongWord.ToLeetSpeak(level);
+
+                input = input.Replace(wrongWord, leetWrongWord, StringComparison.InvariantCultureIgnoreCase);
+            }
+
+            return input;
         }
     }
 

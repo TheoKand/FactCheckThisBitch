@@ -10,4 +10,8 @@
     <PackageReference Include="Syncfusion.Presentation.WinForms" Version="19.3.0.57" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FactCheckThisBitch.Render\FactCheckThisBitch.Render.csproj" />
+  </ItemGroup>
+
 </Project>

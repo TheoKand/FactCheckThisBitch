@@ -19,14 +19,16 @@ namespace FactCheckThisBitch.Render
         private readonly string _assetsFolder;
         private readonly string _outputFolder;
         private readonly string _mediaFolder;
+        private readonly bool _handleWrongSpeak;
 
-        public PuzzleRenderer(Puzzle puzzle, string template,string assetsFolder, string outputFolder, string mediaFolder)
+        public PuzzleRenderer(Puzzle puzzle, string template,string assetsFolder, string outputFolder, string mediaFolder,bool handleWrongSpeak=false)
         {
             _puzzle = puzzle;
             _template = template;
             _assetsFolder = assetsFolder;
             _outputFolder = outputFolder;
             _mediaFolder = mediaFolder;
+            _handleWrongSpeak = handleWrongSpeak;
         }
 
         public void Render()
@@ -85,6 +87,8 @@ namespace FactCheckThisBitch.Render
 
         private void RenderPiecesWithKeywords()
         {
+            var leetLevel = _handleWrongSpeak ? Level.Minimum : Level.None;
+
             foreach (var puzzlePiece in _puzzle.PuzzlePieces)
             {
                 var pieceImagePath = Path.Combine(_assetsFolder, $"Piece{puzzlePiece.Index}.png");
@@ -98,15 +102,18 @@ namespace FactCheckThisBitch.Render
                         var keywordsBoxes = pieceCoordinates.KeywordsBoxes as dynamic[];
                         if (keywordsBoxes.Length > 1 && puzzlePiece.Piece.Keywords.Count > 1)
                         {
-                            ImageSharpExtensions.ApplyScalingWaterMark(ctx, font, puzzlePiece.Piece.GetKeywordsText(0, 1),
+                            ImageSharpExtensions.ApplyScalingWaterMark(ctx, font,
+                                puzzlePiece.Piece.GetKeywordsText(0, 1).WrongSpeakToLeetSpeak(leetLevel),
                                 keywordsBoxes[0], Color.White, 5, false);
 
-                            ImageSharpExtensions.ApplyScalingWaterMark(ctx, font, puzzlePiece.Piece.GetKeywordsText(1),
+                            ImageSharpExtensions.ApplyScalingWaterMark(ctx, font,
+                                puzzlePiece.Piece.GetKeywordsText(1).WrongSpeakToLeetSpeak(leetLevel),
                                 keywordsBoxes[1], Color.White, 5, false);
                         }
                         else
                         {
-                            ImageSharpExtensions.ApplyScalingWaterMark(ctx, font, puzzlePiece.Piece.GetKeywordsText(),
+                            ImageSharpExtensions.ApplyScalingWaterMark(ctx, font,
+                                puzzlePiece.Piece.GetKeywordsText().WrongSpeakToLeetSpeak(leetLevel),
                                 keywordsBoxes[0], Color.White, 5, false);
                         }
                     }))
@@ -119,14 +126,17 @@ namespace FactCheckThisBitch.Render
 
         private void CreatePresentationFromTemplate()
         {
+
+            var leetLevel = _handleWrongSpeak ? Level.Minimum : Level.None;
+
             var templatePath = Path.Combine(_assetsFolder, _template);
             using (IPresentation doc = Presentation.Open(templatePath))
             {
                 #region introduction slide
 
                 var puzzleSlide = doc.Slides[0];
-                puzzleSlide.GroupShape("puzzle_metadata").UpdateText("puzzle_title", _puzzle.Title);
-                puzzleSlide.GroupShape("puzzle_metadata").UpdateText("puzzle_thesis", _puzzle.Thesis);
+                puzzleSlide.GroupShape("puzzle_metadata").UpdateText("puzzle_title", _puzzle.Title.WrongSpeakToLeetSpeak(leetLevel));
+                puzzleSlide.GroupShape("puzzle_metadata").UpdateText("puzzle_thesis", _puzzle.Thesis.WrongSpeakToLeetSpeak(leetLevel));
 
                 #endregion
 
@@ -144,8 +154,8 @@ namespace FactCheckThisBitch.Render
                     var newPieceSlide = pieceSlideTemplate.Clone();
                     newPieceSlide.Name = puzzlePiece.Piece.Id;
                     newPieceSlide.SlideTransition.TransitionEffect = TransitionEffect.None;
-                    newPieceSlide.GroupShape("piece_metadata").UpdateText("piece_title", puzzlePiece.Piece.Title);
-                    newPieceSlide.GroupShape("piece_metadata").UpdateText("piece_thesis", puzzlePiece.Piece.Thesis);
+                    newPieceSlide.GroupShape("piece_metadata").UpdateText("piece_title", puzzlePiece.Piece.Title.WrongSpeakToLeetSpeak(leetLevel));
+                    newPieceSlide.GroupShape("piece_metadata").UpdateText("piece_thesis", puzzlePiece.Piece.Thesis.WrongSpeakToLeetSpeak(leetLevel));
 
                     //replace puzzle picture
                     newPieceSlide.ReplacePicture("empty_puzzle",
@@ -190,7 +200,7 @@ namespace FactCheckThisBitch.Render
                             var referenceGroupShape = referenceSlide.GroupShape("group_article");
                             referenceGroupShape.UpdateText("textbox_url", reference.Url.Limit(100));
                             referenceGroupShape.UpdateText("textbox_source",
-                                reference.Source.IsEmpty() ? "" : $"Source: {reference.Source}");
+                                reference.Source.IsEmpty() ? "" : $"Source: {reference.Source.WrongSpeakToLeetSpeak(leetLevel)}");
                             referenceGroupShape.UpdateText("textbox_date",
                                 (!reference.DatePublished.HasValue)
                                     ? ""
@@ -219,7 +229,7 @@ namespace FactCheckThisBitch.Render
 
                 #region conclusion slide
 
-                conclusionSlide.UpdateText("conclusion_text", _puzzle.Conclusion);
+                conclusionSlide.UpdateText("conclusion_text", _puzzle.Conclusion.WrongSpeakToLeetSpeak(leetLevel));
                 conclusionSlide.ReplacePicture("conclusion_puzzle", Path.Combine(_outputFolder, "Puzzle9.png"));
                 doc.Slides.Add(thinkingSlide);
                 doc.Slides.Add(conclusionSlide);
