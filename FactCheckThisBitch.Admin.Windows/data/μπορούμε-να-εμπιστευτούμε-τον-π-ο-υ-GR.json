@@ -42,6 +42,20 @@
               "ee48cdd7-cebc-4c12-b3c6-b19d0fdb2ce0.png",
               "2a870470-1a41-46be-bdc7-6de3dda648d3.png"
             ],
+            "ImageEdits": [
+              {
+                "Image": "ee48cdd7-cebc-4c12-b3c6-b19d0fdb2ce0.png",
+                "BlurryAreas": [
+                  "189, 40, 189, 76",
+                  "576, 516, 136, 56",
+                  "202, 177, 51, 23"
+                ]
+              },
+              {
+                "Image": "2a870470-1a41-46be-bdc7-6de3dda648d3.png",
+                "BlurryAreas": []
+              }
+            ],
             "Author": ""
           }
         ]
@@ -86,6 +100,33 @@
               "a2d06f7c-51ae-4486-9d88-89bea1dcb20a.png",
               "bacc0c10-e854-40b4-9324-ddb116485631.png"
             ],
+            "ImageEdits": [
+              {
+                "Image": "0e0f7743-f5e4-4415-9977-f6702f72a932.png",
+                "BlurryAreas": [
+                  "396, 42, 209, 65",
+                  "703, 215, 227, 28",
+                  "506, 244, 398, 23",
+                  "426, 268, 53, 23"
+                ]
+              },
+              {
+                "Image": "76940ecc-5ebc-47e6-9ceb-22598705aa49.png",
+                "BlurryAreas": [
+                  "443, 91, 170, 374"
+                ]
+              },
+              {
+                "Image": "a2d06f7c-51ae-4486-9d88-89bea1dcb20a.png",
+                "BlurryAreas": [
+                  "283, 151, 331, 324"
+                ]
+              },
+              {
+                "Image": "bacc0c10-e854-40b4-9324-ddb116485631.png",
+                "BlurryAreas": []
+              }
+            ],
             "Author": ""
           }
         ]
@@ -129,6 +170,38 @@
               "ad4c14d8-b421-4306-82ca-750d0b461dfe.png",
               "2d8e7ad3-a2c3-405e-bb0e-3a5e634984dd.png"
             ],
+            "ImageEdits": [
+              {
+                "Image": "1f36362a-3797-4362-98fa-c4f1db4b8d80.png",
+                "BlurryAreas": [
+                  "150, 60, 321, 78",
+                  "151, 489, 221, 36"
+                ]
+              },
+              {
+                "Image": "ad4c14d8-b421-4306-82ca-750d0b461dfe.png",
+                "BlurryAreas": [
+                  "351, 38, 245, 56",
+                  "432, 120, 143, 15",
+                  "818, 120, 53, 25",
+                  "189, 173, 413, 42",
+                  "695, 214, 169, 52",
+                  "201, 262, 583, 40",
+                  "199, 315, 269, 31",
+                  "375, 481, 182, 30",
+                  "367, 548, 65, 25"
+                ]
+              },
+              {
+                "Image": "2d8e7ad3-a2c3-405e-bb0e-3a5e634984dd.png",
+                "BlurryAreas": [
+                  "313, 50, 72, 24",
+                  "438, 43, 93, 31",
+                  "539, 45, 73, 33",
+                  "22, 162, 191, 23"
+                ]
+              }
+            ],
             "DatePublished": "2010-01-29T00:00:00",
             "Author": ""
           }
@@ -170,6 +243,15 @@
             "Images": [
               "756f65a8-751f-4e9e-b566-213bc7e8a1af.png"
             ],
+            "ImageEdits": [
+              {
+                "Image": "756f65a8-751f-4e9e-b566-213bc7e8a1af.png",
+                "BlurryAreas": [
+                  "29, 165, 189, 46",
+                  "51, 312, 148, 34"
+                ]
+              }
+            ],
             "DatePublished": "2019-01-17T00:00:00",
             "Author": "Bill Gates"
           },
@@ -184,6 +266,16 @@
             "Images": [
               "8894bc15-ebdc-401a-97f5-9a947c6cc57b.png"
             ],
+            "ImageEdits": [
+              {
+                "Image": "8894bc15-ebdc-401a-97f5-9a947c6cc57b.png",
+                "BlurryAreas": [
+                  "23, 168, 126, 41",
+                  "143, 383, 174, 19",
+                  "234, 508, 73, 20"
+                ]
+              }
+            ],
             "DatePublished": "2002-05-17T00:00:00",
             "Author": "David Bank and\n Rebecca Buckman"
           },
@@ -197,6 +289,27 @@
             "Images": [
               "ecb55988-309a-4bae-a4e2-77f8d0a369f9.png",
               "9e436b90-cbac-4850-bbe5-e0a5488860d4.png"
+            ],
+            "ImageEdits": [
+              {
+                "Image": "ecb55988-309a-4bae-a4e2-77f8d0a369f9.png",
+                "BlurryAreas": [
+                  "532, 284, 116, 16",
+                  "378, 348, 146, 40",
+                  "837, 347, 72, 41",
+                  "58, 402, 268, 31"
+                ]
+              },
+              {
+                "Image": "9e436b90-cbac-4850-bbe5-e0a5488860d4.png",
+                "BlurryAreas": [
+                  "734, 271, 58, 18",
+                  "548, 189, 61, 17",
+                  "299, 331, 59, 16",
+                  "195, 524, 81, 14",
+                  "497, 523, 54, 13"
+                ]
+              }
             ],
             "DatePublished": "2014-08-31T00:00:00",
             "Author": "Narayana Kumar"
@@ -238,6 +351,24 @@
               "f7ff41b0-af8d-44c3-be31-f5b91692b6be.png",
               "918456c2-deaa-4869-8d09-e4be39864dc9.png"
             ],
+            "ImageEdits": [
+              {
+                "Image": "f7ff41b0-af8d-44c3-be31-f5b91692b6be.png",
+                "BlurryAreas": [
+                  "197, 261, 112, 20",
+                  "197, 296, 75, 22",
+                  "657, 427, 29, 14",
+                  "200, 453, 146, 9"
+                ]
+              },
+              {
+                "Image": "918456c2-deaa-4869-8d09-e4be39864dc9.png",
+                "BlurryAreas": [
+                  "372, 171, 88, 18",
+                  "378, 45, 98, 23"
+                ]
+              }
+            ],
             "DatePublished": "2016-01-12T00:00:00",
             "Author": ""
           },
@@ -251,6 +382,15 @@
             "Duration": 8,
             "Images": [
               "9b8ddbad-aea4-4954-9551-73a2eecfd1ab.png"
+            ],
+            "ImageEdits": [
+              {
+                "Image": "9b8ddbad-aea4-4954-9551-73a2eecfd1ab.png",
+                "BlurryAreas": [
+                  "12, 209, 112, 43",
+                  "151, 467, 325, 17"
+                ]
+              }
             ],
             "DatePublished": "2002-05-17T00:00:00",
             "Author": "David Bank and\n Rebecca Buckman"
@@ -291,6 +431,14 @@
             "Duration": 12,
             "Images": [
               "7955f3c8-69c9-4024-a3ca-77414be0044e.png"
+            ],
+            "ImageEdits": [
+              {
+                "Image": "7955f3c8-69c9-4024-a3ca-77414be0044e.png",
+                "BlurryAreas": [
+                  "155, 529, 105, 18"
+                ]
+              }
             ],
             "Author": ""
           }
@@ -336,6 +484,24 @@
             "Images": [
               "1e01f782-7b18-4976-9988-242a23fa2322.png"
             ],
+            "ImageEdits": [
+              {
+                "Image": "1e01f782-7b18-4976-9988-242a23fa2322.png",
+                "BlurryAreas": [
+                  "246, 228, 130, 25",
+                  "626, 264, 93, 21",
+                  "354, 265, 192, 19",
+                  "247, 297, 103, 17",
+                  "259, 404, 63, 12",
+                  "643, 424, 96, 11",
+                  "261, 448, 44, 10",
+                  "675, 446, 42, 11",
+                  "607, 486, 51, 13",
+                  "260, 528, 38, 12",
+                  "259, 566, 54, 17"
+                ]
+              }
+            ],
             "DatePublished": "2019-08-20T00:00:00",
             "Author": "Chris Spargo",
             "OriginalSource": "https://www.dailymail.co.uk/news/article-7377133/Bill-Gates-REFUSES-reveal-flew-Lolita-Express-Jeffrey-Epstein-prison-release.html"
@@ -351,6 +517,17 @@
             "Images": [
               "5f093951-03b0-4433-8816-dd967c51a714.png",
               "6d638f92-e1bf-4c44-b8b6-37e88fc09bc3.png"
+            ],
+            "ImageEdits": [
+              {
+                "Image": "5f093951-03b0-4433-8816-dd967c51a714.png",
+                "BlurryAreas": [
+                  "244, 48, 150, 22",
+                  "565, 52, 219, 22",
+                  "257, 521, 112, 11",
+                  "297, 562, 73, 13"
+                ]
+              }
             ],
             "DatePublished": "2019-10-12T00:00:00",
             "Author": ""
@@ -396,6 +573,16 @@
             "Images": [
               "c55101ca-1947-4450-aade-2f5a804c44ef.png"
             ],
+            "ImageEdits": [
+              {
+                "Image": "c55101ca-1947-4450-aade-2f5a804c44ef.png",
+                "BlurryAreas": [
+                  "246, 167, 276, 28",
+                  "173, 351, 184, 26",
+                  "344, 495, 333, 26"
+                ]
+              }
+            ],
             "DatePublished": "2010-03-11T00:00:00",
             "Author": "Henry Miller"
           },
@@ -408,6 +595,20 @@
             "Duration": 8,
             "Images": [
               "b17d368f-897e-4478-81e4-82ac6a9c4e77.png"
+            ],
+            "ImageEdits": [
+              {
+                "Image": "b17d368f-897e-4478-81e4-82ac6a9c4e77.png",
+                "BlurryAreas": [
+                  "569, 150, 191, 31",
+                  "374, 150, 178, 30",
+                  "353, 270, 206, 23",
+                  "604, 305, 128, 27",
+                  "255, 339, 129, 29",
+                  "446, 377, 97, 23",
+                  "670, 408, 99, 26"
+                ]
+              }
             ],
             "DatePublished": "2009-04-25T00:00:00",
             "Author": ""
@@ -423,6 +624,21 @@
             "Images": [
               "957367a2-56b8-431b-97bf-34b5f3c6da00.png"
             ],
+            "ImageEdits": [
+              {
+                "Image": "957367a2-56b8-431b-97bf-34b5f3c6da00.png",
+                "BlurryAreas": [
+                  "402, 124, 225, 34",
+                  "676, 111, 119, 42",
+                  "449, 57, 149, 19",
+                  "88, 250, 304, 29",
+                  "246, 295, 109, 27",
+                  "133, 418, 347, 39",
+                  "500, 464, 117, 32",
+                  "671, 467, 198, 28"
+                ]
+              }
+            ],
             "DatePublished": "2010-01-25T00:00:00",
             "Author": "Frank Jordans"
           },
@@ -436,6 +652,18 @@
             "Duration": 8,
             "Images": [
               "9eb9da51-38bb-4a61-93f7-1b9ddddbba8e.png"
+            ],
+            "ImageEdits": [
+              {
+                "Image": "9eb9da51-38bb-4a61-93f7-1b9ddddbba8e.png",
+                "BlurryAreas": [
+                  "188, 55, 245, 42",
+                  "194, 299, 170, 27",
+                  "196, 359, 215, 30",
+                  "609, 459, 87, 17",
+                  "358, 483, 230, 19"
+                ]
+              }
             ],
             "DatePublished": "2010-06-07T00:00:00",
             "Author": "Lynne Taylor"
@@ -482,6 +710,16 @@
             "Images": [
               "97410142-17df-49dd-9b81-912100a90cb2.png"
             ],
+            "ImageEdits": [
+              {
+                "Image": "97410142-17df-49dd-9b81-912100a90cb2.png",
+                "BlurryAreas": [
+                  "273, 185, 77, 24",
+                  "430, 406, 37, 17",
+                  "357, 493, 65, 15"
+                ]
+              }
+            ],
             "DatePublished": "2010-04-06T00:00:00",
             "Author": "Jenny Hope",
             "OriginalSource": "https://www.dailymail.co.uk/news/article-1263975/Swine-flu--300m-squandered-jabs-didnt-need.html"
@@ -498,6 +736,25 @@
               "a0032fac-b07b-4d82-9dff-ea26f8dbb1bc.png",
               "159c0d2d-d966-4b20-9ef2-e4364a609c4f.png"
             ],
+            "ImageEdits": [
+              {
+                "Image": "a0032fac-b07b-4d82-9dff-ea26f8dbb1bc.png",
+                "BlurryAreas": [
+                  "627, 299, 112, 34",
+                  "370, 505, 256, 19"
+                ]
+              },
+              {
+                "Image": "159c0d2d-d966-4b20-9ef2-e4364a609c4f.png",
+                "BlurryAreas": [
+                  "149, 180, 68, 15",
+                  "344, 375, 54, 20",
+                  "451, 376, 90, 25",
+                  "251, 253, 62, 14",
+                  "763, 274, 59, 14"
+                ]
+              }
+            ],
             "DatePublished": "2010-01-03T00:00:00",
             "Author": "https://www.facebook.com/FRANCE24.English"
           },
@@ -510,6 +767,20 @@
             "Duration": 8,
             "Images": [
               "c1570aaa-1586-4902-8a2d-4d091d70c089.png"
+            ],
+            "ImageEdits": [
+              {
+                "Image": "c1570aaa-1586-4902-8a2d-4d091d70c089.png",
+                "BlurryAreas": [
+                  "679, 218, 83, 30",
+                  "228, 300, 41, 19",
+                  "221, 351, 72, 21",
+                  "181, 467, 153, 22",
+                  "392, 440, 66, 22",
+                  "360, 497, 42, 15",
+                  "654, 563, 76, 32"
+                ]
+              }
             ],
             "DatePublished": "2010-04-07T00:00:00",
             "Author": ""
@@ -525,6 +796,15 @@
             "Images": [
               "eb23c153-8f94-4b77-a063-5124394d8710.png"
             ],
+            "ImageEdits": [
+              {
+                "Image": "eb23c153-8f94-4b77-a063-5124394d8710.png",
+                "BlurryAreas": [
+                  "493, 120, 222, 27",
+                  "277, 362, 190, 18"
+                ]
+              }
+            ],
             "DatePublished": "2020-06-05T00:00:00",
             "Author": "Tyler Clifford"
           },
@@ -537,6 +817,15 @@
             "Duration": 8,
             "Images": [
               "8ddb9f78-612d-4619-b81f-d0d1d25271e0.png"
+            ],
+            "ImageEdits": [
+              {
+                "Image": "8ddb9f78-612d-4619-b81f-d0d1d25271e0.png",
+                "BlurryAreas": [
+                  "105, 306, 355, 43",
+                  "500, 421, 193, 25"
+                ]
+              }
             ],
             "DatePublished": "2021-06-23T00:00:00",
             "Author": ""

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace FactCheckThisBitch.Admin.Windows
@@ -17,6 +15,11 @@ namespace FactCheckThisBitch.Admin.Windows
                     return;
                 }
             }
+        }
+
+        public static string ToCoordinates(this Rectangle input)
+        {
+            return $"{input.Left},{input.Top}-{input.Right},{input.Bottom}";
         }
     }
 }

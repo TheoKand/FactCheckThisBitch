@@ -1,21 +1,21 @@
-﻿using System;
+﻿using FackCheckThisBitch.Common;
+using FactCheckThisBitch.Admin.Windows.Forms;
+using FactCheckThisBitch.Models;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using FackCheckThisBitch.Common;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
     public partial class ImageEditor : UserControl
     {
         private List<string> _images = new List<string>();
+        public List<ImageEdit> ImageEdits;
 
         public List<string> Images
         {
@@ -30,17 +30,17 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         public ImageEditor()
         {
             InitializeComponent();
-            toolTip1.SetToolTip(this,"Right click to open image; left button to drag & drop reposition");
+            toolTip1.SetToolTip(this, "Right click to open image; left button to drag & drop reposition");
         }
 
         private void LoadForm()
         {
             var index = 0;
-            var padding = 5;
+            var padding = 30;
 
             panel1.Controls.Clear();
 
-            for(int imageIndex=0; imageIndex<Images.Count;imageIndex++)
+            for (int imageIndex = 0; imageIndex < Images.Count; imageIndex++)
             {
                 var imageFile = Images[imageIndex];
                 var imagePath = Path.Combine(Configuration.Instance().DataFolder, "media", imageFile);
@@ -51,7 +51,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 picture.SizeMode = PictureBoxSizeMode.StretchImage;
                 picture.Image = Image.FromFile(imagePath);
                 picture.Top = 0;
-                picture.Left = padding + index * (picture.Width + padding);
+                picture.Left = index * (picture.Width + padding);
                 picture.Cursor = Cursors.Hand;
                 picture.AllowDrop = true;
                 picture.MouseDown += (sender, args) =>
@@ -61,41 +61,68 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                         picture.DoDragDrop((sender as Control).Tag, DragDropEffects.All);
                     }
                 };
-                picture.DragEnter += (sender, args) =>
-                {
-                    args.Effect = DragDropEffects.All;
-                };
+
+                picture.DragEnter += (sender, args) => { args.Effect = DragDropEffects.All; };
                 picture.DragDrop += (sender, args) =>
                 {
-                    var dragImageIndex = (int)args.Data.GetData(typeof(int));
-                    Images.Swap<string>((int)picture.Tag, dragImageIndex);
+                    var dragImageIndex = (int) args.Data.GetData(typeof(int));
+                    Images.Swap<string>((int) picture.Tag, dragImageIndex);
                     LoadForm();
                 };
                 picture.Click += (sender, args) =>
                 {
                     Clipboard.SetText(imagePath);
-                    new Process
-                    {
-                        StartInfo = new ProcessStartInfo(imagePath)
-                        {
-                            UseShellExecute = true
-                        }
-                    }.Start();
+                    new Process {StartInfo = new ProcessStartInfo(imagePath) {UseShellExecute = true}}.Start();
                 };
                 new ToolTip().SetToolTip(picture, imageFile);
                 panel1.Controls.Add(picture);
 
-                var linkLabel = new LinkLabel();
-                linkLabel.Text = "Delete";
-                linkLabel.Click += (sender, args) =>
+                var deleteLabel = new LinkLabel();
+                deleteLabel.Text = "Delete";
+
+                deleteLabel.Click += (sender, args) =>
                 {
                     _images.Remove(imageFile);
                     LoadForm();
                 };
-                linkLabel.Top = picture.Bottom;
-                linkLabel.Left = picture.Left;
-                panel1.Controls.Add(linkLabel);
+                deleteLabel.Top = picture.Bottom;
+                deleteLabel.Left = picture.Left;
+                deleteLabel.Width = 60;
+                deleteLabel.Height = 20;
+                deleteLabel.AutoSize = false;
+                panel1.Controls.Add(deleteLabel);
+
+                var editLabel = new LinkLabel();
+                editLabel.Tag = imageFile;
+                editLabel.Text = "Edit";
+                editLabel.Click += editLabel_Click;
+                editLabel.Top = picture.Bottom;
+                editLabel.Left = deleteLabel.Right + 10;
+                editLabel.Width = 60;
+                editLabel.Height = 20;
+                editLabel.AutoSize = false;
+                panel1.Controls.Add(editLabel);
+
                 index++;
+            }
+        }
+
+        #region events
+
+        private void editLabel_Click(object sender, EventArgs e)
+        {
+            var image = (sender as Label).Tag.ToString();
+
+            var imageEdit = this.ImageEdits.FirstOrDefault(e => e.Image == image) ?? new ImageEdit() {Image = image};
+
+            FrmImageEdit editForm = new FrmImageEdit(imageEdit);
+            var result = editForm.ShowDialog();
+            if (result != DialogResult.OK) return;
+
+            var existingImageEdit = ImageEdits.FirstOrDefault(e => e.Image == imageEdit.Image);
+            if (existingImageEdit == null)
+            {
+                ImageEdits.Add(imageEdit);
             }
         }
 
@@ -137,5 +164,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 LoadForm();
             }
         }
+
+        #endregion
     }
 }

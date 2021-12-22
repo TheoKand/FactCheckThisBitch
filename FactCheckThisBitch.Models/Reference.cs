@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Runtime.Serialization;
-using System.Text;
 using System.Text.Json.Serialization;
 
 namespace FactCheckThisBitch.Models
@@ -17,6 +17,7 @@ namespace FactCheckThisBitch.Models
         public string Url { get; set; }
         public int Duration { get; set; }
         public List<string> Images { get; set; }
+        public List<ImageEdit> ImageEdits { get; set; }
         public DateTime? DatePublished { get; set; }
         public string Author { get; set; }
         public string OriginalSource { get; set; }
@@ -25,8 +26,15 @@ namespace FactCheckThisBitch.Models
         {
             Id = Guid.NewGuid().ToString();
             Images = new List<string>();
+            ImageEdits = new List<ImageEdit>();
             Duration = 8;
         }
+    }
+
+    public class ImageEdit
+    {
+        public string Image;
+        public List<Rectangle> BlurryAreas = new List<Rectangle>();
     }
 
     [JsonConverter(typeof(StringEnumConverter))]
@@ -37,5 +45,4 @@ namespace FactCheckThisBitch.Models
         [EnumMember(Value = "BookExcerpt")] BookExcerpt,
         [EnumMember(Value = "WebVideo")] WebVideo,
     }
-
 }
