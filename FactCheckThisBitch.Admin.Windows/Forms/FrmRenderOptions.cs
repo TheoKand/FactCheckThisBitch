@@ -32,7 +32,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             Options.Template = lstTemplate.SelectedValue.ToString();
             Options.HandleWrongSpeak = chkWrongSpeak.Checked;
-
+            Options.BlurryAreas = chkBlurryAreas.Checked;
             DialogResult = DialogResult.OK;
             Close();
         }
@@ -42,5 +42,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
     {
         public string Template;
         public bool HandleWrongSpeak;
+        public bool BlurryAreas;
     }
 }

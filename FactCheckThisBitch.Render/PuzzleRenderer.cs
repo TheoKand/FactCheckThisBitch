@@ -20,8 +20,9 @@ namespace FactCheckThisBitch.Render
         private readonly string _outputFolder;
         private readonly string _mediaFolder;
         private readonly bool _handleWrongSpeak;
+        private readonly bool _handleBlurryAreas;
 
-        public PuzzleRenderer(Puzzle puzzle, string template,string assetsFolder, string outputFolder, string mediaFolder,bool handleWrongSpeak=false)
+        public PuzzleRenderer(Puzzle puzzle, string template,string assetsFolder, string outputFolder, string mediaFolder,bool handleWrongSpeak=false,bool handleBlurryAreas = false)
         {
             _puzzle = puzzle;
             _template = template;
@@ -29,6 +30,7 @@ namespace FactCheckThisBitch.Render
             _outputFolder = outputFolder;
             _mediaFolder = mediaFolder;
             _handleWrongSpeak = handleWrongSpeak;
+            _handleBlurryAreas = handleBlurryAreas;
         }
 
         public void Render()
@@ -205,7 +207,14 @@ namespace FactCheckThisBitch.Render
                                 (!reference.DatePublished.HasValue)
                                     ? ""
                                     : $"Date Published: {reference.DatePublished.Value:dd/MM/yyyy}");
-                            referenceGroupShape.ReplacePicture("picture_screenshot", Path.Combine(_mediaFolder, image));
+
+                            var imagePath = Path.Combine(_mediaFolder, image);
+                            if (_handleBlurryAreas)
+                            {
+                                imagePath = ModifyImage(reference,imagePath);
+                            }
+
+                            referenceGroupShape.ReplacePicture("picture_screenshot", imagePath);
                             if (referenceIndex > 0)
                             {
                                 slideSequence.RemoveByShape(referenceGroupShape as IShape);
@@ -238,6 +247,14 @@ namespace FactCheckThisBitch.Render
 
                 doc.Save(Path.Combine(_outputFolder, $"{_puzzle.FullTitle}.pptx"));
             }
+        }
+
+        private string ModifyImage(Reference reference,string image)
+        {
+            var imageEdit = reference.ImageEdits.FirstOrDefault(e =>image.EndsWith(e.Image)  );
+            if (imageEdit == null) return image;
+            var modifiedImage = imageEdit.CreateNewImage(_mediaFolder);
+            return modifiedImage;
         }
 
         public void FixSlidesDuration()
