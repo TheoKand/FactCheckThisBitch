@@ -46,18 +46,18 @@ namespace FactCheckThisBitch.Models
             Level level = Level.None)
         {
             StringBuilder result = new StringBuilder();
-            result.AppendLine($"--- {puzzle.Title.ToLeetSpeak(level)} ---");
-            result.AppendLine($"{puzzle.Thesis.ToLeetSpeak(level)}");
+            result.AppendLine($"--- {puzzle.Title.WrongSpeakToLeetSpeak(level)} ---");
+            result.AppendLine($"{puzzle.Thesis.WrongSpeakToLeetSpeak(level)}");
             result.AppendLine();
 
             foreach (var puzzlePiece in puzzle.PuzzlePieces)
             {
                 var piece = puzzlePiece.Piece;
 
-                result.AppendLine($"{puzzlePiece.Index}. {piece.Title.ToLeetSpeak(level)}");
+                result.AppendLine($"{puzzlePiece.Index}. {piece.Title.WrongSpeakToLeetSpeak(level)}");
                 if (includeDescriptions)
                 {
-                    result.AppendLine($"{piece.Thesis.ToLeetSpeak(level)}");
+                    result.AppendLine($"{piece.Thesis.WrongSpeakToLeetSpeak(level)}");
                     result.AppendLine();
                 }
 
@@ -65,7 +65,7 @@ namespace FactCheckThisBitch.Models
                 {
                     if (includeReferenceTitles)
                     {
-                        result.AppendLine($"\t{reference.Title.ToLeetSpeak(level)}");
+                        result.AppendLine($"\t{reference.Title.WrongSpeakToLeetSpeak(level)}");
                     }
 
                     result.AppendLine($"\t{reference.Url}");
@@ -74,7 +74,7 @@ namespace FactCheckThisBitch.Models
             }
 
             result.AppendLine($"{(puzzle.Language=="EN"?"WHAT DOES IT ALL MEAN???":"ΤΙ ΣΗΜΑΙΝΟΥΝ ΟΛΑ ΑΥΤΑ;;;")}");
-            result.AppendLine($"{puzzle.Conclusion.ToLeetSpeak(level)}");
+            result.AppendLine($"{puzzle.Conclusion.WrongSpeakToLeetSpeak(level)}");
             result.AppendLine();
             result.AppendLine($"#FactCheckThisBitch");
 

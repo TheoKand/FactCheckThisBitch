@@ -20,7 +20,7 @@ namespace FackCheckThisBitch.Common
             "vaccinated",
             "pfizer",
             "Bill Gates",
-            "Bill & Melida Gates Foundation",
+            "Bill & Melinda Gates Foundation",
             "Moderna",
             "pandemic",
             "pandemics",
