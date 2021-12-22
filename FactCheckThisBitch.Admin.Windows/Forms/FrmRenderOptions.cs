@@ -3,6 +3,7 @@ using System.Data;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using FackCheckThisBitch.Common;
 
 namespace FactCheckThisBitch.Admin.Windows.Forms
 {
@@ -14,6 +15,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             InitializeComponent();
             InitForm();
+            LoadForm();
         }
 
         private void InitForm()
@@ -28,12 +30,32 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             Close();
         }
 
+        private void LoadForm()
+        {
+            if (!UserSettings.Instance().RenderOptionsTemplate.IsEmpty())
+            {
+                lstTemplate.SelectedItem = UserSettings.Instance().RenderOptionsTemplate;
+            }
+
+            chkBlurryAreas.Checked = UserSettings.Instance().RenderOptionsHandleBlurryAreas;
+            chkWrongSpeak.Checked = UserSettings.Instance().RenderOptionsHandleWrongSpeak;
+        }
+
+        private void SaveForm()
+        {
+            UserSettings.Instance().RenderOptionsTemplate = lstTemplate.SelectedItem.ToString();
+            UserSettings.Instance().RenderOptionsHandleBlurryAreas = chkBlurryAreas.Checked;
+            UserSettings.Instance().RenderOptionsHandleWrongSpeak = chkWrongSpeak.Checked;
+        }
+
         private void btnOK_Click(object sender, EventArgs e)
         {
             Options.Template = lstTemplate.SelectedValue.ToString();
             Options.HandleWrongSpeak = chkWrongSpeak.Checked;
-            Options.BlurryAreas = chkBlurryAreas.Checked;
+            Options.HandleBlurryAreas = chkBlurryAreas.Checked;
             DialogResult = DialogResult.OK;
+
+            SaveForm();
             Close();
         }
     }
@@ -42,6 +64,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
     {
         public string Template;
         public bool HandleWrongSpeak;
-        public bool BlurryAreas;
+        public bool HandleBlurryAreas;
     }
 }

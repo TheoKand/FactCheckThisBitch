@@ -52,7 +52,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void DrawRectangle(Rectangle rectangle)
         {
-            ControlPaint.DrawReversibleFrame(rectangle, Color.Black, FrameStyle.Thick);
+            ControlPaint.DrawReversibleFrame(rectangle.RectangleToScreen(pictureBox1), Color.Black, FrameStyle.Thick);
         }
 
         #region events
@@ -78,26 +78,31 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             }
 
             Control control = (Control) sender;
-            dragStartPoint = control.PointToScreen(new Point(e.X, e.Y));
+            dragStartPoint = new Point(e.X, e.Y);
         }
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
             if (dragging)
             {
-                ControlPaint.DrawReversibleFrame(selectedRectangle, this.BackColor, FrameStyle.Dashed);
-                Point endPoint = ((Control) sender).PointToScreen(new Point(e.X, e.Y));
-                int width = endPoint.X - dragStartPoint.X;
-                int height = endPoint.Y - dragStartPoint.Y;
+                ControlPaint.DrawReversibleFrame(selectedRectangle.RectangleToScreen(sender as Control), this.BackColor, FrameStyle.Dashed);
+                Point endPoint = new Point(e.X, e.Y);
+
+                var endPointX = endPoint.X <= pictureBox1.Width ? endPoint.X : pictureBox1.Width;
+                var endPointY = endPoint.Y <= pictureBox1.Height ? endPoint.Y : pictureBox1.Height;
+
+                int width = endPointX - dragStartPoint.X;
+                int height = endPointY - dragStartPoint.Y;
+
                 selectedRectangle = new Rectangle(dragStartPoint.X, dragStartPoint.Y, width, height);
-                ControlPaint.DrawReversibleFrame(selectedRectangle, this.BackColor, FrameStyle.Dashed);
+                ControlPaint.DrawReversibleFrame(selectedRectangle.RectangleToScreen(sender as Control), this.BackColor, FrameStyle.Dashed);
             }
         }
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
-            ControlPaint.DrawReversibleFrame(selectedRectangle, this.BackColor, FrameStyle.Dashed);
+            ControlPaint.DrawReversibleFrame(selectedRectangle.RectangleToScreen(sender as Control), this.BackColor, FrameStyle.Dashed);
 
             _imageEdit.BlurryAreas.Add(selectedRectangle);
             LoadForm();

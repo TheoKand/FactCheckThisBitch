@@ -40,9 +40,10 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(887, 733);
+            this.btnCancel.Location = new System.Drawing.Point(776, 550);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(187, 63);
+            this.btnCancel.Size = new System.Drawing.Size(164, 47);
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -51,9 +52,10 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(693, 733);
+            this.btnSave.Location = new System.Drawing.Point(606, 550);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(187, 63);
+            this.btnSave.Size = new System.Drawing.Size(164, 47);
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Ok";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -67,8 +69,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Cross;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1084, 606);
+            this.pictureBox1.Size = new System.Drawing.Size(948, 454);
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
@@ -79,10 +82,11 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(0, 612);
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(0, 459);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(399, 164);
+            this.listBox1.Size = new System.Drawing.Size(350, 124);
             this.listBox1.TabIndex = 12;
             this.listBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseClick);
             // 
@@ -90,9 +94,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnDelete.AutoSize = true;
-            this.btnDelete.Location = new System.Drawing.Point(0, 776);
+            this.btnDelete.Location = new System.Drawing.Point(0, 585);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(114, 20);
+            this.btnDelete.Size = new System.Drawing.Size(87, 15);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.TabStop = true;
             this.btnDelete.Text = "Delete Selected";
@@ -101,15 +105,16 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // FrmImageEdit
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1086, 813);
+            this.ClientSize = new System.Drawing.Size(950, 610);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmImageEdit";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

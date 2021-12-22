@@ -63,7 +63,7 @@ namespace FactCheckThisBitch.Models
 
                 foreach (var reference in piece.References)
                 {
-                    if (includeReferenceTitles)
+                    if (includeReferenceTitles && reference.Title!=null)
                     {
                         result.AppendLine($"\t{reference.Title.WrongSpeakToLeetSpeak(level)}");
                     }

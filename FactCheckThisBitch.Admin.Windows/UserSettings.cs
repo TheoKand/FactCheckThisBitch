@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.IO;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Xml;
-using FackCheckThisBitch.Common;
+﻿using FackCheckThisBitch.Common;
 using Newtonsoft.Json;
+using System.IO;
 
 namespace FactCheckThisBitch.Admin.Windows
 {
@@ -27,6 +21,72 @@ namespace FactCheckThisBitch.Admin.Windows
             set
             {
                 _currentPuzzle = value;
+                Save();
+            }
+        }
+
+        private string _renderOptionsTemplate;
+        public string RenderOptionsTemplate
+        {
+            get => _renderOptionsTemplate;
+            set
+            {
+                _renderOptionsTemplate = value;
+                Save();
+            }
+        }
+
+        private bool _renderOptionsHandleWrongSpeak;
+        public bool RenderOptionsHandleWrongSpeak
+        {
+            get => _renderOptionsHandleWrongSpeak;
+            set
+            {
+                _renderOptionsHandleWrongSpeak = value;
+                Save();
+            }
+        }
+
+        private bool _renderOptionsHandleBlurryAreas;
+        public bool RenderOptionsHandleBlurryAreas
+        {
+            get => _renderOptionsHandleBlurryAreas;
+            set
+            {
+               _renderOptionsHandleBlurryAreas = value;
+                Save();
+            }
+        }
+
+        private string _puzzleDescriptionOptionsLeetLevel;
+        public string PuzzleDescriptionOptionsLeetLevel
+        {
+            get => _puzzleDescriptionOptionsLeetLevel;
+            set
+            {
+                _puzzleDescriptionOptionsLeetLevel = value;
+                Save();
+            }
+        }
+
+        private bool _puzzleDescriptionOptionsIncludeDescriptions;
+        public bool PuzzleDescriptionOptionsIncludeDescriptions
+        {
+            get => _puzzleDescriptionOptionsIncludeDescriptions;
+            set
+            {
+                _puzzleDescriptionOptionsIncludeDescriptions = value;
+                Save();
+            }
+        }
+
+        private bool _puzzleDescriptionOptionsIncludeReferenceTitles;
+        public bool PuzzleDescriptionOptionsIncludeReferenceTitles
+        {
+            get => _puzzleDescriptionOptionsIncludeReferenceTitles;
+            set
+            {
+                _puzzleDescriptionOptionsIncludeReferenceTitles = value;
                 Save();
             }
         }

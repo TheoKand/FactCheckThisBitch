@@ -247,7 +247,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                     Path.Combine(Configuration.Instance()
                             .DataFolder,
                         "media"),
-                    optionsForm.Options.HandleWrongSpeak))
+                    optionsForm.Options.HandleWrongSpeak,
+                    optionsForm.Options.HandleBlurryAreas))
                 {
                     renderer.Render();
                 }

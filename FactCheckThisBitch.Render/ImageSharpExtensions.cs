@@ -7,6 +7,7 @@ using SixLabors.Fonts;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Drawing.Processing;
 using SixLabors.ImageSharp.Processing;
+using SixLabors.ImageSharp.Processing.Processors.Normalization;
 
 namespace FactCheckThisBitch.Render
 {
@@ -117,17 +118,36 @@ namespace FactCheckThisBitch.Render
             return processingContext.DrawText(textGraphicOptions, text, scaledFont, color, center);
         }
 
+        public static float AreaHeightToGausianBlur(this int height)
+        {
+            if (height <= 15)
+            {
+                return 0.6f;
+            }else if (height<=22)
+            {
+                return 0.8f;
+            }
+            else if (height <= 35)
+            {
+                return 1.5f;
+            }
+            else
+            {
+                return 2f;
+            }
+        }
+
         public static string CreateNewImage(this ImageEdit imageEdit, string mediaFolder)
         {
             var originalImage = Path.Combine(mediaFolder, imageEdit.Image);
             var tempPath = Path.GetTempPath();
-            var newImage = Path.Combine(tempPath, $"blurred_{imageEdit.Image}.png");
+            var newImage = Path.Combine(tempPath, $"blurred_{imageEdit.Image}");
 
             using (Image image = Image.Load(originalImage))
             {
-                using (var clone = image.Clone(p => { p.GaussianBlur(1f); }))
+                foreach (var rect in imageEdit.BlurryAreas)
                 {
-                    foreach (var rect in imageEdit.BlurryAreas)
+                    using (var clone = image.Clone(p => { p.GaussianBlur(rect.Height.AreaHeightToGausianBlur()); }))
                     {
                         var imageSharpRect = new Rectangle(rect.Left, rect.Top, rect.Width, rect.Height);
                         clone.Mutate(x => x.Crop(imageSharpRect));

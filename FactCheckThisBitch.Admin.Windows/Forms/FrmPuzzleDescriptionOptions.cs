@@ -13,19 +13,36 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 {
     public partial class FrmPuzzleDescriptionOptions : Form
     {
-
         public PuzzleDescriptionOptions Options = new PuzzleDescriptionOptions();
 
         public FrmPuzzleDescriptionOptions()
         {
             InitializeComponent();
             InitForm();
+            LoadForm();
         }
-
 
         private void InitForm()
         {
             lstLeet.DataSource = Enum.GetValues(typeof(Level)).Cast<Level>();
+        }
+
+        private void LoadForm()
+        {
+            if (!UserSettings.Instance().PuzzleDescriptionOptionsLeetLevel.IsEmpty())
+            {
+                lstLeet.SelectedItem = UserSettings.Instance().PuzzleDescriptionOptionsLeetLevel;
+            }
+
+            chkIncludeDescriptions.Checked = UserSettings.Instance().PuzzleDescriptionOptionsIncludeDescriptions;
+            chkIncludeReferenceTitles.Checked = UserSettings.Instance().PuzzleDescriptionOptionsIncludeReferenceTitles;
+        }
+
+        private void SaveForm()
+        {
+            UserSettings.Instance().PuzzleDescriptionOptionsLeetLevel = lstLeet.SelectedValue.ToString();
+            UserSettings.Instance().PuzzleDescriptionOptionsIncludeDescriptions = chkIncludeDescriptions.Checked;
+            UserSettings.Instance().PuzzleDescriptionOptionsIncludeReferenceTitles = chkIncludeReferenceTitles.Checked;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -35,10 +52,11 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            Options.LeetLevel =  (Level) Enum.Parse(typeof(Level), lstLeet.SelectedValue.ToString() ?? string.Empty);
+            Options.LeetLevel = (Level) Enum.Parse(typeof(Level), lstLeet.SelectedValue.ToString() ?? string.Empty);
             Options.IncludeDescriptions = chkIncludeDescriptions.Checked;
             Options.IncludeReferenceTitles = chkIncludeReferenceTitles.Checked;
             DialogResult = DialogResult.OK;
+            SaveForm();
             Close();
         }
     }

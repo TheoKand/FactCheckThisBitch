@@ -312,6 +312,11 @@ namespace FactCheckThisBitch.Render
 
         public void Dispose()
         {
+            string[] filePaths = Directory.GetFiles(Path.GetTempPath(), "blurred*");
+            foreach (string filePath in filePaths)
+            {
+                File.Delete(filePath);
+            }
         }
     }
 }
