@@ -16,6 +16,7 @@ namespace FactCheckThisBitch.Models
         public int Width = 4;
         public int Height = 3;
         public int Duration = 10;
+        public string Notes;
         public List<PuzzlePiece> PuzzlePieces= new List<PuzzlePiece>();
 
         [JsonIgnore]

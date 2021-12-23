@@ -1,0 +1,222 @@
+{
+  "Title": "Is covid a business model or a public health crisis",
+  "Language": "EN",
+  "Width": 4,
+  "Height": 3,
+  "Duration": 10,
+  "PuzzlePieces": [
+    {
+      "Index": 1,
+      "X": 1,
+      "Y": 1,
+      "Piece": {
+        "Id": "f54bdc0b-ea4e-4195-8da2-fe916196b051",
+        "Title": "IMF and Covid Lockdowns",
+        "Thesis": "Letters of intent:\r\nhttps://www.google.com/search?q=imf+covid+letter+of+intent&rlz=1C1CHBF_en-GBGB977GB977&oq=imf+covid+letter+of+intent&aqs=chrome..69i57j33i22i29i30l4.9331j0j4&sourceid=chrome&ie=UTF-8",
+        "Duration": 15,
+        "Keywords": [
+          "",
+          "international monetary fund",
+          " usa",
+          " kristalina georgieva",
+          " united nations economic and social council",
+          " the parliamentary network on the world bank & international monetary fund"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": [
+          {
+            "Type": 1,
+            "Id": "43e7534f-8f42-4181-bf8a-7d014e3e85e1",
+            "Title": "Writing The Week",
+            "Description": "International Monetary Fund boss says she will use ‘full toolbox’ to deal with ‘emergency like no other’",
+            "Url": "https://www.theweek.co.uk/106658/half-the-world-s-countries-ask-for-imf-bailout",
+            "Duration": 8,
+            "Images": [],
+            "ImageEdits": [],
+            "DatePublished": "2020-04-16T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "f9b023dd-672a-4728-994b-8283a66372f8",
+            "Title": "IMF approves $18 bn emergency financing for 50 countries during Covid-19",
+            "Description": "In order to ensure full transparency and prevent any misuse of funds, the IMF asked member countries who apply for financing to commit that it is only used for urgent purposes related to Covid-19.",
+            "Url": "https://www.business-standard.com/article/international/imf-approves-18-bn-emergency-financing-for-50-countries-during-covid-19-120050800673_1.html",
+            "Duration": 8,
+            "Images": [],
+            "ImageEdits": [],
+            "DatePublished": "2020-05-08T00:00:00",
+            "Author": "ANI"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 5,
+      "X": 1,
+      "Y": 2,
+      "Piece": {
+        "Id": "3d51dac1-c7e4-450f-b8d7-8e65de9b1d21",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 9,
+      "X": 1,
+      "Y": 3,
+      "Piece": {
+        "Id": "19809e5f-0f4f-46f2-88cb-491ce248084e",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 2,
+      "X": 2,
+      "Y": 1,
+      "Piece": {
+        "Id": "8c79b0ee-a23b-43a4-85bc-e9aa45c08078",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 6,
+      "X": 2,
+      "Y": 2,
+      "Piece": {
+        "Id": "e4e14862-982e-4c54-9810-4b81f3a228e2",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 10,
+      "X": 2,
+      "Y": 3,
+      "Piece": {
+        "Id": "91396ca0-64f1-41de-9ab0-2ade042c9235",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 3,
+      "X": 3,
+      "Y": 1,
+      "Piece": {
+        "Id": "d9909219-5528-43af-b363-c366470d00f2",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 7,
+      "X": 3,
+      "Y": 2,
+      "Piece": {
+        "Id": "76afbd0f-e850-41a9-b987-668b2ad6faf3",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 11,
+      "X": 3,
+      "Y": 3,
+      "Piece": {
+        "Id": "15ab623d-c5f1-4774-9b2b-e3c857371c15",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 4,
+      "X": 4,
+      "Y": 1,
+      "Piece": {
+        "Id": "018b7fd6-150b-4f32-ab85-6f36f0908b60",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 8,
+      "X": 4,
+      "Y": 2,
+      "Piece": {
+        "Id": "bfc56879-2504-40ca-b9f5-aeb0e97b8405",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 12,
+      "X": 4,
+      "Y": 3,
+      "Piece": {
+        "Id": "2da38395-2dbb-4721-a9a3-3d0a540978af",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    }
+  ]
+}

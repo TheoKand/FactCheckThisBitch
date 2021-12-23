@@ -94,7 +94,7 @@
             "Source": "Bill & Melinda Gates Foundation",
             "Url": "https://www.gatesfoundation.org/about/committed-grants?q=WHO#jump-nav-anchor0",
             "Duration": 5,
-            "Images": [
+            "Images": [ 
               "0e0f7743-f5e4-4415-9977-f6702f72a932.png",
               "76940ecc-5ebc-47e6-9ceb-22598705aa49.png",
               "a2d06f7c-51ae-4486-9d88-89bea1dcb20a.png",
@@ -432,7 +432,8 @@
                 "Image": "0f463a35-adc0-4b6c-9fad-efbcc8edc9d2.png",
                 "BlurryAreas": [
                   "1123, 511, 64, 23",
-                  "444, 274, 358, 87"
+                  "444, 274, 358, 87",
+                  "225, 733, 260, 31"
                 ]
               }
             ],

@@ -137,6 +137,17 @@ namespace FactCheckThisBitch.Render
             }
         }
 
+
+        public static PointF[] HorzLine(this System.Drawing.Rectangle rect)
+        {
+            var result = new PointF[]
+            {
+                new PointF(rect.Left, rect.Top + rect.Height / 2),
+                new PointF(rect.Right, rect.Top + rect.Height / 2)
+            };
+            return result;
+        }
+
         public static string CreateNewImage(this ImageEdit imageEdit, string mediaFolder)
         {
             var originalImage = Path.Combine(mediaFolder, imageEdit.Image);
@@ -147,13 +158,30 @@ namespace FactCheckThisBitch.Render
             {
                 foreach (var rect in imageEdit.BlurryAreas)
                 {
-                    using (var clone = image.Clone(p => { p.GaussianBlur(rect.Height.AreaHeightToGausianBlur()); }))
+                    if (rect.Height < 15)
                     {
-                        var imageSharpRect = new Rectangle(rect.Left, rect.Top, rect.Width, rect.Height);
-                        clone.Mutate(x => x.Crop(imageSharpRect));
-                        var brush = new ImageBrush(clone);
-                        image.Mutate(c => c.Fill(brush, imageSharpRect));
+                        using (var clone = image.Clone(p =>
+                        {
+                            p.DrawLines(Color.Black, 1f, rect.HorzLine());
+                        }))
+                        {
+                            var imageSharpRect = new Rectangle(rect.Left, rect.Top, rect.Width, rect.Height);
+                            clone.Mutate(x => x.Crop(imageSharpRect));
+                            var brush = new ImageBrush(clone);
+                            image.Mutate(c => c.Fill(brush, imageSharpRect));
+                        }
                     }
+                    else
+                    {
+                        using (var clone = image.Clone(p => { p.GaussianBlur(rect.Height.AreaHeightToGausianBlur()); }))
+                        {
+                            var imageSharpRect = new Rectangle(rect.Left, rect.Top, rect.Width, rect.Height);
+                            clone.Mutate(x => x.Crop(imageSharpRect));
+                            var brush = new ImageBrush(clone);
+                            image.Mutate(c => c.Fill(brush, imageSharpRect));
+                        }
+                    }
+
                 }
 
                 image.Save(newImage);
