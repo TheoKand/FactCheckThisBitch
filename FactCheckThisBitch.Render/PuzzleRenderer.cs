@@ -40,7 +40,6 @@ namespace FactCheckThisBitch.Render
             RenderPuzzleForEachSlide();
             CreatePresentationFromTemplate();
             FixSlidesDuration();
-            RemoveWatermarks();
             OpenOutputFolder();
         }
 
@@ -245,7 +244,7 @@ namespace FactCheckThisBitch.Render
 
                 #endregion
 
-                doc.Save(Path.Combine(_outputFolder, $"{_puzzle.FullTitle}.pptx"));
+                doc.Save(Path.Combine(_outputFolder, $"{_puzzle.FullTitle}.pptm"));
             }
         }
 
@@ -260,7 +259,7 @@ namespace FactCheckThisBitch.Render
         public void FixSlidesDuration()
         {
 
-            var puzzlePresentationPath = Path.Combine(_outputFolder, $"{_puzzle.FullTitle}.pptx");
+            var puzzlePresentationPath = Path.Combine(_outputFolder, $"{_puzzle.FullTitle}.pptm");
             using (IPresentation doc = Presentation.Open(puzzlePresentationPath))
             {
                 doc.Slides[0].SlideTransition.TimeDelay = _puzzle.Duration;
@@ -286,23 +285,6 @@ namespace FactCheckThisBitch.Render
 
                             isFirstImageInPiece = false;
                         }
-                    }
-                }
-
-                doc.Save(puzzlePresentationPath);
-            }
-        }
-
-        public void RemoveWatermarks()
-        {
-            var puzzlePresentationPath = Path.Combine(_outputFolder, $"{_puzzle.FullTitle}.pptx");
-            using (IPresentation doc = Presentation.Open(puzzlePresentationPath))
-            {
-                foreach (var slide in doc.Slides)
-                {
-                    foreach (IShape shape in slide.Shapes.Where(s => s.ShapeName == "SyncfusionLicense"))
-                    {
-                        shape.TextBody.Text = "";
                     }
                 }
 

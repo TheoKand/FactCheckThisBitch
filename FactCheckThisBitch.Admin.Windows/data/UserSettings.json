@@ -1,6 +1,6 @@
 {
-  "CurrentPuzzle": "is-covid-a-business-model-or-a-public-health-crisis-EN.json",
-  "RenderOptionsTemplate": "template-english.pptx",
+  "CurrentPuzzle": "should-we-trust-the-world-health-organization-EN.json",
+  "RenderOptionsTemplate": "template-english.pptm",
   "RenderOptionsHandleWrongSpeak": true,
   "RenderOptionsHandleBlurryAreas": true,
   "PuzzleDescriptionOptionsLeetLevel": "Minimum",

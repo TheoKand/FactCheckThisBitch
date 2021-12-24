@@ -21,7 +21,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void InitForm()
         {
             var assetsDirectory = new DirectoryInfo(Configuration.Instance().AssetsFolder);
-            var templates = assetsDirectory.GetFiles("template*pptx").Select(f => f.Name).ToList();
+            var templates = assetsDirectory.GetFiles("template*pptm").Select(f => f.Name).ToList();
             lstTemplate.DataSource = templates;
         }
 
