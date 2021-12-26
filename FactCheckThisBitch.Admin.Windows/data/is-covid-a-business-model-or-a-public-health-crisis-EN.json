@@ -13,16 +13,150 @@
       "Piece": {
         "Id": "f54bdc0b-ea4e-4195-8da2-fe916196b051",
         "Title": "Developing Countries get money from IMF",
-        "Thesis": "half the worlds countries go to IMF for help\r\nworld bank loan 100 developing countries",
+        "Thesis": "-half the worlds countries go to IMF for help\r\n-world bank loan 100 developing countries\r\n-Developing countries impose lockdown and then get money\r\n",
         "Duration": 15,
         "Keywords": [
-          ""
+          "IMF",
+          "bailout",
+          "covid-19 (coronavirus)",
+          " bulgaria(bg)",
+          " world bank group president",
+          " david malpass",
+          "global development",
+          "chad",
+          "africa",
+          "world news",
+          "hunger",
+          " covid-19 pandemic"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
-        "References": []
-      }
+        "References": [
+          {
+            "Type": 1,
+            "Id": "7e3491e0-c21d-442f-a781-d6dbd7851f88",
+            "Title": "Half the world’s countries ask for IMF bailout",
+            "Description": "International Monetary Fund boss says she will use ‘full toolbox’ to deal with ‘emergency like no other’",
+            "Url": "https://www.theweek.co.uk/106658/half-the-world-s-countries-ask-for-imf-bailout",
+            "Duration": 8,
+            "Images": [
+              "6b3cc375-d364-48ae-a291-2283b42e3da6.png"
+            ],
+            "ImageEdits": [
+              {
+                "Image": "cc281b23-8711-42e8-9ade-e6ed80217259.png",
+                "BlurryAreas": []
+              }
+            ],
+            "DatePublished": "2020-04-16T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "ea366ca3-a94b-4a3f-ae64-b6c28fe238b5",
+            "Title": "World Bank Group: 100 Countries Get Support in Response to COVID-19 (Coronavirus)",
+            "Description": "Unprecedented Crisis Could Push Up to 60 Million into Extreme Poverty",
+            "Source": "World Bank",
+            "Url": "https://www.worldbank.org/en/news/press-release/2020/05/19/world-bank-group-100-countries-get-support-in-response-to-covid-19-coronavirus",
+            "Duration": 8,
+            "Images": [
+              "34d2cb53-4271-4229-8b57-5b349d1a93f8.png"
+            ],
+            "ImageEdits": [],
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "63d54d96-d653-475e-924f-1f65f1230dba",
+            "Title": "Equador",
+            "Description": "English News and Press Release on Ecuador about Health, Recovery and Reconstruction and Epidemic; published on 01 May 2020 by IMF",
+            "Source": "ReliefWeb",
+            "Url": "https://reliefweb.int/report/ecuador/imf-executive-board-approves-us643-million-emergency-assistance-ecuador-address-covid",
+            "Duration": 8,
+            "Images": [
+              "63227a7f-4fbc-41b1-b718-af0f0bc3f45f.png"
+            ],
+            "ImageEdits": [],
+            "Author": "",
+            "OriginalSource": "https://www.imf.org/en/News/Articles/2020/05/01/pr-20203-ecuador-imf-executive-board-approves-us-643-million-in-emergency-assistance"
+          },
+          {
+            "Type": 1,
+            "Id": "53185213-c7d0-42dd-a9ae-1048432b6afc",
+            "Title": "Dominican Republic",
+            "Url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_Dominican_Republic#National_measures",
+            "Duration": 8,
+            "Images": [
+              "c92e8b7a-af17-4eae-857d-a1aaa7786ab8.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2020-03-01T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "fde58c52-5595-4e44-a688-27294328f490",
+            "Title": "Chad",
+            "Description": "Opposition cries foul as Covid restrictions cut off incomes and health care in country where two-thirds live in severe poverty",
+            "Source": "the Guardian",
+            "Url": "https://www.theguardian.com/global-development/2021/jan/25/the-lockdown-was-political-chad-under-strain-ahead-of-election",
+            "Duration": 8,
+            "Images": [
+              "8fddc7fa-6111-49fd-91b6-685b4ac99eb5.png",
+              "71863914-eb64-4a0f-b75d-cce26499109a.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-01-25T00:00:00",
+            "Author": "https://www.theguardian.com/profile/zeinab-mohammed-salih"
+          },
+          {
+            "Type": 1,
+            "Id": "9a8f62fd-eb8f-4c39-a846-ea9614d71948",
+            "Title": "Cameroon Investigates Missing $335 Million in COVID Funds ",
+            "Description": "Official statement urging calm comes after rights groups and opposition asked government to explain what happened money loaned by International Monetary Fund to fight COVID-19",
+            "Url": "https://www.voanews.com/a/africa_cameroon-investigates-missing-335-million-covid-funds/6206445.html",
+            "Duration": 8,
+            "Images": [
+              "e6726c41-7580-42d2-b2a1-3fdf7df700a5.png",
+              "7d7db1e1-a128-4536-a9ce-132c885bee11.png",
+              "ff862d2a-c2c5-4fb7-ba07-11f03e5e25a2.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-05-31T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "272bec2d-8130-415e-8ec6-d8231e3ed79d",
+            "Title": "COVID-19 pandemic in Afghanistan - Wikipedia",
+            "Url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Afghanistan#Lockdown_measures",
+            "Duration": 8,
+            "Images": [
+              "5e99eb91-7361-4c1c-be4b-03a7e46ebd04.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2020-03-10T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "12cce35a-2098-4daa-9918-5b8ee82ed9aa",
+            "Title": "East Africa correspondent",
+            "Description": "Kenyans are petitioning the IMF to cancel its approval of a $2.24-billion financing package",
+            "Url": "https://qz.com/africa/2001988/why-kenyans-are-refusing-the-imfs-billions/",
+            "Duration": 8,
+            "Images": [
+              "ef5b7b30-1381-4017-9b8e-0d54e744ef72.png",
+              "eb69e54a-43cc-4fe8-9d25-aa912cf7fcf2.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-04-28T00:00:00",
+            "Author": ""
+          }
+        ]
+      },
+      "Valid": true
     },
     {
       "Index": 5,
@@ -64,16 +198,54 @@
       "Y": 1,
       "Piece": {
         "Id": "8c79b0ee-a23b-43a4-85bc-e9aa45c08078",
-        "Title": "IMF releases funds after lockdown declared",
+        "Title": "Businesses in developed countries like UK and France are borrowing huge sums of money from banks, with State Loan Guarantees.",
+        "Thesis": "Same story different mechanism. Government imposes lockdown, banning businesses from doing business. Businesses must stay afloat, so are allowed to borrow money from banks with government guarantees. If these loans are not paid back, the government is liable for the debt. How are businesses ever expected to pay back the loans with new lockdowns every few months? This looks increasingly like bankbruptcy by design. If a country becomes indebted they will eventually lose their state assets like public utility companies, natural resources and ultimately it's soverignty. Essentially all countries await the same fate as famously bankrupt countries Greece, Argentina etc.",
         "Duration": 15,
         "Keywords": [
-          ""
+          "",
+          "coronavirus",
+          " pandemic",
+          " covid-19",
+          " finance lawyer crisis",
+          " finance lawyer covid-19"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
-        "References": []
-      }
+        "References": [
+          {
+            "Type": 1,
+            "Id": "0afd40fd-13ad-46ea-a383-12cb8c6358dc",
+            "Title": "Where does bailout money come from and who will pay for it?",
+            "Description": "Government’s multi-billion pound stimulus package could usher in another decade of austerity",
+            "Source": "Theweek.co.uk",
+            "Url": "https://www.theweek.co.uk/coronavirus/106370/where-does-bailout-money-come-from-and-who-will-pay-for-it",
+            "Duration": 8,
+            "Images": [
+              "7a258243-ca9d-4968-bf9c-3266bd2aab0f.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2020-03-26T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "36e86a53-7e4f-4716-a050-05f7fa5131aa",
+            "Title": "UPDATED – COVID-19 | France: State Guarantee Scheme for New Money Loans",
+            "Description": "In light of the growing pandemic of COVID-19, the French government has made a number of unprecedented decisions in order to support business activities. Among an extensive panoply of measures relating to short-time work, tax relief, capital markets and other areas, the French Government has introduced a EUR 300 billion State guarantee scheme (the “Scheme”) for new money loans to be granted to French entities by financial institutions and crowd-funding intermediaries. ",
+            "Source": "Shearman & Sterling",
+            "Url": "https://www.shearman.com/Perspectives/2020/04/COVID-19-France-State-Guarantee-Scheme-for-New-Money-Loans",
+            "Duration": 8,
+            "Images": [
+              "44ff6329-a229-43a1-8a41-1749a2fe5e3d.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-01-28T00:00:00",
+            "Author": ""
+          }
+        ]
+      },
+      "Valid": true
     },
     {
       "Index": 6,
@@ -117,13 +289,96 @@
         "Thesis": "Some world leaders are not playing along\r\nmurders",
         "Duration": 15,
         "Keywords": [
-          ""
+          "",
+          "us",
+          "health",
+          "coronavirus",
+          "tanzania",
+          "africa"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
-        "References": []
-      }
+        "References": [
+          {
+            "Type": 1,
+            "Id": "71a52bf6-4664-448d-a50d-df9a7a5459ef",
+            "Title": "EXPOSED: Extreme Lockdown Mandatory Condition For World Bank COVID-19 Aid",
+            "Description": "EXPOSED: World Bank Coronavirus aid comes with conditions for imposing extreme lockdown measures, revealed Belarus President",
+            "Source": "GreatGameIndia",
+            "Url": "https://greatgameindia.com/belarus-world-bank-coronavirus-conditions/",
+            "Duration": 8,
+            "Images": [
+              "ad4a5e3d-2aaa-4c64-b474-8259f1756a86.png",
+              "8aee5257-a4bc-4de1-9a13-1807faf80bb6.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2020-07-27T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "030ab77f-1d81-4bc7-b3fd-1fe051c791b4",
+            "Title": "President queries Tanzania coronavirus kits after goat test",
+            "Description": "Coronavirus test kits used in Tanzania were dismissed as faulty by President John Magufuli on Sunday, because he said they had returned positive results on samples taken from a goat and a pawpaw.",
+            "Source": "U.S.",
+            "Url": "https://www.reuters.com/article/us-health-coronavirus-tanzania-idUSKBN22F0KF",
+            "Duration": 8,
+            "Images": [
+              "06ffbb8e-19ec-477c-89e6-2e95f7fd7512.png",
+              "3f135f7e-6864-4077-b6d6-6be6b2237f57.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2020-05-03T00:00:00",
+            "Author": "Reuters Staff"
+          },
+          {
+            "Type": 1,
+            "Id": "e740e13f-3118-4ac2-bf3c-03a6040227d5",
+            "Title": "Tanzanian President John Magufuli, A COVID-19 Skeptic, Has Died",
+            "Description": "Tanzanian President John Magufuli has died at age 61. The news was announced Wednesday on state television by Vice President Samia Suluhu Hassan, who said the cause of death was heart failure.",
+            "Source": "National Press Association",
+            "Url": "https://www.npr.org/2021/03/17/978336051/tanzania-president-john-magufuli-a-covid-19-skeptic-has-died",
+            "Duration": 8,
+            "Images": [
+              "9d4cd450-5e78-42be-a1c3-6391b31d2cd1.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-03-17T00:00:00",
+            "Author": "Laurel Wamsley"
+          },
+          {
+            "Type": 1,
+            "Id": "8bd256b4-5a36-41eb-ab57-777aa6372399",
+            "Title": "Haiti Is the Only Country in Western Hemisphere Without Vaccines",
+            "Description": "Haiti, the poorest nation in the Western hemisphere, has earned another grim distinction: it’s the only one that hasn’t vaccinated a single resident against Covid-19.",
+            "Source": "Bloomberg",
+            "Url": "https://www.bloomberg.com/news/articles/2021-06-08/haiti-is-the-only-country-in-western-hemisphere-without-vaccines",
+            "Duration": 8,
+            "Images": [
+              "af1da4cd-b975-4f41-a1de-c88661b073d5.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-06-08T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "1cb41fa2-2d03-4d9c-9ab6-5d65dbcd60ca",
+            "Title": "Haiti president's assassination: What we know so far",
+            "Url": "https://www.bbc.co.uk/news/world-latin-america-57762246",
+            "Duration": 8,
+            "Images": [
+              "664bcef7-4dd6-4c50-a985-9baf993d9fd4.png",
+              "5e707f6f-d722-4ec4-8ce6-a22937707594.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-09-14T00:00:00",
+            "Author": ""
+          }
+        ]
+      },
+      "Valid": true
     },
     {
       "Index": 7,
@@ -167,13 +422,93 @@
         "Title": "Media organizations get money to follow the official narative about Covid",
         "Duration": 15,
         "Keywords": [
-          ""
+          "",
+          "coronavirus",
+          " media",
+          " politics",
+          " news"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
         },
-        "References": []
-      }
+        "References": [
+          {
+            "Type": 1,
+            "Id": "fef4f1bc-287a-4186-8a24-d8578046e86b",
+            "Title": "56 news organisations receive Emergency Fund support to address critical business needs caused by COVID-19",
+            "Source": "European Journalism Centre",
+            "Url": "https://europeanjournalism.fund/news/emergency-fund-recipients-wave1-covid19",
+            "Duration": 8,
+            "Images": [
+              "09c9fce9-b2a7-4235-bd27-96ea0c543a23.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2020-05-14T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "c0f67f08-f0ef-4f6a-8383-779bbdf37e08",
+            "Title": "US Newsrooms Share Impact of Facebook’s $10 Million COVID-19 Grants",
+            "Source": "Facebook Journalism Project",
+            "Url": "https://www.facebook.com/journalismproject/programs/grants/us-covid-relief-grant-impact",
+            "Duration": 8,
+            "Images": [
+              "de6ecc44-60f1-4604-aec3-925ecb565416.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2020-09-23T00:00:00",
+            "Author": "Emilie Lutostanski, Lindsey Leisher"
+          },
+          {
+            "Type": 1,
+            "Id": "5a842446-31c6-4b93-b952-970ecb216a7a",
+            "Title": "The Covid-19 crisis highlights Greece’s media problem - International Press Institute",
+            "Description": "Zur deutschen Version During the lockdown that followed the Covid-19 outbreak, the Greek government allocated €20 million to media outlets for them to carry “Stay at Home” public health messages. It outsourced the distribution of these funds to a private media shop company, thereby bypassing its obligation to make public all transactions conducted by the …",
+            "Source": "International Press Institute",
+            "Url": "https://ipi.media/the-covid-19-crisis-highlights-greeces-media-problem/",
+            "Duration": 8,
+            "Images": [
+              "997fe24b-dfde-4e99-9807-70a4479b9a97.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2020-08-06T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "35f47a03-aa4b-4edc-863f-5a4f1c1b1b4d",
+            "Title": "Gov’t makes public list of media firms paid to promote Covid-19 health measures | eKathimerini.com",
+            "Description": "The government on Monday made good on its pledge to publish a detailed account on the expenditures of its “We Stay Home” coronavirus lockdown campaign with a list of all the media involved. ",
+            "Source": "Kathimerini",
+            "Url": "https://www.ekathimerini.com/news/254417/govt-makes-public-list-of-media-firms-paid-to-promote-covid-19-health-measures/",
+            "Duration": 8,
+            "Images": [
+              "c4ea3c5b-106b-45f7-8c30-6471812437d2.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2020-07-06T00:00:00",
+            "Author": "Newsroom"
+          },
+          {
+            "Type": 1,
+            "Id": "51660eac-043a-4007-b0bd-03029400e230",
+            "Title": "Germany offers €220m in supports to print media but some are sceptical",
+            "Description": "Grant aimed at helping with digital transition",
+            "Source": "The Irish Times",
+            "Url": "https://www.irishtimes.com/business/media-and-marketing/germany-offers-220m-in-supports-to-print-media-but-some-are-sceptical-1.4330551",
+            "Duration": 8,
+            "Images": [
+              "b5de7768-04a4-408f-849c-806ed7f2f30a.png",
+              "f341c6c9-3371-4679-97c5-21fe7e6fb71f.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2020-08-14T00:00:00",
+            "Author": ""
+          }
+        ]
+      },
+      "Valid": true
     },
     {
       "Index": 8,
