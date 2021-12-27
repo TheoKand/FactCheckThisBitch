@@ -1,8 +1,8 @@
 {
-  "CurrentPuzzle": "is-covid-a-business-model-or-a-public-health-crisis-EN.json",
+  "CurrentPuzzle": "we-re-all-in-thi-togeth-r-EN.json",
   "RenderOptionsTemplate": "template-english.pptm",
-  "RenderOptionsHandleWrongSpeak": true,
-  "RenderOptionsHandleBlurryAreas": true,
+  "RenderOptionsHandleWrongSpeak": false,
+  "RenderOptionsHandleBlurryAreas": false,
   "PuzzleDescriptionOptionsLeetLevel": "Minimum",
   "PuzzleDescriptionOptionsIncludeDescriptions": true,
   "PuzzleDescriptionOptionsIncludeReferenceTitles": false,

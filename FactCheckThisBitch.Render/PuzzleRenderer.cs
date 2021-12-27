@@ -92,6 +92,8 @@ namespace FactCheckThisBitch.Render
 
             foreach (var puzzlePiece in _puzzle.PuzzlePieces)
             {
+                if (puzzlePiece.Index > _puzzle.Width * _puzzle.Height) continue;
+
                 var pieceImagePath = Path.Combine(_assetsFolder, $"Piece{puzzlePiece.Index}.png");
                 var pieceImgeWithKeywordsPath = Path.Combine(_outputFolder, $"Piece{puzzlePiece.Index}_Keywords.png");
                 using (var pieceImage = Image.Load(pieceImagePath))

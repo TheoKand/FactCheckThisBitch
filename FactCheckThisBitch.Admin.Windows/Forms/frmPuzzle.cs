@@ -4,6 +4,7 @@ using FactCheckThisBitch.Render;
 using Newtonsoft.Json;
 using System;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -123,16 +124,36 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             IsDirty = false;
         }
 
+        private void ReorderPieces()
+        {
+            _puzzle.PuzzlePieces = _puzzle.PuzzlePieces.OrderBy(p => p.Index).ToList();
+        }
+
         private void Save()
         {
+            ReorderPieces();
+
             _puzzle.Title = txtTitle.Text.ValueOrNull();
             _puzzle.Language = cboLanguage.SelectedItem.ToString();
             _puzzle.Thesis = txtThesis.Text.ValueOrNull();
             _puzzle.Conclusion = txtConclusion.Text.ValueOrNull();
-            _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
-            _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
             _puzzle.Duration = int.Parse(txtDuration.Text);
+
+            var newWidth = int.Parse(txtSize.Text.Split('x')[0]);
+            var newHeight = int.Parse(txtSize.Text.Split('x')[1]);
+            if (newWidth!=_puzzle.Width || newHeight != _puzzle.Height)
+            {
+                _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
+                _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
+                TrimExtraPieces();
+            }
+
             CheckRenameFile();
+        }
+
+        private void TrimExtraPieces()
+        {
+            _puzzle.PuzzlePieces.RemoveAll(_ => _.Index > _puzzle.Width * _puzzle.Height);
         }
 
         private void CheckRenameFile()
