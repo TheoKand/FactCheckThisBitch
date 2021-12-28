@@ -29,6 +29,7 @@ namespace FactCheckThisBitch.Models
     public class PuzzlePiece
     {
         public int Index;
+        public int RenderOrder;
         public int X;
         public int Y;
         public Piece Piece;

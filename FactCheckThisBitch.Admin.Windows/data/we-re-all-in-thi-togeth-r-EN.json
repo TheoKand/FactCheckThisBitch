@@ -1,24 +1,25 @@
 {
   "Title": "WE'RE ALL IN THI$ TOGETH£R",
   "Language": "EN",
-  "Thesis": "It appears that there is an overlooked financial aspect to the public health emergency that is the COVID-19 pandemic. ",
-  "Conclusion": "- Developing countries have borrowed money en mass from the IMF and World Bank.\r\n- Advanced countries have outlawed their real economy and replaced it with a Covid Economy.\r\n- Media organizations, journalists get free money to inform the public on how to stay safe during the pandemic.\r\n- Hospitals and health care practitioners are on the frontline of receiving extra funding.\r\n- Everyone and their dog is cashing out the never-ending cash that flows from the top down.\r\n- Perpetual lockdowns seem to have altered the world's economy in an irreversible way, en route to a Great Reset.\r\n- Klaus Schwab of the World Economic Forum is keen on merging our digital, biological and physical identities, possibly via vaccines based on \"synthetic biology\".\r\n- Apparently Resistance is futile.",
+  "Thesis": "It appears there is an overlooked financial aspect to the public health emergency that is the COVID-19 pandemic. ",
+  "Conclusion": "- Developing countries have imposed lockdowns and then borrowed money en mass from the IMF and World Bank.\r\n- Advanced countries have outlawed the real economy and replaced it with a Covid Economy.\r\n- Media organizations, journalists get free money to present the daily case numbers.\r\n- Hospitals and health care practitioners are on the frontline of receiving extra funding.\r\n- Everyone and their dog is cashing out the never-ending cash that flows from the top down.\r\n- Klaus Schwab of the World Economic Forum is keen on merging our digital, biological and physical identities, presumably via vaccines based on \"synthetic biology\".\r\n- Perpetual lockdowns seem to have altered the world's economy in an irreversible way, en route to a Great Reset and Central Bank Digital Currencies.",
   "Width": 3,
   "Height": 3,
-  "Duration": 20,
+  "Duration": 10,
   "PuzzlePieces": [
     {
       "Index": 1,
+      "RenderOrder": 1,
       "X": 1,
       "Y": 1,
       "Piece": {
         "Id": "f54bdc0b-ea4e-4195-8da2-fe916196b051",
         "Title": "Developing Countries get funds from IMF, World Bank.",
-        "Thesis": "The world's poorer countries have requested funds from right after they impose lockdowns. The World Bank is loaning 100 developing countries. Not everyone things the loans are a good idea. ",
+        "Thesis": "The world's poorer countries have requested funds from the International Monetary Fund right after they impose lockdowns.\r\nThe World Bank is also loaning 100 developing countries.\r\nSome think these loans are a bad idea in the long run.",
         "Duration": 12,
         "Keywords": [
           "IMF",
-          "$$$"
+          "World Bank"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -51,18 +52,27 @@
             "Description": "Unprecedented Crisis Could Push Up to 60 Million into Extreme Poverty",
             "Source": "World Bank",
             "Url": "https://www.worldbank.org/en/news/press-release/2020/05/19/world-bank-group-100-countries-get-support-in-response-to-covid-19-coronavirus",
-            "Duration": 7,
+            "Duration": 6,
             "Images": [
               "34d2cb53-4271-4229-8b57-5b349d1a93f8.png"
             ],
-            "ImageEdits": [],
+            "ImageEdits": [
+              {
+                "Image": "34d2cb53-4271-4229-8b57-5b349d1a93f8.png",
+                "BlurryAreas": [
+                  "364, 139, 457, 45",
+                  "588, 352, 88, 18",
+                  "156, 383, 122, 21"
+                ]
+              }
+            ],
             "DatePublished": "2020-05-19T00:00:00",
             "Author": ""
           },
           {
             "Type": 1,
             "Id": "63d54d96-d653-475e-924f-1f65f1230dba",
-            "Title": "Equador",
+            "Title": "Ecuador",
             "Description": "English News and Press Release on Ecuador about Health, Recovery and Reconstruction and Epidemic; published on 01 May 2020 by IMF",
             "Source": "ReliefWeb",
             "Url": "https://reliefweb.int/report/ecuador/imf-executive-board-approves-us643-million-emergency-assistance-ecuador-address-covid",
@@ -152,21 +162,20 @@
             "Author": ""
           }
         ]
-      },
-      "Valid": true
+      }
     },
     {
       "Index": 2,
+      "RenderOrder": 2,
       "X": 2,
       "Y": 1,
       "Piece": {
         "Id": "d9909219-5528-43af-b363-c366470d00f2",
-        "Title": "IMF funds tied to imposing lockdown measures?",
+        "Title": "Could IMF funds be tied to imposing lockdown measures?",
         "Thesis": "Various countries and leaders did not take the pandemic very seriously at first. A well known best seller book by John Perkins might offer some useful insights on what happens when countries deny funds from globalist institutions.",
         "Duration": 16,
         "Keywords": [
-          "lockdown",
-          "$$$"
+          "Lockdown"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -264,21 +273,20 @@
             "Author": ""
           }
         ]
-      },
-      "Valid": true
+      }
     },
     {
       "Index": 3,
+      "RenderOrder": 3,
       "X": 3,
       "Y": 1,
       "Piece": {
         "Id": "8c79b0ee-a23b-43a4-85bc-e9aa45c08078",
-        "Title": "Businesses in developed countries like UK and France are borrowing huge sums of money from banks, with State Loan Guarantees. How will they pay these back with the perpetual lockdowns?",
-        "Thesis": "If these loans are not paid back, the government is liable for the debt. This looks increasingly like bankbruptcy by design. If a country becomes indebted they will eventually lose their state assets like public utility companies, natural resources and ultimately it's soverignty. Essentially all countries await the same fate as famously bankrupt countries Greece, Argentina etc.",
+        "Title": "Businesses in countries like UK and France are borrowing huge sums of money from banks, with State Loan Guarantees. How will they pay these back with the perpetual lockdowns?",
+        "Thesis": "If these loans are not paid back, it becomes national debt. This looks increasingly like bankruptcy by design. If a country becomes indebted they will eventually lose state assets like public utility companies, natural resources and ultimately sovereignty. Essentially all countries await the same fate as famously bankrupt Greece, Argentina etc.",
         "Duration": 25,
         "Keywords": [
-          "National Debt",
-          "$$$"
+          "Debt"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -315,21 +323,20 @@
             "Author": ""
           }
         ]
-      },
-      "Valid": true
+      }
     },
     {
       "Index": 4,
+      "RenderOrder": 4,
       "X": 1,
       "Y": 2,
       "Piece": {
         "Id": "018b7fd6-150b-4f32-ab85-6f36f0908b60",
-        "Title": "Governments and Sillicon Valley behemoths openly offer money to media organizations to educate the public on following Covid guidelines. Is a journalist's job is to investigate and question authority or get free money to follow a narrative?",
-        "Thesis": "At the more local level, numerous funds have been setup through out the world, that offer money to journalists to inform the public and help them \"make safe decisions\".",
+        "Title": "Governments and Silicon Valley behemoths openly offer money to media organizations to educate the public on following Covid guidelines. ",
+        "Thesis": "Is a journalist supposed to investigate and question authority or get free money to follow a narrative?\r\nAt the more local level, numerous funds have been setup throughout the world, that offer money to journalists to inform the public and help them \"make safe decisions\".",
         "Duration": 20,
         "Keywords": [
-          "Media",
-          "$$$"
+          "Media"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -338,7 +345,7 @@
           {
             "Type": 1,
             "Id": "51660eac-043a-4007-b0bd-03029400e230",
-            "Title": "Germany offers €220m in supports to print media but some are sceptical",
+            "Title": "Germany offers €220m in supports to print media but some are skeptical",
             "Description": "Grant aimed at helping with digital transition",
             "Source": "The Irish Times",
             "Url": "https://www.irishtimes.com/business/media-and-marketing/germany-offers-220m-in-supports-to-print-media-but-some-are-sceptical-1.4330551",
@@ -398,7 +405,7 @@
           {
             "Type": 1,
             "Id": "fef4f1bc-287a-4186-8a24-d8578046e86b",
-            "Title": "56 news organisations receive Emergency Fund support to address critical business needs caused by COVID-19",
+            "Title": "56 news organizations receive Emergency Fund support to address critical business needs caused by COVID-19",
             "Source": "European Journalism Centre",
             "Url": "https://europeanjournalism.fund/news/emergency-fund-recipients-wave1-covid19",
             "Duration": 10,
@@ -428,20 +435,20 @@
             "Author": ""
           }
         ]
-      },
-      "Valid": true
+      }
     },
     {
       "Index": 5,
+      "RenderOrder": 9,
       "X": 2,
       "Y": 2,
       "Piece": {
         "Id": "3d51dac1-c7e4-450f-b8d7-8e65de9b1d21",
-        "Title": "Where is the money coming from? How is the world's economy going to cope with financing these perpetual global lockdowns? ",
-        "Thesis": "KLAUS SCHWAB of the World Economic Forum:\r\n\"... people assume we are just going back to the good old world. This is fiction, it will not happen...\"\r\n...\"You will own nothing, and you will be happy\"...\r\n\"...the research for vaccines using completely new methods based on synthetic biology...\"\r\n\"...fusion of our physical, digital and biological identity...\"\r\n",
+        "Title": "Where is the money coming from? How is the world's economy going to cope with financing these perpetual lockdowns? ",
+        "Thesis": "Klaus Schwab of the World Economic Forum:\r\n\"... people assume we are just going back to the good old world. This is fiction, it will not happen...\"\r\n\"...you will own nothing, and you will be happy...\"\r\n\"...research for vaccines using completely new methods based on synthetic biology...\"\r\n\"...fusion of our physical, digital and biological identity...\"\r\n",
         "Duration": 25,
         "Keywords": [
-          "Great Reset"
+          "Great\r\nReset"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -453,7 +460,7 @@
             "Title": "How Central Banks Create Money Out from the Thin Air",
             "Description": "The Federal Reserve announced a $700 billion Quantitative Easing program on March 15, 2020, to combat the economic impact of the virus outbreak. The central banks are creating money out from the thin…",
             "Url": "https://medium.datadriveninvestor.com/how-central-banks-create-money-out-from-the-thin-air-e01453d81ab",
-            "Duration": 8,
+            "Duration": 9,
             "Images": [
               "a8caa41a-2d77-4f2c-803b-8e60b1e5edfa.png"
             ],
@@ -467,7 +474,7 @@
             "Title": "The Covid-19 Pandemic Has Added £$19.5 Trillion to Global Debt",
             "Source": "Bloomberg",
             "Url": "https://www.bloomberg.com/graphics/2021-coronavirus-global-debt/",
-            "Duration": 8,
+            "Duration": 9,
             "Images": [
               "d1eef6a6-740c-4cb8-bfac-2377b5cda4d5.png"
             ],
@@ -477,26 +484,11 @@
           },
           {
             "Type": 1,
-            "Id": "c31ab9b8-c615-4a6f-a7f9-bacbac793de0",
-            "Title": "Who funds IMF if it runs out of cash?",
-            "Description": "News Analysis: The US is the biggest political player in the Fund;",
-            "Source": "The Independent",
-            "Url": "https://www.independent.co.uk/news/business/who-funds-imf-if-it-runs-out-of-cash-1174366.html",
-            "Duration": 8,
-            "Images": [
-              "800f66fe-fdc8-4cb2-a244-eade023c9259.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "1998-08-27T00:00:00",
-            "Author": ""
-          },
-          {
-            "Type": 1,
             "Id": "633d2d6e-de85-4dea-865a-5e23e91165d8",
             "Title": "Time for a great reset of the financial system",
-            "Description": "A 30-year debt supercycle that has fuelled inequality illustrates the need for a new regime",
+            "Description": "A 30-year debt super cycle that has fuelled inequality illustrates the need for a new regime",
             "Url": "https://www.ft.com/content/39c53b9f-f443-4dde-9cdb-07e8999ec783",
-            "Duration": 8,
+            "Duration": 9,
             "Images": [
               "1bc0c99b-0506-4cb7-bd5c-d056f614d860.png"
             ],
@@ -509,7 +501,7 @@
             "Id": "fb394224-5db9-4dfe-88ff-a34f96e0b5ac",
             "Title": "The Great Reset: How to Build a Better World Post-COVID-19",
             "Description": "TIME and the World Economic Forum asked leading thinkers to share ideas for how to transform the way we live and work ",
-            "Source": "Time",
+            "Source": "Time Magazine",
             "Url": "https://time.com/collection/great-reset/",
             "Duration": 8,
             "Images": [
@@ -547,22 +539,38 @@
             "ImageEdits": [],
             "DatePublished": "2020-11-10T00:00:00",
             "Author": "Il Teatro della Politica"
+          },
+          {
+            "Type": 1,
+            "Id": "43eac138-d93f-4c9c-a88d-a388e9a1eff7",
+            "Title": "‘Future of Money’ economist says the end of cash is coming—here’s what could replace it",
+            "Description": "Economist Eswar Prasad's predictions on how CBDCs, stablecoins and cryptocurrency may overtake the use of physical cash.",
+            "Source": "CNBC",
+            "Url": "https://www.cnbc.com/2021/11/11/predictions-for-future-of-money-cbdcs-stablecoins-cryptocurrency.html",
+            "Duration": 8,
+            "Images": [
+              "64e7f721-7fa1-4ab5-8a3e-e88d0540eab9.png",
+              "7fa72531-f64a-4959-a6e5-706891520c56.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-11-11T00:00:00",
+            "Author": "Taylor Locke"
           }
         ]
       }
     },
     {
       "Index": 6,
+      "RenderOrder": 5,
       "X": 3,
       "Y": 2,
       "Piece": {
         "Id": "e4e14862-982e-4c54-9810-4b81f3a228e2",
         "Title": "Charities, Zoos, Football clubs and everything in between is getting free money from the government.",
         "Thesis": "because pandemic. ",
-        "Duration": 15,
+        "Duration": 12,
         "Keywords": [
-          "charities",
-          "$$$"
+          "Charities"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -571,7 +579,7 @@
           {
             "Type": 1,
             "Id": "9359c5ec-5283-41e4-baa3-53af4206efae",
-            "Title": "Financial support for voluntary, community and social enterprise (VCSE) organisations to respond to coronavirus (COVID-19)",
+            "Title": "Financial support for voluntary, community and social enterprise (VCSE) organizations to respond to coronavirus (COVID-19)",
             "Description": "The government has pledged £750 million to ensure VCSE can continue their vital work supporting the country during the coronavirus (COVID-19) outbreak, including £200 million for the Coronavirus Community Support Fund, along with an additional £150 million from dormant bank and building society accounts.",
             "Source": "GOV.UK",
             "Url": "https://www.gov.uk/guidance/financial-support-for-voluntary-community-and-social-enterprise-vcse-organisations-to-respond-to-coronavirus-covid-19",
@@ -587,21 +595,20 @@
             "Author": ""
           }
         ]
-      },
-      "Valid": true
+      }
     },
     {
       "Index": 7,
+      "RenderOrder": 6,
       "X": 1,
       "Y": 3,
       "Piece": {
         "Id": "76afbd0f-e850-41a9-b987-668b2ad6faf3",
-        "Title": "Hospitals and health care professionals",
-        "Thesis": "130m doses given in UK, total would be 1,950,000,000m (almost 2bil)\r\nsome 50,000 doctors in UK, comes out to 30K for each doctor\r\n\r\nhow many registered patients per GP in UK?\r\n2100 * 12 = 25200gbp per year",
+        "Title": "Hospitals and health care professionals.",
+        "Thesis": "Since the pandemic was declared, funds are flowing freely towards health care. Fact checkers are on it. Recording empty hospitals is not a good look, nor is questioning the 4000 capacity field hospitals that only ever treated up to 40 patients. ",
         "Duration": 15,
         "Keywords": [
-          "Health care",
-          "$$$"
+          "Health Care"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -686,7 +693,7 @@
             "Type": 1,
             "Id": "5acc2890-f3f2-4d64-a5bd-97051311442a",
             "Title": "Covid: UK spent £569m on 20,900 ventilators but most remain unused",
-            "Description": "Government was right to prioritise speed over cost, says National Audit Office",
+            "Description": "Government was right to prioritize speed over cost, says National Audit Office",
             "Source": "the Guardian",
             "Url": "https://www.theguardian.com/world/2020/sep/30/uk-spent-569m-on-20900-ventilators-for-covid-care-but-most-remain-unused",
             "Duration": 8,
@@ -759,21 +766,20 @@
             "Author": ""
           }
         ]
-      },
-      "Valid": true
+      }
     },
     {
       "Index": 8,
+      "RenderOrder": 7,
       "X": 2,
       "Y": 3,
       "Piece": {
         "Id": "bfc56879-2504-40ca-b9f5-aeb0e97b8405",
-        "Title": "Companies / Businesses / Employers. How are they affected by the pandemic?",
-        "Thesis": "Employers are expected to carry out COVID-19 risk assessments and get  \"Covid secure\" certifications for bussinesses. They have to play along to stay in business and to participate in the fourlough schemes. This might eventually lead to imposing vaccine mandates to their workforce. A whole new economy has been created because of the pandemic, seemingly set to replace the normal economic activity that has been outlawed.",
-        "Duration": 25,
+        "Title": "Companies / Businesses / Employers.\r\nHow are they affected?\r\n",
+        "Thesis": "Employers are expected to carry out COVID-19 risk assessments and get  \"Covid secure\" certifications for businesses. They have to play along to stay in business and to participate in the furlough schemes. This might eventually lead to imposing vaccine mandates to their workforce.\r\nA whole new covid economy has spun up, seemingly set to replace the normal economic activity that has been outlawed.",
+        "Duration": 21,
         "Keywords": [
-          "Employers",
-          "$$$"
+          "Employers"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -783,7 +789,7 @@
             "Type": 1,
             "Id": "ec35d8d4-8e66-41ca-ada1-ede5b4a569fa",
             "Title": "COVID-19 Risk Management | Assurity Consulting",
-            "Description": "As COVID-19 is so new, and the need to specifically risk assess for it being a recent requirement, knowing what suitable and sufficient looks like, as well as keeping pace with changing requirements we recognise that is not easy.",
+            "Description": "As COVID-19 is so new, and the need to specifically risk assess for it being a recent requirement, knowing what suitable and sufficient looks like, as well as keeping pace with changing requirements we recognize that is not easy.",
             "Source": "Assurity Consulting Ltd",
             "Url": "https://www.assurityconsulting.co.uk/services/covid-19-risk-management",
             "Duration": 8,
@@ -884,21 +890,20 @@
             "Author": ""
           }
         ]
-      },
-      "Valid": true
+      }
     },
     {
       "Index": 9,
+      "RenderOrder": 8,
       "X": 3,
       "Y": 3,
       "Piece": {
         "Id": "19809e5f-0f4f-46f2-88cb-491ce248084e",
         "Title": "Individuals",
-        "Thesis": "The average mainstream media watching person, has more than a few reasons to follow along. Including free lap dances.\r\n",
+        "Thesis": "The average mainstream media watching person, is under a constant barrage of fear mongering and has a few additional reasons to play along. \r\n",
         "Duration": 15,
         "Keywords": [
-          "Individuals",
-          "$$$"
+          "Individuals"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -948,8 +953,7 @@
             "Author": ""
           }
         ]
-      },
-      "Valid": true
+      }
     }
   ]
 }

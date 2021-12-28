@@ -37,6 +37,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.dotRight = new System.Windows.Forms.PictureBox();
             this.dotBottom = new System.Windows.Forms.PictureBox();
             this.dotLeft = new System.Windows.Forms.PictureBox();
+            this.txtOrder = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dotTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dotRight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dotBottom)).BeginInit();
@@ -55,7 +56,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.lblType.Name = "lblType";
             this.lblType.Size = new System.Drawing.Size(222, 21);
             this.lblType.TabIndex = 5;
-            this.lblType.Text = "";
             this.lblType.DragDrop += new System.Windows.Forms.DragEventHandler(this.lblType_DragDrop);
             this.lblType.DragEnter += new System.Windows.Forms.DragEventHandler(this.lblType_DragEnter);
             this.lblType.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblType_MouseDown);
@@ -133,11 +133,22 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.dotLeft.TabStop = false;
             this.dotLeft.Visible = false;
             // 
+            // txtOrder
+            // 
+            this.txtOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtOrder.Location = new System.Drawing.Point(0, 172);
+            this.txtOrder.Name = "txtOrder";
+            this.txtOrder.Size = new System.Drawing.Size(27, 27);
+            this.txtOrder.TabIndex = 13;
+            this.txtOrder.Text = "1";
+            this.txtOrder.Validated += new System.EventHandler(this.txtOrder_Validated);
+            // 
             // PuzzlePieceUi
             // 
             this.AllowDrop = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.txtOrder);
             this.Controls.Add(this.dotLeft);
             this.Controls.Add(this.dotBottom);
             this.Controls.Add(this.dotRight);
@@ -154,6 +165,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             ((System.ComponentModel.ISupportInitialize)(this.dotBottom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dotLeft)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -165,5 +177,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private System.Windows.Forms.PictureBox dotRight;
         private System.Windows.Forms.PictureBox dotBottom;
         private System.Windows.Forms.PictureBox dotLeft;
+        private System.Windows.Forms.TextBox txtOrder;
     }
 }

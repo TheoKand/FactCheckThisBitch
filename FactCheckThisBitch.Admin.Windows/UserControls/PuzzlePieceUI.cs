@@ -1,6 +1,6 @@
 ﻿using FactCheckThisBitch.Models;
 using System;
-using System.Linq;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
@@ -20,7 +20,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         }
 
         public new Action OnClick;
+        public new Action OnChanged;
         public new Action<int, int> OnDragDrop;
+
 
         public bool ConnectedTop
         {
@@ -53,6 +55,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private new void Load()
         {
+            txtOrder.Text = _puzzlePiece.RenderOrder.ToString();
             btnLabel.Text = _puzzlePiece.Piece.Title;
             lblKeywords.Text = _puzzlePiece.Piece.Keywords != null ? string.Join(Environment.NewLine, _puzzlePiece.Piece.Keywords) : "";
         }
@@ -81,6 +84,17 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         {
             OnClick?.Invoke();
         }
+
+        private void txtOrder_Validated(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtOrder.Text, NumberStyles.Integer, CultureInfo.InvariantCulture, out int renderOrder))
+            {
+                _puzzlePiece.RenderOrder = renderOrder;
+                OnChanged?.Invoke();
+            }
+        }
         #endregion
+
+
     }
 }

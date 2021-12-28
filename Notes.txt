@@ -1,8 +1,7 @@
 ﻿TODO
 -Complete obfuscation: shorten links in description
--process each image (manual or automatic), select all circle regions and effect > pixelate
- so it's readable by human but not machine
-- multiple languages. UI shows one lang at a time
+-after adding RenderOrder, the Index is obsolete. It should be just the order of the item in the array that changes
+ when you drag around
 
 Later
 -add boolean field in piece to control if thesis is rendered after the references

@@ -11,7 +11,7 @@ namespace FactCheckThisBitch.Render
         public static string GetKeywordsText(this Piece piece,int skip=0,int take=100)
         {
             var result = string.Join(Environment.NewLine,
-                piece.Keywords.Skip(skip).Take(take).Select(k => $"• {k.KeywordFormat()}"));
+                piece.Keywords.Skip(skip).Take(take).Select(k => $"{k.KeywordFormat()}"));
             return result;
         }
 
@@ -60,7 +60,7 @@ namespace FactCheckThisBitch.Render
                                 Left = 0,
                                 Top = 0,
                                 Right = 250,
-                                Bottom = 157
+                                Bottom = 80
                             }
                         }
 

@@ -80,6 +80,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
                     puzzlePieceUi.OnClick = () => OnPieceClicked(piece);
                     puzzlePieceUi.OnDragDrop = OnPieceDragDrop;
+                    puzzlePieceUi.OnChanged = OnChanged;
 
                     Controls.Add(puzzlePieceUi);
 

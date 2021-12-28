@@ -48,12 +48,13 @@ namespace FactCheckThisBitch.Models
             StringBuilder result = new StringBuilder();
             result.AppendLine($"--- {puzzle.Title.WrongSpeakToLeetSpeak(level)} ---");
             result.AppendLine($"{puzzle.Thesis.WrongSpeakToLeetSpeak(level)}");
-            result.AppendLine();
+            
 
             foreach (var puzzlePiece in puzzle.PuzzlePieces)
             {
                 var piece = puzzlePiece.Piece;
 
+                result.AppendLine();
                 result.AppendLine($"{puzzlePiece.Index}. {piece.Title.WrongSpeakToLeetSpeak(level)}");
                 if (includeDescriptions)
                 {
@@ -69,7 +70,6 @@ namespace FactCheckThisBitch.Models
                     }
 
                     result.AppendLine($"\t{reference.Url}");
-                    result.AppendLine();
                 }
             }
 
