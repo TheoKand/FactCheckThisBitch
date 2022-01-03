@@ -8,4 +8,8 @@
     <StartupObject />
   </PropertyGroup>
 
+  <PropertyGroup> 
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);NETSDK1107</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+
 </Project>
