@@ -1,0 +1,14 @@
+﻿# build networkPoc docker image
+docker build -t dockernetworkpoc .
+
+# dun networkPoc docker container, using NordVpn docker container https://github.com/bubuntux/nordvpn
+docker run -it --net=container:vpn dockernetworkpoc
+
+# stop networkPoc container
+docker stop dockernetworkpoc
+
+#remove networkPoc container
+docker rm -v dockernetworkpoc
+
+
+# now this poc must be changed to view a bitchute video
