@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using FactCheckThisBitch.Models;
+﻿using FactCheckThisBitch.Models;
 using SixLabors.Fonts;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Drawing.Processing;
 using SixLabors.ImageSharp.Processing;
-using SixLabors.ImageSharp.Processing.Processors.Normalization;
+using System;
+using System.IO;
 
 namespace FactCheckThisBitch.Render
 {

@@ -1,8 +1,8 @@
 {
   "CurrentPuzzle": "we-re-all-in-thi-togeth-r-EN.json",
   "RenderOptionsTemplate": "template-english-money.pptm",
-  "RenderOptionsHandleWrongSpeak": false,
-  "RenderOptionsHandleBlurryAreas": false,
+  "RenderOptionsHandleWrongSpeak": true,
+  "RenderOptionsHandleBlurryAreas": true,
   "PuzzleDescriptionOptionsLeetLevel": "None",
   "PuzzleDescriptionOptionsIncludeDescriptions": false,
   "PuzzleDescriptionOptionsIncludeReferenceTitles": false,

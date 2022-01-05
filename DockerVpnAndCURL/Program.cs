@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text.RegularExpressions;
 
 namespace DockerVpnAndCURL
 {
@@ -15,7 +12,7 @@ namespace DockerVpnAndCURL
 
 
         private static string NordVpnCountries =
-            "France, Germany, Netherlands, United_Kingdom, Belgium, Canada";
+            "France, Germany, Netherlands, United_Kingdom, Canada";
 
         static void Main(string[] args)
         {
@@ -26,48 +23,35 @@ namespace DockerVpnAndCURL
                 for (int i = 0; i < countries.Count; i++)
                 {
                     var country = countries[i];
+                    var countryVpnContainerName = $"vpn{country}";
+                    var countryContainerName = country.ToLowerInvariant();
 
-                    Console.WriteLine(country);
+                    ConsoleTs.WriteLine(country);
+
+                    RunCommand($"run -ti --cap-add=NET_ADMIN --name {countryVpnContainerName} -e CONNECT={country} -e USER=tkandiliotis@gmail.com  -e PASS=NordVpn123 -e TECHNOLOGY=NordLynx -d ghcr.io/bubuntux/nordvpn", 10);
+                    var vpnLog = RunCommand($"logs {countryVpnContainerName}").NordVpnContainerLog();
+                    ConsoleTs.WriteLine(vpnLog);
 
                     RunCommand(
-                        $"run -ti --cap-add=NET_ADMIN --name vpn{country} -e CONNECT={country} -e USER=tkandiliotis@gmail.com  -e PASS=NordVpn123 -e TECHNOLOGY=OpenVPN -d ghcr.io/bubuntux/nordvpn");
+                        $"run -it --net=container:{countryVpnContainerName} --name {countryContainerName} dockernetworkpoc", 4);
+                    ConsoleTs.WriteLine(RunCommand($"logs {countryContainerName}"));
 
-                    System.Threading.Thread.Sleep(10  * 1000);
-
-                    RunCommand(
-                        $"run -it --net=container:vpn{country} --name dockernetworkpoc{country} dockernetworkpoc");
-                
-                    System.Threading.Thread.Sleep(12 * 1000);
-
-                    RunCommand($"stop vpn{country}");
-                    RunCommand($"stop browser{country}");
-                    RunCommand($"rm -v vpn{country}");
-                    RunCommand($"rm -v browser{country}");
-
-                    System.Threading.Thread.Sleep(5 * 1000);
+                    RunCommand($"stop {countryVpnContainerName}");
+                    RunCommand($"stop {countryContainerName}");
+                    RunCommand($"rm -v {countryVpnContainerName}");
+                    RunCommand($"rm -v {countryContainerName}",30);
                 }
             }
 
 
-            Console.WriteLine("Press any key to exit...");
+            ConsoleTs.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
 
-        private static void IncreaseViewCount(int pauseSeconds)
+        private static string RunCommand(string command, int delayInSeconds = 1)
         {
-            Console.Write("Restarting vpn...");
-            RunCommand("restart vpn");
-            System.Threading.Thread.Sleep(pauseSeconds * 1000);
-            Console.Write("Viewing...");
-            RunCommand("restart browser");
-            Console.Write("OK");
+            var output = "";
 
-        }
-
-
-
-        private static void RunCommand(string command)
-        {
             var processInfo = new ProcessStartInfo("docker", $"{command}")
             {
                 CreateNoWindow = true,
@@ -75,17 +59,30 @@ namespace DockerVpnAndCURL
                 RedirectStandardOutput = true,
                 RedirectStandardError = true
             };
-            using var process = new Process();
-            process.StartInfo = processInfo;
-            var started = process.Start();
 
-            process.WaitForExit(12000);
-            if (!process.HasExited)
+            using (var process = new Process())
             {
-                process.Kill();
+                process.StartInfo = processInfo;
+                process.Start();
+                output = process.StandardOutput.ReadToEnd();
+                if (!process.HasExited)
+                {
+                    process.WaitForExit(-1);
+                    output = process.StandardOutput.ReadToEnd();
+                }
+
+                if (process.ExitCode != 0)
+                {
+                    var error = $"Error in command {command} {process.StandardError.ReadToEnd()}";
+                    throw new Exception(error);
+                }
+                process.Close();
             }
-            var exitCode = process.ExitCode;
-            process.Close();
+
+            System.Threading.Thread.Sleep(delayInSeconds * 1000);
+
+            return output;
+
         }
 
 
