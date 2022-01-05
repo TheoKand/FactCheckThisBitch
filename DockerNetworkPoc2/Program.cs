@@ -15,22 +15,16 @@ namespace DockerNetworkPoc2
 
             //RedirectConsoleToLogFile();
 
-            ConsoleTs.WriteLine("Querying IP info...");
-            var (ip, ipInfo) = NetworkStuff.GetIpInfo();
-            ConsoleTs.WriteLine($"{ip} {ipInfo}");
+            //ConsoleTs.WriteLine("Querying IP info...");
+            //var (ip, ipInfo) = NetworkStuff.GetIpInfo();
+            //ConsoleTs.WriteLine($"{ip} {ipInfo}");
 
-            var pagesToDownload = 
-                "https://www.bitchute.com/video/KArcsO2KL7iA/"
-                    .Split(",");
+            //ConsoleTs.WriteLine();
 
-            ConsoleTs.WriteLine();
-
-            ConsoleTs.WriteLine("Doing bitchute stuff...");
-            using (var bitchute = new BitchuteStuff(pagesToDownload))
+            //ConsoleTs.WriteLine("Doing bitchute stuff...");
+            using (var bitchute = new BitchuteStuff())
             {
                 bitchute.DoStuff();
-
-                System.Threading.Thread.Sleep(10 * 1000);
             }
 
             //ResetConsole();

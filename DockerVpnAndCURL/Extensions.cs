@@ -15,7 +15,7 @@ namespace DockerVpnAndCURL
                 return match.Groups[0].Value;
             } else
             {
-                if (containerLog.Contains("Too Many Requests"))
+                if (containerLog.Contains("[Error] logging in: default api: Too Many Requests"))
                 {
                     return "Too Many Requests";
                 } else
