@@ -364,3 +364,6 @@ FodyWeavers.xsd
 
 bin/
 obj/
+
+OpenShot/*.mp4
+*.mp4
