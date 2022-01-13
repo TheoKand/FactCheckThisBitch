@@ -16,15 +16,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactCheckThisBitch.Render", "FactCheckThisBitch.Render\FactCheckThisBitch.Render.csproj", "{9341C3D1-5053-4653-8DA6-707B4D954D6B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerVpnAndCURL", "DockerVpnAndCURL\DockerVpnAndCURL.csproj", "{A7D38E83-8EA2-4AC4-BF78-4A5382708F6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkOperations", "VpnStuff\NetworkOperations\NetworkOperations.csproj", "{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrowserUtil", "BrowserUtil\BrowserUtil.csproj", "{4E057B1F-3D36-4195-9933-BC3E893D2D53}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VpnStuff", "VpnStuff", "{3FD82304-0134-480F-85F5-801FE011AE48}"
+	ProjectSection(SolutionItems) = preProject
+		VpnStuff\NetworkOperations\Notes.txt = VpnStuff\NetworkOperations\Notes.txt
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerNetworkPoc2", "DockerNetworkPoc2\DockerNetworkPoc2.csproj", "{311601C5-707E-4603-8251-CA859D41AB89}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{36024DCA-B4A0-442B-823C-23E5DFFBED15}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Draft", "Draft", "{6E691603-0F62-4E3D-ACCA-F5C153E448D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerVpnOrchestrator", "VpnStuff\DockerVpnAndCURL\DockerVpnOrchestrator.csproj", "{4A289E1E-6115-455A-A44A-16F2908988E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,31 +47,21 @@ Global
 		{9341C3D1-5053-4653-8DA6-707B4D954D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9341C3D1-5053-4653-8DA6-707B4D954D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9341C3D1-5053-4653-8DA6-707B4D954D6B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A7D38E83-8EA2-4AC4-BF78-4A5382708F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7D38E83-8EA2-4AC4-BF78-4A5382708F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7D38E83-8EA2-4AC4-BF78-4A5382708F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7D38E83-8EA2-4AC4-BF78-4A5382708F6B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E057B1F-3D36-4195-9933-BC3E893D2D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E057B1F-3D36-4195-9933-BC3E893D2D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E057B1F-3D36-4195-9933-BC3E893D2D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E057B1F-3D36-4195-9933-BC3E893D2D53}.Release|Any CPU.Build.0 = Release|Any CPU
-		{311601C5-707E-4603-8251-CA859D41AB89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{311601C5-707E-4603-8251-CA859D41AB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{311601C5-707E-4603-8251-CA859D41AB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{311601C5-707E-4603-8251-CA859D41AB89}.Release|Any CPU.Build.0 = Release|Any CPU
-		{36024DCA-B4A0-442B-823C-23E5DFFBED15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36024DCA-B4A0-442B-823C-23E5DFFBED15}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36024DCA-B4A0-442B-823C-23E5DFFBED15}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36024DCA-B4A0-442B-823C-23E5DFFBED15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A289E1E-6115-455A-A44A-16F2908988E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A289E1E-6115-455A-A44A-16F2908988E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A289E1E-6115-455A-A44A-16F2908988E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A289E1E-6115-455A-A44A-16F2908988E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A7D38E83-8EA2-4AC4-BF78-4A5382708F6B} = {6E691603-0F62-4E3D-ACCA-F5C153E448D8}
-		{4E057B1F-3D36-4195-9933-BC3E893D2D53} = {6E691603-0F62-4E3D-ACCA-F5C153E448D8}
-		{311601C5-707E-4603-8251-CA859D41AB89} = {6E691603-0F62-4E3D-ACCA-F5C153E448D8}
-		{36024DCA-B4A0-442B-823C-23E5DFFBED15} = {6E691603-0F62-4E3D-ACCA-F5C153E448D8}
+		{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D} = {3FD82304-0134-480F-85F5-801FE011AE48}
+		{4A289E1E-6115-455A-A44A-16F2908988E6} = {3FD82304-0134-480F-85F5-801FE011AE48}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {68040856-9BF9-49A4-AF0C-0C673A60F726}

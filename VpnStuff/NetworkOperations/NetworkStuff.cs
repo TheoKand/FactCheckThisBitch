@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Text.RegularExpressions;
 
-namespace DockerNetworkPoc2
+namespace NetworkOperations
 {
     public class NetworkStuff
     {

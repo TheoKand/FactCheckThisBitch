@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 
-namespace DockerVpnAndCURL
+namespace DockerVpnOrchestrator
 {
     class Program
     {
@@ -13,7 +13,7 @@ namespace DockerVpnAndCURL
             "Albania, Argentina, Australia, Austria, Belgium, Bosnia_And_Herzegovina, Brazil, Bulgaria, Canada, Chile, Costa_Rica, Croatia, Cyprus, Czech_Republic, Denmark, Estonia, Finland, France, Georgia, Germany, Greece, Hong_Kong, Hungary, Iceland, India, Indonesia, Ireland, Israel, Italy, Japan, Latvia, Lithuania, Luxembourg, Malaysia, Mexico, Moldova, Netherlands, New_Zealand, North_Macedonia, Norway, Poland, Portugal, Romania, Serbia, Singapore, Slovakia, Slovenia, South_Africa, South_Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, United_Kingdom, United_States, Vietnam";
 
         private static string NordVpnCountries =
-            "United_Kingdom,United_Kingdom,France, Germany, Netherlands, United_Kingdom, Canada,Austria,Denmark,Finland";
+            "United_Kingdom,United_Kingdom,France, Germany, Netherlands, United_Kingdom, United_Kingdom,United_Kingdom,United_Kingdom,United_Kingdom";
 
         //private static string NordVpnCountries =
         //    "Denmark";
@@ -22,10 +22,17 @@ namespace DockerVpnAndCURL
         {
             var countries = NordVpnCountries.Split(",").Select(x => x.Trim()).ToList();
 
-            var initialDelayMinutes = 40;
-            Thread.Sleep(initialDelayMinutes * 1000);
+            //TODO: Move all commmon extensions in FactCheckThisBitch.Common and use
+            //ideas for extensions
+            //1. wait in minutes and report in console
+            //2. console with timestamp
+            //3. console and log in file (also get current process folder and create log file in there)
+            var initialDelayMinutes = 0;
+            ConsoleTs.WriteLine($"Waiting {initialDelayMinutes} minutes...");
+            Thread.Sleep(initialDelayMinutes * 60 * 1000);
 
-            while(true)
+
+            while (true)
             {
                 var actions = new List<Action>();
                 for (int i = 0; i < countries.Count; i++)
@@ -41,7 +48,7 @@ namespace DockerVpnAndCURL
 
                         Thread.Sleep(index * 1000);
 
-                        RunCommand($"run -ti --cap-add=NET_ADMIN --name {countryVpnContainerName} -e CONNECT={country} -e USER=tkandiliotis@gmail.com  -e PASS=NordVpn123 -e TECHNOLOGY=NordLynx -d ghcr.io/bubuntux/nordvpn", 30);
+                        RunCommand($"run -ti --cap-add=NET_ADMIN --name {countryVpnContainerName} -e CONNECT={country} -e USER=tkandiliotis@gmail.com  -e PASS=NordVpn123 -e TECHNOLOGY=NordLynx -d ghcr.io/bubuntux/nordvpn", 60);
                         var vpnLog = RunCommand($"logs {countryVpnContainerName}").NordVpnContainerLog();
                         ConsoleTs.WriteLine($"{index}:{country}:{vpnLog}");
 

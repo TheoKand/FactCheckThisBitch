@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace DockerNetworkPoc2
+namespace NetworkOperations
 {
     public static class ConsoleTs
     {

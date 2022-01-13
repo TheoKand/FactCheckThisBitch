@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace DockerNetworkPoc2
+namespace NetworkOperations
 {
     class Program
     {
@@ -15,14 +15,14 @@ namespace DockerNetworkPoc2
 
             //RedirectConsoleToLogFile();
 
-            //ConsoleTs.WriteLine("Querying IP info...");
-            //var (ip, ipInfo) = NetworkStuff.GetIpInfo();
+            ConsoleTs.WriteLine("Querying IP info...");
+            var (ip, ipInfo) = NetworkStuff.GetIpInfo();
             //ConsoleTs.WriteLine($"{ip} {ipInfo}");
 
             //ConsoleTs.WriteLine();
 
-            //ConsoleTs.WriteLine("Doing bitchute stuff...");
-            using (var bitchute = new BitchuteStuff())
+            ConsoleTs.WriteLine("Doing bitchute stuff...");
+            using (var bitchute = new BitchuteStuff($"{ip} {ipInfo}"))
             {
                 bitchute.DoStuff();
             }
