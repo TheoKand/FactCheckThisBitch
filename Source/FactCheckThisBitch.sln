@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactCheckThisBitch.Models", "FactCheckThisBitch.Models\FactCheckThisBitch.Models.csproj", "{33F0C004-2C18-4291-B139-B74C6AD03220}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactCheckThisBitch.Admin.Windows", "FactCheckThisBitch.Admin.Windows\FactCheckThisBitch.Admin.Windows.csproj", "{0A3A0D13-7565-4D91-9871-721605AD995E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FackCheckThisBitch.Common", "FackCheckThisBitch.Common\FackCheckThisBitch.Common.csproj", "{5D3A14C4-23D4-4959-9670-EA5B873C9CB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F18BCFB-E619-4E76-A199-00A9B03B086F}"
+	ProjectSection(SolutionItems) = preProject
+		Notes.txt = Notes.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactCheckThisBitch.Render", "FactCheckThisBitch.Render\FactCheckThisBitch.Render.csproj", "{9341C3D1-5053-4653-8DA6-707B4D954D6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkOperations", "VpnStuff\NetworkOperations\NetworkOperations.csproj", "{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VpnStuff", "VpnStuff", "{3FD82304-0134-480F-85F5-801FE011AE48}"
+	ProjectSection(SolutionItems) = preProject
+		VpnStuff\NetworkOperations\Notes.txt = VpnStuff\NetworkOperations\Notes.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerVpnOrchestrator", "VpnStuff\DockerVpnAndCURL\DockerVpnOrchestrator.csproj", "{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33F0C004-2C18-4291-B139-B74C6AD03220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F0C004-2C18-4291-B139-B74C6AD03220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F0C004-2C18-4291-B139-B74C6AD03220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F0C004-2C18-4291-B139-B74C6AD03220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A3A0D13-7565-4D91-9871-721605AD995E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A3A0D13-7565-4D91-9871-721605AD995E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A3A0D13-7565-4D91-9871-721605AD995E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A3A0D13-7565-4D91-9871-721605AD995E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D3A14C4-23D4-4959-9670-EA5B873C9CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D3A14C4-23D4-4959-9670-EA5B873C9CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D3A14C4-23D4-4959-9670-EA5B873C9CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D3A14C4-23D4-4959-9670-EA5B873C9CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9341C3D1-5053-4653-8DA6-707B4D954D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9341C3D1-5053-4653-8DA6-707B4D954D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9341C3D1-5053-4653-8DA6-707B4D954D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9341C3D1-5053-4653-8DA6-707B4D954D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D} = {3FD82304-0134-480F-85F5-801FE011AE48}
+		{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD} = {3FD82304-0134-480F-85F5-801FE011AE48}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68040856-9BF9-49A4-AF0C-0C673A60F726}
+	EndGlobalSection
+EndGlobal
