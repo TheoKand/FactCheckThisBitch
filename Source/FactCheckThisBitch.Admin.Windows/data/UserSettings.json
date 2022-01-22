@@ -1,8 +1,9 @@
 {
   "CurrentPuzzle": "r-ai-n--we-re-all-in-thi-togeth-r-EN.json",
-  "RenderOptionsTemplate": "template-english-money.pptm",
-  "RenderOptionsHandleWrongSpeak": true,
-  "RenderOptionsHandleBlurryAreas": true,
+  "RenderOptionsTemplate": "template-english-RAIN.pptm",
+  "RenderOptionsRealAiNews": true,
+  "RenderOptionsHandleWrongSpeak": false,
+  "RenderOptionsHandleBlurryAreas": false,
   "PuzzleDescriptionOptionsLeetLevel": "None",
   "PuzzleDescriptionOptionsIncludeDescriptions": false,
   "PuzzleDescriptionOptionsIncludeReferenceTitles": false,

@@ -36,6 +36,17 @@ namespace FactCheckThisBitch.Admin.Windows
             }
         }
 
+        private bool _renderOptionsRealAiNews;
+        public bool RenderOptionsRealAiNews
+        {
+            get => _renderOptionsRealAiNews;
+            set
+            {
+                _renderOptionsRealAiNews = value;
+                Save();
+            }
+        }
+
         private bool _renderOptionsHandleWrongSpeak;
         public bool RenderOptionsHandleWrongSpeak
         {

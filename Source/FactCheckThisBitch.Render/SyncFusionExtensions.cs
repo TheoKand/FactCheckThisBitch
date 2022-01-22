@@ -11,23 +11,28 @@ namespace FactCheckThisBitch.Render
     public static class SyncFusionExtensions
     {
         public static IGroupShape GroupShape(this ISlide slide, string groupShapeName) =>
-            slide.GroupShapes.First(s => s.ShapeName == groupShapeName);
+            slide.GroupShapes.FirstOrDefault(s => s.ShapeName == groupShapeName);
 
         public static void UpdateText(this IGroupShape groupShape, string shapeName, string text)
         {
-            var shape = groupShape.Shapes.First(s => s.ShapeName == shapeName) as IShape;
+            if (groupShape == null) return;
+            var shape = groupShape.Shapes.FirstOrDefault(s => s.ShapeName == shapeName) as IShape;
+            if (shape == null) return;
             shape.TextBody.Text = text;
         }
 
         public static void UpdateText(this ISlide slide, string textboxName, string text)
         {
-            var shape = slide.Shapes.First(s => s.ShapeName == textboxName) as IShape;
+            var shape = slide.Shapes.FirstOrDefault(s => s.ShapeName == textboxName) as IShape;
+            if (shape == null) return;
             shape.TextBody.Text = text;
         }
 
         public static void ReplacePicture(this IGroupShape groupShape, string pictureName, string pictureFileName)
         {
-            var picture = groupShape.Shapes.First(s => s.ShapeName == pictureName) as IPicture;
+            if (groupShape == null) return;
+            var picture = groupShape.Shapes.FirstOrDefault(s => s.ShapeName == pictureName) as IPicture;
+            if (picture == null) return;
             using (Stream pictureStream = File.Open(pictureFileName, FileMode.Open))
             {
                 using (MemoryStream memoryStream = new MemoryStream())
@@ -40,7 +45,8 @@ namespace FactCheckThisBitch.Render
 
         public static void ReplacePicture(this ISlide slide, string pictureName, string pictureFileName)
         {
-            var picture = slide.Pictures.First(p => p.ShapeName == pictureName);
+            var picture = slide.Pictures.FirstOrDefault(p => p.ShapeName == pictureName);
+            if (picture == null) return;
 
             using (Stream pictureStream = File.Open(pictureFileName, FileMode.Open))
             {

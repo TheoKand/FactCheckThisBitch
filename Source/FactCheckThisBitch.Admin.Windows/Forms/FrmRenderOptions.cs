@@ -37,6 +37,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 lstTemplate.SelectedItem = UserSettings.Instance().RenderOptionsTemplate;
             }
 
+            chkRealAiNews.Checked = UserSettings.Instance().RenderOptionsRealAiNews;
             chkBlurryAreas.Checked = UserSettings.Instance().RenderOptionsHandleBlurryAreas;
             chkWrongSpeak.Checked = UserSettings.Instance().RenderOptionsHandleWrongSpeak;
         }
@@ -44,6 +45,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void SaveForm()
         {
             UserSettings.Instance().RenderOptionsTemplate = lstTemplate.SelectedItem.ToString();
+            UserSettings.Instance().RenderOptionsRealAiNews = chkRealAiNews.Checked;
             UserSettings.Instance().RenderOptionsHandleBlurryAreas = chkBlurryAreas.Checked;
             UserSettings.Instance().RenderOptionsHandleWrongSpeak = chkWrongSpeak.Checked;
         }
@@ -53,6 +55,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             Options.Template = lstTemplate.SelectedValue.ToString();
             Options.HandleWrongSpeak = chkWrongSpeak.Checked;
             Options.HandleBlurryAreas = chkBlurryAreas.Checked;
+            Options.RealAiNews = chkRealAiNews.Checked;
             DialogResult = DialogResult.OK;
 
             SaveForm();
@@ -65,5 +68,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         public string Template;
         public bool HandleWrongSpeak;
         public bool HandleBlurryAreas;
+        public bool RealAiNews;
     }
 }

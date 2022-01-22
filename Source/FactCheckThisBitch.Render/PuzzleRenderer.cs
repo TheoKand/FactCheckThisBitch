@@ -21,8 +21,14 @@ namespace FactCheckThisBitch.Render
         private readonly string _mediaFolder;
         private readonly bool _handleWrongSpeak;
         private readonly bool _handleBlurryAreas;
+        private readonly bool _realAiNewsRender;
 
-        public PuzzleRenderer(Puzzle puzzle, string template, string assetsFolder, string outputFolder, string mediaFolder, bool handleWrongSpeak = false, bool handleBlurryAreas = false)
+        private readonly PuzzleTheme _puzzleTheme = new PuzzleTheme
+        {
+            PieceBgColor = PuzzleTheme.PieceBGColors.Blue, PieceTextColor = Color.White
+        };
+
+        public PuzzleRenderer(Puzzle puzzle, string template, string assetsFolder, string outputFolder, string mediaFolder,bool realAiNewsRender, bool handleWrongSpeak = false, bool handleBlurryAreas = false)
         {
             _puzzle = puzzle;
             _template = template;
@@ -31,6 +37,7 @@ namespace FactCheckThisBitch.Render
             _mediaFolder = mediaFolder;
             _handleWrongSpeak = handleWrongSpeak;
             _handleBlurryAreas = handleBlurryAreas;
+            _realAiNewsRender = realAiNewsRender;
         }
 
         public void Render()
@@ -60,7 +67,7 @@ namespace FactCheckThisBitch.Render
 
         private void RenderPuzzleForEachSlide()
         {
-            var emptyPuzzleImagePath = Path.Combine(_assetsFolder, "Images","Puzzle0.png");
+            var emptyPuzzleImagePath = Path.Combine(_assetsFolder, "Images","Puzzle", _puzzleTheme.PieceBgColor.ToString(), "Puzzle0.png");
             File.Copy(emptyPuzzleImagePath, Path.Combine(_outputFolder, "Puzzle0.png"));
             foreach (var puzzlePiece in _puzzle.PuzzlePieces.OrderBy(_ => _.RenderOrder))
             {
@@ -91,7 +98,7 @@ namespace FactCheckThisBitch.Render
 
                 var pieceIndex = _puzzle.PuzzlePieces.IndexOf(puzzlePiece) + 1;
 
-                var pieceTemplatePath = Path.Combine(_assetsFolder, "Images", $"Piece{pieceIndex}.png");
+                var pieceTemplatePath = Path.Combine(_assetsFolder, "Images","Puzzle", _puzzleTheme.PieceBgColor.ToString(), $"Piece{pieceIndex}.png");
                 var pieceWithKeywordsPath = Path.Combine(_outputFolder, $"Piece{puzzlePiece.RenderOrder}_Keywords.png");
                 using var pieceImage = Image.Load(pieceTemplatePath);
                 var pieceCoordinates = Extensions.GetPieceCoordinates(_puzzle, pieceIndex);
@@ -103,17 +110,17 @@ namespace FactCheckThisBitch.Render
                     {
                         ImageSharpExtensions.ApplyScalingWaterMark(ctx, font,
                             puzzlePiece.Piece.GetKeywordsText(0, 1).WrongSpeakToLeetSpeak(leetLevel),
-                            keywordsBoxes[0], Color.White, 5, false);
+                            keywordsBoxes[0], _puzzleTheme.PieceTextColor, 5, false);
 
                         ImageSharpExtensions.ApplyScalingWaterMark(ctx, font,
                             puzzlePiece.Piece.GetKeywordsText(1).WrongSpeakToLeetSpeak(leetLevel),
-                            keywordsBoxes[1], Color.White, 5, false);
+                            keywordsBoxes[1], _puzzleTheme.PieceTextColor, 5, false);
                     }
                     else
                     {
                         ImageSharpExtensions.ApplyScalingWaterMark(ctx, font,
                             puzzlePiece.Piece.GetKeywordsText().WrongSpeakToLeetSpeak(leetLevel),
-                            keywordsBoxes[0], Color.White, 5, false);
+                            keywordsBoxes[0], _puzzleTheme.PieceTextColor, 5, false);
                     }
                 });
                 pieceImageWithKeywords.Save(pieceWithKeywordsPath);
@@ -136,12 +143,29 @@ namespace FactCheckThisBitch.Render
 
             #endregion
 
-            var pieceSlideTemplate = doc.Slides[1];
-            var pieceReferencesTemplate = doc.Slides[2];
-            var thinkingSlideTemplate = doc.Slides[3];
-            var conclusionSlideTemplate = doc.Slides[4];
-            var thinkingSlide = thinkingSlideTemplate.Clone();
-            var conclusionSlide = conclusionSlideTemplate.Clone();
+            ISlide pieceSlideTemplate = null;
+            ISlide pieceReferencesTemplate = null;
+            ISlide thinkingSlideTemplate = null;
+            ISlide conclusionSlideTemplate = null;
+            ISlide thinkingSlide = null;
+            ISlide conclusionSlide = null;
+
+            if (_realAiNewsRender)
+            {
+                pieceSlideTemplate = doc.Slides[0];
+                pieceReferencesTemplate = doc.Slides[1];
+                thinkingSlideTemplate = doc.Slides[2];
+                conclusionSlideTemplate = doc.Slides[3];
+            }
+            else
+            {
+                pieceSlideTemplate = doc.Slides[1];
+                pieceReferencesTemplate = doc.Slides[2];
+                thinkingSlideTemplate = doc.Slides[3];
+                conclusionSlideTemplate = doc.Slides[4];
+            }
+            thinkingSlide = thinkingSlideTemplate.Clone();
+            conclusionSlide = conclusionSlideTemplate.Clone();
 
             #region create one slide for each piece
 
@@ -196,7 +220,7 @@ namespace FactCheckThisBitch.Render
                         referenceSlide.Name = $"{reference.Id}-{image}";
                         var slideSequence = referenceSlide.Timeline.MainSequence;
                         var referenceGroupShape = referenceSlide.GroupShape("group_article");
-                        referenceGroupShape.UpdateText("textbox_url", reference.Url.Limit(100));
+                        referenceGroupShape.UpdateText("textbox_url", reference.Url.Replace("https://","").Replace("http://", "").Replace("www.", "").Limit(69));
                         referenceGroupShape.UpdateText("textbox_source",
                             reference.Source.IsEmpty() ? "" : $"Source: {reference.Source.WrongSpeakToLeetSpeak(leetLevel)}");
                         referenceGroupShape.UpdateText("textbox_date",
@@ -214,7 +238,10 @@ namespace FactCheckThisBitch.Render
                         if (referenceIndex > 0)
                         {
                             slideSequence.RemoveByShape(referenceGroupShape as IShape);
-                            referenceSlide.Pictures.RemoveAt(0);
+                            if (referenceSlide.Pictures.Count > 0)
+                            {
+                                referenceSlide.Pictures.RemoveAt(0);
+                            }
                         }
 
                         doc.Slides.Add(referenceSlide);
@@ -294,5 +321,18 @@ namespace FactCheckThisBitch.Render
                 File.Delete(filePath);
             }
         }
+    }
+
+    public class PuzzleTheme
+    {
+        public PieceBGColors PieceBgColor;
+        public Color PieceTextColor;
+
+        public enum PieceBGColors
+        {
+             Black,
+             Blue
+        }
+
     }
 }

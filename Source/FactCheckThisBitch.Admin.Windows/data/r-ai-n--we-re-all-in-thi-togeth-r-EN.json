@@ -16,7 +16,7 @@
         "Id": "f54bdc0b-ea4e-4195-8da2-fe916196b051",
         "Title": "Since the pandemic started, an unprecedented number of developing Countries received funds from IMF, World Bank.",
         "Thesis": "The world's poorer countries have requested funds from the International Monetary Fund right after they impose lockdowns.\r\nThe World Bank is also loaning a hundred developing countries.\r\nSome think these loans are a bad idea in the long run.\r\nWhen a country owes money to international organizations, it risks losing it's sovereignty and natural resources.",
-        "Duration": 12,
+        "Duration": 5,
         "Keywords": [
           "IMF",
           "World Bank"
@@ -71,36 +71,6 @@
           },
           {
             "Type": 1,
-            "Id": "63d54d96-d653-475e-924f-1f65f1230dba",
-            "Title": "Ecuador",
-            "Description": "English News and Press Release on Ecuador about Health, Recovery and Reconstruction and Epidemic; published on 01 May 2020 by IMF",
-            "Source": "ReliefWeb",
-            "Url": "https://reliefweb.int/report/ecuador/imf-executive-board-approves-us643-million-emergency-assistance-ecuador-address-covid",
-            "Duration": 5,
-            "Images": [
-              "63227a7f-4fbc-41b1-b718-af0f0bc3f45f.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2020-05-04T00:00:00",
-            "Author": "",
-            "OriginalSource": "https://www.imf.org/en/News/Articles/2020/05/01/pr-20203-ecuador-imf-executive-board-approves-us-643-million-in-emergency-assistance"
-          },
-          {
-            "Type": 1,
-            "Id": "53185213-c7d0-42dd-a9ae-1048432b6afc",
-            "Title": "Dominican Republic",
-            "Source": "Wikipedia",
-            "Url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_Dominican_Republic#National_measures",
-            "Duration": 7,
-            "Images": [
-              "c92e8b7a-af17-4eae-857d-a1aaa7786ab8.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2020-03-01T00:00:00",
-            "Author": ""
-          },
-          {
-            "Type": 1,
             "Id": "fde58c52-5595-4e44-a688-27294328f490",
             "Title": "Chad",
             "Description": "Opposition cries foul as Covid restrictions cut off incomes and health care in country where two-thirds live in severe poverty",
@@ -108,8 +78,7 @@
             "Url": "https://www.theguardian.com/global-development/2021/jan/25/the-lockdown-was-political-chad-under-strain-ahead-of-election",
             "Duration": 7,
             "Images": [
-              "8fddc7fa-6111-49fd-91b6-685b4ac99eb5.png",
-              "71863914-eb64-4a0f-b75d-cce26499109a.png"
+              "8fddc7fa-6111-49fd-91b6-685b4ac99eb5.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2021-01-25T00:00:00",
@@ -124,25 +93,10 @@
             "Url": "https://www.voanews.com/a/africa_cameroon-investigates-missing-335-million-covid-funds/6206445.html",
             "Duration": 7,
             "Images": [
-              "7d7db1e1-a128-4536-a9ce-132c885bee11.png",
               "ff862d2a-c2c5-4fb7-ba07-11f03e5e25a2.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2021-05-31T00:00:00",
-            "Author": ""
-          },
-          {
-            "Type": 1,
-            "Id": "272bec2d-8130-415e-8ec6-d8231e3ed79d",
-            "Title": "COVID-19 pandemic in Afghanistan - Wikipedia",
-            "Source": "Wikipedia",
-            "Url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Afghanistan#Lockdown_measures",
-            "Duration": 6,
-            "Images": [
-              "5e99eb91-7361-4c1c-be4b-03a7e46ebd04.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2020-03-10T00:00:00",
             "Author": ""
           },
           {
@@ -154,8 +108,8 @@
             "Url": "https://qz.com/africa/2001988/why-kenyans-are-refusing-the-imfs-billions/",
             "Duration": 7,
             "Images": [
-              "ef5b7b30-1381-4017-9b8e-0d54e744ef72.png",
-              "eb69e54a-43cc-4fe8-9d25-aa912cf7fcf2.png"
+              "eb69e54a-43cc-4fe8-9d25-aa912cf7fcf2.png",
+              "ef5b7b30-1381-4017-9b8e-0d54e744ef72.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2021-04-28T00:00:00",
@@ -173,7 +127,7 @@
         "Id": "d9909219-5528-43af-b363-c366470d00f2",
         "Title": "Could IMF funds be tied to imposing lockdown measures?",
         "Thesis": "Various countries and leaders did not take the pandemic very seriously at first. A well known best seller book by John Perkins might offer some useful insights on what happens when countries deny funds from globalist institutions.",
-        "Duration": 16,
+        "Duration": 5,
         "Keywords": [
           "Lockdown"
         ],
@@ -206,8 +160,7 @@
             "Url": "https://www.reuters.com/article/us-health-coronavirus-tanzania-idUSKBN22F0KF",
             "Duration": 7,
             "Images": [
-              "06ffbb8e-19ec-477c-89e6-2e95f7fd7512.png",
-              "3f135f7e-6864-4077-b6d6-6be6b2237f57.png"
+              "06ffbb8e-19ec-477c-89e6-2e95f7fd7512.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2020-05-03T00:00:00",
@@ -264,7 +217,7 @@
             "Title": "Confessions of an Economic Hit Man - Wikipedia",
             "Source": "Wikipedia",
             "Url": "https://en.wikipedia.org/wiki/Confessions_of_an_Economic_Hit_Man",
-            "Duration": 10,
+            "Duration": 12,
             "Images": [
               "b67f5acc-125f-4de7-98cf-86849f513699.png"
             ],
@@ -284,7 +237,7 @@
         "Id": "8c79b0ee-a23b-43a4-85bc-e9aa45c08078",
         "Title": "Businesses in countries like UK and France are borrowing huge sums of money from banks, with State Loan Guarantees. How will they pay these back with the perpetual lockdowns?",
         "Thesis": "If these loans are not paid back, it becomes national debt. This looks increasingly like bankruptcy by design. If a country becomes indebted they will eventually lose state assets like public utility companies, natural resources and ultimately sovereignty. Essentially all countries await the same fate as famously bankrupt Greece, Argentina etc.",
-        "Duration": 25,
+        "Duration": 5,
         "Keywords": [
           "Debt"
         ],
@@ -334,7 +287,7 @@
         "Id": "018b7fd6-150b-4f32-ab85-6f36f0908b60",
         "Title": "Governments and Silicon Valley behemoths openly offer money to media organizations to educate the public on following Covid guidelines. ",
         "Thesis": "Is a journalist supposed to investigate and question authority or get free money to follow a narrative?\r\nAt the more local level, numerous funds have been setup throughout the world, that offer money to journalists to inform the public and help them \"make safe decisions\".",
-        "Duration": 20,
+        "Duration": 5,
         "Keywords": [
           "Media"
         ],
@@ -446,7 +399,7 @@
         "Id": "3d51dac1-c7e4-450f-b8d7-8e65de9b1d21",
         "Title": "Where is the money coming from? How is the world's economy going to cope with financing these perpetual lockdowns? ",
         "Thesis": "Klaus Schwab of the World Economic Forum:\r\n\"... people assume we are just going back to the good old world. This is fiction, it will not happen...\"\r\n\"...you will own nothing, and you will be happy...\"\r\n\"...research for vaccines using completely new methods based on synthetic biology...\"\r\n\"...fusion of our physical, digital and biological identity...\"\r\n",
-        "Duration": 25,
+        "Duration": 5,
         "Keywords": [
           "Great\r\nReset"
         ],
@@ -568,7 +521,7 @@
         "Id": "e4e14862-982e-4c54-9810-4b81f3a228e2",
         "Title": "Charities, Zoos, Football clubs and everything in between is getting free money from the government.",
         "Thesis": "because pandemic. ",
-        "Duration": 12,
+        "Duration": 5,
         "Keywords": [
           "Charities"
         ],
@@ -606,7 +559,7 @@
         "Id": "76afbd0f-e850-41a9-b987-668b2ad6faf3",
         "Title": "Hospitals and health care professionals.",
         "Thesis": "Since the pandemic was declared, funds are flowing freely towards health care. Fact checkers are on it. Recording empty hospitals is not a good look, nor is questioning the 4000 capacity field hospitals that only ever treated up to 40 patients. ",
-        "Duration": 15,
+        "Duration": 5,
         "Keywords": [
           "Health Care"
         ],
@@ -777,7 +730,7 @@
         "Id": "bfc56879-2504-40ca-b9f5-aeb0e97b8405",
         "Title": "Companies / Businesses / Employers.\r\nHow are they affected?\r\n",
         "Thesis": "Employers are expected to carry out COVID-19 risk assessments and get  \"Covid secure\" certifications for businesses. They have to play along to stay in business and to participate in the furlough schemes. This might eventually lead to imposing vaccine mandates to their workforce.\r\nA whole new covid economy has spun up, seemingly set to replace the normal economic activity that has been outlawed.",
-        "Duration": 21,
+        "Duration": 5,
         "Keywords": [
           "Employers"
         ],
@@ -901,7 +854,7 @@
         "Id": "19809e5f-0f4f-46f2-88cb-491ce248084e",
         "Title": "Individuals",
         "Thesis": "The average mainstream media watching person, is under a constant barrage of fear mongering and has a few additional reasons to play along. \r\n",
-        "Duration": 15,
+        "Duration": 5,
         "Keywords": [
           "Individuals"
         ],

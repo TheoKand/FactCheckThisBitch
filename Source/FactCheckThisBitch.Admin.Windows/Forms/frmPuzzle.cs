@@ -98,10 +98,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 }
             }
 
-            _puzzle = new Puzzle()
-            {
-                Title = $"New created at {DateTime.UtcNow}"
-            };
+            _puzzle = new Puzzle() { Title = $"New created at {DateTime.UtcNow}" };
         }
 
         private void LoadFromFile()
@@ -141,7 +138,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
             var newWidth = int.Parse(txtSize.Text.Split('x')[0]);
             var newHeight = int.Parse(txtSize.Text.Split('x')[1]);
-            if (newWidth!=_puzzle.Width || newHeight != _puzzle.Height)
+            if (newWidth != _puzzle.Width || newHeight != _puzzle.Height)
             {
                 _puzzle.Width = int.Parse(txtSize.Text.Split('x')[0]);
                 _puzzle.Height = int.Parse(txtSize.Text.Split('x')[1]);
@@ -244,7 +241,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void renderToolStripMenuItem_Click(object sender,
             EventArgs e)
         {
-
             FrmRenderOptions optionsForm = new FrmRenderOptions();
             var result = optionsForm.ShowDialog();
             if (result != DialogResult.OK)
@@ -261,19 +257,19 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                         _puzzle.FullTitle);
 
                 using (var renderer = new PuzzleRenderer(_puzzle,
-                    optionsForm.Options.Template,
-                    Configuration.Instance()
-                        .AssetsFolder,
-                    puzzleOutputFolder,
-                    Path.Combine(Configuration.Instance()
-                            .DataFolder,
-                        "media"),
-                    optionsForm.Options.HandleWrongSpeak,
-                    optionsForm.Options.HandleBlurryAreas))
+                           optionsForm.Options.Template,
+                           Configuration.Instance()
+                               .AssetsFolder,
+                           puzzleOutputFolder,
+                           Path.Combine(Configuration.Instance()
+                                   .DataFolder,
+                               "media"),
+                           optionsForm.Options.RealAiNews,
+                           optionsForm.Options.HandleWrongSpeak,
+                           optionsForm.Options.HandleBlurryAreas))
                 {
                     renderer.Render();
                 }
-
             }
             catch (Exception ex)
             {
@@ -312,11 +308,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             }
         }
 
-
-
-
         #endregion
-
-
     }
 }
