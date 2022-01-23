@@ -52,6 +52,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtDatePublished = new FactCheckThisBitch.Admin.Windows.UserControls.TextBoxWithValidation();
             this.txtDuration = new FactCheckThisBitch.Admin.Windows.UserControls.TextBoxWithValidation();
             this.label8 = new System.Windows.Forms.Label();
+            this.lblSummaryLength = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -86,6 +87,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtSummary.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtSummary.Size = new System.Drawing.Size(580, 63);
             this.txtSummary.TabIndex = 1;
+            this.txtSummary.TextChanged += new System.EventHandler(this.txtSummary_TextChanged);
             // 
             // label1
             // 
@@ -285,10 +287,21 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.label8.TabIndex = 39;
             this.label8.Text = "Duration";
             // 
+            // lblSummaryLength
+            // 
+            this.lblSummaryLength.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSummaryLength.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblSummaryLength.Location = new System.Drawing.Point(3, 118);
+            this.lblSummaryLength.Name = "lblSummaryLength";
+            this.lblSummaryLength.Size = new System.Drawing.Size(106, 51);
+            this.lblSummaryLength.TabIndex = 40;
+            this.lblSummaryLength.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // ReferenceUi
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
+            this.Controls.Add(this.lblSummaryLength);
             this.Controls.Add(this.btnMove);
             this.Controls.Add(this.btnMoveForward);
             this.Controls.Add(this.btnMoveBack);
@@ -343,5 +356,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private TextBoxWithValidation txtDatePublished;
         private TextBoxWithValidation txtDuration;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblSummaryLength;
     }
 }

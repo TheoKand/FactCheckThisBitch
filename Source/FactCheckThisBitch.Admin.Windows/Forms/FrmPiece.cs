@@ -62,6 +62,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         {
             tabReferences.TabPages.Clear();
 
+            var totalSlideDuration = 0;
+            var totalSpeechDuration = 0;
+
             for (var index = 0; index < _piece.References.Count; index++)
             {
                 var reference = _piece.References[index];
@@ -77,6 +80,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
                 var referenceUi = new ReferenceUi()
                 {
+                    NarrationLabel = $"Duration:{totalSlideDuration}s\rNarration:{totalSpeechDuration}s{(totalSlideDuration>totalSpeechDuration?" OK":"")}",
                     Font = new Font(this.Font, FontStyle.Regular),
                     Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom,
                     Content = reference,
@@ -112,6 +116,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 tabPage.Controls.Add(referenceUi);
 
                 tabReferences.TabPages.Add(tabPage);
+
+                totalSlideDuration += reference.Duration * reference.Images.Count;
+                totalSpeechDuration += reference.Description.ToSpeechDuration();
             }
         }
 

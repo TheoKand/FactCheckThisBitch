@@ -9,6 +9,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
 
 namespace FactCheckThisBitch.Render
 {
@@ -47,6 +48,7 @@ namespace FactCheckThisBitch.Render
             RenderPuzzleForEachSlide();
             CreatePresentationFromTemplate();
             FixSlidesDuration();
+            GenerateNarrationForSpeechelo();
             OpenOutputFolder();
         }
 
@@ -271,6 +273,65 @@ namespace FactCheckThisBitch.Render
             doc.Save(Path.Combine(_outputFolder, $"{_puzzle.FullTitle}.pptm"));
         }
 
+        private void GenerateNarrationForSpeechelo()
+        {
+            Func<int, string> pause = (int chars) =>
+            {
+                StringBuilder pauseSb = new StringBuilder();
+                if (chars > 0)
+                {
+                    pauseSb.AppendLine();
+                    for (var i = 0; i < chars; i++)
+                    {
+                        pauseSb.Append("[sPause sec=1 ePause]");
+                    }
+                    pauseSb.AppendLine();
+                }
+                return pauseSb.ToString();
+            };
+
+            StringBuilder narrationText = new StringBuilder($"[startSpeech v=Loud startSpeech]and, down the rabbit hole we go!{pause(3)}");
+
+            foreach (var puzzlePiece in _puzzle.PuzzlePieces.OrderBy(_ => _.RenderOrder))
+            {
+
+                if (puzzlePiece.RenderOrder != 1)
+                {
+                    narrationText.Append(pause(puzzlePiece.Piece.Duration));
+                }
+
+                var currentTimeIndex = 0;
+                var lastNarrationTimeIndex = 0;
+                var lastNarrationDuration = 0;
+
+                var referenceIndex = 0;
+
+                foreach (var reference in puzzlePiece.Piece.References)
+                {
+                    if (!string.IsNullOrEmpty(reference.Description))
+                    {
+                        var mustWait = currentTimeIndex - (lastNarrationTimeIndex+ lastNarrationDuration);
+                        narrationText.Append(pause(mustWait));
+                        narrationText.AppendLine($"\r{reference.Description}");
+                        lastNarrationTimeIndex = currentTimeIndex;
+                        lastNarrationDuration = reference.Description.ToSpeechDuration();
+                    }
+
+                    currentTimeIndex += reference.Duration * reference.Images.Count;
+                    referenceIndex++;
+                }
+
+                var mustWaitBeforeNextPiece = currentTimeIndex - (lastNarrationTimeIndex + lastNarrationDuration);
+                narrationText.Append(pause(mustWaitBeforeNextPiece));
+
+            }
+
+            narrationText.AppendLine("[endSpeech]");
+
+            var narrationFile = Path.Combine(_outputFolder, "Narration.txt");
+            File.WriteAllTextAsync(narrationFile, narrationText.ToString());
+
+        }
         private string ModifyImage(Reference reference, string image)
         {
             var imageEdit = reference.ImageEdits.FirstOrDefault(e => image.EndsWith(e.Image));

@@ -188,5 +188,26 @@ namespace FackCheckThisBitch.Common
             return input;
         }
 
+        public static int ToSpeechDuration(this string input)
+        {
+            //characters / seconds = ratio
+            //seconds = characters / ratio
+
+            //283 / 18    15.72
+            //793 / 52.9   14.9
+            //3744     /  236 sec    = 15.86
+            //avg = 15.35
+
+            if (!string.IsNullOrEmpty(input))
+            {
+                input = input.Trim();
+                input = input.Replace(",", ",,,");
+                input = input.Replace(".", "...");
+            }
+            return !string.IsNullOrEmpty(input) ? (int)Math.Ceiling(input.Length / 15.86) : 0;
+
+            
+        }
+
     }
 }

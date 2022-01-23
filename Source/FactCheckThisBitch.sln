@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FackCheckThisBitch.Common",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F18BCFB-E619-4E76-A199-00A9B03B086F}"
 	ProjectSection(SolutionItems) = preProject
-		Notes.txt = Notes.txt
+		..\Notes.txt = ..\Notes.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactCheckThisBitch.Render", "FactCheckThisBitch.Render\FactCheckThisBitch.Render.csproj", "{9341C3D1-5053-4653-8DA6-707B4D954D6B}"

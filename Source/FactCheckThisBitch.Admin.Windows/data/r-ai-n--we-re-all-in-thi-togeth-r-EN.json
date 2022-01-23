@@ -28,8 +28,8 @@
           {
             "Type": 1,
             "Id": "7e3491e0-c21d-442f-a781-d6dbd7851f88",
-            "Title": "Half the world’s countries ask for IMF bailout",
-            "Description": "International Monetary Fund boss says she will use ‘full toolbox’ to deal with ‘emergency like no other’",
+            "Title": "Locking down the economy, borrowing money and drastically increasing public debt",
+            "Description": "Since the pandemic started,   an unprecedented number of developing Countries,   home to over 70% of the world's population,   have received loans,   from the IMF and World Bank.   \r\nWhen a country owes money to international organizations,   it risks losing it's sovereignty.   and,   natural resources.  .  .  .  ",
             "Source": "TheWeek",
             "Url": "https://www.theweek.co.uk/106658/half-the-world-s-countries-ask-for-imf-bailout",
             "Duration": 7,
@@ -48,8 +48,6 @@
           {
             "Type": 1,
             "Id": "ea366ca3-a94b-4a3f-ae64-b6c28fe238b5",
-            "Title": "World Bank Group: 100 Countries Get Support in Response to COVID-19 (Coronavirus)",
-            "Description": "Unprecedented Crisis Could Push Up to 60 Million into Extreme Poverty",
             "Source": "World Bank",
             "Url": "https://www.worldbank.org/en/news/press-release/2020/05/19/world-bank-group-100-countries-get-support-in-response-to-covid-19-coronavirus",
             "Duration": 6,
@@ -72,8 +70,7 @@
           {
             "Type": 1,
             "Id": "fde58c52-5595-4e44-a688-27294328f490",
-            "Title": "Chad",
-            "Description": "Opposition cries foul as Covid restrictions cut off incomes and health care in country where two-thirds live in severe poverty",
+            "Title": "Are these policies public health driven or politically driven?",
             "Source": "the Guardian",
             "Url": "https://www.theguardian.com/global-development/2021/jan/25/the-lockdown-was-political-chad-under-strain-ahead-of-election",
             "Duration": 7,
@@ -86,9 +83,24 @@
           },
           {
             "Type": 1,
+            "Id": "12cce35a-2098-4daa-9918-5b8ee82ed9aa",
+            "Description": "Some think these loans, are a bad idea, in the long run...",
+            "Source": "Quartz Africa",
+            "Url": "https://qz.com/africa/2001988/why-kenyans-are-refusing-the-imfs-billions/",
+            "Duration": 7,
+            "Images": [
+              "ef5b7b30-1381-4017-9b8e-0d54e744ef72.png",
+              "eb69e54a-43cc-4fe8-9d25-aa912cf7fcf2.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-04-28T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
             "Id": "9a8f62fd-eb8f-4c39-a846-ea9614d71948",
             "Title": "Cameroon Investigates Missing $335 Million in COVID Funds ",
-            "Description": "Official statement urging calm comes after rights groups and opposition asked government to explain what happened money loaned by International Monetary Fund to fight COVID-19",
+            "Description": "The health emergency, presents an opportunity, for corruption.",
             "Source": "VOA News",
             "Url": "https://www.voanews.com/a/africa_cameroon-investigates-missing-335-million-covid-funds/6206445.html",
             "Duration": 7,
@@ -97,22 +109,6 @@
             ],
             "ImageEdits": [],
             "DatePublished": "2021-05-31T00:00:00",
-            "Author": ""
-          },
-          {
-            "Type": 1,
-            "Id": "12cce35a-2098-4daa-9918-5b8ee82ed9aa",
-            "Title": "East Africa correspondent",
-            "Description": "Kenyans are petitioning the IMF to cancel its approval of a $2.24-billion financing package",
-            "Source": "Quartz Africa",
-            "Url": "https://qz.com/africa/2001988/why-kenyans-are-refusing-the-imfs-billions/",
-            "Duration": 7,
-            "Images": [
-              "eb69e54a-43cc-4fe8-9d25-aa912cf7fcf2.png",
-              "ef5b7b30-1381-4017-9b8e-0d54e744ef72.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2021-04-28T00:00:00",
             "Author": ""
           }
         ]
@@ -139,7 +135,7 @@
             "Type": 1,
             "Id": "71a52bf6-4664-448d-a50d-df9a7a5459ef",
             "Title": "EXPOSED: Extreme Lockdown Mandatory Condition For World Bank COVID-19 Aid",
-            "Description": "EXPOSED: World Bank Coronavirus aid comes with conditions for imposing extreme lockdown measures, revealed Belarus President",
+            "Description": "Could IMF funds be tied to imposing lockdown measures? The president of Belarus, had something to say about this.",
             "Source": "GreatGameIndia",
             "Url": "https://greatgameindia.com/belarus-world-bank-coronavirus-conditions/",
             "Duration": 8,
@@ -155,7 +151,7 @@
             "Type": 1,
             "Id": "030ab77f-1d81-4bc7-b3fd-1fe051c791b4",
             "Title": "President queries Tanzania coronavirus kits after goat test",
-            "Description": "Coronavirus test kits used in Tanzania were dismissed as faulty by President John Magufuli on Sunday, because he said they had returned positive results on samples taken from a goat and a pawpaw.",
+            "Description": "Various countries and leaders, did not take the pandemic very seriously, at first. ",
             "Source": "Reuters",
             "Url": "https://www.reuters.com/article/us-health-coronavirus-tanzania-idUSKBN22F0KF",
             "Duration": 7,
@@ -170,7 +166,6 @@
             "Type": 1,
             "Id": "e740e13f-3118-4ac2-bf3c-03a6040227d5",
             "Title": "Tanzanian President John Magufuli, A COVID-19 Skeptic, Has Died",
-            "Description": "Tanzanian President John Magufuli has died at age 61. The news was announced Wednesday on state television by Vice President Samia Suluhu Hassan, who said the cause of death was heart failure.",
             "Source": "National Press Association",
             "Url": "https://www.npr.org/2021/03/17/978336051/tanzania-president-john-magufuli-a-covid-19-skeptic-has-died",
             "Duration": 7,
@@ -185,7 +180,7 @@
             "Type": 1,
             "Id": "8bd256b4-5a36-41eb-ab57-777aa6372399",
             "Title": "Haiti Is the Only Country in Western Hemisphere Without Vaccines",
-            "Description": "Haiti, the poorest nation in the Western hemisphere, has earned another grim distinction: it’s the only one that hasn’t vaccinated a single resident against Covid-19.",
+            "Description": "Haiti leadership was initially sceptical... about the vaccination program.",
             "Source": "Bloomberg",
             "Url": "https://www.bloomberg.com/news/articles/2021-06-08/haiti-is-the-only-country-in-western-hemisphere-without-vaccines",
             "Duration": 7,
@@ -202,7 +197,7 @@
             "Title": "Haiti president's assassination: What we know so far",
             "Source": "BBC",
             "Url": "https://www.bbc.co.uk/news/world-latin-america-57762246",
-            "Duration": 8,
+            "Duration": 6,
             "Images": [
               "664bcef7-4dd6-4c50-a985-9baf993d9fd4.png",
               "5e707f6f-d722-4ec4-8ce6-a22937707594.png"
@@ -215,6 +210,7 @@
             "Type": 1,
             "Id": "ef86f17c-5302-42f2-857c-fe3b89fd46d4",
             "Title": "Confessions of an Economic Hit Man - Wikipedia",
+            "Description": "John Perkins, a former CIA agent, has written a best seller book, that sheds light on what happens, when countries deny funds, from globalist institutions.",
             "Source": "Wikipedia",
             "Url": "https://en.wikipedia.org/wiki/Confessions_of_an_Economic_Hit_Man",
             "Duration": 12,
@@ -249,10 +245,10 @@
             "Type": 1,
             "Id": "0afd40fd-13ad-46ea-a383-12cb8c6358dc",
             "Title": "Where does bailout money come from and who will pay for it?",
-            "Description": "Government’s multi-billion pound stimulus package could usher in another decade of austerity",
+            "Description": "In developed countries, such as UK and France, Businesses are borrowing huge sums of money from banks... with State Loan Guarantees. How will they pay these back, with the perpetual lockdowns?",
             "Source": "Theweek.co.uk",
             "Url": "https://www.theweek.co.uk/coronavirus/106370/where-does-bailout-money-come-from-and-who-will-pay-for-it",
-            "Duration": 12,
+            "Duration": 17,
             "Images": [
               "7a258243-ca9d-4968-bf9c-3266bd2aab0f.png"
             ],
@@ -264,10 +260,10 @@
             "Type": 1,
             "Id": "36e86a53-7e4f-4716-a050-05f7fa5131aa",
             "Title": "UPDATED – COVID-19 | France: State Guarantee Scheme for New Money Loans",
-            "Description": "In light of the growing pandemic of COVID-19, the French government has made a number of unprecedented decisions in order to support business activities. Among an extensive panoply of measures relating to short-time work, tax relief, capital markets and other areas, the French Government has introduced a EUR 300 billion State guarantee scheme (the “Scheme”) for new money loans to be granted to French entities by financial institutions and crowd-funding intermediaries. ",
+            "Description": "If these loans are not paid back, it becomes national debt. This looks increasingly, like bankruptcy, by design. If a country becomes indebted, they will eventually lose state assets, like public utility companies, natural resources, and ultimately sovereignty...Could some of the strongest economies, be on the steps, of famously bankrupt, Greece and Argentina?",
             "Source": "Shearman & Sterling",
             "Url": "https://www.shearman.com/Perspectives/2020/04/COVID-19-France-State-Guarantee-Scheme-for-New-Money-Loans",
-            "Duration": 12,
+            "Duration": 17,
             "Images": [
               "44ff6329-a229-43a1-8a41-1749a2fe5e3d.png"
             ],
@@ -299,10 +295,10 @@
             "Type": 1,
             "Id": "51660eac-043a-4007-b0bd-03029400e230",
             "Title": "Germany offers €220m in supports to print media but some are skeptical",
-            "Description": "Grant aimed at helping with digital transition",
+            "Description": "Governments, and Silicon Valley behemoths, openly offer money to media organizations. To educate the public, on following Covid guidelines. ",
             "Source": "The Irish Times",
             "Url": "https://www.irishtimes.com/business/media-and-marketing/germany-offers-220m-in-supports-to-print-media-but-some-are-sceptical-1.4330551",
-            "Duration": 13,
+            "Duration": 8,
             "Images": [
               "b5de7768-04a4-408f-849c-806ed7f2f30a.png",
               "f341c6c9-3371-4679-97c5-21fe7e6fb71f.png"
@@ -315,10 +311,10 @@
             "Type": 1,
             "Id": "5a842446-31c6-4b93-b952-970ecb216a7a",
             "Title": "The Covid-19 crisis highlights Greece’s media problem - International Press Institute",
-            "Description": "Zur deutschen Version During the lockdown that followed the Covid-19 outbreak, the Greek government allocated €20 million to media outlets for them to carry “Stay at Home” public health messages. It outsourced the distribution of these funds to a private media shop company, thereby bypassing its obligation to make public all transactions conducted by the …",
+            "Description": "Is a journalist supposed to investigate? and question authority?",
             "Source": "International Press Institute",
             "Url": "https://ipi.media/the-covid-19-crisis-highlights-greeces-media-problem/",
-            "Duration": 12,
+            "Duration": 6,
             "Images": [
               "997fe24b-dfde-4e99-9807-70a4479b9a97.png"
             ],
@@ -330,7 +326,7 @@
             "Type": 1,
             "Id": "35f47a03-aa4b-4edc-863f-5a4f1c1b1b4d",
             "Title": "Gov’t makes public list of media firms paid to promote Covid-19 health measures",
-            "Description": "The government on Monday made good on its pledge to publish a detailed account on the expenditures of its “We Stay Home” coronavirus lockdown campaign with a list of all the media involved. ",
+            "Description": "or get free money, to follow a narrative...",
             "Source": "Kathimerini",
             "Url": "https://www.ekathimerini.com/news/254417/govt-makes-public-list-of-media-firms-paid-to-promote-covid-19-health-measures/",
             "Duration": 8,
@@ -345,6 +341,7 @@
             "Type": 1,
             "Id": "c0f67f08-f0ef-4f6a-8383-779bbdf37e08",
             "Title": "US Newsrooms Share Impact of Facebook’s $10 Million COVID-19 Grants",
+            "Description": "At the local level, numerous funds have been setup, throughout the world. Offering money to journalists, to inform the public... and help them, \"make safe decisions\".",
             "Source": "Facebook Journalism Project",
             "Url": "https://www.facebook.com/journalismproject/programs/grants/us-covid-relief-grant-impact",
             "Duration": 10,
@@ -373,15 +370,11 @@
             "Type": 1,
             "Id": "2f82d2ca-d4bf-41f1-a42a-30605e44acbc",
             "Title": "New Sources of Media Funding on the COVID-19 Pandemic",
-            "Description": "The pressing need for good reporting during the COVID-19 pandemic has encouraged a growing list of donors to offer grants to journalists.",
             "Source": "Global Investigative Journalism Network",
             "Url": "https://gijn.org/grants-to-journalists-during-the-covid-19-pandemic/",
             "Duration": 8,
             "Images": [
-              "6002bef6-31f6-4bf1-8a49-d470cdacaffc.png",
-              "1ece2cd5-f0a1-4ad4-a3b3-74bd6076a69a.png",
-              "922b1bf7-64ce-4084-a8fd-a58ea77e50ec.png",
-              "d5f50026-9f3c-4fa0-9cbd-cf0ed2e0a059.png"
+              "6002bef6-31f6-4bf1-8a49-d470cdacaffc.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2020-04-23T00:00:00",
@@ -411,9 +404,9 @@
             "Type": 1,
             "Id": "efe1df8f-7a45-437c-97fc-cabe83e17b61",
             "Title": "How Central Banks Create Money Out from the Thin Air",
-            "Description": "The Federal Reserve announced a $700 billion Quantitative Easing program on March 15, 2020, to combat the economic impact of the virus outbreak. The central banks are creating money out from the thin…",
+            "Description": "Where is the money coming from? How is the world's economy, going to cope, with financing  these perpetual lockdowns? ",
             "Url": "https://medium.datadriveninvestor.com/how-central-banks-create-money-out-from-the-thin-air-e01453d81ab",
-            "Duration": 9,
+            "Duration": 8,
             "Images": [
               "a8caa41a-2d77-4f2c-803b-8e60b1e5edfa.png"
             ],
@@ -427,7 +420,7 @@
             "Title": "The Covid-19 Pandemic Has Added £$19.5 Trillion to Global Debt",
             "Source": "Bloomberg",
             "Url": "https://www.bloomberg.com/graphics/2021-coronavirus-global-debt/",
-            "Duration": 9,
+            "Duration": 6,
             "Images": [
               "d1eef6a6-740c-4cb8-bfac-2377b5cda4d5.png"
             ],
@@ -439,9 +432,9 @@
             "Type": 1,
             "Id": "633d2d6e-de85-4dea-865a-5e23e91165d8",
             "Title": "Time for a great reset of the financial system",
-            "Description": "A 30-year debt super cycle that has fuelled inequality illustrates the need for a new regime",
+            "Description": "Very conveniently, the pandemic has become the catalyst... for the long planned... Great Reset.",
             "Url": "https://www.ft.com/content/39c53b9f-f443-4dde-9cdb-07e8999ec783",
-            "Duration": 9,
+            "Duration": 7,
             "Images": [
               "1bc0c99b-0506-4cb7-bd5c-d056f614d860.png"
             ],
@@ -453,10 +446,9 @@
             "Type": 1,
             "Id": "fb394224-5db9-4dfe-88ff-a34f96e0b5ac",
             "Title": "The Great Reset: How to Build a Better World Post-COVID-19",
-            "Description": "TIME and the World Economic Forum asked leading thinkers to share ideas for how to transform the way we live and work ",
             "Source": "Time Magazine",
             "Url": "https://time.com/collection/great-reset/",
-            "Duration": 8,
+            "Duration": 6,
             "Images": [
               "a1fb3b6f-2248-4f41-972f-4c51b36f597b.png"
             ],
@@ -467,10 +459,10 @@
             "Type": 1,
             "Id": "c454f44c-5eb7-490a-bad1-d50a3c799955",
             "Title": "COVID-19: The Great Reset",
-            "Description": "Since it made its entry on to the world stage, COVID-19 has torn up the existing script of how to govern countries, live with others, and take part in the gl...",
+            "Description": "quote  \"people assume, we are just going back, to the good old world. This is fiction, it will not happen\"\r\nquote \"you will own nothing, and you will be happy!\"\r\nquote \"research for vaccines, using completely new methods, based on synthetic biology\"\r\nquote \"fusion of our physical, digital and biological identity\"",
             "Source": "YouTube",
             "Url": "https://www.youtube.com/watch?v=VHRkkeecg7c",
-            "Duration": 8,
+            "Duration": 12,
             "Images": [
               "d9496cd7-00a7-4322-b2cd-ac7a5e46b6c0.png"
             ],
@@ -482,10 +474,10 @@
             "Type": 1,
             "Id": "eda96ef3-897d-4aa4-a26a-c7c3a2281134",
             "Title": "KLAUS SCHWAB: Revolution will lead to a fusion of our physical, digital and biological identity",
-            "Description": "#FourthIndustrialRevolution ISCRIVITI AL CANALEYouTube https://bit.ly/2TYlaC9Telegram https://t.me/teatrodellapoliticaTwitter https://twitter.com/PraesesMund...",
+            "Description": "He looks...  oddly familiar ?!",
             "Source": "YouTube",
             "Url": "https://www.youtube.com/watch?v=t1SpC3B1KyM",
-            "Duration": 8,
+            "Duration": 12,
             "Images": [
               "37da435a-77b9-426a-b449-8cbf1631995e.png"
             ],
@@ -497,7 +489,7 @@
             "Type": 1,
             "Id": "43eac138-d93f-4c9c-a88d-a388e9a1eff7",
             "Title": "‘Future of Money’ economist says the end of cash is coming—here’s what could replace it",
-            "Description": "Economist Eswar Prasad's predictions on how CBDCs, stablecoins and cryptocurrency may overtake the use of physical cash.",
+            "Description": "Central Bank Digital Currencies, are coming soon. soon after rolling out the health certificate, and embedding it in our new digital identities. Which may or may not, be embedded, in our bodies.",
             "Source": "CNBC",
             "Url": "https://www.cnbc.com/2021/11/11/predictions-for-future-of-money-cbdcs-stablecoins-cryptocurrency.html",
             "Duration": 8,
@@ -533,10 +525,10 @@
             "Type": 1,
             "Id": "9359c5ec-5283-41e4-baa3-53af4206efae",
             "Title": "Financial support for voluntary, community and social enterprise (VCSE) organizations to respond to coronavirus (COVID-19)",
-            "Description": "The government has pledged £750 million to ensure VCSE can continue their vital work supporting the country during the coronavirus (COVID-19) outbreak, including £200 million for the Coronavirus Community Support Fund, along with an additional £150 million from dormant bank and building society accounts.",
+            "Description": "In the UK, Charities.  Zoos.  Football clubs,  and everything in between, is getting free money from the government! Because, pandemic...",
             "Source": "GOV.UK",
             "Url": "https://www.gov.uk/guidance/financial-support-for-voluntary-community-and-social-enterprise-vcse-organisations-to-respond-to-coronavirus-covid-19",
-            "Duration": 8,
+            "Duration": 5,
             "Images": [
               "938466dc-9ad9-44a4-916e-dc384f409134.png",
               "e9da0f4f-a979-4d1d-acad-0b4297a0227f.png",
@@ -571,10 +563,10 @@
             "Type": 1,
             "Id": "c61620e7-9095-4f85-b337-5f261caa8051",
             "Title": "£5bn contingency fund announced for coronavirus outbreak",
-            "Description": "The government has announced a contingency fund of £5bn has been set to make sure the NHS, social care and other public services can respond to the covid-19 outbreak.",
+            "Description": "Since the pandemic was declared, funds are flowing freely, towards health care.",
             "Source": "Health Service Journal",
             "Url": "https://www.hsj.co.uk/finance-and-efficiency/5bn-contingency-fund-announced-for-coronavirus-outbreak/7027106.article",
-            "Duration": 8,
+            "Duration": 5,
             "Images": [
               "0f314c95-561d-4cd8-897f-f4b7b3fbaae2.png"
             ],
@@ -586,10 +578,9 @@
             "Type": 1,
             "Id": "7621fe14-6644-46d7-b56c-ae7875cf64ec",
             "Title": "NHS to receive £6.6bn covid-19 funding",
-            "Description": "The NHS will receive £6.6bn from the Government's coronavirus emergency fund, the Treasury has said.",
             "Source": "Health Service Journal",
             "Url": "https://www.hsj.co.uk/coronavirus/nhs-to-receive-66bn-covid-19-funding/7027395.article",
-            "Duration": 8,
+            "Duration": 4,
             "Images": [
               "c224bd5c-6df9-4520-954d-0bcbfed15b25.png"
             ],
@@ -601,10 +592,9 @@
             "Type": 1,
             "Id": "a00b2bc6-fc4e-4b20-bfb8-238df1cd3f41",
             "Title": "Additional £5.4 billion for NHS COVID-19 response over next 6 months",
-            "Description": "Includes £1 billion to help tackle COVID-19 backlogs, delivering routine surgery and treatments for patients.",
             "Source": "GOV.UK",
             "Url": "https://www.gov.uk/government/news/additional-54-billion-for-nhs-covid-19-response-over-next-six-months",
-            "Duration": 8,
+            "Duration": 5,
             "Images": [
               "d22134eb-dcb3-4475-9c12-a6f42cf599d5.png"
             ],
@@ -616,10 +606,10 @@
             "Type": 1,
             "Id": "953362dc-a469-4976-bcf7-76a01e5ea4cb",
             "Title": "Stevens condemns videoing of ‘empty’ hospitals",
-            "Description": "NHS England chief executive Sir Simon Stevens has launched a blistering attack on people who post videos of 'empty' hospitals online claiming they show the NHS is not under pressure from covid.",
+            "Description": "Recording empty hospitals... is not a good look.",
             "Source": "Health Service Journal",
             "Url": "https://www.hsj.co.uk/stevens-condemns-videoing-of-empty-hospitals/7029270.article",
-            "Duration": 8,
+            "Duration": 7,
             "Images": [
               "830b4fed-9a01-4761-a907-1db78fb3efb2.png"
             ],
@@ -631,10 +621,10 @@
             "Type": 1,
             "Id": "f1abc7db-0484-4541-93ac-978b81461edb",
             "Title": "Revealed: What Really Happened In The Nightingales",
-            "Description": "Exclusive: Government under fire as it is revealed only three of the hospitals ever treated Covid patients.",
+            "Description": "Nor is questioning the 4000 capacity field hospitals, that only ever treated, up to 40 patients. ",
             "Source": "HuffPost UK",
             "Url": "https://www.huffingtonpost.co.uk/entry/nightingale-hospitals-covid-patient-numbers_uk_605a0dd6c5b6cebf58d220eb",
-            "Duration": 8,
+            "Duration": 7,
             "Images": [
               "7113b995-be2a-4430-b8e5-d89b0b53845d.png"
             ],
@@ -646,10 +636,9 @@
             "Type": 1,
             "Id": "5acc2890-f3f2-4d64-a5bd-97051311442a",
             "Title": "Covid: UK spent £569m on 20,900 ventilators but most remain unused",
-            "Description": "Government was right to prioritize speed over cost, says National Audit Office",
             "Source": "the Guardian",
             "Url": "https://www.theguardian.com/world/2020/sep/30/uk-spent-569m-on-20900-ventilators-for-covid-care-but-most-remain-unused",
-            "Duration": 8,
+            "Duration": 5,
             "Images": [
               "b8f2532e-1c1f-4d33-91b3-8e28e36503e0.png"
             ],
@@ -661,10 +650,10 @@
             "Type": 1,
             "Id": "bd5aa4f3-fe08-4005-bf25-9d428a09cfc3",
             "Title": "Fact check: Hospitals get paid more if patients listed as COVID-19, on ventilators",
-            "Description": "Hospitals are paid more for Medicare patients with COVID-19, but a senator who first said that says he doesn't think the system is being gamed.",
+            "Description": "Fact checkers could not debunk, that Hospitals get paid more, if Covid patients, go on ventilators. or die.",
             "Source": "USA Today",
             "Url": "https://eu.usatoday.com/story/news/factcheck/2020/04/24/fact-check-medicare-hospitals-paid-more-covid-19-patients-coronavirus/3000638001/",
-            "Duration": 8,
+            "Duration": 7,
             "Images": [
               "1aaa3b65-0bd2-49cc-bf26-0413fc81d402.png",
               "af9fbc73-0c50-4be3-8c8a-65a0d0e8cd03.png"
@@ -677,10 +666,9 @@
             "Type": 1,
             "Id": "6999862d-18ec-4989-b914-9d65413863a5",
             "Title": "Hospital Payments and the COVID-19 Death Count - FactCheck.org",
-            "Description": "Q: Are hospitals inflating the number of COVID-19 cases and deaths so they can be paid more? A: Recent legislation pays hospitals higher Medicare rates for COVID-19 patients and treatment, but there is no evidence of fraudulent reporting. FULL QUESTION Are hospitals getting 13,000 per patient if they write that on the diagnosis is COVID19 on the patient’s chart, and 35,000 for each patient if they are on ventilators? I keep seeing posts in social media claiming that hospitals are over-stating covid-19 deaths because the they are paid more for these deaths …",
             "Source": "FactCheck.org",
             "Url": "https://www.factcheck.org/2020/04/hospital-payments-and-the-covid-19-death-count/",
-            "Duration": 10,
+            "Duration": 6,
             "Images": [
               "9e0eacf4-a426-4ae7-a55c-926a1340cca2.png"
             ],
@@ -692,10 +680,10 @@
             "Type": 1,
             "Id": "1fd7f390-475e-4f4f-8004-d39102e387bb",
             "Title": "Vax fee to general practice increased as government sets huge target",
-            "Description": "GP practices and pharmacies providing covid vaccinations will be paid around 20 per cent more over the next two months, as the NHS seeks to hugely speed up the process despite major constraints on workforce, HSJ has learned, as several senior NHS leaders said the NHS needed military support.  ...",
+            "Description": "In the UK, doctors get paid, for each jab they administer.",
             "Source": "Health Service Journal",
             "Url": "https://www.hsj.co.uk/primary-care/vax-fee-to-general-practice-increased-as-government-sets-huge-target/7031439.article",
-            "Duration": 8,
+            "Duration": 7,
             "Images": [
               "97e3ebba-42dd-4181-818b-e516713eec7d.png"
             ],
@@ -707,10 +695,10 @@
             "Type": 1,
             "Id": "0559de8d-d170-42a9-a24c-21e3a28deccf",
             "Title": "Number of registered patients per GP rises to almost 2,100",
-            "Description": "The number of registered patients per GP has risen by 56 to 2,087 per GP, according to new figures.",
+            "Description": "It adds up to a hefty sum, for doctors with a lot of patiens.",
             "Source": "Pulse Today",
             "Url": "https://www.pulsetoday.co.uk/news/workload/number-of-registered-patients-per-gp-rises-to-almost-2100/",
-            "Duration": 8,
+            "Duration": 9,
             "Images": [
               "7739e692-8f1c-4cc5-ae35-119d78397696.png"
             ],
@@ -742,10 +730,10 @@
             "Type": 1,
             "Id": "ec35d8d4-8e66-41ca-ada1-ede5b4a569fa",
             "Title": "COVID-19 Risk Management | Assurity Consulting",
-            "Description": "As COVID-19 is so new, and the need to specifically risk assess for it being a recent requirement, knowing what suitable and sufficient looks like, as well as keeping pace with changing requirements we recognize that is not easy.",
+            "Description": "Employers, are expected to carry out COVID-19 risk assessments, and get  \"Covid secure\" certifications for businesses. They have to play along, to stay in business, and to participate in the furlough schemes. This might eventually lead, to imposing vaccine mandates to their workforce.\r\nA whole new covid economy has spun up... seemingly set to replace the normal economic activity, that has been outlawed.",
             "Source": "Assurity Consulting Ltd",
             "Url": "https://www.assurityconsulting.co.uk/services/covid-19-risk-management",
-            "Duration": 8,
+            "Duration": 3,
             "Images": [
               "4f547621-cc23-4a2c-867e-60987d14cd93.png"
             ],
@@ -756,10 +744,9 @@
             "Type": 1,
             "Id": "88013a0b-ebf9-48e2-9148-1001ab804588",
             "Title": "How to reassure customers your small business is COVID-19 secure",
-            "Description": "Letting your customers know you are COVID-secure is crucial as businesses slowly start to reopen. Learn how you can fuel customer confidence with our tips and advice.",
             "Source": "The Federation of Small Businesses",
             "Url": "https://www.fsb.org.uk/resources-page/how-to-reassure-customers-your-small-business-is-covid-19-secure.html",
-            "Duration": 8,
+            "Duration": 3,
             "Images": [
               "f3b36d68-f1e6-426a-8090-1f75dda6d938.png",
               "d6c4af03-70f1-467b-a72a-a468a8daba3e.png"
@@ -772,10 +759,9 @@
             "Type": 1,
             "Id": "bdf43cf7-fedc-4773-87a2-765569bb3529",
             "Title": "COVID-19 Certification - NCASS",
-            "Description": "NCASS",
             "Source": "NCASS",
             "Url": "https://www.ncass.org.uk/covid-certification/",
-            "Duration": 8,
+            "Duration": 3,
             "Images": [
               "70c899fc-c9aa-4fb1-bbcd-14382816dcc8.png"
             ],
@@ -789,7 +775,7 @@
             "Title": "Getting the coronavirus (COVID-19) vaccine for work",
             "Source": "Advisory, Conciliation and Arbitration Service UK",
             "Url": "https://www.acas.org.uk/working-safely-coronavirus/getting-the-coronavirus-vaccine-for-work",
-            "Duration": 8,
+            "Duration": 3,
             "Images": [
               "2e1f784f-1f36-4465-8d7a-a8032af40c57.png"
             ],
@@ -801,10 +787,9 @@
             "Type": 1,
             "Id": "7f544dbc-b881-45dc-84c5-8f9e5a2ff3e9",
             "Title": "The UK’s coronavirus furlough scheme, explained by experts",
-            "Description": "The government has decided to extend the furlough scheme again. But what does that mean for you?",
             "Source": "WIRED UK",
             "Url": "https://www.wired.co.uk/article/uk-furlough-scheme-job-protection",
-            "Duration": 8,
+            "Duration": 3,
             "Images": [
               "46f5eefb-8e30-417b-8b5f-e552cb6a873f.png"
             ],
@@ -816,10 +801,9 @@
             "Type": 1,
             "Id": "ac6d7bc0-0dec-4e6e-acb2-2a641562bb41",
             "Title": "Without the coronavirus pandemic, these jobs probably wouldn't have existed",
-            "Description": "As the virus has forced businesses, restaurants, stores and theaters across the country to shut down, a quarter of American workers have filed for unemployment benefits. Yet the public health crisis has also created some new jobs.",
             "Source": "CNBC",
             "Url": "https://www.cnbc.com/2020/05/31/new-jobs-created-as-a-result-of-the-coronavirus-pandemic.html",
-            "Duration": 8,
+            "Duration": 3,
             "Images": [
               "046587bd-a826-41bd-8eb5-70dfdd833bfa.png"
             ],
@@ -831,10 +815,9 @@
             "Type": 1,
             "Id": "26d2e954-07aa-48d1-918c-1e786accd4c4",
             "Title": "COVID-19 sped up the future of jobs. How to protect workers.",
-            "Description": "COVID-19 and emerging technology have caused a double disruption to jobs, with 85 million jobs displaced and 97 million added across 26 countries by 2025.",
             "Source": "World Economic Forum",
             "Url": "https://www.weforum.org/agenda/2020/10/covid-19-accelerated-the-future-of-jobs-here-s-how-to-protect-workers-9edb26584d/",
-            "Duration": 14,
+            "Duration": 6,
             "Images": [
               "979e626f-b408-487f-be23-02232755a9aa.png"
             ],
@@ -866,6 +849,7 @@
             "Type": 1,
             "Id": "8978bab5-f1bf-4707-98c6-4d8a97ef3d9e",
             "Title": "Claiming financial support under the Test and Trace Support Payment scheme",
+            "Description": "The average mainstream media watching person, is under a constant barrage of fear mongering. and has a few additional reasons, to comply with mandates.",
             "Source": "GOV.UK",
             "Url": "https://www.gov.uk/government/publications/test-and-trace-support-payment-scheme-claiming-financial-support/claiming-financial-support-under-the-test-and-trace-support-payment-scheme",
             "Duration": 8,
@@ -880,10 +864,9 @@
             "Type": 1,
             "Id": "453fe4f8-5e67-46cf-8689-11bc7e593f55",
             "Title": "Free beer, doughnuts and $1 million: Incentives to get your COVID-19 vaccine",
-            "Description": "Companies and governments are giving away money, doughnuts, scholarships and even AirPods in a continued bid to get as many people vaccinated as possible.",
             "Source": "CNET",
             "Url": "https://www.cnet.com/health/free-beer-doughnuts-and-1-million-dollars-incentives-to-get-your-covid-19-vaccine/",
-            "Duration": 8,
+            "Duration": 5,
             "Images": [
               "58f799e3-58f0-4582-af81-a28f626aba47.png"
             ],
@@ -895,10 +878,9 @@
             "Type": 1,
             "Id": "b19dab15-da74-47a4-af6e-d67a91079fb4",
             "Title": "Vienna brothel offers customers 30 minutes with 'lady of their choice' in exchange for covid jab | JOE.co.uk",
-            "Description": "Vaccination uptake levels in Austria are among the worst in western Europe - but a brothel in Vienna has an innovative idea on how to fix things.",
             "Source": "JOE.co.uk",
             "Url": "https://www.joe.co.uk/news/vienna-brothel-offers-customers-30-minutes-with-lady-of-their-choice-in-exchange-for-covid-jab-298998",
-            "Duration": 8,
+            "Duration": 5,
             "Images": [
               "06a8d217-4183-49b7-9840-60bdefc3e4f1.png"
             ],

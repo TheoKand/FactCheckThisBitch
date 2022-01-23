@@ -26,6 +26,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             }
         }
 
+        public string NarrationLabel;
+
         public ReferenceUi()
         {
             InitializeComponent();
@@ -66,6 +68,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             imageEditor1.ImageEdits = _content.ImageEdits;
             txtDatePublished.Text = _content.DatePublished.ToSimpleStringDate();
             txtAuthor.Text = _content.Author;
+
+            txtSummary_TextChanged(null,null);
         }
 
         #region events
@@ -96,6 +100,14 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             OnMoveToOtherPiece(_content.Id);
         }
 
+        private void txtSummary_TextChanged(object sender, EventArgs e)
+        {
+            var characters = txtSummary.Text.Length;
+            lblSummaryLength.Text = $"{NarrationLabel}\r{characters}c {txtSummary.Text.ToSpeechDuration()}s";
+        }
+
         #endregion
+
+
     }
 }

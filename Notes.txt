@@ -11,13 +11,30 @@ Puzzle checklist
 	Pre render
 		clean up keywords
 		spell check json file
-	Content
+	Powerpoint Content
 		- view slides, adjust duration on puzzle, pieces, references
 	Output
 		- Adjust text boxes, text formating (bold for next keywords)
 		- Add music
 		- Remove watermrks
 		- Generate & Preview video
+
+
+
+Video checklist
+	Pre render
+		clean up keywords
+		spell check json file
+		all slides duration must be 5seconds
+	Output
+		- Render powerpoint
+		- Remove watermarks from presentation
+		- Create new video edit project. Customize intro and other stuff if nessecary
+		- Generate speechelo narration and import in video
+		- Adjust talking head with waveform of narration
+		- Save powerpoint as video and import in video
+		- Final adjustments in video
+
 
 IDEAS
 
