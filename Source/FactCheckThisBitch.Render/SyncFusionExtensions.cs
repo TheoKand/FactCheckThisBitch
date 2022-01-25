@@ -23,7 +23,7 @@ namespace FactCheckThisBitch.Render
 
         public static void UpdateText(this ISlide slide, string textboxName, string text)
         {
-            var shape = slide.Shapes.FirstOrDefault(s => s.ShapeName == textboxName) as IShape;
+            var shape = slide?.Shapes.FirstOrDefault(s => s.ShapeName == textboxName) as IShape;
             if (shape == null) return;
             shape.TextBody.Text = text;
         }
@@ -45,7 +45,7 @@ namespace FactCheckThisBitch.Render
 
         public static void ReplacePicture(this ISlide slide, string pictureName, string pictureFileName)
         {
-            var picture = slide.Pictures.FirstOrDefault(p => p.ShapeName == pictureName);
+            var picture = slide?.Pictures.FirstOrDefault(p => p.ShapeName == pictureName);
             if (picture == null) return;
 
             using (Stream pictureStream = File.Open(pictureFileName, FileMode.Open))

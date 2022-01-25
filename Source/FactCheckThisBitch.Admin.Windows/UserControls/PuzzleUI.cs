@@ -16,6 +16,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         public Action SaveToFile;
         public Action OnChanged;
 
+        private string _selectedPieceId;
+
         public Puzzle Puzzle
         {
             get => _puzzle;
@@ -140,14 +142,26 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             return invalidNeighbours <= maxInvalidNeighbours;
         }
 
+        private void SelectPiece(string pieceId,bool selected)
+        {
+            if (pieceId == null) return;
+            ((PuzzlePieceUi) Controls.Find(pieceId, true).First()).BorderStyle = selected ? BorderStyle.FixedSingle : BorderStyle.None;
+        }
+
         private void DecoratePuzzle()
         {
             for (int x = 1; x <= Puzzle.Width; x++)
             {
                 for (int y = 1; y <= Puzzle.Height; y++)
                 {
+
                     var indexOfThisSquare = Puzzle.PieceIndexFromPosition(x, y);
                     var puzzlePiece = Puzzle.PuzzlePieces.First(p => p.Index == indexOfThisSquare);
+                    var puzzlePieceUi = (PuzzlePieceUi)Controls.Find(puzzlePiece.Piece.Id, true).First();
+
+                    puzzlePieceUi.BorderStyle = puzzlePiece.Piece.Id == _selectedPieceId
+                        ? BorderStyle.FixedSingle
+                        : BorderStyle.None;
 
                     #region find neghbours and establish if the piece connects or not
 
@@ -156,8 +170,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     puzzlePiece.Valid = UserSettings.Instance().PuzzleMatchingStrict
                         ? PieceHasAllValidNeighbours(puzzlePiece.Piece, neighbours)
                         : PieceHasEnoughValidNeighbours(puzzlePiece.Piece, neighbours);
-
-                    var puzzlePieceUi = (PuzzlePieceUi) Controls.Find(puzzlePiece.Piece.Id, true).First();
 
                     puzzlePieceUi.BackColor = puzzlePiece != null && puzzlePiece.Valid
                         ? Color.LightGreen
@@ -230,9 +242,14 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void OnPieceClicked(Piece piece)
         {
+            SelectPiece(_selectedPieceId,false);
+            _selectedPieceId = piece.Id;
+            SelectPiece(_selectedPieceId, true);
+
             var pieceBefore = JsonConvert.SerializeObject(piece, StaticSettings.JsonSerializerSettings);
             FrmPiece pieceForm = new FrmPiece(piece);
             pieceForm.OnMoveReferenceToOtherPiece = referenceId => MoveReferenceToOtherPiece(piece, referenceId);
+            pieceForm.OnSave = SaveToFile;
             var result = pieceForm.ShowDialog();
             if (result != DialogResult.OK) return;
 

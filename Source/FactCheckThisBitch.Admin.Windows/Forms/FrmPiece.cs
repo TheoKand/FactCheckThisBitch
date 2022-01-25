@@ -12,6 +12,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
     public partial class FrmPiece : Form
     {
         public Func<string,bool> OnMoveReferenceToOtherPiece;
+        public Action OnSave;
 
         private Piece _piece;
 
@@ -63,7 +64,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             tabReferences.TabPages.Clear();
 
             var totalSlideDuration = 0;
-            var totalSpeechDuration = 0;
+            double totalSpeechDuration = 0;
 
             for (var index = 0; index < _piece.References.Count; index++)
             {
@@ -80,7 +81,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
                 var referenceUi = new ReferenceUi()
                 {
-                    NarrationLabel = $"Duration:{totalSlideDuration}s\rNarration:{totalSpeechDuration}s{(totalSlideDuration>totalSpeechDuration?" OK":"")}",
+                    NarrationLabel = $"Duration:{totalSlideDuration}s\rNarration:{Math.Round(totalSpeechDuration,2)}s{(totalSlideDuration>totalSpeechDuration?" OK":"")}",
                     Font = new Font(this.Font, FontStyle.Regular),
                     Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom,
                     Content = reference,
@@ -93,6 +94,11 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                         _piece.References.Remove(_piece.References.First(r => r.Id == referenceId));
                         if (tabReferences.TabCount >= 1)
                             tabReferences.SelectedIndex = tabReferences.TabCount - 1;
+                    },
+                    OnSave = () =>
+                    {
+                        SaveForm();
+                        OnSave?.Invoke();
                     },
                     OnMove = (string referenceId, int move) =>
                     {
@@ -116,9 +122,10 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 tabPage.Controls.Add(referenceUi);
 
                 tabReferences.TabPages.Add(tabPage);
-
+                //TODO: needs work because the transitions are not applied. Logic found in renderer.
+                //Should extract that logic in extension method and use here.
                 totalSlideDuration += reference.Duration * reference.Images.Count;
-                totalSpeechDuration += reference.Description.ToSpeechDuration();
+                totalSpeechDuration += reference.ToNarrationDuration();
             }
         }
 

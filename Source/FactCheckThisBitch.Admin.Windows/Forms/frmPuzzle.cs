@@ -57,7 +57,13 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             txtSize.ValidationPattern = "^[3-9]x[3-9]$";
             txtSize.TextChanged = x => SizeChanged();
             puzzleUi.SaveToFile = SaveToFile;
-            puzzleUi.OnChanged = () => IsDirty = true;
+            puzzleUi.OnChanged = () =>
+            {
+                if (!FileIsUpToDate())
+                {
+                    IsDirty = true;
+                }
+            };
             cboLanguage.DataSource = Configuration.Instance()
                 .Languages;
         }
@@ -108,6 +114,18 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 Encoding.UTF8);
             _puzzle = JsonConvert.DeserializeObject<Puzzle>(json,
                 StaticSettings.JsonSerializerSettings);
+        }
+
+        private bool FileIsUpToDate()
+        {
+            var fileJson = File.ReadAllText(UserSettings.Instance()
+                    .CurrentPuzzlePath,
+                Encoding.UTF8);
+            var formJson = JsonConvert.SerializeObject(_puzzle,
+                Formatting.Indented,
+                StaticSettings.JsonSerializerSettings);
+
+            return formJson == fileJson;
         }
 
         private void SaveToFile()
@@ -268,7 +286,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                            optionsForm.Options.HandleWrongSpeak,
                            optionsForm.Options.HandleBlurryAreas))
                 {
-                    renderer.Render();
+                   renderer.Render();
                 }
             }
             catch (Exception ex)

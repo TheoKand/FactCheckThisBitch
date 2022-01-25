@@ -14,12 +14,13 @@
       "Y": 1,
       "Piece": {
         "Id": "f54bdc0b-ea4e-4195-8da2-fe916196b051",
-        "Title": "Since the pandemic started, an unprecedented number of developing Countries received funds from IMF, World Bank.",
-        "Thesis": "The world's poorer countries have requested funds from the International Monetary Fund right after they impose lockdowns.\r\nThe World Bank is also loaning a hundred developing countries.\r\nSome think these loans are a bad idea in the long run.\r\nWhen a country owes money to international organizations, it risks losing it's sovereignty and natural resources.",
+        "Title": "The world's poorer countries have requested funds right after they impose lockdowns.",
+        "Thesis": "The world's poorer countries have requested funds right after they impose lockdowns.\r\nThe World Bank is also loaning a hundred developing countries.\r\nSome think these loans are a bad idea in the long run.\r\nWhen a country owes money to international organizations, it risks losing it's sovereignty and natural resources.",
         "Duration": 5,
         "Keywords": [
           "IMF",
-          "World Bank"
+          "World Bank",
+          "Loans"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -29,7 +30,7 @@
             "Type": 1,
             "Id": "7e3491e0-c21d-442f-a781-d6dbd7851f88",
             "Title": "Locking down the economy, borrowing money and drastically increasing public debt",
-            "Description": "Since the pandemic started,   an unprecedented number of developing Countries,   home to over 70% of the world's population,   have received loans,   from the IMF and World Bank.   \r\nWhen a country owes money to international organizations,   it risks losing it's sovereignty.   and,   natural resources.  .  .  .  ",
+            "Description": "Since the pandemic started, an unprecedented number of developing Countries, home to over 70% of the world's population, have received loans, from the IMF and World Bank. When a country owes money to international organizations, it risks losing it's sovereignty. and, natural resources.",
             "Source": "TheWeek",
             "Url": "https://www.theweek.co.uk/106658/half-the-world-s-countries-ask-for-imf-bailout",
             "Duration": 7,
@@ -84,7 +85,7 @@
           {
             "Type": 1,
             "Id": "12cce35a-2098-4daa-9918-5b8ee82ed9aa",
-            "Description": "Some think these loans, are a bad idea, in the long run...",
+            "Description": "Some think these loans, are a bad idea, in the long run.",
             "Source": "Quartz Africa",
             "Url": "https://qz.com/africa/2001988/why-kenyans-are-refusing-the-imfs-billions/",
             "Duration": 7,
@@ -121,7 +122,7 @@
       "Y": 1,
       "Piece": {
         "Id": "d9909219-5528-43af-b363-c366470d00f2",
-        "Title": "Could IMF funds be tied to imposing lockdown measures?",
+        "Title": "Could IMF and World Bank loans be tied to imposing lockdown measures?",
         "Thesis": "Various countries and leaders did not take the pandemic very seriously at first. A well known best seller book by John Perkins might offer some useful insights on what happens when countries deny funds from globalist institutions.",
         "Duration": 5,
         "Keywords": [
@@ -151,7 +152,7 @@
             "Type": 1,
             "Id": "030ab77f-1d81-4bc7-b3fd-1fe051c791b4",
             "Title": "President queries Tanzania coronavirus kits after goat test",
-            "Description": "Various countries and leaders, did not take the pandemic very seriously, at first. ",
+            "Description": "Various countries and leaders, like Tanzanian President John Magufuli, did not take the pandemic very seriously.",
             "Source": "Reuters",
             "Url": "https://www.reuters.com/article/us-health-coronavirus-tanzania-idUSKBN22F0KF",
             "Duration": 7,
@@ -180,7 +181,7 @@
             "Type": 1,
             "Id": "8bd256b4-5a36-41eb-ab57-777aa6372399",
             "Title": "Haiti Is the Only Country in Western Hemisphere Without Vaccines",
-            "Description": "Haiti leadership was initially sceptical... about the vaccination program.",
+            "Description": "Haiti leadership was initially sceptical. about the vaccination program. Haiti president, was later assassinated. Of course, there is no proof, of a connection.",
             "Source": "Bloomberg",
             "Url": "https://www.bloomberg.com/news/articles/2021-06-08/haiti-is-the-only-country-in-western-hemisphere-without-vaccines",
             "Duration": 7,
@@ -210,10 +211,10 @@
             "Type": 1,
             "Id": "ef86f17c-5302-42f2-857c-fe3b89fd46d4",
             "Title": "Confessions of an Economic Hit Man - Wikipedia",
-            "Description": "John Perkins, a former CIA agent, has written a best seller book, that sheds light on what happens, when countries deny funds, from globalist institutions.",
+            "Description": "John Perkins. a former CIA agent, has written a best seller book, that sheds light on what happens, when countries deny funds, from globalist institutions.",
             "Source": "Wikipedia",
             "Url": "https://en.wikipedia.org/wiki/Confessions_of_an_Economic_Hit_Man",
-            "Duration": 12,
+            "Duration": 13,
             "Images": [
               "b67f5acc-125f-4de7-98cf-86849f513699.png"
             ],
@@ -231,7 +232,7 @@
       "Y": 1,
       "Piece": {
         "Id": "8c79b0ee-a23b-43a4-85bc-e9aa45c08078",
-        "Title": "Businesses in countries like UK and France are borrowing huge sums of money from banks, with State Loan Guarantees. How will they pay these back with the perpetual lockdowns?",
+        "Title": "Advanced economies and bankruptcy by design.",
         "Thesis": "If these loans are not paid back, it becomes national debt. This looks increasingly like bankruptcy by design. If a country becomes indebted they will eventually lose state assets like public utility companies, natural resources and ultimately sovereignty. Essentially all countries await the same fate as famously bankrupt Greece, Argentina etc.",
         "Duration": 5,
         "Keywords": [
@@ -245,10 +246,10 @@
             "Type": 1,
             "Id": "0afd40fd-13ad-46ea-a383-12cb8c6358dc",
             "Title": "Where does bailout money come from and who will pay for it?",
-            "Description": "In developed countries, such as UK and France, Businesses are borrowing huge sums of money from banks... with State Loan Guarantees. How will they pay these back, with the perpetual lockdowns?",
+            "Description": "In developed countries, such as UK and France, Businesses are borrowing huge sums of money from banks. with State Loan Guarantees. How will they pay these back, with the perpetual lockdowns? If these loans are not paid back, it becomes national debt.",
             "Source": "Theweek.co.uk",
             "Url": "https://www.theweek.co.uk/coronavirus/106370/where-does-bailout-money-come-from-and-who-will-pay-for-it",
-            "Duration": 17,
+            "Duration": 20,
             "Images": [
               "7a258243-ca9d-4968-bf9c-3266bd2aab0f.png"
             ],
@@ -260,10 +261,10 @@
             "Type": 1,
             "Id": "36e86a53-7e4f-4716-a050-05f7fa5131aa",
             "Title": "UPDATED – COVID-19 | France: State Guarantee Scheme for New Money Loans",
-            "Description": "If these loans are not paid back, it becomes national debt. This looks increasingly, like bankruptcy, by design. If a country becomes indebted, they will eventually lose state assets, like public utility companies, natural resources, and ultimately sovereignty...Could some of the strongest economies, be on the steps, of famously bankrupt, Greece and Argentina?",
+            "Description": "This looks increasingly, like bankruptcy, by design. If a country becomes indebted, they will eventually lose state assets, like public utility companies, natural resources, and ultimately sovereignty. Could some of the strongest economies, be on the steps, of famously bankrupt, Greece and Argentina?",
             "Source": "Shearman & Sterling",
             "Url": "https://www.shearman.com/Perspectives/2020/04/COVID-19-France-State-Guarantee-Scheme-for-New-Money-Loans",
-            "Duration": 17,
+            "Duration": 22,
             "Images": [
               "44ff6329-a229-43a1-8a41-1749a2fe5e3d.png"
             ],
@@ -281,7 +282,7 @@
       "Y": 2,
       "Piece": {
         "Id": "018b7fd6-150b-4f32-ab85-6f36f0908b60",
-        "Title": "Governments and Silicon Valley behemoths openly offer money to media organizations to educate the public on following Covid guidelines. ",
+        "Title": "Should news media investigate and question authority, or get free money to follow a narrative?",
         "Thesis": "Is a journalist supposed to investigate and question authority or get free money to follow a narrative?\r\nAt the more local level, numerous funds have been setup throughout the world, that offer money to journalists to inform the public and help them \"make safe decisions\".",
         "Duration": 5,
         "Keywords": [
@@ -295,10 +296,10 @@
             "Type": 1,
             "Id": "51660eac-043a-4007-b0bd-03029400e230",
             "Title": "Germany offers €220m in supports to print media but some are skeptical",
-            "Description": "Governments, and Silicon Valley behemoths, openly offer money to media organizations. To educate the public, on following Covid guidelines. ",
+            "Description": "Governments, and Silicon Valley behemoths, openly offer money to media organizations. To educate the public, on following Covid guidelines.",
             "Source": "The Irish Times",
             "Url": "https://www.irishtimes.com/business/media-and-marketing/germany-offers-220m-in-supports-to-print-media-but-some-are-sceptical-1.4330551",
-            "Duration": 8,
+            "Duration": 10,
             "Images": [
               "b5de7768-04a4-408f-849c-806ed7f2f30a.png",
               "f341c6c9-3371-4679-97c5-21fe7e6fb71f.png"
@@ -311,7 +312,7 @@
             "Type": 1,
             "Id": "5a842446-31c6-4b93-b952-970ecb216a7a",
             "Title": "The Covid-19 crisis highlights Greece’s media problem - International Press Institute",
-            "Description": "Is a journalist supposed to investigate? and question authority?",
+            "Description": "Is a journalist supposed to investigate? and question authority? or get free money, to follow a narrative.",
             "Source": "International Press Institute",
             "Url": "https://ipi.media/the-covid-19-crisis-highlights-greeces-media-problem/",
             "Duration": 6,
@@ -326,7 +327,6 @@
             "Type": 1,
             "Id": "35f47a03-aa4b-4edc-863f-5a4f1c1b1b4d",
             "Title": "Gov’t makes public list of media firms paid to promote Covid-19 health measures",
-            "Description": "or get free money, to follow a narrative...",
             "Source": "Kathimerini",
             "Url": "https://www.ekathimerini.com/news/254417/govt-makes-public-list-of-media-firms-paid-to-promote-covid-19-health-measures/",
             "Duration": 8,
@@ -341,7 +341,7 @@
             "Type": 1,
             "Id": "c0f67f08-f0ef-4f6a-8383-779bbdf37e08",
             "Title": "US Newsrooms Share Impact of Facebook’s $10 Million COVID-19 Grants",
-            "Description": "At the local level, numerous funds have been setup, throughout the world. Offering money to journalists, to inform the public... and help them, \"make safe decisions\".",
+            "Description": "At the local level, numerous funds have been setup, throughout the world. Offering money to journalists, to inform the public.and help them, \"make safe decisions\".",
             "Source": "Facebook Journalism Project",
             "Url": "https://www.facebook.com/journalismproject/programs/grants/us-covid-relief-grant-impact",
             "Duration": 10,
@@ -390,11 +390,11 @@
       "Y": 2,
       "Piece": {
         "Id": "3d51dac1-c7e4-450f-b8d7-8e65de9b1d21",
-        "Title": "Where is the money coming from? How is the world's economy going to cope with financing these perpetual lockdowns? ",
-        "Thesis": "Klaus Schwab of the World Economic Forum:\r\n\"... people assume we are just going back to the good old world. This is fiction, it will not happen...\"\r\n\"...you will own nothing, and you will be happy...\"\r\n\"...research for vaccines using completely new methods based on synthetic biology...\"\r\n\"...fusion of our physical, digital and biological identity...\"\r\n",
+        "Title": "The Great Reset and Central Bank Digital Currencies (CBDC)",
+        "Thesis": "Klaus Schwab of the World Economic Forum:\r\n\".  people assume we are just going back to the good old world. This is fiction, it will not happen. \"\r\n\". you will own nothing, and you will be happy. \"\r\n\". research for vaccines using completely new methods based on synthetic biology. \"\r\n\". fusion of our physical, digital and biological identity. \"\r\n",
         "Duration": 5,
         "Keywords": [
-          "Great\r\nReset"
+          "Great\r\n Reset"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -404,7 +404,7 @@
             "Type": 1,
             "Id": "efe1df8f-7a45-437c-97fc-cabe83e17b61",
             "Title": "How Central Banks Create Money Out from the Thin Air",
-            "Description": "Where is the money coming from? How is the world's economy, going to cope, with financing  these perpetual lockdowns? ",
+            "Description": "Where is the money coming from? How is the world's economy, going to cope, with financing these perpetual lockdowns? ",
             "Url": "https://medium.datadriveninvestor.com/how-central-banks-create-money-out-from-the-thin-air-e01453d81ab",
             "Duration": 8,
             "Images": [
@@ -432,7 +432,7 @@
             "Type": 1,
             "Id": "633d2d6e-de85-4dea-865a-5e23e91165d8",
             "Title": "Time for a great reset of the financial system",
-            "Description": "Very conveniently, the pandemic has become the catalyst... for the long planned... Great Reset.",
+            "Description": "Very conveniently, the pandemic has become the catalyst.for the long planned.Great Reset.",
             "Url": "https://www.ft.com/content/39c53b9f-f443-4dde-9cdb-07e8999ec783",
             "Duration": 7,
             "Images": [
@@ -440,7 +440,7 @@
             ],
             "ImageEdits": [],
             "DatePublished": "2021-03-18T00:00:00",
-            "Author": "Chris Watling"
+            "Author": "Chris Watling 6.24"
           },
           {
             "Type": 1,
@@ -459,25 +459,24 @@
             "Type": 1,
             "Id": "c454f44c-5eb7-490a-bad1-d50a3c799955",
             "Title": "COVID-19: The Great Reset",
-            "Description": "quote  \"people assume, we are just going back, to the good old world. This is fiction, it will not happen\"\r\nquote \"you will own nothing, and you will be happy!\"\r\nquote \"research for vaccines, using completely new methods, based on synthetic biology\"\r\nquote \"fusion of our physical, digital and biological identity\"",
+            "Description": "Here's what Klaus Schwab, chairman of the World Economic Forum, and Doctor Evil imperssonator, had to say.quote,\"people assume, we are just going back, to the good old world. This is fiction, it will not happen\".quote, \"you will own nothing, and you will be happy!\".quote, \"research for vaccines, using completely new methods, based on synthetic biology\".quote, \"fusion of our physical, digital and biological identity\".",
             "Source": "YouTube",
             "Url": "https://www.youtube.com/watch?v=VHRkkeecg7c",
-            "Duration": 12,
+            "Duration": 25,
             "Images": [
               "d9496cd7-00a7-4322-b2cd-ac7a5e46b6c0.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2020-07-14T00:00:00",
-            "Author": "World Economic Forum"
+            "Author": "World Economic Forum 26.18"
           },
           {
             "Type": 1,
             "Id": "eda96ef3-897d-4aa4-a26a-c7c3a2281134",
             "Title": "KLAUS SCHWAB: Revolution will lead to a fusion of our physical, digital and biological identity",
-            "Description": "He looks...  oddly familiar ?!",
             "Source": "YouTube",
             "Url": "https://www.youtube.com/watch?v=t1SpC3B1KyM",
-            "Duration": 12,
+            "Duration": 8,
             "Images": [
               "37da435a-77b9-426a-b449-8cbf1631995e.png"
             ],
@@ -489,10 +488,10 @@
             "Type": 1,
             "Id": "43eac138-d93f-4c9c-a88d-a388e9a1eff7",
             "Title": "‘Future of Money’ economist says the end of cash is coming—here’s what could replace it",
-            "Description": "Central Bank Digital Currencies, are coming soon. soon after rolling out the health certificate, and embedding it in our new digital identities. Which may or may not, be embedded, in our bodies.",
+            "Description": "Central Bank Digital Currencies, are coming soon. After rolling out the health certificate, and embedding it in our new digital identities. Which may or may not, be embedded, in our bodies.",
             "Source": "CNBC",
             "Url": "https://www.cnbc.com/2021/11/11/predictions-for-future-of-money-cbdcs-stablecoins-cryptocurrency.html",
-            "Duration": 8,
+            "Duration": 7,
             "Images": [
               "64e7f721-7fa1-4ab5-8a3e-e88d0540eab9.png",
               "7fa72531-f64a-4959-a6e5-706891520c56.png"
@@ -500,6 +499,20 @@
             "ImageEdits": [],
             "DatePublished": "2021-11-11T00:00:00",
             "Author": "Taylor Locke"
+          },
+          {
+            "Type": 1,
+            "Id": "eb5456ca-218f-4b08-bd57-37d0884c67ac",
+            "Title": "The EU has introduced a new ‘digital’ ID. Here’s what it means for you.",
+            "Source": "POLITICO",
+            "Url": "https://www.politico.eu/article/eu-europe-digital-id/",
+            "Duration": 8,
+            "Images": [
+              "c20206e2-378a-41ff-847d-55206a15e6b2.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-06-03T00:00:00",
+            "Author": ""
           }
         ]
       }
@@ -515,7 +528,8 @@
         "Thesis": "because pandemic. ",
         "Duration": 5,
         "Keywords": [
-          "Charities"
+          "Charities",
+          "NGOs"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -525,10 +539,10 @@
             "Type": 1,
             "Id": "9359c5ec-5283-41e4-baa3-53af4206efae",
             "Title": "Financial support for voluntary, community and social enterprise (VCSE) organizations to respond to coronavirus (COVID-19)",
-            "Description": "In the UK, Charities.  Zoos.  Football clubs,  and everything in between, is getting free money from the government! Because, pandemic...",
+            "Description": "In the UK, Charities. Zoos. NGOs. Football clubs, and everything in between, is getting free money from the government! Because, pandemic.",
             "Source": "GOV.UK",
             "Url": "https://www.gov.uk/guidance/financial-support-for-voluntary-community-and-social-enterprise-vcse-organisations-to-respond-to-coronavirus-covid-19",
-            "Duration": 5,
+            "Duration": 8,
             "Images": [
               "938466dc-9ad9-44a4-916e-dc384f409134.png",
               "e9da0f4f-a979-4d1d-acad-0b4297a0227f.png",
@@ -549,7 +563,7 @@
       "Y": 3,
       "Piece": {
         "Id": "76afbd0f-e850-41a9-b987-668b2ad6faf3",
-        "Title": "Hospitals and health care professionals.",
+        "Title": "Hospitals and doctors are on the forefront of receiving extra funding.",
         "Thesis": "Since the pandemic was declared, funds are flowing freely towards health care. Fact checkers are on it. Recording empty hospitals is not a good look, nor is questioning the 4000 capacity field hospitals that only ever treated up to 40 patients. ",
         "Duration": 5,
         "Keywords": [
@@ -566,7 +580,7 @@
             "Description": "Since the pandemic was declared, funds are flowing freely, towards health care.",
             "Source": "Health Service Journal",
             "Url": "https://www.hsj.co.uk/finance-and-efficiency/5bn-contingency-fund-announced-for-coronavirus-outbreak/7027106.article",
-            "Duration": 5,
+            "Duration": 6,
             "Images": [
               "0f314c95-561d-4cd8-897f-f4b7b3fbaae2.png"
             ],
@@ -606,7 +620,7 @@
             "Type": 1,
             "Id": "953362dc-a469-4976-bcf7-76a01e5ea4cb",
             "Title": "Stevens condemns videoing of ‘empty’ hospitals",
-            "Description": "Recording empty hospitals... is not a good look.",
+            "Description": "Recording empty hospitals.is not a good look.",
             "Source": "Health Service Journal",
             "Url": "https://www.hsj.co.uk/stevens-condemns-videoing-of-empty-hospitals/7029270.article",
             "Duration": 7,
@@ -624,7 +638,7 @@
             "Description": "Nor is questioning the 4000 capacity field hospitals, that only ever treated, up to 40 patients. ",
             "Source": "HuffPost UK",
             "Url": "https://www.huffingtonpost.co.uk/entry/nightingale-hospitals-covid-patient-numbers_uk_605a0dd6c5b6cebf58d220eb",
-            "Duration": 7,
+            "Duration": 10,
             "Images": [
               "7113b995-be2a-4430-b8e5-d89b0b53845d.png"
             ],
@@ -653,7 +667,7 @@
             "Description": "Fact checkers could not debunk, that Hospitals get paid more, if Covid patients, go on ventilators. or die.",
             "Source": "USA Today",
             "Url": "https://eu.usatoday.com/story/news/factcheck/2020/04/24/fact-check-medicare-hospitals-paid-more-covid-19-patients-coronavirus/3000638001/",
-            "Duration": 7,
+            "Duration": 8,
             "Images": [
               "1aaa3b65-0bd2-49cc-bf26-0413fc81d402.png",
               "af9fbc73-0c50-4be3-8c8a-65a0d0e8cd03.png"
@@ -680,10 +694,10 @@
             "Type": 1,
             "Id": "1fd7f390-475e-4f4f-8004-d39102e387bb",
             "Title": "Vax fee to general practice increased as government sets huge target",
-            "Description": "In the UK, doctors get paid, for each jab they administer.",
+            "Description": "In the UK, doctors get paid, for each injection they administer. It adds up to a hefty sum, for doctors with a lot of patients.",
             "Source": "Health Service Journal",
             "Url": "https://www.hsj.co.uk/primary-care/vax-fee-to-general-practice-increased-as-government-sets-huge-target/7031439.article",
-            "Duration": 7,
+            "Duration": 5,
             "Images": [
               "97e3ebba-42dd-4181-818b-e516713eec7d.png"
             ],
@@ -695,7 +709,6 @@
             "Type": 1,
             "Id": "0559de8d-d170-42a9-a24c-21e3a28deccf",
             "Title": "Number of registered patients per GP rises to almost 2,100",
-            "Description": "It adds up to a hefty sum, for doctors with a lot of patiens.",
             "Source": "Pulse Today",
             "Url": "https://www.pulsetoday.co.uk/news/workload/number-of-registered-patients-per-gp-rises-to-almost-2100/",
             "Duration": 9,
@@ -716,7 +729,7 @@
       "Y": 3,
       "Piece": {
         "Id": "bfc56879-2504-40ca-b9f5-aeb0e97b8405",
-        "Title": "Companies / Businesses / Employers.\r\nHow are they affected?\r\n",
+        "Title": "Companies / Businesses / Employers. How are they affected?\r\n",
         "Thesis": "Employers are expected to carry out COVID-19 risk assessments and get  \"Covid secure\" certifications for businesses. They have to play along to stay in business and to participate in the furlough schemes. This might eventually lead to imposing vaccine mandates to their workforce.\r\nA whole new covid economy has spun up, seemingly set to replace the normal economic activity that has been outlawed.",
         "Duration": 5,
         "Keywords": [
@@ -730,10 +743,10 @@
             "Type": 1,
             "Id": "ec35d8d4-8e66-41ca-ada1-ede5b4a569fa",
             "Title": "COVID-19 Risk Management | Assurity Consulting",
-            "Description": "Employers, are expected to carry out COVID-19 risk assessments, and get  \"Covid secure\" certifications for businesses. They have to play along, to stay in business, and to participate in the furlough schemes. This might eventually lead, to imposing vaccine mandates to their workforce.\r\nA whole new covid economy has spun up... seemingly set to replace the normal economic activity, that has been outlawed.",
+            "Description": "Employers, are expected to carry out COVID-19 risk assessments, and get \"Covid secure\" certifications for businesses. They have to play along, to stay in business, and to participate in the furlough schemes. This might eventually lead, to imposing vaccine mandates to their workforce.A whole new covid economy has spun up.seemingly set to replace the normal economic activity, that has been outlawed. This transformation is conviniently aiding a smooth transition to the fourth industrial revolution.",
             "Source": "Assurity Consulting Ltd",
             "Url": "https://www.assurityconsulting.co.uk/services/covid-19-risk-management",
-            "Duration": 3,
+            "Duration": 5,
             "Images": [
               "4f547621-cc23-4a2c-867e-60987d14cd93.png"
             ],
@@ -746,7 +759,7 @@
             "Title": "How to reassure customers your small business is COVID-19 secure",
             "Source": "The Federation of Small Businesses",
             "Url": "https://www.fsb.org.uk/resources-page/how-to-reassure-customers-your-small-business-is-covid-19-secure.html",
-            "Duration": 3,
+            "Duration": 5,
             "Images": [
               "f3b36d68-f1e6-426a-8090-1f75dda6d938.png",
               "d6c4af03-70f1-467b-a72a-a468a8daba3e.png"
@@ -761,7 +774,7 @@
             "Title": "COVID-19 Certification - NCASS",
             "Source": "NCASS",
             "Url": "https://www.ncass.org.uk/covid-certification/",
-            "Duration": 3,
+            "Duration": 5,
             "Images": [
               "70c899fc-c9aa-4fb1-bbcd-14382816dcc8.png"
             ],
@@ -775,7 +788,7 @@
             "Title": "Getting the coronavirus (COVID-19) vaccine for work",
             "Source": "Advisory, Conciliation and Arbitration Service UK",
             "Url": "https://www.acas.org.uk/working-safely-coronavirus/getting-the-coronavirus-vaccine-for-work",
-            "Duration": 3,
+            "Duration": 5,
             "Images": [
               "2e1f784f-1f36-4465-8d7a-a8032af40c57.png"
             ],
@@ -789,7 +802,7 @@
             "Title": "The UK’s coronavirus furlough scheme, explained by experts",
             "Source": "WIRED UK",
             "Url": "https://www.wired.co.uk/article/uk-furlough-scheme-job-protection",
-            "Duration": 3,
+            "Duration": 5,
             "Images": [
               "46f5eefb-8e30-417b-8b5f-e552cb6a873f.png"
             ],
@@ -803,7 +816,7 @@
             "Title": "Without the coronavirus pandemic, these jobs probably wouldn't have existed",
             "Source": "CNBC",
             "Url": "https://www.cnbc.com/2020/05/31/new-jobs-created-as-a-result-of-the-coronavirus-pandemic.html",
-            "Duration": 3,
+            "Duration": 5,
             "Images": [
               "046587bd-a826-41bd-8eb5-70dfdd833bfa.png"
             ],
@@ -817,7 +830,7 @@
             "Title": "COVID-19 sped up the future of jobs. How to protect workers.",
             "Source": "World Economic Forum",
             "Url": "https://www.weforum.org/agenda/2020/10/covid-19-accelerated-the-future-of-jobs-here-s-how-to-protect-workers-9edb26584d/",
-            "Duration": 6,
+            "Duration": 10,
             "Images": [
               "979e626f-b408-487f-be23-02232755a9aa.png"
             ],
@@ -835,10 +848,11 @@
       "Y": 3,
       "Piece": {
         "Id": "19809e5f-0f4f-46f2-88cb-491ce248084e",
-        "Title": "Individuals",
+        "Title": "Education / Individuals",
         "Thesis": "The average mainstream media watching person, is under a constant barrage of fear mongering and has a few additional reasons to play along. \r\n",
         "Duration": 5,
         "Keywords": [
+          "Education",
           "Individuals"
         ],
         "Content": {
@@ -847,12 +861,39 @@
         "References": [
           {
             "Type": 1,
+            "Id": "c858c3b1-2159-4fa7-9ec9-a25a724b72b9",
+            "Title": "New funding to support schools and colleges during Covid pandemic",
+            "Description": "Schools and universities, have a strong financial insentive, to not question the narrative, and to impose mandates, on their workforce and students.",
+            "Source": "GOV.UK",
+            "Url": "https://www.gov.uk/government/news/new-funding-to-support-schools-and-colleges-during-covid-pandemic",
+            "Duration": 8,
+            "Images": [
+              "3cfd6336-171c-4a1a-8078-d1579f1abcf6.png"
+            ],
+            "ImageEdits": [],
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "e91259c4-c3c8-49f9-8ca9-b2d31b954f4d",
+            "Title": "CNN Newsletters",
+            "Url": "https://edition.cnn.com/2021/09/05/politics/school-federal-covid-relief-money/index.html",
+            "Duration": 8,
+            "Images": [
+              "fa6cda8e-3206-4749-998e-ad5220dfb718.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-09-05T00:00:00",
+            "Author": "Katie Lobosco, CNN"
+          },
+          {
+            "Type": 1,
             "Id": "8978bab5-f1bf-4707-98c6-4d8a97ef3d9e",
             "Title": "Claiming financial support under the Test and Trace Support Payment scheme",
-            "Description": "The average mainstream media watching person, is under a constant barrage of fear mongering. and has a few additional reasons, to comply with mandates.",
+            "Description": "Last but not least, Individuals. They are under a constant barrage of fear mongering by media. And have a few additional reasons, to comply, like getting a paycheck for testing positive, or a free doughnut.",
             "Source": "GOV.UK",
             "Url": "https://www.gov.uk/government/publications/test-and-trace-support-payment-scheme-claiming-financial-support/claiming-financial-support-under-the-test-and-trace-support-payment-scheme",
-            "Duration": 8,
+            "Duration": 6,
             "Images": [
               "567a4d61-cd43-4a8a-8095-9747c43e5878.png"
             ],

@@ -24,7 +24,7 @@ namespace FackCheckThisBitch.Common
 
         public static string Limit(this string input, int max)
         {
-            if (input.Length > max)
+            if (input?.Length > max)
             {
                 return input.Substring(0, max);
             }
@@ -188,25 +188,47 @@ namespace FackCheckThisBitch.Common
             return input;
         }
 
-        public static int ToSpeechDuration(this string input)
+        public static string StripNarrationTags(this string input)
+        {
+            return input.Replace("[startSpeech v=Loud startSpeech]", "")
+                .Replace("[endSpeech]", "")
+                .Replace("[sPause sec=1 ePause]", "");
+        }
+        public static string StripLinefeeds(this string input, string replaceWith)
+        {
+            return input.Replace("\r\n", replaceWith)
+                .Replace("\r", replaceWith)
+                .Replace("\n", replaceWith);
+        }
+
+        public static string SecondsToTimeline(this double seconds)
+        {
+            TimeSpan time = TimeSpan.FromSeconds(seconds);
+
+            //here backslash is must to tell that colon is
+            //not the part of format, it just a character that we want in output
+            string str = time.ToString(@"mm\:ss");
+            return str;
+        }
+
+        public static double CalculateNarrationDuration(this string input)
         {
             //characters / seconds = ratio
             //seconds = characters / ratio
 
-            //283 / 18    15.72
-            //793 / 52.9   14.9
-            //3744     /  236 sec    = 15.86
-            //avg = 15.35
+            //4165  / 264 = 15.77651515151515
 
             if (!string.IsNullOrEmpty(input))
             {
-                input = input.Trim();
-                input = input.Replace(",", ",,,");
-                input = input.Replace(".", "...");
-            }
-            return !string.IsNullOrEmpty(input) ? (int)Math.Ceiling(input.Length / 15.86) : 0;
+                var duration = input.Length / 15.77651515151515;
+                return duration;
 
-            
+            }
+
+            return 0;
+
+
+
         }
 
     }

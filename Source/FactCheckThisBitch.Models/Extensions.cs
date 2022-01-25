@@ -80,5 +80,17 @@ namespace FactCheckThisBitch.Models
 
             return result.ToString();
         }
+
+        public static double ToNarrationDuration(this Reference reference)
+        {
+            if (!reference.Description.IsEmpty())
+            {
+                return reference.NarrationDuration == 0
+                    ? reference.Description.CalculateNarrationDuration()
+                    : reference.NarrationDuration;
+            }
+
+            return 0;
+        }
     }
 }

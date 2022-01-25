@@ -13,6 +13,7 @@ namespace FactCheckThisBitch.Models
         public ReferenceType Type;
         public string Title { get; set; }
         public string Description { get; set; }
+        public double NarrationDuration { get; set; }
         public string Source { get; set; }
         public string Url { get; set; }
         public int Duration { get; set; }

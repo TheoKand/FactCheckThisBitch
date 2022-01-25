@@ -12,6 +12,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
     {
         public Action<string> OnDelete;
         public Action<string, int> OnMove;
+        public Action OnSave;
         public Action<string> OnMoveToOtherPiece;
 
         private Reference _content;
@@ -37,7 +38,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         public void SaveForm()
         {
             _content.Title = txtTitle.Text.ValueOrNull();
-            _content.Description = txtSummary.Text.ValueOrNull();
+            _content.Description = txtSummary.Text.ValueOrNull()?.Replace("  ","").Replace("...", "."); ;
+            _content.NarrationDuration = double.TryParse(txtNarrationDuration.Text,  out var narrationDuration) ? narrationDuration : 0;
             _content.Source = txtSource.Text.ValueOrNull();
             _content.Url = txtUrl.Text.ValueOrNull();
             _content.Type = (ReferenceType) Enum.Parse(typeof(ReferenceType), cboType.SelectedValue.ToString() ?? string.Empty);
@@ -51,6 +53,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private void InitForm()
         {
             txtDuration.ValidationPattern = "^[1-9]?[0-9]$";
+            txtNarrationDuration.ValidationPattern = "^-?\\d*(\\.\\d+)?$";
             txtDatePublished.ValidationPattern = typeof(DateTime).RegExValidationPatternForType();
             var pieceTypes = Enum.GetValues(typeof(ReferenceType)).Cast<ReferenceType>();
             cboType.DataSource = pieceTypes;
@@ -64,6 +67,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             txtSource.Text = _content.Source;
             txtUrl.Text = _content.Url;
             txtDuration.Text = _content.Duration.ToString();
+            txtNarrationDuration.Text = _content.NarrationDuration.ToString();
             imageEditor1.Images = _content.Images != null ? _content.Images.ToList() : new List<string>();
             imageEditor1.ImageEdits = _content.ImageEdits;
             txtDatePublished.Text = _content.DatePublished.ToSimpleStringDate();
@@ -74,6 +78,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         #region events
 
+        private void btnSave_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OnSave?.Invoke();
+        }
         private void btnUrl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (txtUrl.Text.IsEmpty()) return;
@@ -103,8 +111,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private void txtSummary_TextChanged(object sender, EventArgs e)
         {
             var characters = txtSummary.Text.Length;
-            lblSummaryLength.Text = $"{NarrationLabel}\r{characters}c {txtSummary.Text.ToSpeechDuration()}s";
+            lblSummaryLength.Text = $"{NarrationLabel}\r{characters}c {Math.Round(_content.ToNarrationDuration(),2)}s";
         }
+
 
         #endregion
 

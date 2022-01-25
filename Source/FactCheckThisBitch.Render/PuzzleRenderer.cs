@@ -6,6 +6,9 @@ using SixLabors.ImageSharp.Processing;
 using Syncfusion.Presentation;
 using Syncfusion.Presentation.SlideTransition;
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -26,10 +29,11 @@ namespace FactCheckThisBitch.Render
 
         private readonly PuzzleTheme _puzzleTheme = new PuzzleTheme
         {
-            PieceBgColor = PuzzleTheme.PieceBGColors.Blue, PieceTextColor = Color.White
+            PieceBgColor = PuzzleTheme.PieceBGColors.Blue,
+            PieceTextColor = Color.White
         };
 
-        public PuzzleRenderer(Puzzle puzzle, string template, string assetsFolder, string outputFolder, string mediaFolder,bool realAiNewsRender, bool handleWrongSpeak = false, bool handleBlurryAreas = false)
+        public PuzzleRenderer(Puzzle puzzle, string template, string assetsFolder, string outputFolder, string mediaFolder, bool realAiNewsRender, bool handleWrongSpeak = false, bool handleBlurryAreas = false)
         {
             _puzzle = puzzle;
             _template = template;
@@ -69,7 +73,7 @@ namespace FactCheckThisBitch.Render
 
         private void RenderPuzzleForEachSlide()
         {
-            var emptyPuzzleImagePath = Path.Combine(_assetsFolder, "Images","Puzzle", _puzzleTheme.PieceBgColor.ToString(), "Puzzle0.png");
+            var emptyPuzzleImagePath = Path.Combine(_assetsFolder, "Images", "Puzzle", _puzzleTheme.PieceBgColor.ToString(), "Puzzle0.png");
             File.Copy(emptyPuzzleImagePath, Path.Combine(_outputFolder, "Puzzle0.png"));
             foreach (var puzzlePiece in _puzzle.PuzzlePieces.OrderBy(_ => _.RenderOrder))
             {
@@ -100,7 +104,7 @@ namespace FactCheckThisBitch.Render
 
                 var pieceIndex = _puzzle.PuzzlePieces.IndexOf(puzzlePiece) + 1;
 
-                var pieceTemplatePath = Path.Combine(_assetsFolder, "Images","Puzzle", _puzzleTheme.PieceBgColor.ToString(), $"Piece{pieceIndex}.png");
+                var pieceTemplatePath = Path.Combine(_assetsFolder, "Images", "Puzzle", _puzzleTheme.PieceBgColor.ToString(), $"Piece{pieceIndex}.png");
                 var pieceWithKeywordsPath = Path.Combine(_outputFolder, $"Piece{puzzlePiece.RenderOrder}_Keywords.png");
                 using var pieceImage = Image.Load(pieceTemplatePath);
                 var pieceCoordinates = Extensions.GetPieceCoordinates(_puzzle, pieceIndex);
@@ -156,8 +160,6 @@ namespace FactCheckThisBitch.Render
             {
                 pieceSlideTemplate = doc.Slides[0];
                 pieceReferencesTemplate = doc.Slides[1];
-                thinkingSlideTemplate = doc.Slides[2];
-                conclusionSlideTemplate = doc.Slides[3];
             }
             else
             {
@@ -165,15 +167,16 @@ namespace FactCheckThisBitch.Render
                 pieceReferencesTemplate = doc.Slides[2];
                 thinkingSlideTemplate = doc.Slides[3];
                 conclusionSlideTemplate = doc.Slides[4];
+                thinkingSlide = thinkingSlideTemplate.Clone();
+                conclusionSlide = conclusionSlideTemplate.Clone();
             }
-            thinkingSlide = thinkingSlideTemplate.Clone();
-            conclusionSlide = conclusionSlideTemplate.Clone();
+
 
             #region create one slide for each piece
 
             foreach (var puzzlePiece in _puzzle.PuzzlePieces.OrderBy(_ => _.RenderOrder))
             {
-                var pieceIndex = _puzzle.PuzzlePieces.IndexOf(puzzlePiece) +1;
+                var pieceIndex = _puzzle.PuzzlePieces.IndexOf(puzzlePiece) + 1;
 
                 var newPieceSlide = pieceSlideTemplate.Clone();
                 newPieceSlide.Name = puzzlePiece.Piece.Id;
@@ -222,7 +225,7 @@ namespace FactCheckThisBitch.Render
                         referenceSlide.Name = $"{reference.Id}-{image}";
                         var slideSequence = referenceSlide.Timeline.MainSequence;
                         var referenceGroupShape = referenceSlide.GroupShape("group_article");
-                        referenceGroupShape.UpdateText("textbox_url", reference.Url.Replace("https://","").Replace("http://", "").Replace("www.", "").Limit(69));
+                        referenceGroupShape.UpdateText("textbox_url", reference.Url.Replace("https://", "").Replace("http://", "").Replace("www.", "").Limit(69));
                         referenceGroupShape.UpdateText("textbox_source",
                             reference.Source.IsEmpty() ? "" : $"Source: {reference.Source.WrongSpeakToLeetSpeak(leetLevel)}");
                         referenceGroupShape.UpdateText("textbox_date",
@@ -258,16 +261,22 @@ namespace FactCheckThisBitch.Render
 
             doc.Slides.Remove(pieceSlideTemplate);
             doc.Slides.Remove(pieceReferencesTemplate);
-            doc.Slides.Remove(thinkingSlideTemplate);
-            doc.Slides.Remove(conclusionSlideTemplate);
+
+            if (!_realAiNewsRender)
+            {
+                doc.Slides.Remove(thinkingSlideTemplate);
+                doc.Slides.Remove(conclusionSlideTemplate);
+            }
 
             #region conclusion slide
 
-            conclusionSlide.UpdateText("conclusion_text", _puzzle.Conclusion.WrongSpeakToLeetSpeak(leetLevel));
-            conclusionSlide.ReplacePicture("conclusion_puzzle", Path.Combine(_outputFolder, "Puzzle9.png"));
-            doc.Slides.Add(thinkingSlide);
-            doc.Slides.Add(conclusionSlide);
-
+            if (!_realAiNewsRender)
+            {
+                conclusionSlide.UpdateText("conclusion_text", _puzzle.Conclusion.WrongSpeakToLeetSpeak(leetLevel));
+                conclusionSlide.ReplacePicture("conclusion_puzzle", Path.Combine(_outputFolder, "Puzzle9.png"));
+                doc.Slides.Add(thinkingSlide);
+                doc.Slides.Add(conclusionSlide);
+            }
             #endregion
 
             doc.Save(Path.Combine(_outputFolder, $"{_puzzle.FullTitle}.pptm"));
@@ -275,63 +284,120 @@ namespace FactCheckThisBitch.Render
 
         private void GenerateNarrationForSpeechelo()
         {
-            Func<int, string> pause = (int chars) =>
-            {
-                StringBuilder pauseSb = new StringBuilder();
-                if (chars > 0)
-                {
-                    pauseSb.AppendLine();
-                    for (var i = 0; i < chars; i++)
-                    {
-                        pauseSb.Append("[sPause sec=1 ePause]");
-                    }
-                    pauseSb.AppendLine();
-                }
-                return pauseSb.ToString();
-            };
+            var (timeline, narrations) = GenerateNarrationTimeline();
+            
+            const string startPhrase = "and, down the rabbit hole we go!";
+            const double startPhraseDuration = 2;
 
-            StringBuilder narrationText = new StringBuilder($"[startSpeech v=Loud startSpeech]and, down the rabbit hole we go!{pause(3)}");
+            StringBuilder narrationWithPauses = new StringBuilder($"[startSpeech v=Loud startSpeech]{startPhrase}");
+
+            //pause before first
+            narrationWithPauses.Append(pause(narrations.First().Key.TotalSeconds - startPhraseDuration));
+
+            for (var i = 0; i < narrations.Count(); i++)
+            {
+                //speak
+                narrationWithPauses.Append($"{narrations[i].Value.Description}");
+
+                //pause before next
+                if (i != narrations.Count() - 1)
+                {
+                    var thisNarrationDuration = narrations[i].Value.ToNarrationDuration();
+
+                    var waitSeconds = (narrations[i + 1].Key - narrations[i].Key).TotalSeconds - thisNarrationDuration;
+
+                    ////Speechelo bug: adds an extra 3.5 seconds if the previous clip has a dot at the end.
+                    //waitSeconds -= 3.5;
+
+                    narrationWithPauses.Append(pause(waitSeconds));
+                }
+
+            }
+
+            narrationWithPauses.Append("[endSpeech]");
+
+            File.WriteAllTextAsync(Path.Combine(_outputFolder, "NarrationSpeechelo.txt"), narrationWithPauses.ToString());
+
+            var narrationText = string.Join("\r",narrations.Select(_ => $"{_.Key.ToString(@"mm\:ss\.ff")} {_.Value.Description}").ToArray());
+
+            File.WriteAllTextAsync(Path.Combine(_outputFolder, "Narration.txt"), $"{narrationText}");
+
+
+        }
+
+        private Func<double, string> pause = (double seconds) =>
+        {
+            StringBuilder pauseSb = new StringBuilder();
+            if (seconds > 0)
+            {
+                var roundedSeconds = (int)seconds;
+                for (var i = 0; i < roundedSeconds; i++)
+                {
+                    pauseSb.Append("[sPause sec=1 ePause]");
+                }
+
+                var remaining = Math.Round(seconds - roundedSeconds, 1);
+                if (remaining > 0)
+                {
+                    pauseSb.Append($"[sPause sec={remaining} ePause]");
+                }
+
+            }
+            return pauseSb.ToString();
+        };
+
+        private (string,List<KeyValuePair<TimeSpan,Reference>>) GenerateNarrationTimeline()
+        {
+            
+            var narrations = new Dictionary<TimeSpan, Reference>();
+
+            const double slideTransitionDuration = 0.88; //should be 0.7 but adjusting for unknown delay in powerpoint video rendering (accumulative)
+            const double firstReferenceTransitionDuration = 2;
+            const double referenceTransitionDuration = 0.4;
+            const double referenceDurationModifier = -0.5;
+
+            var currentTime = new TimeSpan();
+            var timeline = new StringBuilder();
 
             foreach (var puzzlePiece in _puzzle.PuzzlePieces.OrderBy(_ => _.RenderOrder))
             {
 
-                if (puzzlePiece.RenderOrder != 1)
+                timeline.AppendLine($"{currentTime.ToString(@"mm\:ss")}\tPiece {puzzlePiece.RenderOrder} {puzzlePiece.Piece.Title}");
+
+                currentTime=currentTime.Add( TimeSpan.FromSeconds(slideTransitionDuration + puzzlePiece.Piece.Duration));
+
+                for(int referenceIndex=0;referenceIndex<puzzlePiece.Piece.References.Count;referenceIndex++)
                 {
-                    narrationText.Append(pause(puzzlePiece.Piece.Duration));
-                }
+                    var reference = puzzlePiece.Piece.References[referenceIndex];
+                    timeline.AppendLine($"\t{currentTime.ToString(@"mm\:ss\.ff")}\tReference {referenceIndex} \t{reference.Url.Replace("https://","").Limit(20)} \t{reference.Description}");
 
-                var currentTimeIndex = 0;
-                var lastNarrationTimeIndex = 0;
-                var lastNarrationDuration = 0;
-
-                var referenceIndex = 0;
-
-                foreach (var reference in puzzlePiece.Piece.References)
-                {
-                    if (!string.IsNullOrEmpty(reference.Description))
+                    if (!reference.Description.IsEmpty())
                     {
-                        var mustWait = currentTimeIndex - (lastNarrationTimeIndex+ lastNarrationDuration);
-                        narrationText.Append(pause(mustWait));
-                        narrationText.AppendLine($"\r{reference.Description}");
-                        lastNarrationTimeIndex = currentTimeIndex;
-                        lastNarrationDuration = reference.Description.ToSpeechDuration();
+                        narrations.Add( currentTime,reference);
                     }
 
-                    currentTimeIndex += reference.Duration * reference.Images.Count;
-                    referenceIndex++;
-                }
+                    var referenceTransDuration = referenceIndex == 0
+                        ? firstReferenceTransitionDuration
+                        : referenceTransitionDuration;
 
-                var mustWaitBeforeNextPiece = currentTimeIndex - (lastNarrationTimeIndex + lastNarrationDuration);
-                narrationText.Append(pause(mustWaitBeforeNextPiece));
+                    var modifier = referenceIndex == 0 ? 0 : referenceDurationModifier;
+
+                    currentTime =currentTime.Add(TimeSpan.FromSeconds(referenceTransDuration + reference.Duration + modifier));
+
+                    if (reference.Images.Count > 1)
+                    {
+                        for (var imageIndex = 1; imageIndex < reference.Images.Count; imageIndex++)
+                        {
+                            currentTime = currentTime.Add(TimeSpan.FromSeconds(referenceTransitionDuration + reference.Duration + modifier));
+                        }
+                    }
+                }
 
             }
 
-            narrationText.AppendLine("[endSpeech]");
-
-            var narrationFile = Path.Combine(_outputFolder, "Narration.txt");
-            File.WriteAllTextAsync(narrationFile, narrationText.ToString());
-
+            return (timeline.ToString(),narrations.ToList());
         }
+        
         private string ModifyImage(Reference reference, string image)
         {
             var imageEdit = reference.ImageEdits.FirstOrDefault(e => image.EndsWith(e.Image));
@@ -345,7 +411,12 @@ namespace FactCheckThisBitch.Render
 
             var puzzlePresentationPath = Path.Combine(_outputFolder, $"{_puzzle.FullTitle}.pptm");
             using var doc = Presentation.Open(puzzlePresentationPath);
-            doc.Slides[0].SlideTransition.TimeDelay = _puzzle.Duration;
+
+            if (!_realAiNewsRender)
+            {
+                doc.Slides[0].SlideTransition.TimeDelay = _puzzle.Duration;
+            }
+            
             foreach (var puzzlePiece in _puzzle.PuzzlePieces)
             {
                 var isFirstImageInPiece = true;
@@ -391,8 +462,8 @@ namespace FactCheckThisBitch.Render
 
         public enum PieceBGColors
         {
-             Black,
-             Blue
+            Black,
+            Blue
         }
 
     }
