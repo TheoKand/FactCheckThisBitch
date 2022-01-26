@@ -72,7 +72,7 @@
             "Type": 1,
             "Id": "fde58c52-5595-4e44-a688-27294328f490",
             "Title": "Are these policies public health driven or politically driven?",
-            "Source": "the Guardian",
+            "Source": "The Guardian",
             "Url": "https://www.theguardian.com/global-development/2021/jan/25/the-lockdown-was-political-chad-under-strain-ahead-of-election",
             "Duration": 7,
             "Images": [
@@ -402,22 +402,9 @@
         "References": [
           {
             "Type": 1,
-            "Id": "efe1df8f-7a45-437c-97fc-cabe83e17b61",
-            "Title": "How Central Banks Create Money Out from the Thin Air",
-            "Description": "Where is the money coming from? How is the world's economy, going to cope, with financing these perpetual lockdowns? ",
-            "Url": "https://medium.datadriveninvestor.com/how-central-banks-create-money-out-from-the-thin-air-e01453d81ab",
-            "Duration": 8,
-            "Images": [
-              "a8caa41a-2d77-4f2c-803b-8e60b1e5edfa.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2020-03-31T00:00:00",
-            "Author": ""
-          },
-          {
-            "Type": 1,
             "Id": "0bebd5f5-a1be-436b-9a1f-c5af665932e1",
             "Title": "The Covid-19 Pandemic Has Added £$19.5 Trillion to Global Debt",
+            "Description": "Where is the money coming from? How is the world's economy, going to cope, with financing these perpetual lockdowns? Well. it might be simpler than you think.",
             "Source": "Bloomberg",
             "Url": "https://www.bloomberg.com/graphics/2021-coronavirus-global-debt/",
             "Duration": 6,
@@ -430,9 +417,24 @@
           },
           {
             "Type": 1,
+            "Id": "efe1df8f-7a45-437c-97fc-cabe83e17b61",
+            "Title": "How Central Banks Create Money Out from the Thin Air",
+            "Source": "Medium",
+            "Url": "https://medium.datadriveninvestor.com/how-central-banks-create-money-out-from-the-thin-air-e01453d81ab",
+            "Duration": 8,
+            "Images": [
+              "a8caa41a-2d77-4f2c-803b-8e60b1e5edfa.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2020-03-31T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
             "Id": "633d2d6e-de85-4dea-865a-5e23e91165d8",
             "Title": "Time for a great reset of the financial system",
             "Description": "Very conveniently, the pandemic has become the catalyst.for the long planned.Great Reset.",
+            "Source": "Financial Times",
             "Url": "https://www.ft.com/content/39c53b9f-f443-4dde-9cdb-07e8999ec783",
             "Duration": 7,
             "Images": [
@@ -440,7 +442,7 @@
             ],
             "ImageEdits": [],
             "DatePublished": "2021-03-18T00:00:00",
-            "Author": "Chris Watling 6.24"
+            "Author": "Chris Watling"
           },
           {
             "Type": 1,
@@ -650,7 +652,7 @@
             "Type": 1,
             "Id": "5acc2890-f3f2-4d64-a5bd-97051311442a",
             "Title": "Covid: UK spent £569m on 20,900 ventilators but most remain unused",
-            "Source": "the Guardian",
+            "Source": "The Guardian",
             "Url": "https://www.theguardian.com/world/2020/sep/30/uk-spent-569m-on-20900-ventilators-for-covid-care-but-most-remain-unused",
             "Duration": 5,
             "Images": [
@@ -871,12 +873,14 @@
               "3cfd6336-171c-4a1a-8078-d1579f1abcf6.png"
             ],
             "ImageEdits": [],
+            "DatePublished": "2020-11-27T00:00:00",
             "Author": ""
           },
           {
             "Type": 1,
             "Id": "e91259c4-c3c8-49f9-8ca9-b2d31b954f4d",
             "Title": "CNN Newsletters",
+            "Source": "CNN",
             "Url": "https://edition.cnn.com/2021/09/05/politics/school-federal-covid-relief-money/index.html",
             "Duration": 8,
             "Images": [

@@ -13,12 +13,13 @@ namespace FactCheckThisBitch.Render
         public static IGroupShape GroupShape(this ISlide slide, string groupShapeName) =>
             slide.GroupShapes.FirstOrDefault(s => s.ShapeName == groupShapeName);
 
-        public static void UpdateText(this IGroupShape groupShape, string shapeName, string text)
+        public static IShape UpdateText(this IGroupShape groupShape, string shapeName, string text)
         {
-            if (groupShape == null) return;
+            if (groupShape == null) return null;
             var shape = groupShape.Shapes.FirstOrDefault(s => s.ShapeName == shapeName) as IShape;
-            if (shape == null) return;
+            if (shape == null) return null;
             shape.TextBody.Text = text;
+            return shape;
         }
 
         public static void UpdateText(this ISlide slide, string textboxName, string text)

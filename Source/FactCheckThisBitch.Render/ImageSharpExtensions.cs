@@ -11,7 +11,7 @@ namespace FactCheckThisBitch.Render
     public static class ImageSharpExtensions
     {
         public static IImageProcessingContext ApplyScalingWaterMark(this IImageProcessingContext processingContext, Font font,
-            string text, dynamic boxToDrawTextIn, Color color, float padding, bool wordwrap)
+            string text, dynamic boxToDrawTextIn, Color color, float padding, bool wordwrap, VerticalAlignment verticalAlignment = VerticalAlignment.Top)
         {
             if (wordwrap)
             {
@@ -19,12 +19,12 @@ namespace FactCheckThisBitch.Render
             }
             else
             {
-                return ApplyScalingWaterMarkSimple(processingContext, font, text, boxToDrawTextIn, color, padding);
+                return ApplyScalingWaterMarkSimple(processingContext, font, text, boxToDrawTextIn, color, padding,verticalAlignment);
             }
         }
 
         public static IImageProcessingContext ApplyScalingWaterMarkSimple(this IImageProcessingContext processingContext,
-            Font font, string text, dynamic boxToDrawTextIn, Color color, float padding)
+            Font font, string text, dynamic boxToDrawTextIn, Color color, float padding, VerticalAlignment verticalAlignment)
         {
             Size imgSize = processingContext.GetCurrentSize();
             float targetWidth = boxToDrawTextIn.Right - boxToDrawTextIn.Left - (padding * 2);
@@ -39,12 +39,20 @@ namespace FactCheckThisBitch.Render
             //create a new font
             Font scaledFont = new Font(font, scalingFactor * font.Size);
 
-            //var drawInLocation = new PointF(imgSize.Width / 2, imgSize.Height / 2);
-            var drawInLocation = new PointF(boxToDrawTextIn.Left + padding, boxToDrawTextIn.Top + padding);
+            PointF drawInLocation;
+
+            if (verticalAlignment == VerticalAlignment.Center)
+            {
+                drawInLocation= new PointF(boxToDrawTextIn.Left + padding, imgSize.Height / 2);
+            }
+            else
+            {
+                drawInLocation = new PointF(boxToDrawTextIn.Left + padding, boxToDrawTextIn.Top + padding);
+            }
 
             var textGraphicOptions = new TextGraphicsOptions()
             {
-                TextOptions = {HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Top}
+                TextOptions = {HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = verticalAlignment }
             };
             return processingContext.DrawText(textGraphicOptions, text, scaledFont, color, drawInLocation);
         }

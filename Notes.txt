@@ -27,12 +27,18 @@ Video checklist
 		spell check json file
 		all slides duration must be 5seconds
 	Output
-		- Render powerpoint
+		- Render powerpoint. It outputs these assets:
+			- Narration text
+			- Powerpoint resentation
+			- Images to be used for marquees
 		- Remove watermarks from presentation
-		- Create new video edit project. Customize intro and other stuff if nessecary
-		- Generate speechelo narration and import in video
+		- Save powerpoint as video
+		- Generate speechelo narration
+		- Create/open video edit project. Import video/narration
+		- Import and position marquees 
+		- Align video and audio
 		- Adjust talking head with waveform of narration
-		- Save powerpoint as video and import in video
+		- Make any other customizations to video template, based on content
 		- Final adjustments in video
 
 

@@ -30,7 +30,8 @@ namespace FactCheckThisBitch.Render
         private readonly PuzzleTheme _puzzleTheme = new PuzzleTheme
         {
             PieceBgColor = PuzzleTheme.PieceBGColors.Blue,
-            PieceTextColor = Color.White
+            PieceTextColor = Color.White,
+            NewsTickerColor = Color.Black
         };
 
         public PuzzleRenderer(Puzzle puzzle, string template, string assetsFolder, string outputFolder, string mediaFolder, bool realAiNewsRender, bool handleWrongSpeak = false, bool handleBlurryAreas = false)
@@ -53,6 +54,7 @@ namespace FactCheckThisBitch.Render
             CreatePresentationFromTemplate();
             FixSlidesDuration();
             GenerateNarrationForSpeechelo();
+            GenerateNewsTickerImages();
             OpenOutputFolder();
         }
 
@@ -226,12 +228,22 @@ namespace FactCheckThisBitch.Render
                         var slideSequence = referenceSlide.Timeline.MainSequence;
                         var referenceGroupShape = referenceSlide.GroupShape("group_article");
                         referenceGroupShape.UpdateText("textbox_url", reference.Url.Replace("https://", "").Replace("http://", "").Replace("www.", "").Limit(69));
-                        referenceGroupShape.UpdateText("textbox_source",
-                            reference.Source.IsEmpty() ? "" : $"Source: {reference.Source.WrongSpeakToLeetSpeak(leetLevel)}");
-                        referenceGroupShape.UpdateText("textbox_date",
-                            (!reference.DatePublished.HasValue)
-                                ? ""
-                                : $"Date Published: {reference.DatePublished.Value:dd/MM/yyyy}");
+
+                        var source = reference.Source.IsEmpty()
+                            ? ""
+                            : $"{reference.Source.WrongSpeakToLeetSpeak(leetLevel)}";
+                        var date = (!reference.DatePublished.HasValue)
+                            ? ""
+                            : $"{reference.DatePublished.Value:dd/MM/yyyy}";
+                        referenceGroupShape.UpdateText("textbox_source", source);
+                        referenceGroupShape.UpdateText("textbox_date", date);
+                        var legend = referenceGroupShape.UpdateText("textbox_legend", $"{source} {date}");
+                        if (legend != null && legend.TextBody.Text.Length > 26)
+                        {
+                            legend.TextBody.Text = legend.TextBody.Text.Limit(47);
+                            legend.TextBody.WrapText = false;
+                            legend.TextBody.FitTextOption = FitTextOption.ShrinkTextOnOverFlow;
+                        }
 
                         var imagePath = Path.Combine(_mediaFolder, image);
                         if (_handleBlurryAreas)
@@ -284,8 +296,8 @@ namespace FactCheckThisBitch.Render
 
         private void GenerateNarrationForSpeechelo()
         {
-            var (timeline, narrations) = GenerateNarrationTimeline();
-            
+            var (debugTimeline, narrations) = GenerateNarrationTimeline();
+
             const string startPhrase = "and, down the rabbit hole we go!";
             const double startPhraseDuration = 2;
 
@@ -303,24 +315,18 @@ namespace FactCheckThisBitch.Render
                 if (i != narrations.Count() - 1)
                 {
                     var thisNarrationDuration = narrations[i].Value.ToNarrationDuration();
-
                     var waitSeconds = (narrations[i + 1].Key - narrations[i].Key).TotalSeconds - thisNarrationDuration;
-
-                    ////Speechelo bug: adds an extra 3.5 seconds if the previous clip has a dot at the end.
-                    //waitSeconds -= 3.5;
-
                     narrationWithPauses.Append(pause(waitSeconds));
                 }
 
             }
-
             narrationWithPauses.Append("[endSpeech]");
-
             File.WriteAllTextAsync(Path.Combine(_outputFolder, "NarrationSpeechelo.txt"), narrationWithPauses.ToString());
 
-            var narrationText = string.Join("\r",narrations.Select(_ => $"{_.Key.ToString(@"mm\:ss\.ff")} {_.Value.Description}").ToArray());
-
+            var narrationText = string.Join("\r", narrations.Select(_ => $"{_.Key.ToString(@"mm\:ss\.ff")} {_.Value.Description}").ToArray());
             File.WriteAllTextAsync(Path.Combine(_outputFolder, "Narration.txt"), $"{narrationText}");
+
+            File.WriteAllTextAsync(Path.Combine(_outputFolder, "Debug.txt"), $"{debugTimeline}");
 
 
         }
@@ -346,9 +352,9 @@ namespace FactCheckThisBitch.Render
             return pauseSb.ToString();
         };
 
-        private (string,List<KeyValuePair<TimeSpan,Reference>>) GenerateNarrationTimeline()
+        private (string, List<KeyValuePair<TimeSpan, Reference>>) GenerateNarrationTimeline()
         {
-            
+
             var narrations = new Dictionary<TimeSpan, Reference>();
 
             const double slideTransitionDuration = 0.88; //should be 0.7 but adjusting for unknown delay in powerpoint video rendering (accumulative)
@@ -357,23 +363,23 @@ namespace FactCheckThisBitch.Render
             const double referenceDurationModifier = -0.5;
 
             var currentTime = new TimeSpan();
-            var timeline = new StringBuilder();
+            var debugTimeline = new StringBuilder();
 
             foreach (var puzzlePiece in _puzzle.PuzzlePieces.OrderBy(_ => _.RenderOrder))
             {
 
-                timeline.AppendLine($"{currentTime.ToString(@"mm\:ss")}\tPiece {puzzlePiece.RenderOrder} {puzzlePiece.Piece.Title}");
+                debugTimeline.AppendLine($"{currentTime.ToString(@"mm\:ss\.ff")}\tPiece {puzzlePiece.RenderOrder - 1} {puzzlePiece.Piece.Title}");
 
-                currentTime=currentTime.Add( TimeSpan.FromSeconds(slideTransitionDuration + puzzlePiece.Piece.Duration));
+                currentTime = currentTime.Add(TimeSpan.FromSeconds(slideTransitionDuration + puzzlePiece.Piece.Duration));
 
-                for(int referenceIndex=0;referenceIndex<puzzlePiece.Piece.References.Count;referenceIndex++)
+                for (int referenceIndex = 0; referenceIndex < puzzlePiece.Piece.References.Count; referenceIndex++)
                 {
                     var reference = puzzlePiece.Piece.References[referenceIndex];
-                    timeline.AppendLine($"\t{currentTime.ToString(@"mm\:ss\.ff")}\tReference {referenceIndex} \t{reference.Url.Replace("https://","").Limit(20)} \t{reference.Description}");
+                    debugTimeline.AppendLine($"{currentTime.ToString(@"mm\:ss\.ff")}\t\tReference{referenceIndex} \t{reference.Url.Replace("https://", "").Limit(20)} \t{reference.Description}");
 
                     if (!reference.Description.IsEmpty())
                     {
-                        narrations.Add( currentTime,reference);
+                        narrations.Add(currentTime, reference);
                     }
 
                     var referenceTransDuration = referenceIndex == 0
@@ -381,13 +387,13 @@ namespace FactCheckThisBitch.Render
                         : referenceTransitionDuration;
 
                     var modifier = referenceIndex == 0 ? 0 : referenceDurationModifier;
-
-                    currentTime =currentTime.Add(TimeSpan.FromSeconds(referenceTransDuration + reference.Duration + modifier));
+                    currentTime = currentTime.Add(TimeSpan.FromSeconds(referenceTransDuration + reference.Duration + modifier));
 
                     if (reference.Images.Count > 1)
                     {
                         for (var imageIndex = 1; imageIndex < reference.Images.Count; imageIndex++)
                         {
+                            debugTimeline.AppendLine($"{currentTime.ToString(@"mm\:ss\.ff")}\t\t\tImage{imageIndex}");
                             currentTime = currentTime.Add(TimeSpan.FromSeconds(referenceTransitionDuration + reference.Duration + modifier));
                         }
                     }
@@ -395,9 +401,9 @@ namespace FactCheckThisBitch.Render
 
             }
 
-            return (timeline.ToString(),narrations.ToList());
+            return (debugTimeline.ToString(), narrations.ToList());
         }
-        
+
         private string ModifyImage(Reference reference, string image)
         {
             var imageEdit = reference.ImageEdits.FirstOrDefault(e => image.EndsWith(e.Image));
@@ -416,7 +422,7 @@ namespace FactCheckThisBitch.Render
             {
                 doc.Slides[0].SlideTransition.TimeDelay = _puzzle.Duration;
             }
-            
+
             foreach (var puzzlePiece in _puzzle.PuzzlePieces)
             {
                 var isFirstImageInPiece = true;
@@ -445,6 +451,38 @@ namespace FactCheckThisBitch.Render
             doc.Save(puzzlePresentationPath);
         }
 
+        private void GenerateNewsTickerImages()
+        {
+            var (debugTimeline, narrations) = GenerateNarrationTimeline();
+
+            var newsTickerFolder = Directory.CreateDirectory(Path.Combine(_outputFolder, "NewsTicker")).FullName;
+            foreach (var puzzlePiece in _puzzle.PuzzlePieces.OrderBy(_ => _.RenderOrder))
+            {
+                if (puzzlePiece.RenderOrder > _puzzle.Width * _puzzle.Height) continue;
+
+                var emptyNewsTickerPath = Path.Combine(_assetsFolder, "Images", "RAIN", $"NewsTickerTemplate.png");
+                using var emptyNewsTicker = Image.Load(emptyNewsTickerPath);
+
+                Font font = SystemFonts.CreateFont("Arial", 15, FontStyle.Bold); // for scaling water mark size is largely ignored.
+                using var puzzlePieceNewsTicker = emptyNewsTicker.Clone(ctx =>
+                {
+                //entire box of news ticker template image
+                var box = new
+                    {
+                        Left = 0,
+                        Top = 0,
+                        Right = emptyNewsTicker.Width,
+                        Bottom = emptyNewsTicker.Height
+                    };
+                    ImageSharpExtensions.ApplyScalingWaterMark(ctx, font,
+                        puzzlePiece.Piece.Title, box, _puzzleTheme.NewsTickerColor, 50, false, VerticalAlignment.Center);
+                });
+                var timeInVideo = puzzlePiece.Piece.ToPositionInPowerpointVideo(narrations);
+                var newsTickerFilename = $"{puzzlePiece.RenderOrder}-{timeInVideo.ToString(@"mm\.ss\.ff")}-{puzzlePiece.Piece.Title.ToSanitizedString().Limit(30)}.png";
+                puzzlePieceNewsTicker.Save(Path.Combine(newsTickerFolder, newsTickerFilename));
+            }
+        }
+
         public void Dispose()
         {
             string[] filePaths = Directory.GetFiles(Path.GetTempPath(), "blurred*");
@@ -459,6 +497,7 @@ namespace FactCheckThisBitch.Render
     {
         public PieceBGColors PieceBgColor;
         public Color PieceTextColor;
+        public Color NewsTickerColor;
 
         public enum PieceBGColors
         {
