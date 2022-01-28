@@ -246,7 +246,7 @@
             "Type": 1,
             "Id": "0afd40fd-13ad-46ea-a383-12cb8c6358dc",
             "Title": "Where does bailout money come from and who will pay for it?",
-            "Description": "In developed countries, such as UK and France, Businesses are borrowing huge sums of money from banks. with State Loan Guarantees. How will they pay these back, with the perpetual lockdowns? If these loans are not paid back, it becomes national debt.",
+            "Description": "In developed countries, such as UK and France, private companies are borrowing huge sums of money from banks. with State Loan Guarantees. How will they pay these back, with the perpetual lockdowns? If these loans are not paid back, it becomes national debt.",
             "Source": "Theweek.co.uk",
             "Url": "https://www.theweek.co.uk/coronavirus/106370/where-does-bailout-money-come-from-and-who-will-pay-for-it",
             "Duration": 20,
@@ -327,7 +327,7 @@
             "Type": 1,
             "Id": "35f47a03-aa4b-4edc-863f-5a4f1c1b1b4d",
             "Title": "Gov’t makes public list of media firms paid to promote Covid-19 health measures",
-            "Source": "Kathimerini",
+            "Source": "eKathimerini.com",
             "Url": "https://www.ekathimerini.com/news/254417/govt-makes-public-list-of-media-firms-paid-to-promote-covid-19-health-measures/",
             "Duration": 8,
             "Images": [
@@ -390,7 +390,7 @@
       "Y": 2,
       "Piece": {
         "Id": "3d51dac1-c7e4-450f-b8d7-8e65de9b1d21",
-        "Title": "The Great Reset and Central Bank Digital Currencies (CBDC)",
+        "Title": "THE END GAME: The Great Reset and Central Bank Digital Currencies (CBDC)",
         "Thesis": "Klaus Schwab of the World Economic Forum:\r\n\".  people assume we are just going back to the good old world. This is fiction, it will not happen. \"\r\n\". you will own nothing, and you will be happy. \"\r\n\". research for vaccines using completely new methods based on synthetic biology. \"\r\n\". fusion of our physical, digital and biological identity. \"\r\n",
         "Duration": 5,
         "Keywords": [
@@ -404,10 +404,10 @@
             "Type": 1,
             "Id": "0bebd5f5-a1be-436b-9a1f-c5af665932e1",
             "Title": "The Covid-19 Pandemic Has Added £$19.5 Trillion to Global Debt",
-            "Description": "Where is the money coming from? How is the world's economy, going to cope, with financing these perpetual lockdowns? Well. it might be simpler than you think.",
+            "Description": "So we have established, that a wide range of institutions, basically everyone, has a strong financial insentive, to accept the new normal. But where is all the money coming from? And How is the global financial system, going to cope? Well. it might be simpler than you think.",
             "Source": "Bloomberg",
             "Url": "https://www.bloomberg.com/graphics/2021-coronavirus-global-debt/",
-            "Duration": 6,
+            "Duration": 10,
             "Images": [
               "d1eef6a6-740c-4cb8-bfac-2377b5cda4d5.png"
             ],
@@ -433,10 +433,10 @@
             "Type": 1,
             "Id": "633d2d6e-de85-4dea-865a-5e23e91165d8",
             "Title": "Time for a great reset of the financial system",
-            "Description": "Very conveniently, the pandemic has become the catalyst.for the long planned.Great Reset.",
+            "Description": "So.Is the endgame, to beat the virus? Very conveniently, the pandemic has become the catalyst.for the long planned.Great Reset.",
             "Source": "Financial Times",
             "Url": "https://www.ft.com/content/39c53b9f-f443-4dde-9cdb-07e8999ec783",
-            "Duration": 7,
+            "Duration": 6,
             "Images": [
               "1bc0c99b-0506-4cb7-bd5c-d056f614d860.png"
             ],
@@ -461,30 +461,16 @@
             "Type": 1,
             "Id": "c454f44c-5eb7-490a-bad1-d50a3c799955",
             "Title": "COVID-19: The Great Reset",
-            "Description": "Here's what Klaus Schwab, chairman of the World Economic Forum, and Doctor Evil imperssonator, had to say.quote,\"people assume, we are just going back, to the good old world. This is fiction, it will not happen\".quote, \"you will own nothing, and you will be happy!\".quote, \"research for vaccines, using completely new methods, based on synthetic biology\".quote, \"fusion of our physical, digital and biological identity\".",
+            "Description": "Here's what Klaus Schwab, chairman of the World Economic Forum, and Doctor Evil imperssonator, had to say.",
             "Source": "YouTube",
             "Url": "https://www.youtube.com/watch?v=VHRkkeecg7c",
-            "Duration": 25,
+            "Duration": 10,
             "Images": [
-              "d9496cd7-00a7-4322-b2cd-ac7a5e46b6c0.png"
+              "77613204-f0a9-473f-a996-548c79e91b4f.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2020-07-14T00:00:00",
-            "Author": "World Economic Forum 26.18"
-          },
-          {
-            "Type": 1,
-            "Id": "eda96ef3-897d-4aa4-a26a-c7c3a2281134",
-            "Title": "KLAUS SCHWAB: Revolution will lead to a fusion of our physical, digital and biological identity",
-            "Source": "YouTube",
-            "Url": "https://www.youtube.com/watch?v=t1SpC3B1KyM",
-            "Duration": 8,
-            "Images": [
-              "37da435a-77b9-426a-b449-8cbf1631995e.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2020-11-10T00:00:00",
-            "Author": "Il Teatro della Politica"
+            "Author": "World Economic Forum"
           },
           {
             "Type": 1,
@@ -493,7 +479,7 @@
             "Description": "Central Bank Digital Currencies, are coming soon. After rolling out the health certificate, and embedding it in our new digital identities. Which may or may not, be embedded, in our bodies.",
             "Source": "CNBC",
             "Url": "https://www.cnbc.com/2021/11/11/predictions-for-future-of-money-cbdcs-stablecoins-cryptocurrency.html",
-            "Duration": 7,
+            "Duration": 8,
             "Images": [
               "64e7f721-7fa1-4ab5-8a3e-e88d0540eab9.png",
               "7fa72531-f64a-4959-a6e5-706891520c56.png"
@@ -547,8 +533,8 @@
             "Duration": 8,
             "Images": [
               "938466dc-9ad9-44a4-916e-dc384f409134.png",
-              "e9da0f4f-a979-4d1d-acad-0b4297a0227f.png",
               "530719cb-93a7-4420-8feb-dfc115dc8eef.png",
+              "e9da0f4f-a979-4d1d-acad-0b4297a0227f.png",
               "94277053-44a7-40c8-867e-9cdcd71437f5.png"
             ],
             "ImageEdits": [],
@@ -745,7 +731,7 @@
             "Type": 1,
             "Id": "ec35d8d4-8e66-41ca-ada1-ede5b4a569fa",
             "Title": "COVID-19 Risk Management | Assurity Consulting",
-            "Description": "Employers, are expected to carry out COVID-19 risk assessments, and get \"Covid secure\" certifications for businesses. They have to play along, to stay in business, and to participate in the furlough schemes. This might eventually lead, to imposing vaccine mandates to their workforce.A whole new covid economy has spun up.seemingly set to replace the normal economic activity, that has been outlawed. This transformation is conviniently aiding a smooth transition to the fourth industrial revolution.",
+            "Description": "Employers, are expected to carry out COVID-19 risk assessments, and get \"Covid secure\" certifications for businesses. They have to play along, to stay in business, and to participate in the furlough schemes. This might eventually lead, to imposing vaccine mandates to their workforce.A whole new covid economy has spun up.seemingly set to replace the normal economic activity, that has been outlawed.All of this seems to make for a smooth transition into the fourth industrial revolution.",
             "Source": "Assurity Consulting Ltd",
             "Url": "https://www.assurityconsulting.co.uk/services/covid-19-risk-management",
             "Duration": 5,
