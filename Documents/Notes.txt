@@ -1,0 +1,50 @@
+﻿Code TODO:
+
+-Complete obfuscation: shorten links in description
+-after adding RenderOrder, the Index is obsolete. It should be just the order of the item in the array that changes
+ when you drag around
+
+Later
+-add boolean field in piece to control if thesis is rendered after the references
+-don't allow save data if validation fails
+
+
+
+
+CREATE CONTENT CHECKLIST
+
+Puzzle checklist
+	Pre render
+		clean up keywords
+		spell check json file
+	Powerpoint Content
+		- view slides, adjust duration on puzzle, pieces, references
+	Output
+		- Adjust text boxes, text formating (bold for next keywords)
+		- Add music
+		- Remove watermrks
+		- Generate & Preview video
+
+
+
+Video checklist
+	Pre render
+		clean up keywords
+		spell check json file
+		all slides duration must be 5seconds
+	Output
+		- Render powerpoint. It outputs these assets:
+			- Narration text
+			- Powerpoint resentation
+			- Images to be used for marquees
+		- Remove watermarks from presentation
+		- Save powerpoint as video
+		- Generate speechelo narration
+		- Create/open video edit project. Import video/narration
+		- Import and position marquees 
+		- Align video and audio
+		- Adjust talking head with waveform of narration
+		- Make any other customizations to video template, based on content
+		- Final adjustments in video
+
+
