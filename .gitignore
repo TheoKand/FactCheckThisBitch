@@ -366,3 +366,4 @@ bin/
 obj/
 
 large_*
+*.large.*
