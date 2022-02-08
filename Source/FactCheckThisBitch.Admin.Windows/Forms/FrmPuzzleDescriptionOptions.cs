@@ -53,8 +53,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
         private void btnOK_Click(object sender, EventArgs e)
         {
             Options.LeetLevel = (Level) Enum.Parse(typeof(Level), lstLeet.SelectedValue.ToString() ?? string.Empty);
-            Options.IncludeDescriptions = chkIncludeDescriptions.Checked;
-            Options.IncludeReferenceTitles = chkIncludeReferenceTitles.Checked;
+            Options.IncludePieceTitles = chkIncludeDescriptions.Checked;
+            Options.IncludeReferenceDescriptions = chkIncludeReferenceTitles.Checked;
             DialogResult = DialogResult.OK;
             SaveForm();
             Close();
@@ -63,8 +63,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
     public class PuzzleDescriptionOptions
     {
-        public bool IncludeDescriptions;
-        public bool IncludeReferenceTitles;
+        public bool IncludePieceTitles;
+        public bool IncludeReferenceDescriptions;
         public Level LeetLevel;
     }
 }

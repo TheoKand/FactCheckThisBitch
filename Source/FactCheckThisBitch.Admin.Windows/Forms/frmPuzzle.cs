@@ -308,8 +308,8 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             if (result != DialogResult.OK)
                 return;
 
-            var desc = _puzzle.ToDescription(optionsForm.Options.IncludeDescriptions,
-                optionsForm.Options.IncludeReferenceTitles,
+            var desc = _puzzle.ToDescription(optionsForm.Options.IncludePieceTitles,
+                optionsForm.Options.IncludeReferenceDescriptions,
                 optionsForm.Options.LeetLevel);
 
             Clipboard.SetText(desc);

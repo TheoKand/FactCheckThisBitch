@@ -41,8 +41,8 @@ namespace FactCheckThisBitch.Models
         }
 
         public static string ToDescription(this Puzzle puzzle,
-            bool includeDescriptions = false,
-            bool includeReferenceTitles = false,
+            bool includePieceTitles = false,
+            bool includeReferenceDescriptions = false,
             Level level = Level.None)
         {
             StringBuilder result = new StringBuilder();
@@ -55,21 +55,21 @@ namespace FactCheckThisBitch.Models
                 var piece = puzzlePiece.Piece;
 
                 result.AppendLine();
-                result.AppendLine($"{puzzlePiece.Index}. {piece.Title.WrongSpeakToLeetSpeak(level)}");
-                if (includeDescriptions)
+                
+                if (includePieceTitles)
                 {
-                    result.AppendLine($"{piece.Thesis.WrongSpeakToLeetSpeak(level)}");
+                    result.AppendLine($"{puzzlePiece.Index}. {piece.Title.WrongSpeakToLeetSpeak(level)}");
                     result.AppendLine();
                 }
 
                 foreach (var reference in piece.References)
                 {
-                    if (includeReferenceTitles && reference.Title!=null)
+                    if (includeReferenceDescriptions && reference.Description!=null)
                     {
-                        result.AppendLine($"\t{reference.Title.WrongSpeakToLeetSpeak(level)}");
+                        result.AppendLine($"{reference.Description.WrongSpeakToLeetSpeak(level)}");
                     }
 
-                    result.AppendLine($"\t{reference.Url}");
+                    result.AppendLine($"{reference.Url}");
                 }
             }
 

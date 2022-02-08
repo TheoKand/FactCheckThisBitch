@@ -40,10 +40,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnOK
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOK.Location = new System.Drawing.Point(96, 276);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnOK.Location = new System.Drawing.Point(84, 235);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(135, 47);
+            this.btnOK.Size = new System.Drawing.Size(118, 40);
             this.btnOK.TabIndex = 1;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -52,10 +51,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(237, 276);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Location = new System.Drawing.Point(207, 235);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(135, 47);
+            this.btnCancel.Size = new System.Drawing.Size(118, 40);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -64,55 +62,54 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // chkIncludeDescriptions
             // 
             this.chkIncludeDescriptions.AutoSize = true;
-            this.chkIncludeDescriptions.Location = new System.Drawing.Point(33, 28);
+            this.chkIncludeDescriptions.Location = new System.Drawing.Point(29, 24);
             this.chkIncludeDescriptions.Name = "chkIncludeDescriptions";
-            this.chkIncludeDescriptions.Size = new System.Drawing.Size(165, 24);
+            this.chkIncludeDescriptions.Size = new System.Drawing.Size(136, 21);
             this.chkIncludeDescriptions.TabIndex = 3;
-            this.chkIncludeDescriptions.Text = "Include Descriptions";
+            this.chkIncludeDescriptions.Text = "Include Piece Titles";
             this.chkIncludeDescriptions.UseVisualStyleBackColor = true;
             // 
             // chkIncludeReferenceTitles
             // 
             this.chkIncludeReferenceTitles.AutoSize = true;
-            this.chkIncludeReferenceTitles.Location = new System.Drawing.Point(33, 71);
+            this.chkIncludeReferenceTitles.Location = new System.Drawing.Point(29, 60);
             this.chkIncludeReferenceTitles.Name = "chkIncludeReferenceTitles";
-            this.chkIncludeReferenceTitles.Size = new System.Drawing.Size(188, 24);
+            this.chkIncludeReferenceTitles.Size = new System.Drawing.Size(274, 21);
             this.chkIncludeReferenceTitles.TabIndex = 4;
-            this.chkIncludeReferenceTitles.Text = "Include Reference Titles";
+            this.chkIncludeReferenceTitles.Text = "Include Reference Descriptions (Narration)";
             this.chkIncludeReferenceTitles.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 118);
+            this.label1.Location = new System.Drawing.Point(29, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.Size = new System.Drawing.Size(68, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "Leet Level:";
             // 
             // lstLeet
             // 
             this.lstLeet.FormattingEnabled = true;
-            this.lstLeet.ItemHeight = 20;
-            this.lstLeet.Location = new System.Drawing.Point(33, 141);
+            this.lstLeet.ItemHeight = 17;
+            this.lstLeet.Location = new System.Drawing.Point(29, 120);
             this.lstLeet.Name = "lstLeet";
-            this.lstLeet.Size = new System.Drawing.Size(199, 104);
+            this.lstLeet.Size = new System.Drawing.Size(175, 89);
             this.lstLeet.TabIndex = 6;
             // 
             // FrmPuzzleDescriptionOptions
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(393, 347);
+            this.ClientSize = new System.Drawing.Size(344, 295);
             this.Controls.Add(this.lstLeet);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chkIncludeReferenceTitles);
             this.Controls.Add(this.chkIncludeDescriptions);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmPuzzleDescriptionOptions";
