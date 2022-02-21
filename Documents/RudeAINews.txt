@@ -7,7 +7,9 @@ Instagram https://www.instagram.com/rudeainews
 YouTube https://www.youtube.com/channel/UCTKeFH5gl7NJAReV72npu0g
 TikTok https://www.tiktok.com/@rudeainews
 Facebook https://www.facebook.com/Rude-AI-News-100310465919507
+Odysee https://odysee.com/@rudeainews:b
 Rumble https://rumble.com/c/c-1362316
+Twitter https://twitter.com/rudeainews
 BitChute https://www.bitchute.com/channel/o7fZXRYf1Kky
 UgeTube https://ugetube.com/@rudeainews
 
@@ -23,4 +25,6 @@ Instagram https://www.instagram.com/rudeainews
 Facebook https://www.facebook.com/Rude-AI-News-100310465919507
 YouTube https://www.youtube.com/channel/UCTKeFH5gl7NJAReV72npu0g
 TikTok https://www.tiktok.com/@rudeainews
+Twitter https://twitter.com/rudeainews
+Odysee https://odysee.com/@rudeainews:b
 Web https://rudeai.news

@@ -55,489 +55,6 @@
     ]
    },
    "display": 0,
-   "duration": 3600.0,
-   "effects": [
-    {
-     "bottom": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "class_name": "Pixelate",
-     "description": "Pixelate (increase or decrease) the number of visible pixels.",
-     "duration": 0.0,
-     "end": 0.0,
-     "has_audio": false,
-     "has_tracked_object": false,
-     "has_video": true,
-     "id": "FY6ZJ8ZU6X",
-     "layer": 0,
-     "left": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "name": "Pixelate",
-     "order": 0,
-     "parent_effect_id": "",
-     "pixelization": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "position": 0.0,
-     "right": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "start": 0.0,
-     "top": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "type": "Pixelate"
-    }
-   ],
-   "end": 1.3,
-   "gravity": 4,
-   "has_audio": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "has_video": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "id": "HI77S9S9AT",
-   "layer": 5000000,
-   "location_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "location_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "mixing": 0,
-   "origin_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.5
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "origin_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.5
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "parentObjectId": "",
-   "perspective_c1_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c1_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c2_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c2_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c3_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c3_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c4_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c4_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "position": 0.03333333333333333,
-   "reader": {
-    "acodec": "",
-    "audio_bit_rate": 0,
-    "audio_stream_index": -1,
-    "audio_timebase": {
-     "den": 1,
-     "num": 1
-    },
-    "channel_layout": 4,
-    "channels": 0,
-    "display_ratio": {
-     "den": 9,
-     "num": 16
-    },
-    "duration": 3600.0,
-    "file_size": "8294400",
-    "fps": {
-     "den": 1,
-     "num": 30
-    },
-    "has_audio": false,
-    "has_single_image": true,
-    "has_video": true,
-    "height": 1080,
-    "interlaced_frame": false,
-    "metadata": {},
-    "path": "./Frame-08070.png",
-    "pixel_format": -1,
-    "pixel_ratio": {
-     "den": 1,
-     "num": 1
-    },
-    "sample_rate": 0,
-    "top_field_first": true,
-    "type": "QtImageReader",
-    "vcodec": "",
-    "video_bit_rate": 0,
-    "video_length": "108000",
-    "video_stream_index": -1,
-    "video_timebase": {
-     "den": 30,
-     "num": 1
-    },
-    "width": 1920
-   },
-   "rotation": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "scale": 1,
-   "scale_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "scale_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "shear_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "shear_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "start": 0,
-   "time": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "volume": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "wave_color": {
-    "alpha": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 255.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    },
-    "blue": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 255.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    },
-    "green": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 123.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    },
-    "red": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 0.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    }
-   },
-   "waveform": false,
-   "file_id": "25QQ4W0X31",
-   "title": "Frame-08070.png",
-   "image": "thumbnail/25QQ4W0X31.png"
-  },
-  {
-   "alpha": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "anchor": 0,
-   "channel_filter": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "channel_mapping": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "display": 0,
    "duration": 26.423999786376953,
    "effects": [],
    "end": 26.423999786376953,
@@ -2943,13 +2460,6 @@
       },
       "handle_type": 0,
       "interpolation": 0
-     },
-     {
-      "co": {
-       "X": 19,
-       "Y": 0.6000000238418579
-      },
-      "interpolation": 1
      }
     ]
    },
@@ -3376,13 +2886,6 @@
       },
       "handle_type": 0,
       "interpolation": 0
-     },
-     {
-      "co": {
-       "X": 19,
-       "Y": 0.6000000238418579
-      },
-      "interpolation": 1
      }
     ]
    },
@@ -3816,13 +3319,6 @@
        "Y": 2.0
       },
       "interpolation": 2
-     },
-     {
-      "co": {
-       "X": 39,
-       "Y": 3.0
-      },
-      "interpolation": 1
      }
     ]
    },
@@ -13869,1396 +13365,6 @@
     ]
    },
    "display": 0,
-   "duration": 3600.0,
-   "effects": [
-    {
-     "bottom": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "class_name": "Pixelate",
-     "description": "Pixelate (increase or decrease) the number of visible pixels.",
-     "duration": 0.0,
-     "end": 0.0,
-     "has_audio": false,
-     "has_tracked_object": false,
-     "has_video": true,
-     "id": "75ELOWRAE7",
-     "layer": 0,
-     "left": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "name": "Pixelate",
-     "order": 0,
-     "parent_effect_id": "",
-     "pixelization": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       },
-       {
-        "co": {
-         "X": 42,
-         "Y": 0.4000000059604645
-        },
-        "interpolation": 1
-       }
-      ]
-     },
-     "position": 0.0,
-     "right": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "start": 0.0,
-     "top": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "type": "Pixelate"
-    }
-   ],
-   "end": 2.966666666666667,
-   "gravity": 4,
-   "has_audio": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "has_video": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "layer": 5000000,
-   "location_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "location_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "mixing": 0,
-   "origin_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.5
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "origin_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.5
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "parentObjectId": "",
-   "perspective_c1_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c1_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c2_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c2_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c3_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c3_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c4_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c4_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "position": 1.3666666666666667,
-   "reader": {
-    "acodec": "",
-    "audio_bit_rate": 0,
-    "audio_stream_index": -1,
-    "audio_timebase": {
-     "den": 1,
-     "num": 1
-    },
-    "channel_layout": 4,
-    "channels": 0,
-    "display_ratio": {
-     "den": 9,
-     "num": 16
-    },
-    "duration": 3600.0,
-    "file_size": "8294400",
-    "fps": {
-     "den": 1,
-     "num": 30
-    },
-    "has_audio": false,
-    "has_single_image": true,
-    "has_video": true,
-    "height": 1080,
-    "interlaced_frame": false,
-    "metadata": {},
-    "path": "./Frame-08070.png",
-    "pixel_format": -1,
-    "pixel_ratio": {
-     "den": 1,
-     "num": 1
-    },
-    "sample_rate": 0,
-    "top_field_first": true,
-    "type": "QtImageReader",
-    "vcodec": "",
-    "video_bit_rate": 0,
-    "video_length": "108000",
-    "video_stream_index": -1,
-    "video_timebase": {
-     "den": 30,
-     "num": 1
-    },
-    "width": 1920
-   },
-   "rotation": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "scale": 1,
-   "scale_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "scale_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "shear_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "shear_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "start": 1.3666666666666667,
-   "time": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "volume": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "wave_color": {
-    "alpha": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 255.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    },
-    "blue": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 255.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    },
-    "green": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 123.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    },
-    "red": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 0.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    }
-   },
-   "waveform": false,
-   "file_id": "25QQ4W0X31",
-   "title": "Frame-08070.png",
-   "image": "thumbnail/25QQ4W0X31.png",
-   "id": "8VAA64Z4OL"
-  },
-  {
-   "alpha": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "anchor": 0,
-   "channel_filter": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "channel_mapping": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "display": 0,
-   "duration": 3600.0,
-   "effects": [
-    {
-     "bottom": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "class_name": "Pixelate",
-     "description": "Pixelate (increase or decrease) the number of visible pixels.",
-     "duration": 0.0,
-     "end": 0.0,
-     "has_audio": false,
-     "has_tracked_object": false,
-     "has_video": true,
-     "id": "1BQVF3RTYD",
-     "layer": 0,
-     "left": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "name": "Pixelate",
-     "order": 0,
-     "parent_effect_id": "",
-     "pixelization": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       },
-       {
-        "co": {
-         "X": 92,
-         "Y": 0.30000001192092896
-        },
-        "interpolation": 1
-       }
-      ]
-     },
-     "position": 0.0,
-     "right": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "start": 0.0,
-     "top": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "type": "Pixelate"
-    }
-   ],
-   "end": 4.666666666666666,
-   "gravity": 4,
-   "has_audio": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "has_video": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "layer": 5000000,
-   "location_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "location_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "mixing": 0,
-   "origin_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.5
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "origin_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.5
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "parentObjectId": "",
-   "perspective_c1_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c1_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c2_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c2_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c3_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c3_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c4_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c4_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "position": 3,
-   "reader": {
-    "acodec": "",
-    "audio_bit_rate": 0,
-    "audio_stream_index": -1,
-    "audio_timebase": {
-     "den": 1,
-     "num": 1
-    },
-    "channel_layout": 4,
-    "channels": 0,
-    "display_ratio": {
-     "den": 9,
-     "num": 16
-    },
-    "duration": 3600.0,
-    "file_size": "8294400",
-    "fps": {
-     "den": 1,
-     "num": 30
-    },
-    "has_audio": false,
-    "has_single_image": true,
-    "has_video": true,
-    "height": 1080,
-    "interlaced_frame": false,
-    "metadata": {},
-    "path": "./Frame-08070.png",
-    "pixel_format": -1,
-    "pixel_ratio": {
-     "den": 1,
-     "num": 1
-    },
-    "sample_rate": 0,
-    "top_field_first": true,
-    "type": "QtImageReader",
-    "vcodec": "",
-    "video_bit_rate": 0,
-    "video_length": "108000",
-    "video_stream_index": -1,
-    "video_timebase": {
-     "den": 30,
-     "num": 1
-    },
-    "width": 1920
-   },
-   "rotation": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "scale": 1,
-   "scale_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "scale_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "shear_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "shear_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "start": 3.033333333333333,
-   "time": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "volume": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "wave_color": {
-    "alpha": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 255.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    },
-    "blue": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 255.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    },
-    "green": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 123.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    },
-    "red": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 0.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    }
-   },
-   "waveform": false,
-   "file_id": "25QQ4W0X31",
-   "title": "Frame-08070.png",
-   "image": "thumbnail/25QQ4W0X31.png",
-   "id": "HCRG1DAHP7"
-  },
-  {
-   "alpha": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "anchor": 0,
-   "channel_filter": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "channel_mapping": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "display": 0,
-   "duration": 3600.0,
-   "effects": [],
-   "end": 32.95,
-   "gravity": 4,
-   "has_audio": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "has_video": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "layer": 5000000,
-   "location_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "location_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "mixing": 0,
-   "origin_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.5
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "origin_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.5
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "parentObjectId": "",
-   "perspective_c1_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c1_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c2_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c2_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c3_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c3_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c4_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "perspective_c4_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "position": 4.633333333333334,
-   "reader": {
-    "acodec": "",
-    "audio_bit_rate": 0,
-    "audio_stream_index": -1,
-    "audio_timebase": {
-     "den": 1,
-     "num": 1
-    },
-    "channel_layout": 4,
-    "channels": 0,
-    "display_ratio": {
-     "den": 9,
-     "num": 16
-    },
-    "duration": 3600.0,
-    "file_size": "8294400",
-    "fps": {
-     "den": 1,
-     "num": 30
-    },
-    "has_audio": false,
-    "has_single_image": true,
-    "has_video": true,
-    "height": 1080,
-    "interlaced_frame": false,
-    "metadata": {},
-    "path": "./Frame-08070.png",
-    "pixel_format": -1,
-    "pixel_ratio": {
-     "den": 1,
-     "num": 1
-    },
-    "sample_rate": 0,
-    "top_field_first": true,
-    "type": "QtImageReader",
-    "vcodec": "",
-    "video_bit_rate": 0,
-    "video_length": "108000",
-    "video_stream_index": -1,
-    "video_timebase": {
-     "den": 30,
-     "num": 1
-    },
-    "width": 1920
-   },
-   "rotation": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "scale": 1,
-   "scale_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "scale_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "shear_x": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "shear_y": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 0.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "start": 4.733333333333333,
-   "time": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "volume": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "wave_color": {
-    "alpha": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 255.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    },
-    "blue": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 255.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    },
-    "green": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 123.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    },
-    "red": {
-     "Points": [
-      {
-       "co": {
-        "X": 1.0,
-        "Y": 0.0
-       },
-       "handle_left": {
-        "X": 0.5,
-        "Y": 1.0
-       },
-       "handle_right": {
-        "X": 0.5,
-        "Y": 0.0
-       },
-       "handle_type": 0,
-       "interpolation": 0
-      }
-     ]
-    }
-   },
-   "waveform": false,
-   "file_id": "25QQ4W0X31",
-   "title": "Frame-08070.png",
-   "image": "thumbnail/25QQ4W0X31.png",
-   "id": "CIB81AARZ3"
-  },
-  {
-   "alpha": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": 1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "anchor": 0,
-   "channel_filter": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "channel_mapping": {
-    "Points": [
-     {
-      "co": {
-       "X": 1.0,
-       "Y": -1.0
-      },
-      "interpolation": 2
-     }
-    ]
-   },
-   "display": 0,
    "duration": 0.6000000238418579,
    "effects": [],
    "end": 0.6000000238418579,
@@ -15559,13 +13665,6 @@
       },
       "handle_type": 0,
       "interpolation": 0
-     },
-     {
-      "co": {
-       "X": 19,
-       "Y": 0.6000000238418579
-      },
-      "interpolation": 1
      }
     ]
    },
@@ -16003,7 +14102,7 @@
      {
       "co": {
        "X": 39,
-       "Y": 3.0
+       "Y": 2.0
       },
       "interpolation": 1
      }
@@ -16866,13 +14965,6 @@
        "Y": 2.0
       },
       "interpolation": 2
-     },
-     {
-      "co": {
-       "X": 37,
-       "Y": 3.0
-      },
-      "interpolation": 1
      }
     ]
    },
@@ -16963,60 +15055,1885 @@
    "title": "DoesNotCompute.mp3",
    "image": "thumbnail/RF6TNSPS4Y.png",
    "id": "CX3QCXLJUH"
+  },
+  {
+   "alpha": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "anchor": 0,
+   "channel_filter": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "channel_mapping": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "display": 0,
+   "duration": 3600.0,
+   "effects": [],
+   "end": 32.95,
+   "gravity": 4,
+   "has_audio": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "has_video": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "layer": 5000000,
+   "location_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "location_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "mixing": 0,
+   "origin_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "origin_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "parentObjectId": "",
+   "perspective_c1_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c1_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "position": 4.633333333333334,
+   "reader": {
+    "acodec": "",
+    "audio_bit_rate": 0,
+    "audio_stream_index": -1,
+    "audio_timebase": {
+     "den": 1,
+     "num": 1
+    },
+    "channel_layout": 4,
+    "channels": 0,
+    "display_ratio": {
+     "den": 9,
+     "num": 16
+    },
+    "duration": 3600.0,
+    "file_size": "8294400",
+    "fps": {
+     "den": 1,
+     "num": 30
+    },
+    "has_audio": false,
+    "has_single_image": true,
+    "has_video": true,
+    "height": 1080,
+    "interlaced_frame": false,
+    "metadata": {},
+    "path": "../MentalGymnasticsHardHittingQuestions/Frame-01191.png",
+    "pixel_format": -1,
+    "pixel_ratio": {
+     "den": 1,
+     "num": 1
+    },
+    "sample_rate": 0,
+    "top_field_first": true,
+    "type": "QtImageReader",
+    "vcodec": "",
+    "video_bit_rate": 0,
+    "video_length": "108000",
+    "video_stream_index": -1,
+    "video_timebase": {
+     "den": 30,
+     "num": 1
+    },
+    "width": 1920
+   },
+   "rotation": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale": 1,
+   "scale_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "start": 4.733333333333333,
+   "time": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "volume": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "wave_color": {
+    "alpha": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "blue": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "green": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 123.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "red": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 0.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    }
+   },
+   "waveform": false,
+   "file_id": "25QQ4W0X31",
+   "title": "Frame-08070.png",
+   "image": "thumbnail/25QQ4W0X31.png",
+   "id": "CIB81AARZ3"
+  },
+  {
+   "alpha": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "anchor": 0,
+   "channel_filter": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "channel_mapping": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "display": 0,
+   "duration": 3600.0,
+   "effects": [
+    {
+     "bottom": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.0
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "class_name": "Pixelate",
+     "description": "Pixelate (increase or decrease) the number of visible pixels.",
+     "duration": 0.0,
+     "end": 0.0,
+     "has_audio": false,
+     "has_tracked_object": false,
+     "has_video": true,
+     "id": "1BQVF3RTYD",
+     "layer": 0,
+     "left": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.0
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "name": "Pixelate",
+     "order": 0,
+     "parent_effect_id": "",
+     "pixelization": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.5
+        },
+        "interpolation": 2
+       },
+       {
+        "co": {
+         "X": 92,
+         "Y": 0.30000001192092896
+        },
+        "interpolation": 1
+       }
+      ]
+     },
+     "position": 0.0,
+     "right": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.0
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "start": 0.0,
+     "top": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.0
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "type": "Pixelate"
+    }
+   ],
+   "end": 4.666666666666666,
+   "gravity": 4,
+   "has_audio": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "has_video": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "layer": 5000000,
+   "location_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "location_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "mixing": 0,
+   "origin_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "origin_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "parentObjectId": "",
+   "perspective_c1_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c1_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "position": 3,
+   "reader": {
+    "acodec": "",
+    "audio_bit_rate": 0,
+    "audio_stream_index": -1,
+    "audio_timebase": {
+     "den": 1,
+     "num": 1
+    },
+    "channel_layout": 4,
+    "channels": 0,
+    "display_ratio": {
+     "den": 9,
+     "num": 16
+    },
+    "duration": 3600.0,
+    "file_size": "8294400",
+    "fps": {
+     "den": 1,
+     "num": 30
+    },
+    "has_audio": false,
+    "has_single_image": true,
+    "has_video": true,
+    "height": 1080,
+    "interlaced_frame": false,
+    "metadata": {},
+    "path": "../MentalGymnasticsHardHittingQuestions/Frame-01191.png",
+    "pixel_format": -1,
+    "pixel_ratio": {
+     "den": 1,
+     "num": 1
+    },
+    "sample_rate": 0,
+    "top_field_first": true,
+    "type": "QtImageReader",
+    "vcodec": "",
+    "video_bit_rate": 0,
+    "video_length": "108000",
+    "video_stream_index": -1,
+    "video_timebase": {
+     "den": 30,
+     "num": 1
+    },
+    "width": 1920
+   },
+   "rotation": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale": 1,
+   "scale_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "start": 3.033333333333333,
+   "time": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "volume": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "wave_color": {
+    "alpha": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "blue": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "green": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 123.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "red": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 0.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    }
+   },
+   "waveform": false,
+   "file_id": "25QQ4W0X31",
+   "title": "Frame-08070.png",
+   "image": "thumbnail/25QQ4W0X31.png",
+   "id": "HCRG1DAHP7"
+  },
+  {
+   "alpha": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "anchor": 0,
+   "channel_filter": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "channel_mapping": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "display": 0,
+   "duration": 3600.0,
+   "effects": [
+    {
+     "bottom": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.0
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "class_name": "Pixelate",
+     "description": "Pixelate (increase or decrease) the number of visible pixels.",
+     "duration": 0.0,
+     "end": 0.0,
+     "has_audio": false,
+     "has_tracked_object": false,
+     "has_video": true,
+     "id": "75ELOWRAE7",
+     "layer": 0,
+     "left": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.0
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "name": "Pixelate",
+     "order": 0,
+     "parent_effect_id": "",
+     "pixelization": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.5
+        },
+        "interpolation": 2
+       },
+       {
+        "co": {
+         "X": 42,
+         "Y": 0.4000000059604645
+        },
+        "interpolation": 1
+       }
+      ]
+     },
+     "position": 0.0,
+     "right": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.0
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "start": 0.0,
+     "top": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.0
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "type": "Pixelate"
+    }
+   ],
+   "end": 2.966666666666667,
+   "gravity": 4,
+   "has_audio": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "has_video": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "layer": 5000000,
+   "location_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "location_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "mixing": 0,
+   "origin_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "origin_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "parentObjectId": "",
+   "perspective_c1_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c1_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "position": 1.3666666666666667,
+   "reader": {
+    "acodec": "",
+    "audio_bit_rate": 0,
+    "audio_stream_index": -1,
+    "audio_timebase": {
+     "den": 1,
+     "num": 1
+    },
+    "channel_layout": 4,
+    "channels": 0,
+    "display_ratio": {
+     "den": 9,
+     "num": 16
+    },
+    "duration": 3600.0,
+    "file_size": "8294400",
+    "fps": {
+     "den": 1,
+     "num": 30
+    },
+    "has_audio": false,
+    "has_single_image": true,
+    "has_video": true,
+    "height": 1080,
+    "interlaced_frame": false,
+    "metadata": {},
+    "path": "../MentalGymnasticsHardHittingQuestions/Frame-01191.png",
+    "pixel_format": -1,
+    "pixel_ratio": {
+     "den": 1,
+     "num": 1
+    },
+    "sample_rate": 0,
+    "top_field_first": true,
+    "type": "QtImageReader",
+    "vcodec": "",
+    "video_bit_rate": 0,
+    "video_length": "108000",
+    "video_stream_index": -1,
+    "video_timebase": {
+     "den": 30,
+     "num": 1
+    },
+    "width": 1920
+   },
+   "rotation": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale": 1,
+   "scale_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "start": 1.3666666666666667,
+   "time": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "volume": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "wave_color": {
+    "alpha": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "blue": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "green": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 123.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "red": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 0.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    }
+   },
+   "waveform": false,
+   "file_id": "25QQ4W0X31",
+   "title": "Frame-08070.png",
+   "image": "thumbnail/25QQ4W0X31.png",
+   "id": "8VAA64Z4OL"
+  },
+  {
+   "alpha": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "anchor": 0,
+   "channel_filter": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "channel_mapping": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "display": 0,
+   "duration": 3600.0,
+   "effects": [
+    {
+     "bottom": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.0
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "class_name": "Pixelate",
+     "description": "Pixelate (increase or decrease) the number of visible pixels.",
+     "duration": 0.0,
+     "end": 0.0,
+     "has_audio": false,
+     "has_tracked_object": false,
+     "has_video": true,
+     "id": "FY6ZJ8ZU6X",
+     "layer": 0,
+     "left": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.0
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "name": "Pixelate",
+     "order": 0,
+     "parent_effect_id": "",
+     "pixelization": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.5
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "position": 0.0,
+     "right": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.0
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "start": 0.0,
+     "top": {
+      "Points": [
+       {
+        "co": {
+         "X": 1.0,
+         "Y": 0.0
+        },
+        "interpolation": 2
+       }
+      ]
+     },
+     "type": "Pixelate"
+    }
+   ],
+   "end": 1.3,
+   "gravity": 4,
+   "has_audio": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "has_video": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "id": "HI77S9S9AT",
+   "layer": 5000000,
+   "location_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "location_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "mixing": 0,
+   "origin_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "origin_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "parentObjectId": "",
+   "perspective_c1_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c1_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "position": 0.03333333333333333,
+   "reader": {
+    "acodec": "",
+    "audio_bit_rate": 0,
+    "audio_stream_index": -1,
+    "audio_timebase": {
+     "den": 1,
+     "num": 1
+    },
+    "channel_layout": 4,
+    "channels": 0,
+    "display_ratio": {
+     "den": 9,
+     "num": 16
+    },
+    "duration": 3600.0,
+    "file_size": "8294400",
+    "fps": {
+     "den": 1,
+     "num": 30
+    },
+    "has_audio": false,
+    "has_single_image": true,
+    "has_video": true,
+    "height": 1080,
+    "interlaced_frame": false,
+    "metadata": {},
+    "path": "../MentalGymnasticsHardHittingQuestions/Frame-01191.png",
+    "pixel_format": -1,
+    "pixel_ratio": {
+     "den": 1,
+     "num": 1
+    },
+    "sample_rate": 0,
+    "top_field_first": true,
+    "type": "QtImageReader",
+    "vcodec": "",
+    "video_bit_rate": 0,
+    "video_length": "108000",
+    "video_stream_index": -1,
+    "video_timebase": {
+     "den": 30,
+     "num": 1
+    },
+    "width": 1920
+   },
+   "rotation": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale": 1,
+   "scale_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "start": 0,
+   "time": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "volume": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "wave_color": {
+    "alpha": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "blue": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "green": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 123.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "red": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 0.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    }
+   },
+   "waveform": false,
+   "file_id": "25QQ4W0X31",
+   "title": "Frame-08070.png",
+   "image": "thumbnail/25QQ4W0X31.png"
   }
  ],
  "effects": [],
  "export_path": "C:/Users/theok/Repos/FactCheckThisBitch/OpenShot/RAIN-Error.DoesNotCompute",
- "import_path": "C:/Users/theok/Repos/FactCheckThisBitch/OpenShot/RAIN-Error.DoesNotCompute",
+ "import_path": "C:/Users/theok/Repos/FactCheckThisBitch/OpenShot/MentalGymnasticsHardHittingQuestions",
  "files": [
-  {
-   "acodec": "",
-   "audio_bit_rate": 0,
-   "audio_stream_index": -1,
-   "audio_timebase": {
-    "den": 1,
-    "num": 1
-   },
-   "channel_layout": 4,
-   "channels": 0,
-   "display_ratio": {
-    "den": 9,
-    "num": 16
-   },
-   "duration": 3600.0,
-   "file_size": "8294400",
-   "fps": {
-    "den": 1,
-    "num": 30
-   },
-   "has_audio": false,
-   "has_single_image": true,
-   "has_video": true,
-   "height": 1080,
-   "interlaced_frame": false,
-   "metadata": {},
-   "path": "./Frame-08070.png",
-   "pixel_format": -1,
-   "pixel_ratio": {
-    "den": 1,
-    "num": 1
-   },
-   "sample_rate": 0,
-   "top_field_first": true,
-   "type": "QtImageReader",
-   "vcodec": "",
-   "video_bit_rate": 0,
-   "video_length": "108000",
-   "video_stream_index": -1,
-   "video_timebase": {
-    "den": 30,
-    "num": 1
-   },
-   "width": 1920,
-   "media_type": "image",
-   "id": "25QQ4W0X31",
-   "image": "thumbnail/25QQ4W0X31.png"
-  },
   {
    "acodec": "mp3float",
    "audio_bit_rate": 160000,
@@ -17338,6 +17255,58 @@
    "media_type": "audio",
    "id": "RF6TNSPS4Y",
    "image": "thumbnail/RF6TNSPS4Y.png"
+  },
+  {
+   "acodec": "",
+   "audio_bit_rate": 0,
+   "audio_stream_index": -1,
+   "audio_timebase": {
+    "den": 1,
+    "num": 1
+   },
+   "channel_layout": 4,
+   "channels": 0,
+   "display_ratio": {
+    "den": 9,
+    "num": 16
+   },
+   "duration": 3600.0,
+   "file_size": "8294400",
+   "fps": {
+    "den": 1,
+    "num": 30
+   },
+   "has_audio": false,
+   "has_single_image": true,
+   "has_video": true,
+   "height": 1080,
+   "interlaced_frame": false,
+   "metadata": {},
+   "path": "../MentalGymnasticsHardHittingQuestions/Frame-01191.png",
+   "pixel_format": -1,
+   "pixel_ratio": {
+    "den": 1,
+    "num": 1
+   },
+   "sample_rate": 0,
+   "top_field_first": true,
+   "type": "QtImageReader",
+   "vcodec": "",
+   "video_bit_rate": 0,
+   "video_length": "108000",
+   "video_stream_index": -1,
+   "video_timebase": {
+    "den": 30,
+    "num": 1
+   },
+   "width": 1920,
+   "media_type": "image",
+   "id": "25QQ4W0X31",
+   "image": "thumbnail/25QQ4W0X31.png",
+   "name": "Frame-01191.png",
+   "tags": "",
+   "start": 0.0,
+   "end": 3599.9666666666667
   }
  ],
  "duration": 542.9232788085938,
@@ -94981,451 +94950,111 @@
    {
     "type": "update",
     "key": [
-     "clips",
+     "files",
      {
-      "id": "YX8RLO2TAT"
+      "id": "25QQ4W0X31"
      }
     ],
     "value": {
-     "id": "YX8RLO2TAT",
-     "layer": 2000000,
-     "position": 3.3,
-     "start": 0,
-     "end": 1.2719999551773071
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 9,
+      "num": 16
+     },
+     "duration": 3600.0,
+     "file_size": "8294400",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 1080,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../MentalGymnasticsHardHittingQuestions/Frame-01191.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 1920,
+     "media_type": "image",
+     "id": "25QQ4W0X31",
+     "image": "thumbnail/25QQ4W0X31.png",
+     "name": "Frame-01191.png",
+     "tags": "",
+     "start": 0.0,
+     "end": 3599.9666666666667
     },
     "partial": false,
     "old_values": {
-     "alpha": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
      },
-     "anchor": 0,
-     "channel_filter": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 9,
+      "num": 16
      },
-     "channel_mapping": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
+     "duration": 3600.0,
+     "file_size": "8294400",
+     "fps": {
+      "den": 1,
+      "num": 30
      },
-     "display": 0,
-     "duration": 1.2719999551773071,
-     "effects": [
-      {
-       "class_name": "Robotization",
-       "description": "Transform the voice present in an audio track into a robotic voice effect.",
-       "duration": 0.0,
-       "end": 0.0,
-       "fft_size": 5,
-       "has_audio": true,
-       "has_tracked_object": false,
-       "has_video": false,
-       "hop_size": 0,
-       "id": "P328GBQNON",
-       "layer": 0,
-       "name": "Robotization",
-       "order": 0,
-       "parent_effect_id": "",
-       "position": 0.0,
-       "start": 0.0,
-       "type": "Robotization",
-       "window_type": 0
-      }
-     ],
-     "end": 1.2719999551773071,
-     "gravity": 4,
-     "has_audio": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 1080,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "./Frame-08070.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
      },
-     "has_video": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
      },
-     "layer": 2000000,
-     "location_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "location_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "mixing": 0,
-     "origin_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "origin_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "parentObjectId": "",
-     "perspective_c1_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c1_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c2_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c2_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c3_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c3_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c4_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c4_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "position": 3.3,
-     "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 48000,
-      "audio_stream_index": 0,
-      "audio_timebase": {
-       "den": 14112000,
-       "num": 1
-      },
-      "channel_layout": 4,
-      "channels": 1,
-      "display_ratio": {
-       "den": 1,
-       "num": 1
-      },
-      "duration": 1.2719999551773071,
-      "file_size": "7677",
-      "fps": {
-       "den": 1,
-       "num": 24
-      },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
-      "interlaced_frame": false,
-      "metadata": {
-       "encoder": "Lavf58.76.100"
-      },
-      "path": "./DoesNotCompute.mp3",
-      "pixel_format": -1,
-      "pixel_ratio": {
-       "den": 1,
-       "num": 1
-      },
-      "sample_rate": 24000,
-      "top_field_first": true,
-      "type": "FFmpegReader",
-      "vcodec": "",
-      "video_bit_rate": 0,
-      "video_length": "30",
-      "video_stream_index": -1,
-      "video_timebase": {
-       "den": 24,
-       "num": 1
-      },
-      "width": 720
-     },
-     "rotation": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "scale": 1,
-     "scale_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "scale_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "shear_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "shear_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "start": 0,
-     "time": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "volume": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 2.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "wave_color": {
-      "alpha": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 255.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "blue": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 255.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "green": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 123.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "red": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 0.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      }
-     },
-     "waveform": false,
-     "file_id": "RF6TNSPS4Y",
-     "title": "DoesNotCompute.mp3",
-     "image": "thumbnail/RF6TNSPS4Y.png",
-     "id": "YX8RLO2TAT"
+     "width": 1920,
+     "media_type": "image",
+     "id": "25QQ4W0X31",
+     "image": "thumbnail/25QQ4W0X31.png"
     }
    },
    {
@@ -95433,7 +95062,7 @@
     "key": [
      "clips",
      {
-      "id": "YX8RLO2TAT"
+      "id": "CIB81AARZ3"
      }
     ],
     "value": {
@@ -95472,30 +95101,9 @@
       ]
      },
      "display": 0,
-     "duration": 1.2719999551773071,
-     "effects": [
-      {
-       "class_name": "Robotization",
-       "description": "Transform the voice present in an audio track into a robotic voice effect.",
-       "duration": 0.0,
-       "end": 0.0,
-       "fft_size": 5,
-       "has_audio": true,
-       "has_tracked_object": false,
-       "has_video": false,
-       "hop_size": 0,
-       "id": "P328GBQNON",
-       "layer": 0,
-       "name": "Robotization",
-       "order": 0,
-       "parent_effect_id": "",
-       "position": 0.0,
-       "start": 0.0,
-       "type": "Robotization",
-       "window_type": 0
-      }
-     ],
-     "end": 1.2719999551773071,
+     "duration": 3600.0,
+     "effects": [],
+     "end": 32.95,
      "gravity": 4,
      "has_audio": {
       "Points": [
@@ -95519,7 +95127,7 @@
        }
       ]
      },
-     "layer": 2000000,
+     "layer": 5000000,
      "location_x": {
       "Points": [
        {
@@ -95654,53 +95262,51 @@
        }
       ]
      },
-     "position": 3.3,
+     "position": 4.633333333333334,
      "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 48000,
-      "audio_stream_index": 0,
+      "acodec": "",
+      "audio_bit_rate": 0,
+      "audio_stream_index": -1,
       "audio_timebase": {
-       "den": 14112000,
+       "den": 1,
        "num": 1
       },
       "channel_layout": 4,
-      "channels": 1,
+      "channels": 0,
       "display_ratio": {
-       "den": 1,
-       "num": 1
+       "den": 9,
+       "num": 16
       },
-      "duration": 1.2719999551773071,
-      "file_size": "7677",
+      "duration": 3600.0,
+      "file_size": "8294400",
       "fps": {
        "den": 1,
-       "num": 24
+       "num": 30
       },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
+      "has_audio": false,
+      "has_single_image": true,
+      "has_video": true,
+      "height": 1080,
       "interlaced_frame": false,
-      "metadata": {
-       "encoder": "Lavf58.76.100"
-      },
-      "path": "./DoesNotCompute.mp3",
+      "metadata": {},
+      "path": "../MentalGymnasticsHardHittingQuestions/Frame-01191.png",
       "pixel_format": -1,
       "pixel_ratio": {
        "den": 1,
        "num": 1
       },
-      "sample_rate": 24000,
+      "sample_rate": 0,
       "top_field_first": true,
-      "type": "FFmpegReader",
+      "type": "QtImageReader",
       "vcodec": "",
       "video_bit_rate": 0,
-      "video_length": "30",
+      "video_length": "108000",
       "video_stream_index": -1,
       "video_timebase": {
-       "den": 24,
+       "den": 30,
        "num": 1
       },
-      "width": 720
+      "width": 1920
      },
      "rotation": {
       "Points": [
@@ -95758,7 +95364,7 @@
        }
       ]
      },
-     "start": 0,
+     "start": 4.733333333333333,
      "time": {
       "Points": [
        {
@@ -95775,16 +95381,9 @@
        {
         "co": {
          "X": 1.0,
-         "Y": 2.0
+         "Y": 1.0
         },
         "interpolation": 2
-       },
-       {
-        "co": {
-         "X": 39,
-         "Y": 3.0
-        },
-        "interpolation": 1
        }
       ]
      },
@@ -95871,10 +95470,10 @@
       }
      },
      "waveform": false,
-     "file_id": "RF6TNSPS4Y",
-     "title": "DoesNotCompute.mp3",
-     "image": "thumbnail/RF6TNSPS4Y.png",
-     "id": "YX8RLO2TAT"
+     "file_id": "25QQ4W0X31",
+     "title": "Frame-08070.png",
+     "image": "thumbnail/25QQ4W0X31.png",
+     "id": "CIB81AARZ3"
     },
     "partial": false,
     "old_values": {
@@ -95913,30 +95512,9 @@
       ]
      },
      "display": 0,
-     "duration": 1.2719999551773071,
-     "effects": [
-      {
-       "class_name": "Robotization",
-       "description": "Transform the voice present in an audio track into a robotic voice effect.",
-       "duration": 0.0,
-       "end": 0.0,
-       "fft_size": 5,
-       "has_audio": true,
-       "has_tracked_object": false,
-       "has_video": false,
-       "hop_size": 0,
-       "id": "P328GBQNON",
-       "layer": 0,
-       "name": "Robotization",
-       "order": 0,
-       "parent_effect_id": "",
-       "position": 0.0,
-       "start": 0.0,
-       "type": "Robotization",
-       "window_type": 0
-      }
-     ],
-     "end": 1.2719999551773071,
+     "duration": 3600.0,
+     "effects": [],
+     "end": 32.95,
      "gravity": 4,
      "has_audio": {
       "Points": [
@@ -95960,7 +95538,7 @@
        }
       ]
      },
-     "layer": 2000000,
+     "layer": 5000000,
      "location_x": {
       "Points": [
        {
@@ -96095,53 +95673,51 @@
        }
       ]
      },
-     "position": 3.3,
+     "position": 4.633333333333334,
      "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 48000,
-      "audio_stream_index": 0,
+      "acodec": "",
+      "audio_bit_rate": 0,
+      "audio_stream_index": -1,
       "audio_timebase": {
-       "den": 14112000,
+       "den": 1,
        "num": 1
       },
       "channel_layout": 4,
-      "channels": 1,
+      "channels": 0,
       "display_ratio": {
-       "den": 1,
-       "num": 1
+       "den": 9,
+       "num": 16
       },
-      "duration": 1.2719999551773071,
-      "file_size": "7677",
+      "duration": 3600.0,
+      "file_size": "8294400",
       "fps": {
        "den": 1,
-       "num": 24
+       "num": 30
       },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
+      "has_audio": false,
+      "has_single_image": true,
+      "has_video": true,
+      "height": 1080,
       "interlaced_frame": false,
-      "metadata": {
-       "encoder": "Lavf58.76.100"
-      },
-      "path": "./DoesNotCompute.mp3",
+      "metadata": {},
+      "path": "./Frame-08070.png",
       "pixel_format": -1,
       "pixel_ratio": {
        "den": 1,
        "num": 1
       },
-      "sample_rate": 24000,
+      "sample_rate": 0,
       "top_field_first": true,
-      "type": "FFmpegReader",
+      "type": "QtImageReader",
       "vcodec": "",
       "video_bit_rate": 0,
-      "video_length": "30",
+      "video_length": "108000",
       "video_stream_index": -1,
       "video_timebase": {
-       "den": 24,
+       "den": 30,
        "num": 1
       },
-      "width": 720
+      "width": 1920
      },
      "rotation": {
       "Points": [
@@ -96199,7 +95775,7 @@
        }
       ]
      },
-     "start": 0,
+     "start": 4.733333333333333,
      "time": {
       "Points": [
        {
@@ -96216,7 +95792,7 @@
        {
         "co": {
          "X": 1.0,
-         "Y": 2.0
+         "Y": 1.0
         },
         "interpolation": 2
        }
@@ -96305,10 +95881,10 @@
       }
      },
      "waveform": false,
-     "file_id": "RF6TNSPS4Y",
-     "title": "DoesNotCompute.mp3",
-     "image": "thumbnail/RF6TNSPS4Y.png",
-     "id": "YX8RLO2TAT"
+     "file_id": "25QQ4W0X31",
+     "title": "Frame-08070.png",
+     "image": "thumbnail/25QQ4W0X31.png",
+     "id": "CIB81AARZ3"
     }
    },
    {
@@ -96316,7 +95892,7 @@
     "key": [
      "clips",
      {
-      "id": "20L8DZ30Z7"
+      "id": "HCRG1DAHP7"
      }
     ],
     "value": {
@@ -96355,30 +95931,89 @@
       ]
      },
      "display": 0,
-     "duration": 1.2719999551773071,
+     "duration": 3600.0,
      "effects": [
       {
-       "class_name": "Robotization",
-       "description": "Transform the voice present in an audio track into a robotic voice effect.",
+       "bottom": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "class_name": "Pixelate",
+       "description": "Pixelate (increase or decrease) the number of visible pixels.",
        "duration": 0.0,
        "end": 0.0,
-       "fft_size": 5,
-       "has_audio": true,
+       "has_audio": false,
        "has_tracked_object": false,
-       "has_video": false,
-       "hop_size": 0,
-       "id": "P328GBQNON",
+       "has_video": true,
+       "id": "1BQVF3RTYD",
        "layer": 0,
-       "name": "Robotization",
+       "left": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "name": "Pixelate",
        "order": 0,
        "parent_effect_id": "",
+       "pixelization": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.5
+          },
+          "interpolation": 2
+         },
+         {
+          "co": {
+           "X": 92,
+           "Y": 0.30000001192092896
+          },
+          "interpolation": 1
+         }
+        ]
+       },
        "position": 0.0,
+       "right": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
        "start": 0.0,
-       "type": "Robotization",
-       "window_type": 0
+       "top": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "type": "Pixelate"
       }
      ],
-     "end": 1.2719999551773071,
+     "end": 4.666666666666666,
      "gravity": 4,
      "has_audio": {
       "Points": [
@@ -96402,7 +96037,7 @@
        }
       ]
      },
-     "layer": 2000000,
+     "layer": 5000000,
      "location_x": {
       "Points": [
        {
@@ -96537,53 +96172,51 @@
        }
       ]
      },
-     "position": 4.933333333333334,
+     "position": 3,
      "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 48000,
-      "audio_stream_index": 0,
+      "acodec": "",
+      "audio_bit_rate": 0,
+      "audio_stream_index": -1,
       "audio_timebase": {
-       "den": 14112000,
+       "den": 1,
        "num": 1
       },
       "channel_layout": 4,
-      "channels": 1,
+      "channels": 0,
       "display_ratio": {
-       "den": 1,
-       "num": 1
+       "den": 9,
+       "num": 16
       },
-      "duration": 1.2719999551773071,
-      "file_size": "7677",
+      "duration": 3600.0,
+      "file_size": "8294400",
       "fps": {
        "den": 1,
-       "num": 24
+       "num": 30
       },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
+      "has_audio": false,
+      "has_single_image": true,
+      "has_video": true,
+      "height": 1080,
       "interlaced_frame": false,
-      "metadata": {
-       "encoder": "Lavf58.76.100"
-      },
-      "path": "./DoesNotCompute.mp3",
+      "metadata": {},
+      "path": "../MentalGymnasticsHardHittingQuestions/Frame-01191.png",
       "pixel_format": -1,
       "pixel_ratio": {
        "den": 1,
        "num": 1
       },
-      "sample_rate": 24000,
+      "sample_rate": 0,
       "top_field_first": true,
-      "type": "FFmpegReader",
+      "type": "QtImageReader",
       "vcodec": "",
       "video_bit_rate": 0,
-      "video_length": "30",
+      "video_length": "108000",
       "video_stream_index": -1,
       "video_timebase": {
-       "den": 24,
+       "den": 30,
        "num": 1
       },
-      "width": 720
+      "width": 1920
      },
      "rotation": {
       "Points": [
@@ -96641,7 +96274,7 @@
        }
       ]
      },
-     "start": 0,
+     "start": 3.033333333333333,
      "time": {
       "Points": [
        {
@@ -96661,13 +96294,6 @@
          "Y": 1.0
         },
         "interpolation": 2
-       },
-       {
-        "co": {
-         "X": 39,
-         "Y": 3.0
-        },
-        "interpolation": 1
        }
       ]
      },
@@ -96754,10 +96380,10 @@
       }
      },
      "waveform": false,
-     "file_id": "RF6TNSPS4Y",
-     "title": "DoesNotCompute.mp3",
-     "image": "thumbnail/RF6TNSPS4Y.png",
-     "id": "20L8DZ30Z7"
+     "file_id": "25QQ4W0X31",
+     "title": "Frame-08070.png",
+     "image": "thumbnail/25QQ4W0X31.png",
+     "id": "HCRG1DAHP7"
     },
     "partial": false,
     "old_values": {
@@ -96796,30 +96422,89 @@
       ]
      },
      "display": 0,
-     "duration": 1.2719999551773071,
+     "duration": 3600.0,
      "effects": [
       {
-       "class_name": "Robotization",
-       "description": "Transform the voice present in an audio track into a robotic voice effect.",
+       "bottom": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "class_name": "Pixelate",
+       "description": "Pixelate (increase or decrease) the number of visible pixels.",
        "duration": 0.0,
        "end": 0.0,
-       "fft_size": 5,
-       "has_audio": true,
+       "has_audio": false,
        "has_tracked_object": false,
-       "has_video": false,
-       "hop_size": 0,
-       "id": "P328GBQNON",
+       "has_video": true,
+       "id": "1BQVF3RTYD",
        "layer": 0,
-       "name": "Robotization",
+       "left": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "name": "Pixelate",
        "order": 0,
        "parent_effect_id": "",
+       "pixelization": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.5
+          },
+          "interpolation": 2
+         },
+         {
+          "co": {
+           "X": 92,
+           "Y": 0.30000001192092896
+          },
+          "interpolation": 1
+         }
+        ]
+       },
        "position": 0.0,
+       "right": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
        "start": 0.0,
-       "type": "Robotization",
-       "window_type": 0
+       "top": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "type": "Pixelate"
       }
      ],
-     "end": 1.2719999551773071,
+     "end": 4.666666666666666,
      "gravity": 4,
      "has_audio": {
       "Points": [
@@ -96843,7 +96528,7 @@
        }
       ]
      },
-     "layer": 2000000,
+     "layer": 5000000,
      "location_x": {
       "Points": [
        {
@@ -96978,53 +96663,51 @@
        }
       ]
      },
-     "position": 4.933333333333334,
+     "position": 3,
      "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 48000,
-      "audio_stream_index": 0,
+      "acodec": "",
+      "audio_bit_rate": 0,
+      "audio_stream_index": -1,
       "audio_timebase": {
-       "den": 14112000,
+       "den": 1,
        "num": 1
       },
       "channel_layout": 4,
-      "channels": 1,
+      "channels": 0,
       "display_ratio": {
-       "den": 1,
-       "num": 1
+       "den": 9,
+       "num": 16
       },
-      "duration": 1.2719999551773071,
-      "file_size": "7677",
+      "duration": 3600.0,
+      "file_size": "8294400",
       "fps": {
        "den": 1,
-       "num": 24
+       "num": 30
       },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
+      "has_audio": false,
+      "has_single_image": true,
+      "has_video": true,
+      "height": 1080,
       "interlaced_frame": false,
-      "metadata": {
-       "encoder": "Lavf58.76.100"
-      },
-      "path": "./DoesNotCompute.mp3",
+      "metadata": {},
+      "path": "./Frame-08070.png",
       "pixel_format": -1,
       "pixel_ratio": {
        "den": 1,
        "num": 1
       },
-      "sample_rate": 24000,
+      "sample_rate": 0,
       "top_field_first": true,
-      "type": "FFmpegReader",
+      "type": "QtImageReader",
       "vcodec": "",
       "video_bit_rate": 0,
-      "video_length": "30",
+      "video_length": "108000",
       "video_stream_index": -1,
       "video_timebase": {
-       "den": 24,
+       "den": 30,
        "num": 1
       },
-      "width": 720
+      "width": 1920
      },
      "rotation": {
       "Points": [
@@ -97082,7 +96765,7 @@
        }
       ]
      },
-     "start": 0,
+     "start": 3.033333333333333,
      "time": {
       "Points": [
        {
@@ -97102,13 +96785,6 @@
          "Y": 1.0
         },
         "interpolation": 2
-       },
-       {
-        "co": {
-         "X": 39,
-         "Y": 2.0
-        },
-        "interpolation": 1
        }
       ]
      },
@@ -97195,10 +96871,10 @@
       }
      },
      "waveform": false,
-     "file_id": "RF6TNSPS4Y",
-     "title": "DoesNotCompute.mp3",
-     "image": "thumbnail/RF6TNSPS4Y.png",
-     "id": "20L8DZ30Z7"
+     "file_id": "25QQ4W0X31",
+     "title": "Frame-08070.png",
+     "image": "thumbnail/25QQ4W0X31.png",
+     "id": "HCRG1DAHP7"
     }
    },
    {
@@ -97206,7 +96882,7 @@
     "key": [
      "clips",
      {
-      "id": "CX3QCXLJUH"
+      "id": "8VAA64Z4OL"
      }
     ],
     "value": {
@@ -97245,30 +96921,89 @@
       ]
      },
      "display": 0,
-     "duration": 1.2719999551773071,
+     "duration": 3600.0,
      "effects": [
       {
-       "class_name": "Robotization",
-       "description": "Transform the voice present in an audio track into a robotic voice effect.",
+       "bottom": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "class_name": "Pixelate",
+       "description": "Pixelate (increase or decrease) the number of visible pixels.",
        "duration": 0.0,
        "end": 0.0,
-       "fft_size": 5,
-       "has_audio": true,
+       "has_audio": false,
        "has_tracked_object": false,
-       "has_video": false,
-       "hop_size": 0,
-       "id": "P328GBQNON",
+       "has_video": true,
+       "id": "75ELOWRAE7",
        "layer": 0,
-       "name": "Robotization",
+       "left": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "name": "Pixelate",
        "order": 0,
        "parent_effect_id": "",
+       "pixelization": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.5
+          },
+          "interpolation": 2
+         },
+         {
+          "co": {
+           "X": 42,
+           "Y": 0.4000000059604645
+          },
+          "interpolation": 1
+         }
+        ]
+       },
        "position": 0.0,
+       "right": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
        "start": 0.0,
-       "type": "Robotization",
-       "window_type": 0
+       "top": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "type": "Pixelate"
       }
      ],
-     "end": 1.2719999551773071,
+     "end": 2.966666666666667,
      "gravity": 4,
      "has_audio": {
       "Points": [
@@ -97292,7 +97027,7 @@
        }
       ]
      },
-     "layer": 2000000,
+     "layer": 5000000,
      "location_x": {
       "Points": [
        {
@@ -97427,53 +97162,51 @@
        }
       ]
      },
-     "position": 6.6,
+     "position": 1.3666666666666667,
      "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 48000,
-      "audio_stream_index": 0,
+      "acodec": "",
+      "audio_bit_rate": 0,
+      "audio_stream_index": -1,
       "audio_timebase": {
-       "den": 14112000,
+       "den": 1,
        "num": 1
       },
       "channel_layout": 4,
-      "channels": 1,
+      "channels": 0,
       "display_ratio": {
-       "den": 1,
-       "num": 1
+       "den": 9,
+       "num": 16
       },
-      "duration": 1.2719999551773071,
-      "file_size": "7677",
+      "duration": 3600.0,
+      "file_size": "8294400",
       "fps": {
        "den": 1,
-       "num": 24
+       "num": 30
       },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
+      "has_audio": false,
+      "has_single_image": true,
+      "has_video": true,
+      "height": 1080,
       "interlaced_frame": false,
-      "metadata": {
-       "encoder": "Lavf58.76.100"
-      },
-      "path": "./DoesNotCompute.mp3",
+      "metadata": {},
+      "path": "../MentalGymnasticsHardHittingQuestions/Frame-01191.png",
       "pixel_format": -1,
       "pixel_ratio": {
        "den": 1,
        "num": 1
       },
-      "sample_rate": 24000,
+      "sample_rate": 0,
       "top_field_first": true,
-      "type": "FFmpegReader",
+      "type": "QtImageReader",
       "vcodec": "",
       "video_bit_rate": 0,
-      "video_length": "30",
+      "video_length": "108000",
       "video_stream_index": -1,
       "video_timebase": {
-       "den": 24,
+       "den": 30,
        "num": 1
       },
-      "width": 720
+      "width": 1920
      },
      "rotation": {
       "Points": [
@@ -97531,7 +97264,7 @@
        }
       ]
      },
-     "start": 0,
+     "start": 1.3666666666666667,
      "time": {
       "Points": [
        {
@@ -97548,16 +97281,9 @@
        {
         "co": {
          "X": 1.0,
-         "Y": 2.0
+         "Y": 1.0
         },
         "interpolation": 2
-       },
-       {
-        "co": {
-         "X": 37,
-         "Y": 3.0
-        },
-        "interpolation": 1
        }
       ]
      },
@@ -97644,10 +97370,10 @@
       }
      },
      "waveform": false,
-     "file_id": "RF6TNSPS4Y",
-     "title": "DoesNotCompute.mp3",
-     "image": "thumbnail/RF6TNSPS4Y.png",
-     "id": "CX3QCXLJUH"
+     "file_id": "25QQ4W0X31",
+     "title": "Frame-08070.png",
+     "image": "thumbnail/25QQ4W0X31.png",
+     "id": "8VAA64Z4OL"
     },
     "partial": false,
     "old_values": {
@@ -97686,30 +97412,89 @@
       ]
      },
      "display": 0,
-     "duration": 1.2719999551773071,
+     "duration": 3600.0,
      "effects": [
       {
-       "class_name": "Robotization",
-       "description": "Transform the voice present in an audio track into a robotic voice effect.",
+       "bottom": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "class_name": "Pixelate",
+       "description": "Pixelate (increase or decrease) the number of visible pixels.",
        "duration": 0.0,
        "end": 0.0,
-       "fft_size": 5,
-       "has_audio": true,
+       "has_audio": false,
        "has_tracked_object": false,
-       "has_video": false,
-       "hop_size": 0,
-       "id": "P328GBQNON",
+       "has_video": true,
+       "id": "75ELOWRAE7",
        "layer": 0,
-       "name": "Robotization",
+       "left": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "name": "Pixelate",
        "order": 0,
        "parent_effect_id": "",
+       "pixelization": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.5
+          },
+          "interpolation": 2
+         },
+         {
+          "co": {
+           "X": 42,
+           "Y": 0.4000000059604645
+          },
+          "interpolation": 1
+         }
+        ]
+       },
        "position": 0.0,
+       "right": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
        "start": 0.0,
-       "type": "Robotization",
-       "window_type": 0
+       "top": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "type": "Pixelate"
       }
      ],
-     "end": 1.2719999551773071,
+     "end": 2.966666666666667,
      "gravity": 4,
      "has_audio": {
       "Points": [
@@ -97733,7 +97518,7 @@
        }
       ]
      },
-     "layer": 2000000,
+     "layer": 5000000,
      "location_x": {
       "Points": [
        {
@@ -97868,53 +97653,51 @@
        }
       ]
      },
-     "position": 6.6,
+     "position": 1.3666666666666667,
      "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 48000,
-      "audio_stream_index": 0,
+      "acodec": "",
+      "audio_bit_rate": 0,
+      "audio_stream_index": -1,
       "audio_timebase": {
-       "den": 14112000,
+       "den": 1,
        "num": 1
       },
       "channel_layout": 4,
-      "channels": 1,
+      "channels": 0,
       "display_ratio": {
-       "den": 1,
-       "num": 1
+       "den": 9,
+       "num": 16
       },
-      "duration": 1.2719999551773071,
-      "file_size": "7677",
+      "duration": 3600.0,
+      "file_size": "8294400",
       "fps": {
        "den": 1,
-       "num": 24
+       "num": 30
       },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
+      "has_audio": false,
+      "has_single_image": true,
+      "has_video": true,
+      "height": 1080,
       "interlaced_frame": false,
-      "metadata": {
-       "encoder": "Lavf58.76.100"
-      },
-      "path": "./DoesNotCompute.mp3",
+      "metadata": {},
+      "path": "./Frame-08070.png",
       "pixel_format": -1,
       "pixel_ratio": {
        "den": 1,
        "num": 1
       },
-      "sample_rate": 24000,
+      "sample_rate": 0,
       "top_field_first": true,
-      "type": "FFmpegReader",
+      "type": "QtImageReader",
       "vcodec": "",
       "video_bit_rate": 0,
-      "video_length": "30",
+      "video_length": "108000",
       "video_stream_index": -1,
       "video_timebase": {
-       "den": 24,
+       "den": 30,
        "num": 1
       },
-      "width": 720
+      "width": 1920
      },
      "rotation": {
       "Points": [
@@ -97972,7 +97755,7 @@
        }
       ]
      },
-     "start": 0,
+     "start": 1.3666666666666667,
      "time": {
       "Points": [
        {
@@ -97989,7 +97772,7 @@
        {
         "co": {
          "X": 1.0,
-         "Y": 2.0
+         "Y": 1.0
         },
         "interpolation": 2
        }
@@ -98078,10 +97861,10 @@
       }
      },
      "waveform": false,
-     "file_id": "RF6TNSPS4Y",
-     "title": "DoesNotCompute.mp3",
-     "image": "thumbnail/RF6TNSPS4Y.png",
-     "id": "CX3QCXLJUH"
+     "file_id": "25QQ4W0X31",
+     "title": "Frame-08070.png",
+     "image": "thumbnail/25QQ4W0X31.png",
+     "id": "8VAA64Z4OL"
     }
    },
    {
@@ -98089,7 +97872,7 @@
     "key": [
      "clips",
      {
-      "id": "83WQ4NW0OJ"
+      "id": "HI77S9S9AT"
      }
     ],
     "value": {
@@ -98128,2186 +97911,82 @@
       ]
      },
      "display": 0,
-     "duration": 0.6000000238418579,
-     "effects": [],
-     "end": 0.6000000238418579,
-     "gravity": 4,
-     "has_audio": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "has_video": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "id": "83WQ4NW0OJ",
-     "layer": 1500000,
-     "location_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "location_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "mixing": 0,
-     "origin_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "origin_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "parentObjectId": "",
-     "perspective_c1_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c1_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c2_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c2_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c3_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c3_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c4_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c4_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "position": 1.2666666666666666,
-     "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 320000,
-      "audio_stream_index": 0,
-      "audio_timebase": {
-       "den": 14112000,
-       "num": 1
-      },
-      "channel_layout": 3,
-      "channels": 2,
-      "display_ratio": {
-       "den": 1,
-       "num": 1
-      },
-      "duration": 0.6000000238418579,
-      "file_size": "26161",
-      "fps": {
-       "den": 1,
-       "num": 24
-      },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
-      "interlaced_frame": false,
-      "metadata": {
-       "TIT3": "Medium",
-       "artist": "SFX Producer",
-       "composer": "SFX Producer",
-       "date": "2018",
-       "encoder": "LAME3.99r",
-       "genre": "Production Element",
-       "title": "PREL Glitch Error 1"
-      },
-      "path": "./ES_PREL Glitch Error 1 - SFX Producer.mp3",
-      "pixel_format": -1,
-      "pixel_ratio": {
-       "den": 1,
-       "num": 1
-      },
-      "sample_rate": 48000,
-      "top_field_first": true,
-      "type": "FFmpegReader",
-      "vcodec": "",
-      "video_bit_rate": 0,
-      "video_length": "14",
-      "video_stream_index": -1,
-      "video_timebase": {
-       "den": 24,
-       "num": 1
-      },
-      "width": 720
-     },
-     "rotation": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "scale": 1,
-     "scale_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "scale_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "shear_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "shear_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "start": 0,
-     "time": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "volume": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.699999988079071
-        },
-        "handle_left": {
-         "X": 0.5,
-         "Y": 1.0
-        },
-        "handle_right": {
-         "X": 0.5,
-         "Y": 0.0
-        },
-        "handle_type": 0,
-        "interpolation": 0
+     "duration": 3600.0,
+     "effects": [
+      {
+       "bottom": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
        },
-       {
-        "co": {
-         "X": 19,
-         "Y": 0.6000000238418579
-        },
-        "interpolation": 1
-       }
-      ]
-     },
-     "wave_color": {
-      "alpha": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 255.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "blue": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 255.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "green": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 123.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "red": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 0.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      }
-     },
-     "waveform": false,
-     "file_id": "MPZ5TH9WHB",
-     "title": "ES_PREL Glitch Error 1 - SFX Producer.mp3",
-     "image": "thumbnail/MPZ5TH9WHB.png"
-    },
-    "partial": false,
-    "old_values": {
-     "alpha": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "anchor": 0,
-     "channel_filter": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "channel_mapping": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "display": 0,
-     "duration": 0.6000000238418579,
-     "effects": [],
-     "end": 0.6000000238418579,
-     "gravity": 4,
-     "has_audio": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "has_video": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "id": "83WQ4NW0OJ",
-     "layer": 1500000,
-     "location_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "location_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "mixing": 0,
-     "origin_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "origin_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "parentObjectId": "",
-     "perspective_c1_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c1_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c2_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c2_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c3_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c3_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c4_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c4_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "position": 1.2666666666666666,
-     "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 320000,
-      "audio_stream_index": 0,
-      "audio_timebase": {
-       "den": 14112000,
-       "num": 1
-      },
-      "channel_layout": 3,
-      "channels": 2,
-      "display_ratio": {
-       "den": 1,
-       "num": 1
-      },
-      "duration": 0.6000000238418579,
-      "file_size": "26161",
-      "fps": {
-       "den": 1,
-       "num": 24
-      },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
-      "interlaced_frame": false,
-      "metadata": {
-       "TIT3": "Medium",
-       "artist": "SFX Producer",
-       "composer": "SFX Producer",
-       "date": "2018",
-       "encoder": "LAME3.99r",
-       "genre": "Production Element",
-       "title": "PREL Glitch Error 1"
-      },
-      "path": "./ES_PREL Glitch Error 1 - SFX Producer.mp3",
-      "pixel_format": -1,
-      "pixel_ratio": {
-       "den": 1,
-       "num": 1
-      },
-      "sample_rate": 48000,
-      "top_field_first": true,
-      "type": "FFmpegReader",
-      "vcodec": "",
-      "video_bit_rate": 0,
-      "video_length": "14",
-      "video_stream_index": -1,
-      "video_timebase": {
-       "den": 24,
-       "num": 1
-      },
-      "width": 720
-     },
-     "rotation": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "scale": 1,
-     "scale_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "scale_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "shear_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "shear_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "start": 0,
-     "time": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "volume": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.699999988079071
-        },
-        "handle_left": {
-         "X": 0.5,
-         "Y": 1.0
-        },
-        "handle_right": {
-         "X": 0.5,
-         "Y": 0.0
-        },
-        "handle_type": 0,
-        "interpolation": 0
-       }
-      ]
-     },
-     "wave_color": {
-      "alpha": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 255.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "blue": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 255.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "green": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 123.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "red": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 0.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      }
-     },
-     "waveform": false,
-     "file_id": "MPZ5TH9WHB",
-     "title": "ES_PREL Glitch Error 1 - SFX Producer.mp3",
-     "image": "thumbnail/MPZ5TH9WHB.png"
-    }
-   },
-   {
-    "type": "update",
-    "key": [
-     "clips",
-     {
-      "id": "5VMVC6CCK7"
-     }
-    ],
-    "value": {
-     "alpha": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "anchor": 0,
-     "channel_filter": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "channel_mapping": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "display": 0,
-     "duration": 0.6000000238418579,
-     "effects": [],
-     "end": 0.6000000238418579,
-     "gravity": 4,
-     "has_audio": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "has_video": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "layer": 1500000,
-     "location_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "location_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "mixing": 0,
-     "origin_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "origin_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "parentObjectId": "",
-     "perspective_c1_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c1_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c2_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c2_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c3_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c3_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c4_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c4_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "position": 2.9,
-     "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 320000,
-      "audio_stream_index": 0,
-      "audio_timebase": {
-       "den": 14112000,
-       "num": 1
-      },
-      "channel_layout": 3,
-      "channels": 2,
-      "display_ratio": {
-       "den": 1,
-       "num": 1
-      },
-      "duration": 0.6000000238418579,
-      "file_size": "26161",
-      "fps": {
-       "den": 1,
-       "num": 24
-      },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
-      "interlaced_frame": false,
-      "metadata": {
-       "TIT3": "Medium",
-       "artist": "SFX Producer",
-       "composer": "SFX Producer",
-       "date": "2018",
-       "encoder": "LAME3.99r",
-       "genre": "Production Element",
-       "title": "PREL Glitch Error 1"
-      },
-      "path": "./ES_PREL Glitch Error 1 - SFX Producer.mp3",
-      "pixel_format": -1,
-      "pixel_ratio": {
-       "den": 1,
-       "num": 1
-      },
-      "sample_rate": 48000,
-      "top_field_first": true,
-      "type": "FFmpegReader",
-      "vcodec": "",
-      "video_bit_rate": 0,
-      "video_length": "14",
-      "video_stream_index": -1,
-      "video_timebase": {
-       "den": 24,
-       "num": 1
-      },
-      "width": 720
-     },
-     "rotation": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "scale": 1,
-     "scale_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "scale_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "shear_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "shear_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "start": 0,
-     "time": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "volume": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.699999988079071
-        },
-        "handle_left": {
-         "X": 0.5,
-         "Y": 1.0
-        },
-        "handle_right": {
-         "X": 0.5,
-         "Y": 0.0
-        },
-        "handle_type": 0,
-        "interpolation": 0
+       "class_name": "Pixelate",
+       "description": "Pixelate (increase or decrease) the number of visible pixels.",
+       "duration": 0.0,
+       "end": 0.0,
+       "has_audio": false,
+       "has_tracked_object": false,
+       "has_video": true,
+       "id": "FY6ZJ8ZU6X",
+       "layer": 0,
+       "left": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
        },
-       {
-        "co": {
-         "X": 19,
-         "Y": 0.6000000238418579
-        },
-        "interpolation": 1
-       }
-      ]
-     },
-     "wave_color": {
-      "alpha": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 255.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "blue": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 255.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "green": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 123.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "red": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 0.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      }
-     },
-     "waveform": false,
-     "file_id": "MPZ5TH9WHB",
-     "title": "ES_PREL Glitch Error 1 - SFX Producer.mp3",
-     "image": "thumbnail/MPZ5TH9WHB.png",
-     "id": "5VMVC6CCK7"
-    },
-    "partial": false,
-    "old_values": {
-     "alpha": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "anchor": 0,
-     "channel_filter": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "channel_mapping": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "display": 0,
-     "duration": 0.6000000238418579,
-     "effects": [],
-     "end": 0.6000000238418579,
-     "gravity": 4,
-     "has_audio": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "has_video": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "layer": 1500000,
-     "location_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "location_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "mixing": 0,
-     "origin_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "origin_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "parentObjectId": "",
-     "perspective_c1_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c1_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c2_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c2_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c3_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c3_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c4_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c4_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "position": 2.9,
-     "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 320000,
-      "audio_stream_index": 0,
-      "audio_timebase": {
-       "den": 14112000,
-       "num": 1
-      },
-      "channel_layout": 3,
-      "channels": 2,
-      "display_ratio": {
-       "den": 1,
-       "num": 1
-      },
-      "duration": 0.6000000238418579,
-      "file_size": "26161",
-      "fps": {
-       "den": 1,
-       "num": 24
-      },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
-      "interlaced_frame": false,
-      "metadata": {
-       "TIT3": "Medium",
-       "artist": "SFX Producer",
-       "composer": "SFX Producer",
-       "date": "2018",
-       "encoder": "LAME3.99r",
-       "genre": "Production Element",
-       "title": "PREL Glitch Error 1"
-      },
-      "path": "./ES_PREL Glitch Error 1 - SFX Producer.mp3",
-      "pixel_format": -1,
-      "pixel_ratio": {
-       "den": 1,
-       "num": 1
-      },
-      "sample_rate": 48000,
-      "top_field_first": true,
-      "type": "FFmpegReader",
-      "vcodec": "",
-      "video_bit_rate": 0,
-      "video_length": "14",
-      "video_stream_index": -1,
-      "video_timebase": {
-       "den": 24,
-       "num": 1
-      },
-      "width": 720
-     },
-     "rotation": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "scale": 1,
-     "scale_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "scale_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "shear_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "shear_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "start": 0,
-     "time": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "volume": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.699999988079071
-        },
-        "handle_left": {
-         "X": 0.5,
-         "Y": 1.0
-        },
-        "handle_right": {
-         "X": 0.5,
-         "Y": 0.0
-        },
-        "handle_type": 0,
-        "interpolation": 0
-       }
-      ]
-     },
-     "wave_color": {
-      "alpha": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 255.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "blue": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 255.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "green": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 123.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "red": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 0.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      }
-     },
-     "waveform": false,
-     "file_id": "MPZ5TH9WHB",
-     "title": "ES_PREL Glitch Error 1 - SFX Producer.mp3",
-     "image": "thumbnail/MPZ5TH9WHB.png",
-     "id": "5VMVC6CCK7"
-    }
-   },
-   {
-    "type": "update",
-    "key": [
-     "clips",
-     {
-      "id": "VKBD5PX8RG"
-     }
-    ],
-    "value": {
-     "alpha": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "anchor": 0,
-     "channel_filter": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "channel_mapping": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "display": 0,
-     "duration": 0.6000000238418579,
-     "effects": [],
-     "end": 0.6000000238418579,
-     "gravity": 4,
-     "has_audio": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "has_video": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "layer": 1500000,
-     "location_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "location_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "mixing": 0,
-     "origin_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "origin_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.5
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "parentObjectId": "",
-     "perspective_c1_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c1_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c2_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c2_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c3_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c3_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c4_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "perspective_c4_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "position": 4.566666666666666,
-     "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 320000,
-      "audio_stream_index": 0,
-      "audio_timebase": {
-       "den": 14112000,
-       "num": 1
-      },
-      "channel_layout": 3,
-      "channels": 2,
-      "display_ratio": {
-       "den": 1,
-       "num": 1
-      },
-      "duration": 0.6000000238418579,
-      "file_size": "26161",
-      "fps": {
-       "den": 1,
-       "num": 24
-      },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
-      "interlaced_frame": false,
-      "metadata": {
-       "TIT3": "Medium",
-       "artist": "SFX Producer",
-       "composer": "SFX Producer",
-       "date": "2018",
-       "encoder": "LAME3.99r",
-       "genre": "Production Element",
-       "title": "PREL Glitch Error 1"
-      },
-      "path": "./ES_PREL Glitch Error 1 - SFX Producer.mp3",
-      "pixel_format": -1,
-      "pixel_ratio": {
-       "den": 1,
-       "num": 1
-      },
-      "sample_rate": 48000,
-      "top_field_first": true,
-      "type": "FFmpegReader",
-      "vcodec": "",
-      "video_bit_rate": 0,
-      "video_length": "14",
-      "video_stream_index": -1,
-      "video_timebase": {
-       "den": 24,
-       "num": 1
-      },
-      "width": 720
-     },
-     "rotation": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "scale": 1,
-     "scale_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "scale_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "shear_x": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "shear_y": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "start": 0,
-     "time": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "volume": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 0.699999988079071
-        },
-        "handle_left": {
-         "X": 0.5,
-         "Y": 1.0
-        },
-        "handle_right": {
-         "X": 0.5,
-         "Y": 0.0
-        },
-        "handle_type": 0,
-        "interpolation": 0
+       "name": "Pixelate",
+       "order": 0,
+       "parent_effect_id": "",
+       "pixelization": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.5
+          },
+          "interpolation": 2
+         }
+        ]
        },
-       {
-        "co": {
-         "X": 19,
-         "Y": 0.6000000238418579
-        },
-        "interpolation": 1
-       }
-      ]
-     },
-     "wave_color": {
-      "alpha": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 255.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "blue": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 255.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "green": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 123.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
-      },
-      "red": {
-       "Points": [
-        {
-         "co": {
-          "X": 1.0,
-          "Y": 0.0
-         },
-         "handle_left": {
-          "X": 0.5,
-          "Y": 1.0
-         },
-         "handle_right": {
-          "X": 0.5,
-          "Y": 0.0
-         },
-         "handle_type": 0,
-         "interpolation": 0
-        }
-       ]
+       "position": 0.0,
+       "right": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "start": 0.0,
+       "top": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "type": "Pixelate"
       }
-     },
-     "waveform": false,
-     "file_id": "MPZ5TH9WHB",
-     "title": "ES_PREL Glitch Error 1 - SFX Producer.mp3",
-     "image": "thumbnail/MPZ5TH9WHB.png",
-     "id": "VKBD5PX8RG"
-    },
-    "partial": false,
-    "old_values": {
-     "alpha": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": 1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "anchor": 0,
-     "channel_filter": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "channel_mapping": {
-      "Points": [
-       {
-        "co": {
-         "X": 1.0,
-         "Y": -1.0
-        },
-        "interpolation": 2
-       }
-      ]
-     },
-     "display": 0,
-     "duration": 0.6000000238418579,
-     "effects": [],
-     "end": 0.6000000238418579,
+     ],
+     "end": 1.3,
      "gravity": 4,
      "has_audio": {
       "Points": [
@@ -100331,7 +98010,8 @@
        }
       ]
      },
-     "layer": 1500000,
+     "id": "HI77S9S9AT",
+     "layer": 5000000,
      "location_x": {
       "Points": [
        {
@@ -100466,59 +98146,51 @@
        }
       ]
      },
-     "position": 4.566666666666666,
+     "position": 0.03333333333333333,
      "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 320000,
-      "audio_stream_index": 0,
+      "acodec": "",
+      "audio_bit_rate": 0,
+      "audio_stream_index": -1,
       "audio_timebase": {
-       "den": 14112000,
-       "num": 1
-      },
-      "channel_layout": 3,
-      "channels": 2,
-      "display_ratio": {
        "den": 1,
        "num": 1
       },
-      "duration": 0.6000000238418579,
-      "file_size": "26161",
+      "channel_layout": 4,
+      "channels": 0,
+      "display_ratio": {
+       "den": 9,
+       "num": 16
+      },
+      "duration": 3600.0,
+      "file_size": "8294400",
       "fps": {
        "den": 1,
-       "num": 24
+       "num": 30
       },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
+      "has_audio": false,
+      "has_single_image": true,
+      "has_video": true,
+      "height": 1080,
       "interlaced_frame": false,
-      "metadata": {
-       "TIT3": "Medium",
-       "artist": "SFX Producer",
-       "composer": "SFX Producer",
-       "date": "2018",
-       "encoder": "LAME3.99r",
-       "genre": "Production Element",
-       "title": "PREL Glitch Error 1"
-      },
-      "path": "./ES_PREL Glitch Error 1 - SFX Producer.mp3",
+      "metadata": {},
+      "path": "../MentalGymnasticsHardHittingQuestions/Frame-01191.png",
       "pixel_format": -1,
       "pixel_ratio": {
        "den": 1,
        "num": 1
       },
-      "sample_rate": 48000,
+      "sample_rate": 0,
       "top_field_first": true,
-      "type": "FFmpegReader",
+      "type": "QtImageReader",
       "vcodec": "",
       "video_bit_rate": 0,
-      "video_length": "14",
+      "video_length": "108000",
       "video_stream_index": -1,
       "video_timebase": {
-       "den": 24,
+       "den": 30,
        "num": 1
       },
-      "width": 720
+      "width": 1920
      },
      "rotation": {
       "Points": [
@@ -100593,18 +98265,9 @@
        {
         "co": {
          "X": 1.0,
-         "Y": 0.699999988079071
-        },
-        "handle_left": {
-         "X": 0.5,
          "Y": 1.0
         },
-        "handle_right": {
-         "X": 0.5,
-         "Y": 0.0
-        },
-        "handle_type": 0,
-        "interpolation": 0
+        "interpolation": 2
        }
       ]
      },
@@ -100691,26 +98354,9 @@
       }
      },
      "waveform": false,
-     "file_id": "MPZ5TH9WHB",
-     "title": "ES_PREL Glitch Error 1 - SFX Producer.mp3",
-     "image": "thumbnail/MPZ5TH9WHB.png",
-     "id": "VKBD5PX8RG"
-    }
-   },
-   {
-    "type": "update",
-    "key": [
-     "clips",
-     {
-      "id": "O29RRW1DCY"
-     }
-    ],
-    "value": {
-     "id": "O29RRW1DCY",
-     "layer": 1500000,
-     "position": 6.2,
-     "start": 0,
-     "end": 0.6000000238418579
+     "file_id": "25QQ4W0X31",
+     "title": "Frame-08070.png",
+     "image": "thumbnail/25QQ4W0X31.png"
     },
     "partial": false,
     "old_values": {
@@ -100749,9 +98395,82 @@
       ]
      },
      "display": 0,
-     "duration": 0.6000000238418579,
-     "effects": [],
-     "end": 0.6000000238418579,
+     "duration": 3600.0,
+     "effects": [
+      {
+       "bottom": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "class_name": "Pixelate",
+       "description": "Pixelate (increase or decrease) the number of visible pixels.",
+       "duration": 0.0,
+       "end": 0.0,
+       "has_audio": false,
+       "has_tracked_object": false,
+       "has_video": true,
+       "id": "FY6ZJ8ZU6X",
+       "layer": 0,
+       "left": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "name": "Pixelate",
+       "order": 0,
+       "parent_effect_id": "",
+       "pixelization": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.5
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "position": 0.0,
+       "right": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "start": 0.0,
+       "top": {
+        "Points": [
+         {
+          "co": {
+           "X": 1.0,
+           "Y": 0.0
+          },
+          "interpolation": 2
+         }
+        ]
+       },
+       "type": "Pixelate"
+      }
+     ],
+     "end": 1.3,
      "gravity": 4,
      "has_audio": {
       "Points": [
@@ -100775,7 +98494,8 @@
        }
       ]
      },
-     "layer": 1500000,
+     "id": "HI77S9S9AT",
+     "layer": 5000000,
      "location_x": {
       "Points": [
        {
@@ -100910,59 +98630,51 @@
        }
       ]
      },
-     "position": 6.2,
+     "position": 0.03333333333333333,
      "reader": {
-      "acodec": "mp3float",
-      "audio_bit_rate": 320000,
-      "audio_stream_index": 0,
+      "acodec": "",
+      "audio_bit_rate": 0,
+      "audio_stream_index": -1,
       "audio_timebase": {
-       "den": 14112000,
-       "num": 1
-      },
-      "channel_layout": 3,
-      "channels": 2,
-      "display_ratio": {
        "den": 1,
        "num": 1
       },
-      "duration": 0.6000000238418579,
-      "file_size": "26161",
+      "channel_layout": 4,
+      "channels": 0,
+      "display_ratio": {
+       "den": 9,
+       "num": 16
+      },
+      "duration": 3600.0,
+      "file_size": "8294400",
       "fps": {
        "den": 1,
-       "num": 24
+       "num": 30
       },
-      "has_audio": true,
-      "has_single_image": false,
-      "has_video": false,
-      "height": 480,
+      "has_audio": false,
+      "has_single_image": true,
+      "has_video": true,
+      "height": 1080,
       "interlaced_frame": false,
-      "metadata": {
-       "TIT3": "Medium",
-       "artist": "SFX Producer",
-       "composer": "SFX Producer",
-       "date": "2018",
-       "encoder": "LAME3.99r",
-       "genre": "Production Element",
-       "title": "PREL Glitch Error 1"
-      },
-      "path": "./ES_PREL Glitch Error 1 - SFX Producer.mp3",
+      "metadata": {},
+      "path": "./Frame-08070.png",
       "pixel_format": -1,
       "pixel_ratio": {
        "den": 1,
        "num": 1
       },
-      "sample_rate": 48000,
+      "sample_rate": 0,
       "top_field_first": true,
-      "type": "FFmpegReader",
+      "type": "QtImageReader",
       "vcodec": "",
       "video_bit_rate": 0,
-      "video_length": "14",
+      "video_length": "108000",
       "video_stream_index": -1,
       "video_timebase": {
-       "den": 24,
+       "den": 30,
        "num": 1
       },
-      "width": 720
+      "width": 1920
      },
      "rotation": {
       "Points": [
@@ -101037,18 +98749,9 @@
        {
         "co": {
          "X": 1.0,
-         "Y": 0.699999988079071
-        },
-        "handle_left": {
-         "X": 0.5,
          "Y": 1.0
         },
-        "handle_right": {
-         "X": 0.5,
-         "Y": 0.0
-        },
-        "handle_type": 0,
-        "interpolation": 0
+        "interpolation": 2
        }
       ]
      },
@@ -101135,10 +98838,9 @@
       }
      },
      "waveform": false,
-     "file_id": "MPZ5TH9WHB",
-     "title": "ES_PREL Glitch Error 1 - SFX Producer.mp3",
-     "image": "thumbnail/MPZ5TH9WHB.png",
-     "id": "O29RRW1DCY"
+     "file_id": "25QQ4W0X31",
+     "title": "Frame-08070.png",
+     "image": "thumbnail/25QQ4W0X31.png"
     }
    }
   ],

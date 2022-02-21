@@ -19,14 +19,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactCheckThisBitch.Render", "FactCheckThisBitch.Render\FactCheckThisBitch.Render.csproj", "{9341C3D1-5053-4653-8DA6-707B4D954D6B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkOperations", "VpnStuff\NetworkOperations\NetworkOperations.csproj", "{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkOperations", "NetworkStuff\NetworkOperations\NetworkOperations.csproj", "{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VpnStuff", "VpnStuff", "{3FD82304-0134-480F-85F5-801FE011AE48}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetworkStuff", "NetworkStuff", "{3FD82304-0134-480F-85F5-801FE011AE48}"
 	ProjectSection(SolutionItems) = preProject
-		VpnStuff\NetworkOperations\Notes.txt = VpnStuff\NetworkOperations\Notes.txt
+		NetworkStuff\NetworkOperations\Notes.txt = NetworkStuff\NetworkOperations\Notes.txt
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerVpnOrchestrator", "VpnStuff\DockerVpnAndCURL\DockerVpnOrchestrator.csproj", "{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerVpnOrchestrator", "NetworkStuff\DockerVpnAndCURL\DockerVpnOrchestrator.csproj", "{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
