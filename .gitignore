@@ -367,3 +367,4 @@ obj/
 
 large_*
 *.large.*
+chromedriver.exe
