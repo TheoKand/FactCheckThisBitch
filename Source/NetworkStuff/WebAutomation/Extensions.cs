@@ -10,13 +10,14 @@ namespace WebAutomation
 {
     public static class Extensions
     {
-        public static double SecondsTimeout = 30;
+        public static double SecondsTimeout = 60;
 
         public static IWebElement FindWaitElement(this IWebDriver driver,string xPath, double? timeout=null)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout ?? SecondsTimeout));
             wait.IgnoreExceptionTypes(typeof(NoSuchElementException));
             IWebElement element = wait.Until( ExpectedConditions.ElementExists(By.XPath(xPath)));
+            DelayRandom();
             return element;
         }
 
@@ -44,9 +45,9 @@ namespace WebAutomation
             return innerHtml;
         }
 
-        public static void DelayRandom()
+        public static void DelayRandom(int fromMilliseconds=500,int toMilliseconds=2000)
         {
-            int milliSeconds = new Random().Next(500, 2000);
+            int milliSeconds = new Random().Next(fromMilliseconds, toMilliseconds);
             Thread.Sleep(milliSeconds);
         }
 
