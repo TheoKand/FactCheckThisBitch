@@ -2,9 +2,7 @@
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
-using System.Collections.Generic;
 using System.Threading;
-using NUnit.Framework;
 
 namespace WebAutomation
 {
@@ -49,16 +47,6 @@ namespace WebAutomation
         {
             int milliSeconds = new Random().Next(fromMilliseconds, toMilliseconds);
             Thread.Sleep(milliSeconds);
-        }
-
-        public static void MaybeDelay()
-        {
-            int oneToTen = new Random().Next(1, 10);
-            if (oneToTen > 7)
-            {
-                DelayRandom();
-            }
-
         }
 
         public static void DelayForClick()
