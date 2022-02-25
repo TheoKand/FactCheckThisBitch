@@ -77,7 +77,6 @@ namespace FackCheckThisBitch.Common
         private string TryGetMetadataProperty(string content, string property)
         {
             string patternTemplate = "<meta[^\"]*\"propertyPlaceholder\"\\s*content=\"([^\"]*)";
-
             var patterns = new string[]
             {
                 patternTemplate.Replace("propertyPlaceholder", $"og:{property}"),
@@ -86,8 +85,24 @@ namespace FackCheckThisBitch.Common
                 patternTemplate.Replace("propertyPlaceholder", $"article.{property}"),
                 $"\"{property}\":\"([^\"]*)\""
             };
-
             var result = GetFirstRegExMatch(content, patterns);
+            if (result != null) return result;
+
+            if (content.Contains("Boy, 11, who died suddenly in his sleep to be given 'funeral he deserves'"))
+            {
+                Console.WriteLine("stop");
+            }
+            patternTemplate = "itemprop[^\"]*\"propertyPlaceholder\"\\s*content=\\\"([^\\\"]*)";
+            patterns = new string[]
+            {
+                patternTemplate.Replace("propertyPlaceholder", $"og:{property}"),
+                patternTemplate.Replace("propertyPlaceholder", $"{property}"),
+                patternTemplate.Replace("propertyPlaceholder", $"article:{property}"),
+                patternTemplate.Replace("propertyPlaceholder", $"article.{property}"),
+                $"\"{property}\":\"([^\"]*)\""
+            };
+            result = GetFirstRegExMatch(content, patterns);
+            if (result != null) return result;
 
             return result;
         }

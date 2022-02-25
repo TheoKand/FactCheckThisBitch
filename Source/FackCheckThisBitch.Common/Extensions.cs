@@ -7,6 +7,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 
 namespace FackCheckThisBitch.Common
 {
@@ -229,6 +230,31 @@ namespace FackCheckThisBitch.Common
 
 
 
+        }
+
+        public static string DictionaryToString(this IDictionary<string, string> input)
+        {
+            if (input == null) return null;
+            var results = new StringBuilder();
+            foreach (var key in input.Keys)
+            {
+                if (!input[key].IsEmpty())
+                {
+                    results.AppendLine($"{key}:{input[key]}");
+                }
+            }
+            return results.ToString();
+        }
+
+        public static void DelayRandom(int fromMilliseconds = 500, int toMilliseconds = 2000)
+        {
+            var milliSeconds = new Random().Next(fromMilliseconds, toMilliseconds);
+            Thread.Sleep(milliSeconds);
+        }
+
+        public static string GetSign(this double input)
+        {
+            return input > 0 ? "+" : "";
         }
 
     }

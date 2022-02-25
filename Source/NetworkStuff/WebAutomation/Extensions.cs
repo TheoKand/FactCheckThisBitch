@@ -15,7 +15,7 @@ namespace WebAutomation
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout ?? SecondsTimeout));
             wait.IgnoreExceptionTypes(typeof(NoSuchElementException));
             IWebElement element = wait.Until( ExpectedConditions.ElementExists(By.XPath(xPath)));
-            DelayRandom();
+            FackCheckThisBitch.Common.Extensions.DelayRandom();
             return element;
         }
 
@@ -24,7 +24,7 @@ namespace WebAutomation
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout??SecondsTimeout));
             wait.IgnoreExceptionTypes(typeof(NoSuchElementException), typeof(ElementNotVisibleException), typeof(ElementNotInteractableException));
             IWebElement element = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(xPath)));
-            DelayForClick();
+            FackCheckThisBitch.Common.Extensions.DelayRandom(500,1000);
             return element;
         }
 
@@ -43,25 +43,5 @@ namespace WebAutomation
             return innerHtml;
         }
 
-        public static void DelayRandom(int fromMilliseconds=500,int toMilliseconds=2000)
-        {
-            int milliSeconds = new Random().Next(fromMilliseconds, toMilliseconds);
-            Thread.Sleep(milliSeconds);
-        }
-
-        public static void DelayForClick()
-        {
-            Thread.Sleep(750);
-        }
-
-        public static string GetSign(this double input)
-        {
-            if (input > 0)
-            {
-                return "+";
-            }
-
-            return "";
-        }
     }
 }

@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using FackCheckThisBitch.Common;
 
-namespace WebAutomation
+namespace WebAutomation.GoogleSearch
 {
-    public class GoogleResultsAggregateDto
+    public class ResultsDto
     {
         public string Query;
-        public Dictionary<int, double> ResultsPerYear;
-        public Dictionary<string, double> ResultsPerMonth;
+        public Dictionary<string, (double howMany,string[] firstPageResults)> ResultsPerMonth;
 
         public override string ToString()
         {
@@ -19,15 +20,28 @@ namespace WebAutomation
             {
                 if (prevKey != "")
                 {
-                    result.AppendLine(Change(prevKey, ResultsPerMonth[prevKey], key, ResultsPerMonth[key]));
+                    result.AppendLine(Change(prevKey, ResultsPerMonth[prevKey].howMany, key, ResultsPerMonth[key].howMany));
                 }
 
-                chart.AppendLine($"{key}\t{ResultsPerMonth[key]}");
+                chart.AppendLine($"{key}\t{ResultsPerMonth[key].howMany}");
                 prevKey = key;
             }
 
             return chart.ToString();
 
+        }
+
+        public string[] AllResults
+        {
+            get
+            {
+                var result = new List<string>();
+                foreach (var links in ResultsPerMonth.Values.Select(_ => _.firstPageResults))
+                {
+                    result.AddRange(links);
+                }
+                return result.ToArray();
+            }
         }
 
         private string Change(string from, double fromValue, string to, double toValue)
