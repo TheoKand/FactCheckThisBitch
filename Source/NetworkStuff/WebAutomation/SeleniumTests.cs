@@ -19,13 +19,22 @@ namespace WebAutomation
 
         private string _dummyPhrase = "vaccination near me";
         private string _testPhrases = "died suddenly,dies of heart attack,his unexpected death,his sudden death,her sudden death,her unexpected death,died of cardiac arrest";
-        private string _controlPhrases = "first glance,critics say,the question,needless to say,make no mistake,time will tell,blind eye,end of the day";
-        private string _sites = "bbc.com,dailymail.co.uk,msn.com,foxnews.com,abcnews.go.com,nbcnews.com,cnn.com,news.yahoo.com,cbsnews.com,usnews.com";
+        private string _controlPhrases = "resignes,arrives,departs,time will tell,first glance,critics say,the question,make no mistake,time will tell,blind eye";
+
+        private string _sites =
+            "mylondon.news,dailymail.co.uk,birminghammail.co.uk,liverpoolecho.co.uk,dailyrecord.co.uk,mirror.co.uk,irishpost.com,scotsman.com,kentlive.news,manchestereveningnews.co.uk";
 
         private string BuildQuery(string query)
         {
             var phrasesList = string.Join(" OR ", query.Split(',').Select(_ => $"\"{_}\""));
+            var siteList = string.Join(" OR ", _sites.Split(',').Select(_ => $"site:{_}"));
+            var result = $"({phrasesList}) and ({siteList}) ";
+            return result;
+        }
 
+        private string BuildQueryV2(string query)
+        {
+            var phrasesList = string.Join(" OR ", query.Split(',').Select(_ => $"intitle:\"{_}\""));
             var siteList = string.Join(" OR ", _sites.Split(',').Select(_ => $"site:{_}"));
             var result = $"({phrasesList}) and ({siteList}) ";
             return result;
@@ -93,7 +102,7 @@ namespace WebAutomation
                 $"https://www.google.com/search?q=&tbs=cdr:1,cd_min:{fromDate},cd_max:{toDate}";
             Extensions.DelayRandom(500,1000);
 
-            var query = BuildQuery(searchPhrases);
+            var query = BuildQueryV2(searchPhrases);
 
             var searchBox = _driver.FindWaitElementForClick("//input[contains(@aria-label, 'Search')]");
             searchBox.SendKeys(query);
@@ -103,18 +112,23 @@ namespace WebAutomation
             //click Tools button
             _driver.FindWaitElementForClick("//div[contains(text(), 'Tools')]").Click();
 
-            var howManyResults = _driver.FindElement(By.Id("result-stats"));
-            Assert.IsNotNull(howManyResults);
+            try
+            {
+                var howManyResults = _driver.FindElement(By.Id("result-stats"));
 
-            bool hasResults = _driver.GetWait().Until(ExpectedConditions.TextToBePresentInElement(howManyResults, "results"));
-            if (!hasResults)
+                bool hasResults = _driver.GetWait()
+                    .Until(ExpectedConditions.TextToBePresentInElement(howManyResults, "result"));
+                if (!hasResults) return 0;
+
+                var resultText = howManyResults.Text;
+                var numOfResults = ExtractResultCount(resultText);
+                return numOfResults;
+
+            }
+            catch
             {
                 return 0;
             }
-
-            var resultText = howManyResults.Text;
-            var numOfResults = ExtractResultCount(resultText);
-            return numOfResults;
 
         }
 
