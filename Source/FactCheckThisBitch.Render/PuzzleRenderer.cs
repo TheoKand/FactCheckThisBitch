@@ -375,7 +375,7 @@ namespace FactCheckThisBitch.Render
                 for (int referenceIndex = 0; referenceIndex < puzzlePiece.Piece.References.Count; referenceIndex++)
                 {
                     var reference = puzzlePiece.Piece.References[referenceIndex];
-                    debugTimeline.AppendLine($"{currentTime.ToString(@"mm\:ss\.ff")}\t\tReference{referenceIndex} \t{reference.Url.Replace("https://", "").Limit(20)} \t{reference.Description}");
+                    debugTimeline.AppendLine($"{currentTime.ToString(@"mm\:ss\.ff")}\t\tReference{referenceIndex} \t{reference.Url?.Replace("https://", "").Limit(20)} \t{reference.Description}");
 
                     if (!reference.Description.IsEmpty())
                     {
