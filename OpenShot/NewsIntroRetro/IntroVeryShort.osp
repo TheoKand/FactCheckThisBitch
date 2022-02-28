@@ -1,0 +1,3680 @@
+{
+ "id": "459W0XK7SQ",
+ "fps": {
+  "num": 30,
+  "den": 1
+ },
+ "display_ratio": {
+  "num": 16,
+  "den": 9
+ },
+ "pixel_ratio": {
+  "num": 1,
+  "den": 1
+ },
+ "width": 1280,
+ "height": 720,
+ "sample_rate": 44100,
+ "channels": 2,
+ "channel_layout": 3,
+ "settings": {},
+ "clips": [
+  {
+   "alpha": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     },
+     {
+      "co": {
+       "X": 603.0,
+       "Y": 1.0
+      },
+      "handle_left": {
+       "X": 0.5,
+       "Y": 1.0
+      },
+      "handle_right": {
+       "X": 0.5,
+       "Y": 0.0
+      },
+      "handle_type": 0,
+      "interpolation": 0
+     },
+     {
+      "co": {
+       "X": 633.0,
+       "Y": 0.0
+      },
+      "handle_left": {
+       "X": 0.5,
+       "Y": 1.0
+      },
+      "handle_right": {
+       "X": 0.5,
+       "Y": 0.0
+      },
+      "handle_type": 0,
+      "interpolation": 0
+     },
+     {
+      "co": {
+       "X": 340,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 161,
+       "Y": 0.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 222,
+       "Y": 0.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 235,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     }
+    ]
+   },
+   "anchor": 0,
+   "channel_filter": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "channel_mapping": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "display": 0,
+   "duration": 21.055999755859375,
+   "effects": [],
+   "end": 10.933333333333334,
+   "gravity": 4,
+   "has_audio": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "has_video": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "id": "D3ONQYSGH4",
+   "layer": 3000000,
+   "location_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "location_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "mixing": 0,
+   "origin_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "origin_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "parentObjectId": "",
+   "perspective_c1_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c1_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "position": 0,
+   "reader": {
+    "acodec": "aac",
+    "audio_bit_rate": 155226,
+    "audio_stream_index": 1,
+    "audio_timebase": {
+     "den": 48000,
+     "num": 1
+    },
+    "channel_layout": 3,
+    "channels": 2,
+    "display_ratio": {
+     "den": 9,
+     "num": 16
+    },
+    "duration": 21.055999755859375,
+    "file_size": "70733002",
+    "fps": {
+     "den": 1,
+     "num": 30
+    },
+    "has_audio": true,
+    "has_single_image": false,
+    "has_video": true,
+    "height": 720,
+    "interlaced_frame": false,
+    "metadata": {
+     "compatible_brands": "isomiso2avc1mp41",
+     "encoder": "Lavf58.45.100",
+     "handler_name": "SoundHandler",
+     "language": "und",
+     "major_brand": "isom",
+     "minor_version": "512"
+    },
+    "path": "../_commonAssets/RAIN-Intro.large.mp4",
+    "pixel_format": 0,
+    "pixel_ratio": {
+     "den": 1,
+     "num": 1
+    },
+    "sample_rate": 48000,
+    "top_field_first": true,
+    "type": "FFmpegReader",
+    "vcodec": "h264",
+    "video_bit_rate": 3357526,
+    "video_length": "632",
+    "video_stream_index": 0,
+    "video_timebase": {
+     "den": 15360,
+     "num": 1
+    },
+    "width": 1280
+   },
+   "rotation": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale": 1,
+   "scale_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "start": 7.366666666666666,
+   "time": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "volume": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "handle_left": {
+       "X": 0.5,
+       "Y": 1.0
+      },
+      "handle_right": {
+       "X": 0.5,
+       "Y": 0.0
+      },
+      "handle_type": 0,
+      "interpolation": 0
+     },
+     {
+      "co": {
+       "X": 385,
+       "Y": 0.5
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 421,
+       "Y": 0.5
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 440,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 341,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 161,
+       "Y": 0.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 235,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 222,
+       "Y": 0.0
+      },
+      "interpolation": 1
+     }
+    ]
+   },
+   "wave_color": {
+    "alpha": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "blue": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "green": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 123.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "red": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 0.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    }
+   },
+   "waveform": false,
+   "file_id": "0H0TXFXF2Z",
+   "title": "RAIN-Intro.large.mp4",
+   "image": "IntroVeryShort_assets/thumbnail/0H0TXFXF2Z.png"
+  },
+  {
+   "alpha": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     },
+     {
+      "co": {
+       "X": 603.0,
+       "Y": 1.0
+      },
+      "handle_left": {
+       "X": 0.5,
+       "Y": 1.0
+      },
+      "handle_right": {
+       "X": 0.5,
+       "Y": 0.0
+      },
+      "handle_type": 0,
+      "interpolation": 0
+     },
+     {
+      "co": {
+       "X": 633.0,
+       "Y": 0.0
+      },
+      "handle_left": {
+       "X": 0.5,
+       "Y": 1.0
+      },
+      "handle_right": {
+       "X": 0.5,
+       "Y": 0.0
+      },
+      "handle_type": 0,
+      "interpolation": 0
+     },
+     {
+      "co": {
+       "X": 340,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 161,
+       "Y": 0.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 222,
+       "Y": 0.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 235,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     }
+    ]
+   },
+   "anchor": 0,
+   "channel_filter": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "channel_mapping": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "display": 0,
+   "duration": 21.055999755859375,
+   "effects": [],
+   "end": 14.433333333333334,
+   "gravity": 4,
+   "has_audio": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "has_video": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "layer": 3000000,
+   "location_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "location_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "mixing": 0,
+   "origin_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "origin_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "parentObjectId": "",
+   "perspective_c1_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c1_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "position": 3.566666666666667,
+   "reader": {
+    "acodec": "aac",
+    "audio_bit_rate": 155226,
+    "audio_stream_index": 1,
+    "audio_timebase": {
+     "den": 48000,
+     "num": 1
+    },
+    "channel_layout": 3,
+    "channels": 2,
+    "display_ratio": {
+     "den": 9,
+     "num": 16
+    },
+    "duration": 21.055999755859375,
+    "file_size": "70733002",
+    "fps": {
+     "den": 1,
+     "num": 30
+    },
+    "has_audio": true,
+    "has_single_image": false,
+    "has_video": true,
+    "height": 720,
+    "interlaced_frame": false,
+    "metadata": {
+     "compatible_brands": "isomiso2avc1mp41",
+     "encoder": "Lavf58.45.100",
+     "handler_name": "SoundHandler",
+     "language": "und",
+     "major_brand": "isom",
+     "minor_version": "512"
+    },
+    "path": "../_commonAssets/RAIN-Intro.large.mp4",
+    "pixel_format": 0,
+    "pixel_ratio": {
+     "den": 1,
+     "num": 1
+    },
+    "sample_rate": 48000,
+    "top_field_first": true,
+    "type": "FFmpegReader",
+    "vcodec": "h264",
+    "video_bit_rate": 3357526,
+    "video_length": "632",
+    "video_stream_index": 0,
+    "video_timebase": {
+     "den": 15360,
+     "num": 1
+    },
+    "width": 1280
+   },
+   "rotation": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale": 1,
+   "scale_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "start": 13.466666666666667,
+   "time": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "volume": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "handle_left": {
+       "X": 0.5,
+       "Y": 1.0
+      },
+      "handle_right": {
+       "X": 0.5,
+       "Y": 0.0
+      },
+      "handle_type": 0,
+      "interpolation": 0
+     },
+     {
+      "co": {
+       "X": 385,
+       "Y": 0.5
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 421,
+       "Y": 0.5
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 440,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 341,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 161,
+       "Y": 0.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 235,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 222,
+       "Y": 0.0
+      },
+      "interpolation": 1
+     }
+    ]
+   },
+   "wave_color": {
+    "alpha": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "blue": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "green": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 123.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "red": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 0.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    }
+   },
+   "waveform": false,
+   "file_id": "0H0TXFXF2Z",
+   "title": "RAIN-Intro.large.mp4",
+   "image": "IntroVeryShort_assets/thumbnail/0H0TXFXF2Z.png",
+   "id": "ELK7GQWMLF"
+  },
+  {
+   "alpha": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     },
+     {
+      "co": {
+       "X": 603.0,
+       "Y": 1.0
+      },
+      "handle_left": {
+       "X": 0.5,
+       "Y": 1.0
+      },
+      "handle_right": {
+       "X": 0.5,
+       "Y": 0.0
+      },
+      "handle_type": 0,
+      "interpolation": 0
+     },
+     {
+      "co": {
+       "X": 633.0,
+       "Y": 0.0
+      },
+      "handle_left": {
+       "X": 0.5,
+       "Y": 1.0
+      },
+      "handle_right": {
+       "X": 0.5,
+       "Y": 0.0
+      },
+      "handle_type": 0,
+      "interpolation": 0
+     },
+     {
+      "co": {
+       "X": 340,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 161,
+       "Y": 0.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 222,
+       "Y": 0.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 235,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     }
+    ]
+   },
+   "anchor": 0,
+   "channel_filter": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "channel_mapping": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "display": 0,
+   "duration": 21.055999755859375,
+   "effects": [],
+   "end": 18.133333333333333,
+   "gravity": 4,
+   "has_audio": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "has_video": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "layer": 3000000,
+   "location_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "location_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "mixing": 0,
+   "origin_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "origin_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.5
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "parentObjectId": "",
+   "perspective_c1_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c1_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c2_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c3_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "perspective_c4_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": -1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "position": 4.533333333333333,
+   "reader": {
+    "acodec": "aac",
+    "audio_bit_rate": 155226,
+    "audio_stream_index": 1,
+    "audio_timebase": {
+     "den": 48000,
+     "num": 1
+    },
+    "channel_layout": 3,
+    "channels": 2,
+    "display_ratio": {
+     "den": 9,
+     "num": 16
+    },
+    "duration": 21.055999755859375,
+    "file_size": "70733002",
+    "fps": {
+     "den": 1,
+     "num": 30
+    },
+    "has_audio": true,
+    "has_single_image": false,
+    "has_video": true,
+    "height": 720,
+    "interlaced_frame": false,
+    "metadata": {
+     "compatible_brands": "isomiso2avc1mp41",
+     "encoder": "Lavf58.45.100",
+     "handler_name": "SoundHandler",
+     "language": "und",
+     "major_brand": "isom",
+     "minor_version": "512"
+    },
+    "path": "../_commonAssets/RAIN-Intro.large.mp4",
+    "pixel_format": 0,
+    "pixel_ratio": {
+     "den": 1,
+     "num": 1
+    },
+    "sample_rate": 48000,
+    "top_field_first": true,
+    "type": "FFmpegReader",
+    "vcodec": "h264",
+    "video_bit_rate": 3357526,
+    "video_length": "632",
+    "video_stream_index": 0,
+    "video_timebase": {
+     "den": 15360,
+     "num": 1
+    },
+    "width": 1280
+   },
+   "rotation": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale": 1,
+   "scale_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "scale_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_x": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "shear_y": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 0.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "start": 15.166666666666668,
+   "time": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "interpolation": 2
+     }
+    ]
+   },
+   "volume": {
+    "Points": [
+     {
+      "co": {
+       "X": 1.0,
+       "Y": 1.0
+      },
+      "handle_left": {
+       "X": 0.5,
+       "Y": 1.0
+      },
+      "handle_right": {
+       "X": 0.5,
+       "Y": 0.0
+      },
+      "handle_type": 0,
+      "interpolation": 0
+     },
+     {
+      "co": {
+       "X": 385,
+       "Y": 0.5
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 421,
+       "Y": 0.5
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 440,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 341,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 161,
+       "Y": 0.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 235,
+       "Y": 1.0
+      },
+      "interpolation": 1
+     },
+     {
+      "co": {
+       "X": 222,
+       "Y": 0.0
+      },
+      "interpolation": 1
+     }
+    ]
+   },
+   "wave_color": {
+    "alpha": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "blue": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 255.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "green": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 123.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    },
+    "red": {
+     "Points": [
+      {
+       "co": {
+        "X": 1.0,
+        "Y": 0.0
+       },
+       "handle_left": {
+        "X": 0.5,
+        "Y": 1.0
+       },
+       "handle_right": {
+        "X": 0.5,
+        "Y": 0.0
+       },
+       "handle_type": 0,
+       "interpolation": 0
+      }
+     ]
+    }
+   },
+   "waveform": false,
+   "file_id": "0H0TXFXF2Z",
+   "title": "RAIN-Intro.large.mp4",
+   "image": "IntroVeryShort_assets/thumbnail/0H0TXFXF2Z.png",
+   "id": "83TWRNFCBH"
+  }
+ ],
+ "effects": [],
+ "export_path": "C:/Users/theok/Repos/FactCheckThisBitch/OpenShot/_commonAssets",
+ "import_path": "C:/Users/theok/Repos/FactCheckThisBitch/OpenShot/_commonAssets",
+ "files": [
+  {
+   "acodec": "aac",
+   "audio_bit_rate": 155226,
+   "audio_stream_index": 1,
+   "audio_timebase": {
+    "den": 48000,
+    "num": 1
+   },
+   "channel_layout": 3,
+   "channels": 2,
+   "display_ratio": {
+    "den": 9,
+    "num": 16
+   },
+   "duration": 21.055999755859375,
+   "file_size": "70733002",
+   "fps": {
+    "den": 1,
+    "num": 30
+   },
+   "has_audio": true,
+   "has_single_image": false,
+   "has_video": true,
+   "height": 720,
+   "interlaced_frame": false,
+   "metadata": {
+    "compatible_brands": "isomiso2avc1mp41",
+    "encoder": "Lavf58.45.100",
+    "handler_name": "SoundHandler",
+    "language": "und",
+    "major_brand": "isom",
+    "minor_version": "512"
+   },
+   "path": "../_commonAssets/RAIN-Intro.large.mp4",
+   "pixel_format": 0,
+   "pixel_ratio": {
+    "den": 1,
+    "num": 1
+   },
+   "sample_rate": 48000,
+   "top_field_first": true,
+   "type": "FFmpegReader",
+   "vcodec": "h264",
+   "video_bit_rate": 3357526,
+   "video_length": "632",
+   "video_stream_index": 0,
+   "video_timebase": {
+    "den": 15360,
+    "num": 1
+   },
+   "width": 1280,
+   "media_type": "video",
+   "id": "0H0TXFXF2Z",
+   "image": "IntroVeryShort_assets/thumbnail/0H0TXFXF2Z.png"
+  }
+ ],
+ "duration": 1178.5715601701243,
+ "scale": 1.536000000000001,
+ "tick_pixels": 100,
+ "playhead_position": 0,
+ "profile": "HD 720p 30 fps",
+ "layers": [
+  {
+   "number": 9000000,
+   "y": 0,
+   "label": "ads",
+   "lock": false,
+   "id": "8OR99XCYWE"
+  },
+  {
+   "number": 8000000,
+   "y": 0,
+   "label": "Blue Ticker",
+   "lock": false,
+   "id": "5869YNCRNA"
+  },
+  {
+   "number": 7750000,
+   "y": 0,
+   "label": "narration",
+   "lock": true,
+   "id": "YT8XD7GFXR"
+  },
+  {
+   "number": 7500000,
+   "y": 0,
+   "label": "talking head",
+   "lock": false,
+   "id": "UNS8SV4GQZ"
+  },
+  {
+   "number": 7000000,
+   "y": 0,
+   "label": "white ticker",
+   "lock": false,
+   "id": "XPYBJS2EVI"
+  },
+  {
+   "id": "L4",
+   "label": "Music",
+   "number": 4000000,
+   "y": 0,
+   "lock": false
+  },
+  {
+   "id": "L3",
+   "label": "Base",
+   "number": 3000000,
+   "y": 0,
+   "lock": false
+  },
+  {
+   "number": 2250000,
+   "y": 0,
+   "label": "screen overlays",
+   "lock": false,
+   "id": "7101Z936A8"
+  },
+  {
+   "number": 1500000,
+   "y": 0,
+   "label": "screen",
+   "lock": false,
+   "id": "H7463CYHO8"
+  },
+  {
+   "number": 10000000,
+   "y": 0,
+   "label": "",
+   "lock": false,
+   "id": "Q8HGUOOZ51"
+  },
+  {
+   "number": 7250000,
+   "y": 0,
+   "label": "tv overlays",
+   "lock": false,
+   "id": "69NRXDQJM7"
+  },
+  {
+   "number": 7625000,
+   "y": 0,
+   "label": "",
+   "lock": false,
+   "id": "IZF9N1PRKR"
+  }
+ ],
+ "markers": [
+  {
+   "position": 62.13333333333333,
+   "icon": "blue.png",
+   "id": "7LKWU0L7PV"
+  },
+  {
+   "position": 82.36666666666666,
+   "icon": "blue.png",
+   "id": "4154YHDGBZ"
+  },
+  {
+   "position": 108.6,
+   "icon": "blue.png",
+   "id": "ZGQIS1OMJF"
+  },
+  {
+   "position": 144.3,
+   "icon": "blue.png",
+   "id": "CA1TPA49NW"
+  },
+  {
+   "position": 202.03333333333333,
+   "icon": "blue.png",
+   "id": "YPNL1YA0F3"
+  },
+  {
+   "position": 222.16666666666666,
+   "icon": "blue.png",
+   "id": "VGO9O7I2WM"
+  },
+  {
+   "position": 242.23333333333332,
+   "icon": "blue.png",
+   "id": "F4MTMR1TMM"
+  },
+  {
+   "position": 272.43333333333334,
+   "icon": "blue.png",
+   "id": "39VDRBQRV7"
+  },
+  {
+   "position": 301.76666666666665,
+   "icon": "blue.png",
+   "id": "MKJS488UON"
+  }
+ ],
+ "progress": [],
+ "history": {
+  "undo": [
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "F6CCUQE18Z"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 47,
+      "num": 54
+     },
+     "duration": 3600.0,
+     "file_size": "19654272",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 2068,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../_commonAssets/RAIN-Logo.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 2376,
+     "media_type": "image",
+     "id": "F6CCUQE18Z",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/F6CCUQE18Z.png",
+     "name": "RAIN-Logo.png",
+     "tags": "",
+     "start": 0.0,
+     "end": 3599.9666666666667
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "CXUGTE4YAG"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "aac",
+     "audio_bit_rate": 127999,
+     "audio_stream_index": 1,
+     "audio_timebase": {
+      "den": 44100,
+      "num": 1
+     },
+     "channel_layout": 3,
+     "channels": 2,
+     "display_ratio": {
+      "den": 9,
+      "num": 16
+     },
+     "duration": 66.47872924804688,
+     "file_size": "34010381",
+     "fps": {
+      "den": 1001,
+      "num": 30000
+     },
+     "has_audio": true,
+     "has_single_image": false,
+     "has_video": true,
+     "height": 720,
+     "interlaced_frame": false,
+     "metadata": {
+      "compatible_brands": "isommp42",
+      "creation_time": "2021-09-21T13:43:29.000000Z",
+      "handler_name": "ISO Media file produced by Google Inc. Created on: 09/21/2021.",
+      "language": "eng",
+      "major_brand": "mp42",
+      "minor_version": "0"
+     },
+     "path": "../../Media/Assets/Video/matrix - no copyright.mp4",
+     "pixel_format": 0,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 44100,
+     "top_field_first": true,
+     "type": "FFmpegReader",
+     "vcodec": "h264",
+     "video_bit_rate": 511598,
+     "video_length": "1992",
+     "video_stream_index": 0,
+     "video_timebase": {
+      "den": 30000,
+      "num": 1
+     },
+     "width": 1280,
+     "media_type": "video",
+     "id": "CXUGTE4YAG",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/CXUGTE4YAG.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "385C2KQA5J"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 9,
+      "num": 16
+     },
+     "duration": 10.239999771118164,
+     "file_size": "-1",
+     "fps": {
+      "den": 1,
+      "num": 25
+     },
+     "has_audio": false,
+     "has_single_image": false,
+     "has_video": true,
+     "height": 720,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../_commonAssets/BreakTheirTranceAnimatedMessage/BreakTheirTrance%04d.png",
+     "pixel_format": 26,
+     "pixel_ratio": {
+      "den": 2835,
+      "num": 2835
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "FFmpegReader",
+     "vcodec": "png",
+     "video_bit_rate": 0,
+     "video_length": 256,
+     "video_stream_index": 0,
+     "video_timebase": {
+      "den": 25,
+      "num": 1
+     },
+     "width": 1280,
+     "media_type": "video",
+     "id": "385C2KQA5J",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/385C2KQA5J.png",
+     "name": "BreakTheirTrance%04d.png",
+     "tags": ""
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "DFSLM716RR"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "aac",
+     "audio_bit_rate": 2274,
+     "audio_stream_index": 1,
+     "audio_timebase": {
+      "den": 48000,
+      "num": 1
+     },
+     "channel_layout": 3,
+     "channels": 2,
+     "display_ratio": {
+      "den": 9,
+      "num": 16
+     },
+     "duration": 289.21600341796875,
+     "file_size": "549422434",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": true,
+     "has_single_image": false,
+     "has_video": true,
+     "height": 720,
+     "interlaced_frame": false,
+     "metadata": {
+      "compatible_brands": "isomiso2avc1mp41",
+      "encoder": "Lavf58.45.100",
+      "handler_name": "SoundHandler",
+      "language": "und",
+      "major_brand": "isom",
+      "minor_version": "512"
+     },
+     "path": "../_commonAssets/TalkingHeadMask.large.mp4",
+     "pixel_format": 0,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 48000,
+     "top_field_first": true,
+     "type": "FFmpegReader",
+     "vcodec": "h264",
+     "video_bit_rate": 1899577,
+     "video_length": "8677",
+     "video_stream_index": 0,
+     "video_timebase": {
+      "den": 15360,
+      "num": 1
+     },
+     "width": 1280,
+     "media_type": "video",
+     "id": "DFSLM716RR",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/DFSLM716RR.png",
+     "name": "TalkingHeadMask.large.mp4",
+     "tags": "",
+     "start": 0.0,
+     "end": 289.2
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "PJ4EV56C32"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 9,
+      "num": 16
+     },
+     "duration": 3600.0,
+     "file_size": "92160000",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 3600,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../RAIN-ShouldWeTrustTheWHO/MainstreamMedia.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 6400,
+     "media_type": "image",
+     "id": "PJ4EV56C32",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/PJ4EV56C32.png",
+     "name": "MainstreamMedia.png",
+     "tags": "",
+     "start": 0.0,
+     "end": 3599.9666666666667
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "GIM1L06422"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 189,
+      "num": 968
+     },
+     "duration": 3600.0,
+     "file_size": "731808",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 189,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../../Media/Assets/Images/RAIN/instagram.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 968,
+     "media_type": "image",
+     "id": "GIM1L06422",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/GIM1L06422.png",
+     "name": "instagram.png",
+     "tags": "",
+     "start": 0.0,
+     "end": 3599.9666666666667
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "8DSMQQTI1E"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 9,
+      "num": 16
+     },
+     "duration": 3600.0,
+     "file_size": "92160000",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 3600,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../NewsSpecial-CovidVaccines/look.masked.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 6400,
+     "media_type": "image",
+     "id": "8DSMQQTI1E",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/8DSMQQTI1E.png",
+     "name": "look.masked.png",
+     "tags": "",
+     "start": 0.0,
+     "end": 3599.9666666666667
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "XYXNMDM9V3"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 1905,
+      "num": 2723
+     },
+     "duration": 3600.0,
+     "file_size": "20749260",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 1905,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../NewsSpecial-CovidVaccines/sardine.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 2723,
+     "media_type": "image",
+     "id": "XYXNMDM9V3",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/XYXNMDM9V3.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "9OCBW1Y8E0"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "mp3float",
+     "audio_bit_rate": 48000,
+     "audio_stream_index": 0,
+     "audio_timebase": {
+      "den": 14112000,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 1,
+     "display_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "duration": 59.183998107910156,
+     "file_size": "355149",
+     "fps": {
+      "den": 1,
+      "num": 24
+     },
+     "has_audio": true,
+     "has_single_image": false,
+     "has_video": false,
+     "height": 480,
+     "interlaced_frame": false,
+     "metadata": {
+      "encoder": "Lavf58.76.100"
+     },
+     "path": "../_commonAssets/intro.mp3",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 24000,
+     "top_field_first": true,
+     "type": "FFmpegReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "1420",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 24,
+      "num": 1
+     },
+     "width": 720,
+     "media_type": "audio",
+     "id": "9OCBW1Y8E0",
+     "name": "introCommon.mp3",
+     "tags": "",
+     "start": 0.0,
+     "end": 59.125,
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/9OCBW1Y8E0.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "62KS3SLX13"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "mp3float",
+     "audio_bit_rate": 48000,
+     "audio_stream_index": 0,
+     "audio_timebase": {
+      "den": 14112000,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 1,
+     "display_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "duration": 14.687999725341797,
+     "file_size": "88173",
+     "fps": {
+      "den": 1,
+      "num": 24
+     },
+     "has_audio": true,
+     "has_single_image": false,
+     "has_video": false,
+     "height": 480,
+     "interlaced_frame": false,
+     "metadata": {
+      "encoder": "Lavf58.76.100"
+     },
+     "path": "../NewsSpecial-CovidVaccines/introVaccines.mp3",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 24000,
+     "top_field_first": true,
+     "type": "FFmpegReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "352",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 24,
+      "num": 1
+     },
+     "width": 720,
+     "media_type": "audio",
+     "id": "62KS3SLX13",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/62KS3SLX13.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "T3P9QRIHU1"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "mp3float",
+     "audio_bit_rate": 48000,
+     "audio_stream_index": 0,
+     "audio_timebase": {
+      "den": 14112000,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 1,
+     "display_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "duration": 266.81549072265625,
+     "file_size": "1600938",
+     "fps": {
+      "den": 1,
+      "num": 24
+     },
+     "has_audio": true,
+     "has_single_image": false,
+     "has_video": false,
+     "height": 480,
+     "interlaced_frame": false,
+     "metadata": {
+      "encoder": "Lavf58.76.100"
+     },
+     "path": "../NewsSpecial-CovidVaccines/narration.mp3",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 24000,
+     "top_field_first": true,
+     "type": "FFmpegReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "6403",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 24,
+      "num": 1
+     },
+     "width": 720,
+     "media_type": "audio",
+     "id": "T3P9QRIHU1",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/T3P9QRIHU1.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "MCFON38PD7"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "mp3float",
+     "audio_bit_rate": 320000,
+     "audio_stream_index": 0,
+     "audio_timebase": {
+      "den": 14112000,
+      "num": 1
+     },
+     "channel_layout": 3,
+     "channels": 2,
+     "display_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "duration": 402.9840087890625,
+     "file_size": "16137501",
+     "fps": {
+      "den": 1,
+      "num": 24
+     },
+     "has_audio": true,
+     "has_single_image": false,
+     "has_video": false,
+     "height": 480,
+     "interlaced_frame": false,
+     "metadata": {
+      "encoder": "LAME3.100",
+      "title": "Illusion Sphere"
+     },
+     "path": "../../Media/Assets/Audio/Music/ES_Illusion Sphere - Brendon Moeller.mp3",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 48000,
+     "top_field_first": true,
+     "type": "FFmpegReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "9671",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 24,
+      "num": 1
+     },
+     "width": 720,
+     "media_type": "audio",
+     "id": "MCFON38PD7",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/MCFON38PD7.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "CCZAB662HM"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 9,
+      "num": 16
+     },
+     "duration": 270.3363037109375,
+     "file_size": "147618563",
+     "fps": {
+      "den": 33,
+      "num": 1000
+     },
+     "has_audio": false,
+     "has_single_image": false,
+     "has_video": true,
+     "height": 1080,
+     "interlaced_frame": false,
+     "metadata": {
+      "compatible_brands": "mp41isom",
+      "creation_time": "2022-02-06T22:06:22.000000Z",
+      "encoder": "AVC Coding",
+      "handler_name": "VideoHandler",
+      "language": "und",
+      "major_brand": "mp42",
+      "minor_version": "0"
+     },
+     "path": "../NewsSpecial-CovidVaccines/puzzle.CovidSardines.large.mp4",
+     "pixel_format": 0,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "FFmpegReader",
+     "vcodec": "h264",
+     "video_bit_rate": 546055,
+     "video_length": "8192",
+     "video_stream_index": 0,
+     "video_timebase": {
+      "den": 30000,
+      "num": 1
+     },
+     "width": 1920,
+     "media_type": "video",
+     "id": "CCZAB662HM",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/CCZAB662HM.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "2ABUAIS83O"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "mp3float",
+     "audio_bit_rate": 160000,
+     "audio_stream_index": 0,
+     "audio_timebase": {
+      "den": 14112000,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 1,
+     "display_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "duration": 21.0,
+     "file_size": "420000",
+     "fps": {
+      "den": 1,
+      "num": 24
+     },
+     "has_audio": true,
+     "has_single_image": false,
+     "has_video": false,
+     "height": 480,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../_commonAssets/outro.mp3",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 24000,
+     "top_field_first": true,
+     "type": "FFmpegReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "504",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 24,
+      "num": 1
+     },
+     "width": 720,
+     "media_type": "audio",
+     "id": "2ABUAIS83O",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/2ABUAIS83O.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "OUBRJKU6SL"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 9,
+      "num": 16
+     },
+     "duration": 3600.0,
+     "file_size": "92160000",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 3600,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../_commonAssets/SubscribeOrElsel.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 6400,
+     "media_type": "image",
+     "id": "OUBRJKU6SL",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/OUBRJKU6SL.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "RMGK9K99US"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 64,
+      "num": 105
+     },
+     "duration": 2.5999999046325684,
+     "file_size": "74521",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": false,
+     "has_video": true,
+     "height": 1024,
+     "interlaced_frame": false,
+     "metadata": {
+      "compatible_brands": "isomiso2avc1mp41",
+      "encoder": "Lavf58.12.100",
+      "handler_name": "VideoHandler",
+      "language": "und",
+      "major_brand": "isom",
+      "minor_version": "512"
+     },
+     "path": "../_commonAssets/YouTubeLogo.mp4",
+     "pixel_format": 0,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "FFmpegReader",
+     "vcodec": "h264",
+     "video_bit_rate": 28661,
+     "video_length": "78",
+     "video_stream_index": 0,
+     "video_timebase": {
+      "den": 15360,
+      "num": 1
+     },
+     "width": 1680,
+     "media_type": "video",
+     "id": "RMGK9K99US",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/RMGK9K99US.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "IY9XEITE7Z"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "mp3float",
+     "audio_bit_rate": 320000,
+     "audio_stream_index": 0,
+     "audio_timebase": {
+      "den": 14112000,
+      "num": 1
+     },
+     "channel_layout": 3,
+     "channels": 2,
+     "display_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "duration": 40.75199890136719,
+     "file_size": "1633834",
+     "fps": {
+      "den": 1,
+      "num": 24
+     },
+     "has_audio": true,
+     "has_single_image": false,
+     "has_video": false,
+     "height": 480,
+     "interlaced_frame": false,
+     "metadata": {
+      "TIT3": "Medium",
+      "artist": "SFX Producer",
+      "composer": "SFX Producer",
+      "date": "2018",
+      "encoder": "LAME3.99r",
+      "genre": "Science Fiction",
+      "title": "Static 1"
+     },
+     "path": "../../Media/Assets/Audio/Effects/ES_Static 1 - SFX Producer.mp3",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 48000,
+     "top_field_first": true,
+     "type": "FFmpegReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "978",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 24,
+      "num": 1
+     },
+     "width": 720,
+     "media_type": "audio",
+     "id": "IY9XEITE7Z",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/IY9XEITE7Z.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "M6R4THL7M6"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 1,
+      "num": 5
+     },
+     "duration": 3600.0,
+     "file_size": "3200000",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 400,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../../Media/Assets/Images/RAIN/TikTok.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 2000,
+     "media_type": "image",
+     "id": "M6R4THL7M6",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/M6R4THL7M6.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "BECX9ISEYG"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "mp3float",
+     "audio_bit_rate": 48000,
+     "audio_stream_index": 0,
+     "audio_timebase": {
+      "den": 14112000,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 1,
+     "display_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "duration": 2.063999891281128,
+     "file_size": "12429",
+     "fps": {
+      "den": 1,
+      "num": 24
+     },
+     "has_audio": true,
+     "has_single_image": false,
+     "has_video": false,
+     "height": 480,
+     "interlaced_frame": false,
+     "metadata": {
+      "encoder": "Lavf58.76.100"
+     },
+     "path": "../NewsSpecial-CovidVaccines/hm.verydissapointing.mp3",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 24000,
+     "top_field_first": true,
+     "type": "FFmpegReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "49",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 24,
+      "num": 1
+     },
+     "width": 720,
+     "media_type": "audio",
+     "id": "BECX9ISEYG",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/BECX9ISEYG.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "K1WQQ7203W"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 321,
+      "num": 4460
+     },
+     "duration": 3600.0,
+     "file_size": "1431660",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 321,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../../Source/FactCheckThisBitch.Admin.Windows/output/rain-definitions-matter-are-covid-sardines-really-sardines-EN/NewsTicker/1-00.03.88-definition-of-vaccine-provides.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 4460,
+     "media_type": "image",
+     "id": "K1WQQ7203W",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/K1WQQ7203W.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "SZ6XUDE3FU"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 321,
+      "num": 4460
+     },
+     "duration": 3600.0,
+     "file_size": "1431660",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 321,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../../Source/FactCheckThisBitch.Admin.Windows/output/rain-definitions-matter-are-covid-sardines-really-sardines-EN/NewsTicker/2-00.23.66-definition-of-immunity-prevent.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 4460,
+     "media_type": "image",
+     "id": "SZ6XUDE3FU",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/SZ6XUDE3FU.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "2SENBSRCJG"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 321,
+      "num": 4460
+     },
+     "duration": 3600.0,
+     "file_size": "1431660",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 321,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../../Source/FactCheckThisBitch.Admin.Windows/output/rain-definitions-matter-are-covid-sardines-really-sardines-EN/NewsTicker/3-00.49.84-let-the-mental-gymnastics-begi.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 4460,
+     "media_type": "image",
+     "id": "2SENBSRCJG",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/2SENBSRCJG.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "OUE6XNG3Y8"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 321,
+      "num": 4460
+     },
+     "duration": 3600.0,
+     "file_size": "1431660",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 321,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../../Source/FactCheckThisBitch.Admin.Windows/output/rain-definitions-matter-are-covid-sardines-really-sardines-EN/NewsTicker/4-01.25.82-covid-mrna-vaccines-what-do-th.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 4460,
+     "media_type": "image",
+     "id": "OUE6XNG3Y8",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/OUE6XNG3Y8.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "HO9HCH1PZ6"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 321,
+      "num": 4460
+     },
+     "duration": 3600.0,
+     "file_size": "1431660",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 321,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../../Source/FactCheckThisBitch.Admin.Windows/output/rain-definitions-matter-are-covid-sardines-really-sardines-EN/NewsTicker/5-02.23.40-recombinant-dna-is-an-older-te.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 4460,
+     "media_type": "image",
+     "id": "HO9HCH1PZ6",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/HO9HCH1PZ6.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "LLHEQBMSA8"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 321,
+      "num": 4460
+     },
+     "duration": 3600.0,
+     "file_size": "1431660",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 321,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../../Source/FactCheckThisBitch.Admin.Windows/output/rain-definitions-matter-are-covid-sardines-really-sardines-EN/NewsTicker/6-02.43.68-gmo-crops-and-foods-are-made-w.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 4460,
+     "media_type": "image",
+     "id": "LLHEQBMSA8",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/LLHEQBMSA8.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "FVGQQNKR96"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 321,
+      "num": 4460
+     },
+     "duration": 3600.0,
+     "file_size": "1431660",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 321,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../../Source/FactCheckThisBitch.Admin.Windows/output/rain-definitions-matter-are-covid-sardines-really-sardines-EN/NewsTicker/7-03.03.96-immunity--companies-are-not-li.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 4460,
+     "media_type": "image",
+     "id": "FVGQQNKR96",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/FVGQQNKR96.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "OQZRK251P9"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 321,
+      "num": 4460
+     },
+     "duration": 3600.0,
+     "file_size": "1431660",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 321,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../../Source/FactCheckThisBitch.Admin.Windows/output/rain-definitions-matter-are-covid-sardines-really-sardines-EN/NewsTicker/8-03.34.04-do-pharmaceutical-giants-at-le.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 4460,
+     "media_type": "image",
+     "id": "OQZRK251P9",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/OQZRK251P9.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "W4TSTQXBEE"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 321,
+      "num": 4460
+     },
+     "duration": 3600.0,
+     "file_size": "1431660",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 321,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../../Source/FactCheckThisBitch.Admin.Windows/output/rain-definitions-matter-are-covid-sardines-really-sardines-EN/NewsTicker/9-04.04.12-ok-so-big-pharma-have-been-nau.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 4460,
+     "media_type": "image",
+     "id": "W4TSTQXBEE",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/W4TSTQXBEE.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "ZM30KCDKCW"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 9,
+      "num": 16
+     },
+     "duration": 3600.0,
+     "file_size": "92160000",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 3600,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../NewsSpecial-CovidVaccines/LookAndHighlightScreen.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 6400,
+     "media_type": "image",
+     "id": "ZM30KCDKCW",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/ZM30KCDKCW.png"
+    }
+   },
+   {
+    "type": "delete",
+    "key": [
+     "files",
+     {
+      "id": "634839C9UM"
+     }
+    ],
+    "value": null,
+    "partial": false,
+    "old_values": {
+     "acodec": "",
+     "audio_bit_rate": 0,
+     "audio_stream_index": -1,
+     "audio_timebase": {
+      "den": 1,
+      "num": 1
+     },
+     "channel_layout": 4,
+     "channels": 0,
+     "display_ratio": {
+      "den": 9,
+      "num": 16
+     },
+     "duration": 3600.0,
+     "file_size": "92160000",
+     "fps": {
+      "den": 1,
+      "num": 30
+     },
+     "has_audio": false,
+     "has_single_image": true,
+     "has_video": true,
+     "height": 3600,
+     "interlaced_frame": false,
+     "metadata": {},
+     "path": "../_commonAssets/CorrectTalkingHeadFrameProblem.png",
+     "pixel_format": -1,
+     "pixel_ratio": {
+      "den": 1,
+      "num": 1
+     },
+     "sample_rate": 0,
+     "top_field_first": true,
+     "type": "QtImageReader",
+     "vcodec": "",
+     "video_bit_rate": 0,
+     "video_length": "108000",
+     "video_stream_index": -1,
+     "video_timebase": {
+      "den": 30,
+      "num": 1
+     },
+     "width": 6400,
+     "media_type": "image",
+     "id": "634839C9UM",
+     "image": "../NewsSpecial-CovidVaccines/thumbnail/634839C9UM.png"
+    }
+   }
+  ],
+  "redo": []
+ },
+ "version": {
+  "openshot-qt": "2.6.1",
+  "libopenshot": "0.2.7"
+ }
+}

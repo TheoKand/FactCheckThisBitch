@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -57,7 +60,7 @@ namespace FackCheckThisBitch.Common
                     {
                         foreach (string possibleMeta in MetadataProperties[propertyName])
                         {
-                            var propertyValue = TryGetMetadataProperty(html, propertyName);
+                            var propertyValue = TryGetMetadataProperty(html, possibleMeta);
                             if (!propertyValue.IsEmpty())
                             {
                                 if (!result.ContainsKey(propertyName))
@@ -119,6 +122,31 @@ namespace FackCheckThisBitch.Common
             }
 
             return null;
+        }
+
+        public static bool SaveImage(string url, string path)
+        {
+            try
+            {
+                WebClient client = new WebClient();
+                Stream stream = client.OpenRead(url);
+                Bitmap bitmap = new Bitmap(stream);
+
+                if (bitmap != null)
+                {
+                    bitmap.Save(path, ImageFormat.Png);
+                }
+
+                stream.Flush();
+                stream.Close();
+                client.Dispose();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }

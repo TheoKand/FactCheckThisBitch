@@ -4,6 +4,7 @@ using FactCheckThisBitch.Models;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -35,7 +36,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
 
         private void LoadForm()
         {
-            this.Text = _piece.Title.ToSanitizedString();
+            this.Text = _piece.Title.Sanitize();
 
             txtTitle.Text = _piece.Title;
             txtThesis.Text = _piece.Thesis;
@@ -180,15 +181,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 reference.OriginalSource = metaData.TryGet("original-source");
                 reference.Author = metaData.TryGet("author");
 
-                if (DateTime.TryParse(metaData.TryGet("published_time"), out DateTime datePublished))
-                {
-                    reference.DatePublished = datePublished;
-                }
-                else if (DateTime.TryParse(metaData.TryGet("published"), out datePublished))
-                {
-                    reference.DatePublished = datePublished;
-                }
-                else if (DateTime.TryParse(metaData.TryGet("datePublished"), out datePublished))
+                if (DateTime.TryParse(metaData.TryGet("datePublished"), out DateTime datePublished))
                 {
                     reference.DatePublished = datePublished;
                 }
@@ -198,6 +191,18 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 {
                     var newKeywords = metadataKeywords.ToLower().Split(",").Take(5);
                     _piece.Keywords.AddRange(newKeywords.Where(k => !_piece.Keywords.Any(pk => pk == k)).ToList());
+                }
+
+                string image = metaData.TryGet("image");
+                if (!image.IsEmpty())
+                {
+                    var imageFileName = $"{reference.Id}-{reference.Title.Sanitize()}.png";
+                    var imagePath = Path.Combine(Configuration.Instance().DataFolder, "media", imageFileName);
+                    bool save = ArticleMetadataParser.SaveImage(image, imagePath);
+                    if (save)
+                    {
+                        reference.Images.Add(imagePath);
+                    }
                 }
             }
 

@@ -20,7 +20,7 @@ namespace FactCheckThisBitch.Models
         public List<PuzzlePiece> PuzzlePieces= new List<PuzzlePiece>();
 
         [JsonIgnore]
-        public string FullTitle => Title != null ? $"{Title?.ToSanitizedString()}-{Language}" : null;
+        public string FullTitle => Title != null ? $"{Title?.Sanitize()}-{Language}" : null;
 
         [JsonIgnore]
         public string FileName => Title != null ? $"{FullTitle}.json" : null;

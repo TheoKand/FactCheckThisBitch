@@ -478,7 +478,7 @@ namespace FactCheckThisBitch.Render
                         puzzlePiece.Piece.Title, box, _puzzleTheme.NewsTickerColor, 50, false, VerticalAlignment.Center);
                 });
                 var timeInVideo = puzzlePiece.Piece.ToPositionInPowerpointVideo(narrations);
-                var newsTickerFilename = $"{puzzlePiece.RenderOrder}-{timeInVideo.ToString(@"mm\.ss\.ff")}-{puzzlePiece.Piece.Title.ToSanitizedString().Limit(30)}.png";
+                var newsTickerFilename = $"{puzzlePiece.RenderOrder}-{timeInVideo.ToString(@"mm\.ss\.ff")}-{puzzlePiece.Piece.Title.Sanitize().Limit(30)}.png";
                 puzzlePieceNewsTicker.Save(Path.Combine(newsTickerFolder, newsTickerFilename));
             }
         }

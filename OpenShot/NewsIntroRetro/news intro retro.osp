@@ -1545,7 +1545,7 @@
     "height": 919,
     "interlaced_frame": false,
     "metadata": {},
-    "path": "@assets/Logo01.png",
+    "path": "../../Media/Assets/Images/RAIN/Logo01.png",
     "pixel_format": -1,
     "pixel_ratio": {
      "den": 1,
@@ -2063,7 +2063,7 @@
     "height": 919,
     "interlaced_frame": false,
     "metadata": {},
-    "path": "@assets/Logo02.png",
+    "path": "../../Media/Assets/Images/RAIN/Logo02.png",
     "pixel_format": -1,
     "pixel_ratio": {
      "den": 1,
@@ -2866,7 +2866,7 @@
   }
  ],
  "export_path": "C:/Users/theok/Repos/FactCheckThisBitch/Media/Assets/Video",
- "import_path": "C:/Users/theok/Repos/FactCheckThisBitch/Media/Assets/Audio/Effects",
+ "import_path": "C:/Users/theok/Repos/FactCheckThisBitch/Media/Assets/Images/RAIN",
  "files": [
   {
    "acodec": "pcm_f32le",
@@ -3056,7 +3056,7 @@
    "height": 919,
    "interlaced_frame": false,
    "metadata": {},
-   "path": "@assets/Logo01.png",
+   "path": "../../Media/Assets/Images/RAIN/Logo01.png",
    "pixel_format": -1,
    "pixel_ratio": {
     "den": 1,
@@ -3104,7 +3104,7 @@
    "height": 919,
    "interlaced_frame": false,
    "metadata": {},
-   "path": "@assets/Logo02.png",
+   "path": "../../Media/Assets/Images/RAIN/Logo02.png",
    "pixel_format": -1,
    "pixel_ratio": {
     "den": 1,
@@ -3176,7 +3176,7 @@
   }
  ],
  "duration": 688.8121337890625,
- "scale": 10.0,
+ "scale": 4.0,
  "tick_pixels": 100,
  "playhead_position": 0,
  "profile": "HD 720p 30 fps",

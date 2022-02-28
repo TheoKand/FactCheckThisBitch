@@ -53,7 +53,7 @@ namespace FackCheckThisBitch.Common
             return System.Net.WebUtility.HtmlDecode(input);
         }
 
-        public static string ToSanitizedString(this string input)
+        public static string Sanitize(this string input)
         {
             string result = "";
             if (input != null)
