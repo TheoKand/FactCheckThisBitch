@@ -11,6 +11,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
     public partial class ReferenceUi : UserControl
     {
         public Action<string> OnDelete;
+        public Action<string> OnDuplicate;
         public Action<string, int> OnMove;
         public Action OnSave;
         public Action<string> OnMoveToOtherPiece;
@@ -93,6 +94,11 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             OnDelete?.Invoke(_content.Id);
         }
 
+        private void btnDuplicate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OnDuplicate?.Invoke(_content.Id);
+        }
+
         private void btnMoveBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             OnMove?.Invoke(_content.Id, -1);
@@ -113,6 +119,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             var characters = txtSummary.Text.Length;
             lblSummaryLength.Text = $"{NarrationLabel}\r{characters}c {Math.Round(_content.ToNarrationDuration(),2)}s";
         }
+
 
 
         #endregion

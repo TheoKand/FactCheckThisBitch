@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace FactCheckThisBitch.Admin.Windows.Forms
 {
@@ -95,6 +96,15 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                         _piece.References.Remove(_piece.References.First(r => r.Id == referenceId));
                         if (tabReferences.TabCount >= 1)
                             tabReferences.SelectedIndex = tabReferences.TabCount - 1;
+                    },
+                    OnDuplicate = (string referenceId) =>
+                    {
+                        var index = _piece.References.FindIndex(_ => _.Id == referenceId);
+                        var duplicate = JsonConvert.DeserializeObject<Reference>( JsonConvert.SerializeObject(_piece.References[index]));
+                        duplicate.Id = Guid.NewGuid().ToString();
+                        _piece.References.Insert(index+1,duplicate);
+                        LoadReferences();
+                        tabReferences.SelectedIndex++;
                     },
                     OnSave = () =>
                     {

@@ -46,9 +46,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(889, 817);
+            this.btnCancel.Location = new System.Drawing.Point(817, 746);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(187, 63);
+            this.btnCancel.Size = new System.Drawing.Size(164, 54);
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -57,9 +57,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(695, 817);
+            this.btnSave.Location = new System.Drawing.Point(647, 746);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(187, 63);
+            this.btnSave.Size = new System.Drawing.Size(164, 54);
             this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Ok";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -69,20 +69,20 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             this.txtThesis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtThesis.Location = new System.Drawing.Point(90, 68);
+            this.txtThesis.Location = new System.Drawing.Point(79, 58);
             this.txtThesis.Multiline = true;
             this.txtThesis.Name = "txtThesis";
             this.txtThesis.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtThesis.Size = new System.Drawing.Size(986, 92);
+            this.txtThesis.Size = new System.Drawing.Size(902, 79);
             this.txtThesis.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(13, 72);
+            this.label2.Location = new System.Drawing.Point(11, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.Size = new System.Drawing.Size(41, 15);
             this.label2.TabIndex = 8;
             this.label2.Text = "Thesis";
             // 
@@ -90,20 +90,20 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             this.txtTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTitle.Location = new System.Drawing.Point(90, 13);
+            this.txtTitle.Location = new System.Drawing.Point(79, 11);
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTitle.Size = new System.Drawing.Size(986, 48);
+            this.txtTitle.Size = new System.Drawing.Size(902, 41);
             this.txtTitle.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(13, 16);
+            this.label1.Location = new System.Drawing.Point(11, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 20);
+            this.label1.Size = new System.Drawing.Size(32, 15);
             this.label1.TabIndex = 7;
             this.label1.Text = "Title";
             // 
@@ -111,9 +111,9 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(14, 172);
+            this.label4.Location = new System.Drawing.Point(12, 146);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 20);
+            this.label4.Size = new System.Drawing.Size(58, 15);
             this.label4.TabIndex = 12;
             this.label4.Text = "Keywords";
             // 
@@ -121,18 +121,17 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             // 
             this.txtKeywords.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKeywords.Location = new System.Drawing.Point(90, 168);
-            this.txtKeywords.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtKeywords.Location = new System.Drawing.Point(79, 143);
             this.txtKeywords.Name = "txtKeywords";
-            this.txtKeywords.Size = new System.Drawing.Size(713, 27);
+            this.txtKeywords.Size = new System.Drawing.Size(663, 25);
             this.txtKeywords.TabIndex = 2;
             // 
             // btnAddReferenceFromUrl
             // 
             this.btnAddReferenceFromUrl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddReferenceFromUrl.Location = new System.Drawing.Point(893, 205);
+            this.btnAddReferenceFromUrl.Location = new System.Drawing.Point(820, 174);
             this.btnAddReferenceFromUrl.Name = "btnAddReferenceFromUrl";
-            this.btnAddReferenceFromUrl.Size = new System.Drawing.Size(183, 40);
+            this.btnAddReferenceFromUrl.Size = new System.Drawing.Size(160, 34);
             this.btnAddReferenceFromUrl.TabIndex = 22;
             this.btnAddReferenceFromUrl.Text = "Add Reference";
             this.btnAddReferenceFromUrl.UseVisualStyleBackColor = true;
@@ -145,38 +144,36 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabReferences.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabReferences.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tabReferences.Location = new System.Drawing.Point(14, 265);
-            this.tabReferences.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabReferences.Location = new System.Drawing.Point(12, 225);
             this.tabReferences.Name = "tabReferences";
             this.tabReferences.SelectedIndex = 0;
-            this.tabReferences.Size = new System.Drawing.Size(1063, 532);
+            this.tabReferences.Size = new System.Drawing.Size(969, 515);
             this.tabReferences.TabIndex = 23;
             // 
             // txtDuration
             // 
             this.txtDuration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDuration.Location = new System.Drawing.Point(893, 168);
-            this.txtDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDuration.Location = new System.Drawing.Point(820, 143);
             this.txtDuration.Name = "txtDuration";
-            this.txtDuration.Size = new System.Drawing.Size(184, 32);
+            this.txtDuration.Size = new System.Drawing.Size(161, 27);
             this.txtDuration.TabIndex = 25;
             // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(815, 172);
+            this.label5.Location = new System.Drawing.Point(752, 146);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 20);
+            this.label5.Size = new System.Drawing.Size(58, 17);
             this.label5.TabIndex = 24;
             this.label5.Text = "Duration";
             // 
             // FrmPiece
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(1090, 894);
+            this.ClientSize = new System.Drawing.Size(993, 812);
             this.Controls.Add(this.txtDuration);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnAddReferenceFromUrl);
@@ -189,7 +186,6 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmPiece";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Puzzle PuzzlePiece";

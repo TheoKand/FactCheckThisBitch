@@ -56,6 +56,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtNarrationDuration = new FactCheckThisBitch.Admin.Windows.UserControls.TextBoxWithValidation();
             this.label9 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.LinkLabel();
+            this.btnDuplicate = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -82,13 +83,14 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.txtSummary.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSummary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.txtSummary.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtSummary.Location = new System.Drawing.Point(133, 98);
             this.txtSummary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSummary.Multiline = true;
             this.txtSummary.Name = "txtSummary";
             this.txtSummary.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtSummary.Size = new System.Drawing.Size(561, 97);
+            this.txtSummary.Size = new System.Drawing.Size(561, 129);
             this.txtSummary.TabIndex = 3;
             this.txtSummary.TextChanged += new System.EventHandler(this.txtSummary_TextChanged);
             // 
@@ -105,8 +107,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.txtSource.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSource.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.txtSource.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSource.Location = new System.Drawing.Point(133, 244);
+            this.txtSource.Location = new System.Drawing.Point(133, 271);
             this.txtSource.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSource.Name = "txtSource";
             this.txtSource.Size = new System.Drawing.Size(561, 23);
@@ -115,7 +118,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(0, 248);
+            this.label2.Location = new System.Drawing.Point(0, 275);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 20);
             this.label2.TabIndex = 18;
@@ -125,6 +128,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.txtUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUrl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.txtUrl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUrl.Location = new System.Drawing.Point(133, 32);
             this.txtUrl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -135,7 +139,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(-3, 344);
+            this.label5.Location = new System.Drawing.Point(-3, 371);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 20);
             this.label5.TabIndex = 22;
@@ -156,7 +160,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(0, 281);
+            this.label3.Location = new System.Drawing.Point(0, 308);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 20);
             this.label3.TabIndex = 25;
@@ -167,7 +171,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.txtAuthor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAuthor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtAuthor.Location = new System.Drawing.Point(133, 310);
+            this.txtAuthor.Location = new System.Drawing.Point(133, 337);
             this.txtAuthor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(561, 23);
@@ -176,7 +180,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(0, 314);
+            this.label6.Location = new System.Drawing.Point(0, 341);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 20);
             this.label6.TabIndex = 28;
@@ -185,7 +189,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(425, 279);
+            this.label7.Location = new System.Drawing.Point(425, 306);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 20);
             this.label7.TabIndex = 29;
@@ -196,7 +200,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.cboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cboType.FormattingEnabled = true;
-            this.cboType.Location = new System.Drawing.Point(471, 276);
+            this.cboType.Location = new System.Drawing.Point(471, 303);
             this.cboType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboType.Name = "cboType";
             this.cboType.Size = new System.Drawing.Size(222, 23);
@@ -219,9 +223,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.imageEditor1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.imageEditor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.imageEditor1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.imageEditor1.Images = ((System.Collections.Generic.List<string>)(resources.GetObject("imageEditor1.Images")));
-            this.imageEditor1.Location = new System.Drawing.Point(133, 344);
+            this.imageEditor1.Location = new System.Drawing.Point(133, 371);
             this.imageEditor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.imageEditor1.Name = "imageEditor1";
             this.imageEditor1.Size = new System.Drawing.Size(561, 94);
@@ -268,7 +273,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // txtDatePublished
             // 
-            this.txtDatePublished.Location = new System.Drawing.Point(133, 276);
+            this.txtDatePublished.Location = new System.Drawing.Point(133, 303);
             this.txtDatePublished.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDatePublished.Name = "txtDatePublished";
             this.txtDatePublished.Size = new System.Drawing.Size(93, 28);
@@ -276,7 +281,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // txtDuration
             // 
-            this.txtDuration.Location = new System.Drawing.Point(289, 276);
+            this.txtDuration.Location = new System.Drawing.Point(289, 303);
             this.txtDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.Size = new System.Drawing.Size(125, 28);
@@ -284,7 +289,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(232, 281);
+            this.label8.Location = new System.Drawing.Point(232, 308);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(109, 20);
             this.label8.TabIndex = 39;
@@ -296,12 +301,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.lblSummaryLength.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.lblSummaryLength.Location = new System.Drawing.Point(3, 118);
             this.lblSummaryLength.Name = "lblSummaryLength";
-            this.lblSummaryLength.Size = new System.Drawing.Size(130, 90);
+            this.lblSummaryLength.Size = new System.Drawing.Size(130, 136);
             this.lblSummaryLength.TabIndex = 40;
             // 
             // txtNarrationDuration
             // 
-            this.txtNarrationDuration.Location = new System.Drawing.Point(255, 199);
+            this.txtNarrationDuration.Location = new System.Drawing.Point(255, 235);
             this.txtNarrationDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNarrationDuration.Name = "txtNarrationDuration";
             this.txtNarrationDuration.Size = new System.Drawing.Size(62, 28);
@@ -309,7 +314,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(133, 207);
+            this.label9.Location = new System.Drawing.Point(133, 243);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(184, 20);
             this.label9.TabIndex = 42;
@@ -327,10 +332,24 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.btnSave.Text = "Save";
             this.btnSave.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSave_LinkClicked);
             // 
+            // btnDuplicate
+            // 
+            this.btnDuplicate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDuplicate.AutoSize = true;
+            this.btnDuplicate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDuplicate.Location = new System.Drawing.Point(320, 8);
+            this.btnDuplicate.Name = "btnDuplicate";
+            this.btnDuplicate.Size = new System.Drawing.Size(57, 15);
+            this.btnDuplicate.TabIndex = 44;
+            this.btnDuplicate.TabStop = true;
+            this.btnDuplicate.Text = "Duplicate";
+            this.btnDuplicate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnDuplicate_LinkClicked);
+            // 
             // ReferenceUi
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
+            this.Controls.Add(this.btnDuplicate);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtNarrationDuration);
             this.Controls.Add(this.label9);
@@ -393,5 +412,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private TextBoxWithValidation txtNarrationDuration;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.LinkLabel btnSave;
+        private System.Windows.Forms.LinkLabel btnDuplicate;
     }
 }

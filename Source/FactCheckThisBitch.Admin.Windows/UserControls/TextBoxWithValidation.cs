@@ -15,6 +15,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         public Action<string> TextChanged;
 
         private string _validatedText;
+        private Color _backColor;
+
         public string Text
         {
             get => textBox1.Text;
@@ -24,10 +26,19 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             }
         }
 
+        public override Color BackColor
+        {
+            get => _backColor;
+            set
+            {
+                _backColor = value;
+                textBox1.BackColor = _backColor;
+            }
+        }
+
         public TextBoxWithValidation()
         {
             InitializeComponent();
-
         }
 
 
