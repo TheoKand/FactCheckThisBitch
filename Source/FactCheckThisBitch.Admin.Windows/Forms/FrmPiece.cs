@@ -30,6 +30,11 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             LoadForm();
         }
 
+        protected override void OnClosed(EventArgs e)
+        {
+            _piece = null;
+        }
+
         private void InitForm()
         {
             txtDuration.ValidationPattern = "^[1-9]?[0-9]$";

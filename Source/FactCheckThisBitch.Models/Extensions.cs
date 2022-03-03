@@ -96,7 +96,7 @@ namespace FactCheckThisBitch.Models
         public static TimeSpan ToPositionInPowerpointVideo(this Piece piece,
             List<KeyValuePair<TimeSpan, Reference>> timeline)
         {
-            var narration = timeline.First(_ => _.Value.Id == piece.References.First().Id);
+            var narration = timeline.FirstOrDefault(_ => _.Value.Id == piece.References.First().Id);
             return narration.Key;
         }
     }

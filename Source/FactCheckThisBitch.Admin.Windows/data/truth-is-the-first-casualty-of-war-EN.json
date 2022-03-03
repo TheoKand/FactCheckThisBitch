@@ -1,6 +1,8 @@
 {
   "Title": "Truth is the first casualty of war",
   "Language": "EN",
+  "Thesis": "https://sputniknews.com/20140703/Moscow-Expects-Kiev-to-Return-to-Ceasefire-Stop-Attacking-190796415.html\r\n\r\nhttps://www.theguardian.com/world/2003/mar/24/iraq4\r\n\r\nhttps://www.theguardian.com/world/2003/mar/24/iraq4\r\nhttps://edition.cnn.com/2003/fyi/news/03/22/iraq.war/",
+  "Conclusion": "Current ukraine government has arrested in home arrest the leader of opposition which is Russian friendly party. ΜΕβιετσουκ",
   "Width": 3,
   "Height": 3,
   "Duration": 10,
@@ -13,8 +15,9 @@
       "Piece": {
         "Id": "3f5b5adb-a675-419a-9482-084ada8c1ec9",
         "Title": "Media blunders or propaganda?",
-        "Duration": 5,
+        "Duration": 3,
         "Keywords": [
+          "Media",
           "Fake News"
         ],
         "Content": {
@@ -24,13 +27,27 @@
           {
             "Type": 1,
             "Id": "44e15df4-029b-467e-af62-67020f4b7dc5",
-            "Description": "Greek media organization Skai TV reached a new low. by shamelesly reporting that footage from a 2018 Rome Metro accident, depicted panicked Ukranians, rushing to hide in bunkers. ",
+            "Description": "Greek media organization Skai TV reached a new low. by shamelesly reporting that this footage is panicked Ukranians, rushing to hide in bunkers. ",
             "Source": "BBC",
             "Url": "https://www.bbc.co.uk/news/world-europe-45960093",
-            "Duration": 8,
+            "Duration": 14,
             "Images": [
-              "fe0de79e-9747-4b19-87bd-3cb97304ad47.png",
-              "7c8f8ab8-2d07-4143-8d12-2dbee1b496da.png"
+              "fe0de79e-9747-4b19-87bd-3cb97304ad47.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2018-10-24T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "656d6ee2-f38d-4169-8cfb-8b2e9a59cc5c",
+            "Description": "When in reality, this is a 2018 Rome Metro accident.",
+            "Source": "BBC",
+            "Url": "https://www.bbc.co.uk/news/world-europe-45960093",
+            "Duration": 3,
+            "Images": [
+              "7c8f8ab8-2d07-4143-8d12-2dbee1b496da.png",
+              "f288781a-fee1-4400-8831-c2b1030ef203.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2018-10-24T00:00:00",
@@ -40,12 +57,40 @@
             "Type": 1,
             "Id": "36579696-8e9f-4fc9-a217-62fc6d1374ce",
             "Title": "Fox News Shares Photo of Armed Ukrainian Citizens, But There’s Something Very Wrong With Their “Guns\" - Public",
-            "Description": "FOX News, reported on quote, Armed Ukranian Citizens, holding what appears to be cardboard assalt rifles. For fuck sake, dear viewers. you can't make this shit up!",
+            "Description": "FOX News, reported on quote, Armed Ukranian Citizens,resisting the invasion.",
+            "Source": "Public.uk.com",
+            "Url": "https://public.uk.com/2022/02/27/fox-news-shares-photo-of-armed-ukrainian-citizens-but-theres-something-very-wrong-with-their-guns/",
+            "Duration": 6,
+            "Images": [
+              "dedec36e-1654-4f22-a281-a24b70254d47.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-02-27T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "e6f2f196-81f4-45b2-97ee-7a90c287d00a",
+            "Title": "Fox News Shares Photo of Armed Ukrainian Citizens, But There’s Something Very Wrong With Their “Guns\" - Public",
+            "Description": "Holding what appears to be cardboard assalt rifles. you can't make this shit up!",
             "Source": "Public.uk.com",
             "Url": "https://public.uk.com/2022/02/27/fox-news-shares-photo-of-armed-ukrainian-citizens-but-theres-something-very-wrong-with-their-guns/",
             "Duration": 8,
             "Images": [
-              "4542f97cb4b44922adb919a75aeca059.png",
+              "4542f97cb4b44922adb919a75aeca059.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-02-27T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "cab5f82f-e7cf-47bf-b1f8-d4f668aa54b8",
+            "Title": "Fox News Shares Photo of Armed Ukrainian Citizens, But There’s Something Very Wrong With Their “Guns\" - Public",
+            "Source": "Public.uk.com",
+            "Url": "https://public.uk.com/2022/02/27/fox-news-shares-photo-of-armed-ukrainian-citizens-but-theres-something-very-wrong-with-their-guns/",
+            "Duration": 2,
+            "Images": [
               "af9ad7c1-00d4-4303-a9b5-c26a875d4079.png"
             ],
             "ImageEdits": [],
@@ -56,15 +101,30 @@
             "Type": 1,
             "Id": "5a3667bb-90bc-42b8-8ebd-0862a7744ce5",
             "Title": "Ex-Miss Ukraine among thousands of civilians resisting Russian forces",
-            "Description": "FOX News and the Daily Mail, proceeded to report on an former Miss Ukraine, resisting the invasion, using a photo she posted on her Instagram page. This is actual footage of the heroic model slash Actress, taking cover from incoming gunfire, and Russian shells.Call us conspiracy theorists dear viewers, but it appears that she is posing rather than fighting. How is this journalism?",
+            "Description": "FOX News and the Daily Mail, proceeded to report on an former Miss Ukraine, resisting the invasion. They used a photo she posted on her Instagram page. ",
             "Source": "Mail Online",
             "Url": "https://www.dailymail.co.uk/news/article-10556975/Kyiv-stands-Ex-Miss-Ukraine-takes-arms-fight-Putins-army-capital-survives.html",
-            "Duration": 10,
+            "Duration": 7,
             "Images": [
               "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\5a3667bb-90bc-42b8-8ebd-0862a7744ce5-ex-miss-ukraine-among-thousands-of-civilians-resisting-russian-forces.png",
-              "4cf3c1b6-9d1e-4523-8e25-981905634010.png",
-              "dcd6d29c-2418-4846-8c59-165999270d02.png",
-              "88fa0846-f7a1-40e1-861b-ba75aaeaf051.png"
+              "4cf3c1b6-9d1e-4523-8e25-981905634010.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-02-27T00:00:00",
+            "Author": "Laurence Dollimore",
+            "OriginalSource": "https://www.dailymail.co.uk/news/article-10556975/Kyiv-stands-Ex-Miss-Ukraine-takes-arms-fight-Putins-army-capital-survives.html"
+          },
+          {
+            "Type": 1,
+            "Id": "d870f42e-aff5-4858-bb08-cbb1ac49d07e",
+            "Title": "Ex-Miss Ukraine among thousands of civilians resisting Russian forces",
+            "Description": "This is actual footage of the heroic model slash Actress, taking cover from incoming gunfire, and Russian shells.Call us conspiracy theorists dear viewers, but it appears that she is posing rather than fighting. ",
+            "Source": "Mail Online",
+            "Url": "https://www.dailymail.co.uk/news/article-10556975/Kyiv-stands-Ex-Miss-Ukraine-takes-arms-fight-Putins-army-capital-survives.html",
+            "Duration": 8,
+            "Images": [
+              "88fa0846-f7a1-40e1-861b-ba75aaeaf051.png",
+              "dcd6d29c-2418-4846-8c59-165999270d02.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2022-02-27T00:00:00",
@@ -75,16 +135,15 @@
             "Type": 1,
             "Id": "921c5257-4216-4c94-b1e3-bc669504c520",
             "Title": "‘Her blood … his hands’: what the papers say about Russia’s invasion of Ukraine",
-            "Description": "The trustworthy UK media announced the invasion in synchrony. Reporters on the ground interviewed a lady, injured in the bombing of Eastern Ukraine city, Hhuhuiv. Twitter users have since identified, what appears to be the same unfortunate lady, in a separate scene, where she has suffered different wounds, and was bleeding from another part of her head. Totally plausible.",
+            "Description": "The trustworthy UK media announced the invasion in synchrony. Reporters on the ground interviewed a lovely, injured, smiling lady, injured in the bombing of an Eastern Ukraine city.",
             "Source": "the Guardian",
             "Url": "https://www.theguardian.com/media/2022/feb/25/her-blood-his-hands-what-the-papers-say-about-russias-invasion-of-ukraine",
-            "Duration": 8,
+            "Duration": 4,
             "Images": [
               "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\921c5257-4216-4c94-b1e3-bc669504c520-her-blood--his-hands--what-the-papers-say-about-russia-s-invasion-of-ukraine.png",
               "c2e7ef33-7f8b-4203-9502-d827c83be1b2.png",
               "25b36bf8-bd96-42bb-ac06-5bebc342d14b.png",
-              "5a5c397a-8860-4b8d-bfe0-3a8c8f19f3b7.png",
-              "1deb56a0-3aa4-4c3a-8613-b05bca0f55af.png"
+              "5a5c397a-8860-4b8d-bfe0-3a8c8f19f3b7.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2022-02-25T00:00:00",
@@ -92,9 +151,42 @@
           },
           {
             "Type": 1,
+            "Id": "44b3f97b-89bb-4602-afe0-8adecf671677",
+            "Title": "‘Her blood … his hands’: what the papers say about Russia’s invasion of Ukraine",
+            "Description": "Twitter users have since identified, what appears to be the same unfortunate lady, in a separate scene, where she has suffered different wounds, and was bleeding from another part of her head. Totally plausible.",
+            "Source": "the Guardian",
+            "Url": "https://www.theguardian.com/media/2022/feb/25/her-blood-his-hands-what-the-papers-say-about-russias-invasion-of-ukraine",
+            "Duration": 8,
+            "Images": [
+              "1deb56a0-3aa4-4c3a-8613-b05bca0f55af.png",
+              "34515ab2-1aae-46d8-8b32-2bf63a302b19.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-02-25T00:00:00",
+            "Author": "https://www.theguardian.com/profile/martinfarrer"
+          },
+          {
+            "Type": 1,
+            "Id": "91b37ea7-edcb-45ca-b14e-849a311c2fef",
+            "Title": "FACT CHECK: Russian Tank which crushed car appears to be an accident | The following footage does look bad. The initial reaction from a commentator as reliable as Way of the World is in line with what you could expect from every normal person who is not a psychopath: I’m told this is a Russian tank in Ukraine, but I have no way to verify this. Whoever is",
+            "Description": "A video emerged of a Rusian Tank supposedly running over a car. It was later fact checked, and the longer version video clearly shows the tank had skidded and lost control, while it's uncertain whether it was a Russian or Ukranian tank.",
+            "Source": "USSA News",
+            "Url": "https://ussanews.com/fact-check-russian-tank-which-crushed-car-appears-to-be-an-accident/",
+            "Duration": 5,
+            "Images": [
+              "ce8c276d-6903-4d34-afa0-a82e4984f7ec.png",
+              "00a829b0-05fe-452f-9b51-b1030b35f1ff.png",
+              "bd3aa998-7880-4321-bf15-9f224a207726.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-02-26T00:00:00",
+            "Author": "https:\\/\\/ussanews.com\\/author\\/constitutional-nobody\\/#author"
+          },
+          {
+            "Type": 1,
             "Id": "d59b054b-e664-4a65-8218-879207446ef2",
             "Title": "More fake news",
-            "Description": "More fake news has since emerged and got debunked. The refutation of sensational fake stories, rarely goes as viral as the original fake story.",
+            "Description": "More fake news has since emerged and got debunked. The refutation of sensational fake stories, rarely goes as viral as the original story.",
             "Source": "USA Today",
             "Url": "https://eu.usatoday.com/story/news/factcheck/2022/02/24/fact-check-gaza-strip-not-ukraine-pictured-explosion-photo/6922317001/",
             "Duration": 12,
@@ -111,7 +203,7 @@
             "Description": "This creates a bang wagon effect, where the public sentiment about an event, is shaped early on. And is unlikely, to change later.",
             "Source": "Maldita.es — Periodismo para que no te la cuelen",
             "Url": "https://maldita.es/malditobulo/20220224/hoaxes-misinformation-russia-ukraine/",
-            "Duration": 5,
+            "Duration": 4,
             "Images": [
               "6988f8ac-e372-4b87-8966-e9d3ccac6b9d.png",
               "7e7d0350-fc69-4195-8a85-1309958724b1.png",
@@ -134,10 +226,10 @@
       "Piece": {
         "Id": "6f969578-a9d7-481a-8106-fa4b74a1f901",
         "Title": "Propaganda from official sources",
-        "Duration": 15,
+        "Duration": 3,
         "Keywords": [
           "Official",
-          " Fake News"
+          "Fake News"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -150,7 +242,7 @@
             "Description": "The verified twitter account of the Ukranian Defence Ministry, joined in the fun, of spreading misinformation.",
             "Source": "The Press United",
             "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
-            "Duration": 7,
+            "Duration": 6,
             "Images": [
               "5c39932b-a226-4d6a-b602-0c80f8cf6dab.png",
               "b8445adc-5d1a-4d65-9286-9dc6273453b4.png"
@@ -166,7 +258,7 @@
             "Description": "The Ghost of Kiev ended up being footage from a flight simulation software.",
             "Source": "RT International",
             "Url": "https://www.rt.com/pop-culture/550626-ukraine-footage-videogame-clips/",
-            "Duration": 7,
+            "Duration": 3,
             "Images": [
               "695c6fb9-dd6b-4dd2-9f57-ddc51210b881.png",
               "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\11bbc881-f04c-4b4e-a27f-bb8aab541f42-game-footage-being-shared-as-ukraine-videos.png",
@@ -178,20 +270,81 @@
           },
           {
             "Type": 1,
-            "Id": "146bcbd2-f9c7-4939-ae36-b4ae377836a7",
-            "Title": "Snake island",
+            "Id": "12a786a6-e719-42e5-8b02-98635af676d4",
+            "Title": "Snake Island: Ukraine says soldiers killed after refusing to surrender",
+            "Description": "The always credible BBC, reported that the soldiers defending Snake island refused to surrender, and were all killed. Ukraine's President Volodymyr Zelensky, has awarded each of the guards the posthumous title of \"Hero of Ukraine\".",
+            "Url": "https://www.bbc.co.uk/news/world-europe-60522454",
             "Duration": 8,
-            "Images": [],
+            "Images": [
+              "f2c1511a-02b0-40b8-aef3-65da92691e02.png",
+              "d9ebc375-883e-4e61-b4f2-03b0be2f45cf.png"
+            ],
             "ImageEdits": [],
+            "DatePublished": "2022-02-25T00:00:00",
             "Author": ""
           },
           {
             "Type": 1,
-            "Id": "ff357c2a-03f2-4053-bbbd-93f2d667cc14",
+            "Id": "e13c9ab8-f051-4fea-9a7f-a94de10c8ebd",
+            "Title": "Ukraine island defenders who told Russian navy ‘go fuck yourself’ may still be alive",
+            "Description": "It hasn't been confirmed whether the brave Ukranians did indeed use foul language. ",
+            "Source": "the Guardian",
+            "Url": "https://www.theguardian.com/world/2022/feb/27/ukraine-island-defenders-who-told-russian-officer-go-fuck-yourself-may-still-be-alive",
             "Duration": 8,
-            "Images": [],
+            "Images": [
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\e13c9ab8-f051-4fea-9a7f-a94de10c8ebd-ukraine-island-defenders-who-told-russian-navy-go-fuck-yourself-may-still-be-alive.png"
+            ],
             "ImageEdits": [],
+            "DatePublished": "2022-02-27T00:00:00",
+            "Author": "https://www.theguardian.com/profile/justinmccurry,https://www.theguardian.com/profile/elias-visontay"
+          },
+          {
+            "Type": 1,
+            "Id": "c576863b-ee57-417c-8c84-165a2de52259",
+            "Title": "War: Ukraine's Snake Island soldiers were not killed by Russian forces",
+            "Description": "But it has been confirmed that the 82 brave and hungry soldiers were captured, and then fed by the Russian army.",
+            "Source": "Daily Post Nigeria",
+            "Url": "https://dailypost.ng/2022/03/01/war-ukraines-snake-island-soldiers-were-not-killed-by-russian-forces/",
+            "Duration": 6,
+            "Images": [
+              "96e4f8b4-70ef-4f35-b063-ee50d784d7e2.png",
+              "c7ed9a93-fe01-4c4b-9291-e2e5af271e9a.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-03-01T00:00:00",
             "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "48ca46a7-fb9f-46c9-a1f0-62222ec12da5",
+            "Title": "Chernobyl power plant captured by Russian forces -Ukrainian official",
+            "Description": "Reuters quoted an adviser to the Ukrainian presidential office: The Chernobyl nuclear power plant has been captured by Russian forces. This is one of the most serious threats in Europe today.",
+            "Source": "Reuters",
+            "Url": "https://www.reuters.com/world/europe/chernobyl-power-plant-captured-by-russian-forces-ukrainian-official-2022-02-24/",
+            "Duration": 8,
+            "Images": [
+              "0fd36628-f4d8-44e5-87c2-063980a99304.png",
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\48ca46a7-fb9f-46c9-a1f0-62222ec12da5-chernobyl-power-plant-captured-by-russian-forces-ukrainian-official.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-02-25T00:00:00",
+            "Author": "Reuters"
+          },
+          {
+            "Type": 1,
+            "Id": "08fa75f2-7777-4e85-82c3-e7bdc6e1b681",
+            "Title": "Russia, Ukraine armies reach deal to jointly manage & guard Chernobyl nuclear plant",
+            "Description": "In reality, having control of a half demolished, highly unstable nuclear accident site, is a huge liability,and hardly an asset for an attacking army. The two armies have been jointly maintaining the site. A video emerged showing just that, but YouTube has since banned it in most western countries.",
+            "Source": "Republic World",
+            "Url": "https://www.republicworld.com/world-news/russia-ukraine-crisis/russia-ukraine-armies-reach-deal-to-jointly-manage-and-guard-chernobyl-nuclear-plant-articleshow.html",
+            "Duration": 8,
+            "Images": [
+              "1d096047-9cdd-4d7b-8722-e7e283cb039f.png",
+              "b674cdbe-9d81-4a4c-ba8d-4f75aa720ec5.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-02-27T00:00:00",
+            "Author": "https://www.rt.com/russia/550728-russian-ukraine-troops-guard-chernobyl/"
           }
         ]
       },
@@ -199,16 +352,538 @@
     },
     {
       "Index": 3,
-      "RenderOrder": 6,
+      "RenderOrder": 3,
       "X": 3,
       "Y": 1,
       "Piece": {
-        "Id": "bfb3dd04-da11-49c1-8337-ec3e9fce8e1d",
-        "Title": "We're all in this together all over again. \r\n",
-        "Thesis": "Surprising concencus between organizations, politicians, media . Last time it happened, everything turned out to be fake (COVID)\r\nWhere is covid?",
-        "Duration": 15,
+        "Id": "3e53beb3-9e4d-4cbc-82ce-e1f3d7e86bdd",
+        "Title": "Media response to first days of war of NATO/US (show articles from google search side by side to compare)\r\n",
+        "Thesis": "https://www.google.com/search?q=iraq&biw=1532&bih=730&source=lnt&tbs=cdr%3A1%2Ccd_min%3A3%2F20%2F2003%2Ccd_max%3A3%2F25%2F2003&tbm=\r\n\r\n\r\nhttps://www.youtube.com/watch?v=dxEjSr6rYXU\r\n\r\n\r\nhttps://abcnews.go.com/International/video/archival-video-us-forces-invade-iraq-2003-45840201\r\n\r\nbbc reports on serbia war: http://news.bbc.co.uk/1/hi/world/europe/303108.stm\r\n\r\nhttps://en.wikipedia.org/wiki/2003_invasion_of_Iraq COALITION OF THE WILLING, FREEDOM FRIES",
+        "Duration": 3,
         "Keywords": [
-          "Concencus"
+          "Breaking",
+          "News"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": [
+          {
+            "Type": 1,
+            "Id": "cace3dca-602a-46ff-a2b6-80990f08f985",
+            "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
+            "Source": "The Press United | International News Analysis, Viewpoint",
+            "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
+            "Duration": 8,
+            "Images": [
+              "3ef676a9-c12b-4eff-825c-73db865a23db.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-02-26T00:00:00",
+            "Author": ""
+          }
+        ]
+      },
+      "Valid": true
+    },
+    {
+      "Index": 4,
+      "RenderOrder": 4,
+      "X": 1,
+      "Y": 2,
+      "Piece": {
+        "Id": "d34b8a7d-ea9a-4837-8b08-d484064509aa",
+        "Title": "Ukraine Mother Of Russia",
+        "Duration": 3,
+        "Keywords": [
+          "Ukraine",
+          "Birthplace Of",
+          "Russia"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": [
+          {
+            "Type": 1,
+            "Id": "ae5e4f00-5c11-4ab8-8baa-c85fe3fca940",
+            "Title": "Why Ukraine matters to Russia so much",
+            "Description": "Ukraine and Kiev specifically is considered by Russians to be the birthplace of their nation. It carries special historic not to mention geopolitical importance, and therefore can't easily be left to fall under the influence of NATO and the United States. This would be kinda like If Pennsylvania Independence Hall, where the United States was formed, was located just outside the US border, and Russia was trying to bring it under it's political influence.",
+            "NarrationDuration": 22.0,
+            "Source": "TRT World",
+            "Url": "https://www.trtworld.com/magazine/why-ukraine-matters-to-russia-so-much-52281",
+            "Duration": 8,
+            "Images": [
+              "67468c7a-d0ac-4a35-920a-c9f9ed1c06a7.png",
+              "ff877789-d841-47c4-8b0f-b26bc9ab9b08.png",
+              "06179265-29bf-4206-baa7-a3a2a8271559.png"
+            ],
+            "ImageEdits": [],
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "83af0ecc-6903-4c38-b66a-825a74f13f6c",
+            "Title": "Ukraine's Yanukovich pledges to work for EU integration",
+            "Description": "At some point in early twenty tens, under constant pressure by the EU, Ukraine leadership started considering joining the union. This ofcourse would be a huge geopolitical upset in the area.",
+            "Source": "euractiv.com",
+            "Url": "https://www.euractiv.com/section/energy/news/ukraine-s-yanukovich-pledges-to-work-for-eu-integration/",
+            "Duration": 12,
+            "Images": [
+              "1015347a-035b-4073-b25c-afa87bd391fc.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2010-03-02T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "0ea42ad7-ed8b-4b70-b7f2-b5f0dd04f03f",
+            "Description": "Later on, Ukranian prime minister Yanukovychdecided to make a U turn and decided not join the block. As soon as that happened, protests errupted, that led to the 2014 Euro Maidan movement.",
+            "Source": "BBC",
+            "Url": "https://www.bbc.co.uk/news/world-europe-25162563",
+            "Duration": 6,
+            "Images": [
+              "34f06cc5-ceae-40c8-998b-17451bea9751.png",
+              "2e1edf37-4e66-4c32-8031-d4b656aeebcf.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2013-11-30T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "afd2b6d1-f4ab-41a8-bd58-d7a261f3a6e5",
+            "Title": "Ukraine U-turn on Europe pact was agreed with Vladimir Putin",
+            "Description": "Joining the EU comes with a lot of fine print, that is often overlooked by politicians. Like having to comply with all policies that are dictated by the European Comission, which cover pretty much all aspects of a country's governance.",
+            "Source": "Guardian",
+            "Url": "https://www.theguardian.com/world/2013/nov/26/ukraine-u-turn-eu-pact-putin",
+            "Duration": 8,
+            "Images": [
+              "d0e2c672-0909-44ae-ad3f-26135e6534a9.png",
+              "85d5cd86-13f1-4c3d-b519-0a17dcb7cf6c.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2013-11-26T00:00:00",
+            "Author": "https://www.theguardian.com/profile/oksana-grytsenko,https://www.theguardian.com/profile/iantraynor"
+          },
+          {
+            "Type": 1,
+            "Id": "1cfcd859-b269-44eb-a105-999f0757cb76",
+            "Title": "Russia cries foul over Western embrace of Ukraine's demonstrators",
+            "Description": "The Maidan movement was clearly subsidized by western actors. Russian officials and media were not impressed by their Western counterparts' visits to protest camps. The situation escallated, resulting in over 100 casualties in the Maidan square.",
+            "Source": "Christian Science Monitor",
+            "Url": "https://www.csmonitor.com/World/Europe/2013/1213/Russia-cries-foul-over-Western-embrace-of-Ukraine-s-demonstrators",
+            "Duration": 8,
+            "Images": [
+              "3e169661-87fe-409b-86e2-f52e1aca042f.png",
+              "8e5ef682-c1cf-41e9-92e9-d5ab82415113.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2013-12-13T00:00:00",
+            "Author": "The Christian Science Monitor"
+          },
+          {
+            "Type": 1,
+            "Id": "9448ff6d-847c-43ec-99f0-b5715a72104d",
+            "Title": "The Maidan massacre in Ukraine: revelations from trials and investigations | MR Online",
+            "Description": "The trial and investigation produced overwhelming evidence that protesters were killed by snipers at Maidan-controlled buildings, rather than by government snipers. This type of false flag operation to bring about a regime change,is right outside of the rulebook described by John Perkins in his best seller book.",
+            "Source": "MR Online",
+            "Url": "https://mronline.org/2021/12/11/the-maidan-massacre-in-ukraine/",
+            "Duration": 5,
+            "Images": [
+              "be4a4384-de99-480e-af3e-a105526300a6.png",
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\9448ff6d-847c-43ec-99f0-b5715a72104d-the-maidan-massacre-in-ukraine-revelations-from-trials-and-investigations--mr-online.png",
+              "b67f5acc-125f-4de7-98cf-86849f513699.png",
+              "1e3f66ce-cb05-4927-8ce1-13d3c2b17d76.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-12-11T00:00:00",
+            "Author": "https:\\/\\/mronline.org\\/author\\/saulfoster\\/#author"
+          },
+          {
+            "Type": 1,
+            "Id": "6b8c9877-46a6-44c8-ad3a-c6cffae59a34",
+            "Description": "A famous MP was arrested on suspicion of planning an assault on parliament and supporting a coup. She was later released without charge.",
+            "Source": "BBC",
+            "Url": "https://www.bbc.co.uk/news/world-europe-43504396",
+            "Duration": 8,
+            "Images": [
+              "7f738a13-0d1c-4f9b-bcc4-3e434730e6f8.png",
+              "36e6952a-41aa-4cc0-85d0-ace798dfe624.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2018-03-22T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "0a710c5e-808b-4e0b-911a-71baf8091df3",
+            "Title": "Ukraine Protestors Seize Kiev As President Flees | TIME.com",
+            "Description": "The Maidan \"Orange Revolution\" led to the pro Russia President Viktor Yanukovych fleeing to the east of the country.",
+            "Source": "TIME.com",
+            "Url": "https://world.time.com/2014/02/22/ukraines-president-flees-protestors-capture-kiev/",
+            "Duration": 8,
+            "Images": [
+              "a02ec22f-8900-43da-883b-59550d768c78.png",
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\0a710c5e-808b-4e0b-911a-71baf8091df3-ukraine-protestors-seize-kiev-as-president-flees--time-com.png"
+            ],
+            "ImageEdits": [],
+            "Author": ".entry-byline"
+          },
+          {
+            "Type": 1,
+            "Id": "d269c3a2-bd05-45c8-98fa-d84c074d1921",
+            "Title": "Washington's Man Yatsenyuk Setting Ukraine Up For Ruin",
+            "Description": "And a new pro-austerity, pro-EU, pro NATO, pro IMF loans Prime Minister installed. ",
+            "Source": "Forbes",
+            "Url": "https://www.forbes.com/sites/kenrapoza/2014/02/27/washingtons-man-yatsenyuk-setting-ukraine-up-for-ruin/?sh=47420b6375b0",
+            "Duration": 8,
+            "Images": [
+              "2d4a520c-3831-4807-9c82-08c21b147a40.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2014-02-27T00:00:00",
+            "Author": "Kenneth Rapoza"
+          },
+          {
+            "Type": 1,
+            "Id": "781b799f-d89d-4e12-972b-91f926857a15",
+            "Description": "During this period, there were reports of widespread corruption, gold vanishing from the country's vaults, and state assents being sold off for next to nothing.",
+            "Source": "NewsJunkiePost",
+            "Url": "http://newsjunkiepost.com/2014/07/30/ukraine-and-crimeas-vanishing-gold/",
+            "Duration": 8,
+            "Images": [
+              "907f5cd2-ac03-47c8-a256-9b440957c3aa.png",
+              "25de0eb3-b4fa-4127-a8fd-13712e23f43a.png"
+            ],
+            "ImageEdits": [],
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "4aff1ef5-8be7-4d96-82cc-466bad8ca9cf",
+            "Title": "Why Russia suddenly wants to supply cheap gas to Ukraine",
+            "Description": "During this period, Russia held a surprisingly moderate stance, and even offered to sell cheap has to Ukraine.",
+            "Source": "Business Insider",
+            "Url": "https://www.businessinsider.com/russia-pushing-gazprom-to-provide-discount-gas-to-ukraine-2015-3?r=US&IR=T",
+            "Duration": 8,
+            "Images": [
+              "7b62413d-ba69-4083-a675-d2334170d44c.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2015-03-31T00:00:00",
+            "Author": "Tomas Hirst"
+          },
+          {
+            "Type": 1,
+            "Id": "31bbe2e7-03e7-48bf-bf5a-a3066629a66c",
+            "Title": "CNN Newsletters",
+            "Description": "The new prime minister Yatsenyuk, was not open to Russia leaning populations in the east of the country, deciding their own fate with a referendum. ",
+            "Source": "CNN",
+            "Url": "https://edition.cnn.com/2014/03/06/world/europe/ukraine-russia-tensions/index.html",
+            "Duration": 8,
+            "Images": [
+              "625eba61-ee58-484b-b1c9-6abd6bee3ce6.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2014-03-06T00:00:00",
+            "Author": "By Chelsea J. Carter. Laura Smith-Spark and Michael Holmes, CNN"
+          },
+          {
+            "Type": 1,
+            "Id": "488ede8e-eaa3-499c-b25e-92f3e6f7fecc",
+            "Title": "More Than 90% Of Crimean Voters Want To Join Russia",
+            "Description": "The referendum did go ahead, and this resulted in tensions rising, which led to the annexation of Cremea by Russia.",
+            "Source": "Business Insider",
+            "Url": "https://www.businessinsider.com/crimean-referendum-results-2014-3?r=US&IR=T",
+            "Duration": 8,
+            "Images": [
+              "5a86c464-6370-402f-8100-3f5f86589777.png",
+              "a8684a2d-987f-4cdc-9d68-7ca86fcc4be8.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2014-03-16T00:00:00",
+            "Author": "Mike Collett-White and Ronald Popeski"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 5,
+      "RenderOrder": 5,
+      "X": 2,
+      "Y": 2,
+      "Piece": {
+        "Id": "06f0e8e9-0a10-4676-bc06-8a74dd19f4b3",
+        "Title": "Odessa Massacre\r\n",
+        "Thesis": "Following the 2014 armed coup in Kiev, pro Russia local people in Odessa, gather in the central square to protest against what they considered a coup-imposed government. On May 2nd, a large group of Right sector radicals and football hooligans that had travelled all the way from Kiev, attacked the activists. Violent fights followed and the local police failed to control the situation. The pro Russia locals tried to take refuge in a nearby trade union building. They barricaded the entrance to stop the radicals from entering, but the building was set on fire by Molotov bombs. People that jumped from the balconies to escape the burning building were beaten to death or shot on the ground, by the US backed Ukrainian ultra nationalists. 42 people died in the Trade Union Building. Little has been done by west backed Ukrainian governments since then, to hold the perpetrators accountable.",
+        "Duration": 3,
+        "Keywords": [
+          "5/2/2014"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": [
+          {
+            "Type": 1,
+            "Id": "c8733019-c6f7-4a37-8b0b-f39d15257bf3",
+            "Title": "Ukrainian rightists burn alive 39 at Odessa union building",
+            "Description": "Time for a quiz, dear viewers. This photo is not a mostly peaceful Black Lives Matter demonstration, or scenes from the January six Capitol Hill insurrection. ",
+            "Source": "People's World",
+            "Url": "https://www.peoplesworld.org/article/ukrainian-rightists-burn-alive-39-at-odessa-union-building/",
+            "Duration": 15,
+            "Images": [
+              "897792b6-f334-496a-83ea-d8c608fe4909.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2014-05-05T00:00:00",
+            "Author": "John Wojcik"
+          },
+          {
+            "Type": 1,
+            "Id": "46100d24-c5fa-42a4-88a4-fad1b7d0895e",
+            "Title": "Ukrainian rightists burn alive 39 at Odessa union building",
+            "Description": "This is the Odessa massacre of May 2nd 2014. Let's briefly look into the tragic events of that day.",
+            "Source": "People's World",
+            "Url": "https://www.peoplesworld.org/article/ukrainian-rightists-burn-alive-39-at-odessa-union-building/",
+            "Duration": 3,
+            "Images": [
+              "a679a315-4a5c-4303-b009-e88ed639fdf6.png",
+              "a31789c4-09dd-4ac9-8c6f-c480e35abfd4.png",
+              "eff2a4bc-86a9-4beb-894b-05d4db422c81.png",
+              "bd940a26-0900-44ed-b65e-659286eec17e.png",
+              "5e3788b5-fb74-43e3-b183-c9c8cf4b03ec.png",
+              "79f6b76d-ce22-432c-9a01-faf3b2ef892a.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2014-05-05T00:00:00",
+            "Author": "John Wojcik"
+          },
+          {
+            "Type": 1,
+            "Id": "a13a169f-15f6-4efb-bf75-f9676895f5cc",
+            "Description": "You will also hear segments from the infamous intercepted phone call, between US Secretary of State Victoria Nuland, and US Ambassador to Ukraine Geoffrey Pyatt. Where they discuss the logistics of installing the puppet government of Yatsenyuk, after the Maidan revolution. According to the official Western media narrative, the USA had nothing to do with that uprising.",
+            "Url": "https://www.bbc.co.uk/news/world-europe-26079957",
+            "Duration": 8,
+            "Images": [
+              "9dcfa53f-305f-427a-a691-ce1dd23dc5c4.png",
+              "16e2bba8-8047-4e50-9bca-4e230af0e00b.png",
+              "2357641d-3592-416a-89c2-94b5d0bfae32.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2014-02-07T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "a8abcce4-7459-4950-b62e-ed0e23cf7c0b",
+            "Title": "Odessa massacre probe drags on 3yrs after over 40 anti-coup activists burnt alive in Ukrainian city",
+            "Description": "The events of May 2nd 2014 and the Maidan revolution in general, are reported very differently in Western and Russian media. However after the war started in recent times, Russian media have been largely banned in western countries. Therefore it's harder for westerners to get the context of what appears to be an agressive act of war towards Ukraine. ",
+            "Source": "RT International",
+            "Url": "https://www.rt.com/news/386785-odessa-massacre-three-years-on/",
+            "Duration": 8,
+            "Images": [
+              "1f63ccc1-8021-46ae-9bc7-057003eecb20.png",
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\a8abcce4-7459-4950-b62e-ed0e23cf7c0b-odessa-massacre-probe-drags-on-3yrs-after-over-40-anti-coup-activists-burnt-alive-in-ukrainian-city.png"
+            ],
+            "ImageEdits": [],
+            "Author": "Russia Today"
+          },
+          {
+            "Type": 1,
+            "Id": "6e8d1116-7eb8-4021-978d-be58783d8f94",
+            "Title": "Videos and Photos of the Odessan Massacre",
+            "Description": "If you want to watch some more of these videos, you can find the links in the description of this video. viewer discretion is advised.",
+            "Source": "CounterPunch.org",
+            "Url": "https://www.counterpunch.org/2014/05/09/videos-and-photos-of-the-odessan-massacre/",
+            "Duration": 4,
+            "Images": [
+              "5d7606c0-625d-4057-9c43-a460c7ab1c80.png",
+              "04c60dbb-cc4f-4e3b-840c-0651b00cead4.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2014-05-09T00:00:00",
+            "Author": ""
+          }
+        ]
+      }
+    },
+    {
+      "Index": 6,
+      "RenderOrder": 6,
+      "X": 3,
+      "Y": 2,
+      "Piece": {
+        "Id": "fd0b0acd-1c51-49b4-81f4-b5b02efaa0cd",
+        "Title": "Putin speach announces operation",
+        "Thesis": "Show summary, highlight similarities with JFK speech (my tweet has links)",
+        "Duration": 3,
+        "Keywords": [
+          "Putin"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": [
+          {
+            "Type": 1,
+            "Id": "89582d21-5570-4035-80fd-14a00a2f5e37",
+            "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
+            "Source": "The Press United | International News Analysis, Viewpoint",
+            "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
+            "Duration": 8,
+            "Images": [
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\89582d21-5570-4035-80fd-14a00a2f5e37-ukraine-s-defense-ministry-posted-fake-video-as-air-battle.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-02-26T00:00:00",
+            "Author": ""
+          }
+        ]
+      }
+    },
+    {
+      "Index": 7,
+      "RenderOrder": 7,
+      "X": 1,
+      "Y": 3,
+      "Piece": {
+        "Id": "c4a4a1e1-ce13-4391-87ff-40979c45f570",
+        "Title": "NATO, USA Wars",
+        "Thesis": "Serbia, Lybia, Iraq, Afghanistan, \r\nwikipedia https://en.wikipedia.org/wiki/List_of_armed_conflicts_involving_the_United_States (they name everyone dictator)\r\n\r\nhttps://www.independent.co.uk/news/world/the-nine-most-warmongering-countries-in-the-world-revealed-10478988.html\r\n\r\nhttps://www.quora.com/What-country-is-the-biggest-warmonger-for-the-last-century\r\neconomic hitman\r\n\r\nhttps://en.wikipedia.org/wiki/List_of_wars_involving_Russia only to defend\r\nhttps://en.wikipedia.org/wiki/List_of_armed_conflicts_involving_the_United_States interventions\r\nhttps://www.youtube.com/watch?v=HxDcvhH2Ypc",
+        "Duration": 3,
+        "Keywords": [
+          "NATO",
+          "USA Wars"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": [
+          {
+            "Type": 1,
+            "Id": "d1ebd0d6-d2d4-43d3-9e68-8bc86f1719fd",
+            "Description": "NATO and the United States, have a long history of bombing and invading countries. Interestingly enough, there was an air strike just three days after the war in Ukraine begun. ",
+            "Source": "The New York Times",
+            "Url": "https://www.nytimes.com/2022/02/24/us/politics/somalia-shabab-us-airstrike.html",
+            "Duration": 5,
+            "Images": [
+              "947ac929-39a5-493e-ac3a-38e4af49fb9a.png",
+              "ef7fbf4c-e290-4e25-9cb7-fb6afc5b1d39.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-02-24T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "6fea5fdf-070a-41b5-8f94-a3ceff1eafc0",
+            "Description": "Sometimes internet trolls do a better job than mainstream media journalists.",
+            "Source": "Reddit",
+            "Url": "https://www.reddit.com/r/ShitLiberalsSay/",
+            "Duration": 8,
+            "Images": [
+              "0fddd794-2e22-4428-bff9-f218513fe128.png"
+            ],
+            "ImageEdits": [],
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "b2ad50fc-0e17-4175-a927-de13675a3651",
+            "Title": "These are the nine most warmongering countries in the world",
+            "Description": "Japan’s moves to rewrite its pacifist constitution have sparked large protests in the country – but just how unusual is it for a country to not be involved in overseas conflict?",
+            "Source": "The Independent",
+            "Url": "https://www.independent.co.uk/news/world/the-nine-most-warmongering-countries-in-the-world-revealed-10478988.html",
+            "Duration": 8,
+            "Images": [
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\b2ad50fc-0e17-4175-a927-de13675a3651-these-are-the-nine-most-warmongering-countries-in-the-world.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2015-08-31T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "9744e132-9935-45ce-9072-6b8a1fdba408",
+            "Title": "These are all the countries the USA has invaded, in one map",
+            "Description": "From Montezuma to the shores of Tripoli, the US has had a military presence across the world, from almost day one of her independence.What constitutes invasion? As one map below shows, the US has a military presence in much of the world without being an occupying force (though some would dispute tha.",
+            "Source": "indy100",
+            "Url": "https://www.indy100.com/news/usa-american-army-invasions-police-actions-overseas-dod-defense-war-troops-deployment-marines-7908611",
+            "Duration": 8,
+            "Images": [
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\9744e132-9935-45ce-9072-6b8a1fdba408-these-are-all-the-countries-the-usa-has-invaded-in-one-map.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2017-08-23T00:00:00",
+            "Author": "https://www.facebook.com/500624210050210"
+          },
+          {
+            "Type": 1,
+            "Id": "45c331db-e647-4908-9473-ac285d1053a8",
+            "Title": "U.S. Military Spending vs Other Top Countries",
+            "Description": "The U.S. is well known for its enormous defense budget, but how does it compare to the rest of the world's military spending?",
+            "Source": "Visual Capitalist",
+            "Url": "https://www.visualcapitalist.com/u-s-military-spending-vs-other-top-countries/",
+            "Duration": 8,
+            "Images": [
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\45c331db-e647-4908-9473-ac285d1053a8-u-s-military-spending-vs-other-top-countries.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-07-31T00:00:00",
+            "Author": "Avery Koop"
+          }
+        ]
+      }
+    },
+    {
+      "Index": 8,
+      "RenderOrder": 8,
+      "X": 2,
+      "Y": 3,
+      "Piece": {
+        "Id": "ccc793de-5607-4850-8883-c7e7d320d7a3",
+        "Title": "possible outcome,Events going under the radar",
+        "Thesis": "euro army\r\neconomic collapse, great reset,debt write off\r\nCDC documents\r\nTrudue Pfizer connection\r\nDigital Id\r\n",
+        "Duration": 3,
+        "Keywords": [
+          ""
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": [
+          {
+            "Type": 1,
+            "Id": "db2de415-e906-40d4-bb1e-628cfbc0e42b",
+            "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
+            "Source": "The Press United | International News Analysis, Viewpoint",
+            "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
+            "Duration": 8,
+            "Images": [
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\db2de415-e906-40d4-bb1e-628cfbc0e42b-ukraine-s-defense-ministry-posted-fake-video-as-air-battle.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-02-26T00:00:00",
+            "Author": ""
+          }
+        ]
+      }
+    },
+    {
+      "Index": 9,
+      "RenderOrder": 9,
+      "X": 3,
+      "Y": 3,
+      "Piece": {
+        "Id": "bfb3dd04-da11-49c1-8337-ec3e9fce8e1d",
+        "Title": "?We're all in this together all over again.\r\n",
+        "Thesis": "Surprising concencus between organizations, politicians, media . Last time it happened, everything turned out to be fake (COVID)\r\nWhere is covid?\r\n\r\nrussians the new unvaccinated",
+        "Duration": 3,
+        "Keywords": [
+          ""
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -218,7 +893,6 @@
             "Type": 1,
             "Id": "771039c3-36c1-49dd-acfc-f4954ef3bd1a",
             "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
-            "Description": "Widely circulated video game footage, fact-checked by Reuters as ‘miscaptioned’, appeared on the ministry’s verified account The verified Twitter page of the Ukrainian Defense Ministry published video game footage on February 25 claiming to show a Ukrainian fighter jet shooting down a Russian plane. On Saturday, Reuters fact-checked the widely shared fake video as ‘miscaptioned’. […]",
             "Source": "The Press United | International News Analysis, Viewpoint",
             "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
             "Duration": 8,
@@ -231,221 +905,6 @@
           }
         ]
       }
-    },
-    {
-      "Index": 4,
-      "RenderOrder": 3,
-      "X": 1,
-      "Y": 2,
-      "Piece": {
-        "Id": "c4a4a1e1-ce13-4391-87ff-40979c45f570",
-        "Title": "America Bombs Somalia 3 days into the Ukraine invasion. What was the concencus when USA started their campaigns?",
-        "Duration": 15,
-        "Keywords": [
-          "Somalia Bombing",
-          " 2/24/2022"
-        ],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "References": [
-          {
-            "Type": 1,
-            "Id": "d1ebd0d6-d2d4-43d3-9e68-8bc86f1719fd",
-            "Description": "NATO and the United States, have a long history of bombing and invading countries. Interestingly enough, there was an air strike just three days after the war in Ukraine begun. Somalia was bombed by drones. Sometimes internet trolls do a better job than mainstream media journalists.",
-            "Source": "The New York Times",
-            "Url": "https://www.nytimes.com/2022/02/24/us/politics/somalia-shabab-us-airstrike.html",
-            "Duration": 10,
-            "Images": [
-              "947ac929-39a5-493e-ac3a-38e4af49fb9a.png",
-              "ef7fbf4c-e290-4e25-9cb7-fb6afc5b1d39.png",
-              "0fddd794-2e22-4428-bff9-f218513fe128.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2022-02-24T00:00:00",
-            "Author": ""
-          }
-        ]
-      }
-    },
-    {
-      "Index": 5,
-      "RenderOrder": 7,
-      "X": 2,
-      "Y": 2,
-      "Piece": {
-        "Id": "06f0e8e9-0a10-4676-bc06-8a74dd19f4b3",
-        "Title": "Past Invasions by NATO",
-        "Thesis": "Serbia, Lybia, Iraq, Afghanistan, ",
-        "Duration": 15,
-        "Keywords": [
-          "NATO",
-          "USA",
-          "Invasions"
-        ],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "References": [
-          {
-            "Type": 1,
-            "Id": "97b12f6f-12cf-4f27-8ee4-d74d1830fd41",
-            "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
-            "Description": "Widely circulated video game footage, fact-checked by Reuters as ‘miscaptioned’, appeared on the ministry’s verified account The verified Twitter page of the Ukrainian Defense Ministry published video game footage on February 25 claiming to show a Ukrainian fighter jet shooting down a Russian plane. On Saturday, Reuters fact-checked the widely shared fake video as ‘miscaptioned’. […]",
-            "Source": "The Press United | International News Analysis, Viewpoint",
-            "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
-            "Duration": 8,
-            "Images": [
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\97b12f6f-12cf-4f27-8ee4-d74d1830fd41-ukraine-s-defense-ministry-posted-fake-video-as-air-battle.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2022-02-26T00:00:00",
-            "Author": ""
-          }
-        ]
-      }
-    },
-    {
-      "Index": 6,
-      "RenderOrder": 5,
-      "X": 3,
-      "Y": 2,
-      "Piece": {
-        "Id": "3e53beb3-9e4d-4cbc-82ce-e1f3d7e86bdd",
-        "Title": "Media response to first days of war of NATO/US (show articles from google search side by side to compare)\r\n",
-        "Duration": 15,
-        "Keywords": [
-          "Breaking News",
-          "!WAR!"
-        ],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "References": [
-          {
-            "Type": 1,
-            "Id": "cace3dca-602a-46ff-a2b6-80990f08f985",
-            "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
-            "Description": "Widely circulated video game footage, fact-checked by Reuters as ‘miscaptioned’, appeared on the ministry’s verified account The verified Twitter page of the Ukrainian Defense Ministry published video game footage on February 25 claiming to show a Ukrainian fighter jet shooting down a Russian plane. On Saturday, Reuters fact-checked the widely shared fake video as ‘miscaptioned’. […]",
-            "Source": "The Press United | International News Analysis, Viewpoint",
-            "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
-            "Duration": 8,
-            "Images": [
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\cace3dca-602a-46ff-a2b6-80990f08f985-ukraine-s-defense-ministry-posted-fake-video-as-air-battle.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2022-02-26T00:00:00",
-            "Author": ""
-          }
-        ]
-      }
-    },
-    {
-      "Index": 7,
-      "RenderOrder": 4,
-      "X": 1,
-      "Y": 3,
-      "Piece": {
-        "Id": "d34b8a7d-ea9a-4837-8b08-d484064509aa",
-        "Title": "2014 coup",
-        "Duration": 15,
-        "Keywords": [
-          "test"
-        ],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "References": [
-          {
-            "Type": 1,
-            "Id": "f38db178-04d1-4048-b628-b4efe341243d",
-            "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
-            "Description": "Widely circulated video game footage, fact-checked by Reuters as ‘miscaptioned’, appeared on the ministry’s verified account The verified Twitter page of the Ukrainian Defense Ministry published video game footage on February 25 claiming to show a Ukrainian fighter jet shooting down a Russian plane. On Saturday, Reuters fact-checked the widely shared fake video as ‘miscaptioned’. […]",
-            "Source": "The Press United | International News Analysis, Viewpoint",
-            "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
-            "Duration": 8,
-            "Images": [
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\f38db178-04d1-4048-b628-b4efe341243d-ukraine-s-defense-ministry-posted-fake-video-as-air-battle.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2022-02-26T00:00:00",
-            "Author": ""
-          }
-        ]
-      },
-      "Valid": true
-    },
-    {
-      "Index": 8,
-      "RenderOrder": 8,
-      "X": 2,
-      "Y": 3,
-      "Piece": {
-        "Id": "fd0b0acd-1c51-49b4-81f4-b5b02efaa0cd",
-        "Title": "Putin speach",
-        "Thesis": "Show summary, highlight similarities with JFK speech (my tweet has links)",
-        "Duration": 15,
-        "Keywords": [
-          "test"
-        ],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "References": [
-          {
-            "Type": 1,
-            "Id": "89582d21-5570-4035-80fd-14a00a2f5e37",
-            "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
-            "Description": "Widely circulated video game footage, fact-checked by Reuters as ‘miscaptioned’, appeared on the ministry’s verified account The verified Twitter page of the Ukrainian Defense Ministry published video game footage on February 25 claiming to show a Ukrainian fighter jet shooting down a Russian plane. On Saturday, Reuters fact-checked the widely shared fake video as ‘miscaptioned’. […]",
-            "Source": "The Press United | International News Analysis, Viewpoint",
-            "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
-            "Duration": 8,
-            "Images": [
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\89582d21-5570-4035-80fd-14a00a2f5e37-ukraine-s-defense-ministry-posted-fake-video-as-air-battle.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2022-02-26T00:00:00",
-            "Author": ""
-          }
-        ]
-      },
-      "Valid": true
-    },
-    {
-      "Index": 9,
-      "RenderOrder": 9,
-      "X": 3,
-      "Y": 3,
-      "Piece": {
-        "Id": "ccc793de-5607-4850-8883-c7e7d320d7a3",
-        "Title": "Events going under the radar",
-        "Thesis": "CDC documents\r\nTrudue Pfizer connection\r\nDigital Id\r\n",
-        "Duration": 15,
-        "Keywords": [
-          "test"
-        ],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "References": [
-          {
-            "Type": 1,
-            "Id": "db2de415-e906-40d4-bb1e-628cfbc0e42b",
-            "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
-            "Description": "Widely circulated video game footage, fact-checked by Reuters as ‘miscaptioned’, appeared on the ministry’s verified account The verified Twitter page of the Ukrainian Defense Ministry published video game footage on February 25 claiming to show a Ukrainian fighter jet shooting down a Russian plane. On Saturday, Reuters fact-checked the widely shared fake video as ‘miscaptioned’. […]",
-            "Source": "The Press United | International News Analysis, Viewpoint",
-            "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
-            "Duration": 8,
-            "Images": [
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\db2de415-e906-40d4-bb1e-628cfbc0e42b-ukraine-s-defense-ministry-posted-fake-video-as-air-battle.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2022-02-26T00:00:00",
-            "Author": ""
-          }
-        ]
-      },
-      "Valid": true
     }
   ]
 }

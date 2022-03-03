@@ -466,8 +466,8 @@ namespace FactCheckThisBitch.Render
                 Font font = SystemFonts.CreateFont("Arial", 15, FontStyle.Bold); // for scaling water mark size is largely ignored.
                 using var puzzlePieceNewsTicker = emptyNewsTicker.Clone(ctx =>
                 {
-                //entire box of news ticker template image
-                var box = new
+                    //entire box of news ticker template image
+                    var box = new
                     {
                         Left = 0,
                         Top = 0,
@@ -480,6 +480,7 @@ namespace FactCheckThisBitch.Render
                 var timeInVideo = puzzlePiece.Piece.ToPositionInPowerpointVideo(narrations);
                 var newsTickerFilename = $"{puzzlePiece.RenderOrder}-{timeInVideo.ToString(@"mm\.ss\.ff")}-{puzzlePiece.Piece.Title.Sanitize().Limit(30)}.png";
                 puzzlePieceNewsTicker.Save(Path.Combine(newsTickerFolder, newsTickerFilename));
+
             }
         }
 

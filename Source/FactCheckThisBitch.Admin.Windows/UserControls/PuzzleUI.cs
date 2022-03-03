@@ -63,7 +63,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     if (piece == null)
                     {
                         piece = new Piece();
-                        puzzlePiece = new PuzzlePiece {Index = indexOfThisSquare, Piece = piece};
+                        puzzlePiece = new PuzzlePiece { Index = indexOfThisSquare, Piece = piece };
                         _puzzle.PuzzlePieces.Add(puzzlePiece);
                     }
 
@@ -77,7 +77,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
                     PuzzlePieceUi puzzlePieceUi = new PuzzlePieceUi()
                     {
-                        PuzzlePiece = puzzlePiece, Name = piece.Id, Left = puzzlePieceX, Top = puzzlePieceY,
+                        PuzzlePiece = puzzlePiece,
+                        Name = piece.Id,
+                        Left = puzzlePieceX,
+                        Top = puzzlePieceY,
                     };
 
                     puzzlePieceUi.OnClick = () => OnPieceClicked(piece);
@@ -142,10 +145,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             return invalidNeighbours <= maxInvalidNeighbours;
         }
 
-        private void SelectPiece(string pieceId,bool selected)
+        private void SelectPiece(string pieceId, bool selected)
         {
             if (pieceId == null) return;
-            ((PuzzlePieceUi) Controls.Find(pieceId, true).First()).BorderStyle = selected ? BorderStyle.FixedSingle : BorderStyle.None;
+            ((PuzzlePieceUi)Controls.Find(pieceId, true).First()).BorderStyle = selected ? BorderStyle.FixedSingle : BorderStyle.None;
         }
 
         private void DecoratePuzzle()
@@ -224,7 +227,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
             //swap puzzle pieces within the array
             _puzzle.PuzzlePieces =
-                (List<PuzzlePiece>) _puzzle.PuzzlePieces.Swap<PuzzlePiece>(draggedPieceIndex - 1, destinationPieceIndex - 1);
+                (List<PuzzlePiece>)_puzzle.PuzzlePieces.Swap<PuzzlePiece>(draggedPieceIndex - 1, destinationPieceIndex - 1);
 
             //also change the position-related properties
             (destination.Index, dragged.Index) = (dragged.Index, destination.Index);
@@ -232,8 +235,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             (destination.Y, dragged.Y) = (dragged.Y, destination.Y);
 
             //swap in the UI
-            var draggedUi = ((PuzzlePieceUi) Controls.Find(dragged.Piece.Id, true).First());
-            var destinationUi = ((PuzzlePieceUi) Controls.Find(destination.Piece.Id, true).First());
+            var draggedUi = ((PuzzlePieceUi)Controls.Find(dragged.Piece.Id, true).First());
+            var destinationUi = ((PuzzlePieceUi)Controls.Find(destination.Piece.Id, true).First());
             (destinationUi.Location, draggedUi.Location) = (draggedUi.Location, destinationUi.Location);
 
             OnChanged?.Invoke();
@@ -242,42 +245,46 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void OnPieceClicked(Piece piece)
         {
-            SelectPiece(_selectedPieceId,false);
+            SelectPiece(_selectedPieceId, false);
             _selectedPieceId = piece.Id;
             SelectPiece(_selectedPieceId, true);
 
-            var pieceBefore = JsonConvert.SerializeObject(piece, StaticSettings.JsonSerializerSettings);
-            FrmPiece pieceForm = new FrmPiece(piece);
-            pieceForm.OnMoveReferenceToOtherPiece = referenceId => MoveReferenceToOtherPiece(piece, referenceId);
-            pieceForm.OnSave = SaveToFile;
-            var result = pieceForm.ShowDialog();
-            if (result != DialogResult.OK) return;
-
-            var pieceAfter = JsonConvert.SerializeObject(piece, StaticSettings.JsonSerializerSettings);
-
-            if (pieceBefore != pieceAfter)
+            using (FrmPiece pieceForm = new FrmPiece(piece))
             {
-                OnChanged?.Invoke();
-                LoadPieces();
-                DecoratePuzzle();
+                var pieceBefore = JsonConvert.SerializeObject(piece, StaticSettings.JsonSerializerSettings);
+                pieceForm.OnMoveReferenceToOtherPiece = referenceId => MoveReferenceToOtherPiece(piece, referenceId);
+                pieceForm.OnSave = SaveToFile;
+                var result = pieceForm.ShowDialog();
+                if (result != DialogResult.OK) return;
+
+                var pieceAfter = JsonConvert.SerializeObject(piece, StaticSettings.JsonSerializerSettings);
+
+                if (pieceBefore != pieceAfter)
+                {
+                    pieceBefore = null;
+                    OnChanged?.Invoke();
+                    LoadPieces();
+                    DecoratePuzzle();
+                }
             }
-        }
 
-        private bool MoveReferenceToOtherPiece(Piece previousPiece, string referenceId)
-        {
-            FrmSelectPiece selectPieceForm = new FrmSelectPiece(_puzzle.PuzzlePieces.Select(pp => pp.Piece.Title).ToList());
-            var result = selectPieceForm.ShowDialog();
-            if (result != DialogResult.OK) return false;
-
-            var newPiece = _puzzle.PuzzlePieces.First(pp => pp.Piece.Title == selectPieceForm.SelectedPieceTitle).Piece;
-            var reference = previousPiece.References.First(r => r.Id == referenceId);
-            previousPiece.References.Remove(reference);
-            newPiece.References.Add(reference);
-
-            LoadPieces();
-            DecoratePuzzle();
-
-            return true;
-        }
     }
+
+    private bool MoveReferenceToOtherPiece(Piece previousPiece, string referenceId)
+    {
+        FrmSelectPiece selectPieceForm = new FrmSelectPiece(_puzzle.PuzzlePieces.Select(pp => pp.Piece.Title).ToList());
+        var result = selectPieceForm.ShowDialog();
+        if (result != DialogResult.OK) return false;
+
+        var newPiece = _puzzle.PuzzlePieces.First(pp => pp.Piece.Title == selectPieceForm.SelectedPieceTitle).Piece;
+        var reference = previousPiece.References.First(r => r.Id == referenceId);
+        previousPiece.References.Remove(reference);
+        newPiece.References.Add(reference);
+
+        LoadPieces();
+        DecoratePuzzle();
+
+        return true;
+    }
+}
 }
