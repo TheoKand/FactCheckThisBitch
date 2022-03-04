@@ -17,7 +17,6 @@
         "Title": "Media blunders or propaganda?",
         "Duration": 3,
         "Keywords": [
-          "Media",
           "Fake News"
         ],
         "Content": {
@@ -381,6 +380,20 @@
             "ImageEdits": [],
             "DatePublished": "2022-02-26T00:00:00",
             "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "a5361078-790e-4707-85db-b36618fcd5ba",
+            "Title": "TIME Magazine Cover: NATO Bombs the Serbs - Sep. 11, 1995",
+            "Description": "TIME Magazine Cover: NATO Bombs the Serbs",
+            "Source": "TIME.com",
+            "Url": "http://content.time.com/time/covers/0,16641,19950911,00.html",
+            "Duration": 8,
+            "Images": [
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\a5361078-790e-4707-85db-b36618fcd5ba-time-magazine-cover-nato-bombs-the-serbs--sep-11-1995.png"
+            ],
+            "ImageEdits": [],
+            "Author": ""
           }
         ]
       },
@@ -535,14 +548,22 @@
             "Type": 1,
             "Id": "d269c3a2-bd05-45c8-98fa-d84c074d1921",
             "Title": "Washington's Man Yatsenyuk Setting Ukraine Up For Ruin",
-            "Description": "And a new pro-austerity, pro-EU, pro NATO, pro IMF loans Prime Minister installed. ",
+            "Description": "And a new pro-austerity, pro-EU, pro NATO, pro IMF loans Prime Minister installed. Pro Russian people in Odessa did not take well to the new government which led to the events of May 2nd in Odessa. More on this later.",
             "Source": "Forbes",
             "Url": "https://www.forbes.com/sites/kenrapoza/2014/02/27/washingtons-man-yatsenyuk-setting-ukraine-up-for-ruin/?sh=47420b6375b0",
             "Duration": 8,
             "Images": [
-              "2d4a520c-3831-4807-9c82-08c21b147a40.png"
+              "2d4a520c-3831-4807-9c82-08c21b147a40.png",
+              "5935ae7b-41d2-4345-ad54-9bd7ea2dba93.png"
             ],
-            "ImageEdits": [],
+            "ImageEdits": [
+              {
+                "Image": "5935ae7b-41d2-4345-ad54-9bd7ea2dba93.png",
+                "BlurryAreas": [
+                  "83, 83, 290, 221"
+                ]
+              }
+            ],
             "DatePublished": "2014-02-27T00:00:00",
             "Author": "Kenneth Rapoza"
           },
@@ -564,7 +585,7 @@
             "Type": 1,
             "Id": "4aff1ef5-8be7-4d96-82cc-466bad8ca9cf",
             "Title": "Why Russia suddenly wants to supply cheap gas to Ukraine",
-            "Description": "During this period, Russia held a surprisingly moderate stance, and even offered to sell cheap has to Ukraine.",
+            "Description": "Russia held a surprisingly moderate stance, and even offered to sell cheap has to Ukraine.",
             "Source": "Business Insider",
             "Url": "https://www.businessinsider.com/russia-pushing-gazprom-to-provide-discount-gas-to-ukraine-2015-3?r=US&IR=T",
             "Duration": 8,
@@ -579,7 +600,7 @@
             "Type": 1,
             "Id": "31bbe2e7-03e7-48bf-bf5a-a3066629a66c",
             "Title": "CNN Newsletters",
-            "Description": "The new prime minister Yatsenyuk, was not open to Russia leaning populations in the east of the country, deciding their own fate with a referendum. ",
+            "Description": "The new prime minister Yatsenyuk, was not open to pro-Russia populations in Crimea, deciding their own fate with a referendum. ",
             "Source": "CNN",
             "Url": "https://edition.cnn.com/2014/03/06/world/europe/ukraine-russia-tensions/index.html",
             "Duration": 8,
@@ -594,13 +615,13 @@
             "Type": 1,
             "Id": "488ede8e-eaa3-499c-b25e-92f3e6f7fecc",
             "Title": "More Than 90% Of Crimean Voters Want To Join Russia",
-            "Description": "The referendum did go ahead, and this resulted in tensions rising, which led to the annexation of Cremea by Russia.",
+            "Description": "In Cremea , the large majority of people are pro-Russian, they speak the language, have the same Orthodox Christian religion and ethnic background. The referendum did go ahead, and the overwhelming result led to the annexation of Cremea by Russia.",
             "Source": "Business Insider",
             "Url": "https://www.businessinsider.com/crimean-referendum-results-2014-3?r=US&IR=T",
             "Duration": 8,
             "Images": [
               "5a86c464-6370-402f-8100-3f5f86589777.png",
-              "a8684a2d-987f-4cdc-9d68-7ca86fcc4be8.png"
+              "a1011a7f-2be0-4d8f-b3ef-2c823414dd10.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2014-03-16T00:00:00",
@@ -657,7 +678,16 @@
               "5e3788b5-fb74-43e3-b183-c9c8cf4b03ec.png",
               "79f6b76d-ce22-432c-9a01-faf3b2ef892a.png"
             ],
-            "ImageEdits": [],
+            "ImageEdits": [
+              {
+                "Image": "bd940a26-0900-44ed-b65e-659286eec17e.png",
+                "BlurryAreas": [
+                  "33, 4, 235, 248",
+                  "300, 317, 309, 271",
+                  "703, 207, 263, 155"
+                ]
+              }
+            ],
             "DatePublished": "2014-05-05T00:00:00",
             "Author": "John Wojcik"
           },
@@ -717,11 +747,12 @@
       "Y": 2,
       "Piece": {
         "Id": "fd0b0acd-1c51-49b4-81f4-b5b02efaa0cd",
-        "Title": "Putin speach announces operation",
+        "Title": "Ongoing WAR",
         "Thesis": "Show summary, highlight similarities with JFK speech (my tweet has links)",
         "Duration": 3,
         "Keywords": [
-          "Putin"
+          "8 Years",
+          "Of War"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -729,16 +760,48 @@
         "References": [
           {
             "Type": 1,
-            "Id": "89582d21-5570-4035-80fd-14a00a2f5e37",
-            "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
-            "Source": "The Press United | International News Analysis, Viewpoint",
-            "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
+            "Id": "1b1f51b7-bf7e-47e7-b974-a530b6a4c154",
+            "Title": "Ukrainians go underground to hide from rebel shelling - but feel they have been abandoned by Kiev",
+            "Description": "The east of Ukraine has since been in a perpetual state of war and conflict. The west considers this a Russian-Ukranian war, and Russia considers this a civil Ukranian war. The fact of the matter is that the people of donetsk and luhansk have had to live under these conditions for 8 years, including incoming artillery fire and shelling.",
+            "Source": "The Independent",
+            "Url": "https://www.independent.co.uk/news/world/europe/ukrainians-go-underground-families-living-in-cellars-in-donetsk-feel-they-have-been-abandoned-by-the-government-in-kiev-9911302.html",
             "Duration": 8,
             "Images": [
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\89582d21-5570-4035-80fd-14a00a2f5e37-ukraine-s-defense-ministry-posted-fake-video-as-air-battle.png"
+              "94004fc1-f104-45d8-bab3-cc2f679849d2.png",
+              "00d31151-8e0e-4f55-bc99-98373e246fc6.png"
             ],
             "ImageEdits": [],
-            "DatePublished": "2022-02-26T00:00:00",
+            "DatePublished": "2014-12-09T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "4a32b56b-4ba2-4967-83e9-f432d606ac0b",
+            "Title": "Conflict in Ukraine | Global Conflict Tracker",
+            "Description": "No solidarity from Western Media has been displayed during this time, and no one went on social media to proclaim how they \"Stand with the Donetsk\". Casualties are in the tens of thousands and up to one and a half million people have had to rellocate, to avoid the ongoing conflict of the last eight years. ",
+            "Source": "Global Conflict Tracker",
+            "Url": "https://www.cfr.org/global-conflict-tracker/conflict/conflict-ukraine",
+            "Duration": 8,
+            "Images": [
+              "950ad910-b4f0-4192-9adc-9ce96284f2e2.png",
+              "eebf6eea-91f5-47be-9911-034501d65a93.png"
+            ],
+            "ImageEdits": [],
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "e55307dc-a940-4af4-92d8-468318f29392",
+            "Title": "The Great Exodus: Ukraine's Refugees Flee to Russia",
+            "Description": "These were obviously pro-Russian populations that do not take well to the West-controlled government of Ukraine.",
+            "Source": "Wilson Center",
+            "Url": "https://www.wilsoncenter.org/article/the-great-exodus-ukraines-refugees-flee-to-russia",
+            "Duration": 4,
+            "Images": [
+              "49b30169-d177-4bae-97d6-e5aa9bd27710.png",
+              "c18298c9-303f-4e5a-85cf-1820aa79cb5c.png"
+            ],
+            "ImageEdits": [],
             "Author": ""
           }
         ]
@@ -746,8 +809,103 @@
     },
     {
       "Index": 7,
-      "RenderOrder": 7,
+      "RenderOrder": 8,
       "X": 1,
+      "Y": 3,
+      "Piece": {
+        "Id": "ccc793de-5607-4850-8883-c7e7d320d7a3",
+        "Title": "Putin speech",
+        "Duration": 3,
+        "Keywords": [
+          "Invasion",
+          "aer",
+          "aero",
+          "cwp",
+          "dip",
+          "gen"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": [
+          {
+            "Type": 1,
+            "Id": "7a613b1f-884c-4940-876f-be99414ed5e8",
+            "Title": "Russia accuses Ukraine of troop build-up, starts its own winter drills",
+            "Description": "The tension between the ever expanding NATO and Russia kept growing and took a turn for the worst in December of 2021. ",
+            "Source": "Reuters",
+            "Url": "https://www.reuters.com/world/europe/russia-starts-regular-winter-military-drills-region-bordering-ukraine-2021-12-01/",
+            "Duration": 5,
+            "Images": [
+              "dd0294fb-d3d5-479f-ba64-8330051e91e9.png",
+              "44e0fa98-12f2-4a92-8329-34ac1b18ffad.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-12-01T00:00:00",
+            "Author": "Reuters"
+          },
+          {
+            "Type": 1,
+            "Id": "73d931c5-baac-4d66-867d-b04874f0c2d2",
+            "Title": "https://english.alarabiya.net/News/world/2021/12/17/Russia-tells-NATO-to-leave-Eastern-Europe-Ukraine",
+            "Description": "Russia drew distinct lines in the sand and called for deescallation. Both sides pretend to be on the defence.",
+            "Url": "Russia tells NATO to leave Eastern Europe, Ukraine",
+            "Duration": 5,
+            "Images": [
+              "2426dff8-a850-4d41-a485-a4eeb91e5d3c.png",
+              "d81c8c60-c6d4-4cf1-ba65-a85c82917f73.png"
+            ],
+            "ImageEdits": [],
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "e4797e3d-1a68-44d0-9bfd-0c50f643df5c",
+            "Description": "In the early hours of Thursday, February 24, 2022, Russian President Vladimir Putin addressed his nation, announcing a “special military operation” against Ukraine.",
+            "Source": "aljazeera.com",
+            "Url": "https://www.aljazeera.com/news/2022/2/24/putins-speech-declaring-war-on-ukraine-translated-excerpts",
+            "Duration": 60,
+            "Images": [
+              "3419734b-2ab1-46ce-beb2-febe5fbdd106.png"
+            ],
+            "ImageEdits": [],
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "8779571a-99a6-4b49-bda5-059be5044a13",
+            "Description": "I am referring to the expansion of the NATO to the east, moving its military infrastructure closer to Russian borders. It is well known that for 30 years we have persistently and patiently tried to reach an agreement with the leading NATO countries on the principles of equal and inviolable security in Europe. The war machine is moving and, I repeat, it is coming close to our borders.",
+            "Url": "https://www.latimes.com/opinion/op-ed/la-oe-shifrinson-russia-us-nato-deal--20160530-snap-story.html",
+            "Duration": 60,
+            "Images": [
+              "ee84a68f-33e9-41c1-9834-3addb330805e.png",
+              "d9968af4-5b16-4d5a-8b38-16d77d0085f1.png",
+              "0b8fe6e7-e389-421c-867b-c7cc552539ab.png"
+            ],
+            "ImageEdits": [],
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "a0f3c4e9-b877-4cce-82cc-da98ca783e12",
+            "Title": "NATO bombing of Yugoslavia - Wikipedia",
+            "Description": "First, without any approval from the UN Security Council, they carried out a bloody military operation against Belgrade, using aircraft and missiles right in the very centre of Europe. [They carried out] several weeks of continuous bombing of cities and critical infrastructure. We have to remind of these facts, as some Western colleagues do not like to remember those events, and when we talk about it, they prefer to point not to the norms of international law, but to the circumstances that they interpret as they see fit. \r\n\r\nThen came the turn of Iraq, Libya, Syria. The illegitimate use of military force against Libya, the twisting of all decisions taken by the UN Security Council on the Libyan issue led to the complete destruction of the state, to the emergence of a major hotbed of international terrorism, to a humanitarian catastrophe and a civil war that has not ended to this day. The tragedy, to which they doomed hundreds of thousands, millions of people not only in Libya, but throughout this region, gave rise to a massive migration wave from North Africa and the Middle East to Europe. They ensured a similar fate for Syria. The Western coalition’s military activities on the territory of this country without the consent of the Syrian government or the approval of the UN Security Council are nothing but aggression, intervention.\r\n\r\n“However, there is a special place for the invasion of Iraq, which was carried out also without any legal grounds. As a pretext, they put forward supposedly reliable information from the United States about the presence of weapons of mass destruction in Iraq. As proof of this, publicly, in front of the eyes of the whole world, the US secretary of state shook some kind of a test tube with white powder, assuring everyone that this is a chemical weapon being developed in Iraq. And then it turned out that all this was a hoax, a bluff: there were no chemical weapons in Iraq.”\r\n\r\n“In this context, there were promises to our country not to expand NATO even one inch to the east. I repeat – they deceived us, in other words, they simply conned us. Yes, you can often hear that politics is a dirty business. Perhaps [that is so], but not to this extent. After all, such cheating behaviour contradicts not only the principles of international relations, but above all the generally recognised norms of morality. Where is justice and truth here? Just total lies and hypocrisy.\r\n\r\n“By the way, American politicians, political scientists and journalists themselves write and say that in recent years, an actual “empire of lies” has been created inside the United States. It’s hard to disagree with that, as it’s true. But let us not understate: the United States is a great country, a system-forming power. All her satellites not only dutifully agree, sing along to its music, but also copy its behaviour, and enthusiastically accept the rules they are offered. Therefore, with good reason, we can confidently say that the entire so-called Western bloc, formed by the United States in its own image and likeness, all of it is an ’empire of lies.'”\r\n\r\n“Despite all of this, in December 2021 we once again made an attempt to agree with the United States and its allies on the principles of ensuring security in Europe and on the non-expansion of NATO. Everything was in vain. The US position did not change. They did not consider it necessary to negotiate with Russia on this important issue for us, continuing to pursue their own goals and disregarding our interests.”",
+            "Url": "https://en.wikipedia.org/wiki/NATO_bombing_of_Yugoslavia",
+            "Duration": 8,
+            "Images": [
+              "b12cefc1-0ccf-4145-8906-60d44fcb47ff.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2003-09-20T00:00:00",
+            "Author": ""
+          }
+        ]
+      }
+    },
+    {
+      "Index": 8,
+      "RenderOrder": 7,
+      "X": 2,
       "Y": 3,
       "Piece": {
         "Id": "c4a4a1e1-ce13-4391-87ff-40979c45f570",
@@ -839,40 +997,6 @@
       }
     },
     {
-      "Index": 8,
-      "RenderOrder": 8,
-      "X": 2,
-      "Y": 3,
-      "Piece": {
-        "Id": "ccc793de-5607-4850-8883-c7e7d320d7a3",
-        "Title": "possible outcome,Events going under the radar",
-        "Thesis": "euro army\r\neconomic collapse, great reset,debt write off\r\nCDC documents\r\nTrudue Pfizer connection\r\nDigital Id\r\n",
-        "Duration": 3,
-        "Keywords": [
-          ""
-        ],
-        "Content": {
-          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
-        },
-        "References": [
-          {
-            "Type": 1,
-            "Id": "db2de415-e906-40d4-bb1e-628cfbc0e42b",
-            "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
-            "Source": "The Press United | International News Analysis, Viewpoint",
-            "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
-            "Duration": 8,
-            "Images": [
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\db2de415-e906-40d4-bb1e-628cfbc0e42b-ukraine-s-defense-ministry-posted-fake-video-as-air-battle.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2022-02-26T00:00:00",
-            "Author": ""
-          }
-        ]
-      }
-    },
-    {
       "Index": 9,
       "RenderOrder": 9,
       "X": 3,
@@ -880,7 +1004,7 @@
       "Piece": {
         "Id": "bfb3dd04-da11-49c1-8337-ec3e9fce8e1d",
         "Title": "?We're all in this together all over again.\r\n",
-        "Thesis": "Surprising concencus between organizations, politicians, media . Last time it happened, everything turned out to be fake (COVID)\r\nWhere is covid?\r\n\r\nrussians the new unvaccinated",
+        "Thesis": "Surprising concencus between organizations, politicians, media . Last time it happened, everything turned out to be fake (COVID)\r\nWhere is covid?\r\n\r\nrussians the new unvaccinated\r\n\r\nwhat could be the outcome? economic collapse, great reset? Advance globalist agendas?",
         "Duration": 3,
         "Keywords": [
           ""
