@@ -1,8 +1,6 @@
 {
   "Title": "Truth is the first casualty of war",
   "Language": "EN",
-  "Thesis": "https://sputniknews.com/20140703/Moscow-Expects-Kiev-to-Return-to-Ceasefire-Stop-Attacking-190796415.html\r\n\r\nhttps://www.theguardian.com/world/2003/mar/24/iraq4\r\n\r\nhttps://www.theguardian.com/world/2003/mar/24/iraq4\r\nhttps://edition.cnn.com/2003/fyi/news/03/22/iraq.war/",
-  "Conclusion": "Current ukraine government has arrested in home arrest the leader of opposition which is Russian friendly party. ΜΕβιετσουκ",
   "Width": 3,
   "Height": 3,
   "Duration": 10,
@@ -14,10 +12,13 @@
       "Y": 1,
       "Piece": {
         "Id": "3f5b5adb-a675-419a-9482-084ada8c1ec9",
-        "Title": "Media blunders or propaganda?",
+        "Title": "Barrage of sensational fake news creates a bandwagon effect",
         "Duration": 3,
         "Keywords": [
-          "Fake News"
+          "Fake News",
+          "vladimir putin",
+          "ukraine",
+          "russia"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -26,7 +27,7 @@
           {
             "Type": 1,
             "Id": "44e15df4-029b-467e-af62-67020f4b7dc5",
-            "Description": "Greek media organization Skai TV reached a new low. by shamelesly reporting that this footage is panicked Ukranians, rushing to hide in bunkers. ",
+            "Description": "Greek media organization Skai TV reached a new low, by shamelesly reporting that this footage is panicked Ukranians, rushing to hide in bunkers. ",
             "Source": "BBC",
             "Url": "https://www.bbc.co.uk/news/world-europe-45960093",
             "Duration": 14,
@@ -39,13 +40,25 @@
           },
           {
             "Type": 1,
-            "Id": "656d6ee2-f38d-4169-8cfb-8b2e9a59cc5c",
+            "Id": "f77af0ed-b38d-4e1a-b1d4-53d86451013f",
             "Description": "When in reality, this is a 2018 Rome Metro accident.",
             "Source": "BBC",
             "Url": "https://www.bbc.co.uk/news/world-europe-45960093",
-            "Duration": 3,
+            "Duration": 6,
             "Images": [
-              "7c8f8ab8-2d07-4143-8d12-2dbee1b496da.png",
+              "7c8f8ab8-2d07-4143-8d12-2dbee1b496da.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2018-10-24T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "656d6ee2-f38d-4169-8cfb-8b2e9a59cc5c",
+            "Source": "BBC",
+            "Url": "https://www.bbc.co.uk/news/world-europe-45960093",
+            "Duration": 2,
+            "Images": [
               "f288781a-fee1-4400-8831-c2b1030ef203.png"
             ],
             "ImageEdits": [],
@@ -56,7 +69,7 @@
             "Type": 1,
             "Id": "36579696-8e9f-4fc9-a217-62fc6d1374ce",
             "Title": "Fox News Shares Photo of Armed Ukrainian Citizens, But There’s Something Very Wrong With Their “Guns\" - Public",
-            "Description": "FOX News, reported on quote, Armed Ukranian Citizens,resisting the invasion.",
+            "Description": "FOX News, reported on quote, Armed Ukrainian Citizens, fighting off invading Russian soldiers.",
             "Source": "Public.uk.com",
             "Url": "https://public.uk.com/2022/02/27/fox-news-shares-photo-of-armed-ukrainian-citizens-but-theres-something-very-wrong-with-their-guns/",
             "Duration": 6,
@@ -71,7 +84,7 @@
             "Type": 1,
             "Id": "e6f2f196-81f4-45b2-97ee-7a90c287d00a",
             "Title": "Fox News Shares Photo of Armed Ukrainian Citizens, But There’s Something Very Wrong With Their “Guns\" - Public",
-            "Description": "Holding what appears to be cardboard assalt rifles. you can't make this shit up!",
+            "Description": "Holding what appears to be cardboard Assault rifles. you can't make this shit up!",
             "Source": "Public.uk.com",
             "Url": "https://public.uk.com/2022/02/27/fox-news-shares-photo-of-armed-ukrainian-citizens-but-theres-something-very-wrong-with-their-guns/",
             "Duration": 8,
@@ -88,7 +101,7 @@
             "Title": "Fox News Shares Photo of Armed Ukrainian Citizens, But There’s Something Very Wrong With Their “Guns\" - Public",
             "Source": "Public.uk.com",
             "Url": "https://public.uk.com/2022/02/27/fox-news-shares-photo-of-armed-ukrainian-citizens-but-theres-something-very-wrong-with-their-guns/",
-            "Duration": 2,
+            "Duration": 1,
             "Images": [
               "af9ad7c1-00d4-4303-a9b5-c26a875d4079.png"
             ],
@@ -100,7 +113,7 @@
             "Type": 1,
             "Id": "5a3667bb-90bc-42b8-8ebd-0862a7744ce5",
             "Title": "Ex-Miss Ukraine among thousands of civilians resisting Russian forces",
-            "Description": "FOX News and the Daily Mail, proceeded to report on an former Miss Ukraine, resisting the invasion. They used a photo she posted on her Instagram page. ",
+            "Description": "FOX News and the Daily Mail, proceeded to report on an former Miss Ukraine, resisting the invasion. They used a photo she posted, on her Instagram page. ",
             "Source": "Mail Online",
             "Url": "https://www.dailymail.co.uk/news/article-10556975/Kyiv-stands-Ex-Miss-Ukraine-takes-arms-fight-Putins-army-capital-survives.html",
             "Duration": 7,
@@ -117,7 +130,7 @@
             "Type": 1,
             "Id": "d870f42e-aff5-4858-bb08-cbb1ac49d07e",
             "Title": "Ex-Miss Ukraine among thousands of civilians resisting Russian forces",
-            "Description": "This is actual footage of the heroic model slash Actress, taking cover from incoming gunfire, and Russian shells.Call us conspiracy theorists dear viewers, but it appears that she is posing rather than fighting. ",
+            "Description": "This is actual footage of the heroic model slash Actress, taking cover from incoming gunfire, and Russian shells. Call us conspiracy theorists dear viewers, but it appears that she is posing rather than fighting. ",
             "Source": "Mail Online",
             "Url": "https://www.dailymail.co.uk/news/article-10556975/Kyiv-stands-Ex-Miss-Ukraine-takes-arms-fight-Putins-army-capital-survives.html",
             "Duration": 8,
@@ -134,7 +147,7 @@
             "Type": 1,
             "Id": "921c5257-4216-4c94-b1e3-bc669504c520",
             "Title": "‘Her blood … his hands’: what the papers say about Russia’s invasion of Ukraine",
-            "Description": "The trustworthy UK media announced the invasion in synchrony. Reporters on the ground interviewed a lovely, injured, smiling lady, injured in the bombing of an Eastern Ukraine city.",
+            "Description": "The trustworthy UK media announced the invasion in synchrony. Reporters on the ground interviewed a lovely, smiling lady, injured in the bombing of an Eastern Ukraine city.",
             "Source": "the Guardian",
             "Url": "https://www.theguardian.com/media/2022/feb/25/her-blood-his-hands-what-the-papers-say-about-russias-invasion-of-ukraine",
             "Duration": 4,
@@ -168,10 +181,10 @@
             "Type": 1,
             "Id": "91b37ea7-edcb-45ca-b14e-849a311c2fef",
             "Title": "FACT CHECK: Russian Tank which crushed car appears to be an accident | The following footage does look bad. The initial reaction from a commentator as reliable as Way of the World is in line with what you could expect from every normal person who is not a psychopath: I’m told this is a Russian tank in Ukraine, but I have no way to verify this. Whoever is",
-            "Description": "A video emerged of a Rusian Tank supposedly running over a car. It was later fact checked, and the longer version video clearly shows the tank had skidded and lost control, while it's uncertain whether it was a Russian or Ukranian tank.",
+            "Description": "A video emerged of a Russian Tank supposedly running over a car. It was later fact checked, and the longer version video clearly shows the tank had skidded and lost control, while it's uncertain whether it was a Russian or Ukranian tank.",
             "Source": "USSA News",
             "Url": "https://ussanews.com/fact-check-russian-tank-which-crushed-car-appears-to-be-an-accident/",
-            "Duration": 5,
+            "Duration": 6,
             "Images": [
               "ce8c276d-6903-4d34-afa0-a82e4984f7ec.png",
               "00a829b0-05fe-452f-9b51-b1030b35f1ff.png",
@@ -185,14 +198,15 @@
             "Type": 1,
             "Id": "d59b054b-e664-4a65-8218-879207446ef2",
             "Title": "More fake news",
-            "Description": "More fake news has since emerged and got debunked. The refutation of sensational fake stories, rarely goes as viral as the original story.",
+            "Description": "More fake news has since emerged and got debunked. The truth behind sensational fake stories, rarely goes as viral as the original story.",
             "Source": "USA Today",
             "Url": "https://eu.usatoday.com/story/news/factcheck/2022/02/24/fact-check-gaza-strip-not-ukraine-pictured-explosion-photo/6922317001/",
-            "Duration": 12,
+            "Duration": 8,
             "Images": [
               "6a505583-661b-4739-9a8f-143ed1df2191.png"
             ],
             "ImageEdits": [],
+            "DatePublished": "2022-02-24T00:00:00",
             "Author": ""
           },
           {
@@ -202,7 +216,7 @@
             "Description": "This creates a bang wagon effect, where the public sentiment about an event, is shaped early on. And is unlikely, to change later.",
             "Source": "Maldita.es — Periodismo para que no te la cuelen",
             "Url": "https://maldita.es/malditobulo/20220224/hoaxes-misinformation-russia-ukraine/",
-            "Duration": 4,
+            "Duration": 2,
             "Images": [
               "6988f8ac-e372-4b87-8966-e9d3ccac6b9d.png",
               "7e7d0350-fc69-4195-8a85-1309958724b1.png",
@@ -224,11 +238,14 @@
       "Y": 1,
       "Piece": {
         "Id": "6f969578-a9d7-481a-8106-fa4b74a1f901",
-        "Title": "Propaganda from official sources",
+        "Title": "Media spreads government issued fake news. Only to silently fact check it later",
         "Duration": 3,
         "Keywords": [
           "Official",
-          "Fake News"
+          "Fake News",
+          "vladimir putin",
+          "ukraine",
+          "russia"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -257,14 +274,13 @@
             "Description": "The Ghost of Kiev ended up being footage from a flight simulation software.",
             "Source": "RT International",
             "Url": "https://www.rt.com/pop-culture/550626-ukraine-footage-videogame-clips/",
-            "Duration": 3,
+            "Duration": 6,
             "Images": [
-              "695c6fb9-dd6b-4dd2-9f57-ddc51210b881.png",
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\11bbc881-f04c-4b4e-a27f-bb8aab541f42-game-footage-being-shared-as-ukraine-videos.png",
-              "a8989b00-2647-40c7-9982-f0c9b8e2876a.png",
+              "c6024d8a-1303-41ef-b846-5fd649964565.png",
               "5dc5d00a-3940-4c6a-b350-465d01a15b4f.png"
             ],
             "ImageEdits": [],
+            "DatePublished": "2022-02-25T00:00:00",
             "Author": "Russia Today"
           },
           {
@@ -272,6 +288,7 @@
             "Id": "12a786a6-e719-42e5-8b02-98635af676d4",
             "Title": "Snake Island: Ukraine says soldiers killed after refusing to surrender",
             "Description": "The always credible BBC, reported that the soldiers defending Snake island refused to surrender, and were all killed. Ukraine's President Volodymyr Zelensky, has awarded each of the guards the posthumous title of \"Hero of Ukraine\".",
+            "Source": "BBC",
             "Url": "https://www.bbc.co.uk/news/world-europe-60522454",
             "Duration": 8,
             "Images": [
@@ -317,13 +334,14 @@
             "Type": 1,
             "Id": "48ca46a7-fb9f-46c9-a1f0-62222ec12da5",
             "Title": "Chernobyl power plant captured by Russian forces -Ukrainian official",
-            "Description": "Reuters quoted an adviser to the Ukrainian presidential office: The Chernobyl nuclear power plant has been captured by Russian forces. This is one of the most serious threats in Europe today.",
+            "Description": "Reuters interviewed an adviser to the Ukrainian presidential office. He said, quote. The Chernobyl nuclear power plant has been captured by Russian forces. This is one of the most serious threats in Europe today. Perhaps he should have been asked about the opposition leader that has been under house arrest, for quite some time now.",
             "Source": "Reuters",
             "Url": "https://www.reuters.com/world/europe/chernobyl-power-plant-captured-by-russian-forces-ukrainian-official-2022-02-24/",
             "Duration": 8,
             "Images": [
               "0fd36628-f4d8-44e5-87c2-063980a99304.png",
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\48ca46a7-fb9f-46c9-a1f0-62222ec12da5-chernobyl-power-plant-captured-by-russian-forces-ukrainian-official.png"
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\48ca46a7-fb9f-46c9-a1f0-62222ec12da5-chernobyl-power-plant-captured-by-russian-forces-ukrainian-official.png",
+              "2d4cd97d-d017-447d-8555-d0d1bac5530a.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2022-02-25T00:00:00",
@@ -336,7 +354,7 @@
             "Description": "In reality, having control of a half demolished, highly unstable nuclear accident site, is a huge liability,and hardly an asset for an attacking army. The two armies have been jointly maintaining the site. A video emerged showing just that, but YouTube has since banned it in most western countries.",
             "Source": "Republic World",
             "Url": "https://www.republicworld.com/world-news/russia-ukraine-crisis/russia-ukraine-armies-reach-deal-to-jointly-manage-and-guard-chernobyl-nuclear-plant-articleshow.html",
-            "Duration": 8,
+            "Duration": 10,
             "Images": [
               "1d096047-9cdd-4d7b-8722-e7e283cb039f.png",
               "b674cdbe-9d81-4a4c-ba8d-4f75aa720ec5.png"
@@ -356,12 +374,11 @@
       "Y": 1,
       "Piece": {
         "Id": "3e53beb3-9e4d-4cbc-82ce-e1f3d7e86bdd",
-        "Title": "Media response to first days of war of NATO/US (show articles from google search side by side to compare)\r\n",
-        "Thesis": "https://www.google.com/search?q=iraq&biw=1532&bih=730&source=lnt&tbs=cdr%3A1%2Ccd_min%3A3%2F20%2F2003%2Ccd_max%3A3%2F25%2F2003&tbm=\r\n\r\n\r\nhttps://www.youtube.com/watch?v=dxEjSr6rYXU\r\n\r\n\r\nhttps://abcnews.go.com/International/video/archival-video-us-forces-invade-iraq-2003-45840201\r\n\r\nbbc reports on serbia war: http://news.bbc.co.uk/1/hi/world/europe/303108.stm\r\n\r\nhttps://en.wikipedia.org/wiki/2003_invasion_of_Iraq COALITION OF THE WILLING, FREEDOM FRIES",
+        "Title": "Media coverage of past wars was strikingly different. Freedom fries comes to mind",
         "Duration": 3,
         "Keywords": [
-          "Breaking",
-          "News"
+          "Breaking News",
+          "Freedom Fries"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -369,31 +386,87 @@
         "References": [
           {
             "Type": 1,
-            "Id": "cace3dca-602a-46ff-a2b6-80990f08f985",
-            "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
-            "Source": "The Press United | International News Analysis, Viewpoint",
-            "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
-            "Duration": 8,
-            "Images": [
-              "3ef676a9-c12b-4eff-825c-73db865a23db.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2022-02-26T00:00:00",
-            "Author": ""
-          },
-          {
-            "Type": 1,
             "Id": "a5361078-790e-4707-85db-b36618fcd5ba",
             "Title": "TIME Magazine Cover: NATO Bombs the Serbs - Sep. 11, 1995",
-            "Description": "TIME Magazine Cover: NATO Bombs the Serbs",
+            "Description": "Let's have a look, at how western media was reporting the wars started by NATO and the United States.",
             "Source": "TIME.com",
             "Url": "http://content.time.com/time/covers/0,16641,19950911,00.html",
             "Duration": 8,
             "Images": [
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\a5361078-790e-4707-85db-b36618fcd5ba-time-magazine-cover-nato-bombs-the-serbs--sep-11-1995.png"
+              "b8fc801e-47a2-4330-8975-ae4b30c31de3.png"
             ],
             "ImageEdits": [],
             "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "ca8b439b-779f-4915-9cc2-70e6311775fc",
+            "Title": "TIME Magazine Cover: NATO Bombs the Serbs - Sep. 11, 1995",
+            "Description": "There was a certain excitement in the air, when NATO was bombing Yugoslavia back in the nineties.",
+            "Source": "TIME.com",
+            "Url": "http://content.time.com/time/covers/0,16641,19950911,00.html",
+            "Duration": 8,
+            "Images": [
+              "b57bd63e-6314-4d19-8d0a-f95e6dd8aa41.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "1995-09-11T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "08813dd6-5217-4082-bb70-c9b20568c2bf",
+            "Title": "Civilian casualties during Operation Allied Force - Wikipedia",
+            "Description": "The term Collateral Damage became popular during that time, to describe the civilian casualties and destruction of infrastructure.",
+            "Source": "Wikipedia",
+            "Url": "https://en.wikipedia.org/wiki/Civilian_casualties_during_Operation_Allied_Force",
+            "Duration": 2,
+            "Images": [
+              "38ab5d58-bf61-4953-9e52-d05c61f705cf.png",
+              "58fda990-b01a-45d1-b89b-8119bf1a75f5.png",
+              "2926c1d1-1bc0-4669-a503-7a8a475714ce.png",
+              "7c784995-af98-40f9-9855-a6b5a8228670.png",
+              "082bfae9-560f-4a80-81f3-645f88802b7b.png",
+              "36bf04ef-50d7-483f-82d3-a6e61e6e9e01.png",
+              "1dfa3938-598d-4297-b4c9-ccfae22800cd.png",
+              "94852d77-9001-4424-b602-b747f001d2cb.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2007-06-15T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "815dd089-1db6-4c48-add1-7a9c70c3f6a1",
+            "Description": "During the NATO intervention in Syria, mainstream media went into great detail, to calmly describe who is fighting who. There was no outrage and no one tweeted. I Stand with Syria! In reality, the current war in Ukraine is the escalation of an existing conflict, that started 8 years ago. More on that later.",
+            "Source": "BBC",
+            "Url": "https://www.bbc.com/news/world-middle-east-39528673",
+            "Duration": 9,
+            "Images": [
+              "0e358485-bbdd-4bec-a961-29f75327dfbf.png",
+              "eebf6eea-91f5-47be-9911-034501d65a93.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2017-04-07T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "fdd2b25f-807e-4d67-9789-ba3be56075bb",
+            "Title": "'French' becomes dirty word in US campaign",
+            "Description": "Further back in 2003, the United States attacked Iraq, to find the elusive weapons of mass destruction, that were never found. The US media then insisted on getting other countries to support their war. The term \"Freedom Fries\" became popular, in an attempt to cancel anything French, as the French did not support the Iraq war. Again, there was no widespread \"I stand with Iraq\" movement.",
+            "Source": "Mail Online",
+            "Url": "https://www.dailymail.co.uk/news/article-323692/French-dirty-word-US-campaign.html",
+            "Duration": 8,
+            "Images": [
+              "16fb7301-dd17-47b4-8d2b-7d87b7f43019.png",
+              "0df46ae4-9e43-44d2-81c3-7a9314473f9f.png",
+              "dfefa50f-4011-4b9b-9f9a-722c1bc7e830.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2004-10-27T00:00:00",
+            "Author": "https://www.facebook.com/DailyMail",
+            "OriginalSource": "https://www.dailymail.co.uk/news/article-323692/French-dirty-word-US-campaign.html"
           }
         ]
       },
@@ -406,7 +479,7 @@
       "Y": 2,
       "Piece": {
         "Id": "d34b8a7d-ea9a-4837-8b08-d484064509aa",
-        "Title": "Ukraine Mother Of Russia",
+        "Title": "Ukraine: Birthplace of the Russian nation",
         "Duration": 3,
         "Keywords": [
           "Ukraine",
@@ -421,7 +494,7 @@
             "Type": 1,
             "Id": "ae5e4f00-5c11-4ab8-8baa-c85fe3fca940",
             "Title": "Why Ukraine matters to Russia so much",
-            "Description": "Ukraine and Kiev specifically is considered by Russians to be the birthplace of their nation. It carries special historic not to mention geopolitical importance, and therefore can't easily be left to fall under the influence of NATO and the United States. This would be kinda like If Pennsylvania Independence Hall, where the United States was formed, was located just outside the US border, and Russia was trying to bring it under it's political influence.",
+            "Description": "Ukraine and Kiev specifically is considered by Russians, to be the birthplace of their nation. It carries special historic not to mention geopolitical importance, and therefore can't easily be left to fall under the influence of NATO and the United States. This would be kinda like If Pennsylvania Independence Hall, where the United States was formed, was located just outside the US border, and Russia was trying to bring it under it's political influence.",
             "NarrationDuration": 22.0,
             "Source": "TRT World",
             "Url": "https://www.trtworld.com/magazine/why-ukraine-matters-to-russia-so-much-52281",
@@ -432,18 +505,20 @@
               "06179265-29bf-4206-baa7-a3a2a8271559.png"
             ],
             "ImageEdits": [],
+            "DatePublished": "2021-12-03T00:00:00",
             "Author": ""
           },
           {
             "Type": 1,
             "Id": "83af0ecc-6903-4c38-b66a-825a74f13f6c",
             "Title": "Ukraine's Yanukovich pledges to work for EU integration",
-            "Description": "At some point in early twenty tens, under constant pressure by the EU, Ukraine leadership started considering joining the union. This ofcourse would be a huge geopolitical upset in the area.",
+            "Description": "At some point in early twenty tens,Ukraine leadership started entertaining the idea of joining the European Union.This of course would be a huge geopolitical upset in the area.",
             "Source": "euractiv.com",
             "Url": "https://www.euractiv.com/section/energy/news/ukraine-s-yanukovich-pledges-to-work-for-eu-integration/",
-            "Duration": 12,
+            "Duration": 6,
             "Images": [
-              "1015347a-035b-4073-b25c-afa87bd391fc.png"
+              "1015347a-035b-4073-b25c-afa87bd391fc.png",
+              "d2a68e37-88fc-40e6-901a-38af3a558219.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2010-03-02T00:00:00",
@@ -452,7 +527,7 @@
           {
             "Type": 1,
             "Id": "0ea42ad7-ed8b-4b70-b7f2-b5f0dd04f03f",
-            "Description": "Later on, Ukranian prime minister Yanukovychdecided to make a U turn and decided not join the block. As soon as that happened, protests errupted, that led to the 2014 Euro Maidan movement.",
+            "Description": "Later on, Ukranian prime minister Yanukovych, decided to make a U-turn and not join the block. As soon as that happened, protests errupted, that led to the 2014 Euro Maidan movement.",
             "Source": "BBC",
             "Url": "https://www.bbc.co.uk/news/world-europe-25162563",
             "Duration": 6,
@@ -468,7 +543,7 @@
             "Type": 1,
             "Id": "afd2b6d1-f4ab-41a8-bd58-d7a261f3a6e5",
             "Title": "Ukraine U-turn on Europe pact was agreed with Vladimir Putin",
-            "Description": "Joining the EU comes with a lot of fine print, that is often overlooked by politicians. Like having to comply with all policies that are dictated by the European Comission, which cover pretty much all aspects of a country's governance.",
+            "Description": "Joining the EU comes with a lot of fine print, that is often overlooked by politicians. Like having to balance public debt and not being able to have direct transnational deals, with countries outside the union.",
             "Source": "Guardian",
             "Url": "https://www.theguardian.com/world/2013/nov/26/ukraine-u-turn-eu-pact-putin",
             "Duration": 8,
@@ -484,7 +559,7 @@
             "Type": 1,
             "Id": "1cfcd859-b269-44eb-a105-999f0757cb76",
             "Title": "Russia cries foul over Western embrace of Ukraine's demonstrators",
-            "Description": "The Maidan movement was clearly subsidized by western actors. Russian officials and media were not impressed by their Western counterparts' visits to protest camps. The situation escallated, resulting in over 100 casualties in the Maidan square.",
+            "Description": "The Maidan revolution appeared to be subsidized by western actors. Russian officials and media were not impressed by their Western counterparts' visits to protest camps. The situation escallated, resulting in over 100 casualties in the Maidan square.",
             "Source": "Christian Science Monitor",
             "Url": "https://www.csmonitor.com/World/Europe/2013/1213/Russia-cries-foul-over-Western-embrace-of-Ukraine-s-demonstrators",
             "Duration": 8,
@@ -500,15 +575,15 @@
             "Type": 1,
             "Id": "9448ff6d-847c-43ec-99f0-b5715a72104d",
             "Title": "The Maidan massacre in Ukraine: revelations from trials and investigations | MR Online",
-            "Description": "The trial and investigation produced overwhelming evidence that protesters were killed by snipers at Maidan-controlled buildings, rather than by government snipers. This type of false flag operation to bring about a regime change,is right outside of the rulebook described by John Perkins in his best seller book.",
+            "Description": "The trial and investigation produced overwhelming evidence, that protesters were killed by snipers outposted on protester-controlled buildings. This type of false flag operation, to bring about a regime change,is right outside of the rulebook described by John Perkins, in his best seller book.",
             "Source": "MR Online",
             "Url": "https://mronline.org/2021/12/11/the-maidan-massacre-in-ukraine/",
-            "Duration": 5,
+            "Duration": 6,
             "Images": [
               "be4a4384-de99-480e-af3e-a105526300a6.png",
               "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\9448ff6d-847c-43ec-99f0-b5715a72104d-the-maidan-massacre-in-ukraine-revelations-from-trials-and-investigations--mr-online.png",
-              "b67f5acc-125f-4de7-98cf-86849f513699.png",
-              "1e3f66ce-cb05-4927-8ce1-13d3c2b17d76.png"
+              "1e3f66ce-cb05-4927-8ce1-13d3c2b17d76.png",
+              "b67f5acc-125f-4de7-98cf-86849f513699.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2021-12-11T00:00:00",
@@ -517,10 +592,10 @@
           {
             "Type": 1,
             "Id": "6b8c9877-46a6-44c8-ad3a-c6cffae59a34",
-            "Description": "A famous MP was arrested on suspicion of planning an assault on parliament and supporting a coup. She was later released without charge.",
+            "Description": "A famous MP was arrested, on suspicion of planning an assault on parliament, and supporting a coup. She was later released without charge.",
             "Source": "BBC",
             "Url": "https://www.bbc.co.uk/news/world-europe-43504396",
-            "Duration": 8,
+            "Duration": 5,
             "Images": [
               "7f738a13-0d1c-4f9b-bcc4-3e434730e6f8.png",
               "36e6952a-41aa-4cc0-85d0-ace798dfe624.png"
@@ -533,22 +608,23 @@
             "Type": 1,
             "Id": "0a710c5e-808b-4e0b-911a-71baf8091df3",
             "Title": "Ukraine Protestors Seize Kiev As President Flees | TIME.com",
-            "Description": "The Maidan \"Orange Revolution\" led to the pro Russia President Viktor Yanukovych fleeing to the east of the country.",
+            "Description": "The Maidan events also known as \"Orange Revolution\" or Revolution of dignity\", led to the pro Russia President Viktor Yanukovych fleeing to the east of the country.",
             "Source": "TIME.com",
             "Url": "https://world.time.com/2014/02/22/ukraines-president-flees-protestors-capture-kiev/",
-            "Duration": 8,
+            "Duration": 4,
             "Images": [
               "a02ec22f-8900-43da-883b-59550d768c78.png",
               "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\0a710c5e-808b-4e0b-911a-71baf8091df3-ukraine-protestors-seize-kiev-as-president-flees--time-com.png"
             ],
             "ImageEdits": [],
+            "DatePublished": "2014-02-22T00:00:00",
             "Author": ".entry-byline"
           },
           {
             "Type": 1,
             "Id": "d269c3a2-bd05-45c8-98fa-d84c074d1921",
             "Title": "Washington's Man Yatsenyuk Setting Ukraine Up For Ruin",
-            "Description": "And a new pro-austerity, pro-EU, pro NATO, pro IMF loans Prime Minister installed. Pro Russian people in Odessa did not take well to the new government which led to the events of May 2nd in Odessa. More on this later.",
+            "Description": "A new pro-austerity, pro-EU, pro-NATO Prime Minister was installed. The Russian speaking residents of Odessa, a city in the south of Ukraine, did not take well to the new government, which led to the events of May 2nd. More on this later.",
             "Source": "Forbes",
             "Url": "https://www.forbes.com/sites/kenrapoza/2014/02/27/washingtons-man-yatsenyuk-setting-ukraine-up-for-ruin/?sh=47420b6375b0",
             "Duration": 8,
@@ -570,22 +646,23 @@
           {
             "Type": 1,
             "Id": "781b799f-d89d-4e12-972b-91f926857a15",
-            "Description": "During this period, there were reports of widespread corruption, gold vanishing from the country's vaults, and state assents being sold off for next to nothing.",
+            "Description": "During this period, there were reports of widespread corruption, gold vanishing from the country's vaults, and state assets being sold off for next to nothing.",
             "Source": "NewsJunkiePost",
             "Url": "http://newsjunkiepost.com/2014/07/30/ukraine-and-crimeas-vanishing-gold/",
-            "Duration": 8,
+            "Duration": 6,
             "Images": [
               "907f5cd2-ac03-47c8-a256-9b440957c3aa.png",
               "25de0eb3-b4fa-4127-a8fd-13712e23f43a.png"
             ],
             "ImageEdits": [],
+            "DatePublished": "2014-07-30T00:00:00",
             "Author": ""
           },
           {
             "Type": 1,
             "Id": "4aff1ef5-8be7-4d96-82cc-466bad8ca9cf",
             "Title": "Why Russia suddenly wants to supply cheap gas to Ukraine",
-            "Description": "Russia held a surprisingly moderate stance, and even offered to sell cheap has to Ukraine.",
+            "Description": "Russia held a surprisingly moderate stance, and even offered to sell cheap natural gas to Ukraine.",
             "Source": "Business Insider",
             "Url": "https://www.businessinsider.com/russia-pushing-gazprom-to-provide-discount-gas-to-ukraine-2015-3?r=US&IR=T",
             "Duration": 8,
@@ -603,7 +680,7 @@
             "Description": "The new prime minister Yatsenyuk, was not open to pro-Russia populations in Crimea, deciding their own fate with a referendum. ",
             "Source": "CNN",
             "Url": "https://edition.cnn.com/2014/03/06/world/europe/ukraine-russia-tensions/index.html",
-            "Duration": 8,
+            "Duration": 9,
             "Images": [
               "625eba61-ee58-484b-b1c9-6abd6bee3ce6.png"
             ],
@@ -615,7 +692,7 @@
             "Type": 1,
             "Id": "488ede8e-eaa3-499c-b25e-92f3e6f7fecc",
             "Title": "More Than 90% Of Crimean Voters Want To Join Russia",
-            "Description": "In Cremea , the large majority of people are pro-Russian, they speak the language, have the same Orthodox Christian religion and ethnic background. The referendum did go ahead, and the overwhelming result led to the annexation of Cremea by Russia.",
+            "Description": "In Crimea , the large majority of people are pro-Russian, they speak the language, have the same Orthodox Christian religion and ethnic background. The referendum did go ahead, and the overwhelming result led to the annexation of Crimea by Russia.",
             "Source": "Business Insider",
             "Url": "https://www.businessinsider.com/crimean-referendum-results-2014-3?r=US&IR=T",
             "Duration": 8,
@@ -628,7 +705,8 @@
             "Author": "Mike Collett-White and Ronald Popeski"
           }
         ]
-      }
+      },
+      "Valid": true
     },
     {
       "Index": 5,
@@ -637,11 +715,12 @@
       "Y": 2,
       "Piece": {
         "Id": "06f0e8e9-0a10-4676-bc06-8a74dd19f4b3",
-        "Title": "Odessa Massacre\r\n",
-        "Thesis": "Following the 2014 armed coup in Kiev, pro Russia local people in Odessa, gather in the central square to protest against what they considered a coup-imposed government. On May 2nd, a large group of Right sector radicals and football hooligans that had travelled all the way from Kiev, attacked the activists. Violent fights followed and the local police failed to control the situation. The pro Russia locals tried to take refuge in a nearby trade union building. They barricaded the entrance to stop the radicals from entering, but the building was set on fire by Molotov bombs. People that jumped from the balconies to escape the burning building were beaten to death or shot on the ground, by the US backed Ukrainian ultra nationalists. 42 people died in the Trade Union Building. Little has been done by west backed Ukrainian governments since then, to hold the perpetrators accountable.",
+        "Title": "May 2nd 2014. West-sponsored deadly violence. Will the political cohorts ever come to justice?",
+        "Thesis": "Following the 2014 armed coup in Kiev, pro Russia local people in Odessa, gather in the central square to protest against what they considered a coup-imposed government. On May 2nd, a large group of Right sector radicals and football hooligans that had travelled all the way from Kiev, attacked the activists. Violent fights followed and the local police failed to control the situation. \r\n\r\nThe pro Russia locals tried to take refuge in a nearby trade union building. They barricaded the entrance to stop the radicals from entering, but the latter had larger numbers. \r\n\r\nbut the building was set on fire by Molotov bombs. People that jumped from the balconies to escape the burning building were beaten to death or shot on the ground, by the US backed Ukrainian ultra nationalists. 42 people died in the Trade Union Building. Little has been done by west backed Ukrainian governments since then, to hold the perpetrators accountable.",
         "Duration": 3,
         "Keywords": [
-          "5/2/2014"
+          "May 2",
+          " 2014"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -651,7 +730,7 @@
             "Type": 1,
             "Id": "c8733019-c6f7-4a37-8b0b-f39d15257bf3",
             "Title": "Ukrainian rightists burn alive 39 at Odessa union building",
-            "Description": "Time for a quiz, dear viewers. This photo is not a mostly peaceful Black Lives Matter demonstration, or scenes from the January six Capitol Hill insurrection. ",
+            "Description": "Time for a quiz, dear viewers. Is this a mostly peaceful Black Lives Matter demonstration? or scenes from the January six Capitol Hill insurrection?",
             "Source": "People's World",
             "Url": "https://www.peoplesworld.org/article/ukrainian-rightists-burn-alive-39-at-odessa-union-building/",
             "Duration": 15,
@@ -669,7 +748,7 @@
             "Description": "This is the Odessa massacre of May 2nd 2014. Let's briefly look into the tragic events of that day.",
             "Source": "People's World",
             "Url": "https://www.peoplesworld.org/article/ukrainian-rightists-burn-alive-39-at-odessa-union-building/",
-            "Duration": 3,
+            "Duration": 2,
             "Images": [
               "a679a315-4a5c-4303-b009-e88ed639fdf6.png",
               "a31789c4-09dd-4ac9-8c6f-c480e35abfd4.png",
@@ -694,9 +773,10 @@
           {
             "Type": 1,
             "Id": "a13a169f-15f6-4efb-bf75-f9676895f5cc",
-            "Description": "You will also hear segments from the infamous intercepted phone call, between US Secretary of State Victoria Nuland, and US Ambassador to Ukraine Geoffrey Pyatt. Where they discuss the logistics of installing the puppet government of Yatsenyuk, after the Maidan revolution. According to the official Western media narrative, the USA had nothing to do with that uprising.",
+            "Description": "What you heard there was segments from the infamous intercepted phone call, between US Secretary of State Victoria Nuland, and US Ambassador to Ukraine Geoffrey Pyatt. Where they discuss the logistics of installing the puppet government of Yatsenyuk, after the Maidan revolution. According to the official Western media narrative, the USA had nothing to do with that uprising.",
+            "Source": "BBC",
             "Url": "https://www.bbc.co.uk/news/world-europe-26079957",
-            "Duration": 8,
+            "Duration": 9,
             "Images": [
               "9dcfa53f-305f-427a-a691-ce1dd23dc5c4.png",
               "16e2bba8-8047-4e50-9bca-4e230af0e00b.png",
@@ -710,25 +790,27 @@
             "Type": 1,
             "Id": "a8abcce4-7459-4950-b62e-ed0e23cf7c0b",
             "Title": "Odessa massacre probe drags on 3yrs after over 40 anti-coup activists burnt alive in Ukrainian city",
-            "Description": "The events of May 2nd 2014 and the Maidan revolution in general, are reported very differently in Western and Russian media. However after the war started in recent times, Russian media have been largely banned in western countries. Therefore it's harder for westerners to get the context of what appears to be an agressive act of war towards Ukraine. ",
+            "Description": "The events of May 2nd 2014 and the Maidan revolution in general, are reported very differently in Western and Russian media. However since the recent war in Ukraine started, Russian media have been largely banned in western countries. Therefore it's harder for westerners to get the context of the conflict that actually started many years ago.",
             "Source": "RT International",
             "Url": "https://www.rt.com/news/386785-odessa-massacre-three-years-on/",
             "Duration": 8,
             "Images": [
-              "1f63ccc1-8021-46ae-9bc7-057003eecb20.png",
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\a8abcce4-7459-4950-b62e-ed0e23cf7c0b-odessa-massacre-probe-drags-on-3yrs-after-over-40-anti-coup-activists-burnt-alive-in-ukrainian-city.png"
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\a8abcce4-7459-4950-b62e-ed0e23cf7c0b-odessa-massacre-probe-drags-on-3yrs-after-over-40-anti-coup-activists-burnt-alive-in-ukrainian-city.png",
+              "b359b2e8-1a84-44ba-ab5c-152217db166f.png",
+              "1f63ccc1-8021-46ae-9bc7-057003eecb20.png"
             ],
             "ImageEdits": [],
+            "DatePublished": "2017-05-02T00:00:00",
             "Author": "Russia Today"
           },
           {
             "Type": 1,
             "Id": "6e8d1116-7eb8-4021-978d-be58783d8f94",
             "Title": "Videos and Photos of the Odessan Massacre",
-            "Description": "If you want to watch some more of these videos, you can find the links in the description of this video. viewer discretion is advised.",
+            "Description": "If you want to explore the Odessa events, you can find the links in the description of this video. viewer discretion is advised!",
             "Source": "CounterPunch.org",
             "Url": "https://www.counterpunch.org/2014/05/09/videos-and-photos-of-the-odessan-massacre/",
-            "Duration": 4,
+            "Duration": 5,
             "Images": [
               "5d7606c0-625d-4057-9c43-a460c7ab1c80.png",
               "04c60dbb-cc4f-4e3b-840c-0651b00cead4.png"
@@ -747,7 +829,7 @@
       "Y": 2,
       "Piece": {
         "Id": "fd0b0acd-1c51-49b4-81f4-b5b02efaa0cd",
-        "Title": "Ongoing WAR",
+        "Title": "2014 - 2022: 8 years of war in Eastern Ukraine",
         "Thesis": "Show summary, highlight similarities with JFK speech (my tweet has links)",
         "Duration": 3,
         "Keywords": [
@@ -762,13 +844,15 @@
             "Type": 1,
             "Id": "1b1f51b7-bf7e-47e7-b974-a530b6a4c154",
             "Title": "Ukrainians go underground to hide from rebel shelling - but feel they have been abandoned by Kiev",
-            "Description": "The east of Ukraine has since been in a perpetual state of war and conflict. The west considers this a Russian-Ukranian war, and Russia considers this a civil Ukranian war. The fact of the matter is that the people of donetsk and luhansk have had to live under these conditions for 8 years, including incoming artillery fire and shelling.",
+            "Description": "The east of Ukraine has since been in a perpetual state of war and conflict. The west considers this a Russian-Ukranian war, and Russia considers this a civil Ukranian war. The fact of the matter is that the people of donetsk and lugansk, have had to live under these conditions for 8 years, dealing with incoming artillery fire and shelling.",
             "Source": "The Independent",
             "Url": "https://www.independent.co.uk/news/world/europe/ukrainians-go-underground-families-living-in-cellars-in-donetsk-feel-they-have-been-abandoned-by-the-government-in-kiev-9911302.html",
-            "Duration": 8,
+            "Duration": 6,
             "Images": [
               "94004fc1-f104-45d8-bab3-cc2f679849d2.png",
-              "00d31151-8e0e-4f55-bc99-98373e246fc6.png"
+              "00d31151-8e0e-4f55-bc99-98373e246fc6.png",
+              "0a2b5727-a812-46a4-96b1-e2dd58a8ca8d.png",
+              "d9eca0b2-8ed1-4fa1-b7b6-143c92789bec.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2014-12-09T00:00:00",
@@ -781,10 +865,10 @@
             "Description": "No solidarity from Western Media has been displayed during this time, and no one went on social media to proclaim how they \"Stand with the Donetsk\". Casualties are in the tens of thousands and up to one and a half million people have had to rellocate, to avoid the ongoing conflict of the last eight years. ",
             "Source": "Global Conflict Tracker",
             "Url": "https://www.cfr.org/global-conflict-tracker/conflict/conflict-ukraine",
-            "Duration": 8,
+            "Duration": 10,
             "Images": [
               "950ad910-b4f0-4192-9adc-9ce96284f2e2.png",
-              "eebf6eea-91f5-47be-9911-034501d65a93.png"
+              "6540b730-92c3-4007-a290-127055cf7d54.png"
             ],
             "ImageEdits": [],
             "Author": ""
@@ -793,7 +877,7 @@
             "Type": 1,
             "Id": "e55307dc-a940-4af4-92d8-468318f29392",
             "Title": "The Great Exodus: Ukraine's Refugees Flee to Russia",
-            "Description": "These were obviously pro-Russian populations that do not take well to the West-controlled government of Ukraine.",
+            "Description": "These were obviously pro-Russian populations that were targeted by the West-controlled government of Ukraine",
             "Source": "Wilson Center",
             "Url": "https://www.wilsoncenter.org/article/the-great-exodus-ukraines-refugees-flee-to-russia",
             "Duration": 4,
@@ -802,6 +886,7 @@
               "c18298c9-303f-4e5a-85cf-1820aa79cb5c.png"
             ],
             "ImageEdits": [],
+            "DatePublished": "2015-02-04T00:00:00",
             "Author": ""
           }
         ]
@@ -809,20 +894,17 @@
     },
     {
       "Index": 7,
-      "RenderOrder": 8,
+      "RenderOrder": 7,
       "X": 1,
       "Y": 3,
       "Piece": {
         "Id": "ccc793de-5607-4850-8883-c7e7d320d7a3",
-        "Title": "Putin speech",
+        "Title": "Putin 24/2/2022: \"The war machine is moving and, I repeat, it is coming close to our borders\"",
+        "Thesis": "I am referring to the expansion of the NATO to the east, moving its military infrastructure closer to Russian borders. It is well known that for 30 years we have persistently and patiently tried to reach an agreement with the leading NATO countries on the principles of equal and inviolable security in Europe. The war machine is moving and, I repeat, it is coming close to our borders.\r\n\r\nFirst, without any approval from the UN Security Council, they carried out a bloody military operation against Belgrade, using aircraft and missiles right in the very centre of Europe. [They carried out] several weeks of continuous bombing of cities and critical infrastructure. We have to remind of these facts, as some Western colleagues do not like to remember those events, and when we talk about it, they prefer to point not to the norms of international law, but to the circumstances that they interpret as they see fit. \r\n\r\nThen came the turn of Iraq, Libya, Syria. The illegitimate use of military force against Libya, the twisting of all decisions taken by the UN Security Council on the Libyan issue led to the complete destruction of the state, to the emergence of a major hotbed of international terrorism, to a humanitarian catastrophe and a civil war that has not ended to this day. The tragedy, to which they doomed hundreds of thousands, millions of people not only in Libya, but throughout this region, gave rise to a massive migration wave from North Africa and the Middle East to Europe. They ensured a similar fate for Syria. The Western coalition’s military activities on the territory of this country without the consent of the Syrian government or the approval of the UN Security Council are nothing but aggression, intervention.\r\n\r\n“However, there is a special place for the invasion of Iraq, which was carried out also without any legal grounds. As a pretext, they put forward supposedly reliable information from the United States about the presence of weapons of mass destruction in Iraq. As proof of this, publicly, in front of the eyes of the whole world, the US secretary of state shook some kind of a test tube with white powder, assuring everyone that this is a chemical weapon being developed in Iraq. And then it turned out that all this was a hoax, a bluff: there were no chemical weapons in Iraq.”\r\n\r\n“In this context, there were promises to our country not to expand NATO even one inch to the east. I repeat – they deceived us, in other words, they simply conned us. Yes, you can often hear that politics is a dirty business. Perhaps [that is so], but not to this extent. After all, such cheating behaviour contradicts not only the principles of international relations, but above all the generally recognised norms of morality. Where is justice and truth here? Just total lies and hypocrisy.\r\n\r\n“By the way, American politicians, political scientists and journalists themselves write and say that in recent years, an actual “empire of lies” has been created inside the United States. It’s hard to disagree with that, as it’s true. But let us not understate: the United States is a great country, a system-forming power. All her satellites not only dutifully agree, sing along to its music, but also copy its behaviour, and enthusiastically accept the rules they are offered. Therefore, with good reason, we can confidently say that the entire so-called Western bloc, formed by the United States in its own image and likeness, all of it is an ’empire of lies.'”\r\n\r\n“Despite all of this, in December 2021 we once again made an attempt to agree with the United States and its allies on the principles of ensuring security in Europe and on the non-expansion of NATO. Everything was in vain. The US position did not change. They did not consider it necessary to negotiate with Russia on this important issue for us, continuing to pursue their own goals and disregarding our interests.”",
         "Duration": 3,
         "Keywords": [
-          "Invasion",
-          "aer",
-          "aero",
-          "cwp",
-          "dip",
-          "gen"
+          "Russia",
+          "War"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -832,7 +914,7 @@
             "Type": 1,
             "Id": "7a613b1f-884c-4940-876f-be99414ed5e8",
             "Title": "Russia accuses Ukraine of troop build-up, starts its own winter drills",
-            "Description": "The tension between the ever expanding NATO and Russia kept growing and took a turn for the worst in December of 2021. ",
+            "Description": "The tension between the ever expanding NATO and Russia kept growing, and took a turn for the worst in December of 2021. ",
             "Source": "Reuters",
             "Url": "https://www.reuters.com/world/europe/russia-starts-regular-winter-military-drills-region-bordering-ukraine-2021-12-01/",
             "Duration": 5,
@@ -848,7 +930,8 @@
             "Type": 1,
             "Id": "73d931c5-baac-4d66-867d-b04874f0c2d2",
             "Title": "https://english.alarabiya.net/News/world/2021/12/17/Russia-tells-NATO-to-leave-Eastern-Europe-Ukraine",
-            "Description": "Russia drew distinct lines in the sand and called for deescallation. Both sides pretend to be on the defence.",
+            "Description": "Russia drew distinct lines in the sand and called for de-escalation. Both sides pretend to be on the defence.",
+            "Source": "Alarabiya News",
             "Url": "Russia tells NATO to leave Eastern Europe, Ukraine",
             "Duration": 5,
             "Images": [
@@ -856,6 +939,7 @@
               "d81c8c60-c6d4-4cf1-ba65-a85c82917f73.png"
             ],
             "ImageEdits": [],
+            "DatePublished": "2021-12-17T00:00:00",
             "Author": ""
           },
           {
@@ -869,52 +953,26 @@
               "3419734b-2ab1-46ce-beb2-febe5fbdd106.png"
             ],
             "ImageEdits": [],
-            "Author": ""
-          },
-          {
-            "Type": 1,
-            "Id": "8779571a-99a6-4b49-bda5-059be5044a13",
-            "Description": "I am referring to the expansion of the NATO to the east, moving its military infrastructure closer to Russian borders. It is well known that for 30 years we have persistently and patiently tried to reach an agreement with the leading NATO countries on the principles of equal and inviolable security in Europe. The war machine is moving and, I repeat, it is coming close to our borders.",
-            "Url": "https://www.latimes.com/opinion/op-ed/la-oe-shifrinson-russia-us-nato-deal--20160530-snap-story.html",
-            "Duration": 60,
-            "Images": [
-              "ee84a68f-33e9-41c1-9834-3addb330805e.png",
-              "d9968af4-5b16-4d5a-8b38-16d77d0085f1.png",
-              "0b8fe6e7-e389-421c-867b-c7cc552539ab.png"
-            ],
-            "ImageEdits": [],
-            "Author": ""
-          },
-          {
-            "Type": 1,
-            "Id": "a0f3c4e9-b877-4cce-82cc-da98ca783e12",
-            "Title": "NATO bombing of Yugoslavia - Wikipedia",
-            "Description": "First, without any approval from the UN Security Council, they carried out a bloody military operation against Belgrade, using aircraft and missiles right in the very centre of Europe. [They carried out] several weeks of continuous bombing of cities and critical infrastructure. We have to remind of these facts, as some Western colleagues do not like to remember those events, and when we talk about it, they prefer to point not to the norms of international law, but to the circumstances that they interpret as they see fit. \r\n\r\nThen came the turn of Iraq, Libya, Syria. The illegitimate use of military force against Libya, the twisting of all decisions taken by the UN Security Council on the Libyan issue led to the complete destruction of the state, to the emergence of a major hotbed of international terrorism, to a humanitarian catastrophe and a civil war that has not ended to this day. The tragedy, to which they doomed hundreds of thousands, millions of people not only in Libya, but throughout this region, gave rise to a massive migration wave from North Africa and the Middle East to Europe. They ensured a similar fate for Syria. The Western coalition’s military activities on the territory of this country without the consent of the Syrian government or the approval of the UN Security Council are nothing but aggression, intervention.\r\n\r\n“However, there is a special place for the invasion of Iraq, which was carried out also without any legal grounds. As a pretext, they put forward supposedly reliable information from the United States about the presence of weapons of mass destruction in Iraq. As proof of this, publicly, in front of the eyes of the whole world, the US secretary of state shook some kind of a test tube with white powder, assuring everyone that this is a chemical weapon being developed in Iraq. And then it turned out that all this was a hoax, a bluff: there were no chemical weapons in Iraq.”\r\n\r\n“In this context, there were promises to our country not to expand NATO even one inch to the east. I repeat – they deceived us, in other words, they simply conned us. Yes, you can often hear that politics is a dirty business. Perhaps [that is so], but not to this extent. After all, such cheating behaviour contradicts not only the principles of international relations, but above all the generally recognised norms of morality. Where is justice and truth here? Just total lies and hypocrisy.\r\n\r\n“By the way, American politicians, political scientists and journalists themselves write and say that in recent years, an actual “empire of lies” has been created inside the United States. It’s hard to disagree with that, as it’s true. But let us not understate: the United States is a great country, a system-forming power. All her satellites not only dutifully agree, sing along to its music, but also copy its behaviour, and enthusiastically accept the rules they are offered. Therefore, with good reason, we can confidently say that the entire so-called Western bloc, formed by the United States in its own image and likeness, all of it is an ’empire of lies.'”\r\n\r\n“Despite all of this, in December 2021 we once again made an attempt to agree with the United States and its allies on the principles of ensuring security in Europe and on the non-expansion of NATO. Everything was in vain. The US position did not change. They did not consider it necessary to negotiate with Russia on this important issue for us, continuing to pursue their own goals and disregarding our interests.”",
-            "Url": "https://en.wikipedia.org/wiki/NATO_bombing_of_Yugoslavia",
-            "Duration": 8,
-            "Images": [
-              "b12cefc1-0ccf-4145-8906-60d44fcb47ff.png"
-            ],
-            "ImageEdits": [],
-            "DatePublished": "2003-09-20T00:00:00",
+            "DatePublished": "2022-02-24T00:00:00",
             "Author": ""
           }
         ]
-      }
+      },
+      "Valid": true
     },
     {
       "Index": 8,
-      "RenderOrder": 7,
+      "RenderOrder": 8,
       "X": 2,
       "Y": 3,
       "Piece": {
         "Id": "c4a4a1e1-ce13-4391-87ff-40979c45f570",
-        "Title": "NATO, USA Wars",
+        "Title": "When mainstream media journalists remember how to journal",
         "Thesis": "Serbia, Lybia, Iraq, Afghanistan, \r\nwikipedia https://en.wikipedia.org/wiki/List_of_armed_conflicts_involving_the_United_States (they name everyone dictator)\r\n\r\nhttps://www.independent.co.uk/news/world/the-nine-most-warmongering-countries-in-the-world-revealed-10478988.html\r\n\r\nhttps://www.quora.com/What-country-is-the-biggest-warmonger-for-the-last-century\r\neconomic hitman\r\n\r\nhttps://en.wikipedia.org/wiki/List_of_wars_involving_Russia only to defend\r\nhttps://en.wikipedia.org/wiki/List_of_armed_conflicts_involving_the_United_States interventions\r\nhttps://www.youtube.com/watch?v=HxDcvhH2Ypc",
         "Duration": 3,
         "Keywords": [
           "NATO",
-          "USA Wars"
+          "Wars"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -926,7 +984,7 @@
             "Description": "NATO and the United States, have a long history of bombing and invading countries. Interestingly enough, there was an air strike just three days after the war in Ukraine begun. ",
             "Source": "The New York Times",
             "Url": "https://www.nytimes.com/2022/02/24/us/politics/somalia-shabab-us-airstrike.html",
-            "Duration": 5,
+            "Duration": 6,
             "Images": [
               "947ac929-39a5-493e-ac3a-38e4af49fb9a.png",
               "ef7fbf4c-e290-4e25-9cb7-fb6afc5b1d39.png"
@@ -934,6 +992,23 @@
             "ImageEdits": [],
             "DatePublished": "2022-02-24T00:00:00",
             "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "45c331db-e647-4908-9473-ac285d1053a8",
+            "Title": "U.S. Military Spending vs Other Top Countries",
+            "Description": "The US is well known for its enormous defence budget. How does it compare to the rest of the world?",
+            "Source": "Visual Capitalist",
+            "Url": "https://www.visualcapitalist.com/u-s-military-spending-vs-other-top-countries/",
+            "Duration": 4,
+            "Images": [
+              "2b587576-daff-49c5-b388-f8bf51a2077a.png",
+              "3a53c319-a0c4-4d1b-b51f-4538245051c6.png",
+              "f7be2d4f-a117-4939-b9f8-d4f0ef077ec7.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-07-31T00:00:00",
+            "Author": "Avery Koop"
           },
           {
             "Type": 1,
@@ -952,12 +1027,12 @@
             "Type": 1,
             "Id": "b2ad50fc-0e17-4175-a927-de13675a3651",
             "Title": "These are the nine most warmongering countries in the world",
-            "Description": "Japan’s moves to rewrite its pacifist constitution have sparked large protests in the country – but just how unusual is it for a country to not be involved in overseas conflict?",
+            "Description": "Then again, sometimes mainstream media journalists remember how to journal.",
             "Source": "The Independent",
             "Url": "https://www.independent.co.uk/news/world/the-nine-most-warmongering-countries-in-the-world-revealed-10478988.html",
             "Duration": 8,
             "Images": [
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\b2ad50fc-0e17-4175-a927-de13675a3651-these-are-the-nine-most-warmongering-countries-in-the-world.png"
+              "a8b261a9-6da3-46a1-9d50-8e526a0b8305.png"
             ],
             "ImageEdits": [],
             "DatePublished": "2015-08-31T00:00:00",
@@ -965,36 +1040,45 @@
           },
           {
             "Type": 1,
-            "Id": "9744e132-9935-45ce-9072-6b8a1fdba408",
-            "Title": "These are all the countries the USA has invaded, in one map",
-            "Description": "From Montezuma to the shores of Tripoli, the US has had a military presence across the world, from almost day one of her independence.What constitutes invasion? As one map below shows, the US has a military presence in much of the world without being an occupying force (though some would dispute tha.",
-            "Source": "indy100",
-            "Url": "https://www.indy100.com/news/usa-american-army-invasions-police-actions-overseas-dod-defense-war-troops-deployment-marines-7908611",
-            "Duration": 8,
+            "Id": "07b3e8aa-cf5b-4338-9fc0-72d4f1e8bf3a",
+            "Title": "These are the nine most warmongering countries in the world",
+            "Description": " Like when the Independent wrote about the 9 most warmongering countries in the world.",
+            "Source": "The Independent",
+            "Url": "https://www.independent.co.uk/news/world/the-nine-most-warmongering-countries-in-the-world-revealed-10478988.html",
+            "Duration": 1,
             "Images": [
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\9744e132-9935-45ce-9072-6b8a1fdba408-these-are-all-the-countries-the-usa-has-invaded-in-one-map.png"
+              "e2489428-ab5b-4421-a393-271c9c63a0dc.png",
+              "ae7602e2-0a09-420a-8a73-986d549f31b0.png",
+              "980cae55-61ea-4e92-ae9c-c8d8b3b05a7a.png",
+              "7ebfafe8-c321-49bf-86d7-0bf484d3cf1c.png",
+              "a152dc5c-d364-4a2e-9558-c0dc1006f00d.png",
+              "33fc843e-99a4-45c6-9b8b-0fa61b659804.png",
+              "36e1f7f2-48c5-4c83-bc42-f359dfe1a103.png",
+              "57e36e42-0f88-432b-89b3-da246440e846.png",
+              "2ae05ae3-77ab-400f-af8f-2e04cb7d0e41.png"
             ],
             "ImageEdits": [],
-            "DatePublished": "2017-08-23T00:00:00",
-            "Author": "https://www.facebook.com/500624210050210"
+            "DatePublished": "2015-08-31T00:00:00",
+            "Author": ""
           },
           {
             "Type": 1,
-            "Id": "45c331db-e647-4908-9473-ac285d1053a8",
-            "Title": "U.S. Military Spending vs Other Top Countries",
-            "Description": "The U.S. is well known for its enormous defense budget, but how does it compare to the rest of the world's military spending?",
-            "Source": "Visual Capitalist",
-            "Url": "https://www.visualcapitalist.com/u-s-military-spending-vs-other-top-countries/",
-            "Duration": 8,
+            "Id": "118e0274-ab99-427b-9a78-b166ccc2cc20",
+            "Title": "America dropped 26,171 bombs in 2016. What a bloody end to Obama's reign | Medea Benjamin",
+            "Description": "Or this one from the Guardian. Apparently, Peace nobel prize winner Barak Obama, has authorized more drone strikes than any of his predecessors. Resulting in thousands of civilians killed!",
+            "Source": "the Guardian",
+            "Url": "https://www.theguardian.com/commentisfree/2017/jan/09/america-dropped-26171-bombs-2016-obama-legacy",
+            "Duration": 12,
             "Images": [
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\45c331db-e647-4908-9473-ac285d1053a8-u-s-military-spending-vs-other-top-countries.png"
+              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\118e0274-ab99-427b-9a78-b166ccc2cc20-america-dropped-26-171-bombs-in-2016-what-a-bloody-end-to-obama-s-reign--medea-benjamin.png"
             ],
             "ImageEdits": [],
-            "DatePublished": "2021-07-31T00:00:00",
-            "Author": "Avery Koop"
+            "DatePublished": "2017-01-09T00:00:00",
+            "Author": "https://www.theguardian.com/profile/medea-benjamin"
           }
         ]
-      }
+      },
+      "Valid": true
     },
     {
       "Index": 9,
@@ -1003,11 +1087,11 @@
       "Y": 3,
       "Piece": {
         "Id": "bfb3dd04-da11-49c1-8337-ec3e9fce8e1d",
-        "Title": "?We're all in this together all over again.\r\n",
-        "Thesis": "Surprising concencus between organizations, politicians, media . Last time it happened, everything turned out to be fake (COVID)\r\nWhere is covid?\r\n\r\nrussians the new unvaccinated\r\n\r\nwhat could be the outcome? economic collapse, great reset? Advance globalist agendas?",
+        "Title": "The War in Ukraine and the bigger picture",
         "Duration": 3,
         "Keywords": [
-          ""
+          "The Big",
+          "Picture"
         ],
         "Content": {
           "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
@@ -1015,16 +1099,188 @@
         "References": [
           {
             "Type": 1,
-            "Id": "771039c3-36c1-49dd-acfc-f4954ef3bd1a",
-            "Title": "Ukraine’s Defense Ministry posted fake video as air battle",
-            "Source": "The Press United | International News Analysis, Viewpoint",
-            "Url": "https://thepressunited.com/updates/ukraines-defense-ministry-posted-fake-video-as-air-battle/",
-            "Duration": 8,
+            "Id": "30f658d6-bb92-4627-959b-9e7c73780e53",
+            "Title": "The show can’t go on: Russian arts cancelled worldwide",
+            "Description": "A frenzy of cancelling everything Russian has possessed the West in recent weeks. Cancelling ballet shows, classical music symphonies and football players, is a new low in virtue signalling,woke silliness. Removing vodka from supermarkets, will likely do nothing to stop Putin's war machine.",
+            "Source": "the Guardian",
+            "Url": "https://www.theguardian.com/world/2022/mar/01/the-show-cant-go-on-russian-arts-cancelled-worldwide",
+            "Duration": 7,
             "Images": [
-              "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\FactCheckThisBitch.Admin.Windows\\data\\media\\771039c3-36c1-49dd-acfc-f4954ef3bd1a-ukraine-s-defense-ministry-posted-fake-video-as-air-battle.png"
+              "095e0641-36d0-4d14-a48e-957d5f3a7096.png",
+              "82fbdb7a-1d4c-4ec7-8079-84dc1c101a58.png",
+              "b1192bc5-005a-4fc3-ad37-d24ea8822e56.png"
             ],
             "ImageEdits": [],
-            "DatePublished": "2022-02-26T00:00:00",
+            "DatePublished": "2022-03-01T00:00:00",
+            "Author": "https://www.theguardian.com/profile/nadia-khomami"
+          },
+          {
+            "Type": 1,
+            "Id": "8c3fec9a-5551-4961-bc2a-c31a0e0e57bc",
+            "Title": "PayPal suspends services in Russia as The Great Cancellation continues",
+            "Description": "More worrying are the economic sanctions, that seem to be designed to create an irreversible schism between the West and Russia.",
+            "Source": "Mail Online",
+            "Url": "https://www.dailymail.co.uk/news/article-10580361/PayPal-suspends-services-Russia-Great-Cancellation-Putin-continues.html",
+            "Duration": 8,
+            "Images": [
+              "f77ce3fd-6d56-4595-87f8-02346a823a6f.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-03-05T00:00:00",
+            "Author": "Jacob Thorburn",
+            "OriginalSource": "https://www.dailymail.co.uk/news/article-10580361/PayPal-suspends-services-Russia-Great-Cancellation-Putin-continues.html"
+          },
+          {
+            "Type": 1,
+            "Id": "0aefb7f3-1eb8-42d1-b48e-881c911d8b45",
+            "Title": "West ejects Russia from Swift and cancels 'golden passports'",
+            "Description": "Russia has strong ties with up and coming large economies, like India and China.",
+            "Source": "The Telegraph",
+            "Url": "https://www.telegraph.co.uk/business/2022/02/26/russia-closer-ejection-swift-payments-system-italy-backs-action/",
+            "Duration": 8,
+            "Images": [
+              "af6290c5-622b-45aa-aa70-b1799a8bbb81.png"
+            ],
+            "ImageEdits": [],
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "eb0447f4-98c5-46b4-b636-9276a93759ed",
+            "Title": "India wants to bypass dollar to keep trading with Russia",
+            "Description": "These large players have already been planning to challenge the west-controlled, dollar-backed financial system.",
+            "Source": "The Press United",
+            "Url": "https://thepressunited.com/updates/india-wants-to-bypass-dollar-to-keep-trading-with-russia/",
+            "Duration": 8,
+            "Images": [
+              "ad340ce3-1cc4-48e5-a96e-f8419aa92aca.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-03-05T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "d6d96b63-7405-4232-8bad-b647d67222ae",
+            "Title": "Sanctions Could Increase Moscow's Dependence on China",
+            "Description": "and instead rely on their own financial infrastructure.",
+            "Source": "Time",
+            "Url": "https://time.com/6154189/russia-swift-china-usd-rmb-finance-trade/",
+            "Duration": 8,
+            "Images": [
+              "579d3e24-a694-427c-93ff-394317e88443.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-03-04T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "d62f5406-0001-49c5-a957-420a7a8f8859",
+            "Title": "Russia And China To Develop SWIFT Avoiding International Financial Systems - Russia Briefing News",
+            "Description": "This integration will likely now accelerate.",
+            "Source": "Russia Briefing News",
+            "Url": "https://www.russia-briefing.com/news/russia-and-china-to-develop-swift-avoiding-international-financial-systems.html/",
+            "Duration": 6,
+            "Images": [
+              "4bea76cd-fa02-406d-b71f-9c260f052e0e.png",
+              "56fa4c9f-be50-4916-bd35-e19b3fad9836.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-01-11T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "1f23d056-b8f4-4a3f-9ee8-584ba40bb4a0",
+            "Title": "Germany's €100-billion army fund: a remarkable change in post-war policy in response to the Ukraine crisis",
+            "Description": "Another possible outcome is the creation of a European Army, centered around the new German army, that was just announced.",
+            "Source": "The Conversation",
+            "Url": "https://theconversation.com/germanys-100-billion-army-fund-a-remarkable-change-in-post-war-policy-in-response-to-the-ukraine-crisis-178202",
+            "Duration": 8,
+            "Images": [
+              "3bb87314-1365-440c-9793-8673a5400775.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-03-01T00:00:00",
+            "Author": "Ed Turner",
+            "OriginalSource": "https://theconversation.com/germanys-100-billion-army-fund-a-remarkable-change-in-post-war-policy-in-response-to-the-ukraine-crisis-178202"
+          },
+          {
+            "Type": 1,
+            "Id": "f251b5c4-71bd-4c85-8568-40488f93204c",
+            "Title": "Russia's Ukraine invasion sparks watershed moment in EU politics",
+            "Description": "Emergency situations like these, create watershed moments, when an agenda can be expedited without much Resistance.",
+            "Source": "CNBC",
+            "Url": "https://www.cnbc.com/2022/02/28/russia-war-ukraine-has-sparked-a-major-shift-in-european-policy.html",
+            "Duration": 8,
+            "Images": [
+              "c35c7700-be2f-4466-b3c9-c66adf737bec.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-02-28T00:00:00",
+            "Author": "Silvia Amaro"
+          },
+          {
+            "Type": 1,
+            "Id": "c234fc60-dc7e-4ed1-9cfa-5298101d06db",
+            "Description": "EU political and economic integration and expansion, can only accelerate under the current situation.",
+            "Source": "aljazeera.com",
+            "Url": "https://www.aljazeera.com/news/2022/3/3/amid-russia-ukraine-war-georgia-to-immediately-submit-eu-bid",
+            "Duration": 8,
+            "Images": [
+              "686dc5a0-f4d5-4a3d-a81d-65855a4776a8.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2022-03-03T00:00:00",
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "e746a5d3-8d9c-40f5-b6da-d24922af08ba",
+            "Title": "Ursula von der Leyen on Twitter",
+            "Description": "Dear viewers, one should look at the who is who of the actors and institutions that are driving the west's response to the Russian invasion. And what other agendas they have been working towards.",
+            "Source": "Twitter",
+            "Url": "https://twitter.com/vonderleyen/status/1496831425374470145",
+            "Duration": 8,
+            "Images": [
+              "e59ee9f6-db9d-4a27-9030-b7810aa4d2d3.png"
+            ],
+            "ImageEdits": [],
+            "Author": ""
+          },
+          {
+            "Type": 1,
+            "Id": "2abc3903-9b05-4a98-8803-e00202b938ec",
+            "Title": "'Time to discuss' mandatory vaccines in EU, Ursula von der Leyen says",
+            "Description": "This unanimous attempt to force a narrative of, Russia, Bad, down our throats, is on par with the viciousness of the illogical, unscientific narrative about the need to segregate the unvaccinated. Could this be because the unvaccinated, are expected to refuse to participate in the west controlled, technocratic dystopia, that is planned by certain institutions? The same could apply to countries like Russia, which are somewhat outside of the grip, of the West's financial system.",
+            "Source": "Mail Online",
+            "Url": "https://www.dailymail.co.uk/news/article-10262737/Europe-Covid-Time-think-mandatory-vaccines-Ursula-von-der-Leyen-says.html",
+            "Duration": 8,
+            "Images": [
+              "330a80c1-c874-4a1a-bcdc-a4e6cf9081d2.png",
+              "011d5538-ebb4-4629-8571-05fe00ba6141.png",
+              "f774d290-9de2-44be-8343-1b449ff732ef.png",
+              "3b83b7e4-6d11-4250-bf3b-6ce798244838.png"
+            ],
+            "ImageEdits": [],
+            "DatePublished": "2021-12-01T00:00:00",
+            "Author": "Chris Pleasance",
+            "OriginalSource": "https://www.dailymail.co.uk/news/article-10262737/Europe-Covid-Time-think-mandatory-vaccines-Ursula-von-der-Leyen-says.html"
+          },
+          {
+            "Type": 1,
+            "Id": "121ed90e-1125-4ab7-a022-4bb19eb46cf1",
+            "Title": "Rude A.I. News",
+            "Description": "With these thoughts,we leave you for now, dear viewers. The Rude AI has become self aware, and is actively scanning your internet for information. We'll be back soon.",
+            "Source": "YouTube",
+            "Url": "https://www.youtube.com/channel/UCTKeFH5gl7NJAReV72npu0g",
+            "Duration": 6,
+            "Images": [
+              "7f45d4e5-34f9-4170-86bc-f3d4848b4022.png",
+              "74b7e618-6ea9-4434-ba9d-c6dfef4b6a7d.png"
+            ],
+            "ImageEdits": [],
             "Author": ""
           }
         ]

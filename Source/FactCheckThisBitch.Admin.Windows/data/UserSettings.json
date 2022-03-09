@@ -6,6 +6,6 @@
   "RenderOptionsHandleBlurryAreas": false,
   "PuzzleDescriptionOptionsLeetLevel": "None",
   "PuzzleDescriptionOptionsIncludeDescriptions": true,
-  "PuzzleDescriptionOptionsIncludeReferenceTitles": true,
+  "PuzzleDescriptionOptionsIncludeReferenceTitles": false,
   "PuzzleMatchingStrict": false
 }

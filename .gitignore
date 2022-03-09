@@ -366,5 +366,7 @@ bin/
 obj/
 
 large_*
-*.large.*
+*large*
+*export*mp4
+*large.*
 chromedriver.exe

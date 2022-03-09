@@ -298,7 +298,7 @@ namespace FactCheckThisBitch.Render
         {
             var (debugTimeline, narrations) = GenerateNarrationTimeline();
 
-            const string startPhrase = "and, down the rabbit hole we go!";
+            const string startPhrase = "and down the rabbit hole we go!";
             const double startPhraseDuration = 2;
 
             StringBuilder narrationWithPauses = new StringBuilder($"[startSpeech v=Loud startSpeech]{startPhrase}");
