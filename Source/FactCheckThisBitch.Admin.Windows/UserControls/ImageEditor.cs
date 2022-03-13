@@ -17,6 +17,8 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private List<string> _images = new List<string>();
         public List<ImageEdit> ImageEdits;
 
+        public string BaseFolder;
+
         public List<string> Images
         {
             get => _images;
@@ -43,7 +45,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             for (int imageIndex = 0; imageIndex < Images.Count; imageIndex++)
             {
                 var imageFile = Images[imageIndex];
-                var imagePath = Path.Combine(Configuration.Instance().DataFolder, "media", imageFile);
+                var imagePath = Path.Combine(BaseFolder, imageFile);
                 PictureBox picture = new PictureBox();
                 picture.Tag = imageIndex;
                 picture.Width = 100;

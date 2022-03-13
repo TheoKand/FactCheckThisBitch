@@ -1,6 +1,8 @@
-﻿using System;
+﻿using FackCheckThisBitch.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace VideoFromArticle.Models
 {
@@ -12,6 +14,12 @@ namespace VideoFromArticle.Models
         public List<Article> Articles { get; set; }
 
         public DateTime? Created { get; set; }
+
+        [JsonIgnore]
+        public string FullTitle => Title != null ? $"{Title?.Sanitize()}" : null;
+
+        [JsonIgnore]
+        public string FileName => Title != null ? $"{FullTitle}.json" : null;
 
         public Slideshow()
         {

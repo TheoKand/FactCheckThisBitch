@@ -8,7 +8,8 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>VideoFromArticle.Windows</RootNamespace>
     <AssemblyName>VideoFromArticle.Windows</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -56,6 +57,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmSlideshow.resx">
+      <DependentUpon>frmSlideshow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -80,6 +84,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VideoFromArticle.Models\VideoFromArticle.Models.csproj">
+      <Project>{3551c233-5185-4a62-ab52-bc42e416ed76}</Project>
+      <Name>VideoFromArticle.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

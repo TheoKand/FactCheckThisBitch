@@ -3,6 +3,7 @@ using FactCheckThisBitch.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -57,6 +58,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             txtNarrationDuration.ValidationPattern = "^-?\\d*(\\.\\d+)?$";
             txtDatePublished.ValidationPattern = typeof(DateTime).RegExValidationPatternForType();
             var pieceTypes = Enum.GetValues(typeof(ReferenceType)).Cast<ReferenceType>();
+            imageEditor1.BaseFolder = Path.Combine(Configuration.Instance().DataFolder, "media");
             cboType.DataSource = pieceTypes;
         }
 

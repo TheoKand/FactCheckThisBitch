@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FackCheckThisBitch.Common\FackCheckThisBitch.Common.csproj" />
+  </ItemGroup>
+
 </Project>

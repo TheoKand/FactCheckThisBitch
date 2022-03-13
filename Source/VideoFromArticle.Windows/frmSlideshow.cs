@@ -12,6 +12,21 @@ namespace VideoFromArticle.Windows
 {
     public partial class frmSlideshow : Form
     {
+
+        //private Slideshow _slideshow;
+        //private bool _isDirty = false;
+
+        //public bool IsDirty
+        //{
+        //    get =>
+        //        _isDirty;
+        //    set
+        //    {
+        //        _isDirty = value;
+        //        this.Text = $"{_slideshow.FullTitle} {(_isDirty ? " - Modified" : "")}";
+        //    }
+        //}
+
         public frmSlideshow()
         {
             InitializeComponent();

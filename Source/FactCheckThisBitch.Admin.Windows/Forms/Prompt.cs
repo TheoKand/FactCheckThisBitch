@@ -20,7 +20,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             };
             Label textLabel = new Label() { Left = 20, Top = 20, Text = text };
             TextBox textBox = new TextBox() { Left = 20, Top = 50, Width = 420 };
-            Button confirmation = new Button() { Text = "Ok", Left = 350, Width = 100, Top = 100,Height=45, DialogResult = DialogResult.OK };
+            Button confirmation = new Button() { Text = "Ok", Left = 350, Width = 100, Top = 100, Height = 45, DialogResult = DialogResult.OK };
             confirmation.Click += (sender, e) => { prompt.Close(); };
             prompt.Controls.Add(textBox);
             prompt.Controls.Add(confirmation);

@@ -1,0 +1,14 @@
+{
+  "Id": "f4773afc-d9cf-4d3b-80c8-75f8b24af2f0",
+  "Title": "my slideshow",
+  "Articles": [
+    {
+      "Id": "9e354f8d-da6b-4740-a344-c751d5593be6",
+      "Url": "https://www.dailymail.co.uk/tvshowbiz/article-10607051/Amber-Davies-wows-red-gown-doused-water-sizzling-Cabaret-Stars-show.html",
+      "Title": "title",
+      "Images": []
+    }
+  ],
+  "FullTitle": "my-slideshow",
+  "FileName": "my-slideshow.json"
+}

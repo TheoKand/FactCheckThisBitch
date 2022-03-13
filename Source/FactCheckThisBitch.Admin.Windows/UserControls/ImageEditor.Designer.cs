@@ -56,10 +56,11 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoScroll = true;
             this.panel1.Location = new System.Drawing.Point(50, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(495, 94);
+            this.panel1.Size = new System.Drawing.Size(495, 108);
             this.panel1.TabIndex = 3;
             // 
             // openFileDialog1
@@ -87,7 +88,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.Controls.Add(this.btnAdd);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ImageEditor";
-            this.Size = new System.Drawing.Size(545, 94);
+            this.Size = new System.Drawing.Size(545, 108);
             this.ResumeLayout(false);
 
         }

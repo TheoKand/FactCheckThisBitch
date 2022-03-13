@@ -1,0 +1,29 @@
+﻿-Article form is instantiated with a url and fetches everything
+-edit text fields in textboxes
+-save images files in article folder
+-save button
+-speechelo integration. button to download narration, saves narration mp3 in article folder
+
+-slideshow form to allow edit article in form
+-slideshow form to allow delete article
+-reorder articles
+-button to Render slideshow in powerpoint
+	-create template powerpoint,save in assets folder
+	-Opens powerpoint for user to remove watermarks
+	-temporary: add narrations (?)
+	-create openShot editor template with one slideshow video and multiple narrations placed inside. One narration per article
+
+
+
+
+New video creation USER FLOW:
+	1 Open VideoFromArticle, create Slideshow. e.g. "Rihana pregnant"
+	2 search web for articles
+	3 add articles one by one 
+	4 Render
+		4.1 Render powerpoint slideshow, open and remove watermarks, save as MP4
+		4.2 Render OpenShow video, open and save as MP4
+	5 This is the finished slideshow in a video, it's a series of articles with a common theme. This is a section of a video
+	  or an entire video.
+	6 Optionally Repeat steps 1-4
+	7 Create larger video with one or more sections (could also be automated like step 4.2 with an openshot json file template)

@@ -1,0 +1,195 @@
+{
+  "Title": "New created at 13/03/2022 19:53:14",
+  "Language": "EN",
+  "Width": 4,
+  "Height": 3,
+  "Duration": 10,
+  "PuzzlePieces": [
+    {
+      "Index": 1,
+      "X": 1,
+      "Y": 1,
+      "Piece": {
+        "Id": "06765af6-f000-423d-8324-aa09672f419e",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [
+          "",
+          "dailymail",
+          "news",
+          "volodymyr zelensky",
+          "russia-ukraine conflict"
+        ],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 2,
+      "X": 2,
+      "Y": 1,
+      "Piece": {
+        "Id": "243d25e4-8aa7-4948-8355-207f9cb6fe5f",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 3,
+      "X": 3,
+      "Y": 1,
+      "Piece": {
+        "Id": "66453466-f6be-4c6d-9c20-652027f569b8",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 4,
+      "X": 4,
+      "Y": 1,
+      "Piece": {
+        "Id": "5be50bae-3299-455d-ac1c-3dcf9302192b",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 5,
+      "X": 1,
+      "Y": 2,
+      "Piece": {
+        "Id": "e4f26b4d-2472-4f6a-8e2d-6c55d409d1b0",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 6,
+      "X": 2,
+      "Y": 2,
+      "Piece": {
+        "Id": "1f02b114-9bb8-47aa-9c14-cda428febc4d",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 7,
+      "X": 3,
+      "Y": 2,
+      "Piece": {
+        "Id": "94f2dfea-aab9-4766-b505-12dbd03e0aa5",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 8,
+      "X": 4,
+      "Y": 2,
+      "Piece": {
+        "Id": "4ea0d352-ba91-42d3-b9b1-77909671af6c",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 9,
+      "X": 1,
+      "Y": 3,
+      "Piece": {
+        "Id": "aec4b12a-55b6-4e5a-bf55-cff49ae2419e",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 10,
+      "X": 2,
+      "Y": 3,
+      "Piece": {
+        "Id": "c1a9eb28-3fe8-4116-8c8e-ee525cf5af95",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 11,
+      "X": 3,
+      "Y": 3,
+      "Piece": {
+        "Id": "da308eb7-2b6a-44d0-991a-35fb73e7b3a0",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    },
+    {
+      "Index": 12,
+      "X": 4,
+      "Y": 3,
+      "Piece": {
+        "Id": "f475e1f4-535a-4639-bcac-be0779b03bd6",
+        "Title": "...Title...",
+        "Duration": 15,
+        "Keywords": [],
+        "Content": {
+          "$type": "FactCheckThisBitch.Models.Article, FactCheckThisBitch.Models"
+        },
+        "References": []
+      }
+    }
+  ]
+}

@@ -268,6 +268,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             {
                 this.Cursor = Cursors.WaitCursor;
                 Cursor.Current = Cursors.WaitCursor;
+                Application.DoEvents();
 
                 string puzzleOutputFolder =
                     Path.Combine(Configuration.Instance()

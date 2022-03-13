@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using OpenQA.Selenium.DevTools.V85.DOMDebugger;
 
 namespace FactCheckThisBitch.Admin.Windows.Forms
 {
@@ -175,6 +176,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 {
                     this.Cursor = Cursors.WaitCursor;
                     Cursor.Current = Cursors.WaitCursor;
+                    Application.DoEvents();
                     metaData = await onlineArticleParser.Download();
                 }
                 catch (Exception ex)
@@ -213,12 +215,33 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                 {
                     var imageFileName = $"{reference.Id}-{reference.Title.Sanitize()}.png";
                     var imagePath = Path.Combine(Configuration.Instance().DataFolder, "media", imageFileName);
-                    bool save = ArticleMetadataParser.SaveImage(image, imagePath);
-                    if (save)
+                    var fileSize = ArticleMetadataParser.SaveImage(image, imagePath);
+                    if (fileSize!=0)
                     {
                         reference.Images.Add(imagePath);
                     }
                 }
+
+                string additionalImages = metaData.TryGet("images");
+                if (!additionalImages.IsEmpty())
+                {
+                    var additionalImageIndex = 1;
+                    foreach (var additionalImage in additionalImages.Split("\n"))
+                    {
+                        var imageFileName = $"{reference.Id}-{reference.Title.Sanitize()}.{additionalImageIndex}.png";
+                        var imagePath = Path.Combine(Configuration.Instance().DataFolder, "media", imageFileName);
+                        var fileSize = ArticleMetadataParser.SaveImage(additionalImage, imagePath);
+                        if (fileSize!=0)
+                        {
+                            reference.Images.Add(imagePath);
+                        }
+
+                        additionalImageIndex++;
+                        if (additionalImageIndex == 25) break;
+                    }
+
+                }
+
             }
 
             _piece.References.Add(reference);

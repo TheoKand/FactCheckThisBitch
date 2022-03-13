@@ -196,8 +196,10 @@ namespace FackCheckThisBitch.Common
             return result;
         }
 
-        public static bool SaveImage(string url, string path)
+        public static long SaveImage(string url, string path)
         {
+            long fileLength = 0;
+
             try
             {
                 WebClient client = new WebClient();
@@ -209,16 +211,18 @@ namespace FackCheckThisBitch.Common
                     bitmap.Save(path, ImageFormat.Png);
                 }
 
+                fileLength = new FileInfo(path).Length;
+
                 stream.Flush();
                 stream.Close();
                 client.Dispose();
             }
             catch (Exception ex)
             {
-                return false;
+                return 0;
             }
 
-            return true;
+            return fileLength;
         }
     }
 }
