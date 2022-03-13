@@ -28,7 +28,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetworkStuff", "NetworkStuf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerVpnOrchestrator", "NetworkStuff\DockerVpnAndCURL\DockerVpnOrchestrator.csproj", "{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAutomation", "NetworkStuff\WebAutomation\WebAutomation.csproj", "{392703BB-6D5C-46D2-81FC-D1B5C2D59AB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoFromArticle.Windows", "VideoFromArticle.Windows\VideoFromArticle.Windows.csproj", "{A93B754D-2055-43B3-BA68-5742F6F237DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoFromArticle.Models", "VideoFromArticle.Models\VideoFromArticle.Models.csproj", "{3551C233-5185-4A62-AB52-BC42E416ED76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAutomation", "NetworkStuff\WebAutomation\WebAutomation.csproj", "{ACCBC87D-7F99-4727-A272-455FBE8CA87F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,10 +64,18 @@ Global
 		{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{392703BB-6D5C-46D2-81FC-D1B5C2D59AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{392703BB-6D5C-46D2-81FC-D1B5C2D59AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{392703BB-6D5C-46D2-81FC-D1B5C2D59AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{392703BB-6D5C-46D2-81FC-D1B5C2D59AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A93B754D-2055-43B3-BA68-5742F6F237DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A93B754D-2055-43B3-BA68-5742F6F237DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A93B754D-2055-43B3-BA68-5742F6F237DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A93B754D-2055-43B3-BA68-5742F6F237DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3551C233-5185-4A62-AB52-BC42E416ED76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3551C233-5185-4A62-AB52-BC42E416ED76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3551C233-5185-4A62-AB52-BC42E416ED76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3551C233-5185-4A62-AB52-BC42E416ED76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACCBC87D-7F99-4727-A272-455FBE8CA87F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACCBC87D-7F99-4727-A272-455FBE8CA87F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACCBC87D-7F99-4727-A272-455FBE8CA87F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACCBC87D-7F99-4727-A272-455FBE8CA87F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,7 +83,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2E14EF44-BEAB-4C85-85A5-B92C3AF8376D} = {3FD82304-0134-480F-85F5-801FE011AE48}
 		{C8A351B6-13D6-41EE-95C2-03E7DF1CE6AD} = {3FD82304-0134-480F-85F5-801FE011AE48}
-		{392703BB-6D5C-46D2-81FC-D1B5C2D59AB4} = {3FD82304-0134-480F-85F5-801FE011AE48}
+		{ACCBC87D-7F99-4727-A272-455FBE8CA87F} = {3FD82304-0134-480F-85F5-801FE011AE48}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {68040856-9BF9-49A4-AF0C-0C673A60F726}

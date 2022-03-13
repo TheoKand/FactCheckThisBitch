@@ -16,14 +16,14 @@ namespace FackCheckThisBitch.Common
         private static IDictionary<string, IEnumerable<string>> MetadataProperties =
             new Dictionary<string, IEnumerable<string>>()
             {
-                {"title", new[] {"title"}},
-                {"description", new[] {"description"}},
-                {"author", new[] {"author"}},
-                {"site_name", new[] {"site_name"}},
-                {"original-source", new[] {"original-source"}},
-                {"datePublished", new[] {"datePublished", "published", "published_time"}},
-                {"keywords", new[] {"keywords"}},
-                {"image", new[] {"image"}}
+                { "title", new[] { "title" } },
+                { "description", new[] { "description" } },
+                { "author", new[] { "author" } },
+                { "site_name", new[] { "site_name" } },
+                { "original-source", new[] { "original-source" } },
+                { "datePublished", new[] { "datePublished", "published", "published_time" } },
+                { "keywords", new[] { "keywords" } },
+                { "image", new[] { "image" } }
             };
 
         private readonly HttpClient _client;
@@ -48,17 +48,18 @@ namespace FackCheckThisBitch.Common
 
                 using (HttpContent content = response.Content)
                 {
-                    string html = null; //await content.ReadAsStringAsync();
-
+                    #region get html
+                    string html;
                     using (var sr = new StreamReader(await content.ReadAsStreamAsync(), Encoding.GetEncoding("utf-8")))
                     {
-                        html = await sr.ReadToEndAsync();
+                        html = (await sr.ReadToEndAsync()).StripLinefeeds();
                     }
+                    #endregion
 
-
-                    foreach (string propertyName in MetadataProperties.Keys)
+                    #region parse metadata
+                    foreach (var propertyName in MetadataProperties.Keys)
                     {
-                        foreach (string possibleMeta in MetadataProperties[propertyName])
+                        foreach (var possibleMeta in MetadataProperties[propertyName])
                         {
                             var propertyValue = TryGetMetadataProperty(html, possibleMeta);
                             if (!propertyValue.IsEmpty())
@@ -70,11 +71,38 @@ namespace FackCheckThisBitch.Common
                             }
                         }
                     }
+                    #endregion
+
+                    #region parse images
+
+                    var images = GetAdditionalImages(html);
+                    result.Add("images", string.Join("\n", images));
+                    #endregion
                 }
             }
 
-
             return result;
+        }
+
+
+        private List<string> GetAdditionalImages(string content)
+        {
+            string[] contentPatterns =
+            {
+                "<\\s*div[^>]*itemprop\\s*=\\s*[\\\"']articleBody[\\\"'][^>]*>(.*)<\\/\\s*div>",
+                @"<\s*article[^>]*>(.*)<\/article>"
+            };
+
+            var article = GetFirstRegExMatch(content, contentPatterns);
+            if (article == null) return null;
+
+            string[] imagePatterns =
+            {
+                "<\\s*img[^>]* data-src\\s*=\\s*[\"']([^'\"]*)[\"'][^>]*>",
+                "<\\s*img[^>]* src\\s*=\\s*[\"']([^'\"]*)[\"'][^>]*>"
+            };
+            var images = GetAllMatches(article, imagePatterns, " alt=",new [] {"jpg","png","tiff"});
+            return images;
         }
 
         private string TryGetMetadataProperty(string content, string property)
@@ -91,10 +119,6 @@ namespace FackCheckThisBitch.Common
             var result = GetFirstRegExMatch(content, patterns);
             if (result != null) return result;
 
-            if (content.Contains("Boy, 11, who died suddenly in his sleep to be given 'funeral he deserves'"))
-            {
-                Console.WriteLine("stop");
-            }
             patternTemplate = "itemprop[^\"]*\"propertyPlaceholder\"\\s*content=\\\"([^\\\"]*)";
             patterns = new string[]
             {
@@ -122,6 +146,54 @@ namespace FackCheckThisBitch.Common
             }
 
             return null;
+        }
+
+        private List<string> GetAllMatches(string content, string[] patterns, string imageElementMustContain=null, string[] imageUrlMustContainOneOfThese = null)
+        {
+            var result = new List<string>();
+            foreach (var pattern in patterns)
+            {
+                var matches = Regex.Matches(content, pattern);
+                foreach (Match match in matches)
+                {
+                    if (match.Groups.Count > 1)
+                    {
+                        var imageElement = match.Groups[0].Value;
+                        var imageUrl = match.Groups[1].Value.HtmlDecode();
+
+                        if (!result.Contains(imageUrl))
+                        {
+                            bool meetsCriteria = true;
+
+                            if (imageUrlMustContainOneOfThese != null)
+                            {
+                                if (!imageUrl.ContainsOneOfThese(imageUrlMustContainOneOfThese))
+                                {
+                                    meetsCriteria = false;
+                                }
+                            }
+
+                            if (!imageElementMustContain.IsEmpty())
+                            {
+                                if (!imageElement.Contains(imageElementMustContain,
+                                        StringComparison.InvariantCultureIgnoreCase))
+                                {
+                                    meetsCriteria = false;
+                                }
+                            }
+
+                            if (meetsCriteria)
+                            {
+                                result.Add(imageUrl);
+                            }
+
+                        }
+                    }
+                }
+
+            }
+
+            return result;
         }
 
         public static bool SaveImage(string url, string path)

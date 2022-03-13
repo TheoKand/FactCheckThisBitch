@@ -22,7 +22,7 @@ namespace WebAutomation.GoogleSearch
         private string _dummyPhrase = "vaccination near me";
 
         private string _testPhrases =
-            "died suddenly,dies of heart attack,his unexpected death,his sudden death,her sudden death,her unexpected death,died of cardiac arrest";
+            "died suddenly,dies of heart attack,his unexpected death,his sudden death,her sudden death,her unexpected death,died of cardiac arrest,sudden passing,suspected heart attack";
 
         private string _controlPhrases =
             "resignes,arrives,departs,time will tell,first glance,critics say,the question,make no mistake,blind eye";

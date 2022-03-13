@@ -48,3 +48,9 @@ Video checklist
 		- Final adjustments in video
 
 
+
+FONTS:
+	Arial
+	bahnschrift
+	Double Feature
+	

@@ -165,6 +165,19 @@ namespace FackCheckThisBitch.Common
             return false;
         }
 
+        public static bool ContainsOneOfThese(this string input, IEnumerable<string> words)
+        {
+            foreach (var word in words)
+            {
+                if (input.Contains(word, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public static IList<T> Swap<T>(this IList<T> list, int zeroBasedIndexA, int zeroBasedIndexB)
         {
             (list[zeroBasedIndexA], list[zeroBasedIndexB]) = (list[zeroBasedIndexB], list[zeroBasedIndexA]);
@@ -195,11 +208,12 @@ namespace FackCheckThisBitch.Common
                 .Replace("[endSpeech]", "")
                 .Replace("[sPause sec=1 ePause]", "");
         }
-        public static string StripLinefeeds(this string input, string replaceWith)
+        public static string StripLinefeeds(this string input, string replaceWith="")
         {
             return input.Replace("\r\n", replaceWith)
                 .Replace("\r", replaceWith)
-                .Replace("\n", replaceWith);
+                .Replace("\n", replaceWith)
+                .Replace(Environment.NewLine, replaceWith);
         }
 
         public static string SecondsToTimeline(this double seconds)
