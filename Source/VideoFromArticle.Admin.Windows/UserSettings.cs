@@ -25,6 +25,17 @@ namespace VideoFromArticle.Admin.Windows
             }
         }
 
+        private string _narrationOptionsVoice;
+        public string NarrationOptionsVoice
+        {
+            get => _narrationOptionsVoice;
+            set
+            {
+                _narrationOptionsVoice = value;
+                Save();
+            }
+        }
+
         [JsonIgnore]
         public string CurrentFilePath => _currentFile.IsEmpty()
             ? null

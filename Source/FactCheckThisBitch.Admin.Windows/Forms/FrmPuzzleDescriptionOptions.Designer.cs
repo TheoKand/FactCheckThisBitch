@@ -115,6 +115,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.Name = "FrmPuzzleDescriptionOptions";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Description Options";
             this.ResumeLayout(false);
             this.PerformLayout();

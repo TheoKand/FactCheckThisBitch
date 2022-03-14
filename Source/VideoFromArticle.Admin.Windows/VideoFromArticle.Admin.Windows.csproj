@@ -7,7 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="data\**" />
+    <Compile Remove="output\**" />
+    <Compile Remove="POC-Rihana\**" />
+    <EmbeddedResource Remove="data\**" />
+    <EmbeddedResource Remove="output\**" />
+    <EmbeddedResource Remove="POC-Rihana\**" />
+    <None Remove="data\**" />
+    <None Remove="output\**" />
+    <None Remove="POC-Rihana\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\FactCheckThisBitch.Admin.Windows\FactCheckThisBitch.Admin.Windows.csproj" />
+    <ProjectReference Include="..\FactCheckThisBitch.Render\FactCheckThisBitch.Render.csproj" />
     <ProjectReference Include="..\NetworkStuff\WebAutomation\WebAutomation.csproj" />
     <ProjectReference Include="..\VideoFromArticle.Models\VideoFromArticle.Models.csproj" />
   </ItemGroup>

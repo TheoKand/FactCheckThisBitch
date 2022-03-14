@@ -46,6 +46,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             {
                 var imageFile = Images[imageIndex];
                 var imagePath = Path.Combine(BaseFolder, imageFile);
+                
                 var imageFileInfo = new FileInfo(imagePath);
                 PictureBox picture = new PictureBox();
                 picture.Name = $"image{imageIndex}";
@@ -53,7 +54,14 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 picture.Width = 200;
                 picture.Height = 132;
                 picture.SizeMode = PictureBoxSizeMode.StretchImage;
-                picture.Image = Image.FromFile(imagePath);
+                if (File.Exists(imagePath))
+                {
+                    picture.Image = Image.FromFile(imagePath);
+                    string tooltip =
+                        $"{imageFile}\n{picture.Image?.Width}x{picture.Image?.Height} px\n{Math.Round((decimal)(imageFileInfo.Length / 1024), 0)}kb";
+                    new ToolTip().SetToolTip(picture, tooltip);
+                }
+                
                 picture.Top = 0;
                 picture.Left = index * (picture.Width + padding);
                 picture.Cursor = Cursors.Hand;
@@ -69,10 +77,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 picture.DragEnter += (sender, args) => { args.Effect = DragDropEffects.All; };
                 picture.DragDrop += (sender, args) =>
                 {
-                    var dragImageIndex = (int) args.Data.GetData(typeof(int));
-                    Images.Swap<string>((int) picture.Tag, dragImageIndex);
+                    var dragImageIndex = (int)args.Data.GetData(typeof(int));
+                    Images.Swap<string>((int)picture.Tag, dragImageIndex);
 
-                    var firstImage = panel1.Controls.Find($"image{(int) picture.Tag}",true).First();
+                    var firstImage = panel1.Controls.Find($"image{(int)picture.Tag}", true).First();
                     var firstEditButton = panel1.Controls.Find($"btnEdit{(int)picture.Tag}", true).First();
                     var firstDeleteButton = panel1.Controls.Find($"btnDelete{(int)picture.Tag}", true).First();
 
@@ -100,11 +108,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 picture.Click += (sender, args) =>
                 {
                     //Clipboard.SetText(imagePath);
-                    new Process {StartInfo = new ProcessStartInfo(imagePath) {UseShellExecute = true}}.Start();
+                    new Process { StartInfo = new ProcessStartInfo(imagePath) { UseShellExecute = true } }.Start();
                 };
-                string tooltip =
-                    $"{imageFile}\n{picture.Image.Width}x{picture.Image.Height} px\n{Math.Round((decimal)(imageFileInfo.Length / 1024),0)}kb";
-                new ToolTip().SetToolTip(picture, tooltip);
+
                 panel1.Controls.Add(picture);
 
                 var deleteLabel = new LinkLabel();
@@ -145,7 +151,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         {
             var image = (sender as Label).Tag.ToString();
 
-            var imageEdit = this.ImageEdits.FirstOrDefault(e => e.Image == image) ?? new ImageEdit() {Image = image};
+            var imageEdit = this.ImageEdits.FirstOrDefault(e => e.Image == image) ?? new ImageEdit() { Image = image };
 
             FrmImageEdit editForm = new FrmImageEdit(imageEdit);
             var result = editForm.ShowDialog();
@@ -160,7 +166,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            openFileDialog1.InitialDirectory = Path.Combine(Configuration.Instance().DataFolder, "media");
+            openFileDialog1.InitialDirectory = BaseFolder;
             openFileDialog1.Title = "Open Image";
             openFileDialog1.DefaultExt = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif;*.tiff";
             openFileDialog1.CheckFileExists = true;
@@ -172,7 +178,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 foreach (string fileNames in openFileDialog1.FileNames)
                 {
                     var imageNameWithoutPath = new FileInfo(fileNames).Name;
-                    var destinationImage = Path.Combine(Configuration.Instance().DataFolder, "media", imageNameWithoutPath);
+                    var destinationImage = Path.Combine(BaseFolder, imageNameWithoutPath);
                     if (fileNames.ToLower() != destinationImage.ToLower())
                     {
                         File.Copy(fileNames, destinationImage);
@@ -190,7 +196,13 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             if (Clipboard.ContainsImage())
             {
                 var imageName = $"{Guid.NewGuid()}.png";
-                var destinationImage = Path.Combine(Configuration.Instance().DataFolder, "media", imageName);
+                var folder = BaseFolder;
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+                var destinationImage = Path.Combine(folder, imageName);
+
                 Clipboard.GetImage().Save(destinationImage, ImageFormat.Png);
                 _images.Add(imageName);
                 LoadForm();

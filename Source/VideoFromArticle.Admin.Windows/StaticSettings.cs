@@ -15,7 +15,7 @@ namespace VideoFromArticle.Admin.Windows
         public static long MinimumArticleImageSize = 150 * 1024;
         public static long MinimumArticleImageWidth = 448;
         public static long MinimumArticleImageHeight = 336;
-        public static long MaximumArticleImageCount = 50;
+        //public static long MaximumArticleImageCount = 50;
 
     }
 }

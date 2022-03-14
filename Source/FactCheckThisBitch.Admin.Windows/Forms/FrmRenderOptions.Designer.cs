@@ -127,6 +127,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.Name = "FrmRenderOptions";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Options";
             this.ResumeLayout(false);
             this.PerformLayout();

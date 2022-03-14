@@ -42,6 +42,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.btnAddArticle = new System.Windows.Forms.LinkLabel();
             this.lstArticles = new System.Windows.Forms.ListBox();
             this.btnDelete = new System.Windows.Forms.LinkLabel();
+            this.btnRender = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(937, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(934, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -101,7 +102,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTitle.Size = new System.Drawing.Size(815, 77);
+            this.txtTitle.Size = new System.Drawing.Size(836, 77);
             this.txtTitle.TabIndex = 1;
             this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
             // 
@@ -129,7 +130,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 171);
+            this.label2.Location = new System.Drawing.Point(14, 144);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 20);
@@ -139,7 +140,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
             // btnAddArticle
             // 
             this.btnAddArticle.AutoSize = true;
-            this.btnAddArticle.Location = new System.Drawing.Point(85, 147);
+            this.btnAddArticle.Location = new System.Drawing.Point(140, 144);
             this.btnAddArticle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnAddArticle.Name = "btnAddArticle";
             this.btnAddArticle.Size = new System.Drawing.Size(38, 20);
@@ -156,17 +157,18 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.lstArticles.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lstArticles.FormattingEnabled = true;
             this.lstArticles.ItemHeight = 23;
-            this.lstArticles.Location = new System.Drawing.Point(85, 168);
+            this.lstArticles.Location = new System.Drawing.Point(14, 168);
             this.lstArticles.Margin = new System.Windows.Forms.Padding(4);
             this.lstArticles.Name = "lstArticles";
-            this.lstArticles.Size = new System.Drawing.Size(815, 165);
+            this.lstArticles.Size = new System.Drawing.Size(907, 349);
             this.lstArticles.TabIndex = 4;
+            this.lstArticles.SelectedIndexChanged += new System.EventHandler(this.lstArticles_SelectedIndexChanged);
             this.lstArticles.DoubleClick += new System.EventHandler(this.lstArticles_DoubleClick);
             // 
             // btnDelete
             // 
             this.btnDelete.AutoSize = true;
-            this.btnDelete.Location = new System.Drawing.Point(165, 147);
+            this.btnDelete.Location = new System.Drawing.Point(220, 144);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(56, 20);
@@ -175,11 +177,22 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.btnDelete.Text = "Delete";
             this.btnDelete.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnDelete_LinkClicked);
             // 
+            // btnRender
+            // 
+            this.btnRender.Location = new System.Drawing.Point(14, 524);
+            this.btnRender.Name = "btnRender";
+            this.btnRender.Size = new System.Drawing.Size(118, 48);
+            this.btnRender.TabIndex = 6;
+            this.btnRender.Text = "Render";
+            this.btnRender.UseVisualStyleBackColor = true;
+            this.btnRender.Click += new System.EventHandler(this.btnRender_Click);
+            // 
             // FrmSlideshow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(937, 586);
+            this.ClientSize = new System.Drawing.Size(934, 586);
+            this.Controls.Add(this.btnRender);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.lstArticles);
             this.Controls.Add(this.btnAddArticle);
@@ -219,5 +232,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
         private System.Windows.Forms.LinkLabel btnAddArticle;
         private System.Windows.Forms.ListBox lstArticles;
         private System.Windows.Forms.LinkLabel btnDelete;
+        private System.Windows.Forms.Button btnRender;
     }
 }

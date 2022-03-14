@@ -105,7 +105,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
                         var imagePath = Path.Combine(_slideshowArticle.ImagesFolder(), imageFileName);
 
                         var (fileInfo, width, height) = ArticleMetadataParser.SaveImage(additionalImage, imagePath);
-                        if (fileInfo.Length> StaticSettings.MinimumArticleImageSize && width>= StaticSettings.MinimumArticleImageWidth && height >= StaticSettings.MinimumArticleImageHeight)
+                        if (fileInfo?.Length> StaticSettings.MinimumArticleImageSize && width>= StaticSettings.MinimumArticleImageWidth && height >= StaticSettings.MinimumArticleImageHeight)
                         {
                             _slideshowArticle.Images.Add(new ArticleImage(image)
                             {
@@ -115,10 +115,14 @@ namespace VideoFromArticle.Admin.Windows.Forms
                         }
                         else
                         {
-                            File.Delete(imagePath);
+                            if (File.Exists(imagePath))
+                            {
+                                File.Delete(imagePath);
+                            }
+                            
                         }
 
-                        if (_slideshowArticle.Images.Count >= StaticSettings.MaximumArticleImageCount) break;
+                        //if (_slideshowArticle.Images.Count >= StaticSettings.MaximumArticleImageCount) break;
                     }
                 }
 
@@ -221,23 +225,51 @@ namespace VideoFromArticle.Admin.Windows.Forms
 
             EnsureFolders();
 
+            FrmNarrationOptions optionsForm = new FrmNarrationOptions();
+            var result = optionsForm.ShowDialog();
+            if (result != DialogResult.OK)
+                return;
+
             using (var speechelo = new Speechelo())
             {
-                SaveForm();
-                speechelo.Setup();
-                speechelo.GenerateNarration(_slideshowArticle.Narration,_slideshowArticle.NarrationAudioFilePath());
 
-                Text = $"{_slideshowArticle.Id} {_slideshowArticle.Diagnostics()}";
+                _slideshowArticle.Narration = txtNarration.Text;
+                _slideshowArticle.SanitizeNarration();
 
-                new Process { StartInfo = new ProcessStartInfo(_slideshowArticle.NarrationAudioFilePath()) { UseShellExecute = true } }.Start();
-                this.Activate();
-                OnSave?.Invoke();
+                try
+                {
+                    speechelo.Setup();
+                    speechelo.GenerateNarration(_slideshowArticle.Narration, optionsForm.Options.Voice, _slideshowArticle.NarrationAudioFilePath());
+                    _slideshowArticle.DurationInSeconds = _slideshowArticle.ArticleNarrationDuration().TotalSeconds;
+
+                    SaveForm();
+                    OnSave?.Invoke();
+
+                    Text = $"{_slideshowArticle.Id} {_slideshowArticle.Diagnostics()}";
+                    new Process { StartInfo = new ProcessStartInfo(_slideshowArticle.NarrationAudioFilePath()) { UseShellExecute = true } }.Start();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    this.Activate();
+                }
+
             }
         }
 
         private void btnOpenFolder_Click(object sender, EventArgs e)
         {
             new Process { StartInfo = new ProcessStartInfo( _slideshowArticle.Folder()) { UseShellExecute = true } }.Start();
+        }
+
+        private void btnPlayNarration_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (!_slideshowArticle.NarrationFileExists()) return;
+            _slideshowArticle.DurationInSeconds = _slideshowArticle.ArticleNarrationDuration().TotalSeconds;
+            new Process { StartInfo = new ProcessStartInfo(_slideshowArticle.NarrationAudioFilePath()) { UseShellExecute = true } }.Start();
         }
     }
 }

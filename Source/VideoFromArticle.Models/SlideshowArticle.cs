@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 using FackCheckThisBitch.Common;
 
 namespace VideoFromArticle.Models
@@ -19,13 +20,10 @@ namespace VideoFromArticle.Models
 
         public DateTime? Fetch { get; set; }
 
-        public int DurationInSeconds 
-        {
-            get
-            {
-                return 0;
-            }
-        }
+        [JsonIgnore]
+        public List<ArticleImage> RecycledImages { get; set; }
+
+        public double DurationInSeconds { get; set; }
 
         public override string ToString()
         {
@@ -37,6 +35,7 @@ namespace VideoFromArticle.Models
             Id = Guid.NewGuid().ToString();
             Title = $"New Article With Id {Id}";
             Images = new List<ArticleImage>();
+            RecycledImages = new List<ArticleImage>();
         }
     }
 

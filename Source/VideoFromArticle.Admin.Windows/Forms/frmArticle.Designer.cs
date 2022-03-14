@@ -47,6 +47,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.btnOpenAllImages = new System.Windows.Forms.LinkLabel();
             this.btnGenerateAudio = new System.Windows.Forms.LinkLabel();
             this.btnOpenFolder = new System.Windows.Forms.Button();
+            this.btnPlayNarration = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // btnCancel
@@ -196,7 +197,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.txtNarration.Multiline = true;
             this.txtNarration.Name = "txtNarration";
             this.txtNarration.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtNarration.Size = new System.Drawing.Size(1088, 276);
+            this.txtNarration.Size = new System.Drawing.Size(1088, 255);
             this.txtNarration.TabIndex = 5;
             // 
             // label4
@@ -226,10 +227,10 @@ namespace VideoFromArticle.Admin.Windows.Forms
             // 
             // btnGenerateAudio
             // 
-            this.btnGenerateAudio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGenerateAudio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnGenerateAudio.AutoSize = true;
             this.btnGenerateAudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnGenerateAudio.Location = new System.Drawing.Point(916, 379);
+            this.btnGenerateAudio.Location = new System.Drawing.Point(17, 662);
             this.btnGenerateAudio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnGenerateAudio.Name = "btnGenerateAudio";
             this.btnGenerateAudio.Size = new System.Drawing.Size(191, 20);
@@ -250,12 +251,27 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.btnOpenFolder.UseVisualStyleBackColor = true;
             this.btnOpenFolder.Click += new System.EventHandler(this.btnOpenFolder_Click);
             // 
+            // btnPlayNarration
+            // 
+            this.btnPlayNarration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnPlayNarration.AutoSize = true;
+            this.btnPlayNarration.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayNarration.Location = new System.Drawing.Point(216, 662);
+            this.btnPlayNarration.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnPlayNarration.Name = "btnPlayNarration";
+            this.btnPlayNarration.Size = new System.Drawing.Size(107, 20);
+            this.btnPlayNarration.TabIndex = 26;
+            this.btnPlayNarration.TabStop = true;
+            this.btnPlayNarration.Text = "Play Narration";
+            this.btnPlayNarration.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnPlayNarration_LinkClicked);
+            // 
             // FrmArticle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(1121, 774);
+            this.Controls.Add(this.btnPlayNarration);
             this.Controls.Add(this.btnOpenFolder);
             this.Controls.Add(this.btnGenerateAudio);
             this.Controls.Add(this.btnOpenAllImages);
@@ -277,6 +293,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(859, 726);
             this.Name = "FrmArticle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "SlideshowArticle";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmArticle_Load);
@@ -304,5 +321,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
         private System.Windows.Forms.LinkLabel btnOpenAllImages;
         private System.Windows.Forms.LinkLabel btnGenerateAudio;
         private System.Windows.Forms.Button btnOpenFolder;
+        private System.Windows.Forms.LinkLabel btnPlayNarration;
     }
 }

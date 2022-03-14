@@ -222,7 +222,7 @@ namespace FackCheckThisBitch.Common
                 return result;
 
             }
-            catch
+            catch(Exception ex)
             {
                 return (null, null, null);
             }

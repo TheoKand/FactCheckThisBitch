@@ -55,7 +55,7 @@ namespace WebAutomation
 
         }
 
-        public void GenerateNarration(string narration,string audioFilePath=null)
+        public void GenerateNarration(string narration,string voice= "ttsVoiceen-US-AriaNeural", string audioFilePath=null)
         {
             var txtNarration = _driver.FindWaitElement(By.Id("tts-tarea"), 60);
             txtNarration.Clear();
@@ -80,7 +80,7 @@ namespace WebAutomation
             {
             }
 
-            Thread.Sleep(10*1000);
+            Thread.Sleep(15*1000);
 
             ////wait until voice generated
             //while (IdOfLastGeneratedVoice() == idOfLastVoiceBeforeGeneration)

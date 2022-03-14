@@ -194,5 +194,29 @@ namespace FactCheckThisBitch.Render
 
             return newImage;
         }
+
+        public static Size GetImageSize(this string fileName)
+        {
+            using (Image image = Image.Load(fileName))
+            {
+                return image.Size();
+            }
+        }
+
+        public static (int newWidth,int newHeight) BestFit(int originalWidth, int originalHeight, int maxWidth, int maxHeight)
+        {
+            // To preserve the aspect ratio
+            float ratioX = (float)maxWidth / (float)originalWidth;
+            float ratioY = (float)maxHeight / (float)originalHeight;
+            float ratio = Math.Min(ratioX, ratioY);
+
+            float sourceRatio = (float)originalWidth / originalHeight;
+
+            // New width and height based on aspect ratio
+            int newWidth = (int)(originalWidth * ratio);
+            int newHeight = (int)(originalHeight * ratio);
+
+            return (newWidth, newHeight);
+        }
     }
 }

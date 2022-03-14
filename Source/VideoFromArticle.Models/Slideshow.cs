@@ -13,6 +13,8 @@ namespace VideoFromArticle.Models
         public string Title { get; set; }
         public List<SlideshowArticle> Articles { get; set; }
 
+
+
         public DateTime? Created { get; set; }
 
         [JsonIgnore]

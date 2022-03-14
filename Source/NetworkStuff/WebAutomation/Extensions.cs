@@ -61,10 +61,14 @@ namespace WebAutomation
             {
                 System.Net.WebClient client = new System.Net.WebClient();
                 byte[] buffer = client.DownloadData(url);
-                Stream stream = new FileStream(filePath, FileMode.Create);
-                BinaryWriter writer = new BinaryWriter(stream);
-                writer.Write(buffer);
-                stream.Close();
+                using (Stream stream = new FileStream(filePath, FileMode.Create))
+                {
+                    using (BinaryWriter writer = new BinaryWriter(stream))
+                    {
+                        writer.Write(buffer);
+                        stream.Close();
+                    }
+                }
             }
             catch (Exception ex)
             {

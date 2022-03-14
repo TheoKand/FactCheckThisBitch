@@ -21,6 +21,16 @@ namespace VideoFromArticle.Admin.Windows
             return lst.IndexFromPoint(point);
         }
 
+        public static TimeSpan GetMp3Duration(string filePath)
+        {
+            using (var mp3Reader = new Mp3FileReader(filePath))
+            {
+                TimeSpan duration = mp3Reader.TotalTime;
+                return duration;
+            }
+
+        }
+
         public static string Folder(this SlideshowArticle input)
         {
             return Path.Combine(Configuration.Instance().DataFolder, input.Id);
@@ -36,19 +46,28 @@ namespace VideoFromArticle.Admin.Windows
             return Path.Combine(input.Folder(), $"{input.Title.Sanitize().Limit(30)}.mp3");
         }
 
-        public static TimeSpan GetMp3Duration(string filePath)
-        {
-            Mp3FileReader reader = new Mp3FileReader(filePath);
-            TimeSpan duration = reader.TotalTime;
-            return duration;
-
-        }
 
         public static void SanitizeNarration(this SlideshowArticle input)
         {
             var narration = input.Narration.Replace("(pictured)", " ");
 
             input.Narration = narration;
+        }
+
+        public static bool NarrationFileExists(this SlideshowArticle input)
+        {
+            var audioFile = input.NarrationAudioFilePath();
+            return File.Exists(audioFile);
+        }
+
+        public static TimeSpan ArticleNarrationDuration(this SlideshowArticle input)
+        {
+            var audioFile = input.NarrationAudioFilePath();
+            using (var mp3Reader = new Mp3FileReader(audioFile))
+            {
+                var audioDuration = mp3Reader.TotalTime;
+                return audioDuration;
+            }
         }
 
         public static string Diagnostics(this SlideshowArticle input)
@@ -88,13 +107,18 @@ namespace VideoFromArticle.Admin.Windows
             }
             else
             {
-                var audioDuration = new Mp3FileReader(audioFile).TotalTime;
-                result.Append($"Audio: {Math.Ceiling(audioDuration.TotalSeconds)} sec. ");
+                using(var mp3Reader = new Mp3FileReader(audioFile))
+                {
+                    var audioDuration =input.ArticleNarrationDuration();
+                    result.Append($"Audio: {Math.Ceiling(audioDuration.TotalSeconds)} sec. ");
+
+                    var durationPerArticleImage = audioDuration.TotalSeconds / input.Images.Count;
+                    result.Append($"{Math.Round(durationPerArticleImage, 1)} sec per slide");
+                }
             }
 
             return $"{(problem ? "!!! " : "")}{result}";
         }
-
 
     }
 }

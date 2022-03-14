@@ -187,7 +187,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label1);
             this.Name = "FrmPiece";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Puzzle PuzzlePiece";
             this.Load += new System.EventHandler(this.FrmPieceEdit_Load);
             this.ResumeLayout(false);

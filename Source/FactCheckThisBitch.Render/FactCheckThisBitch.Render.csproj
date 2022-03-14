@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FackCheckThisBitch.Common\FackCheckThisBitch.Common.csproj" />
     <ProjectReference Include="..\FactCheckThisBitch.Models\FactCheckThisBitch.Models.csproj" />
+    <ProjectReference Include="..\VideoFromArticle.Models\VideoFromArticle.Models.csproj" />
   </ItemGroup>
 
 </Project>

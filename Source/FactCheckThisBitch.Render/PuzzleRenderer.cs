@@ -6,9 +6,7 @@ using SixLabors.ImageSharp.Processing;
 using Syncfusion.Presentation;
 using Syncfusion.Presentation.SlideTransition;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -185,6 +183,10 @@ namespace FactCheckThisBitch.Render
                 newPieceSlide.SlideTransition.TransitionEffect = TransitionEffect.None;
                 newPieceSlide.GroupShape("piece_metadata").UpdateText("piece_title", puzzlePiece.Piece.Title.WrongSpeakToLeetSpeak(leetLevel));
                 newPieceSlide.GroupShape("piece_metadata").UpdateText("piece_thesis", puzzlePiece.Piece.Thesis.WrongSpeakToLeetSpeak(leetLevel));
+
+                //var test = newPieceSlide.Shapes[0] as IShape;
+                //IEffect bounceEffect = newPieceSlide.Timeline.MainSequence.AddEffect(test, EffectType.Bounce, EffectSubtype.None, EffectTriggerType.OnClick);
+                //bounceEffect.Timing.
 
                 //replace puzzle picture
                 newPieceSlide.ReplacePicture("empty_puzzle",
