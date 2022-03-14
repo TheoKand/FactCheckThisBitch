@@ -1,105 +1,133 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+using System.IO;
 using System.Threading;
-using Microsoft.VisualStudio.TestPlatform.ObjectModel;
-using NUnit.Framework.Internal;
+using System.Windows.Forms;
+
 
 namespace WebAutomation
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text.RegularExpressions;
-    using System.Threading.Tasks;
-    using FackCheckThisBitch.Common;
-    using NUnit.Framework;
-    using OpenQA.Selenium;
-    using OpenQA.Selenium.Chrome;
-    using OpenQA.Selenium.DevTools.V85.Memory;
-    using SeleniumExtras.WaitHelpers;
-
-    namespace WebAutomation
+    public class Speechelo: IDisposable
     {
-        public class Speechelo
+        private IWebDriver _driver;
+
+        private readonly string _login = "tkandiliotis@gmail.com";
+        private readonly string _password = "1394Hgk8Tplka";
+        private readonly string _chromedriverLocation =
+            "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\NetworkStuff\\WebAutomation";
+
+        public string SaveLocation { get; set; }
+
+        public Speechelo()
         {
-            private IWebDriver _driver;
+            SaveLocation = $"C:\\Users\\theok\\Desktop\\test";
+        }
 
-            private string _login = "tkandiliotis@gmail.com";
-            private string _password = "1394Hgk8Tplka";
+        public void Setup()
+        {
+            _driver = new ChromeDriver(_chromedriverLocation);
+            _driver.Url = "https://app.blasteronline.com/speechelo/";
+            _driver.Manage().Window.Maximize();
 
+            //type login and password
+            _driver.FindWaitElement(By.Id("loginemail"), 5).SendKeys(_login);
+            _driver.FindWaitElement(By.Id("loginpassword"), 5).SendKeys(_password);
+            _driver.FindWaitElement(By.Id("captcha"), 5).Click();
+        }
 
-            private string _chromedriverLocation =
-                "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\NetworkStuff\\WebAutomation";
+        public void MiminizeWindow()
+        {
+            _driver.Manage().Window.Minimize();
+        }
 
-            public Speechelo()
+        private string IdOfLastGeneratedVoice()
+        {
+            try
             {
-                _driver = new ChromeDriver(_chromedriverLocation);
-                _driver.Url = "https://app.blasteronline.com/speechelo/";
-                _driver.Manage()
-                    .Window.Maximize();
-
-
-                //type login and password
-                _driver.FindWaitElement(By.Id("loginemail"), 5).SendKeys(_login);
-                _driver.FindWaitElement(By.Id("loginpassword"), 5).SendKeys(_password);
-                _driver.FindWaitElement(By.Id("captcha"), 5).Click();
-
-                
-
+                var lastGeneratedVoiceIdCell =
+                    _driver.FindWaitElement("//*[@id='blastered_datatable']/tbody/tr[1]/td[2]", 5);
+                return lastGeneratedVoiceIdCell.Text;
             }
-
-            [Test]
-            public void GenerateAllNarrations()
-            {
-                GenerateNarration("Speechelo is wonderful");
-                GenerateNarration("Inside Rihanna’s TEN year battle with neighbour who sued her for parking on his drive & planting ‘too high’ bamboo bush");
-                GenerateNarration("parking on his drive & planting ‘too high’ bamboo bush");
-            }
-
-
-            public void GenerateNarration(string narration)
-            {
-                var txtNarration = _driver.FindWaitElement(By.Id("tts-tarea"), 60);
-                txtNarration.SendKeys(narration);
-
-                var radioGrace = _driver.FindWaitElement(By.Id("ttsVoiceen-US-AriaNeural"), 5);
-                radioGrace.Click();
-
-                _driver.FindWaitElement(By.Id("ttsGenerateBtn"), 5).Click();
-
-                txtNarration.Clear();
-
-                try
-                {
-                    _driver.FindWaitElementForClick(
-                            "//button[contains(text(), 'Just generate the voiceover as it is')]", 5)
-                        .Click();
-                }
-                catch
-                {
-                }
-
-                var id = Guid.NewGuid().ToString();
-
-                var mp3Anchor = _driver.FindWaitElement("//*[@id='blastered_datatable']/tbody/tr[1]/td[7]/a", 30);
-                var mp3Link = mp3Anchor.GetAttribute("href");
-                var mp3LocalPath = $"C:\\Users\\theok\\Desktop\\test\\{id}.mp3";
-                Extensions.SaveFile(mp3Link, mp3LocalPath);
-                var duration = Extensions.GetMp3Duration(mp3LocalPath);
-                TestContext.WriteLine($"File {mp3LocalPath} duration {duration.TotalSeconds}");
-
-
-                //close OK dialog
-                _driver.FindWaitElementForClick(
-                        "/html/body/div[8]/div/div[3]/button[1]", 10)
-                    .Click();
-
-                Thread.Sleep(5*1000);
-
-
+            catch{
+                return null;
             }
 
         }
+
+        public void GenerateNarration(string narration,string audioFilePath=null)
+        {
+            var txtNarration = _driver.FindWaitElement(By.Id("tts-tarea"), 60);
+            txtNarration.Clear();
+            txtNarration.SendKeys(narration);
+
+            var radioGrace = _driver.FindWaitElement(By.Id("ttsVoiceen-US-AriaNeural"), 20);
+            radioGrace.Click();
+
+            var idOfLastVoiceBeforeGeneration = IdOfLastGeneratedVoice();
+
+            _driver.FindWaitElement(By.Id("ttsGenerateBtn"), 5).Click();
+
+            //
+
+            try
+            {
+                _driver.FindWaitElementForClick(
+                        "//button[contains(text(), 'Just generate the voiceover as it is')]", 20)
+                    .Click();
+            }
+            catch
+            {
+            }
+
+            Thread.Sleep(10*1000);
+
+            ////wait until voice generated
+            //while (IdOfLastGeneratedVoice() == idOfLastVoiceBeforeGeneration)
+            //{
+            //    Thread.Sleep(1000);
+            //}
+
+            //download mp3 from latest generated voice
+            var mp3Anchor = _driver.FindWaitElement("//*[@id='blastered_datatable']/tbody/tr[1]/td[7]/a", 30);
+            var mp3Link = mp3Anchor.GetAttribute("href");
+            
+            var mp3LocalPath = audioFilePath ?? Path.Combine(SaveLocation, $"{Guid.NewGuid()}.mp3");
+            Extensions.SaveFile(mp3Link, mp3LocalPath);
+
+            //close OK dialog
+            try
+            {
+                _driver.FindWaitElementForClick(
+                        "/html/body/div[8]/div/div[3]/button[1]", 10)
+                    .Click();
+            }
+            catch
+            {
+            }
+
+        }
+
+        public void Teardown()
+        {
+            if (_driver == null) return;
+
+            try
+            {
+                _driver.Close();
+                _driver.Dispose();
+            }
+            catch
+            {
+            }
+
+            _driver = null;
+        }
+
+        public void Dispose()
+        {
+            Teardown();
+        }
     }
 }
+

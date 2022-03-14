@@ -46,10 +46,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             {
                 var imageFile = Images[imageIndex];
                 var imagePath = Path.Combine(BaseFolder, imageFile);
+                var imageFileInfo = new FileInfo(imagePath);
                 PictureBox picture = new PictureBox();
+                picture.Name = $"image{imageIndex}";
                 picture.Tag = imageIndex;
-                picture.Width = 100;
-                picture.Height = 66;
+                picture.Width = 200;
+                picture.Height = 132;
                 picture.SizeMode = PictureBoxSizeMode.StretchImage;
                 picture.Image = Image.FromFile(imagePath);
                 picture.Top = 0;
@@ -69,17 +71,44 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 {
                     var dragImageIndex = (int) args.Data.GetData(typeof(int));
                     Images.Swap<string>((int) picture.Tag, dragImageIndex);
-                    LoadForm();
+
+                    var firstImage = panel1.Controls.Find($"image{(int) picture.Tag}",true).First();
+                    var firstEditButton = panel1.Controls.Find($"btnEdit{(int)picture.Tag}", true).First();
+                    var firstDeleteButton = panel1.Controls.Find($"btnDelete{(int)picture.Tag}", true).First();
+
+                    var firstImageLocation = firstImage.Location;
+                    var firstEditButtonLocation = firstEditButton.Location;
+                    var firstDeleteButtonLocation = firstDeleteButton.Location;
+
+                    var secondImage = panel1.Controls.Find($"image{dragImageIndex}", true).First();
+                    var secondEditButton = panel1.Controls.Find($"btnEdit{dragImageIndex}", true).First();
+                    var secondDeleteButton = panel1.Controls.Find($"btnDelete{dragImageIndex}", true).First();
+
+                    var secondImageLocation = secondImage.Location;
+                    var secondEditButtonLocation = secondEditButton.Location;
+                    var secondDeleteLocation = secondDeleteButton.Location;
+
+                    secondImage.Location = firstImageLocation;
+                    secondEditButton.Location = firstEditButtonLocation;
+                    secondDeleteButton.Location = firstDeleteButtonLocation;
+
+                    firstImage.Location = secondImageLocation;
+                    firstEditButton.Location = secondEditButtonLocation;
+                    firstDeleteButton.Location = secondDeleteLocation;
+
                 };
                 picture.Click += (sender, args) =>
                 {
-                    Clipboard.SetText(imagePath);
+                    //Clipboard.SetText(imagePath);
                     new Process {StartInfo = new ProcessStartInfo(imagePath) {UseShellExecute = true}}.Start();
                 };
-                new ToolTip().SetToolTip(picture, imageFile);
+                string tooltip =
+                    $"{imageFile}\n{picture.Image.Width}x{picture.Image.Height} px\n{Math.Round((decimal)(imageFileInfo.Length / 1024),0)}kb";
+                new ToolTip().SetToolTip(picture, tooltip);
                 panel1.Controls.Add(picture);
 
                 var deleteLabel = new LinkLabel();
+                deleteLabel.Name = $"btnDelete{imageIndex}";
                 deleteLabel.Text = "Delete";
 
                 deleteLabel.Click += (sender, args) =>
@@ -95,6 +124,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 panel1.Controls.Add(deleteLabel);
 
                 var editLabel = new LinkLabel();
+                editLabel.Name = $"btnEdit{imageIndex}";
                 editLabel.Tag = imageFile;
                 editLabel.Text = "Edit";
                 editLabel.Click += editLabel_Click;

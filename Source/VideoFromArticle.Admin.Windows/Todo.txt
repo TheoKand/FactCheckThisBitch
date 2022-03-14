@@ -1,4 +1,7 @@
-﻿-Article form is instantiated with a url and fetches everything
+﻿
+TODO:
+
+
 -edit text fields in textboxes
 -save images files in article folder
 -save button
@@ -13,6 +16,15 @@
 	-temporary: add narrations (?)
 	-create openShot editor template with one slideshow video and multiple narrations placed inside. One narration per article
 
+
+FIX:
+
+	-image editor must work with ArticleImage object instead of string array
+	-save files with order which they appear in page
+	-when deleting image from imageEditor, delete from HD
+	-image Editor should show size
+	-maybe don't download thumbnails at all 
+	-One subfolder for each slideshow, and one subfolder inside that, for each Article?
 
 
 

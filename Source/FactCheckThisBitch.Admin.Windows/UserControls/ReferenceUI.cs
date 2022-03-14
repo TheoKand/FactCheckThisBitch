@@ -13,7 +13,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
     {
         public Action<string> OnDelete;
         public Action<string> OnDuplicate;
-        public Action<string, int> OnMove;
+        public new Action<string, int> OnMove;
         public Action OnSave;
         public Action<string> OnMoveToOtherPiece;
 

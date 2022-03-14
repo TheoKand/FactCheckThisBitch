@@ -5,6 +5,7 @@ using SeleniumExtras.WaitHelpers;
 using System;
 using System.IO;
 using System.Threading;
+using System.Windows.Forms;
 
 
 namespace WebAutomation
@@ -13,11 +14,11 @@ namespace WebAutomation
     {
         public static double SecondsTimeout = 60;
 
-        public static IWebElement FindWaitElement(this IWebDriver driver,string xPath, double? timeout=null)
+        public static IWebElement FindWaitElement(this IWebDriver driver, string xPath, double? timeout = null)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout ?? SecondsTimeout));
             wait.IgnoreExceptionTypes(typeof(NoSuchElementException));
-            IWebElement element = wait.Until( ExpectedConditions.ElementExists(By.XPath(xPath)));
+            IWebElement element = wait.Until(ExpectedConditions.ElementExists(By.XPath(xPath)));
             FackCheckThisBitch.Common.Extensions.DelayRandom();
             return element;
         }
@@ -32,10 +33,10 @@ namespace WebAutomation
 
         public static IWebElement FindWaitElementForClick(this IWebDriver driver, string xPath, double? timeout = null)
         {
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout??SecondsTimeout));
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout ?? SecondsTimeout));
             wait.IgnoreExceptionTypes(typeof(NoSuchElementException), typeof(ElementNotVisibleException), typeof(ElementNotInteractableException));
             IWebElement element = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(xPath)));
-            FackCheckThisBitch.Common.Extensions.DelayRandom(500,1000);
+            FackCheckThisBitch.Common.Extensions.DelayRandom(500, 1000);
             return element;
         }
 
@@ -56,21 +57,23 @@ namespace WebAutomation
 
         public static void SaveFile(string url, string filePath)
         {
-            System.Net.WebClient client = new System.Net.WebClient();
-            byte[] buffer = client.DownloadData(url);
-            Stream stream = new FileStream(filePath, FileMode.Create);
-            BinaryWriter writer = new BinaryWriter(stream);
-            writer.Write(buffer);
-            stream.Close();
+            try
+            {
+                System.Net.WebClient client = new System.Net.WebClient();
+                byte[] buffer = client.DownloadData(url);
+                Stream stream = new FileStream(filePath, FileMode.Create);
+                BinaryWriter writer = new BinaryWriter(stream);
+                writer.Write(buffer);
+                stream.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
         }
 
-        public static TimeSpan GetMp3Duration(string filePath)
-        {
-            Mp3FileReader reader = new Mp3FileReader(filePath);
-            TimeSpan duration = reader.TotalTime;
-            return duration;
 
-        }
 
     }
 }

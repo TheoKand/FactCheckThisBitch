@@ -11,7 +11,7 @@ namespace VideoFromArticle.Models
         public string Id { get; set; }
 
         public string Title { get; set; }
-        public List<Article> Articles { get; set; }
+        public List<SlideshowArticle> Articles { get; set; }
 
         public DateTime? Created { get; set; }
 
@@ -24,7 +24,7 @@ namespace VideoFromArticle.Models
         public Slideshow()
         {
             Id = Guid.NewGuid().ToString();
-            Articles = new List<Article>();
+            Articles = new List<SlideshowArticle>();
         }
 
     }

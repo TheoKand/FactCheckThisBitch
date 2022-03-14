@@ -47,11 +47,13 @@ namespace VideoFromArticle.Admin.Windows.Forms
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(936, 25);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(937, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -62,27 +64,27 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(39, 21);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -94,46 +96,53 @@ namespace VideoFromArticle.Admin.Windows.Forms
             // 
             this.txtTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTitle.Location = new System.Drawing.Point(82, 51);
+            this.txtTitle.Location = new System.Drawing.Point(85, 57);
+            this.txtTitle.Margin = new System.Windows.Forms.Padding(4);
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTitle.Size = new System.Drawing.Size(842, 66);
+            this.txtTitle.Size = new System.Drawing.Size(815, 77);
             this.txtTitle.TabIndex = 1;
             this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 51);
+            this.label1.Location = new System.Drawing.Point(14, 60);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 17);
+            this.label1.Size = new System.Drawing.Size(38, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Title";
             // 
             // txtId
             // 
             this.txtId.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtId.Location = new System.Drawing.Point(82, 20);
+            this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtId.Location = new System.Drawing.Point(85, 23);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(338, 25);
+            this.txtId.ReadOnly = true;
+            this.txtId.Size = new System.Drawing.Size(433, 26);
             this.txtId.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 146);
+            this.label2.Location = new System.Drawing.Point(15, 171);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 17);
+            this.label2.Size = new System.Drawing.Size(61, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Articles";
             // 
             // btnAddArticle
             // 
             this.btnAddArticle.AutoSize = true;
-            this.btnAddArticle.Location = new System.Drawing.Point(82, 126);
+            this.btnAddArticle.Location = new System.Drawing.Point(85, 147);
+            this.btnAddArticle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnAddArticle.Name = "btnAddArticle";
-            this.btnAddArticle.Size = new System.Drawing.Size(32, 17);
+            this.btnAddArticle.Size = new System.Drawing.Size(38, 20);
             this.btnAddArticle.TabIndex = 2;
             this.btnAddArticle.TabStop = true;
             this.btnAddArticle.Text = "Add";
@@ -141,22 +150,26 @@ namespace VideoFromArticle.Admin.Windows.Forms
             // 
             // lstArticles
             // 
+            this.lstArticles.AllowDrop = true;
             this.lstArticles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lstArticles.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lstArticles.FormattingEnabled = true;
-            this.lstArticles.ItemHeight = 17;
-            this.lstArticles.Location = new System.Drawing.Point(82, 146);
+            this.lstArticles.ItemHeight = 23;
+            this.lstArticles.Location = new System.Drawing.Point(85, 168);
+            this.lstArticles.Margin = new System.Windows.Forms.Padding(4);
             this.lstArticles.Name = "lstArticles";
-            this.lstArticles.Size = new System.Drawing.Size(842, 157);
+            this.lstArticles.Size = new System.Drawing.Size(815, 165);
             this.lstArticles.TabIndex = 4;
             this.lstArticles.DoubleClick += new System.EventHandler(this.lstArticles_DoubleClick);
             // 
             // btnDelete
             // 
             this.btnDelete.AutoSize = true;
-            this.btnDelete.Location = new System.Drawing.Point(160, 126);
+            this.btnDelete.Location = new System.Drawing.Point(165, 147);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(45, 17);
+            this.btnDelete.Size = new System.Drawing.Size(56, 20);
             this.btnDelete.TabIndex = 3;
             this.btnDelete.TabStop = true;
             this.btnDelete.Text = "Delete";
@@ -164,9 +177,9 @@ namespace VideoFromArticle.Admin.Windows.Forms
             // 
             // FrmSlideshow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 569);
+            this.ClientSize = new System.Drawing.Size(937, 586);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.lstArticles);
             this.Controls.Add(this.btnAddArticle);
@@ -175,7 +188,9 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmSlideshow";
             this.Text = "frmSlideshow";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

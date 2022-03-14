@@ -60,7 +60,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.panel1.Location = new System.Drawing.Point(50, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(495, 108);
+            this.panel1.Size = new System.Drawing.Size(495, 186);
             this.panel1.TabIndex = 3;
             // 
             // openFileDialog1
@@ -88,7 +88,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             this.Controls.Add(this.btnAdd);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ImageEditor";
-            this.Size = new System.Drawing.Size(545, 108);
+            this.Size = new System.Drawing.Size(545, 190);
             this.ResumeLayout(false);
 
         }

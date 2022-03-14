@@ -20,7 +20,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         }
 
         public new Action OnClick;
-        public new Action OnChanged;
+        public Action OnChanged;
         public new Action<int, int> OnDragDrop;
 
 

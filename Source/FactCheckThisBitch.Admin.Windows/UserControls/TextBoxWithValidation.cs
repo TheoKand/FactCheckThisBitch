@@ -12,12 +12,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
     public partial class TextBoxWithValidation : UserControl
     {
         public string ValidationPattern;
-        public Action<string> TextChanged;
+        public new Action<string> TextChanged;
 
         private string _validatedText;
         private Color _backColor;
 
-        public string Text
+        public new string Text
         {
             get => textBox1.Text;
             set

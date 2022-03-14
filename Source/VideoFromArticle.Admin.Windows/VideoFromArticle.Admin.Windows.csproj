@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FactCheckThisBitch.Admin.Windows\FactCheckThisBitch.Admin.Windows.csproj" />
+    <ProjectReference Include="..\NetworkStuff\WebAutomation\WebAutomation.csproj" />
     <ProjectReference Include="..\VideoFromArticle.Models\VideoFromArticle.Models.csproj" />
   </ItemGroup>
 

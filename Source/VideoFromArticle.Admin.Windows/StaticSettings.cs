@@ -11,5 +11,11 @@ namespace VideoFromArticle.Admin.Windows
             Formatting = Formatting.Indented,
             TypeNameHandling = TypeNameHandling.Auto
         };
+
+        public static long MinimumArticleImageSize = 150 * 1024;
+        public static long MinimumArticleImageWidth = 448;
+        public static long MinimumArticleImageHeight = 336;
+        public static long MaximumArticleImageCount = 50;
+
     }
 }

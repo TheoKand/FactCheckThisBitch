@@ -53,7 +53,28 @@ namespace VideoFromArticle.Admin.Windows.Forms
 
         private void InitForm()
         {
+            lstArticles.AllowDrop = true;
+            lstArticles.MouseDown += (sender, args) =>
+            {
+                if (args.Button == MouseButtons.Left && args.Clicks == 1)
+                {
+                    lstArticles.DoDragDrop(lstArticles.SelectedItem, DragDropEffects.All);
+                }
+            };
+            lstArticles.DragEnter += (sender, args) => { args.Effect = DragDropEffects.All; };
+            lstArticles.DragDrop += (sender, args) =>
+            {
+                var fromArticle = ((ArticleListBoxItem) args.Data.GetData(typeof(ArticleListBoxItem))).Article;
+                var fromIndex = _slideshow.Articles.IndexOf(fromArticle);
+                var toIndex = lstArticles.IndexFromScreenPoint(new Point(args.X, args.Y));
+                if (fromIndex == toIndex) return;
 
+                _slideshow.Articles.Swap(fromIndex, toIndex);
+                LoadArticles();
+                lstArticles.SelectedIndex = toIndex;
+                
+                IsDirty = true;
+            };
         }
 
         private void LoadForm()
@@ -142,7 +163,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
             lstArticles.Items.Clear();
             foreach (var article in _slideshow.Articles)
             {
-                lstArticles.Items.Add(article);
+                lstArticles.Items.Add(new ArticleListBoxItem(article));
             }
         }
 
@@ -207,9 +228,15 @@ namespace VideoFromArticle.Admin.Windows.Forms
         {
             var url = Prompt.ShowDialog("Enter Url", "Add new article");
 
-            var newArticle = new Article() { Url = url };
+            var newArticle = new SlideshowArticle() { Url = url };
 
-            using (FrmArticle articleForm = new FrmArticle(newArticle))
+            using (var articleForm = new FrmArticle(newArticle)
+                   {
+                       OnSave = () =>
+                       {
+                           saveToolStripMenuItem_Click(null, null);
+                       }
+                   })
             {
                 var result = articleForm.ShowDialog();
                 if (result != DialogResult.OK) return;
@@ -223,17 +250,17 @@ namespace VideoFromArticle.Admin.Windows.Forms
 
         private void btnDelete_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            var article = lstArticles.SelectedItem as Article;
+            var article = (lstArticles.SelectedItem as ArticleListBoxItem)?.Article;
             if (article == null) return;
             _slideshow.Articles.Remove(article);
             IsDirty = true;
-            lstArticles.Items.Remove(article);
+            lstArticles.Items.Remove(lstArticles.SelectedItem);
 
         }
 
         private void lstArticles_DoubleClick(object sender, EventArgs e)
         {
-            var article = lstArticles.SelectedItem as Article;
+            var article = (lstArticles.SelectedItem as ArticleListBoxItem)?.Article;
             if (article == null) return;
 
             using (FrmArticle articleForm = new FrmArticle(article))
