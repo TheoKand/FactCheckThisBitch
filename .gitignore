@@ -374,3 +374,5 @@ chromedriver.exe
 *.pptm
 !DailyGossipNewsSlideshow.pptm
 !RudeAINewsSlideshow.pptm
+
+*Slideshow.mp4
