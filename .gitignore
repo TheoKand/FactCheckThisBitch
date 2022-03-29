@@ -370,3 +370,7 @@ large_*
 *export*mp4
 *large.*
 chromedriver.exe
+
+*.pptm
+!DailyGossipNewsSlideshow.pptm
+!RudeAINewsSlideshow.pptm

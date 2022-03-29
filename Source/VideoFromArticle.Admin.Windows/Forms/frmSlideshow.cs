@@ -281,8 +281,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
                 this.Cursor = Cursors.WaitCursor;
                 Cursor.Current = Cursors.WaitCursor;
                 Application.DoEvents();
-                string slideshowOutputFolder =
-                    Path.Combine(Configuration.Instance().OutputFolder, _slideshow.SanitizedTitle);
+
                 using (var renderer = new VideoFromArticleRenderer(_slideshow, optionsForm.Options.Template,
                            optionsForm.Options.IntroDurationSeconds,
                            _slideshow.Folder(), Configuration.Instance().VideoFromArticleTempatesFolder))
