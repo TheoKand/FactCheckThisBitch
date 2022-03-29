@@ -1,0 +1,18 @@
+STEPS TO CREATE A NEW VIDEO FROM THE TEMPLATE:
+
+1.create new video output folder by duplicating the template folder.
+	1.1 copy narration files (name narrationXX.mp3  and powerpoint file DailyGossipNewsSlideshow.pptm in new video output folder)
+
+2.replace this:
+
+  "export_path": "C:/Users/theok/Repos/FactCheckThisBitch/OpenShot/ShowbizGossipDailyNews/Export",
+  "import_path": "C:/Users/theok/Repos/FactCheckThisBitch/Source/VideoFromArticle.Admin.Windows/output/kanye-west-jan-march-2022-update",
+
+with new video output folder
+
+3.replace 
+../_commonAssets/
+with root commmon assets folder
+
+
+4. replace DailyGossipNewsSlideshow.mp4 with video name.mp4
