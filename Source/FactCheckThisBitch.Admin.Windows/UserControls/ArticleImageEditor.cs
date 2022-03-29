@@ -10,41 +10,21 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using VideoFromArticle.Models;
+using Article = FactCheckThisBitch.Models.Article;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
-    public partial class ImageEditor : UserControl
+    public partial class ArticleImageEditor : UserControl
     {
-        private List<string> _images = new List<string>();
         private List<ArticleImage> _articleImages = new List<ArticleImage>();
         public List<ImageEdit> ImageEdits;
 
         public string BaseFolder;
         public string BaseCaption;
 
-        public List<string> Images
-        {
-            get => _images;
-            set
-            {
-                _images = value;
-                LoadForm();
-            }
-        }
-
         public List<ArticleImage> ArticleImages
         {
-            get
-            {
-                if (_articleImages == null)
-                {
-                    return _images.Select(_ => new ArticleImage(null) { Filename = _ }).ToList();
-                }
-                else
-                {
-                    return _articleImages;
-                }
-            }
+            get => _articleImages;
             set
             {
                 _articleImages = value;
@@ -52,7 +32,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             }
         }
 
-        public ImageEditor()
+        public ArticleImageEditor()
         {
             InitializeComponent();
             toolTip1.SetToolTip(this, "Right click to open image; left button to drag & drop reposition");
@@ -63,15 +43,17 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             var index = 0;
             var padding = 10;
             var imageLabelButtonsHeight = 20;
-            var pictureHeight = this.Height - hScrollBar1.Height - imageLabelButtonsHeight - 10;
+
+            var pictureWidth = 400;
+            var pictureHeight = (int)Math.Round(pictureWidth / 1.33,0);
+
             if (chkAutosize.Checked)
             {
-                var widthPerImage = (this.Width - padding * ArticleImages.Count) / ArticleImages.Count;
-                pictureHeight = (int) Math.Round((widthPerImage) / 1.33, 0);
+                pictureHeight = (this.Height / ArticleImages.Count) - (padding + imageLabelButtonsHeight) ;
+                pictureWidth = (int)Math.Round(pictureHeight * 1.33,0);
             }
 
-            var pictureWidth = (int) Math.Round(pictureHeight * 1.33, 0);
-
+            panel.Height = ArticleImages.Count * (pictureHeight + imageLabelButtonsHeight + padding)+ 50;
             panel.Controls.Clear();
 
             for (int imageIndex = 0; imageIndex < ArticleImages.Count; imageIndex++)
@@ -79,6 +61,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 var articleImage = ArticleImages[imageIndex];
                 var imageFile = ArticleImages[imageIndex].Filename;
                 var imagePath = Path.Combine(BaseFolder, imageFile);
+                var pictureTop = index * (pictureHeight + padding + imageLabelButtonsHeight);
 
                 var imageFileInfo = new FileInfo(imagePath);
                 PictureBox picture = new PictureBox();
@@ -91,12 +74,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 {
                     picture.Image = Image.FromFile(imagePath);
                     string tooltip =
-                        $"{imageFile}\n{picture.Image?.Width}x{picture.Image?.Height} px\n{Math.Round((decimal) (imageFileInfo.Length / 1024), 0)}kb";
+                        $"{imageIndex}\t{imageFile}\n{picture.Image?.Width}x{picture.Image?.Height} px\n{Math.Round((decimal) (imageFileInfo.Length / 1024), 0)}kb";
                     new ToolTip().SetToolTip(picture, tooltip);
                 }
 
-                picture.Top = 0;
-                picture.Left = index * (picture.Width + padding);
+                picture.Top = pictureTop;
+                picture.Left = 0;
                 picture.Cursor = Cursors.Hand;
                 picture.AllowDrop = true;
                 picture.MouseDown += (sender, args) =>
@@ -122,7 +105,6 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 };
                 picture.Click += (sender, args) =>
                 {
-                    //Clipboard.SetText(imagePath);
                     new Process { StartInfo = new ProcessStartInfo(imagePath) { UseShellExecute = true } }.Start();
                 };
 
@@ -177,6 +159,39 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     }
                 };
                 panel.Controls.Add(txtCaption);
+
+                var chkTypewriter = new CheckBox();
+                chkTypewriter.Name = $"chkTypewriter{imageIndex}";
+                chkTypewriter.Text = "Typewriter";
+                chkTypewriter.Left = txtCaption.Right;
+                chkTypewriter.Top = picture.Bottom;
+                chkTypewriter.Checked = articleImage.TypewriterAnimation;
+                chkTypewriter.CheckedChanged += (sender, args) =>
+                {
+                    articleImage.TypewriterAnimation = (sender as CheckBox).Checked;
+                };
+                panel.Controls.Add(chkTypewriter);
+                
+
+                var txtNarration = new TextBox();
+                txtNarration.Name = $"txtNarration{imageIndex}";
+                txtNarration.Text = articleImage.Narration;
+                txtNarration.Top = pictureTop;
+                txtNarration.Left = pictureWidth;
+                txtNarration.Width = this.Width - pictureWidth-padding;
+                txtNarration.Height = picture.Height;
+                txtNarration.Multiline = true;
+                txtNarration.ScrollBars = ScrollBars.Both;
+                txtNarration.LostFocus += (sender, args) =>
+                {
+                    if (articleImage.Narration != txtNarration.Text)
+                    {
+                        articleImage.Narration = txtNarration.Text;
+                        articleImage.Narration = articleImage.Narration.SanitizeNarration();
+                    }
+                };
+                panel.Controls.Add(txtNarration);
+
                 index++;
             }
 
@@ -185,18 +200,19 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
 
         private void ResetScrollbar()
         {
-            if (panel.Width > this.Width)
+            if (panel.Height > this.Height - panel.Top)
             {
-                hScrollBar1.Enabled = true;
-                this.hScrollBar1.Maximum = panel.Width - this.Width;
+                vScrollBar1.Enabled = true;
+                vScrollBar1.Maximum = (panel.Height - (this.Height - panel.Top)) /4;
             }
             else
             {
-                hScrollBar1.Enabled = false;
-                this.hScrollBar1.Maximum = 0;
+                vScrollBar1.Enabled = false;
+                vScrollBar1.Maximum = 0;
             }
 
-            hScrollBar1.Value = 0;
+            vScrollBar1.Value = 0;
+            panel.Top = 0;
         }
 
         #region events
@@ -267,21 +283,21 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             }
         }
 
-        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-            this.panel.Left = -e.NewValue;
-        }
+        #endregion
 
-        private void hScrollBar1_Resize(object sender, EventArgs e)
+        private void vScrollBar1_Resize(object sender, EventArgs e)
         {
             ResetScrollbar();
         }
 
-        private void chkSmallImageSize_CheckedChanged(object sender, EventArgs e)
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            panel.Top = -e.NewValue*4;
+        }
+
+        private void chkAutosize_CheckedChanged(object sender, EventArgs e)
         {
             LoadForm();
         }
-
-        #endregion
     }
 }

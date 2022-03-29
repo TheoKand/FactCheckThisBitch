@@ -4,16 +4,16 @@ namespace VideoFromArticle.Admin.Windows
 {
     public class ArticleListBoxItem
     {
-        public SlideshowArticle Article { get; }
+        public Article Article { get; }
 
-        public ArticleListBoxItem(SlideshowArticle article)
+        public ArticleListBoxItem(Article article)
         {
             Article = article;
         }
 
         public override string ToString()
         {
-            return $"{Article} {Article.Diagnostics()}";
+            return $"{Article}\t{Article.Diagnostics()}";
         }
     }
 }

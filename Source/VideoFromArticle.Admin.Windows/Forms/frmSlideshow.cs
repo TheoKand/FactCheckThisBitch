@@ -2,14 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.IO;
+using System.Linq;
+using System.Media;
 using System.Text;
 using System.Windows.Forms;
 using FackCheckThisBitch.Common;
 using FactCheckThisBitch.Render;
 using Newtonsoft.Json;
 using VideoFromArticle.Models;
+using WebAutomation;
 
 namespace VideoFromArticle.Admin.Windows.Forms
 {
@@ -24,7 +29,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
             set
             {
                 _isDirty = value;
-                this.Text = $"{_slideshow.FullTitle} {(_isDirty ? " - Modified" : "")}";
+                this.Text = $"{_slideshow.SanitizedTitle} {(_isDirty ? " - Modified" : "")}";
             }
         }
 
@@ -36,15 +41,11 @@ namespace VideoFromArticle.Admin.Windows.Forms
         private void frmSlideshow_Load(object sender, EventArgs e)
         {
             InitForm();
-            if (!string.IsNullOrEmpty(UserSettings.Instance().CurrentFile) &&
-                File.Exists(UserSettings.Instance().CurrentFilePath))
+
+            if (UserSettings.Instance().CurrentSlideshow != null &&
+                File.Exists(UserSettings.Instance().CurrentSlideshow.FilePath()))
             {
-                LoadFromFile();
-                LoadForm();
-            }
-            else
-            {
-                CreateNew();
+                LoadFromFile(UserSettings.Instance().CurrentSlideshow.FilePath());
                 LoadForm();
             }
         }
@@ -63,36 +64,42 @@ namespace VideoFromArticle.Admin.Windows.Forms
             lstArticles.DragEnter += (sender, args) => { args.Effect = DragDropEffects.All; };
             lstArticles.DragDrop += (sender, args) =>
             {
-                var fromArticle = ((ArticleListBoxItem) args.Data.GetData(typeof(ArticleListBoxItem))).Article;
+                var fromArticle = ((ArticleListBoxItem)args.Data.GetData(typeof(ArticleListBoxItem))).Article;
                 var fromIndex = _slideshow.Articles.IndexOf(fromArticle);
                 var toIndex = lstArticles.IndexFromScreenPoint(new Point(args.X, args.Y));
                 if (fromIndex == toIndex) return;
-                _slideshow.Articles.Swap(fromIndex, toIndex);
+
+                _slideshow.Articles.Remove(fromArticle);
+                _slideshow.Articles.Insert(toIndex, fromArticle);
+
                 LoadArticles();
                 lstArticles.SelectedIndex = toIndex;
                 IsDirty = true;
             };
+            panelSlideshow.Visible = false;
         }
 
         private void LoadForm()
         {
-            UserSettings.Instance().CurrentFile = _slideshow.FileName;
-            this.Text = _slideshow.FullTitle;
+            this.Text = _slideshow.SanitizedTitle;
             txtId.Text = _slideshow.Id;
             txtTitle.Text = _slideshow.Title;
             LoadArticles();
             IsDirty = false;
+
+            panelSlideshow.Visible = true;
         }
 
-        private void LoadFromFile()
+        private Slideshow LoadFromFile(string file)
         {
-            var json = File.ReadAllText(UserSettings.Instance().CurrentFilePath, Encoding.UTF8);
+            var json = File.ReadAllText(file, Encoding.UTF8);
             _slideshow = JsonConvert.DeserializeObject<Slideshow>(json, StaticSettings.JsonSerializerSettings);
+            return _slideshow;
         }
 
         private bool FileIsUpToDate()
         {
-            var fileJson = File.ReadAllText(UserSettings.Instance().CurrentFilePath, Encoding.UTF8);
+            var fileJson = File.ReadAllText(UserSettings.Instance().CurrentSlideshow.FilePath(), Encoding.UTF8);
             var formJson = JsonConvert.SerializeObject(_slideshow,
                 Formatting.Indented, StaticSettings.JsonSerializerSettings);
             return formJson == fileJson;
@@ -102,11 +109,17 @@ namespace VideoFromArticle.Admin.Windows.Forms
         {
             var json = JsonConvert.SerializeObject(_slideshow, Formatting.Indented,
                 StaticSettings.JsonSerializerSettings);
-            File.WriteAllTextAsync(UserSettings.Instance().CurrentFilePath, json);
+
+            if (!Directory.Exists(UserSettings.Instance().CurrentSlideshow.Folder()))
+            {
+                Directory.CreateDirectory(UserSettings.Instance().CurrentSlideshow.Folder());
+            }
+
+            File.WriteAllTextAsync(UserSettings.Instance().CurrentSlideshow.FilePath(), json);
             IsDirty = false;
         }
 
-        private void CreateNew()
+        private bool CreateNew()
         {
             if (IsDirty)
             {
@@ -118,31 +131,33 @@ namespace VideoFromArticle.Admin.Windows.Forms
                 }
             }
 
-            _slideshow = new Slideshow() { Title = $"Slideshow created at {DateTime.UtcNow}" };
+            var newFileName = Prompt.ShowDialog("Enter Slideshow Title", "Slideshow Title",
+                $"Slideshow created at {DateTime.UtcNow}");
+            if (newFileName.IsEmpty()) return false;
+            _slideshow = new Slideshow() { Title = newFileName };
+            return true;
         }
 
         private void Save()
         {
             _slideshow.Title = txtTitle.Text.ValueOrNull();
-            CheckRenameFile();
-        }
-
-        private void CheckRenameFile()
-        {
-            if (_slideshow.FileName != UserSettings.Instance().CurrentFile)
-            {
-                UserSettings.Instance().CurrentFile = _slideshow.FileName;
-                this.Text = _slideshow.FullTitle;
-            }
         }
 
         private void LoadArticles()
         {
+            double totalSeconds = 0;
+            var totalCharacters = 0;
             lstArticles.Items.Clear();
             foreach (var article in _slideshow.Articles)
             {
                 lstArticles.Items.Add(new ArticleListBoxItem(article));
+                totalSeconds += article.ProjectedDurationInSeconds();
+                totalCharacters += article.Narration!=null? article.Narration.Trim().Length:0;
             }
+
+            var timeSpan = TimeSpan.FromSeconds(totalSeconds);
+
+            lblTotals.Text = $"Duration: {timeSpan.ToString("mm\\:ss\\:FF")} Characters: {totalCharacters}";
         }
 
         private void frmSlideshow_FormClosing(object sender, FormClosingEventArgs e)
@@ -153,14 +168,10 @@ namespace VideoFromArticle.Admin.Windows.Forms
                     MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
+                    Save();
                     SaveToFile();
                 }
             }
-        }
-
-        private void txtTitle_TextChanged(object sender, EventArgs e)
-        {
-            IsDirty = true;
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -171,9 +182,9 @@ namespace VideoFromArticle.Admin.Windows.Forms
             openFileDialog1.CheckFileExists = true;
             openFileDialog1.CheckPathExists = true;
             openFileDialog1.ShowReadOnly = false;
-            if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
-            UserSettings.Instance().CurrentFile = openFileDialog1.FileName;
-            LoadFromFile();
+            if (openFileDialog1.ShowDialog() != DialogResult.OK || openFileDialog1.FileName.IsEmpty()) return;
+            UserSettings.Instance().CurrentSlideshow = LoadFromFile(openFileDialog1.FileName);
+            UserSettings.Instance().Save();
             LoadForm();
         }
 
@@ -194,21 +205,25 @@ namespace VideoFromArticle.Admin.Windows.Forms
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CreateNew();
-            LoadForm();
+            if (CreateNew())
+            {
+                UserSettings.Instance().CurrentSlideshow = _slideshow;
+                UserSettings.Instance().Save();
+
+                LoadForm();
+            }
         }
 
         private void btnAddArticle_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var url = Prompt.ShowDialog("Enter Url", "Add new article");
-            var newArticle = new SlideshowArticle() { Url = url };
+            var newArticle = new Article() { Url = url, SlideshowFolder = _slideshow.Folder() };
             using (var articleForm = new FrmArticle(newArticle)
-                   {
-                       OnSave = () => { saveToolStripMenuItem_Click(null, null); }
-                   })
             {
-                var result = articleForm.ShowDialog();
-                if (result != DialogResult.OK) return;
+                OnSave = () => { saveToolStripMenuItem_Click(null, null); }
+            })
+            {
+                articleForm.ShowDialog();
                 _slideshow.Articles.Add(newArticle);
                 IsDirty = true;
                 LoadArticles();
@@ -229,13 +244,12 @@ namespace VideoFromArticle.Admin.Windows.Forms
             var article = (lstArticles.SelectedItem as ArticleListBoxItem)?.Article;
             if (article == null) return;
             using (FrmArticle articleForm = new FrmArticle(article)
-                   {
-                       OnSave = () => { saveToolStripMenuItem_Click(null, null); }
-                   })
+            {
+                OnSave = () => { saveToolStripMenuItem_Click(null, null); }
+            })
             {
                 var articleBefore = JsonConvert.SerializeObject(article, StaticSettings.JsonSerializerSettings);
                 var result = articleForm.ShowDialog();
-                if (result != DialogResult.OK) return;
                 var articleAfter = JsonConvert.SerializeObject(article, StaticSettings.JsonSerializerSettings);
                 if (articleBefore != articleAfter)
                 {
@@ -257,16 +271,21 @@ namespace VideoFromArticle.Admin.Windows.Forms
                 return;
             }
 
+            FrmRenderOptions optionsForm = new FrmRenderOptions();
+            var result = optionsForm.ShowDialog();
+            if (result != DialogResult.OK)
+                return;
+
             try
             {
                 this.Cursor = Cursors.WaitCursor;
                 Cursor.Current = Cursors.WaitCursor;
                 Application.DoEvents();
                 string slideshowOutputFolder =
-                    Path.Combine(Configuration.Instance().OutputFolder, _slideshow.FullTitle);
-                using (var renderer = new VideoFromArticleRenderer(_slideshow, "VideoFromArticleV2.pptm",
-                           Configuration.Instance().AssetsFolder, slideshowOutputFolder,
-                           Configuration.Instance().DataFolder))
+                    Path.Combine(Configuration.Instance().OutputFolder, _slideshow.SanitizedTitle);
+                using (var renderer = new VideoFromArticleRenderer(_slideshow, optionsForm.Options.Template,
+                           optionsForm.Options.IntroDurationSeconds,
+                           _slideshow.Folder(), Configuration.Instance().VideoFromArticleTempatesFolder))
                 {
                     renderer.Render();
                 }
@@ -280,6 +299,98 @@ namespace VideoFromArticle.Admin.Windows.Forms
                 this.Cursor = Cursors.Default;
                 Cursor.Current = Cursors.Default;
             }
+        }
+
+        private void btnGenerateNarrations_Click(object sender, EventArgs e)
+        {
+            using (var speechelo = new Speechelo())
+            {
+                try
+                {
+                    speechelo.Setup();
+
+                    var articlesWithNarration = _slideshow.Articles.Where(_ => _.Narration.IsNotEmpty() || _.NarrationPerImage.Value).ToList();
+                    for (var i = 0; i < articlesWithNarration.Count(); i++)
+                    {
+                        var article = articlesWithNarration[i];
+                        var voice = StaticSettings.AvailableVoices.ToList()[i % StaticSettings.AvailableVoices.Count]
+                            .Key;
+
+                        if (article.NarrationPerImage.Value)
+                        {
+                            for (var articleImageIndex = 0; articleImageIndex < article.Images.Count; articleImageIndex++)
+                            {
+                                var articleImage = article.Images[articleImageIndex];
+
+                                if (articleImage.Narration.IsNotEmpty())
+                                {
+                                    var imageNarrationFilePath = article.ImageNarrationAudioFilePath(articleImage);
+                                    speechelo.GenerateNarration(articleImage.Narration, voice, imageNarrationFilePath);
+                                    articleImage.DurationInSeconds = article.ReadNarrationDuration(articleImage).TotalSeconds;
+                                    
+                                }
+                            }
+                            article.DurationInSeconds = article.Images.Sum(_ => _.DurationInSeconds);
+                        }
+                        else
+                        {
+                            article.Narration = article.Narration.SanitizeNarration();
+                            speechelo.GenerateNarration(article.Narration, voice, article.ArticleNarrationAudioFilePath());
+                            article.DurationInSeconds = article.ReadNarrationDuration().TotalSeconds;
+                        }
+
+                        saveToolStripMenuItem_Click(null, null);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    LoadArticles();
+                    SystemSounds.Beep.Play();
+                    this.Activate();
+                }
+            }
+        }
+
+        private void btnSortByDate_Click(object sender, EventArgs e)
+        {
+            _slideshow.Articles = _slideshow.Articles.OrderBy(_ => _.Published).ToList();
+            LoadArticles();
+            IsDirty = true;
+            saveToolStripMenuItem_Click(null, null);
+        }
+
+        private void btnOpenFolder_Click(object sender, EventArgs e)
+        {
+            if (!Directory.Exists(_slideshow.Folder())) return;
+            new Process { StartInfo = new ProcessStartInfo(_slideshow.Folder()) { UseShellExecute = true } }.Start();
+        }
+
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            var article = (lstArticles.SelectedItem as ArticleListBoxItem)?.Article;
+            if (article == null) return;
+            article.DurationInSeconds = article.ReadNarrationDuration().TotalSeconds;
+            new Process
+            {
+                StartInfo = new ProcessStartInfo(article.ArticleNarrationAudioFilePath()) { UseShellExecute = true }
+            }.Start();
+        }
+
+        private void btnRefresh_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoadArticles();
+        }
+
+        private void btnOutputFolder_Click(object sender, EventArgs e)
+        {
+            string slideshowOutputFolder =
+                Path.Combine(Configuration.Instance().VideoFromArticleTempatesFolder, "_output",
+                    _slideshow.SanitizedTitle);
+            new Process { StartInfo = new ProcessStartInfo(slideshowOutputFolder) { UseShellExecute = true } }.Start();
         }
     }
 }

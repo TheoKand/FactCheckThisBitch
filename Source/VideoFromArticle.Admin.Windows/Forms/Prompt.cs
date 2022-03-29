@@ -5,7 +5,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
 {
     public static class Prompt
     {
-        public static string ShowDialog(string text, string caption)
+        public static string ShowDialog(string text, string caption,string defaultValue="")
         {
             Form prompt = new Form()
             {
@@ -13,10 +13,10 @@ namespace VideoFromArticle.Admin.Windows.Forms
                 Height = 250,
                 FormBorderStyle = FormBorderStyle.FixedDialog,
                 Text = caption,
-                StartPosition = FormStartPosition.CenterScreen
+                StartPosition = FormStartPosition.CenterParent
             };
             Label textLabel = new Label() { Left = 20, Top = 20, Text = text };
-            TextBox textBox = new TextBox() { Left = 20, Top = 50, Width = 420 };
+            TextBox textBox = new TextBox() { Left = 20, Top = 50, Width = 420, Text= defaultValue };
             Button confirmation = new Button() { Text = "Ok", Left = 350, Width = 100, Top = 100, Height = 45, DialogResult = DialogResult.OK };
             confirmation.Click += (sender, e) => { prompt.Close(); };
             prompt.Controls.Add(textBox);

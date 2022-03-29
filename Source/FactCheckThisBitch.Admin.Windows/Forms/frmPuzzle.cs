@@ -201,6 +201,7 @@ namespace FactCheckThisBitch.Admin.Windows.Forms
                     MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
+                    Save();
                     SaveToFile();
                 }
             }

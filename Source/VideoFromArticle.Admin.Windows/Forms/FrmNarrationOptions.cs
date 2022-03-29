@@ -22,14 +22,9 @@ namespace VideoFromArticle.Admin.Windows.Forms
             LoadForm();
         }
 
-        private Dictionary<string, string> AvailableVoices = new Dictionary<string, string>()
-        {
-            { "ttsVoiceen-US-AriaNeural", "Grace, Female" }, { "uniform-ttsVoiceen-US-GuyNeural", "Andrew, Male" }
-        };
-
         private void InitForm()
         {
-            lstVoice.DataSource = AvailableVoices.Select(_ => _.Value).ToList();
+            lstVoice.DataSource = StaticSettings.AvailableVoices.Select(_ => _.Value).ToList();
         }
 
         private void LoadForm()
@@ -37,14 +32,15 @@ namespace VideoFromArticle.Admin.Windows.Forms
             if (!UserSettings.Instance().NarrationOptionsVoice.IsEmpty())
             {
                 lstVoice.SelectedItem =
-                    AvailableVoices.First(_ => _.Key == UserSettings.Instance().NarrationOptionsVoice).Value;
+                    StaticSettings.AvailableVoices.First(_ => _.Key == UserSettings.Instance().NarrationOptionsVoice).Value;
             }
         }
 
         private void SaveForm()
         {
             UserSettings.Instance().NarrationOptionsVoice =
-                AvailableVoices.First(_ => _.Value == lstVoice.SelectedItem.ToString()).Key;
+                StaticSettings.AvailableVoices.First(_ => _.Value == lstVoice.SelectedItem.ToString()).Key;
+            UserSettings.Instance().Save();
         }
 
         private void btnCancel_Click_1(object sender, EventArgs e)
@@ -54,7 +50,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
 
         private void btnOK_Click_1(object sender, EventArgs e)
         {
-            Options.Voice = AvailableVoices.First(_ => _.Value == lstVoice.SelectedItem.ToString()).Key;
+            Options.Voice = StaticSettings.AvailableVoices.First(_ => _.Value == lstVoice.SelectedItem.ToString()).Key;
             DialogResult = DialogResult.OK;
             SaveForm();
             Close();

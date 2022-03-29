@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Bson;
 
 namespace FackCheckThisBitch.Common
 {
@@ -16,21 +19,38 @@ namespace FackCheckThisBitch.Common
             return string.IsNullOrWhiteSpace(input);
         }
 
+        public static bool IsNotEmpty(this string input)
+        {
+            return !input.IsEmpty();
+        }
+
         public static string ValueOrNull(this string input)
         {
             return input.IsEmpty() ? null : input;
         }
 
-        public static string Limit(this string input, int max)
+        public static string Limit(this string input, int max,string appendIfCut = null)
         {
+            var result = "";
             if (input?.Length > max)
             {
-                return input.Substring(0, max);
+                if (appendIfCut.IsNotEmpty())
+                {
+                    result = input.Substring(0, max - appendIfCut.Length) + appendIfCut;
+                }
+                else
+                {
+                    result = input.Substring(0, max);
+                }
+                
+
             }
             else
             {
-                return input;
+                result= input;
             }
+
+            return result;
 
         }
 
@@ -267,6 +287,75 @@ namespace FackCheckThisBitch.Common
         public static string GetSign(this double input)
         {
             return input > 0 ? "+" : "";
+        }
+
+        public static TimeSpan ParseTimeSpan(this string input)
+        {
+            try
+            {
+                var min = Convert.ToInt16(input.Split(":")[0]);
+                var sec = Convert.ToInt16(input.Split(":")[1]);
+                var result = TimeSpan.FromSeconds(min * 60 + sec);
+                return result;
+            }
+            catch
+            {
+                return TimeSpan.FromSeconds(0);
+            }
+
+        }
+
+        public static T CloneObject<T>(this T input)
+        {
+            var serialized = JsonConvert.SerializeObject(input);
+            var cloned = JsonConvert.DeserializeObject<T>(serialized);
+            return cloned;
+        }
+
+        public static void CopyTo(this DirectoryInfo diSource, string to)
+        {
+            var diTarget = new DirectoryInfo(to);
+
+            CopyAll(diSource, diTarget);
+
+            void CopyAll(DirectoryInfo source, DirectoryInfo target)
+            {
+                Directory.CreateDirectory(target.FullName);
+
+                // Copy each file into the new directory.
+                foreach (FileInfo fi in source.GetFiles())
+                {
+                    Console.WriteLine(@"Copying {0}\{1}", target.FullName, fi.Name);
+                    fi.CopyTo(Path.Combine(target.FullName, fi.Name), true);
+                }
+
+                // Copy each subdirectory using recursion.
+                foreach (DirectoryInfo diSourceSubDir in source.GetDirectories())
+                {
+                    DirectoryInfo nextTargetSubDir =
+                        target.CreateSubdirectory(diSourceSubDir.Name);
+                    CopyAll(diSourceSubDir, nextTargetSubDir);
+                }
+            }
+        }
+
+        public static string SanitizeNarration(this string narration)
+        {
+            narration = narration.Replace("(pictured)", " ");
+            narration = narration.Replace(".com", " dot com ");
+            narration = narration.Replace("sh*t", "beep");
+            narration = narration.Replace("shit", "beep");
+            narration = narration.Replace("Sen.", "Senator ");
+            narration = narration.Replace("a**", "beep");
+            narration = narration.Replace("ass", "beep");
+            narration = narration.Replace("E! News", "E News");
+
+            if (narration.Contains("*"))
+            {
+                throw new Exception($"Invalid character * in narration '{narration}'");
+            }
+
+            return narration;
         }
 
 

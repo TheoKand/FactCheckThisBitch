@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -76,7 +77,11 @@ namespace FackCheckThisBitch.Common
                     #region parse images
 
                     var images = GetAdditionalImages(html);
-                    result.Add("images", string.Join("\n", images));
+                    result.Add("images", images != null ? string.Join("\n", images.Select( _=>_.image)) : null);
+
+                    var imagesWithCaptions = images.Select(_ => $"{_.image}\t{_.caption}").ToList();
+                    result.Add("imagesWithCaptions", images != null ? string.Join("\n", imagesWithCaptions) : null);
+
                     #endregion
                 }
             }
@@ -85,8 +90,15 @@ namespace FackCheckThisBitch.Common
         }
 
 
-        private List<string> GetAdditionalImages(string content)
+        private List<(string image,string caption)> GetAdditionalImages(string content)
         {
+            //TODO: improve to catch more images from various news sites
+
+            //TODO: catch this twitter poster pattern:
+            //  <video preload="none" playsinline="" disablepictureinpicture="" 
+            //  poster = "https://pbs.twimg.com/ext_tw_video_thumb/1503288402346749953/pu/img/yk_rRp-uj9G41QMY.jpg"
+            //  src = "blob:https://platform.twitter.com/2fe86960-8a97-4ca1-96bc-7b6776919871"
+
             string[] contentPatterns =
             {
                 "<\\s*div[^>]*itemprop\\s*=\\s*[\\\"']articleBody[\\\"'][^>]*>(.*)<\\/\\s*div>",
@@ -101,7 +113,7 @@ namespace FackCheckThisBitch.Common
                 "<\\s*img[^>]* data-src\\s*=\\s*[\"']([^'\"]*)[\"'][^>]*>",
                 "<\\s*img[^>]* src\\s*=\\s*[\"']([^'\"]*)[\"'][^>]*>"
             };
-            var images = GetAllMatches(article, imagePatterns, " alt=",new [] {"jpg","png","tiff"});
+            var images = GetAllMatches(article, imagePatterns, " alt=", new[] { "jpg", "png", "tiff" });
             return images;
         }
 
@@ -148,9 +160,17 @@ namespace FackCheckThisBitch.Common
             return null;
         }
 
-        private List<string> GetAllMatches(string content, string[] patterns, string imageElementMustContain=null, string[] imageUrlMustContainOneOfThese = null)
+        private string AltFromImageTag(string imageTag)
         {
-            var result = new List<string>();
+            var match = Regex.Match(imageTag, "alt\\s*=\\s*\"([^\"]*)\"");
+            if (!match.Success) return "";
+            var alt = match.Groups[1].Value.HtmlDecode();
+            return alt;
+        }
+
+        private List<(string,string)> GetAllMatches(string content, string[] patterns, string imageElementMustContain = null, string[] imageUrlMustContainOneOfThese = null)
+        {
+            var result = new List<(string, string)>();
             foreach (var pattern in patterns)
             {
                 var matches = Regex.Matches(content, pattern);
@@ -160,8 +180,9 @@ namespace FackCheckThisBitch.Common
                     {
                         var imageElement = match.Groups[0].Value;
                         var imageUrl = match.Groups[1].Value.HtmlDecode();
+                        var imageCaption = AltFromImageTag(imageElement);
 
-                        if (!result.Contains(imageUrl))
+                        if (!result.Contains((imageUrl, imageCaption)))
                         {
                             bool meetsCriteria = true;
 
@@ -184,7 +205,7 @@ namespace FackCheckThisBitch.Common
 
                             if (meetsCriteria)
                             {
-                                result.Add(imageUrl);
+                                result.Add((imageUrl, imageCaption));
                             }
 
                         }
@@ -196,12 +217,22 @@ namespace FackCheckThisBitch.Common
             return result;
         }
 
-        public static (FileInfo  fileInfo,int? imageWidth,int? imageHeight) SaveImage(string url, string path)
+        public static (FileInfo fileInfo, int? imageWidth, int? imageHeight) SaveImage(string url, string path)
         {
-            FileInfo fileInfo;
-
             try
             {
+
+                FileInfo fileInfo;
+                if (File.Exists(path))
+                {
+                    using (var image = Image.FromFile(path))
+                    {
+                        fileInfo = new FileInfo(path);
+                        return (fileInfo, image.Width, image.Height);
+                    }
+                }
+
+
                 WebClient client = new WebClient();
                 Stream stream = client.OpenRead(url);
                 Bitmap bitmap = new Bitmap(stream);
@@ -222,12 +253,12 @@ namespace FackCheckThisBitch.Common
                 return result;
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return (null, null, null);
             }
 
-            
+
         }
     }
 }

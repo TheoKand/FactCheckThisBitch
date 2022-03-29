@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace WebAutomation
 {
-    public class Speechelo: IDisposable
+    public class Speechelo : IDisposable
     {
         private IWebDriver _driver;
 
@@ -49,49 +49,62 @@ namespace WebAutomation
                     _driver.FindWaitElement("//*[@id='blastered_datatable']/tbody/tr[1]/td[2]", 5);
                 return lastGeneratedVoiceIdCell.Text;
             }
-            catch{
+            catch
+            {
                 return null;
             }
 
         }
 
-        public void GenerateNarration(string narration,string voice= "ttsVoiceen-US-AriaNeural", string audioFilePath=null)
+        public void GenerateNarration(string narration, string voice = "ttsVoiceen-US-AriaNeural", string audioFilePath = null)
         {
             var txtNarration = _driver.FindWaitElement(By.Id("tts-tarea"), 60);
             txtNarration.Clear();
             txtNarration.SendKeys(narration);
 
-            var radioGrace = _driver.FindWaitElement(By.Id("ttsVoiceen-US-AriaNeural"), 20);
+            var radioGrace = _driver.FindWaitElement(By.Id(voice), 20);
             radioGrace.Click();
 
             var idOfLastVoiceBeforeGeneration = IdOfLastGeneratedVoice();
 
-            _driver.FindWaitElement(By.Id("ttsGenerateBtn"), 5).Click();
+            _driver.FindWaitElement(By.Id("ttsGenerateBtn"), 10).Click();
 
-            //
 
             try
             {
                 _driver.FindWaitElementForClick(
-                        "//button[contains(text(), 'Just generate the voiceover as it is')]", 20)
+                        "//button[contains(text(), 'Just generate')]", 5)
                     .Click();
             }
-            catch
+            catch(Exception ex)
             {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+
             }
 
-            Thread.Sleep(15*1000);
 
-            ////wait until voice generated
-            //while (IdOfLastGeneratedVoice() == idOfLastVoiceBeforeGeneration)
-            //{
-            //    Thread.Sleep(1000);
-            //}
+
+            //Application.DoEvents();
+            //Thread.Sleep(2 * 1000);
+            //Application.DoEvents();
+
+
+            //wait until voice generated
+            while (IdOfLastGeneratedVoice() == idOfLastVoiceBeforeGeneration)
+            {
+                Thread.Sleep(1000);
+                Application.DoEvents();
+            }
+
+            _driver.Navigate().Refresh();
 
             //download mp3 from latest generated voice
             var mp3Anchor = _driver.FindWaitElement("//*[@id='blastered_datatable']/tbody/tr[1]/td[7]/a", 30);
             var mp3Link = mp3Anchor.GetAttribute("href");
-            
+
             var mp3LocalPath = audioFilePath ?? Path.Combine(SaveLocation, $"{Guid.NewGuid()}.mp3");
             Extensions.SaveFile(mp3Link, mp3LocalPath);
 

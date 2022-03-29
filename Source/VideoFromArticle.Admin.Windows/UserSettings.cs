@@ -1,11 +1,16 @@
-﻿using System.IO;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.IO;
 using FackCheckThisBitch.Common;
 using Newtonsoft.Json;
+using VideoFromArticle.Models;
 
 namespace VideoFromArticle.Admin.Windows
 {
     public class UserSettings
     {
+        private static readonly object lockObject = new object();
+
         private static UserSettings _instance;
         private static readonly string SettingsFile = Path.Combine(Configuration.Instance().DataFolder, "UserSettings.json");
 
@@ -14,14 +19,13 @@ namespace VideoFromArticle.Admin.Windows
 
         }
 
-        private string _currentFile;
-        public string CurrentFile
+        private Slideshow _currentSlideshow;
+        public Slideshow CurrentSlideshow
         {
-            get => _currentFile;
+            get => _currentSlideshow;
             set
             {
-                _currentFile = value;
-                Save();
+                _currentSlideshow = value;
             }
         }
 
@@ -32,17 +36,30 @@ namespace VideoFromArticle.Admin.Windows
             set
             {
                 _narrationOptionsVoice = value;
-                Save();
             }
         }
 
-        [JsonIgnore]
-        public string CurrentFilePath => _currentFile.IsEmpty()
-            ? null
-            : Path.Combine(Configuration.Instance().DataFolder, _currentFile);
+        private string _renderOptionsTemplate;
+        public string RenderOptionsTemplate
+        {
+            get => _renderOptionsTemplate;
+            set
+            {
+                _renderOptionsTemplate = value;
+            }
+        }
 
+        private int _renderOptionsIntroDurationSeconds;
+        public int RenderOptionsIntroDuration
+        {
+            get => _renderOptionsIntroDurationSeconds;
+            set
+            {
+                _renderOptionsIntroDurationSeconds = value;
+            }
+        }
 
-        private void Save()
+        public void Save()
         {
             var json = JsonConvert.SerializeObject(this, Newtonsoft.Json.Formatting.Indented,
                 new JsonSerializerSettings
@@ -56,13 +73,19 @@ namespace VideoFromArticle.Admin.Windows
 
         public static UserSettings Instance()
         {
-            _instance ??= ReadSettings();
-            return _instance;
+            lock (lockObject)
+            {
+                _instance ??= ReadSettings();
+                return _instance;
+            }
+
+            
+            
         }
 
         private static UserSettings ReadSettings()
         {
-            
+
             if (File.Exists(SettingsFile))
             {
                 var json = File.ReadAllText(SettingsFile);
@@ -73,6 +96,7 @@ namespace VideoFromArticle.Admin.Windows
             {
                 return new UserSettings();
             }
+
         }
     }
 }

@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
+using FackCheckThisBitch.Common;
 using SixLabors.ImageSharp;
 using Syncfusion.Presentation;
 
@@ -25,7 +26,7 @@ namespace FactCheckThisBitch.Render
             ITextPart textPartFormatting = paragraph2.AddTextPart();
 
             //Adds text to the TextPart
-            textPartFormatting.Text = text;
+            textPartFormatting.Text = text ?? "";
 
   
             //Retrieves the existing font for modification
@@ -53,11 +54,41 @@ namespace FactCheckThisBitch.Render
 
         }
 
-        public static void RemoveAnimationsForShape(this ISlide slide, string shapeName)
+        public static void RemoveShapeIfTextEmpty(this ISlide slide, string shapeName)
         {
             if (slide == null) return;
             var shape = slide.Shapes.FirstOrDefault(s => s.ShapeName == shapeName) as IShape;
             if (shape == null) return;
+            if (shape.TextBody.Text.IsEmpty())
+            {
+                slide.HideShapeAndRemoveAnimations(shape);
+            }
+        }
+
+        public static void HideShapeAndRemoveAnimations(this ISlide slide, string shapeName)
+        {
+            var shape = slide.ShapeByName(shapeName) as IShape;
+            if (shape == null) return;
+            shape.Left = slide.SlideSize.Width + 100;
+            slide.RemoveAnimationsForShape(shape);
+        }
+
+        public static void HideShapeAndRemoveAnimations(this ISlide slide, IShape shape)
+        {
+            shape.Left = slide.SlideSize.Width + 100;
+            slide.RemoveAnimationsForShape(shape);
+        }
+
+        public static void RemoveAnimationsForShape(this ISlide slide, string shapeName)
+        {
+            if (slide == null) return;
+            var shape = slide.Shapes.FirstOrDefault(s => s.ShapeName == shapeName) as IShape;
+            slide.RemoveAnimationsForShape(shape);
+        }
+
+        public static void RemoveAnimationsForShape(this ISlide slide, IShape shape)
+        {
+            if (slide == null || shape==null) return;
             slide.Timeline.MainSequence.RemoveByShape(shape);
         }
 
@@ -66,7 +97,7 @@ namespace FactCheckThisBitch.Render
             if (groupShape == null) return null;
             var shape = groupShape.Shapes.FirstOrDefault(s => s.ShapeName == shapeName) as IShape;
             if (shape == null) return null;
-            shape.TextBody.Text = text;
+            shape.TextBody.Text = text ?? "";
             return shape;
         }
 
@@ -92,7 +123,7 @@ namespace FactCheckThisBitch.Render
         {
             var shape = slide?.Shapes.FirstOrDefault(s => s.ShapeName == textboxName) as IShape;
             if (shape == null) return null;
-            shape.TextBody.Text = text;
+            shape.TextBody.Text = text ?? "";
             return shape;
         }
 

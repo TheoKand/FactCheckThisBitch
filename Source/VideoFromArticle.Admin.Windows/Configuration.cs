@@ -14,6 +14,9 @@ namespace VideoFromArticle.Admin.Windows
 
         public string OutputFolder => ConfigurationManager.AppSettings.Get("OutputFolder");
 
+        public string VideoFromArticleTempatesFolder => ConfigurationManager.AppSettings.Get("VideoFromArticleTempatesFolder");
+
+
         public static Configuration Instance()
         {
             _instance = _instance ?? new Configuration();
