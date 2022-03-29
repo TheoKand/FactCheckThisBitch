@@ -1,0 +1,672 @@
+{
+  "Id": "9a4f2d37-d5ac-49e6-891d-e7407476f168",
+  "Title": "Ukraine War Daily Update 18 March",
+  "Articles": [
+    {
+      "Id": "a6cb174d-cdb4-479a-9a4d-cddb34f1773b",
+      "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\ukraine-war-daily-update-18-march",
+      "Url": "https://www.theguardian.com/world/2022/mar/14/russia-accuses-kyiv-of-deadly-missile-attack-on-donetsk",
+      "Source": "the Guardian",
+      "Title": "Russia accuses Kyiv of deadly missile attack on Donetsk",
+      "Published": "2022-03-14T00:00:00",
+      "Images": [
+        {
+          "Filename": "e06096c4-41c5-4abb-8db6-1eec3644ff5d.png"
+        },
+        {
+          "Filename": "3266d086-535b-434a-8895-a5eac8ce1cf8.png"
+        },
+        {
+          "Filename": "6000ce4c-c6ca-455d-9762-55dd30eb1658.png"
+        },
+        {
+          "Filename": "0e2350ef-0d2e-4bd3-9160-baff4c24d6ed.png"
+        },
+        {
+          "Filename": "36a769c8-fc4a-4420-a840-1258ed97731f.png"
+        },
+        {
+          "Filename": "fd9a9284-9060-4be2-bf38-3aac62698d29.png"
+        },
+        {
+          "Filename": "ef98ddce-e644-4c06-b48e-bcf9eabfd467.png"
+        },
+        {
+          "Filename": "34dee256-a06d-4dc3-bc51-00634e8fdb54.png"
+        },
+        {
+          "Filename": "f31a3185-91f1-4bb6-a3de-315ffb7a7a8b.png"
+        },
+        {
+          "Filename": "50324d84-e280-4b6b-937f-b84699750ab7.png"
+        },
+        {
+          "Filename": "aff7e6ae-d548-4d51-b029-63b2acabca0d.png"
+        },
+        {
+          "Filename": "441c55c9-928b-4a72-93d9-bd3e14096d37.png"
+        },
+        {
+          "Filename": "923ec1f3-4248-4839-8de4-ba3d40948eca.png"
+        },
+        {
+          "Filename": "09143db8-e792-4f6e-b6cf-e31a6083574b.png"
+        }
+      ],
+      "Narration": "Russia claimed on Monday that an attack by Kyiv’s forces on the separatist stronghold of Donetsk in eastern Ukraine had left 23 people dead, with the military accusing Kyiv of committing a “war crime”.\r\n\r\nMoscow accused Ukraine’s army of firing a Tochka-U missile at a residential area in Donetsk, in one of the most serious attacks on the city since Russia sent troops into Ukraine more than two weeks ago.\r\n\r\nUkrainian authorities denied the accusations by Russia.\r\n\r\nLeonid Matyukhin, a Ukrainian military spokesperson, said the missile, which carried a shrapnel warhead, was in fact a Russian rocket. “It is unmistakably a Russian rocket or another munition; there’s not even any point talking about it,” Matyukhin said.Neither the Russian nor the Ukrainian claims can be independently verified.Pro-Russian separatists, who have controlled the city since 2014, had earlier said fragments from a rocket they shot down had left between 16 and 20 civilians dead.\r\n\r\nRussia’s investigative committee, which investigates serious crimes, increased the tally, saying at least 23 civilians including children had died and 18 were injured. Investigators said they had opened a criminal inquiry.\r\n\r\nEarlier, Russia’s defence ministry said 20 people had died and 28 had been hospitalised.\r\n\r\n“The use of such weapons in a city where there are no firing positions of the armed forces is a war crime,” Russian defence ministry spokesman Igor Konashenkov said.\r\n\r\nOfficial separatist Telegram channels distributed photos and video of the aftermath, showing burnt-out cars, bodies strewn in the street, and damage to shops.\r\n\r\nIn an interview with Russian state-run television, the head of the so-called Donetsk People’s Republic, Denis Pushilin, said the shot-down rocket had inflicted damage to residential areas.\r\n\r\n“People were waiting in line near an ATM and were standing at a bus stop,” he said in remarks broadcast on Russian television. “There are children among the dead,” Pushilin said, adding that the casualty count would have been higher had the rocket not been downed.\r\n\r\nReports of the attack came as Ukrainian and Russian negotiators met for talks to resolve more than two weeks of fierce fighting but failed to find any breakthrough.",
+      "RecycledImages": [
+        {
+          "Filename": "e06096c4-41c5-4abb-8db6-1eec3644ff5d.png"
+        },
+        {
+          "Filename": "3266d086-535b-434a-8895-a5eac8ce1cf8.png"
+        },
+        {
+          "Filename": "6000ce4c-c6ca-455d-9762-55dd30eb1658.png"
+        },
+        {
+          "Filename": "0e2350ef-0d2e-4bd3-9160-baff4c24d6ed.png"
+        },
+        {
+          "Filename": "36a769c8-fc4a-4420-a840-1258ed97731f.png"
+        },
+        {
+          "Filename": "fd9a9284-9060-4be2-bf38-3aac62698d29.png"
+        },
+        {
+          "Filename": "ef98ddce-e644-4c06-b48e-bcf9eabfd467.png"
+        },
+        {
+          "Filename": "34dee256-a06d-4dc3-bc51-00634e8fdb54.png"
+        },
+        {
+          "Filename": "f31a3185-91f1-4bb6-a3de-315ffb7a7a8b.png"
+        },
+        {
+          "Filename": "50324d84-e280-4b6b-937f-b84699750ab7.png"
+        },
+        {
+          "Filename": "aff7e6ae-d548-4d51-b029-63b2acabca0d.png"
+        },
+        {
+          "Filename": "441c55c9-928b-4a72-93d9-bd3e14096d37.png"
+        },
+        {
+          "Filename": "923ec1f3-4248-4839-8de4-ba3d40948eca.png"
+        },
+        {
+          "Filename": "09143db8-e792-4f6e-b6cf-e31a6083574b.png"
+        }
+      ],
+      "DurationInSeconds": 139.9199999
+    },
+    {
+      "Id": "8ed85f1f-20f8-4e16-b115-9760f950dab4",
+      "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\ukraine-war-daily-update-18-march",
+      "Url": "https://www.project-syndicate.org/commentary/putin-ukraine-world-war-3-risk-by-george-soros-2022-03",
+      "Source": "Project Syndicate",
+      "Title": "Vladimir Putin and the Risk of World War III",
+      "Published": "2022-03-11T00:00:00",
+      "Images": [
+        {
+          "Filename": "14f4d322edc0dfeeb6aa4af5107e6e10.jpg"
+        },
+        {
+          "Filename": "ebc19ba92e20427af49e9e3d54c65a16.jpg"
+        },
+        {
+          "Filename": "50c4aae69e52cc29133aa5b83432c5dc.jpg"
+        },
+        {
+          "Filename": "564a9a0e-f1eb-479a-9a20-6efe92bb3d6e.png"
+        },
+        {
+          "Filename": "de50b88e-c5d2-43a1-9e68-9be77af10374.png"
+        },
+        {
+          "Filename": "11afff21-d58d-4996-9874-7bac70df850c.png"
+        },
+        {
+          "Filename": "3dd8002e-eb4a-4432-9ad2-f72c7388d30d.png"
+        },
+        {
+          "Filename": "9e583f90-cfc4-470e-a915-6f7d6c15dda9.png"
+        },
+        {
+          "Filename": "789fd086-00f3-4efb-aefb-f2c1bc3d47be.png"
+        },
+        {
+          "Filename": "80be269d-49ee-4b77-afe1-009540d727d1.png"
+        },
+        {
+          "Filename": "72886442dc9ca1fc1694cbbeb2368eb7.jpg"
+        },
+        {
+          "Filename": "b82f5a1f-54a6-4361-a84f-bad76d3616f2.png"
+        },
+        {
+          "Filename": "e87a7420-4b35-4c32-8de4-c8cc7f88791a.png"
+        },
+        {
+          "Filename": "7bd37c18-f095-4fc3-a9f7-5155b0ab5a76.png"
+        },
+        {
+          "Filename": "8f2790d6-36fb-4d5e-bf94-c4cadd6d217d.png"
+        }
+      ],
+      "Narration": "After receiving a green light from Chinese President Xi Jinping, Russian President Vladimir Putin launched his war in Ukraine in an effort to reclaim the old Russian empire. But both leaders appear to have misjudged the situation, raising the prospect of a global catastrophe – unless they are removed from power.Russia’s invasion of Ukraine on February 24 was the beginning of a third world war that has the potential to destroy our civilization. The invasion was preceded by a long meeting between Russian President Vladimir Putin and Chinese President Xi Jinping on February 4 – the beginning of the Chinese Lunar New Year celebrations and the Beijing Winter Olympic Games. At the end of that meeting, the two men released a 5,000-word, carefully drafted document announcing a close partnership between their two countries. The document is stronger than any treaty and must have required detailed negotiations in advance.I was surprised that Xi appeared to have given Putin carte blanche to invade and wage war against Ukraine. He must be very confident that his confirmation as China’s ruler for life later this year will be a mere formality. Having concentrated all power in his own hands, Xi has carefully scripted the scenario by which he will be elevated to the level of Mao Zedong and Deng Xiaoping.\r\n\r\nHaving obtained Xi’s backing, Putin set about realizing his life’s dream with incredible brutality. Approaching the age of 70, Putin feels that if he is going to make his mark on Russian history, it is now or never. But his concept of Russia’s role in the world is warped. He seems to believe that the Russian people need a Czar whom they can follow blindly. That is the direct opposite of a democratic society, and it is a vision that distorts the Russian “soul,” which is emotional to the point of sentimentality.\r\n\r\nAs a child, I had many encounters with Russian soldiers when they occupied Hungary in 1945. I learned that they would share their last piece of bread with you if you appealed to them. Later, at the beginning of the 1980s, I embarked on what I call my political philanthropy.\r\n\r\nFirst, I set up a foundation in my native Hungary, and then I actively participated in the disintegration of the Soviet empire. When Mikhail Gorbachev came to power in 1985, the disintegration had already begun. I set up a foundation in Russia, and then did the same in each of the successor states. In Ukraine, I established a foundation even before it became an independent country. I also visited China in 1984, where I was the first foreigner allowed to set up a foundation (which I closed in 1989, just before the Tiananmen Square massacre).\r\n\r\nI don’t know Putin personally, but I have watched his rise very closely, aware of his ruthlessness. He reduced the capital of Chechnya, Grozny, to rubble, just as he is currently threatening to do to the capital of Ukraine, Kyiv.Putin used to be a canny KGB operator, but he seems to have changed recently. Having developed an idée fixe, he appears to have lost touch with reality. He certainly misjudged the situation in Ukraine. He expected Russian-speaking Ukrainians to welcome Russian soldiers with open arms, but they turned out to be no different from the Ukrainian-speaking population. Ukrainians have put up an incredibly brave resistance against seemingly overwhelming odds.\r\n\r\nIn July 2021, Putin published a long essay arguing that Russians and Ukrainians are really one people, and that the Ukrainians have been misled by neo-Nazi agitators. The first part of his argument is not without some historical justification, given that Kyiv was the original seat of the Russian Orthodox Church. But in the second part, it was Putin who was misled. He ought to have known better. Many Ukrainians fought valiantly during the Euromaidan protests in 2014.\r\n\r\nThe events of 2014 made him very angry. But the Russian army performed poorly when it was ordered to attack its Ukrainian brothers. Ingrained corruption in the awarding of defense contracts also has played an important role in its underperformance. Yet rather than blaming himself, Putin seems to have gone literally mad. He has decided to punish Ukraine for standing up to him, and he appears to be acting without any constraint. He is throwing the entire Russian army into the battle and ignoring all the rules of war, not least by indiscriminately bombing the civilian population. Many hospitals have been hit, and the electrical grid supplying the Chernobyl nuclear power plant (currently occupied by Russian troops) has been damaged. In besieged Mariupol, 400,000 people have been without water and food for nearly a week.\r\n\r\nRussia may well lose the war. The United States and the European Union are both sending defensive weapons to Ukraine, and there are efforts to buy Russian-made MIG fighters that Ukrainian pilots know how to fly. These could make all the difference. Regardless of the outcome, Putin has already worked wonders when it comes to strengthening the EU’s resolve and unity.\r\n\r\nMeanwhile, Xi seems to have realized that Putin has gone rogue. On March 8, one day after Chinese Foreign Minister Wang Yi had insisted that the friendship between China and Russia remained “rock solid,” Xi called French President Emmanuel Macron and German Chancellor Olaf Scholz to say that he supported their peacemaking efforts. He wanted maximum restraint in the war in order to avert a humanitarian crisis.\r\n\r\nIt is far from certain that Putin will accede to Xi’s wishes. We can only hope that Putin and Xi will be removed from power before they can destroy our civilization.",
+      "RecycledImages": [
+        {
+          "Filename": "14f4d322edc0dfeeb6aa4af5107e6e10.jpg"
+        },
+        {
+          "Filename": "ebc19ba92e20427af49e9e3d54c65a16.jpg"
+        },
+        {
+          "Filename": "50c4aae69e52cc29133aa5b83432c5dc.jpg"
+        },
+        {
+          "Filename": "564a9a0e-f1eb-479a-9a20-6efe92bb3d6e.png"
+        },
+        {
+          "Filename": "de50b88e-c5d2-43a1-9e68-9be77af10374.png"
+        },
+        {
+          "Filename": "11afff21-d58d-4996-9874-7bac70df850c.png"
+        },
+        {
+          "Filename": "3dd8002e-eb4a-4432-9ad2-f72c7388d30d.png"
+        },
+        {
+          "Filename": "9e583f90-cfc4-470e-a915-6f7d6c15dda9.png"
+        },
+        {
+          "Filename": "789fd086-00f3-4efb-aefb-f2c1bc3d47be.png"
+        },
+        {
+          "Filename": "80be269d-49ee-4b77-afe1-009540d727d1.png"
+        },
+        {
+          "Filename": "72886442dc9ca1fc1694cbbeb2368eb7.jpg"
+        },
+        {
+          "Filename": "b82f5a1f-54a6-4361-a84f-bad76d3616f2.png"
+        },
+        {
+          "Filename": "e87a7420-4b35-4c32-8de4-c8cc7f88791a.png"
+        },
+        {
+          "Filename": "7bd37c18-f095-4fc3-a9f7-5155b0ab5a76.png"
+        },
+        {
+          "Filename": "8f2790d6-36fb-4d5e-bf94-c4cadd6d217d.png"
+        },
+        {
+          "Filename": "14f4d322edc0dfeeb6aa4af5107e6e10.jpg"
+        },
+        {
+          "Filename": "ebc19ba92e20427af49e9e3d54c65a16.jpg"
+        },
+        {
+          "Filename": "50c4aae69e52cc29133aa5b83432c5dc.jpg"
+        },
+        {
+          "Filename": "564a9a0e-f1eb-479a-9a20-6efe92bb3d6e.png"
+        },
+        {
+          "Filename": "de50b88e-c5d2-43a1-9e68-9be77af10374.png"
+        },
+        {
+          "Filename": "11afff21-d58d-4996-9874-7bac70df850c.png"
+        },
+        {
+          "Filename": "3dd8002e-eb4a-4432-9ad2-f72c7388d30d.png"
+        },
+        {
+          "Filename": "9e583f90-cfc4-470e-a915-6f7d6c15dda9.png"
+        },
+        {
+          "Filename": "789fd086-00f3-4efb-aefb-f2c1bc3d47be.png"
+        },
+        {
+          "Filename": "80be269d-49ee-4b77-afe1-009540d727d1.png"
+        },
+        {
+          "Filename": "72886442dc9ca1fc1694cbbeb2368eb7.jpg"
+        },
+        {
+          "Filename": "b82f5a1f-54a6-4361-a84f-bad76d3616f2.png"
+        },
+        {
+          "Filename": "e87a7420-4b35-4c32-8de4-c8cc7f88791a.png"
+        },
+        {
+          "Filename": "7bd37c18-f095-4fc3-a9f7-5155b0ab5a76.png"
+        },
+        {
+          "Filename": "8f2790d6-36fb-4d5e-bf94-c4cadd6d217d.png"
+        },
+        {
+          "Filename": "14f4d322edc0dfeeb6aa4af5107e6e10.jpg"
+        },
+        {
+          "Filename": "ebc19ba92e20427af49e9e3d54c65a16.jpg"
+        },
+        {
+          "Filename": "50c4aae69e52cc29133aa5b83432c5dc.jpg"
+        },
+        {
+          "Filename": "564a9a0e-f1eb-479a-9a20-6efe92bb3d6e.png"
+        }
+      ],
+      "DurationInSeconds": 345.6
+    },
+    {
+      "Id": "5f9995e8-2671-4da1-bef7-a1f69125fa2b",
+      "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\ukraine-war-daily-update-18-march",
+      "Url": "https://www.dailymail.co.uk/news/article-10614275/Squatters-film-inside-Oleg-Deripaskas-opulent-50m-Knightsbridge-mansion.html",
+      "Source": "Mail Online",
+      "Title": "Squatters film inside Oleg Deripaska's opulent £50m mansion",
+      "Published": "2022-03-15T00:00:00",
+      "Images": [
+        {
+          "Filename": "55372329-10614275-image-m-23_1647337772670.jpg"
+        },
+        {
+          "Filename": "55372331-10614275-image-a-24_1647337782252.jpg"
+        },
+        {
+          "Filename": "55372317-10614275-image-m-21_1647337746309.jpg"
+        },
+        {
+          "Filename": "55372325-10614275-This_grand_piano_is_likely_to_be_a_1880s_B_sendorfer_worth_upwar-a-6_1647348442712.jpg"
+        },
+        {
+          "Filename": "55372323-10614275-After_the_activist_filming_the_video_plays_a_few_keys_the_view_p-a-10_1647348442792.jpg"
+        },
+        {
+          "Filename": "55372333-10614275-image-a-20_1647337739041.jpg"
+        },
+        {
+          "Filename": "55372415-10614275-image-a-32_1647337835167.jpg"
+        },
+        {
+          "Filename": "55372417-10614275-image-m-31_1647337826344.jpg"
+        },
+        {
+          "Filename": "55328453-0-image-a-39_1647250773581.jpg"
+        },
+        {
+          "Filename": "55354601-10614275-A_cherry_picker_is_used_to_reach_squatters_at_a_property_belongi-a-44_1647338194116.jpg"
+        },
+        {
+          "Filename": "55354753-10614275-Police_arrest_activists_after_they_made_a_second_attempt_to_get_-a-7_1647348442722.jpg"
+        },
+        {
+          "Filename": "55352707-10610307-image-a-20_1647292873343.jpg"
+        },
+        {
+          "Filename": "55336365-10614275-image-a-8_1647348442783.jpg"
+        },
+        {
+          "Filename": "55334413-10613533-The_mansion_belongs_to_the_family_of_oil_tycoon_Oleg_Deripaska_o-a-74_1647312767900.jpg"
+        },
+        {
+          "Filename": "55335527-10610307-Officers_tried_to_access_the_property_s_balcony_using_a_ladder_a-a-49_1647307227442.jpg"
+        },
+        {
+          "Filename": "55336189-10613533-The_JCB_cherry_picker_that_police_used_to_get_onto_the_balcony_a-a-75_1647312767909.jpg"
+        },
+        {
+          "Filename": "55345439-10613533-A_police_officer_stands_guard_outside_a_mansion_in_Belgrave_Squa-a-4_1647338085730.jpg"
+        },
+        {
+          "Filename": "55335655-10613533-The_squatters_call_themselves_the_London_Mahknovists_after_Nesto-a-2_1647338085722.jpg"
+        },
+        {
+          "Filename": "55328449-10613533-image-a-3_1647338085725.jpg"
+        },
+        {
+          "Filename": "55329239-10614275-5_Belgrave_Square_is_considered_London_s_most_expensive_terraced-a-9_1647348442790.jpg"
+        },
+        {
+          "Filename": "55329249-10614275-Pro_Ukraine_protesters_raised_their_fists_and_chanted_anti_Putin-a-46_1647338451526.jpg"
+        },
+        {
+          "Filename": "55329247-10614275-An_activist_raises_his_fist_above_a_banner_reading_Putin_go_f_yo-a-12_1647348442831.jpg"
+        },
+        {
+          "Filename": "55182889-10613533-Peter_Mandelson-a-5_1647338085743.jpg"
+        },
+        {
+          "Filename": "55182921-10613533-George_Osborne-a-6_1647338085750.jpg"
+        },
+        {
+          "Filename": "55182925-10614275-Deripaska_s_yacht_Queen_K_anchors_in_Bodrum_district_of_Turkey_s-a-11_1647348442830.jpg"
+        },
+        {
+          "Filename": "e50b0411-f66b-412d-ad7b-95ded0b6412d.png"
+        },
+        {
+          "Filename": "41ac0f71-7615-4d4a-9058-74db768d724e.png"
+        },
+        {
+          "Filename": "d73f5a09-418c-49e2-86ca-92e26e2945f6.png"
+        }
+      ],
+      "Narration": "An extraordinary 'through the keyhole' video inside a Russian oligarch's £50,000 mansion reveals a wealth of treasures including a £60,000 vintage piano, hundreds of thousands of pounds worth of paintings and a £1.5m Barbara Hepworth sculpture.\r\n\r\nThe footage - filmed by pro-Ukraine protesters after they invaded Putin crony Oleg Deripaska's seven-bedroom London 'crash pad' - is a rare insight into how Russia's wealthiest men live away from the public eye, although the aluminium tycoon last night insisted the house belongs to a relative.\r\n\r\nThe tour around the £2billion Belgravia home begins in a study with a mahogany desk strewn with bottles of water and stationery and artworks on the wall believed to be by Italian futurist painter Gino Severini.\r\n\r\n\r\nIn an adjoining sitting room, lined with bookcases and featuring a chandelier, an antique mirror and two atlas globes, a plinth displays a sculpture believed to be by British artist Barbara Hepworth and worth around £1.5m.The camera then moves into another large room, furnished in a more modern style and with a large skylight illuminating a grand piano. It is likely a restored 1880s Bösendorfer worth upwards of £60,000, Damon Burrows, of Markson Pianos, told The Times.\r\n\r\nAfter the activist filming the video plays a few keys, the view pans over a banister to the ground floor, where there is a £50,000 dining table from Linley of Belgravia.\r\n\r\nNext door, in the cinema room, is a large painting of Cossacks on horses believed to be the work of Franz Roubaud, a 19th-century Russian artist. It has an estimated value of £60,000. Gathered around it are sofas and £4,500 Linley chairs.5 Belgrave Square, which also features a steam bath, a gym and two kitchens, is considered to be London's most expensive terraced house, and previously belonged to the society diarist Sir Henry 'Chips' Channon MP.\r\n\r\nThe six-storey mansion was also once home of Sir George Murray, the British Secretary of State for War and the Colonies, until he died there in 1846, and later housed the Institute of Directors. It is in one of London's most desirable postcodes, with dozens of embassies nearby.\r\n\r\nActivists said the property seemed deserted and claimed that the heating was off, the fridge empty and the electricity off in some parts of the building. 'It is selfish that one man had this all to himself,' one said.Deripaska, who was sanctioned by the UK government last week for his pro-Kremlin position and close association with Russian president Vladimir Putin, last night accused the government of colluding with the squatters.\r\n\r\nActivists broke in shortly after midnight yesterday, setting off the alarm system. Demonstrators hung banners from the front of the building which declared 'this property has been liberated' and 'Putin go f*** yourself'.\r\n\r\nThe group of four men spent about 11 hours inside the mansion before a unit of riot police armed with shields and Tasers used a drill to smash through the large front door.\r\n\r\nA separate team attempted to use a ladder to gain access via a balcony at the next-door house, but they were thwarted when two activists kicked out at them.\r\n\r\nBoth sides became locked in a stalemate as police who surrounded them were unable to safely pluck the protesters from a first-floor balcony.\r\n\r\nThe squatters said they were the London Mahknovists - after Nestor Makhno, who led an anarchist force that attempted to form a stateless society in Ukraine during the Russian Revolution of 1917-1923.\r\n\r\nThey claimed their goal was to force the government to use the Grade I-listed mansion and other properties linked to oligarchs to house Ukrainian refugees fleeing the war.\r\n\r\nOne of the men said: 'We have opened the building to house Ukrainian refugees and refugees from all nations.'\r\n\r\nHe also said the owner of the building 'wants to destroy Ukraine homes'.\r\n\r\n'He supported the wars. This home belongs to Ukrainian refugees. There are families dying. Their land has gone. This is the least we can do.'\r\n\r\nHe said the UK Government had 'failed' to properly respond to the invasion, adding: 'The same money that funds the Russia war machine funds the Conservative Party.'\r\n\r\nThe group also criticised the police, comparing them to those arresting protesters in Russia.\r\n\r\nDemonstrators taunted officers trying to remove them in a cherry picker by sipping whisky and ice tea and singing The Time of My Life - the theme tune to Dirty Dancing.\r\n\r\nLondon mayor Sadiq Khan last night said he was 'surprised' the Met intervened and suggested it was 'unclear' why officers had become involved. The Labour politician said he did not 'condone' the actions taken by the squatters but questioned whether the police move against them had been 'proportionate'.\r\n\r\nSpeaking to LBC's Tonight With Andrew Marr programme, Mr Khan said the police response - which included deploying a JCB crane to gain access to the mansion and cordoning off the street - 'does raise questions'.\r\n\r\n'I'm unclear what the police were responding to because we know no one's living there,' he said.\r\n\r\n'But I'm not sure if there were concerns about any crimes being done to any neighbouring properties, so those are the questions.'\r\n\r\nAt the height of the standoff, nine police vans and a police car were stationed on the road. At around 11am, officers moved on the address as around 100 onlookers watched on.\r\n\r\nDemonstrators had earlier asked for support on Twitter. At one point a man arrived with a Sainsbury's bag of supplies and attempted to throw it onto the balcony, but it landed on top of a police van. He was quickly surrounded by officers.\r\n\r\nDeripaska bought the regency home in April 2003, when it was listed for about £25 million. Current Land Registry records show the registered owner is Ravellot Limited, which is incorporated in the British Virgin Islands.  \r\n\r\nDeripaska has previously stated he spent no more than 19 nights at the address during the whole of 2006.\r\n\r\nHis UK property portfolio reportedly also includes another mansion near Weybridge, in Surrey.\r\n\r\nA neighbour said most houses on the square serve as 'holiday homes'.\r\n\r\nDeripaska tweeted after the announcement of sanctions last week: 'Since there's not a single fact in support of Boris' cabinet's fantasies it will be for the courts and the police to decide the future for all in this sanctions story.'\r\n\r\nA Met spokesman said: 'Four protestors who gained entry to the balcony of a building in Belgrave Square, SW1 have come down and been arrested.\r\n\r\n'The four have been arrested under section 144 of the Legal Aid, Sentencing and Punishment of Offenders Act 2012. A police presence will continue at the scene.\r\n\r\n'Police were called shortly after 1am on Monday, March 14 to a residential property in Belgrave Square. It was reported that a number of people had gained entry to the building and hung banners from upstairs windows.\r\n\r\n'Officers completed a search of the property and are satisfied there are no people left inside.'\r\n\r\nDeripaska was embroiled in a 2008 row dubbed Yachtgate, after his meetings with Mr Mandelson and Mr Osborne were revealed.\r\n\r\nBoth men met the industrialist on his yacht, with Mr Osborne accused of trying to solicit a donation for the Tory party - something he denies.\r\n\r\nLord Mandelson, who was then an EU trade commissioner, stayed on the Queen K off the Greek island.\r\n\r\nHe went on to become business secretary in Gordon Brown's government as a Labour peer.\r\n\r\nBy the time they met Deripaska had already been targeted by the United States, which cancelled his visa in 2007.\r\n\r\nThe Russian is believed to have a fortune of £3.2billion. Last year, Isle of Wight MP Bob Seely used Parliamentary Privilege to describe him as 'one of President Putin's most loyal oligarchs'.\r\n\r\nDeripaska, who is a grandson by marriage to the late leader of the Soviet Union Boris Yeltsin, has been sanctioned by the US since 2018 over alleged links to the Russian government, including allegations of cyber-attacks and election meddling.\r\n\r\nHe called the claims 'a lie', adding: 'The idea that I am some kind of ''Kremlin operative''... is clearly idiotic nonsense.'\r\n\r\nIn a bitter £650million legal battle at the High Court in 2012, he was alleged to have ties to brutal organised crime gangs which emerged after the collapse of Communism in the former Soviet Union.\r\n\r\nHe vehemently denied the allegations – revealed in legal papers filed as part of the case – and counter-claimed that he was the victim of an 'old-fashioned protection racket' run by the Mafia-style gangs.\r\n\r\nDeripaska said he had been forced to pay more than half a billion dollars to the gangs over seven years and had feared for his safety and that of his family.\r\n\r\nHis one time business partner, Chelsea owner Roman Abramovich, has been hit with the same measures - as have Rosneft chief Igor Sechin and four more described as being in Putin's 'inner circle'.\r\n\r\nAfter the Corfu meeting with Deripaska was revealed, Mr Osborne admitted meeting him on four occasions over the course of a weekend in the Mediterranean in August 2008.\r\n\r\nHe insisted they had not discussed donations, which are allowed only from UK-registered voters, but later admitted the meetings were 'a mistake'.\r\n\r\nMandelson also denied any wrongdoing, telling the Guardian: 'What is important is not where you meet somebody or how long you meet them for but what you do during the meeting.\r\n\r\n'In my case, I offered no favours and I received no favours, unlike George Osborne, who was holding conversations around his visits in order to obtain a financial contribution to the Conservative party.' ",
+      "RecycledImages": [
+        {
+          "Filename": "55372329-10614275-image-m-23_1647337772670.jpg"
+        },
+        {
+          "Filename": "55372331-10614275-image-a-24_1647337782252.jpg"
+        },
+        {
+          "Filename": "55372317-10614275-image-m-21_1647337746309.jpg"
+        },
+        {
+          "Filename": "55372325-10614275-This_grand_piano_is_likely_to_be_a_1880s_B_sendorfer_worth_upwar-a-6_1647348442712.jpg"
+        },
+        {
+          "Filename": "55372323-10614275-After_the_activist_filming_the_video_plays_a_few_keys_the_view_p-a-10_1647348442792.jpg"
+        },
+        {
+          "Filename": "55372333-10614275-image-a-20_1647337739041.jpg"
+        },
+        {
+          "Filename": "55372415-10614275-image-a-32_1647337835167.jpg"
+        },
+        {
+          "Filename": "55372417-10614275-image-m-31_1647337826344.jpg"
+        },
+        {
+          "Filename": "55328453-0-image-a-39_1647250773581.jpg"
+        },
+        {
+          "Filename": "55354601-10614275-A_cherry_picker_is_used_to_reach_squatters_at_a_property_belongi-a-44_1647338194116.jpg"
+        },
+        {
+          "Filename": "55354753-10614275-Police_arrest_activists_after_they_made_a_second_attempt_to_get_-a-7_1647348442722.jpg"
+        },
+        {
+          "Filename": "55352707-10610307-image-a-20_1647292873343.jpg"
+        },
+        {
+          "Filename": "55336365-10614275-image-a-8_1647348442783.jpg"
+        },
+        {
+          "Filename": "55334413-10613533-The_mansion_belongs_to_the_family_of_oil_tycoon_Oleg_Deripaska_o-a-74_1647312767900.jpg"
+        },
+        {
+          "Filename": "55335527-10610307-Officers_tried_to_access_the_property_s_balcony_using_a_ladder_a-a-49_1647307227442.jpg"
+        },
+        {
+          "Filename": "55336189-10613533-The_JCB_cherry_picker_that_police_used_to_get_onto_the_balcony_a-a-75_1647312767909.jpg"
+        },
+        {
+          "Filename": "55345439-10613533-A_police_officer_stands_guard_outside_a_mansion_in_Belgrave_Squa-a-4_1647338085730.jpg"
+        },
+        {
+          "Filename": "55335655-10613533-The_squatters_call_themselves_the_London_Mahknovists_after_Nesto-a-2_1647338085722.jpg"
+        },
+        {
+          "Filename": "55328449-10613533-image-a-3_1647338085725.jpg"
+        },
+        {
+          "Filename": "55329239-10614275-5_Belgrave_Square_is_considered_London_s_most_expensive_terraced-a-9_1647348442790.jpg"
+        },
+        {
+          "Filename": "55329249-10614275-Pro_Ukraine_protesters_raised_their_fists_and_chanted_anti_Putin-a-46_1647338451526.jpg"
+        },
+        {
+          "Filename": "55329247-10614275-An_activist_raises_his_fist_above_a_banner_reading_Putin_go_f_yo-a-12_1647348442831.jpg"
+        },
+        {
+          "Filename": "55182889-10613533-Peter_Mandelson-a-5_1647338085743.jpg"
+        },
+        {
+          "Filename": "55182921-10613533-George_Osborne-a-6_1647338085750.jpg"
+        },
+        {
+          "Filename": "55182925-10614275-Deripaska_s_yacht_Queen_K_anchors_in_Bodrum_district_of_Turkey_s-a-11_1647348442830.jpg"
+        },
+        {
+          "Filename": "e50b0411-f66b-412d-ad7b-95ded0b6412d.png"
+        },
+        {
+          "Filename": "41ac0f71-7615-4d4a-9058-74db768d724e.png"
+        },
+        {
+          "Filename": "d73f5a09-418c-49e2-86ca-92e26e2945f6.png"
+        },
+        {
+          "Filename": "55372329-10614275-image-m-23_1647337772670.jpg"
+        },
+        {
+          "Filename": "55372331-10614275-image-a-24_1647337782252.jpg"
+        },
+        {
+          "Filename": "55372317-10614275-image-m-21_1647337746309.jpg"
+        },
+        {
+          "Filename": "55372325-10614275-This_grand_piano_is_likely_to_be_a_1880s_B_sendorfer_worth_upwar-a-6_1647348442712.jpg"
+        },
+        {
+          "Filename": "55372323-10614275-After_the_activist_filming_the_video_plays_a_few_keys_the_view_p-a-10_1647348442792.jpg"
+        },
+        {
+          "Filename": "55372333-10614275-image-a-20_1647337739041.jpg"
+        },
+        {
+          "Filename": "55372415-10614275-image-a-32_1647337835167.jpg"
+        },
+        {
+          "Filename": "55372417-10614275-image-m-31_1647337826344.jpg"
+        },
+        {
+          "Filename": "55328453-0-image-a-39_1647250773581.jpg"
+        },
+        {
+          "Filename": "55354601-10614275-A_cherry_picker_is_used_to_reach_squatters_at_a_property_belongi-a-44_1647338194116.jpg"
+        },
+        {
+          "Filename": "55354753-10614275-Police_arrest_activists_after_they_made_a_second_attempt_to_get_-a-7_1647348442722.jpg"
+        },
+        {
+          "Filename": "55352707-10610307-image-a-20_1647292873343.jpg"
+        },
+        {
+          "Filename": "55336365-10614275-image-a-8_1647348442783.jpg"
+        },
+        {
+          "Filename": "55334413-10613533-The_mansion_belongs_to_the_family_of_oil_tycoon_Oleg_Deripaska_o-a-74_1647312767900.jpg"
+        },
+        {
+          "Filename": "55335527-10610307-Officers_tried_to_access_the_property_s_balcony_using_a_ladder_a-a-49_1647307227442.jpg"
+        },
+        {
+          "Filename": "55336189-10613533-The_JCB_cherry_picker_that_police_used_to_get_onto_the_balcony_a-a-75_1647312767909.jpg"
+        },
+        {
+          "Filename": "55345439-10613533-A_police_officer_stands_guard_outside_a_mansion_in_Belgrave_Squa-a-4_1647338085730.jpg"
+        },
+        {
+          "Filename": "55335655-10613533-The_squatters_call_themselves_the_London_Mahknovists_after_Nesto-a-2_1647338085722.jpg"
+        },
+        {
+          "Filename": "55328449-10613533-image-a-3_1647338085725.jpg"
+        },
+        {
+          "Filename": "55329239-10614275-5_Belgrave_Square_is_considered_London_s_most_expensive_terraced-a-9_1647348442790.jpg"
+        },
+        {
+          "Filename": "55329249-10614275-Pro_Ukraine_protesters_raised_their_fists_and_chanted_anti_Putin-a-46_1647338451526.jpg"
+        },
+        {
+          "Filename": "55329247-10614275-An_activist_raises_his_fist_above_a_banner_reading_Putin_go_f_yo-a-12_1647348442831.jpg"
+        },
+        {
+          "Filename": "55182889-10613533-Peter_Mandelson-a-5_1647338085743.jpg"
+        },
+        {
+          "Filename": "55182921-10613533-George_Osborne-a-6_1647338085750.jpg"
+        },
+        {
+          "Filename": "55182925-10614275-Deripaska_s_yacht_Queen_K_anchors_in_Bodrum_district_of_Turkey_s-a-11_1647348442830.jpg"
+        },
+        {
+          "Filename": "e50b0411-f66b-412d-ad7b-95ded0b6412d.png"
+        },
+        {
+          "Filename": "41ac0f71-7615-4d4a-9058-74db768d724e.png"
+        },
+        {
+          "Filename": "d73f5a09-418c-49e2-86ca-92e26e2945f6.png"
+        },
+        {
+          "Filename": "55372329-10614275-image-m-23_1647337772670.jpg"
+        },
+        {
+          "Filename": "55372331-10614275-image-a-24_1647337782252.jpg"
+        },
+        {
+          "Filename": "55372317-10614275-image-m-21_1647337746309.jpg"
+        },
+        {
+          "Filename": "55372325-10614275-This_grand_piano_is_likely_to_be_a_1880s_B_sendorfer_worth_upwar-a-6_1647348442712.jpg"
+        }
+      ],
+      "DurationInSeconds": 605.784
+    },
+    {
+      "Id": "dea64d11-0075-433e-8aa1-586d251862b2",
+      "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\ukraine-war-daily-update-18-march",
+      "Url": "https://www.scmp.com/news/china/diplomacy/article/3170821/china-harks-back-belgrade-embassy-bombing-after-nato-cites-its",
+      "Source": "South China Morning Post",
+      "Title": "China harks back to Belgrade embassy bombing after Nato cites its ‘obligation’ on Ukraine",
+      "Published": "2022-03-17T00:00:00",
+      "Images": [
+        {
+          "Filename": "9689dd2a-4e55-432d-9347-95d486103f0f.png"
+        },
+        {
+          "Filename": "232b5346-dbcd-4020-b0af-52a1f8b007ea.png"
+        },
+        {
+          "Filename": "753ab659-2c39-449b-97fe-a959af6cf793.png"
+        },
+        {
+          "Filename": "a3838fce-c469-482b-946d-427efd40c47e.png"
+        },
+        {
+          "Filename": "3615dd4a-351d-4ce0-81e6-6eecfb313f34.png"
+        },
+        {
+          "Filename": "7198fadb-d934-4378-93ae-4ff184b97a7b.png"
+        },
+        {
+          "Filename": "04419d58-bf0f-4dcb-88c5-482cc51907e8.png"
+        },
+        {
+          "Filename": "960e2283-0de4-4589-aa9a-fabc7f21930e.png"
+        },
+        {
+          "Filename": "3fded076-a449-450c-9de3-8f6b7daed856.png"
+        },
+        {
+          "Filename": "e5ad81db-387b-45ba-9f9a-846767c31773.png"
+        },
+        {
+          "Filename": "80b117c6-38f7-4f25-b35a-87fa8ed56a90.png"
+        },
+        {
+          "Filename": "09898219-41b7-4cdb-b6b9-6b288d15b94a.png"
+        },
+        {
+          "Filename": "f610bde8-7098-454a-bc72-38b65097e708.png"
+        },
+        {
+          "Filename": "8b48b9cd-c008-43cb-b28b-3ff588e90a04.png"
+        },
+        {
+          "Filename": "084e8dc8-828e-4dc0-90a3-1a1e3924549d.png"
+        },
+        {
+          "Filename": "cf80055f-e202-4b28-947d-43ac01a824ae.png"
+        },
+        {
+          "Filename": "a8958bac-0373-43ce-8609-5a92d5980277.png"
+        },
+        {
+          "Filename": "0949ea6d-55de-4c97-ab86-098e4e39ed9f.png"
+        },
+        {
+          "Filename": "a7bfe401-b0eb-4006-8fa4-40f3b42e7e67.png"
+        }
+      ],
+      "Narration": "Beijing has compared the Russian invasion of Ukraine with the bombing of its embassy in Yugoslavia by Nato forces decades ago, in response to the Nato chief saying China should condemn Russia.\r\nThe Chinese diplomatic mission in the European Union said on Thursday that Chinese people could fully relate to the suffering of other countries because “we will never forget who bombed our embassy in the Federal Republic of Yugoslavia”.\r\n“We need no lecture on justice from the abuser of international law,” it said. “As a Cold War remnant and the world’s largest military alliance, Nato continues to expand its geographical scope and range of operations. What kind of role has it played in world peace and stability? Nato needs to have good reflection.”\r\nIts statement referred to the intervention in Yugoslavia by Nato in 1999, when five US bombs hit the Chinese embassy in Belgrade. Three Chinese journalists were killed.Bill Clinton, the US president at that time, apologised for the bombing and said it was an accident, while the Chinese government said it was a “barbarian act”.\r\nThe United States later agreed to compensate the victims of the bombing, and their families, and to pay China for the damage to the embassy. Beijing agreed to compensate Washington for damage to US property incurred during the massive anti-US protests in China following the bombing.\r\nThe Chinese diplomatic mission was responding to comments by Nato secretary general Jens Stoltenberg, who said that Nato was “closely monitoring” signs of support from China to Russia.\r\n“China should join the rest of the world in condemning strongly the brutal invasion of Ukraine by Russia,” he said on Wednesday.\r\n“China has an obligation as a member of the UN Security Council to actually support and uphold international law, and the Russian invasion of Ukraine is a blatant violation of the international law, so we call on [China] to clearly condemn the invasion and to not support Russia.”Stoltenberg also said Nato was concerned that Moscow could stage a false flag operation – an action designed to be blamed on an opponent – possibly involving chemical weapons.\r\n“We call on Russia to withdraw all its forces and to stop the fighting, but in particular not to use any chemical weapons,” he said.\r\n“And we are also very vigilant about the possibility of them trying to stage some kind of pretext, false flag operation to provide an excuse for any type of use of chemical weapons.”\r\nChina’s growing ties with Russia – especially after a 5,000-word joint statement issued in early February – are under scrutiny from Western nations.\r\nReports in the US have suggested that Beijing had knowledge of Russia’s plans regarding Ukraine before the start of its military operation. Beijing has dismissed those reports as false and aimed at shifting blame to China.\r\nWashington has also warned that China would suffer consequences if it helped Russia to evade sanctions imposed for the invasion of Ukraine. Beijing has said sanctions are not the way to resolve the crisis.",
+      "RecycledImages": [
+        {
+          "Filename": "9689dd2a-4e55-432d-9347-95d486103f0f.png"
+        },
+        {
+          "Filename": "232b5346-dbcd-4020-b0af-52a1f8b007ea.png"
+        },
+        {
+          "Filename": "753ab659-2c39-449b-97fe-a959af6cf793.png"
+        },
+        {
+          "Filename": "a3838fce-c469-482b-946d-427efd40c47e.png"
+        },
+        {
+          "Filename": "3615dd4a-351d-4ce0-81e6-6eecfb313f34.png"
+        },
+        {
+          "Filename": "7198fadb-d934-4378-93ae-4ff184b97a7b.png"
+        },
+        {
+          "Filename": "04419d58-bf0f-4dcb-88c5-482cc51907e8.png"
+        },
+        {
+          "Filename": "960e2283-0de4-4589-aa9a-fabc7f21930e.png"
+        },
+        {
+          "Filename": "3fded076-a449-450c-9de3-8f6b7daed856.png"
+        },
+        {
+          "Filename": "e5ad81db-387b-45ba-9f9a-846767c31773.png"
+        },
+        {
+          "Filename": "80b117c6-38f7-4f25-b35a-87fa8ed56a90.png"
+        },
+        {
+          "Filename": "09898219-41b7-4cdb-b6b9-6b288d15b94a.png"
+        },
+        {
+          "Filename": "f610bde8-7098-454a-bc72-38b65097e708.png"
+        },
+        {
+          "Filename": "8b48b9cd-c008-43cb-b28b-3ff588e90a04.png"
+        },
+        {
+          "Filename": "084e8dc8-828e-4dc0-90a3-1a1e3924549d.png"
+        },
+        {
+          "Filename": "cf80055f-e202-4b28-947d-43ac01a824ae.png"
+        },
+        {
+          "Filename": "a8958bac-0373-43ce-8609-5a92d5980277.png"
+        },
+        {
+          "Filename": "0949ea6d-55de-4c97-ab86-098e4e39ed9f.png"
+        },
+        {
+          "Filename": "a7bfe401-b0eb-4006-8fa4-40f3b42e7e67.png"
+        }
+      ],
+      "DurationInSeconds": 180.3839999
+    }
+  ],
+  "SanitizedTitle": "ukraine-war-daily-update-18-march"
+}

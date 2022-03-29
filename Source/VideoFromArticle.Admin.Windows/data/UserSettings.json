@@ -1,4 +1,146 @@
 {
-  "CurrentFile": "ukraine-war-daily-update--15-march.json",
-  "NarrationOptionsVoice": "uniform-ttsVoiceen-US-GuyNeural"
+  "CurrentSlideshow": {
+    "Id": "90a78c5e-e4c0-492b-add6-9205f56715a5",
+    "Title": "rude ai news.23.3.2022",
+    "Articles": [
+      {
+        "Id": "2b82fd9b-784e-4763-b6cc-7d151b2ee562",
+        "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\rude-ai-news-23-3-2022",
+        "RecycleImages": false,
+        "NarrationPerImage": true,
+        "NextPreview": false,
+        "Order": 0,
+        "Title": "Russia vs Ukraine Battle Plan",
+        "Images": [
+          {
+            "Filesize": 0,
+            "Filename": "6816a212-4598-4707-bf56-3dd5318b4118.png",
+            "Caption": "Russians already have control of a huge part of Ukraine.",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "a6c43b28-c0e8-4211-a8a8-4a029dd46a1e.png",
+            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "644bf303-6a3b-4328-942f-6817f1478435.png",
+            "Caption": "Mariupol is largely occupied; two Azon strongholds remain",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "254254c4-101b-49d0-957c-61e8a32672b5.png",
+            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "b32b0704-27f4-4a64-a566-c732f18554fc.png",
+            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "cde28a81-7a2f-47d6-b803-96920efab617.png",
+            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          }
+        ],
+        "Narration": "Let's see if the mainstream media narrative that Russia has stalled in their offensive, holds water.\r\nAs of 22nd of March, red areas on these maps are controlled by the Russian army. \r\nBlue marks the cities where Ukrainian forces have barricated, like stranded castaways in a sea of enemy forces. \r\nThe rest of Ukraine is at the mercy of the Russian army and the continuous bombing campaign is obliterating all military infrastructures.\r\nHaving said that, country roads are still available. \r\nRefuges can move through these, and small supply lines for Ukranian forces.\r\nIn orange, we can see Transnistria in Moldova, inhabited by mostly Russian populations. \r\nRussia maintains armed forces there, for peacekeeping purposes. \r\nAs you can see, despite the mainstream media propaganda, Russians already have control of a huge part of Ukraine.\r\n\r\nMariupol in the Azov Sea coastal region is the first important milestone for Russians, apart from the Donbass regions which are already under their complete control. \r\nMariupol is where the Azov Batallion is based.\r\nThe city is essentially occupied, sadly most of it destroyed and there are still two main Azov regiment strongholds.  \r\nIn red, you can see Russian controlled areas, blue is Azov and there is ongoing fighting in the overlapping purple areas.\r\n\r\nIn North Easy Ukraine, Kharkiv and other cities are pressured from the east, living the west side free so that Ukrainians can flee. \r\nThese cities have not been surrounded yet. \r\nIt's obvious that Russians did not want to demolish the cities as mainstream media and the West countries suggest.\r\nRussians are slowly and patiently leaving Ukrainians to realize that winning this war is impossible, that's why mostly old Military equipment has been used.\r\nHaving said that, the Russian army did show off to NATO a bit with the supersonic Kinzal missile system. ",
+        "RecycledImages": [
+          {
+            "Filesize": 0,
+            "Filename": "6816a212-4598-4707-bf56-3dd5318b4118.png",
+            "Caption": "Russians already have control of a huge part of Ukraine.",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "a6c43b28-c0e8-4211-a8a8-4a029dd46a1e.png",
+            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "644bf303-6a3b-4328-942f-6817f1478435.png",
+            "Caption": "Mariupol is largely occupied; two Azon strongholds remain",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "254254c4-101b-49d0-957c-61e8a32672b5.png",
+            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "b32b0704-27f4-4a64-a566-c732f18554fc.png",
+            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "cde28a81-7a2f-47d6-b803-96920efab617.png",
+            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "6816a212-4598-4707-bf56-3dd5318b4118.png",
+            "Caption": "Russians already have control of a huge part of Ukraine.",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "a6c43b28-c0e8-4211-a8a8-4a029dd46a1e.png",
+            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "644bf303-6a3b-4328-942f-6817f1478435.png",
+            "Caption": "Mariupol is largely occupied; two Azon strongholds remain",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "254254c4-101b-49d0-957c-61e8a32672b5.png",
+            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          },
+          {
+            "Filesize": 0,
+            "Filename": "b32b0704-27f4-4a64-a566-c732f18554fc.png",
+            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
+            "DurationInSeconds": 0.0,
+            "TypewriterAnimation": false
+          }
+        ],
+        "DurationInSeconds": 116.424
+      }
+    ],
+    "SanitizedTitle": "rude-ai-news-23-3-2022"
+  },
+  "NarrationOptionsVoice": "ttsVoiceen-US-AriaNeural",
+  "RenderOptionsTemplate": "RudeAINews",
+  "RenderOptionsIntroDuration": 0
 }
