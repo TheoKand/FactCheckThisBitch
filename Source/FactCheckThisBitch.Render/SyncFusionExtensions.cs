@@ -6,6 +6,7 @@ using System.Reflection.Metadata;
 using System.Text;
 using FackCheckThisBitch.Common;
 using SixLabors.ImageSharp;
+using Syncfusion.OfficeChart;
 using Syncfusion.Presentation;
 
 namespace FactCheckThisBitch.Render
@@ -95,9 +96,15 @@ namespace FactCheckThisBitch.Render
         public static IShape UpdateText(this IGroupShape groupShape, string shapeName, string text)
         {
             if (groupShape == null) return null;
-            var shape = groupShape.Shapes.FirstOrDefault(s => s.ShapeName == shapeName) as IShape;
-            if (shape == null) return null;
+            var shape = groupShape.GetShapeFromGroupShape(shapeName);
             shape.TextBody.Text = text ?? "";
+            return shape;
+        }
+
+        public static IShape GetShapeFromGroupShape(this IGroupShape groupShape, string shapeName)
+        {
+            if (groupShape == null) return null;
+            var shape = groupShape.Shapes.FirstOrDefault(s => s.ShapeName == shapeName) as IShape;
             return shape;
         }
 
@@ -130,7 +137,7 @@ namespace FactCheckThisBitch.Render
         public static void ReplacePicture(this IGroupShape groupShape, string pictureName, string pictureFileName)
         {
             if (groupShape == null) return;
-            var picture = groupShape.Shapes.FirstOrDefault(s => s.ShapeName == pictureName) as IPicture;
+            var picture = groupShape.GetShapeFromGroupShape(pictureName) as IPicture;
             if (picture == null) return;
             using (Stream pictureStream = File.Open(pictureFileName, FileMode.Open))
             {

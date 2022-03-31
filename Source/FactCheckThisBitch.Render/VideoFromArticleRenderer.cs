@@ -143,21 +143,47 @@ namespace FactCheckThisBitch.Render
 
                     imageSlide.Name = $"{article.Id}-image{imageIndex}";
 
-                    var slideTitle = article.Title;
-                    //if this image has a caption, show that instead of article title
-                    if (articleImage.Caption != article.Title &&
-                        articleImage.Caption.IsNotEmpty())
-                    {
-                        slideTitle = articleImage.Caption;
-                    }
+                    var slideTitle = articleImage.Caption;
 
-                    var txtLabel = imageSlide.UpdateText("txtTitle", slideTitle);
+                    #region slide title
+                    IShape txtTitle = null;
+                    if (slideTitle.IsEmpty())
+                    {
+                        imageSlide.HideShapeAndRemoveAnimations("txtTitle");
+                        imageSlide.HideShapeAndRemoveAnimations("txtTitleTypewriter");
+                    } else if (articleImage.TypewriterAnimation)
+                    {
+                        txtTitle = imageSlide.UpdateText("txtTitleTypewriter", slideTitle);
+                        txtTitle.SetShapeTextColor(titleColors[articleIndex % titleColors.Length]);
+
+                        imageSlide.HideShapeAndRemoveAnimations("txtTitle");
+
+                    }
+                    else
+                    {
+                        txtTitle = imageSlide.UpdateText("txtTitle", slideTitle);
+                        txtTitle.SetShapeTextColor(titleColors[articleIndex % titleColors.Length]);
+
+                        imageSlide.HideShapeAndRemoveAnimations("txtTitleTypewriter");
+
+                        //hide title for last slide of article (unless it's an image caption)
+                        
+                        if (imageIndex == article.RecycledImages.Count - 1 && slideTitle == article.Title)
+                        {
+                            imageSlide.HideShapeAndRemoveAnimations(txtTitle);
+                        } else if (imageIndex > 0)
+                        {
+                            imageSlide.RemoveAnimationsForShape(txtTitle);
+                        }
+                    }
+                    #endregion
+
                     var txtSource = imageSlide.UpdateText("txtSource", article.Source);
                     var txtUrl =
                         imageSlide.UpdateText("txtUrl",
                             article.Url); //.Replace("https://", "").Replace("http://", "").Replace("www.", ""));
                     var txtDate = imageSlide.UpdateText("txtDate", article.Published?.ToString("dd/MM/yyyy"));
-                    txtLabel.SetShapeTextColor(titleColors[articleIndex % titleColors.Length]);
+                    
 
                     if (txtSource != null && txtSource.TextBody.Text.Length > 10)
                     {
@@ -170,18 +196,13 @@ namespace FactCheckThisBitch.Render
                     imageSlide.RemoveShapeIfTextEmpty("txtUrl");
                     imageSlide.RemoveShapeIfTextEmpty("txtDate");
 
-                    //hide title for last slide of article (unless it's an image caption)
-                    if (imageIndex == article.RecycledImages.Count - 1 && slideTitle == article.Title)
-                    {
-                        imageSlide.HideShapeAndRemoveAnimations(txtLabel);
-                    }
-                    else if (slideTitle != article.Title && imageIndex == 0)
+
+                    if (slideTitle != article.Title && imageIndex == 0)
                     {
                         //the title should appear quicker for slides with a specific caption title
-                        var titleLabelAnimations = imageSlide.Timeline.MainSequence.GetEffectsByShape(txtLabel);
+                        var titleLabelAnimations = imageSlide.Timeline.MainSequence.GetEffectsByShape(txtTitle);
                         titleLabelAnimations[0].Timing.TriggerDelayTime = 1f;
                     }
-
 
                     //load and center picture
                     var photoFile = Path.Combine(_dataFolder, article.Id, articleImage.Filename);
@@ -214,7 +235,6 @@ namespace FactCheckThisBitch.Render
                         //remove animations of textboxes except for the first slide of an article
                         imageSlide.HideShapeAndRemoveAnimations(txtUrl);
 
-                        imageSlide.RemoveAnimationsForShape("txtTitle");
                         imageSlide.RemoveAnimationsForShape("txtSource");
                         imageSlide.RemoveAnimationsForShape("txtDate");
                         imageSlide.RemoveAnimationsForShape("logo");
@@ -241,7 +261,7 @@ namespace FactCheckThisBitch.Render
 
                         if (article.NarrationPerImage.Value)
                         {
-                             imageSlide.HideShapeAndRemoveAnimations("txtNextWhen");
+                             imageSlide.HideShapeAndRemoveAnimations( groupNext.GetShapeFromGroupShape("txtNextWhen"));
                         }
                         else
                         {

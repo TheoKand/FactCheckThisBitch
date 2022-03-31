@@ -65,7 +65,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
             _article.RecycleImages = chkRecycle.Checked;
             _article.NextPreview = chkPreview.Checked;
             _article.NarrationPerImage = chkNarrationPerImage.Checked;
-
             _article.Narration = _article.Narration.SanitizeNarration();
 
             UpdateFormTitle();

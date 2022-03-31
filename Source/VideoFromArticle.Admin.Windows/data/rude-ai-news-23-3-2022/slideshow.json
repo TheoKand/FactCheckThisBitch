@@ -19,11 +19,12 @@
           "Filename": "55828423-10654539-image-a-14_1648286349760.jpg",
           "Caption": "Fresh tragedy for Dave Grohl: Foo Fighters founder grieves drummer Taylor Hawkins 28 years after Nirvana bandmate Kurt Cobain killed himself",
           "Narration": "The Foo Fighters are a band born of tragedy - formed in the wake of the death of Nirvana frontman Kurt Cobain in 1994.\r\n\r\nDave Grohl, a member of both, has now suffered yet another devastating loss in Taylor Hawkins, who pbeeped away while the Foo Fighters were on tour in South America.",
-          "DurationInSeconds": 18.216
+          "DurationInSeconds": 18.216,
+          "TypewriterAnimation": true
         },
         {
           "Filename": "85fe4158-a8c7-497a-aebb-b1bd8e2d1293.png",
-          "Caption": "Fresh tragedy for Dave Grohl: Foo Fighters founder grieves drummer Taylor Hawkins 28 years after Nirvana bandmate Kurt Cobain killed himself",
+          "Caption": "",
           "Narration": "Hawkins, 50, was found dead in a hotel room in Bogota, Colombia, where the band were due to pay at a festival on Friday night. No cause of death was immediately confirmed.\r\n",
           "DurationInSeconds": 12.1199999,
           "TypewriterAnimation": true
@@ -34,8 +35,7 @@
           "Filename": "55828403-10654539-Pictured_left_to_right_Nate_Mendel_Chris_Shiflett_Dave_Grohl_and-a-2_1648303743709.jpg",
           "Caption": "Pictured left to right: Nate Mendel, Chris Shiflett, Dave Grohl and Taylor Hawkins",
           "Narration": "The band said it was 'devastated by the untimely loss', adding: 'His musical spirit and infectious laughter will live on with all of us forever. Our hearts go out to his wife, children and family, and we ask that their privacy be treated with the utmost respect in this unimaginably difficult time.'",
-          "DurationInSeconds": 18.528,
-          "TypewriterAnimation": true
+          "DurationInSeconds": 18.528
         },
         {
           "Url": "https://i.dailymail.co.uk/1s/2022/03/26/09/55828383-0-image-a-18_1648286393120.jpg",
@@ -43,12 +43,11 @@
           "Filename": "55828425-10654539-image-m-3_1648286211048.jpg",
           "Caption": "Taylor Hawkins and Dave Grohl at the 'Studio 666' film premiere in Los Angeles in February",
           "Narration": "Hawkins played in the Foo Fighters with former Nirvana drummer Dave Grohl on vocals for more than two decades, alongside Nate Mendel, Pat Smear, Chris Shiflett and Rami Jaffee. He joined in 1997 following the departure of the band's previous drummer, William Goldsmith. ",
-          "DurationInSeconds": 17.832,
-          "TypewriterAnimation": true
+          "DurationInSeconds": 17.832
         },
         {
           "Filename": "db2c95b7-7cdc-4364-af12-9280b6ab7680.png",
-          "Caption": "Dave Grohl with Nirvana",
+          "Caption": "Curt Cobain, 27, was found dead at his home in Seattle, Washington, on April 8 - three days after suffering a fatal gunshot wound.",
           "Narration": "The loss of Hawkins will come as a devastating blow to Grohl, who lost another bandmate in Cobain in 1994. The Nirvana frontman, 27, was found dead at his home in Seattle, Washington, on April 8 - three days after suffering a fatal gunshot wound.",
           "DurationInSeconds": 17.352,
           "TypewriterAnimation": true
@@ -57,33 +56,35 @@
           "Url": "https://i.dailymail.co.uk/1s/2022/03/26/09/55828383-0-image-a-18_1648286393120.jpg",
           "Filesize": 561106,
           "Filename": "55828429-10654539-image-m-7_1648286262687.jpg",
-          "Caption": "Pictured: Kurt Cobain, Dave Grohl and Krist Novoselic of Nirvana during a live performance",
-          "Narration": "",
-          "DurationInSeconds": 6.216
+          "Caption": "",
+          "Narration": "<duration>4</duration>",
+          "DurationInSeconds": 4.0,
+          "TypewriterAnimation": true
         },
         {
           "Url": "https://i.dailymail.co.uk/1s/2022/03/26/09/55828383-0-image-a-18_1648286393120.jpg",
           "Filesize": 392470,
           "Filename": "55828401-10654539-image-a-8_1648286277738.jpg",
-          "Caption": "Taylor Hawkins and Dave Grohl of the Foo Fighters perform as part of the Bridge School Benefit 2000",
-          "Narration": "",
-          "DurationInSeconds": 6.5039999
+          "Caption": "",
+          "Narration": "<duration>4</duration>",
+          "DurationInSeconds": 4.0,
+          "TypewriterAnimation": true
         },
         {
           "Url": "https://i.dailymail.co.uk/1s/2022/03/26/09/55828383-0-image-a-18_1648286393120.jpg",
           "Filesize": 626299,
           "Filename": "55828409-10654539-The_Nirvana_frontman_right_27_was_found_dead_at_his_home_in_Seat-a-1_1648303743703.jpg",
-          "Caption": "The Nirvana frontman (right), 27, was found dead at his home in Seattle, Washington, on April 8 - three days after suffering a fatal gunshot wound. Pictured left: Grohl",
-          "Narration": "",
-          "DurationInSeconds": 9.744
+          "Caption": "",
+          "Narration": "<duration>4</duration>",
+          "DurationInSeconds": 4.0
         },
         {
           "Url": "https://i.dailymail.co.uk/1s/2022/03/26/09/55828383-0-image-a-18_1648286393120.jpg",
           "Filesize": 697992,
           "Filename": "55828387-10654539-image-a-13_1648286342994.jpg",
-          "Caption": "Grohl, who played in Nirvana with Cobain (second from right) from 1990 to 1994, previously described the day he heard of the frontman's death as the 'darkest' of his life",
-          "Narration": "",
-          "DurationInSeconds": 10.416
+          "Caption": "",
+          "Narration": "<duration>4</duration>",
+          "DurationInSeconds": 4.0
         }
       ],
       "Narration": "The Foo Fighters are a band born of tragedy - formed in the wake of the death of Nirvana frontman Kurt Cobain in 1994.\r\n\r\nDave Grohl, a member of both, has now suffered yet another devastating loss in Taylor Hawkins, who pbeeped away while the Foo Fighters were on tour in South America.\r\n\r\nHawkins, 50, was found dead in a hotel room in Bogota, Colombia, where the band were due to pay at a festival on Friday night. No cause of death was immediately confirmed.\r\n\r\n\r\nThe band said it was 'devastated by the untimely loss', adding: 'His musical spirit and infectious laughter will live on with all of us forever. Our hearts go out to his wife, children and family, and we ask that their privacy be treated with the utmost respect in this unimaginably difficult time.'\r\n\r\nHawkins played in the Foo Fighters with former Nirvana drummer Dave Grohl on vocals for more than two decades, alongside Nate Mendel, Pat Smear, Chris Shiflett and Rami Jaffee. He joined in 1997 following the departure of the band's previous drummer, William Goldsmith. \r\n\r\nThe loss of Hawkins will come as a devastating blow to Grohl, who lost another bandmate in Cobain in 1994. The Nirvana frontman, 27, was found dead at his home in Seattle, Washington, on April 8 - three days after suffering a fatal gunshot wound.",
@@ -94,13 +95,15 @@
           "Filename": "55828423-10654539-image-a-14_1648286349760.jpg",
           "Caption": "Fresh tragedy for Dave Grohl: Foo Fighters founder grieves drummer Taylor Hawkins 28 years after Nirvana bandmate Kurt Cobain killed himself",
           "Narration": "The Foo Fighters are a band born of tragedy - formed in the wake of the death of Nirvana frontman Kurt Cobain in 1994.\r\n\r\nDave Grohl, a member of both, has now suffered yet another devastating loss in Taylor Hawkins, who pbeeped away while the Foo Fighters were on tour in South America.",
-          "DurationInSeconds": 18.216
+          "DurationInSeconds": 18.216,
+          "TypewriterAnimation": true
         },
         {
           "Filename": "85fe4158-a8c7-497a-aebb-b1bd8e2d1293.png",
-          "Caption": "Fresh tragedy for Dave Grohl: Foo Fighters founder grieves drummer Taylor Hawkins 28 years after Nirvana bandmate Kurt Cobain killed himself",
+          "Caption": "",
           "Narration": "Hawkins, 50, was found dead in a hotel room in Bogota, Colombia, where the band were due to pay at a festival on Friday night. No cause of death was immediately confirmed.\r\n",
-          "DurationInSeconds": 12.1199999
+          "DurationInSeconds": 12.1199999,
+          "TypewriterAnimation": true
         },
         {
           "Url": "https://i.dailymail.co.uk/1s/2022/03/26/09/55828383-0-image-a-18_1648286393120.jpg",
@@ -122,39 +125,42 @@
           "Filename": "db2c95b7-7cdc-4364-af12-9280b6ab7680.png",
           "Caption": "Dave Grohl with Nirvana",
           "Narration": "The loss of Hawkins will come as a devastating blow to Grohl, who lost another bandmate in Cobain in 1994. The Nirvana frontman, 27, was found dead at his home in Seattle, Washington, on April 8 - three days after suffering a fatal gunshot wound.",
-          "DurationInSeconds": 17.352
+          "DurationInSeconds": 17.352,
+          "TypewriterAnimation": true
         },
         {
           "Url": "https://i.dailymail.co.uk/1s/2022/03/26/09/55828383-0-image-a-18_1648286393120.jpg",
           "Filesize": 561106,
           "Filename": "55828429-10654539-image-m-7_1648286262687.jpg",
           "Caption": "Pictured: Kurt Cobain, Dave Grohl and Krist Novoselic of Nirvana during a live performance",
-          "Narration": " Kurt Cobain, Dave Grohl and Krist Novoselic of Nirvana during a live performance",
-          "DurationInSeconds": 6.216
+          "Narration": "<duration>3</duration>",
+          "DurationInSeconds": 3.0,
+          "TypewriterAnimation": true
         },
         {
           "Url": "https://i.dailymail.co.uk/1s/2022/03/26/09/55828383-0-image-a-18_1648286393120.jpg",
           "Filesize": 392470,
           "Filename": "55828401-10654539-image-a-8_1648286277738.jpg",
           "Caption": "Taylor Hawkins and Dave Grohl of the Foo Fighters perform as part of the Bridge School Benefit 2000",
-          "Narration": "Taylor Hawkins and Dave Grohl of the Foo Fighters perform as part of the Bridge School Benefit 2000",
-          "DurationInSeconds": 6.5039999
+          "Narration": "<duration>3</duration>",
+          "DurationInSeconds": 3.0,
+          "TypewriterAnimation": true
         },
         {
           "Url": "https://i.dailymail.co.uk/1s/2022/03/26/09/55828383-0-image-a-18_1648286393120.jpg",
           "Filesize": 626299,
           "Filename": "55828409-10654539-The_Nirvana_frontman_right_27_was_found_dead_at_his_home_in_Seat-a-1_1648303743703.jpg",
           "Caption": "The Nirvana frontman (right), 27, was found dead at his home in Seattle, Washington, on April 8 - three days after suffering a fatal gunshot wound. Pictured left: Grohl",
-          "Narration": "The Nirvana frontman , 27, was found dead at his home in Seattle, Washington, on April 8 - three days after suffering a fatal gunshot wound",
-          "DurationInSeconds": 9.744
+          "Narration": "<duration>3</duration>",
+          "DurationInSeconds": 3.0
         },
         {
           "Url": "https://i.dailymail.co.uk/1s/2022/03/26/09/55828383-0-image-a-18_1648286393120.jpg",
           "Filesize": 697992,
           "Filename": "55828387-10654539-image-a-13_1648286342994.jpg",
           "Caption": "Grohl, who played in Nirvana with Cobain (second from right) from 1990 to 1994, previously described the day he heard of the frontman's death as the 'darkest' of his life",
-          "Narration": "Grohl, who played in Nirvana with Cobain from 1990 to 1994, previously described the day he heard of the frontman's death as the 'darkest' of his life",
-          "DurationInSeconds": 10.416
+          "Narration": "<duration>3</duration>",
+          "DurationInSeconds": 3.0
         }
       ],
       "DurationInSeconds": 116.9279998
@@ -172,9 +178,10 @@
       "Images": [
         {
           "Filename": "f9bb8fb6-d5cf-4c63-ba79-1e948f9e3ced.png",
-          "Caption": "Emergency workers outside the Four Seasons Hotel Casa Medina",
+          "Caption": "Taylor Hawkins’ suffered ‘cardiovascular collapse’ after taking ‘cocktail of drugs’",
           "Narration": "Foo Fighters drummer Taylor Hawkins’ heart weighed double that of most men his age, it has emerged.\r\n\r\nForensic experts are said to have discovered it weighed “at least 600 grams” during an autopsy following his shock death on Friday at a luxury hotel in the north of the Colombian capital Bogota.\r\n\r\nInvestigators have concluded the 50-year-old suffered cardiovascular collapse after binging on a cocktail of drugs, respected Colombian news magazine Semana reported.",
-          "DurationInSeconds": 27.912
+          "DurationInSeconds": 27.912,
+          "TypewriterAnimation": true
         },
         {
           "Filename": "89ad0e16-a123-4e9d-bbdb-fc047763d55d.png",
@@ -190,7 +197,27 @@
         }
       ],
       "Narration": "",
-      "RecycledImages": [],
+      "RecycledImages": [
+        {
+          "Filename": "f9bb8fb6-d5cf-4c63-ba79-1e948f9e3ced.png",
+          "Caption": "Taylor Hawkins’ suffered ‘cardiovascular collapse’ after taking ‘cocktail of drugs’",
+          "Narration": "Foo Fighters drummer Taylor Hawkins’ heart weighed double that of most men his age, it has emerged.\r\n\r\nForensic experts are said to have discovered it weighed “at least 600 grams” during an autopsy following his shock death on Friday at a luxury hotel in the north of the Colombian capital Bogota.\r\n\r\nInvestigators have concluded the 50-year-old suffered cardiovascular collapse after binging on a cocktail of drugs, respected Colombian news magazine Semana reported.",
+          "DurationInSeconds": 27.912,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "89ad0e16-a123-4e9d-bbdb-fc047763d55d.png",
+          "Caption": "A fan places candles outside Casa Medina Hotel",
+          "Narration": "It also said authorities had confirmed to them the famed musician had overdosed on heroin mixed with antidepressants and benzodiazepines which are psychoactive drugs known as benzos.\r\n\r\nColombia’s Attorney General’s office has already confirmed an initial autopsy carried out on Saturday revealed traces of 10 different drugs in Hawkins’ urine, including opioids which can range from heroin to fentanyl and morphine.\r\n\r\nIt also revealed in a statement marihuana and antidepressants were detected.",
+          "DurationInSeconds": 28.944
+        },
+        {
+          "Filename": "07a8d960-4cb5-4409-bf8f-9959d91efb68.png",
+          "Caption": "A woman lights candles outside the Casa Medina hotel",
+          "Narration": "The federal government department did not mention cocaine in its post-autopsy statement, although earlier unconfirmed reports pointed to a “white cocaine-like powder” being found in Hawkins’ room at the Four Seasons Hotel Casa Medina.\r\n\r\nThe alarm was raised on Friday night when the drummer complained of chest pains ahead of his band’s headline performance at the Estereo Picnic Festival in Bogota.",
+          "DurationInSeconds": 21.888
+        }
+      ],
       "DurationInSeconds": 78.744
     }
   ],

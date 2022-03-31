@@ -182,12 +182,20 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 txtNarration.Height = picture.Height;
                 txtNarration.Multiline = true;
                 txtNarration.ScrollBars = ScrollBars.Both;
+                toolTip1.SetToolTip(txtNarration, $"Duration: {articleImage.DurationInSeconds} sec");
                 txtNarration.LostFocus += (sender, args) =>
                 {
                     if (articleImage.Narration != txtNarration.Text)
                     {
                         articleImage.Narration = txtNarration.Text;
                         articleImage.Narration = articleImage.Narration.SanitizeNarration();
+
+                        //if it's just a pause
+                        if (articleImage.Narration.StartsWith("<duration>"))
+                        {
+                            var duration = articleImage.Narration.Replace("<duration>", "").Replace("</duration>", "");
+                            articleImage.DurationInSeconds = Double.Parse(duration);
+                        }
                     }
                 };
                 panel.Controls.Add(txtNarration);
