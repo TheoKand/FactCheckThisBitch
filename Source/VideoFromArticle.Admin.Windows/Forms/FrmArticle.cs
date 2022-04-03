@@ -5,12 +5,9 @@ using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Media;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SixLabors.ImageSharp.Drawing;
 using VideoFromArticle.Models;
-using WebAutomation;
 using Path = System.IO.Path;
 
 namespace VideoFromArticle.Admin.Windows.Forms
@@ -46,8 +43,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
             txtUrl.Text = _article.Url;
             txtSource.Text = _article.Source;
             txtDatePublished.Text = _article.Published.ToSimpleStringDate();
-            chkRecycle.Checked = _article.RecycleImages.Value;
-            chkPreview.Checked = _article.NextPreview.Value;
             chkNarrationPerImage.Checked = _article.NarrationPerImage.Value;
             txtNarration.Text = _article.Narration;
             imageEditor1.BaseFolder = _article.Folder();
@@ -62,8 +57,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
             _article.Source = txtSource.Text.ValueOrNull();
             _article.Published = txtDatePublished.Text.ToDate();
             _article.Narration = txtNarration.Text;
-            _article.RecycleImages = chkRecycle.Checked;
-            _article.NextPreview = chkPreview.Checked;
             _article.NarrationPerImage = chkNarrationPerImage.Checked;
             _article.Narration = _article.Narration.SanitizeNarration();
 
@@ -120,8 +113,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
                         {
                             additionalImages += "\n";
                         }
-
-                        additionalImages += image;
                     }
                 }
 
@@ -173,18 +164,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
                 this.Cursor = Cursors.Default;
                 Application.DoEvents();
             }
-
-            //string image = metaData.TryGet("image");
-            //if (!image.IsEmpty())
-            //{
-            //    var imageFileName = $"{reference.Id}-{reference.Title.Sanitize()}.png";
-            //    var imagePath = Path.Combine(Configuration.Instance().DataFolder, "media", imageFileName);
-            //    bool save = ArticleMetadataParser.SaveImage(image, imagePath);
-            //    if (save)
-            //    {
-            //        reference.Images.Add(imagePath);
-            //    }
-            //}
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -225,145 +204,11 @@ namespace VideoFromArticle.Admin.Windows.Forms
             LoadForm();
         }
 
-        private void btnGenerateAudio_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            if (chkNarrationPerImage.Checked)
-            {
-                GenerateOneNarrationPerImage(); 
-            }
-            else
-            {
-                GenerateSingleNarrationForEntireArticle();
-            }
-        }
-
-        private void GenerateSingleNarrationForEntireArticle()
-        {
-            _article.EnsureFolder();
-
-            FrmNarrationOptions optionsForm = new FrmNarrationOptions();
-            var result = optionsForm.ShowDialog();
-            if (result != DialogResult.OK)
-                return;
-
-            using (var speechelo = new Speechelo())
-            {
-                _article.Narration = txtNarration.Text;
-                _article.Narration = _article.Narration.SanitizeNarration();
-
-                try
-                {
-                    speechelo.Setup();
-                    speechelo.GenerateNarration(_article.Narration, optionsForm.Options.Voice,
-                        _article.ArticleNarrationAudioFilePath());
-                    _article.DurationInSeconds = _article.ReadNarrationDuration().TotalSeconds;
-
-                    SaveForm();
-                    OnSave?.Invoke();
-
-                    new Process
-                    {
-                        StartInfo = new ProcessStartInfo(_article.ArticleNarrationAudioFilePath())
-                        {
-                            UseShellExecute = true
-                        }
-                    }.Start();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-                finally
-                {
-                    this.Activate();
-                }
-            }
-        }
-
-        private void GenerateOneNarrationPerImage()
-        {
-            _article.EnsureFolder();
-
-            FrmNarrationOptions optionsForm = new FrmNarrationOptions();
-            var result = optionsForm.ShowDialog();
-            if (result != DialogResult.OK)
-                return;
-
-            using (var speechelo = new Speechelo())
-            {
-                try
-                {
-                    speechelo.Setup();
-                    for (var articleImageIndex = 0; articleImageIndex < _article.Images.Count; articleImageIndex++)
-                    {
-                        var articleImage = _article.Images[articleImageIndex];
-
-                        if (articleImage.Narration.IsNotEmpty())
-                        {
-                            var imageNarrationFilePath = _article.ImageNarrationAudioFilePath(articleImage);
-                            speechelo.GenerateNarration(articleImage.Narration, optionsForm.Options.Voice, imageNarrationFilePath);
-                            articleImage.DurationInSeconds = _article.ReadNarrationDuration(articleImage).TotalSeconds;
-
-                            SaveForm();
-                            OnSave?.Invoke();
-
-                            new Process
-                            {
-                                StartInfo = new ProcessStartInfo(imageNarrationFilePath)
-                                {
-                                    UseShellExecute = true
-                                }
-                            }.Start();
-                        }
-
-                    }
-
-                    _article.DurationInSeconds = _article.Images.Sum(_ => _.DurationInSeconds);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-                finally
-                {
-                    this.Activate();
-                }
-            }
-        }
-
         private void btnOpenFolder_Click(object sender, EventArgs e)
         {
             var folder = _article.Folder();
             if (!Directory.Exists(folder)) return;
             new Process { StartInfo = new ProcessStartInfo(folder) { UseShellExecute = true } }.Start();
-        }
-
-        private void btnPlayNarration_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            if (!_article.NarrationFileExists()) return;
-            _article.DurationInSeconds = _article.ReadNarrationDuration().TotalSeconds;
-            new Process
-            {
-                StartInfo = new ProcessStartInfo(_article.ArticleNarrationAudioFilePath()) { UseShellExecute = true }
-            }.Start();
-        }
-
-        private void imageEditor1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chkNarrationPerImage_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkNarrationPerImage.Checked && chkRecycle.Checked)
-            {
-                chkRecycle.Checked = false;
-            }
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

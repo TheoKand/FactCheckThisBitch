@@ -47,11 +47,9 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.panelSlideshow = new System.Windows.Forms.Panel();
             this.btnOutputFolder = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.LinkLabel();
-            this.btnPlay = new System.Windows.Forms.Button();
             this.btnOpenFolder = new System.Windows.Forms.Button();
             this.btnSortByDate = new System.Windows.Forms.Button();
             this.btnGenerateNarrations = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.lblTotals = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panelSlideshow.SuspendLayout();
@@ -83,21 +81,21 @@ namespace VideoFromArticle.Admin.Windows.Forms
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -217,11 +215,9 @@ namespace VideoFromArticle.Admin.Windows.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelSlideshow.Controls.Add(this.btnOutputFolder);
             this.panelSlideshow.Controls.Add(this.btnRefresh);
-            this.panelSlideshow.Controls.Add(this.btnPlay);
             this.panelSlideshow.Controls.Add(this.btnOpenFolder);
             this.panelSlideshow.Controls.Add(this.btnSortByDate);
             this.panelSlideshow.Controls.Add(this.btnGenerateNarrations);
-            this.panelSlideshow.Controls.Add(this.label4);
             this.panelSlideshow.Controls.Add(this.lblTotals);
             this.panelSlideshow.Controls.Add(this.txtId);
             this.panelSlideshow.Controls.Add(this.btnRender);
@@ -261,17 +257,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnRefresh_LinkClicked);
             // 
-            // btnPlay
-            // 
-            this.btnPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnPlay.Location = new System.Drawing.Point(614, 535);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(118, 48);
-            this.btnPlay.TabIndex = 13;
-            this.btnPlay.Text = "Play Narration";
-            this.btnPlay.UseVisualStyleBackColor = true;
-            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
-            // 
             // btnOpenFolder
             // 
             this.btnOpenFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -304,15 +289,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.btnGenerateNarrations.Text = "Generate All Narrations";
             this.btnGenerateNarrations.UseVisualStyleBackColor = true;
             this.btnGenerateNarrations.Click += new System.EventHandler(this.btnGenerateNarrations_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(132, 155);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(412, 20);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Ideal letters per image to avoid recycling images: 120-160";
             // 
             // lblTotals
             // 
@@ -370,11 +346,9 @@ namespace VideoFromArticle.Admin.Windows.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panelSlideshow;
         private System.Windows.Forms.Label lblTotals;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnGenerateNarrations;
         private System.Windows.Forms.Button btnSortByDate;
         private System.Windows.Forms.Button btnOpenFolder;
-        private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.LinkLabel btnRefresh;
         private System.Windows.Forms.Button btnOutputFolder;
     }

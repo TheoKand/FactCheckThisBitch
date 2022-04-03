@@ -64,7 +64,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
             lstArticles.DragEnter += (sender, args) => { args.Effect = DragDropEffects.All; };
             lstArticles.DragDrop += (sender, args) =>
             {
-                var fromArticle = ((ArticleListBoxItem)args.Data.GetData(typeof(ArticleListBoxItem))).Article;
+                var fromArticle = ((ArticleListBoxItem) args.Data.GetData(typeof(ArticleListBoxItem))).Article;
                 var fromIndex = _slideshow.Articles.IndexOf(fromArticle);
                 var toIndex = lstArticles.IndexFromScreenPoint(new Point(args.X, args.Y));
                 if (fromIndex == toIndex) return;
@@ -146,18 +146,16 @@ namespace VideoFromArticle.Admin.Windows.Forms
         private void LoadArticles()
         {
             double totalSeconds = 0;
-            var totalCharacters = 0;
             lstArticles.Items.Clear();
             foreach (var article in _slideshow.Articles)
             {
                 lstArticles.Items.Add(new ArticleListBoxItem(article));
                 totalSeconds += article.ProjectedDurationInSeconds();
-                totalCharacters += article.Narration!=null? article.Narration.Trim().Length:0;
             }
 
             var timeSpan = TimeSpan.FromSeconds(totalSeconds);
 
-            lblTotals.Text = $"Duration: {timeSpan.ToString("mm\\:ss\\:FF")} Characters: {totalCharacters}";
+            lblTotals.Text = $"Duration: {timeSpan.ToString("mm\\:ss\\:FF")}";
         }
 
         private void frmSlideshow_FormClosing(object sender, FormClosingEventArgs e)
@@ -219,9 +217,9 @@ namespace VideoFromArticle.Admin.Windows.Forms
             var url = Prompt.ShowDialog("Enter Url", "Add new article");
             var newArticle = new Article() { Url = url, SlideshowFolder = _slideshow.Folder() };
             using (var articleForm = new FrmArticle(newArticle)
-            {
-                OnSave = () => { saveToolStripMenuItem_Click(null, null); }
-            })
+                   {
+                       OnSave = () => { saveToolStripMenuItem_Click(null, null); }
+                   })
             {
                 articleForm.ShowDialog();
                 _slideshow.Articles.Add(newArticle);
@@ -244,9 +242,9 @@ namespace VideoFromArticle.Admin.Windows.Forms
             var article = (lstArticles.SelectedItem as ArticleListBoxItem)?.Article;
             if (article == null) return;
             using (FrmArticle articleForm = new FrmArticle(article)
-            {
-                OnSave = () => { saveToolStripMenuItem_Click(null, null); }
-            })
+                   {
+                       OnSave = () => { saveToolStripMenuItem_Click(null, null); }
+                   })
             {
                 var articleBefore = JsonConvert.SerializeObject(article, StaticSettings.JsonSerializerSettings);
                 var result = articleForm.ShowDialog();
@@ -308,7 +306,9 @@ namespace VideoFromArticle.Admin.Windows.Forms
                 {
                     speechelo.Setup();
 
-                    var articlesWithNarration = _slideshow.Articles.Where(_ => _.Narration.IsNotEmpty() || _.NarrationPerImage.Value).ToList();
+                    var articlesWithNarration = _slideshow.Articles
+                        .Where(_ => _.Narration.IsNotEmpty() || _.NarrationPerImage.Value)
+                        .ToList();
                     for (var i = 0; i < articlesWithNarration.Count(); i++)
                     {
                         var article = articlesWithNarration[i];
@@ -317,25 +317,72 @@ namespace VideoFromArticle.Admin.Windows.Forms
 
                         if (article.NarrationPerImage.Value)
                         {
-                            for (var articleImageIndex = 0; articleImageIndex < article.Images.Count; articleImageIndex++)
+                            for (var articleImageIndex = 0;
+                                 articleImageIndex < article.Images.Count;
+                                 articleImageIndex++)
                             {
                                 var articleImage = article.Images[articleImageIndex];
 
-                                if (articleImage.Narration.IsNotEmpty())
+                                var (narration, duration) = articleImage.Narration.ParseNarration();
+
+                                if (narration.IsNotEmpty())
                                 {
                                     var imageNarrationFilePath = article.ImageNarrationAudioFilePath(articleImage);
-                                    speechelo.GenerateNarration(articleImage.Narration, voice, imageNarrationFilePath);
-                                    articleImage.DurationInSeconds = article.ReadNarrationDuration(articleImage).TotalSeconds;
-                                    
+                                    if (!File.Exists(imageNarrationFilePath))
+                                    {
+                                        speechelo.GenerateNarration(narration, voice, imageNarrationFilePath);
+                                    }
+
+                                    articleImage.AudioDuration =
+                                        duration ?? article.ReadNarrationDuration(articleImage).TotalSeconds;
+                                    if (!articleImage.Group)
+                                    {
+                                        articleImage.SlideDurationInSeconds = articleImage.AudioDuration;
+                                    }
                                 }
                             }
-                            article.DurationInSeconds = article.Images.Sum(_ => _.DurationInSeconds);
+
+                            var groupedImages = article.Images.Where(_ => _.Group).ToList();
+                            if (groupedImages.Any())
+                            {
+                                List<ArticleImage> currentGroup = new List<ArticleImage>() { groupedImages.First() };
+                                for (var imageIndex = 1; imageIndex < groupedImages.Count; imageIndex++)
+                                {
+                                    var articleImage = groupedImages[imageIndex];
+
+                                    if (articleImage.Narration.IsNotEmpty())
+                                    {
+                                        var durationForEachImageOfPreviousGroup =
+                                            currentGroup.First().AudioDuration / currentGroup.Count;
+                                        currentGroup.ForEach(_ =>
+                                            _.SlideDurationInSeconds = durationForEachImageOfPreviousGroup);
+
+                                        currentGroup.Clear();
+                                        currentGroup.Add(articleImage);
+                                    }
+                                    else
+                                    {
+                                        currentGroup.Add(articleImage);
+
+                                        if (imageIndex == groupedImages.Count - 1)
+                                        {
+                                            var durationForEachImageOfPreviousGroup =
+                                                currentGroup.First().AudioDuration / currentGroup.Count;
+                                            currentGroup.ForEach(_ =>
+                                                _.SlideDurationInSeconds = durationForEachImageOfPreviousGroup);
+                                        }
+                                    }
+                                }
+                            }
+
+                            article.DurationInSeconds = article.Images.Sum(_ => _.SlideDurationInSeconds);
                         }
                         else
                         {
                             article.Narration = article.Narration.SanitizeNarration();
-                            speechelo.GenerateNarration(article.Narration, voice, article.ArticleNarrationAudioFilePath());
-                            article.DurationInSeconds = article.ReadNarrationDuration().TotalSeconds;
+                            var (narration, duration) = article.Narration.ParseNarration();
+                            speechelo.GenerateNarration(narration, voice, article.ArticleNarrationAudioFilePath());
+                            article.DurationInSeconds = duration ?? article.ReadNarrationDuration().TotalSeconds;
                         }
 
                         saveToolStripMenuItem_Click(null, null);
@@ -366,17 +413,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
         {
             if (!Directory.Exists(_slideshow.Folder())) return;
             new Process { StartInfo = new ProcessStartInfo(_slideshow.Folder()) { UseShellExecute = true } }.Start();
-        }
-
-        private void btnPlay_Click(object sender, EventArgs e)
-        {
-            var article = (lstArticles.SelectedItem as ArticleListBoxItem)?.Article;
-            if (article == null) return;
-            article.DurationInSeconds = article.ReadNarrationDuration().TotalSeconds;
-            new Process
-            {
-                StartInfo = new ProcessStartInfo(article.ArticleNarrationAudioFilePath()) { UseShellExecute = true }
-            }.Start();
         }
 
         private void btnRefresh_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

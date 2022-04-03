@@ -10,7 +10,6 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using VideoFromArticle.Models;
-using Article = FactCheckThisBitch.Models.Article;
 
 namespace FactCheckThisBitch.Admin.Windows.UserControls
 {
@@ -41,19 +40,19 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         private void LoadForm()
         {
             var index = 0;
-            var padding = 10;
+            var padding = 20;
             var imageLabelButtonsHeight = 20;
 
-            var pictureWidth = 400;
-            var pictureHeight = (int)Math.Round(pictureWidth / 1.33,0);
+            var pictureWidth = 200;
+            var pictureHeight = (int) Math.Round(pictureWidth / 1.33, 0);
 
             if (chkAutosize.Checked)
             {
-                pictureHeight = (this.Height / ArticleImages.Count) - (padding + imageLabelButtonsHeight) ;
-                pictureWidth = (int)Math.Round(pictureHeight * 1.33,0);
+                pictureHeight = (this.Height / ArticleImages.Count) - (padding + imageLabelButtonsHeight);
+                pictureWidth = (int) Math.Round(pictureHeight * 1.33, 0);
             }
 
-            panel.Height = ArticleImages.Count * (pictureHeight + imageLabelButtonsHeight + padding)+ 50;
+            panel.Height = ArticleImages.Count * (pictureHeight + imageLabelButtonsHeight + padding) + 50;
             panel.Controls.Clear();
 
             for (int imageIndex = 0; imageIndex < ArticleImages.Count; imageIndex++)
@@ -147,7 +146,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 txtCaption.Font = new Font("Arial", 8.5f);
                 txtCaption.Top = picture.Bottom;
                 txtCaption.Left = editLabel.Right;
-                txtCaption.Width = pictureWidth - 75;
+                txtCaption.Width = this.Width / 2;
                 txtCaption.Height = imageLabelButtonsHeight;
                 txtCaption.BorderStyle = BorderStyle.None;
                 txtCaption.AutoSize = false;
@@ -155,7 +154,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                 {
                     if (articleImage.Caption != txtCaption.Text)
                     {
-                        articleImage.Caption = txtCaption.Text;
+                        articleImage.Caption = txtCaption.Text.Replace("\r\n","").Replace("\n","");
                     }
                 };
                 panel.Controls.Add(txtCaption);
@@ -171,18 +170,26 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                     articleImage.TypewriterAnimation = (sender as CheckBox).Checked;
                 };
                 panel.Controls.Add(chkTypewriter);
-                
+
+                var chkGroup = new CheckBox();
+                chkGroup.Name = $"chkGroup{imageIndex}";
+                chkGroup.Text = "Group";
+                chkGroup.Left = chkTypewriter.Right;
+                chkGroup.Top = picture.Bottom;
+                chkGroup.Checked = articleImage.Group;
+                chkGroup.CheckedChanged += (sender, args) => { articleImage.Group = (sender as CheckBox).Checked; };
+                panel.Controls.Add(chkGroup);
 
                 var txtNarration = new TextBox();
                 txtNarration.Name = $"txtNarration{imageIndex}";
                 txtNarration.Text = articleImage.Narration;
                 txtNarration.Top = pictureTop;
                 txtNarration.Left = pictureWidth;
-                txtNarration.Width = this.Width - pictureWidth-padding;
+                txtNarration.Width = this.Width - pictureWidth - padding * 3;
                 txtNarration.Height = picture.Height;
                 txtNarration.Multiline = true;
                 txtNarration.ScrollBars = ScrollBars.Both;
-                toolTip1.SetToolTip(txtNarration, $"Duration: {articleImage.DurationInSeconds} sec");
+                toolTip1.SetToolTip(txtNarration, $"Saved Audio Duration: {articleImage.AudioDuration} sec");
                 txtNarration.LostFocus += (sender, args) =>
                 {
                     if (articleImage.Narration != txtNarration.Text)
@@ -190,11 +197,10 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
                         articleImage.Narration = txtNarration.Text;
                         articleImage.Narration = articleImage.Narration.SanitizeNarration();
 
-                        //if it's just a pause
-                        if (articleImage.Narration.StartsWith("<duration>"))
+                        var (narration, duration) = articleImage.Narration.ParseNarration();
+                        if (duration != null)
                         {
-                            var duration = articleImage.Narration.Replace("<duration>", "").Replace("</duration>", "");
-                            articleImage.DurationInSeconds = Double.Parse(duration);
+                            articleImage.SlideDurationInSeconds = duration.Value;
                         }
                     }
                 };
@@ -211,7 +217,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             if (panel.Height > this.Height - panel.Top)
             {
                 vScrollBar1.Enabled = true;
-                vScrollBar1.Maximum = (panel.Height - (this.Height - panel.Top)) /4;
+                vScrollBar1.Maximum = (panel.Height - (this.Height - panel.Top)) / 4;
             }
             else
             {
@@ -242,7 +248,7 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             }
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnAdd_Click_1(object sender, EventArgs e)
         {
             openFileDialog1.InitialDirectory = BaseFolder;
             openFileDialog1.Title = "Open Image";
@@ -272,7 +278,22 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             }
         }
 
-        private void btnPaste_Click(object sender, EventArgs e)
+        private void vScrollBar1_Resize(object sender, EventArgs e)
+        {
+            ResetScrollbar();
+        }
+
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            panel.Top = -e.NewValue * 4;
+        }
+
+        private void chkAutosize_CheckedChanged_1(object sender, EventArgs e)
+        {
+            LoadForm();
+        }
+
+        private void btnPaste_Click_1(object sender, EventArgs e)
         {
             if (Clipboard.ContainsImage())
             {
@@ -292,20 +313,5 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         }
 
         #endregion
-
-        private void vScrollBar1_Resize(object sender, EventArgs e)
-        {
-            ResetScrollbar();
-        }
-
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-            panel.Top = -e.NewValue*4;
-        }
-
-        private void chkAutosize_CheckedChanged(object sender, EventArgs e)
-        {
-            LoadForm();
-        }
     }
 }

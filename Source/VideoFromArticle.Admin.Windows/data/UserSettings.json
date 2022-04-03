@@ -1,146 +1,153 @@
 {
   "CurrentSlideshow": {
-    "Id": "90a78c5e-e4c0-492b-add6-9205f56715a5",
-    "Title": "rude ai news.23.3.2022",
+    "Id": "92634a92-298f-4efa-9f3c-9328f5bb5d11",
+    "Title": "Rihanna Life",
     "Articles": [
       {
-        "Id": "2b82fd9b-784e-4763-b6cc-7d151b2ee562",
-        "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\rude-ai-news-23-3-2022",
-        "RecycleImages": false,
+        "Id": "914ba9a1-d46d-45cd-9d38-e1fe53ec83b7",
+        "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\rihanna-life",
         "NarrationPerImage": true,
-        "NextPreview": false,
-        "Order": 0,
-        "Title": "Russia vs Ukraine Battle Plan",
+        "Title": "New Article With Id 914ba9a1-d46d-45cd-9d38-e1fe53ec83b7",
         "Images": [
           {
             "Filesize": 0,
-            "Filename": "6816a212-4598-4707-bf56-3dd5318b4118.png",
-            "Caption": "Russians already have control of a huge part of Ukraine.",
-            "DurationInSeconds": 0.0,
+            "Filename": "a6eb5cee-d6bd-41b0-8824-a52ac92a7dd7.png",
+            "Caption": "Barbados is an island country in the eastern Caribbean Islands.",
+            "Narration": "On the 20th of February 1988, a hazel eyed, mixed race girl was born in the outskirts of Bridgetown in Barbados.",
+            "SlideDurationInSeconds": 8.808,
+            "AudioDuration": 0.0,
+            "Group": false,
+            "TypewriterAnimation": true
+          },
+          {
+            "Filesize": 0,
+            "Filename": "a249cfb9-d113-435e-896b-a13d6d00ac83.png",
+            "Caption": "Barbados is roughly 7 times the area of Manhattan, with a population of about 287,000. It's capital and largest city is Bridgetown.",
+            "Narration": "Barbados is a developed and peaceful country with a very high quality of life. It's population is predominantly of African descent. ",
+            "SlideDurationInSeconds": 9.288,
+            "AudioDuration": 0.0,
+            "Group": false,
+            "TypewriterAnimation": true
+          },
+          {
+            "Filesize": 0,
+            "Filename": "c2994a3f-6ea7-4f24-8a4d-a0ce99e77730.png",
+            "Caption": "As many as 50,000 Irish people were transported to either Barbados or Virginia unwillingly during the 1650s",
+            "Narration": "Barbados was a colony of the English Crown and around the 17th century a large number of white Irish people were involuntarily transported to Barbados, to work in sugar plantations.",
+            "SlideDurationInSeconds": 11.832,
+            "AudioDuration": 0.0,
+            "Group": false,
+            "TypewriterAnimation": true
+          },
+          {
+            "Filesize": 0,
+            "Filename": "41395331-d67a-4f11-9803-161f44ab6a31.png",
+            "Caption": "Rihanna's green eyes and skin complexion are a testament to her Irish roots.",
+            "Narration": "The  Irish of Barbados, who came to be known as Red legs, began to inter-marry with alluring Barbadians and the product of one such union was Ronald Fenty, Rihanna's father.",
+            "SlideDurationInSeconds": 11.184,
+            "AudioDuration": 0.0,
+            "Group": false,
+            "TypewriterAnimation": true
+          },
+          {
+            "Filesize": 0,
+            "Filename": "1f4eb3a7-774b-4f27-8563-3dd3ad652e49.png",
+            "Caption": "",
+            "Narration": "Robyn Rihanna Fenty was born and raised in the parish of Saint Michael on the Caribbean island of Barbados. She is the eldest of three siblings. The daughter of Monica and Ronald Fenty.",
+            "SlideDurationInSeconds": 12.816,
+            "AudioDuration": 0.0,
+            "Group": true,
             "TypewriterAnimation": false
           },
           {
             "Filesize": 0,
-            "Filename": "a6c43b28-c0e8-4211-a8a8-4a029dd46a1e.png",
-            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
-            "DurationInSeconds": 0.0,
+            "Filename": "94694ae6-1397-4d6d-b50a-4f156f2f0a35.png",
+            "Caption": "",
+            "Narration": "",
+            "SlideDurationInSeconds": 0.0,
+            "AudioDuration": 0.0,
+            "Group": true,
             "TypewriterAnimation": false
           },
           {
             "Filesize": 0,
-            "Filename": "644bf303-6a3b-4328-942f-6817f1478435.png",
-            "Caption": "Mariupol is largely occupied; two Azon strongholds remain",
-            "DurationInSeconds": 0.0,
+            "Filename": "899ce1c5-a880-49a5-9d8c-b759f8521218.png",
+            "Caption": "",
+            "Narration": "",
+            "SlideDurationInSeconds": 0.0,
+            "AudioDuration": 0.0,
+            "Group": true,
             "TypewriterAnimation": false
           },
           {
             "Filesize": 0,
-            "Filename": "254254c4-101b-49d0-957c-61e8a32672b5.png",
-            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
-            "DurationInSeconds": 0.0,
+            "Filename": "a54a1898-e343-48c0-be68-d6bc5f32e4cb.png",
+            "Caption": "",
+            "Narration": "",
+            "SlideDurationInSeconds": 0.0,
+            "AudioDuration": 0.0,
+            "Group": true,
             "TypewriterAnimation": false
           },
           {
             "Filesize": 0,
-            "Filename": "b32b0704-27f4-4a64-a566-c732f18554fc.png",
-            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
+            "Filename": "e0f1d315-2029-4fd3-954b-917a22a174af.png",
+            "Caption": "Rihanna at 10 years old.",
+            "Narration": "Her childhood was a difficult one, marred by constant arguments between her parents and their eventual divorce. Her father was an alcoholic addicted to cocaine who has since then overcome his addictions.\r\nShe loved music from a young age. She began singing when she was seven, and went on to form a musical trio with her classmates as a high school student.",
+            "SlideDurationInSeconds": 23.28,
+            "AudioDuration": 0.0,
+            "Group": true,
+            "TypewriterAnimation": true
           },
           {
             "Filesize": 0,
-            "Filename": "cde28a81-7a2f-47d6-b803-96920efab617.png",
-            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
+            "Filename": "a9eeec9e-ebb7-4588-b9f8-a0865634f85f.png",
+            "Caption": "Rihanna at 13 years old.",
+            "Narration": "",
+            "SlideDurationInSeconds": 0.0,
+            "AudioDuration": 0.0,
+            "Group": true,
+            "TypewriterAnimation": true
+          },
+          {
+            "Filesize": 0,
+            "Filename": "b7d20e36-f2e8-410d-9393-227940a2164d.png",
+            "Caption": "Rihanna at 14 years old.",
+            "Narration": "",
+            "SlideDurationInSeconds": 0.0,
+            "AudioDuration": 0.0,
+            "Group": true,
+            "TypewriterAnimation": true
+          },
+          {
+            "Filesize": 0,
+            "Filename": "90b54b0b-8318-444d-a469-36ee78b532fc.png",
+            "Caption": "Some people say that a girl turns sweet at 16 and they’re not wrong.",
+            "Narration": "",
+            "SlideDurationInSeconds": 0.0,
+            "AudioDuration": 0.0,
+            "Group": true,
+            "TypewriterAnimation": true
+          },
+          {
+            "Filesize": 0,
+            "Filename": "eca09a47-2124-4c21-8751-216547c79a90.png",
+            "Caption": "Rihanna at 18 years old.",
+            "Narration": "",
+            "SlideDurationInSeconds": 0.0,
+            "AudioDuration": 0.0,
+            "Group": true,
+            "TypewriterAnimation": true
           }
         ],
-        "Narration": "Let's see if the mainstream media narrative that Russia has stalled in their offensive, holds water.\r\nAs of 22nd of March, red areas on these maps are controlled by the Russian army. \r\nBlue marks the cities where Ukrainian forces have barricated, like stranded castaways in a sea of enemy forces. \r\nThe rest of Ukraine is at the mercy of the Russian army and the continuous bombing campaign is obliterating all military infrastructures.\r\nHaving said that, country roads are still available. \r\nRefuges can move through these, and small supply lines for Ukranian forces.\r\nIn orange, we can see Transnistria in Moldova, inhabited by mostly Russian populations. \r\nRussia maintains armed forces there, for peacekeeping purposes. \r\nAs you can see, despite the mainstream media propaganda, Russians already have control of a huge part of Ukraine.\r\n\r\nMariupol in the Azov Sea coastal region is the first important milestone for Russians, apart from the Donbass regions which are already under their complete control. \r\nMariupol is where the Azov Batallion is based.\r\nThe city is essentially occupied, sadly most of it destroyed and there are still two main Azov regiment strongholds.  \r\nIn red, you can see Russian controlled areas, blue is Azov and there is ongoing fighting in the overlapping purple areas.\r\n\r\nIn North Easy Ukraine, Kharkiv and other cities are pressured from the east, living the west side free so that Ukrainians can flee. \r\nThese cities have not been surrounded yet. \r\nIt's obvious that Russians did not want to demolish the cities as mainstream media and the West countries suggest.\r\nRussians are slowly and patiently leaving Ukrainians to realize that winning this war is impossible, that's why mostly old Military equipment has been used.\r\nHaving said that, the Russian army did show off to NATO a bit with the supersonic Kinzal missile system. ",
-        "RecycledImages": [
-          {
-            "Filesize": 0,
-            "Filename": "6816a212-4598-4707-bf56-3dd5318b4118.png",
-            "Caption": "Russians already have control of a huge part of Ukraine.",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
-          },
-          {
-            "Filesize": 0,
-            "Filename": "a6c43b28-c0e8-4211-a8a8-4a029dd46a1e.png",
-            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
-          },
-          {
-            "Filesize": 0,
-            "Filename": "644bf303-6a3b-4328-942f-6817f1478435.png",
-            "Caption": "Mariupol is largely occupied; two Azon strongholds remain",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
-          },
-          {
-            "Filesize": 0,
-            "Filename": "254254c4-101b-49d0-957c-61e8a32672b5.png",
-            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
-          },
-          {
-            "Filesize": 0,
-            "Filename": "b32b0704-27f4-4a64-a566-c732f18554fc.png",
-            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
-          },
-          {
-            "Filesize": 0,
-            "Filename": "cde28a81-7a2f-47d6-b803-96920efab617.png",
-            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
-          },
-          {
-            "Filesize": 0,
-            "Filename": "6816a212-4598-4707-bf56-3dd5318b4118.png",
-            "Caption": "Russians already have control of a huge part of Ukraine.",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
-          },
-          {
-            "Filesize": 0,
-            "Filename": "a6c43b28-c0e8-4211-a8a8-4a029dd46a1e.png",
-            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
-          },
-          {
-            "Filesize": 0,
-            "Filename": "644bf303-6a3b-4328-942f-6817f1478435.png",
-            "Caption": "Mariupol is largely occupied; two Azon strongholds remain",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
-          },
-          {
-            "Filesize": 0,
-            "Filename": "254254c4-101b-49d0-957c-61e8a32672b5.png",
-            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
-          },
-          {
-            "Filesize": 0,
-            "Filename": "b32b0704-27f4-4a64-a566-c732f18554fc.png",
-            "Caption": "New Article With Id 2b82fd9b-784e-4763-b6cc-7d151b2ee562",
-            "DurationInSeconds": 0.0,
-            "TypewriterAnimation": false
-          }
-        ],
-        "DurationInSeconds": 116.424
+        "Narration": "",
+        "DurationInSeconds": 77.208
       }
     ],
-    "SanitizedTitle": "rude-ai-news-23-3-2022"
+    "Created": "2022-04-03T22:27:24.0114842+01:00",
+    "SanitizedTitle": "rihanna-life"
   },
   "NarrationOptionsVoice": "ttsVoiceen-US-AriaNeural",
-  "RenderOptionsTemplate": "RudeAINews",
+  "RenderOptionsTemplate": "DailyGossipNews",
   "RenderOptionsIntroDuration": 0
 }

@@ -5,6 +5,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using NAudio.CoreAudioApi;
 using VideoFromArticle.Models;
@@ -29,7 +30,6 @@ namespace VideoFromArticle.Admin.Windows
                 TimeSpan duration = mp3Reader.TotalTime;
                 return duration;
             }
-
         }
 
         public static string FilenameFromUrl(this string url)
@@ -59,9 +59,9 @@ namespace VideoFromArticle.Admin.Windows
             return Path.Combine(article.Folder(), $"{article.Title.Sanitize().Limit(30)}.mp3");
         }
 
-        public static string ImageNarrationAudioFilePath(this Article article,ArticleImage image)
+        public static string ImageNarrationAudioFilePath(this Article article, ArticleImage image)
         {
-            return Path.Combine(article.Folder(), image.Filename.Replace(".jpg",".mp3").Replace(".png",".mp3"));
+            return Path.Combine(article.Folder(), image.Filename.Replace(".jpg", ".mp3").Replace(".png", ".mp3"));
         }
 
         public static double ProjectedDurationInSeconds(this Article article)
@@ -120,12 +120,12 @@ namespace VideoFromArticle.Admin.Windows
                 int filesNotFound = 0;
                 foreach (var imageFileName in article.Images.Select(_ => _.Filename))
                 {
-
                     if (!File.Exists(Path.Combine(article.SlideshowFolder, article.Id, imageFileName)))
                     {
                         filesNotFound++;
                     }
                 }
+
                 if (filesNotFound > 0)
                 {
                     problem = true;
@@ -144,7 +144,8 @@ namespace VideoFromArticle.Admin.Windows
                 else
                 {
                     var audioDuration = article.ReadNarrationDuration();
-                    result.Append($"Single Audio: {audioDuration:mm\\:ss\\:FF} {Math.Ceiling(audioDuration.TotalSeconds)} sec. ");
+                    result.Append(
+                        $"Single Audio: {audioDuration:mm\\:ss\\:FF} {Math.Ceiling(audioDuration.TotalSeconds)} sec. ");
 
                     if (article.Images.Any())
                     {
@@ -158,9 +159,9 @@ namespace VideoFromArticle.Admin.Windows
                     var charCount = article.Narration.Trim().Length;
                     if (article.Images.Any())
                     {
-                        result.Append($"{Math.Round((decimal)charCount / article.Images.Count, 1)} letters per image. ");
+                        result.Append(
+                            $"{Math.Round((decimal) charCount / article.Images.Count, 1)} letters per image. ");
                     }
-
                 }
             }
             else
@@ -176,16 +177,14 @@ namespace VideoFromArticle.Admin.Windows
                     }
                     else
                     {
-                        result.Append($"{audioFiles.Length}/{article.Images.Count} Audio files. Duration : {Math.Ceiling(article.DurationInSeconds)} sec. ");
+                        result.Append(
+                            $"{audioFiles.Length}/{article.Images.Count} Audio files. Duration : {Math.Ceiling(article.DurationInSeconds)} sec. ");
                     }
                 }
                 else
                 {
-
                 }
             }
-
-
 
             return $"{(problem ? "!!! " : "")}{result}";
         }
@@ -213,7 +212,5 @@ namespace VideoFromArticle.Admin.Windows
                 : Path.Combine(slideshow.Folder(), "slideshow.json");
             return result;
         }
-
-
     }
 }

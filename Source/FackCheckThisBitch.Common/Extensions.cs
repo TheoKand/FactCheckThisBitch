@@ -339,15 +339,30 @@ namespace FackCheckThisBitch.Common
             }
         }
 
+        public static (string narration, int? duration) ParseNarration(this string narration)
+        {
+            var match = Regex.Match(narration, "<narration duration=\"(.*)\">(.*)<\\/narration>", RegexOptions.Singleline);
+            if (match.Success)
+            {
+                var duration = int.Parse(match.Groups[1].Value);
+                var parsedNarration = match.Groups[2].Value;
+                return (parsedNarration, duration);
+            }
+            else
+            {
+                return (narration, null);
+            }
+        }
+
         public static string SanitizeNarration(this string narration)
         {
             narration = narration.Replace("(pictured)", " ");
             narration = narration.Replace(".com", " dot com ");
             narration = narration.Replace("sh*t", "beep");
-            narration = narration.Replace("shit", "beep");
+            narration = narration.Replace(" shit ", "beep");
             narration = narration.Replace("Sen.", "Senator ");
             narration = narration.Replace("a**", "beep");
-            narration = narration.Replace("ass", "beep");
+            narration = narration.Replace(" ass ", "beep");
             narration = narration.Replace("E! News", "E News");
 
             if (narration.Contains("*"))

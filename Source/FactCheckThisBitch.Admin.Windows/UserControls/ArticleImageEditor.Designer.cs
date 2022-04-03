@@ -31,46 +31,18 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArticleImageEditor));
-            this.btnAdd = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.btnPaste = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel = new System.Windows.Forms.Panel();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.chkAutosize = new System.Windows.Forms.CheckBox();
+            this.btnPaste = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.Location = new System.Drawing.Point(673, 3);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(40, 38);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "...";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // btnPaste
-            // 
-            this.btnPaste.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPaste.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPaste.Image = ((System.Drawing.Image)(resources.GetObject("btnPaste.Image")));
-            this.btnPaste.Location = new System.Drawing.Point(618, 3);
-            this.btnPaste.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnPaste.Name = "btnPaste";
-            this.btnPaste.Size = new System.Drawing.Size(40, 38);
-            this.btnPaste.TabIndex = 4;
-            this.btnPaste.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPaste.UseVisualStyleBackColor = true;
-            this.btnPaste.Click += new System.EventHandler(this.btnPaste_Click);
             // 
             // panel
             // 
@@ -79,9 +51,9 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel.BackColor = System.Drawing.Color.Silver;
-            this.panel.Location = new System.Drawing.Point(3, 72);
+            this.panel.Location = new System.Drawing.Point(3, 3);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(823, 526);
+            this.panel.Size = new System.Drawing.Size(823, 595);
             this.panel.TabIndex = 7;
             // 
             // vScrollBar1
@@ -99,20 +71,48 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
             // 
             this.chkAutosize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkAutosize.AutoSize = true;
-            this.chkAutosize.Location = new System.Drawing.Point(745, 12);
+            this.chkAutosize.Location = new System.Drawing.Point(711, 10);
             this.chkAutosize.Name = "chkAutosize";
             this.chkAutosize.Size = new System.Drawing.Size(76, 21);
-            this.chkAutosize.TabIndex = 8;
+            this.chkAutosize.TabIndex = 11;
             this.chkAutosize.Text = "Autosize";
             this.chkAutosize.UseVisualStyleBackColor = true;
-            this.chkAutosize.CheckedChanged += new System.EventHandler(this.chkAutosize_CheckedChanged);
+            this.chkAutosize.CheckedChanged += new System.EventHandler(this.chkAutosize_CheckedChanged_1);
+            // 
+            // btnPaste
+            // 
+            this.btnPaste.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPaste.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPaste.Image = ((System.Drawing.Image)(resources.GetObject("btnPaste.Image")));
+            this.btnPaste.Location = new System.Drawing.Point(591, 1);
+            this.btnPaste.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPaste.Name = "btnPaste";
+            this.btnPaste.Size = new System.Drawing.Size(40, 38);
+            this.btnPaste.TabIndex = 10;
+            this.btnPaste.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPaste.UseVisualStyleBackColor = true;
+            this.btnPaste.Click += new System.EventHandler(this.btnPaste_Click_1);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.Location = new System.Drawing.Point(646, 1);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(40, 38);
+            this.btnAdd.TabIndex = 9;
+            this.btnAdd.Text = "...";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
             // ArticleImageEditor
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Controls.Add(this.btnPaste);
             this.Controls.Add(this.chkAutosize);
+            this.Controls.Add(this.btnPaste);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.panel);
@@ -125,12 +125,12 @@ namespace FactCheckThisBitch.Admin.Windows.UserControls
         }
 
         #endregion
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button btnPaste;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.CheckBox chkAutosize;
+        private System.Windows.Forms.Button btnPaste;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

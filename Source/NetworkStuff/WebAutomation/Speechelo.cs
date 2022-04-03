@@ -4,6 +4,7 @@ using System;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
+using FackCheckThisBitch.Common;
 
 
 namespace WebAutomation
@@ -61,6 +62,10 @@ namespace WebAutomation
             var txtNarration = _driver.FindWaitElement(By.Id("tts-tarea"), 60);
             txtNarration.Clear();
             txtNarration.SendKeys(narration);
+            if (narration.IsEmpty())
+            {
+                Console.WriteLine("Error");
+            }
 
             var radioGrace = _driver.FindWaitElement(By.Id(voice), 20);
             radioGrace.Click();

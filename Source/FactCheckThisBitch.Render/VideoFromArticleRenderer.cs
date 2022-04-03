@@ -94,51 +94,16 @@ namespace FactCheckThisBitch.Render
             #region create one slide for each article image
 
             var articleIndex = 0;
-            foreach (var article in _slideshow.Articles.OrderBy(_ => _.Order))
+            foreach (var article in _slideshow.Articles)
             {
-                article.RecycledImages.Clear();
-                article.RecycledImages =
-                    JsonConvert.DeserializeObject<List<ArticleImage>>(JsonConvert.SerializeObject(article.Images));
+                var secondsPerArticleImage = article.DurationInSeconds / article.Images.Count;
 
-                if (article.RecycleImages.Value)
+                for (var imageIndex = 0; imageIndex < article.Images.Count; imageIndex++)
                 {
-                    //if duration per slide is too high, recycle the same slides
-                    var durationPerArticleImage = article.DurationInSeconds / article.Images.Count;
-                    if (durationPerArticleImage < MinimumSecondsPerSlide)
-                    {
-                        throw new Exception(
-                            $"Duration per image for article {article.Title} is {durationPerArticleImage}, minimum is {MinimumSecondsPerSlide} ");
-                    }
-
-                    if (durationPerArticleImage > maximumSecondsPerSlideBeforeRecycle)
-                    {
-                        var startToRecycleAtThisPointInTime =
-                            article.Images.Count * maximumSecondsPerSlideBeforeRecycle;
-                        var pointInTime = startToRecycleAtThisPointInTime;
-                        var recycleImageIndex = 0;
-                        while (pointInTime < article.DurationInSeconds - (maximumSecondsPerSlideBeforeRecycle + 3))
-                        {
-                            var imageToRecycle = article.Images[recycleImageIndex];
-                            article.RecycledImages.Add(imageToRecycle);
-                            recycleImageIndex++;
-                            if (recycleImageIndex > article.Images.Count - 1)
-                            {
-                                recycleImageIndex = 0;
-                            }
-
-                            pointInTime += maximumSecondsPerSlideBeforeRecycle;
-                        }
-                    }
-                }
-
-                var secondsPerArticleImage = article.DurationInSeconds / article.RecycledImages.Count;
-
-                for (var imageIndex = 0; imageIndex < article.RecycledImages.Count; imageIndex++)
-                {
-                    var articleImage = article.RecycledImages[imageIndex];
+                    var articleImage = article.Images[imageIndex];
                     var imageSlide = articleImageTemplateSlide.Clone();
                     var imageSlideDuration = article.NarrationPerImage.Value
-                        ? articleImage.DurationInSeconds
+                        ? articleImage.SlideDurationInSeconds
                         : secondsPerArticleImage;
 
                     imageSlide.Name = $"{article.Id}-image{imageIndex}";
@@ -168,7 +133,7 @@ namespace FactCheckThisBitch.Render
 
                         //hide title for last slide of article (unless it's an image caption)
                         
-                        if (imageIndex == article.RecycledImages.Count - 1 && slideTitle == article.Title)
+                        if (imageIndex == article.Images.Count - 1 && slideTitle == article.Title)
                         {
                             imageSlide.HideShapeAndRemoveAnimations(txtTitle);
                         } else if (imageIndex > 0)
@@ -224,7 +189,7 @@ namespace FactCheckThisBitch.Render
 
                     //progressBar
                     var progressBar = imageSlide.ShapeByName("progressBar");
-                    progressBar.Width = txtUrl.Width * imageIndex / (article.RecycledImages.Count - 1);
+                    progressBar.Width = txtUrl.Width * imageIndex / (article.Images.Count - 1);
 
                     if (imageIndex == 0)
                     {
@@ -244,31 +209,26 @@ namespace FactCheckThisBitch.Render
 
                     imageSlide.SlideTransition.TimeDelay = (float)imageSlideDuration;
 
-                    ISequence sequence = imageSlide.Timeline.MainSequence;
+                    var endAllAnimationsAtThisTime = (float) imageSlideDuration - 0.1f;
+
                     var imageAnimations =
-                        sequence.GetEffectsByShape(imageSlide.Shapes.First(_ => _.ShapeName == "image1") as IShape);
-                    imageAnimations[1].Behaviors[0].Timing.Duration = (float)imageSlideDuration - 1.5f;
-                    imageAnimations[2].Behaviors[0].Timing.Duration = (float)imageSlideDuration - 1.5f;
+                        imageSlide.Timeline.MainSequence.GetEffectsByShape(imageSlide.Shapes.First(_ => _.ShapeName == "image1") as IShape);
+                    imageAnimations[1].Behaviors[0].Timing.Duration = endAllAnimationsAtThisTime;
+                    imageAnimations[2].Behaviors[0].Timing.Duration = endAllAnimationsAtThisTime;
+
+                    if (imageSlideDuration < 4)
+                    {
+                        //limit all animations that go beyond the slide duration
+                        var animatedStar = imageSlide.Shapes.First(s => s.SlideItemType == SlideItemType.Unknown);
+                        imageSlide.Timeline.MainSequence.RemoveByShape(animatedStar as IShape);
+                    }
 
                     //show next article teaser
                     var groupNext = imageSlide.ShapeByName("GroupNext") as IGroupShape;
-                    if (article.NextPreview.Value && articleIndex < _slideshow.Articles.Count - 1 &&
-                        imageIndex == article.RecycledImages.Count / 2)
+                    if (articleIndex < _slideshow.Articles.Count - 1 &&
+                        imageIndex == article.Images.Count / 2)
                     {
                         var nextArticle = _slideshow.Articles[articleIndex + 1];
-                        var howManyImagesLeftInArticle = article.RecycledImages.Count - imageIndex - 1;
-                        //TODO: calculate time left in article,  if narration per image
-
-                        if (article.NarrationPerImage.Value)
-                        {
-                             imageSlide.HideShapeAndRemoveAnimations( groupNext.GetShapeFromGroupShape("txtNextWhen"));
-                        }
-                        else
-                        {
-                            var howManySecondsLeftInArticle =
-                                (int)Math.Round(secondsPerArticleImage * howManyImagesLeftInArticle, 0);
-                            groupNext.UpdateText("txtNextWhen", $"in {howManySecondsLeftInArticle} sec");
-                        }
 
                         groupNext.UpdateText("txtNextTitle", $"{nextArticle.Title.Limit(103, "...")}");
                         
@@ -301,18 +261,18 @@ namespace FactCheckThisBitch.Render
 
             var slideIndex = 0;
 
-            foreach (var article in _slideshow.Articles.OrderBy(_ => _.Order))
+            foreach (var article in _slideshow.Articles)
             {
                 var totalArticleSeconds = article.DurationInSeconds;
-                var secondsPerArticleImage = totalArticleSeconds / article.RecycledImages.Count;
+                var secondsPerArticleImage = totalArticleSeconds / article.Images.Count;
 
-                for (var imageIndex = 0; imageIndex < article.RecycledImages.Count; imageIndex++)
+                for (var imageIndex = 0; imageIndex < article.Images.Count; imageIndex++)
                 {
                     var imageSlide = doc.Slides[slideIndex];
-                    var articleImage = article.RecycledImages[imageIndex];
+                    var articleImage = article.Images[imageIndex];
 
                     var imageSlideDuration = article.NarrationPerImage.Value
-                        ? articleImage.DurationInSeconds
+                        ? articleImage.SlideDurationInSeconds
                         : secondsPerArticleImage;
 
                     imageSlide.SlideTransition.TimeDelay = (float)imageSlideDuration;
@@ -378,7 +338,7 @@ namespace FactCheckThisBitch.Render
 
             var currentTimeInVideo = TimeSpan.FromSeconds(_introDuration);
 
-            foreach (var article in _slideshow.Articles.OrderBy(_ => _.Order))
+            foreach (var article in _slideshow.Articles)
             {
                 var chapter = currentTimeInVideo.ToString("mm\\:ss");
 
