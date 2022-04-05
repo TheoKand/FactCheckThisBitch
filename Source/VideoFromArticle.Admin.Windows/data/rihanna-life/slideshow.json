@@ -18,7 +18,7 @@
         },
         {
           "Filename": "a249cfb9-d113-435e-896b-a13d6d00ac83.png",
-          "Caption": "Barbados is roughly 7 times the area of Manhattan, with a population of about 287,000. It's capital and largest city is Bridgetown.",
+          "Caption": "Barbados is roughly 7 times the area of Manhattan, with a population of about 28K. It's capital is Bridgetown.",
           "Narration": "Barbados is a developed and peaceful country with a very high quality of life. It's population is predominantly of African descent. ",
           "SlideDurationInSeconds": 9.288,
           "AudioDuration": 9.288,
@@ -72,7 +72,7 @@
         {
           "Filename": "e0f1d315-2029-4fd3-954b-917a22a174af.png",
           "Caption": "Rihanna at 10 years old.",
-          "Narration": "Her childhood was a difficult one, marred by constant arguments between her parents and their eventual divorce. Her father was an alcoholic addicted to cocaine who has since then overcome his addictions.\r\nShe loved music from a young age. She began singing when she was seven, and went on to form a musical trio with her classmates as a high school student.",
+          "Narration": "Her childhood was a difficult one, marred by constant arguments between her parents and their eventual divorce. Her father was an alcoholic addicted to cocaine who has since then overcome his addictions.\r\nShe loved music from a young age. She began singing when she was seven, and went on to form a musical trio with her classmates as a high school student. She had a chance meeting with American producer Evan Rogers in 2003 and performed some songs in his presence. He was impressed and invited her to New York to record some demo tapes.",
           "SlideDurationInSeconds": 4.656000000000001,
           "AudioDuration": 23.28,
           "Group": true,
@@ -96,7 +96,7 @@
         },
         {
           "Filename": "90b54b0b-8318-444d-a469-36ee78b532fc.png",
-          "Caption": "Some people say that a girl turns sweet at 16 and they’re not wrong 😍",
+          "Caption": "😍 Some people say that a girl turns sweet at 16 and they’re not wrong ",
           "Narration": "",
           "SlideDurationInSeconds": 4.656000000000001,
           "Group": true,
@@ -156,15 +156,17 @@
           "Filename": "15c272f7-2eff-44d9-9a7a-d3a72939c056.png",
           "Caption": "After Chris Brown assaulted Rihanna, Ronald Fenty shocked his daughter by selling news of the incident to the press.\n",
           "Narration": "Rihanna said, \"Domestic violence is not somebody that people want anybody to know, so she would just hide it in the house. I always said to myself, 'I'm never going to date somebody like my dad, never.",
-          "SlideDurationInSeconds": 12.456,
+          "SlideDurationInSeconds": 6.228,
           "AudioDuration": 12.456,
+          "Group": true,
           "TypewriterAnimation": true
         },
         {
           "Filename": "5d278092-1e1d-43df-8169-e2b8b4b47df1.png",
           "Caption": "",
           "Narration": "",
-          "SlideDurationInSeconds": 6.228
+          "SlideDurationInSeconds": 6.228,
+          "Group": true
         },
         {
           "Filename": "52bc8690-bbb1-4bd8-b916-b513a60f9ee5.png",
@@ -177,7 +179,7 @@
         },
         {
           "Filename": "c5057b55-6b35-49dc-aeaf-5345db992696.png",
-          "Caption": "As for Rihanna, her foundation donated $5 million to various organizations assisting with coronavirus relief efforts.",
+          "Caption": "Rihanna's foundation donated $5 million to various organizations assisting with coronavirus relief efforts.",
           "Narration": "",
           "SlideDurationInSeconds": 7.552,
           "Group": true,
@@ -201,7 +203,674 @@
         }
       ],
       "Narration": "",
-      "DurationInSeconds": 84.012
+      "DurationInSeconds": 77.78399999999999
+    },
+    {
+      "Id": "20e58ea2-3601-401f-a39f-951a020beb2a",
+      "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\rihanna-life",
+      "NarrationPerImage": true,
+      "Title": "Rihanna and her mother",
+      "Images": [
+        {
+          "Url": "https://i.dailymail.co.uk/1s/2019/04/06/00/11926696-0-image-a-5_1554508301668.jpg",
+          "Filesize": 1158210,
+          "Filename": "11924486-6892455-image-m-37_1554502228150.jpg",
+          "Caption": "Mom's girl: The singer's outing comes after she wished her mother a happy birthday on Friday.",
+          "Narration": "Rihanna always had a great relationship with her mom, Monica Braithwaite. The 31-year-old talent credited her mother Monica Braithwaite for teaching her 'love, forgiveness' and more.",
+          "SlideDurationInSeconds": 12.336,
+          "AudioDuration": 12.336,
+          "TypewriterAnimation": true
+        },
+        {
+          "Url": "https://i.dailymail.co.uk/1s/2019/04/06/00/11926696-0-image-a-5_1554508301668.jpg",
+          "Filesize": 667723,
+          "Filename": "11923924-6892455-image-m-27_1554501239159.jpg",
+          "Caption": "Raising a star: Wishing Monica a special day, Rihanna wrote: 'Happy Birthday to my sweet beautiful mother'.",
+          "Narration": "The Barbidian superstar always brags about her mom on social media. Wishing Monica a special day, Rihanna wrote: 'Happy Birthday to my sweet beautiful mother.'\r\n\r\nShe then went on to say it was her mom who taught her 'strength, love, forgiveness, sacrifice, hard work, and helping others in whatever way you can.'",
+          "SlideDurationInSeconds": 20.352,
+          "AudioDuration": 20.352,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "4b5f47cd-66b4-407c-8819-d551a2ff1ff0.png",
+          "Caption": "Rihanna gave insights into her mother's profession and stated that she was a salesgirl for beauty products and perfume. ",
+          "Narration": "In an interview with Vogue, Rihanna explained how her mom is her number one beauty icon. She was so \"intrigued\" by her mother. She always liked to dress, look and do her hair and makeup like her mother. Rihanna gave insights into her mother's profession and stated that she was a salesgirl for beauty products and perfume. ",
+          "SlideDurationInSeconds": 10.452,
+          "AudioDuration": 20.904,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "cf675243-026a-47ac-94db-bc2ae705fa0c.png",
+          "Caption": "",
+          "Narration": "",
+          "SlideDurationInSeconds": 10.452,
+          "Group": true
+        },
+        {
+          "Filename": "e62fc999-15ff-457c-826f-8a8ec08d0d0d.png",
+          "Caption": "Rihanna shocked her beloved mother Monica Braithwaite when she gifted her with a brand new five bedroom home in Barbados.",
+          "Narration": "She stated that all of these ventures are things that have extended her creativity and have been a part of her brand overall. The Diamond singer asserted that she learned from the \"best\" and also called her mother her \"best teacher.\"",
+          "SlideDurationInSeconds": 13.0559999,
+          "AudioDuration": 13.0559999,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "18fad840-c12c-4f5c-8477-8c9e05fb8b91.png",
+          "Caption": "Shocked: Monica couldn't believe it when her daughter told her the home was her own.",
+          "Narration": "A few years ago, Rihanna surprised her mother during an Oprah interview, with a brand new five bedroom home in Barbados. In true Oprah fashion, the talk show host invited Monica to the home under the false pretense that she would be doing an interview alongside her daughter for the show.",
+          "SlideDurationInSeconds": 5.904,
+          "AudioDuration": 17.712,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "5cd65b01-c3e7-4b83-8c41-90abd1598bc3.png",
+          "Caption": "The mansion sits on the idyllic island of Barbados.",
+          "Narration": "",
+          "SlideDurationInSeconds": 5.904,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "387a0691-4080-443c-81c4-0da287a445dd.png",
+          "Caption": "Fancy a dip? The home also features a huge swimming pool in the grounds.",
+          "Narration": "",
+          "SlideDurationInSeconds": 5.904,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "b2ad9366-1ad6-4048-bddd-a8c620397262.png",
+          "Caption": "Earlier in the interview, to show just how far she really has come, Rihanna took Oprah to the family home where she grew up from the age of five up to 16.",
+          "Narration": "Earlier in the interview, in vast contrast Rihanna took Oprah to her old family home where she grew up from the age of five up to 16, when she first left Barbados to pursue a career in music.",
+          "SlideDurationInSeconds": 12.312,
+          "AudioDuration": 12.312,
+          "TypewriterAnimation": true
+        }
+      ],
+      "Narration": "",
+      "DurationInSeconds": 96.67199989999999
+    },
+    {
+      "Id": "4968afd6-8dc0-442f-a338-8ef4e7dd5f17",
+      "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\rihanna-life",
+      "NarrationPerImage": true,
+      "Title": "More family drama for Rihanna",
+      "Images": [
+        {
+          "Url": "https://i.dailymail.co.uk/i/pix/2017/12/28/04/479A0E6800000578-0-image-a-34_1514434983005.jpg",
+          "Filesize": 700726,
+          "Filename": "4799D7A300000578-5216907-image-a-17_1514433286412.jpg",
+          "Caption": "Rihanna and Tavon Kaiseen Alleyne in happy times during the Star's vacation in Barbados.",
+          "Narration": "Family drama for pour Rihanna wasn't limited to her father's problems with alcohol and drug addiction. ",
+          "SlideDurationInSeconds": 6.48,
+          "AudioDuration": 6.48,
+          "TypewriterAnimation": true
+        },
+        {
+          "Url": "https://i.dailymail.co.uk/i/pix/2017/12/28/04/479A0E6800000578-0-image-a-34_1514434983005.jpg",
+          "Filesize": 1298435,
+          "Filename": "4799D74E00000578-5216907-image-a-32_1514434838884.jpg",
+          "Caption": "Tavon is pictured in good times before his tragic death",
+          "Narration": "Rihanna's cousin was shot to death in the St Michael's area of Barbados in 2017.\r\nTavon Kaiseen Alleyne was shot several times by man while he was out walking. ",
+          "SlideDurationInSeconds": 11.328,
+          "AudioDuration": 11.328,
+          "TypewriterAnimation": true
+        },
+        {
+          "Url": "https://i.dailymail.co.uk/i/pix/2017/12/28/04/479A0E6800000578-0-image-a-34_1514434983005.jpg",
+          "Filesize": 655373,
+          "Filename": "4799D72200000578-5216907-image-a-31_1514434713144.jpg",
+          "Caption": "Tanelle, Tavon's sister and Rihanna's cousin said their family was split up when she turned seven and their mother died.",
+          "Narration": "Tanelle, Tavon's sister and Rihanna's cousin described her brother as a firm follower of the Christian faith, and said that earlier he'd asked her to pray with him and then take a photo. She then showed reporters the time stamp on her phone, which read 2.36pm, and said that was the last time she saw her brother.",
+          "SlideDurationInSeconds": 18.12,
+          "AudioDuration": 18.12,
+          "TypewriterAnimation": true
+        },
+        {
+          "Url": "https://i.dailymail.co.uk/i/pix/2017/12/28/04/479A0E6800000578-0-image-a-34_1514434983005.jpg",
+          "Filesize": 925364,
+          "Filename": "4799D76F00000578-5216907-image-a-18_1514433295391.jpg",
+          "Caption": "Tanelle, pictured top right next to her brother Tavon, and with two of their younger siblings, said their family was split up when she turned seven and their mother died.",
+          "Narration": "She said that because her father wasn't around, the siblings were split up and went to live with different family members.",
+          "SlideDurationInSeconds": 6.816,
+          "AudioDuration": 6.816,
+          "TypewriterAnimation": true
+        },
+        {
+          "Url": "https://i.dailymail.co.uk/i/pix/2017/12/28/04/479A0E6800000578-0-image-a-34_1514434983005.jpg",
+          "Filesize": 1143787,
+          "Filename": "4799D78700000578-5216907-image-a-29_1514434697680.jpg",
+          "Caption": "Rihanna's cousin says her brother didn't deserve to be murdered",
+          "Narration": "Tanelle, pictured, said that because they were living in separate households for so long this was the first time they'd been able to spend Christmas together and live together like family",
+          "SlideDurationInSeconds": 9.432,
+          "AudioDuration": 9.432,
+          "TypewriterAnimation": true
+        },
+        {
+          "Url": "https://i.dailymail.co.uk/i/pix/2017/12/28/04/479A0E6800000578-0-image-a-34_1514434983005.jpg",
+          "Filesize": 903330,
+          "Filename": "479735A400000578-0-image-a-91_1514349399040.jpg",
+          "Caption": "",
+          "Narration": "Just after hearing about his murder back in 2017, Rihanna posted a series of photos of her and Alleyne together and called for an end to gun crime as she mourned his death. \r\n'RIP cousin... can't believe it was just last night that I held you in my arms!' the heartbroken singer wrote.\r\n'Never thought that would be the last time I felt the warmth in your body!!! Love you always man!'  \r\n",
+          "SlideDurationInSeconds": 6.306,
+          "AudioDuration": 25.224,
+          "Group": true
+        },
+        {
+          "Url": "https://i.dailymail.co.uk/i/pix/2017/12/28/04/479A0E6800000578-0-image-a-34_1514434983005.jpg",
+          "Filesize": 646949,
+          "Filename": "4797476C00000578-5214291-Sad_The_singer_expressed_her_grief_through_a_powerful_series_of_-a-3_1514388021183.jpg",
+          "Caption": "",
+          "Narration": "",
+          "SlideDurationInSeconds": 6.306,
+          "Group": true
+        },
+        {
+          "Url": "https://i.dailymail.co.uk/i/pix/2017/12/28/04/479A0E6800000578-0-image-a-34_1514434983005.jpg",
+          "Filesize": 803164,
+          "Filename": "4797359900000578-5214291-Heartache_The_You_Da_One_singer_added_the_hashtag_endgunviolence-a-1_1514388021122.jpg",
+          "Caption": "The eight-time Grammy winner shared a series of shots in which she was posed with her relative.",
+          "Narration": "",
+          "SlideDurationInSeconds": 6.306,
+          "Group": true
+        },
+        {
+          "Url": "https://i.dailymail.co.uk/i/pix/2017/12/28/04/479A0E6800000578-0-image-a-34_1514434983005.jpg",
+          "Filesize": 762450,
+          "Filename": "4797359500000578-0-image-m-101_1514349532905.jpg",
+          "Caption": "",
+          "Narration": "",
+          "SlideDurationInSeconds": 6.306,
+          "Group": true
+        }
+      ],
+      "Narration": "",
+      "DurationInSeconds": 77.39999999999999
+    },
+    {
+      "Id": "603d6f43-451e-44c5-9603-91ccf37dc13b",
+      "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\rihanna-life",
+      "NarrationPerImage": true,
+      "Title": "Rihanna's blistering career",
+      "Images": [
+        {
+          "Filename": "344a9f43-2b9a-4df2-a9ec-223e10864405.png",
+          "Caption": "Rihanna making her debut in the music industry at age 15.",
+          "Narration": "Rihanna started her music career at the age of 15. Her debut album Music of the Sun was released by Def Jam in 2005.",
+          "SlideDurationInSeconds": 9.6,
+          "AudioDuration": 9.6,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "a31a48b1-764f-49a1-975a-01e7d6f0017a.png",
+          "Caption": "Rihanna in one of her very first studio recordings. Let the songs begin!",
+          "Narration": "But it was in 2007 that the singer gained recognition with the release of her album Good Girl Gone Bad. Her single “Umbrella” earned Rihanna her first Grammy award.",
+          "SlideDurationInSeconds": 10.776,
+          "AudioDuration": 10.776,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "2dfa113b-7286-4d84-9f43-b4715d5d95e5.png",
+          "Caption": "Rihanna performing \"Umbrella\" during the Loud Tour.",
+          "Narration": "\"Umbrella\" is widely acknowledged as the song that propelled Rihanna from rising pop act into superstardom and transformed her into a \"fully fledged sex symbol\" and a pop icon, with some music journalists considering it to be her signature song. \"Umbrella\" marked the first time Rihanna transitioned from the \"girl next door\" persona of her first two albums for an \"edgy, sexier\" look, which triggered her image evolution for her subsequent albums.[sPause sec=3 ePause]",
+          "SlideDurationInSeconds": 9.776,
+          "AudioDuration": 29.328,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "fdafe8fd-971d-499f-8318-56cef0bdec18.png",
+          "Caption": "The single's accompanying music video features Rihanna's nude body covered in silver paint.",
+          "Narration": "",
+          "SlideDurationInSeconds": 9.776,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "2ce28d3e-d22e-49b4-990b-f2eaa2e24321.png",
+          "Caption": "At 19 years old, she dropped one of the biggest songs of the decade and has been in the game ever since in fashion, beauty, and music.",
+          "Narration": "",
+          "SlideDurationInSeconds": 9.776,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "f91ebf21-44b5-47e6-9365-ca8cb1c2913f.png",
+          "Caption": "Album \"Rated R\" (2009) is deemed a pivotal record in Rihanna's career as it was released nine months after the domestic violence case with Brown.",
+          "Narration": "Since then Rihanna's career has been going from strength to strength, with multi platinum albums like Rated R released in 2009, featuring single Rude Boy. ",
+          "SlideDurationInSeconds": 10.224,
+          "AudioDuration": 10.224,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "5e58fa4f-fc0b-4c95-81ab-184afd23bc72.png",
+          "Caption": "Album \"Loud\" (2010): Critics praised the album's composition and Rihanna's decision to move away from the dark themes of her previous album.",
+          "Narration": "Loud released on 2010, featured single Only Girl In the World. Loud was also a commercial success outside of the United States.In Canada, it debuted at number one. The album debuted at number two in the United Kingdom.[sPause sec=3 ePause]",
+          "SlideDurationInSeconds": 10.044,
+          "AudioDuration": 20.088,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "22c72ac7-b8b1-4d65-8399-3f10a7f231b5.png",
+          "Caption": "Album \"Loud\" (2010): It seems \"as if Rihanna is speaking directly to you, the viewer, and she is your one and only amid swallowing rolling, beautiful landscapes. ",
+          "Narration": "",
+          "SlideDurationInSeconds": 10.044,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "4a38e5e6-13ac-4504-8c41-cce4220625e3.png",
+          "Caption": "Album \"Talk That Talk\" (2011): Huge hit single \"We Found Love\"  featuring Calvin Harris.",
+          "Narration": "Talk That Talk was released on 2011 and features a documentary that Rihanna behind the scenes during the production of the album. The first part of \"Road to Talk That Talk\" was released onto the internet on February 17, 2012. In the viral video Rihanna takes the cameras back stage on the last day of the Loud Tour, to the studio whilst she talks about the track listing and to Barbados with her family.[sPause sec=3 ePause]",
+          "SlideDurationInSeconds": 14.424,
+          "AudioDuration": 28.848,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "f9f3b37e-233a-47b7-b2eb-0aedda92bcdf.png",
+          "Caption": "Album \"Talk That Talk\" (2011): The album debuted at number three on the US Billboard 200, with first-week sales of 198,000 copies in the United States, slightly below her last album.",
+          "Narration": "",
+          "SlideDurationInSeconds": 14.424,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "d36531ac-2f85-4adb-924c-a306b9590e2e.png",
+          "Caption": "Album \"Unapologetic\" (2012) : \"Diamonds\" became Rihanna's twelfth number one on the US Billboard Hot 100, tying her with Madonna.",
+          "Narration": "Next album Unapologetic added another milestone to her wildly successful career, featuring hit single Diamonds.",
+          "SlideDurationInSeconds": 7.92,
+          "AudioDuration": 7.92,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "af721238-824a-4b25-a63c-4b2ec718b399.png",
+          "Caption": "Album \"Anti\" (2016): The album's lyrical content touches upon relationships, exploring what it means to be in love, to get hurt and to be true to yourself",
+          "Narration": "Her latest release from 2016 is album Anti. Anti abandons the radio-friendly dance-pop production of Rihanna's previous hit singles.It is a genre-spanning record consisting of pop and dancehall tunes with elements of soul music.[sPause sec=3 ePause]",
+          "SlideDurationInSeconds": 9.9,
+          "AudioDuration": 19.8,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "09c1ad5e-1702-4eb0-a496-d9c0277c7d24.png",
+          "Caption": "Album \"Anti\" (2016): For the album cover, Israel-born artist Roy Nachum tied a blindfold over Rihanna‘s eyes and let her loose on the canvas",
+          "Narration": "",
+          "SlideDurationInSeconds": 9.9,
+          "Group": true,
+          "TypewriterAnimation": true
+        }
+      ],
+      "Narration": "",
+      "DurationInSeconds": 136.584
+    },
+    {
+      "Id": "c93b796b-3ce3-4aa6-b360-6d7120a3facb",
+      "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\rihanna-life",
+      "NarrationPerImage": true,
+      "Title": "Rihanna and Chris Brown",
+      "Images": [
+        {
+          "Filename": "9172ee98-b03c-40f5-8e3f-969e5dcfaa7e.png",
+          "Caption": "Chris Brown, the once wholesome R&B up-and-comer transformed into somewhat of a pop culture villain",
+          "Narration": "Rihanna and Chris Brown were one of the most infamous couples of the late noughties. The duo had their ups and downs over the course of their tumultuous relationship, however the 2009 incident in which Chris physically assaulted Rihanna has come to define not only their relationship but also Chris’ career.",
+          "SlideDurationInSeconds": 8.724,
+          "AudioDuration": 17.448,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "6f4f5ae3-903a-4644-8177-978ce4285633.png",
+          "Caption": "Disturbing photos showed the songstress in a hospital with a bruised and bloody face",
+          "Narration": "",
+          "SlideDurationInSeconds": 8.724,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "89a7a9ad-0c53-4466-aebe-c653fd10affc.png",
+          "Caption": "Chris Brown and Rihanna in 2005, when they looked bright-eyed and ready to take on their newfound stardom.",
+          "Narration": "Long before they were romantically linked, the pair met as teenagers circa 2005 when they were starting out in the music industry. Shortly after the success of Rihanna’s song “Umbrella”, Chris collaborated with her on a remix. The chemistry between the two was undeniable.",
+          "SlideDurationInSeconds": 8.592,
+          "AudioDuration": 17.184,
+          "Group": true
+        },
+        {
+          "Filename": "d561ba2a-4e47-4ac6-8847-69c2095bd91f.png",
+          "Caption": "Chris and RiRi had plenty of on-stage chemistry together, and it was revealed in 2008 that the two were, in fact, dating.",
+          "Narration": "",
+          "SlideDurationInSeconds": 8.592,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "bab052c5-a4c5-42be-b28b-568a254f38eb.png",
+          "Caption": "Chris Brown was arrested in 2009 for physically assaulting Rihanna, leaving her with multiple bruises.",
+          "Narration": "On the day of the 2009 Grammys, it was announced that the pair, who were slated to perform together, would not take the stage. As rumors began to swirl about why their number had been pulled, it was revealed that Chris brutally beat Rihanna the night before. Chris had busted her busted lip, and left Rihanna with black eyes and multiple bruises. Disturbing photos showed the songstress in a hospital with a bruised and bloody face following the verbal fights and physical fights that took place, and Chris Brown was arrested and eventually charged with felony battery.",
+          "SlideDurationInSeconds": 10.984,
+          "AudioDuration": 32.952,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "007b8732-a4e8-4453-8867-e9adff2a7e43.png",
+          "Caption": "He punched her repeatedly and warned, 'I'm going to beat the shit out of you when we get home! You wait and see!'",
+          "Narration": "",
+          "SlideDurationInSeconds": 10.984,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "aac2fccf-eb89-4fce-b81d-1a181c4990c1.png",
+          "Caption": "Bloodied, Rihanna asked her aide to call the police. Brown responded, 'You just did the stupidest thing ever! Now I'm really going to kill you!'",
+          "Narration": "",
+          "SlideDurationInSeconds": 10.984,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "17dce267-dc55-443b-98be-81c0c1c92a64.png",
+          "Caption": "Chris Brown and Rihanna rekindled their romance in 2012 before finally ending their relationship.",
+          "Narration": "Much to the surprise of fans, RiRi forgave Chris several years later. The pair rekindled their romance in 2012, and she spoke to Oprah Winfrey about the relationship. Rihanna confessed that Chris was her “true love”. She also revealed that she dropped the restraining order in 2011, and that she hd forgiven him. However they split for good in 2013, with Chris confirming the news in May of that year.",
+          "SlideDurationInSeconds": 9.056,
+          "AudioDuration": 27.168,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "dd313af6-f65b-482c-94e8-c56abf2f5f35.png",
+          "Caption": "During the brief period they were back together, the pair were spotted sitting court side at basketball games and getting cozy on vacations together.",
+          "Narration": "",
+          "SlideDurationInSeconds": 9.056,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "e8fb1af9-5855-446b-ad1a-99374cdf278c.png",
+          "Caption": "Frolicking in the ocean during a romantic vacation.",
+          "Narration": "",
+          "SlideDurationInSeconds": 9.056,
+          "Group": true
+        }
+      ],
+      "Narration": "",
+      "DurationInSeconds": 94.752
+    },
+    {
+      "Id": "5964325c-be5e-4dc1-a635-174f4ddb49b5",
+      "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\rihanna-life",
+      "NarrationPerImage": true,
+      "Title": "Who has Rihanna dated? Rihanna's relationship timeline",
+      "Images": [
+        {
+          "Filename": "80792d84-80f1-4dab-84c4-2499c8e351b3.png",
+          "Caption": "Matt Kemp - The two were introduced through friends last November, and by early January were vacationing together in Mexico.",
+          "Narration": "While split from Chris Brown, Rihanna had a year-long relationship with LA Dodgers star Matt Kemp for the length of 2010. \r\nShe gushed about the relationship in several interviews. 'I feel like I smile for real this time. The smiles come from inside, and it exudes in everything I do. \r\nBut after splitting in December of that year, she said 'I just let it go. I don’t ever want to have to depend on a relationship. I think it’s a really special thing to find love, but I want to make sure I find other things in life that I love -  besides love.' ",
+          "SlideDurationInSeconds": 5.163428571428571,
+          "AudioDuration": 36.144,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "c32a4ec7-d55e-45b7-b44e-f936212a85d1.png",
+          "Caption": "In April, Rihanna said the relationship was “nothing too serious,”",
+          "Narration": "",
+          "SlideDurationInSeconds": 5.163428571428571,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "ef46b50a-1293-4a01-800a-876b8fb110f4.png",
+          "Caption": "“I just want to have fun, and that's what it's about.”",
+          "Narration": "",
+          "SlideDurationInSeconds": 5.163428571428571,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "2572908f-ea2e-4b64-87b6-be8745d98b60.png",
+          "Caption": "Loved up and happy with new beau, baseballer Matt Kemp on a luxury yacht vacation in the Sea of Cortez in Cabo, Mexico.",
+          "Narration": "",
+          "SlideDurationInSeconds": 5.163428571428571,
+          "Group": true
+        },
+        {
+          "Filename": "b545f4d3-9797-4714-ba8f-52068935d190.png",
+          "Caption": "This is the first yacht Rihanna has rented, it's sized between 66 feet and 82 feet so is not yet considered a ‘superyacht’ by the industry",
+          "Narration": "",
+          "SlideDurationInSeconds": 5.163428571428571,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "f414037e-ab0a-4285-970d-36ce619cc2dc.png",
+          "Caption": "After the vacation they headed to a luxury holiday resort in Cabo San Lucas to soak up the sun.",
+          "Narration": "",
+          "SlideDurationInSeconds": 5.163428571428571,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "2eff9b86-0ff4-4290-bb68-e1ede68ccac7.png",
+          "Caption": "Riri and Matt split on December of 2010.",
+          "Narration": "",
+          "SlideDurationInSeconds": 5.163428571428571,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "691779de-6212-4985-a59c-861b44ff42df.png",
+          "Caption": "Rihanna and Drake met in 2005 and famously dated on and off over the years",
+          "Narration": "Rihanna and Drake met in 2005 and famously dated on and off over the years as they worked together on songs including Work, Take Care, and What's My Name. \r\nIn 2016, he introduced her at the VMAs with effusive praise, saying: 'She’s someone I’ve been in love with since I was 22 years old, she’s one of my best friends in the world. All my adult life, I’ve looked up to her even though she’s younger than me. She’s a living, breathing legend in our industry,' \r\nBut it seems that RiRi wasn't a fan of being built up that way, and told Vogue years later that 'waiting through that speech was probably the most uncomfortable part. I don’t like too many compliments.\r\n",
+          "SlideDurationInSeconds": 8.462399999999999,
+          "AudioDuration": 42.312,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "d15553cb-c0f7-4df9-a4dd-2ec4b6eadd00.png",
+          "Caption": "Rihanna and Drake pose onstage during the 2016 MTV Video Music Awards at Madison Square Garden on Aug. 28, 2016 in New York City. ",
+          "Narration": "",
+          "SlideDurationInSeconds": 8.462399999999999,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "042d8224-204a-4488-bae7-20f63caec66b.png",
+          "Caption": "The VMAs taught us that Drake loves Rihanna, and Rihanna thinks Drake is short.",
+          "Narration": "",
+          "SlideDurationInSeconds": 8.462399999999999,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "c0f45198-1087-41fb-8b4d-de78f10ec762.png",
+          "Caption": "Drake appeared to go in for the kiss. The ensuing curve was 11 years in the making, and it shows.",
+          "Narration": "",
+          "SlideDurationInSeconds": 8.462399999999999,
+          "Group": true
+        },
+        {
+          "Filename": "8479d250-3187-447c-a2d2-df3293bbda1a.png",
+          "Caption": "Sadly, the apple juice-fueled affair was short lived. In separate his and hers interviews, Rihanna and Drake both insisted that they were just friends",
+          "Narration": "",
+          "SlideDurationInSeconds": 8.462399999999999,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "c1fafd75-9bc1-4915-bde8-8c3438d41b73.png",
+          "Caption": "Rihanna and Leonardo Dicaprio were rumored to have hooked up a few times (pictured in 2016)",
+          "Narration": "Rihanna and  Leonardo Dicaprio were rumored to have hooked up a few times, first in February 2015 — when they reportedly spent Valentine's Day weekend together.\r\n\r\nThen, in 2016, they were spotted together at Intrigue Night Club's grand opening at Wynn Las Vegas.\r\n\r\nNeither confirmed that they had dated.",
+          "SlideDurationInSeconds": 6.976,
+          "AudioDuration": 20.928,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "54c7fbc7-dddb-47a7-a9d4-03ca7245b24f.png",
+          "Caption": "The pair were both seen leaving Drake's bash in New York  on May 2015",
+          "Narration": "",
+          "SlideDurationInSeconds": 6.976,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "7983a5cc-1fb4-47cf-b51e-6bd747251ebc.png",
+          "Caption": "The pair's friendship goes back a long way as they were first seen partying at a villa in Los Angeles in May 2009",
+          "Narration": "",
+          "SlideDurationInSeconds": 6.976,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "a8c0f96f-283a-4a45-ae70-2dc622589350.png",
+          "Caption": "Travis Scott met Rihanna in 2013 at the Opening Ceremony runway show during New York Fashion Week. ",
+          "Narration": "Rihanna also reportedly dated Travis Scott in 2015, with the rumors fueled by sightings of Rihanna at his concerts.\r\n\r\nBut the relationship appeared to be confirmed by a story in the December 2015 issue of Complex. Writer Lawrence Schlossman said that Travis had missed their interview because he was 'holed up with Rihanna, his recently rumored love interest.\r\n\r\nIn 2020, Schlossman said on his podcast that he was never supposed to reveal that Travis and Rihanna were together. \r\n\r\n'It’s because Rihanna’s like, \"Don’t tell anyone that I’m smashing Travis Scott, please,\"' he said. ",
+          "SlideDurationInSeconds": 9.39,
+          "AudioDuration": 37.56,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "072ee7bd-eb16-4ce5-ab2b-7711cd43e172.png",
+          "Caption": "One of the topics that were discussed was Rihanna, whom Scott referred to as his “muse.”",
+          "Narration": "",
+          "SlideDurationInSeconds": 9.39,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "ada152cc-b470-48c3-8a4f-64af911abbde.png",
+          "Caption": "The “Sicko Mode” rapper also called the Fenty Beauty mogul “inspiring” and “creative.”",
+          "Narration": "",
+          "SlideDurationInSeconds": 9.39,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "2a8c5bd7-2f01-4391-b9d6-ee8f8e8adb5c.png",
+          "Caption": "“They were dancing extremely close. They are totally together. They weren’t hiding at all.”",
+          "Narration": "",
+          "SlideDurationInSeconds": 9.39,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "84d75e88-f3b7-40a5-8779-66fcd60da17e.png",
+          "Caption": "Hassan Mohammed Abdul Latif Jameel is a Saudi businessman and philanthropist.",
+          "Narration": "Rihanna and Saudi Arabian businessman Hassan Jameel got together in 2017. They were first spotted getting dinner together in November of that year, and in 2018 took a trip to Mexico together.\r\n\r\nIn 2019, she said 'I got into a new relationship, and it matters to me. It was like, \"I need to make time for this.\" Just like I nurture my businesses, I need to nurture this as well. I’ll shut things down for two days, three days at a time. \r\n\r\n'On my calendar we now have the infamous \"P,' which means personal days. This is a new thing.'\r\n\r\nShe spoke again about him later that year, telling Vogue: 'I’m actually in an exclusive relationship for quite some time, and it’s going really well, so I’m happy.' \r\n\r\nBut things soured, and news that they split broke in January 2020. ",
+          "SlideDurationInSeconds": 10.665600000000001,
+          "AudioDuration": 53.328,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "f67f7a3b-2c42-40b4-9fa3-80c062a6e3ca.png",
+          "Caption": "His philanthropy work promotes health and safety, and assists job-seekers and those in need in Saudi Arabia.",
+          "Narration": "",
+          "SlideDurationInSeconds": 10.665600000000001,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "543af53d-fd36-48b2-aeb6-4fe0319bfccc.png",
+          "Caption": "RiRi took her billionaire boyfriend, Saudi businessman Hassan Jameel, on a public date. The two went to a Los Angeles Lakers basketball game. ",
+          "Narration": "",
+          "SlideDurationInSeconds": 10.665600000000001,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "4f81e100-0467-46a0-9503-c5ddb72827ff.png",
+          "Caption": "\"when u think u know more bout soccer 😼💪🏿 #worldcup2018,\" she wrote in her instagram post, joking about their paparazzi shot where they were visibly arguing.",
+          "Narration": "",
+          "SlideDurationInSeconds": 10.665600000000001,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "d939b9b0-c7e3-4374-9d3d-3379742b8ea3.png",
+          "Caption": "They finally split in January 2020. “Their lives were too different and it was hard to maintain a relationship.\" Jameel is a Saudi businessman. Rihanna, of course, is a singer and beauty mogul.",
+          "Narration": "",
+          "SlideDurationInSeconds": 10.665600000000001,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "50cbdc77-3a7e-4d4c-9640-b0b60b5f20d5.png",
+          "Caption": "😂😂😂😂😂😂",
+          "Narration": "Rihanna has had her fair share of relationships, but is now pregnant and engaged to rapper ASAP Rocky. Though their romantic relationship is only a couple of years old, they have known one another for a decade.",
+          "SlideDurationInSeconds": 13.584,
+          "AudioDuration": 13.584,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "9e875521-4dad-4f87-87c0-7cba5577fdd8.png",
+          "Caption": "Attending a Louis Vuitton show together in 2018 ",
+          "Narration": "They remained friends over the years. But when Rihanna and Hassan split in January 2020, rumors started to swirl that she and Rocky were together. Rocky confirmed the relationship in May 2021, telling GQ that Rihanna is 'the love of my life.'\r\n\r\n'I think when you know, you know. She's the one,' he said.  She wants him to stay! Rihanna and A$AP Rocky formed a strong bond as friends first then lovers later and now, parents-to-be!",
+          "SlideDurationInSeconds": 7.776,
+          "AudioDuration": 31.104,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "15d1ff3f-b26d-442b-a5d4-8be6ec308335.png",
+          "Caption": "Some close to them have even noted an engagement is possible.",
+          "Narration": "",
+          "SlideDurationInSeconds": 7.776,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "37e518ab-8453-48f7-8c76-2bb0ecbebd37.png",
+          "Caption": "“These two are so madly in love, and it’s true there’s a lot of buzz in their circle about an engagement being in the works\"",
+          "Narration": "",
+          "SlideDurationInSeconds": 7.776,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "3ec1dec6-34e2-4d47-aa62-b09231577172.png",
+          "Caption": "April 02, 2022 : The pair - who are currently expecting their first baby - enjoyed an early dinner date at Craig's restaurant in West Hollywood, California.",
+          "Narration": "",
+          "SlideDurationInSeconds": 7.776,
+          "Group": true,
+          "TypewriterAnimation": true
+        }
+      ],
+      "Narration": "",
+      "DurationInSeconds": 234.96000000000012
+    },
+    {
+      "Id": "ebf1e1c6-7d26-487d-9456-e5283edfb518",
+      "SlideshowFolder": "C:\\Users\\theok\\Repos\\FactCheckThisBitch\\Source\\VideoFromArticle.Admin.Windows\\data\\rihanna-life",
+      "NarrationPerImage": true,
+      "Title": "Thanks for watching",
+      "Images": [
+        {
+          "Filename": "f7ba9ad1-5134-4154-9499-71d0535521ab.png",
+          "Caption": "What's new Rihanna? Savage X Fenty, climate justice, A$AP Rocky, pregnancy",
+          "Narration": "Thank you for watching our video about Rihanna's life! If you want to find out what your favorite star has been up to in 2022, make sure to watch this other video, and subscribe to Showbiz Gossip Daily News\r\nfor more juicy updates.",
+          "SlideDurationInSeconds": 7.788,
+          "AudioDuration": 15.576,
+          "Group": true,
+          "TypewriterAnimation": true
+        },
+        {
+          "Filename": "bf521d3d-0e85-4a42-a70d-f2a6c7cb4f06.png",
+          "Caption": "Your daily fix of celebrity news, gossip and everything you want to know about your favourite stars. Make sure to subscribe for daily updates.",
+          "Narration": "",
+          "SlideDurationInSeconds": 7.788,
+          "Group": true,
+          "TypewriterAnimation": true
+        }
+      ],
+      "Narration": "",
+      "DurationInSeconds": 15.576
     }
   ],
   "Created": "2022-04-03T22:37:28.6447352+01:00",

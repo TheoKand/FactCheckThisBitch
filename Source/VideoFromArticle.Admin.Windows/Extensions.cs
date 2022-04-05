@@ -178,7 +178,7 @@ namespace VideoFromArticle.Admin.Windows
                     else
                     {
                         result.Append(
-                            $"{audioFiles.Length}/{article.Images.Count} Audio files. Duration : {Math.Ceiling(article.DurationInSeconds)} sec. ");
+                            $"{audioFiles.Length}/{article.Images.Where(_=>_.Narration.IsNotEmpty()).Count()} Audio files. Duration : {Math.Ceiling(article.DurationInSeconds)} sec. ");
                     }
                 }
                 else
