@@ -162,12 +162,12 @@ namespace FactCheckThisBitch.Render
                     imageSlide.RemoveShapeIfTextEmpty("txtDate");
 
 
-                    if (slideTitle != article.Title && imageIndex == 0)
-                    {
-                        //the title should appear quicker for slides with a specific caption title
-                        var titleLabelAnimations = imageSlide.Timeline.MainSequence.GetEffectsByShape(txtTitle);
-                        titleLabelAnimations[0].Timing.TriggerDelayTime = 1f;
-                    }
+                    //if (slideTitle != article.Title && imageIndex == 0)
+                    //{
+                    //    //the title should appear quicker for slides with a specific caption title
+                    //    var titleLabelAnimations = imageSlide.Timeline.MainSequence.GetEffectsByShape(txtTitle);
+                    //    titleLabelAnimations[0].Timing.TriggerDelayTime = 1f;
+                    //}
 
                     //load and center picture
                     var photoFile = Path.Combine(_dataFolder, article.Id, articleImage.Filename);

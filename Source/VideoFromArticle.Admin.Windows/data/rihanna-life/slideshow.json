@@ -72,9 +72,9 @@
         {
           "Filename": "e0f1d315-2029-4fd3-954b-917a22a174af.png",
           "Caption": "Rihanna at 10 years old.",
-          "Narration": "Her childhood was a difficult one, marred by constant arguments between her parents and their eventual divorce. Her father was an alcoholic addicted to cocaine who has since then overcome his addictions.\r\nShe loved music from a young age. She began singing when she was seven, and went on to form a musical trio with her classmates as a high school student. She had a chance meeting with American producer Evan Rogers in 2003 and performed some songs in his presence. He was impressed and invited her to New York to record some demo tapes.",
-          "SlideDurationInSeconds": 4.656000000000001,
-          "AudioDuration": 23.28,
+          "Narration": "Her childhood was a difficult one, marred by constant arguments between her parents and their eventual divorce. Her father was an alcoholic addicted to cocaine who has since then overcome his addictions.\r\nShe loved music from a young age. She began singing when she was seven, and went on to form a musical trio with her classmates as a high school student. She had a chance meeting with American producer Evan Rogers in 2003 and performed some songs in his presence. He was impressed and invited her to New York to record some demo tapes.[sPause sec=3 ePause]",
+          "SlideDurationInSeconds": 7.7712,
+          "AudioDuration": 38.856,
           "Group": true,
           "TypewriterAnimation": true
         },
@@ -82,7 +82,7 @@
           "Filename": "a9eeec9e-ebb7-4588-b9f8-a0865634f85f.png",
           "Caption": "Rihanna at 13 years old.",
           "Narration": "",
-          "SlideDurationInSeconds": 4.656000000000001,
+          "SlideDurationInSeconds": 7.7712,
           "Group": true,
           "TypewriterAnimation": true
         },
@@ -90,7 +90,7 @@
           "Filename": "b7d20e36-f2e8-410d-9393-227940a2164d.png",
           "Caption": "Rihanna at 14 years old.",
           "Narration": "",
-          "SlideDurationInSeconds": 4.656000000000001,
+          "SlideDurationInSeconds": 7.7712,
           "Group": true,
           "TypewriterAnimation": true
         },
@@ -98,7 +98,7 @@
           "Filename": "90b54b0b-8318-444d-a469-36ee78b532fc.png",
           "Caption": "😍 Some people say that a girl turns sweet at 16 and they’re not wrong ",
           "Narration": "",
-          "SlideDurationInSeconds": 4.656000000000001,
+          "SlideDurationInSeconds": 7.7712,
           "Group": true,
           "TypewriterAnimation": true
         },
@@ -106,13 +106,13 @@
           "Filename": "eca09a47-2124-4c21-8751-216547c79a90.png",
           "Caption": "Rihanna at 18 years old.",
           "Narration": "",
-          "SlideDurationInSeconds": 4.656000000000001,
+          "SlideDurationInSeconds": 7.7712,
           "Group": true,
           "TypewriterAnimation": true
         }
       ],
       "Narration": "",
-      "DurationInSeconds": 77.20800000000001
+      "DurationInSeconds": 92.78399999999999
     },
     {
       "Id": "b48c6540-2a51-4a8a-ba31-58a15623b194",
@@ -623,14 +623,6 @@
           "TypewriterAnimation": true
         },
         {
-          "Filename": "ef46b50a-1293-4a01-800a-876b8fb110f4.png",
-          "Caption": "“I just want to have fun, and that's what it's about.”",
-          "Narration": "",
-          "SlideDurationInSeconds": 5.163428571428571,
-          "Group": true,
-          "TypewriterAnimation": true
-        },
-        {
           "Filename": "2572908f-ea2e-4b64-87b6-be8745d98b60.png",
           "Caption": "Loved up and happy with new beau, baseballer Matt Kemp on a luxury yacht vacation in the Sea of Cortez in Cabo, Mexico.",
           "Narration": "",
@@ -639,7 +631,7 @@
         },
         {
           "Filename": "b545f4d3-9797-4714-ba8f-52068935d190.png",
-          "Caption": "This is the first yacht Rihanna has rented, it's sized between 66 feet and 82 feet so is not yet considered a ‘superyacht’ by the industry",
+          "Caption": "This is the first yacht Rihanna has rented between 66 feet and 82 feet. Not yet considered a ‘superyacht’ by the industry",
           "Narration": "",
           "SlideDurationInSeconds": 5.163428571428571,
           "Group": true,
@@ -811,7 +803,7 @@
         {
           "Filename": "9e875521-4dad-4f87-87c0-7cba5577fdd8.png",
           "Caption": "Attending a Louis Vuitton show together in 2018 ",
-          "Narration": "They remained friends over the years. But when Rihanna and Hassan split in January 2020, rumors started to swirl that she and Rocky were together. Rocky confirmed the relationship in May 2021, telling GQ that Rihanna is 'the love of my life.'\r\n\r\n'I think when you know, you know. She's the one,' he said.  She wants him to stay! Rihanna and A$AP Rocky formed a strong bond as friends first then lovers later and now, parents-to-be!",
+          "Narration": "They remained friends over the years. But when Rihanna and Hassan split in January 2020, rumors started to swirl that she and Rocky were together. Rocky confirmed the relationship in May 2021, telling GQ that Rihanna is 'the love of my life.'\r\n\r\n'I think when you know, you know. She's the one,' he said.  She wants him to stay! Rihanna and A$AP Rocky formed a strong bond as friends first then lovers later and now parents-to-be!",
           "SlideDurationInSeconds": 7.776,
           "AudioDuration": 31.104,
           "Group": true,
@@ -853,12 +845,11 @@
       "Images": [
         {
           "Filename": "f7ba9ad1-5134-4154-9499-71d0535521ab.png",
-          "Caption": "What's new Rihanna? Savage X Fenty, climate justice, A$AP Rocky, pregnancy",
-          "Narration": "Thank you for watching our video about Rihanna's life! If you want to find out what your favorite star has been up to in 2022, make sure to watch this other video, and subscribe to Showbiz Gossip Daily News\r\nfor more juicy updates.",
+          "Caption": "",
+          "Narration": "Thank you for watching our video about Rihanna's life! If you want to find out what your favorite star has been up to in 2022, make sure to watch this other video, and subscribe to Showbiz Gossip Daily News for more juicy updates.",
           "SlideDurationInSeconds": 7.788,
           "AudioDuration": 15.576,
-          "Group": true,
-          "TypewriterAnimation": true
+          "Group": true
         },
         {
           "Filename": "bf521d3d-0e85-4a42-a70d-f2a6c7cb4f06.png",

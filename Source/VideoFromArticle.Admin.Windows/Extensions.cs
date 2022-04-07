@@ -177,8 +177,10 @@ namespace VideoFromArticle.Admin.Windows
                     }
                     else
                     {
+                        var totalExpectedFiles = article.Images.Where(_ => _.Narration.IsNotEmpty()).Count();
+                        problem = audioFiles.Length != totalExpectedFiles;
                         result.Append(
-                            $"{audioFiles.Length}/{article.Images.Where(_=>_.Narration.IsNotEmpty()).Count()} Audio files. Duration : {Math.Ceiling(article.DurationInSeconds)} sec. ");
+                            $"{audioFiles.Length}/{totalExpectedFiles} Audio files. Duration : {Math.Ceiling(article.DurationInSeconds)} sec. ");
                     }
                 }
                 else
