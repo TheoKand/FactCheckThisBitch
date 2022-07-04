@@ -40,27 +40,27 @@ namespace VideoFromArticle.Admin.Windows.Forms
             // lstTemplate
             // 
             this.lstTemplate.FormattingEnabled = true;
-            this.lstTemplate.ItemHeight = 17;
-            this.lstTemplate.Location = new System.Drawing.Point(12, 37);
+            this.lstTemplate.ItemHeight = 15;
+            this.lstTemplate.Location = new System.Drawing.Point(12, 33);
             this.lstTemplate.Name = "lstTemplate";
-            this.lstTemplate.Size = new System.Drawing.Size(323, 89);
+            this.lstTemplate.Size = new System.Drawing.Size(323, 79);
             this.lstTemplate.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 17);
+            this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 17);
+            this.label1.Size = new System.Drawing.Size(58, 15);
             this.label1.TabIndex = 9;
             this.label1.Text = "Template:";
             // 
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(245, 207);
+            this.btnCancel.Location = new System.Drawing.Point(245, 183);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(118, 40);
+            this.btnCancel.Size = new System.Drawing.Size(118, 35);
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@ namespace VideoFromArticle.Admin.Windows.Forms
             // btnOK
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOK.Location = new System.Drawing.Point(122, 207);
+            this.btnOK.Location = new System.Drawing.Point(122, 183);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(118, 40);
+            this.btnOK.Size = new System.Drawing.Size(118, 35);
             this.btnOK.TabIndex = 7;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -80,26 +80,26 @@ namespace VideoFromArticle.Admin.Windows.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 139);
+            this.label2.Location = new System.Drawing.Point(12, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(283, 17);
+            this.label2.Size = new System.Drawing.Size(234, 15);
             this.label2.TabIndex = 11;
             this.label2.Text = "Intro duration:                                  e.g. 00:15";
             // 
             // txtIntroDuration
             // 
-            this.txtIntroDuration.Location = new System.Drawing.Point(105, 136);
+            this.txtIntroDuration.Location = new System.Drawing.Point(103, 118);
             this.txtIntroDuration.Name = "txtIntroDuration";
-            this.txtIntroDuration.Size = new System.Drawing.Size(100, 25);
+            this.txtIntroDuration.Size = new System.Drawing.Size(79, 23);
             this.txtIntroDuration.TabIndex = 12;
             // 
             // FrmRenderOptions
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(375, 259);
+            this.ClientSize = new System.Drawing.Size(375, 229);
             this.Controls.Add(this.txtIntroDuration);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lstTemplate);

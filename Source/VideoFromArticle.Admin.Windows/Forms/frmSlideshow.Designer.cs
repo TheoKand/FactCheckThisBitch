@@ -34,6 +34,8 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.compactFileSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,7 +62,8 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.menuStrip1.BackColor = System.Drawing.SystemColors.Info;
             this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.actionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
@@ -98,6 +101,21 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // actionsToolStripMenuItem
+            // 
+            this.actionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.compactFileSystemToolStripMenuItem});
+            this.actionsToolStripMenuItem.Name = "actionsToolStripMenuItem";
+            this.actionsToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.actionsToolStripMenuItem.Text = "Actions";
+            // 
+            // compactFileSystemToolStripMenuItem
+            // 
+            this.compactFileSystemToolStripMenuItem.Name = "compactFileSystemToolStripMenuItem";
+            this.compactFileSystemToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
+            this.compactFileSystemToolStripMenuItem.Text = "Compact File System";
+            this.compactFileSystemToolStripMenuItem.Click += new System.EventHandler(this.compactFileSystemToolStripMenuItem_Click);
             // 
             // txtTitle
             // 
@@ -171,7 +189,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.lstArticles.Name = "lstArticles";
             this.lstArticles.Size = new System.Drawing.Size(1114, 346);
             this.lstArticles.TabIndex = 4;
-            this.lstArticles.SelectedIndexChanged += new System.EventHandler(this.lstArticles_SelectedIndexChanged);
             this.lstArticles.DoubleClick += new System.EventHandler(this.lstArticles_DoubleClick);
             // 
             // btnDelete
@@ -351,5 +368,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
         private System.Windows.Forms.Button btnOpenFolder;
         private System.Windows.Forms.LinkLabel btnRefresh;
         private System.Windows.Forms.Button btnOutputFolder;
+        private System.Windows.Forms.ToolStripMenuItem actionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem compactFileSystemToolStripMenuItem;
     }
 }

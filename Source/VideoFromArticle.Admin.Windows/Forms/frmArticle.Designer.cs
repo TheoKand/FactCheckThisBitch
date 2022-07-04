@@ -46,12 +46,8 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.txtAudioFile = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.imageEditor1 = new FactCheckThisBitch.Admin.Windows.UserControls.ArticleImageEditor();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.txtNarration = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.chkNarrationPerImage = new System.Windows.Forms.CheckBox();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -231,36 +227,11 @@ namespace VideoFromArticle.Admin.Windows.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.imageEditor1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.imageEditor1.Location = new System.Drawing.Point(-1, 0);
+            this.imageEditor1.Location = new System.Drawing.Point(0, 0);
             this.imageEditor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.imageEditor1.Name = "imageEditor1";
             this.imageEditor1.Size = new System.Drawing.Size(1055, 468);
             this.imageEditor1.TabIndex = 8;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.txtNarration);
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1058, 472);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Narration";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // txtNarration
-            // 
-            this.txtNarration.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNarration.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNarration.Location = new System.Drawing.Point(2, 4);
-            this.txtNarration.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNarration.Multiline = true;
-            this.txtNarration.Name = "txtNarration";
-            this.txtNarration.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtNarration.Size = new System.Drawing.Size(1050, 461);
-            this.txtNarration.TabIndex = 6;
             // 
             // tabControl1
             // 
@@ -268,22 +239,11 @@ namespace VideoFromArticle.Admin.Windows.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(14, 183);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1066, 505);
             this.tabControl1.TabIndex = 31;
-            // 
-            // chkNarrationPerImage
-            // 
-            this.chkNarrationPerImage.AutoSize = true;
-            this.chkNarrationPerImage.Location = new System.Drawing.Point(559, 151);
-            this.chkNarrationPerImage.Name = "chkNarrationPerImage";
-            this.chkNarrationPerImage.Size = new System.Drawing.Size(170, 24);
-            this.chkNarrationPerImage.TabIndex = 32;
-            this.chkNarrationPerImage.Text = "Narration Per Image";
-            this.chkNarrationPerImage.UseVisualStyleBackColor = true;
             // 
             // FrmArticle
             // 
@@ -291,7 +251,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(1083, 760);
-            this.Controls.Add(this.chkNarrationPerImage);
             this.Controls.Add(this.txtAudioFile);
             this.Controls.Add(this.btnOpenFolder);
             this.Controls.Add(this.btnOpenAllImages);
@@ -316,8 +275,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmArticle_Load);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -341,10 +298,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
         private System.Windows.Forms.Button btnOpenFolder;
         private System.Windows.Forms.TextBox txtAudioFile;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox txtNarration;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.CheckBox chkNarrationPerImage;
         private FactCheckThisBitch.Admin.Windows.UserControls.ArticleImageEditor imageEditor1;
     }
 }

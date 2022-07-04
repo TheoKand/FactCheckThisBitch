@@ -1,7 +1,5 @@
 ﻿using FackCheckThisBitch.Common;
 using System;
-using System.Collections.Generic;
-using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -16,7 +14,7 @@ namespace VideoFromArticle.Admin.Windows.Forms
     {
         public Action OnSave;
 
-        private Article _article;
+        private readonly Article _article;
 
         public FrmArticle(Article article)
         {
@@ -43,10 +41,12 @@ namespace VideoFromArticle.Admin.Windows.Forms
             txtUrl.Text = _article.Url;
             txtSource.Text = _article.Source;
             txtDatePublished.Text = _article.Published.ToSimpleStringDate();
-            chkNarrationPerImage.Checked = _article.NarrationPerImage.Value;
-            txtNarration.Text = _article.Narration;
+            imageEditor1.OnDeleteAudio = image =>
+            {
+                _article.DeleteNarrationDuration(image);
+            };
             imageEditor1.BaseFolder = _article.Folder();
-            imageEditor1.BaseCaption = _article.Title;
+            imageEditor1.BaseCaption = "";
             imageEditor1.ArticleImages = _article.Images;
         }
 
@@ -56,9 +56,8 @@ namespace VideoFromArticle.Admin.Windows.Forms
             _article.Url = txtUrl.Text.ValueOrNull();
             _article.Source = txtSource.Text.ValueOrNull();
             _article.Published = txtDatePublished.Text.ToDate();
-            _article.Narration = txtNarration.Text;
-            _article.NarrationPerImage = chkNarrationPerImage.Checked;
-            _article.Narration = _article.Narration.SanitizeNarration();
+
+            //TODO: make sure SanitizeNarration is applied to new narrations after they are typed
 
             UpdateFormTitle();
         }
@@ -85,36 +84,35 @@ namespace VideoFromArticle.Admin.Windows.Forms
         private async Task DownloadAndSaveMetadataAndImages()
         {
             var onlineArticleParser = new ArticleMetadataParser(_article.Url);
-            IDictionary<string, string> metaData = default;
             try
             {
                 this.Cursor = Cursors.WaitCursor;
                 Cursor.Current = Cursors.WaitCursor;
                 Application.DoEvents();
-                metaData = await onlineArticleParser.Download();
+                var metaData = await onlineArticleParser.Download();
 
                 _article.Title = metaData.TryGet("title");
                 _article.Source = metaData.TryGet("site_name");
-                if (DateTime.TryParse(metaData.TryGet("datePublished"), out DateTime datePublished))
+                if (DateTime.TryParse(metaData.TryGet("datePublished"), out var datePublished))
                 {
                     _article.Published = datePublished;
                 }
 
                 _article.Images.Clear();
-                string additionalImages = metaData.TryGet("images");
-                string additionalImagesWithCaptions = metaData.TryGet("imagesWithCaptions");
-                string image = metaData.TryGet("image");
-                if (!image.IsEmpty())
-                {
-                    var imageUrl = image.FilenameFromUrl();
-                    if (additionalImages.IsEmpty() || !additionalImages.Contains(imageUrl))
-                    {
-                        if (!additionalImages.IsEmpty())
-                        {
-                            additionalImages += "\n";
-                        }
-                    }
-                }
+                var additionalImagesWithCaptions = metaData.TryGet("imagesWithCaptions");
+                var image = metaData.TryGet("image");
+                //var additionalImages = metaData.TryGet("images");
+                //if (!image.IsEmpty())
+                //{
+                //    var imageUrl = image.FilenameFromUrl();
+                //    if (additionalImages.IsEmpty() || !additionalImages.Contains(imageUrl))
+                //    {
+                //        if (!additionalImages.IsEmpty())
+                //        {
+                //            additionalImages += "\n";
+                //        }
+                //    }
+                //}
 
                 _article.EnsureFolder();
 
@@ -210,5 +208,6 @@ namespace VideoFromArticle.Admin.Windows.Forms
             if (!Directory.Exists(folder)) return;
             new Process { StartInfo = new ProcessStartInfo(folder) { UseShellExecute = true } }.Start();
         }
+
     }
 }
